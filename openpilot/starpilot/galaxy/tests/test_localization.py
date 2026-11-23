@@ -8,7 +8,7 @@ from openpilot.starpilot.galaxy.localization import language_snapshot
 from openpilot.starpilot.ui.translation_strings import MESSAGES
 
 
-@pytest.mark.parametrize('code', ['ja', 'ko', 'es', 'fr', 'de', 'vi'])
+@pytest.mark.parametrize('code', ['ja', 'ko', 'es', 'fr', 'de', 'vi', 'zh-CHS'])
 def test_shared_catalog_and_persistent_language(tmp_path, code):
   params = Params(str(tmp_path))
   params.put('LanguageSetting', code, block=True)
@@ -75,7 +75,7 @@ def test_http_catalog_requires_existing_session(tmp_path, monkeypatch):
     server.server_close()
 
 
-@pytest.mark.parametrize('code', ['ja', 'ko', 'es', 'fr', 'de', 'vi'])
+@pytest.mark.parametrize('code', ['ja', 'ko', 'es', 'fr', 'de', 'vi', 'zh-CHS'])
 def test_shared_messages_have_translations(tmp_path, code):
   from openpilot.selfdrive.ui.translations.potools import parse_po
   from openpilot.system.ui.lib.multilang import TRANSLATIONS_DIR
