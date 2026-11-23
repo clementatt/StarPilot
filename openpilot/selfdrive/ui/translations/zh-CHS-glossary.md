@@ -129,3 +129,33 @@ Firestar Link、Polaris 等模型名、Discord、Mapbox、Google Maps、Spotify�
 | Vitals | 状态 | |
 | Long Planner | 纵向规划器 | |
 | Switchback Mode | Switchback 模式 | 专有模式名 |
+
+## 六、补充术语（Galaxy 翻译时确定）
+
+Galaxy 网页按 DOM 文本节点逐段翻译，被标签切开的句子碎片会按英文顺序拼接显示：翻译碎片时要先在源码里看清前后文，
+保证拼起来中文通顺。键盘按键名（Enter、Tab、End）、语言名 English 与 App 保留英文。
+
+| 英文 | 中文 | 备注 |
+| --- | --- | --- |
+| Episode（FLM 学习） | 过程 | Comparable episodes → 可比过程 |
+| Footage | 录像 | Dashcam footage → 行车录像 |
+| Routes / Reroute / Alternative routes | 路线 / 重新规划 / 备选路线 | |
+| Avoid tolls | 避开收费路段 | |
+| Directions / Route guidance | 路线指引 / 路线引导 | |
+| Tiles / allowance | 图块 / 额度 | 地图下载 |
+| Geocoding | 地址解析 | |
+| Metric / Imperial | 公制 / 英制 | |
+| Standby | 待机 | |
+| Action Buttons / Learn Button | 操作按键 / 学习按键 | |
+| Model pair / Compose a pair | 模型对 / 组合模型对 | 模型实验室 |
+| Include in Randomizer | 纳入随机器 | |
+| Telemetry / Actuator | 遥测 / 执行器 | |
+| Access token / certificate | 访问令牌 / 证书 | |
+| Reverse proxy / Push relay / Browser push | 反向代理 / 推送中继 / 浏览器推送 | |
+| Stable / Development（分支） | 稳定版 / 开发版 | |
+| Sentry event / Sentry notifications | 哨兵事件 / 哨兵通知 | |
+| Projection / Wireless adapter / Wired AA | 投屏 / 无线适配器 / 有线 AA | StarPort |
+| Force Stop | 强制停止 | 区别于“强制停车状态” |
+| Uptime / Process / Zombie | 运行时间 / 进程 / 僵尸进程 | System Monitor |
+| admit / admitted（panda 安全） | 放行 / 已放行 | |
+| Headunit、Soloist、APKMirror、APKPure | 保留英文 | 产品名 |

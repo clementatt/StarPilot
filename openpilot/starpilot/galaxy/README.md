@@ -222,6 +222,10 @@ pages and settings descriptions, native UI labels, formatted status messages
 and driving alerts. Formatted translations retain the original values and
 identifiers. Unlisted runtime diagnostics and external content retain English
 fallback; user names, addresses, media metadata and technical logs are literal.
+Simplified Chinese (`zh-CHS`) carries the same complete catalog; its terminology
+lives in `selfdrive/ui/translations/zh-CHS-glossary.md`, and
+`selfdrive/ui/translations/check_untranslated.py --lang zh-CHS --strict` reports
+entries that still need translation after the catalog changes.
 Boot/login initially uses English until the authenticated language response.
 Native text is translated before measurement, wrapping and elision; translated
 values carry a marker so they cannot be translated twice.

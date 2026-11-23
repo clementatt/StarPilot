@@ -85,7 +85,7 @@ def test_shared_messages_have_translations(tmp_path, code):
   assert all(translations.get(message) for message in MESSAGES)
 
 
-@pytest.mark.parametrize('code', ['ja', 'ko', 'es', 'fr', 'de', 'vi'])
+@pytest.mark.parametrize('code', ['ja', 'ko', 'es', 'fr', 'de', 'vi', 'zh-CHS'])
 def test_all_registered_display_messages_have_catalog_values(code):
   import json
   from openpilot.common.basedir import BASEDIR
