@@ -19826,6 +19826,7 @@ msgstr ""
 msgid "suspended"
 msgstr ""
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
 #: openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js
 msgid "switch"
 msgstr ""
@@ -23948,4 +23949,1094 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/software-status.js
 msgid "· Downloaded {label}"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "1. openpilot is a driver assistance system."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "2. You must pay attention at all times."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "3. You must be ready to take over at any time."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "4. You are fully responsible for driving the car."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
+msgid "ACTIVE"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "Access the device remotely using your SSH keys."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py
+msgid "Allow cellular data roaming."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+#: openpilot/starpilot/longitudinal/enhanced_stop_hold.py
+msgid "Always Hold Enhanced Stops"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
+msgid "Any fast phone or laptop charger should be fine."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/onroad/cabin_camera_dialog.py
+msgid "Awareness: {}%"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "Background download: {label}"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "Changes apply after the next reboot"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Check USB and 12V connections, then restart the car."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Check the 12V connection, then restart the car."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Check the GPU is securely seated, then restart the car."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Check the USB cable."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Check the USB cable. The current speed is {}."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Chestnut GPU unavailable"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Chestnut USB link is slow"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Chestnut detected"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Chestnut model error"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Chestnut not detected"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Chestnut overheated"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Chestnut power disconnected"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Chestnut power lost"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Chestnut power restored"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Chestnut update failed"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "Clear saved wheel-side detection. Automatic detection restarts next drive."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Click to update"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "Cloud Provider"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "Cloud Provider is unavailable. Refresh and try again."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid "Cloud account and recordings"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Connect to internet to check for updates"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Contact comma.ai/support if you believe this was made in error."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "Control the car with a joystick for debugging."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "Device must be registered with the comma.ai backend to pair."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Device temperature too high"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "Disengage to fast update selected branch"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "Disengage to power off"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "Disengage to reboot"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "Disengage to reset"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "Disengage to reset driver monitoring"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "Disengage to restore previous version"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "Disengage to uninstall"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
+msgid "Do all of my segments get pulled in Firehose Mode?"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
+msgid "Does it matter how or where I drive?"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
+msgid "Does it matter which software I run?"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid ""
+"Enable to use openpilot driver assistance.\n"
+"Disable to use your car's stock driver assistance."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Ensure good airflow."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Ensure the device has a clear view of the driver. This can be checked in the device settings. Extreme lighting conditions and/or unconventional mounting positions may also trigger this alert."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Ensure the device is fully seated in the mount and the mount is firmly secured to the windshield."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Ensure the software is correctly installed"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "Ensure you're connected to the internet and try again."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Excessive lateral actuation detected on your last drive"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Excessive longitudinal actuation detected on your last drive"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "Failed to get available branches. Ensure you're connected to the internet and try again."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Failed to register with comma.ai backend"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Finish setup"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
+msgid ""
+"For maximum effectiveness, bring your device inside and connect to a good USB-C adapter and Wi-Fi weekly.\n"
+"\n"
+"Firehose Mode can also work while you're driving if connected to a hotspot or unlimited SIM card."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/onroad/navigation.py
+msgid "GPS fix: no"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/onroad/navigation.py
+msgid "GPS fix: yes"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "Grant SSH access to all public keys in your GitHub settings. Only enter your own username."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "Hang up cellular data and don't redial. The modem stays registered and the SIM is untouched. Remote access over cellular data is unavailable while this is enabled."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
+msgid "INACTIVE: connect to an unmetered network"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "If it does not have a clear view of the driver, unplug and remount before continuing."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "If you do not connect to the internet, openpilot won't engage in {} hour."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "If you do not connect to the internet, openpilot won't engage in {} hours."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Immediately connect to the internet to check for updates"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "It will not connect or upload to comma.ai servers, and receives no support from comma.ai. If this is a device purchased at comma.ai/shop, open a ticket at https://comma.ai/support."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Jetlink unavailable: {}"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+#: openpilot/starpilot/longitudinal/enhanced_stop_hold.py
+msgid "Keep Enhanced Stops held until you manually resume, even if a traffic light appears to turn green."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid ""
+"Let the driving model control gas and brakes.\n"
+"Includes stopping for red lights and stop signs.\n"
+"Set speed is a maximum, not a target.\n"
+"These are alpha features. Expect mistakes.\n"
+"The path colors show acceleration and braking."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/onroad/navigation.py
+msgid "Map frames: no"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/onroad/navigation.py
+msgid "Map frames: yes"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/initial_cruise_speed.py
+msgid ""
+"Max speed when engaging openpilot.\n"
+"If you are already driving faster, your current speed is used.\n"
+"Resume restores the previous max speed."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py
+msgid "Metered prevents large uploads on this Wi-Fi connection. Default uses the network's detected setting."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid "Monitor the driver even when openpilot is not engaged."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "Mount the device within 4° left or right and 5° up or 9° down. openpilot calibrates continuously; resetting is rarely needed. Resetting clears learned calibration."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "Next, we'll check if comma four can detect the driver properly."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
+msgid "No, we selectively pull a subset of your segments."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
+msgid "Nope, just drive as you normally would."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid "On selects right-hand; Off selects left-hand for the next drive. Automatic side detection continues."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "On this car, openpilot defaults to the stock system's built-in ACC."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Pair your device with comma connect to view recent drives and bookmarked routes."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/onroad/cabin_camera_dialog.py
+msgid "Pay Attention - level {}"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "Please connect to Wi-Fi to complete initial pairing."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "Please connect to Wi-Fi to fetch your key."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "Please connect to Wi-Fi to update."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Poor visibility detected for driver monitoring"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py
+msgid "Prevent large uploads over the cellular connection."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "Preview the cabin camera to check driver monitoring visibility. The vehicle must be off."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid ""
+"Record microphone audio while driving.\n"
+"Audio is included in dashcam videos in comma connect."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "Remount if your face is blocked, or driver monitoring has difficulty tracking your face."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "Remove openpilot from this device."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Restart the car to retry."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/onroad/navigation.py
+msgid "Route: no"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/onroad/navigation.py
+msgid "Route: yes"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "SSH keys"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "Select the software branch to download on the next update check."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py
+msgid "Set the access point name required by your cellular carrier. Leave blank for automatic configuration."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py
+msgid "Share the device's internet connection through a Wi-Fi hotspot."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "Sharing your data with comma helps improve openpilot for everyone."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "Show touch locations and the UI frame rate."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid ""
+"Standard is recommended.\n"
+"Aggressive follows closer, with firmer gas and braking.\n"
+"Relaxed leaves more space.\n"
+"Use the steering wheel distance button on supported cars."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Switch to the release-chestnut branch to use chestnut-class models."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "System cooling down before starting. Current internal component temperature: {}"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "This requests openpilot longitudinal control after a verified vehicle takeover at startup."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/onroad/cabin_camera_dialog.py
+msgid "Touch Wheel - level {}"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Turn ignition off, then tap to acknowledge. Have the cause checked before re-engaging."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "Turn-by-turn navigation with a route map. Set a destination from comma connect."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Unable to acknowledge"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Unable to download updates"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Uninstall and re-install if this error persists."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Update available"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid "Upload cabin camera data to help improve driver monitoring."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Uploads ignored due to a potential detected safety policy violation"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "Use Android Debug Bridge (ADB) over USB or the network."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "Use StarPilot speed control instead of stock adaptive cruise control."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "Use alpha openpilot longitudinal control instead of stock ACC. This may disable Automatic Emergency Braking (AEB)."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "WARNING: alpha longitudinal control may disable Automatic Emergency Braking (AEB)"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/onroad/navigation.py
+msgid "Waiting for route"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid ""
+"Warn when you drift across a detected lane line.\n"
+"Only above 31 mph (50 km/h), with no turn signal."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
+msgid "What's a good USB-C adapter?"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
+msgid "Yes, only upstream openpilot (and particular forks) are able to be used for training."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "You must accept the Terms & Conditions to use openpilot."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Your car is either unsupported or its ECUs are not recognized. Please submit a pull request to add the firmware versions to the proper vehicle. Need help? Join discord.comma.ai."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid "account"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "add profile"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "allow data uploading"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "alpha longitudinal"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid "always-on driver monitor"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py
+msgid "apn settings"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "cabin camera data"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/onroad/augmented_road_view.py
+msgid "camera switching"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py
+msgid "cellular metered"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "check for update"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "checking version metadata..."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid ""
+"claim\n"
+"prime trial"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "claim prime trial"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid "connect lets you review recent driving footage and bookmark events."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py
+msgid "connecting..."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid ""
+"decline &\n"
+"uninstall"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "device ID"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "disable cellular"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid "disengage on accelerator"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "do you want to share video data for training?"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "download update"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid ""
+"driver\n"
+"camera preview"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/onroad/augmented_road_view.py
+msgid "driver camera unavailable"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid ""
+"driver monitoring\n"
+"check"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "enable ADB"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "enable SSH"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid ""
+"enable alpha\n"
+"longitudinal"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid "enable openpilot"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py
+msgid "enable roaming"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py
+msgid "enable tethering"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "enabling alpha longitudinal"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py
+msgid "enter APN..."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "enter GitHub username..."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "enter a nickname..."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py
+msgid "enter password..."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py
+msgid "esim"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "esim error"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid "experimental mode"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "failed to update"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "fast update selected branch"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid "finish setup"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py
+msgid "forgetting..."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "hold QR code to camera"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/initial_cruise_speed.py
+msgid "initial max speed"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "install now"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "installing profile"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid ""
+"joystick debug\n"
+"mode"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid "lane departure warnings"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py
+msgid "loading..."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "looking for driver"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid ""
+"make sure comma\n"
+"four can see your face"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid "manage prime"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "navigation (alpha)"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py
+msgid "network usage"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "nickname"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py
+msgid "no sim"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "no, don't upload"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "not an LPA code"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py
+msgid "not connected"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py
+msgid "not in range"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid "not subscribed"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py
+msgid "obtaining IP..."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "openpilot detected a change in the device's mounting position"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
+msgid ""
+"openpilot learns to drive by watching humans, like you, drive.\n"
+"\n"
+"Firehose Mode allows you to maximize your training data uploads to improve openpilot's driving models. More data means bigger models, which means better Experimental Mode."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "openpilot uses the cabin camera to check if the driver is distracted."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "openpilot was unable to identify your car"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "openpilot won't automatically start until it connects to internet to check for updates."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "or go to https://comma.ai/terms"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "pair to connect"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "please wait"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "please wait."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "please wait.."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "please wait..."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid "prime adds 24/7 LTE to device and 1 year of cloud storage in connect."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid "prime also includes commacare extended device warranty."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid "prime lets you view live video and GPS location remotely in connect."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid "record & upload cabin camera"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid "record & upload mic audio"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "regulatory info"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "reset calibration"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid ""
+"reset driver\n"
+"monitoring"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "restore previous version"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid ""
+"review\n"
+"training guide"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid "right hand driving"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid "safe mode"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "scan QR code"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid "scan QR code or visit {}"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid "scan to claim trial"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid ""
+"scan to manage\n"
+"prime status"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid ""
+"scan to open\n"
+"device prime settings"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/widgets/dialog.py
+msgid "scroll for details"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "scroll to continue"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py
+msgid "searching for networks"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "serial"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py
+msgid "sim"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py
+msgid "sim (...{})"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid ""
+"slide to\n"
+"fast update selected branch"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid ""
+"slide to\n"
+"power off"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid ""
+"slide to\n"
+"reboot"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid ""
+"slide to\n"
+"reset"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid ""
+"slide to\n"
+"reset driver monitoring"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid ""
+"slide to\n"
+"restore previous version"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid ""
+"slide to\n"
+"uninstall"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "slide to delete"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py
+msgid "slide to forget"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py
+msgid "starting..."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "swipe for QR code"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "target branch"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid ""
+"terms &\n"
+"conditions"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid ""
+"terms and\n"
+"conditions"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py
+msgid "tethering"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py
+msgid "tethering password"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid ""
+"try prime for\n"
+"30 days"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "ui debug mode"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "uninstall openpilot"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py
+msgid "unsupported"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "up to date"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid ""
+"updater failed\n"
+"to respond"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "updating..."
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid ""
+"upgrade\n"
+"to prime"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid "upgrade to prime"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid "use metric units"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "what is openpilot?"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py
+msgid "wi-fi"
+msgstr ""
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py
+msgid "wrong password"
 msgstr ""
