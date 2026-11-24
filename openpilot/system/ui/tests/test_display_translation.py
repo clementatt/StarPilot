@@ -61,3 +61,26 @@ def test_ui_label_placeholders_localize_but_user_names_stay_literal():
   templates = display_templates(messages)
   assert translate_display('Reset Language to default', messages, templates) == 'Sprache zurücksetzen'
   assert translate_display('Saved for Home', messages, templates) == 'Gespeichert für Home'
+
+
+def test_separated_parts_translate_one_by_one_unless_the_template_has_its_own_separator():
+  messages = {'{} remaining': 'Quedan {}', 'Updating drive history': 'Actualizando el historial',
+              '{} AOL steering only · {}/{} drives measured': '{} solo dirección AOL · {}/{} trayectos medidos',
+              '{} AOL steering only': '{} solo AOL'}
+  templates = display_templates(messages)
+  assert translate_display('Updating drive history · 3 remaining', messages, templates) == 'Actualizando el historial · Quedan 3'
+  assert translate_display('3 remaining', messages, templates) == 'Quedan 3'
+  assert translate_display('12% AOL steering only · 3/5 drives measured', messages, templates) == \
+    '12% solo dirección AOL · 3/5 trayectos medidos'
+  # A middle dot without surrounding spaces is part of the value, not a separator.
+  assert translate_display('A·B remaining', messages, templates) == 'Quedan A·B'
+
+
+def test_templates_of_only_one_letter_units_need_a_number():
+  messages = {'{}h {}m': '{} 小时 {} 分', '{} to {}': '{} 至 {}'}
+  templates = display_templates(messages)
+  assert translate_display('1h 05m', messages, templates) == '1 小时 05 分'
+  assert translate_display('Smith Farm', messages, templates) == 'Smith Farm'
+  assert translate_display('Search by platform', messages, templates) == 'Search by platform'
+  assert translate_display('Set to zero', messages, templates) == 'Set to zero'
+  assert translate_display('5 to 10', messages, templates) == '5 至 10'

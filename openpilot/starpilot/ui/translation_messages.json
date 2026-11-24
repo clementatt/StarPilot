@@ -28078,12 +28078,6 @@
       ]
     },
     {
-      "source": "{} minute{}",
-      "refs": [
-        "openpilot/starpilot/ui/onroad_stopped_timer.py"
-      ]
-    },
-    {
       "source": "{} models",
       "refs": [
         "openpilot/starpilot/ui/vehicle_compact.py"
@@ -28118,18 +28112,6 @@
       "source": "{} samples / 30 s · robust error {} m/s²",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/plots.js"
-      ]
-    },
-    {
-      "source": "{} satellite{} locked",
-      "refs": [
-        "openpilot/starpilot/ui/onroad_map.py"
-      ]
-    },
-    {
-      "source": "{} second{}",
-      "refs": [
-        "openpilot/starpilot/ui/onroad_stopped_timer.py"
       ]
     },
     {
@@ -29927,12 +29909,6 @@
       ]
     },
     {
-      "source": "{} minute{} Left",
-      "refs": [
-        "openpilot/selfdrive/selfdrived/events.py"
-      ]
-    },
-    {
       "source": "{} missing recording {}",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/replay.js"
@@ -30102,18 +30078,6 @@
     },
     {
       "source": "{} days",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/home.js"
-      ]
-    },
-    {
-      "source": "{} alert",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/home.js"
-      ]
-    },
-    {
-      "source": "{} alerts",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/home.js"
       ]
@@ -31877,7 +31841,8 @@
       "refs": [
         "openpilot/starpilot/galaxy/web/js/spotify.js",
         "openpilot/starpilot/galaxy/web/js/starport.js",
-        "openpilot/starpilot/ui/onroad_map.py"
+        "openpilot/starpilot/ui/onroad_map.py",
+        "openpilot/starpilot/ui/onroad_stopped_timer.py"
       ]
     },
     {
@@ -31885,12 +31850,14 @@
       "refs": [
         "openpilot/starpilot/galaxy/web/js/spotify.js",
         "openpilot/starpilot/galaxy/web/js/starport.js",
-        "openpilot/starpilot/ui/onroad_map.py"
+        "openpilot/starpilot/ui/onroad_map.py",
+        "openpilot/starpilot/ui/onroad_stopped_timer.py"
       ]
     },
     {
       "source": "{} minute Left",
       "refs": [
+        "openpilot/selfdrive/selfdrived/events.py",
         "openpilot/starpilot/galaxy/web/js/spotify.js",
         "openpilot/starpilot/galaxy/web/js/starport.js",
         "openpilot/starpilot/ui/onroad_map.py"
@@ -31899,6 +31866,7 @@
     {
       "source": "{} minutes Left",
       "refs": [
+        "openpilot/selfdrive/selfdrived/events.py",
         "openpilot/starpilot/galaxy/web/js/spotify.js",
         "openpilot/starpilot/galaxy/web/js/starport.js",
         "openpilot/starpilot/ui/onroad_map.py"
@@ -31909,7 +31877,8 @@
       "refs": [
         "openpilot/starpilot/galaxy/web/js/spotify.js",
         "openpilot/starpilot/galaxy/web/js/starport.js",
-        "openpilot/starpilot/ui/onroad_map.py"
+        "openpilot/starpilot/ui/onroad_map.py",
+        "openpilot/starpilot/ui/onroad_stopped_timer.py"
       ]
     },
     {
@@ -31917,7 +31886,8 @@
       "refs": [
         "openpilot/starpilot/galaxy/web/js/spotify.js",
         "openpilot/starpilot/galaxy/web/js/starport.js",
-        "openpilot/starpilot/ui/onroad_map.py"
+        "openpilot/starpilot/ui/onroad_map.py",
+        "openpilot/starpilot/ui/onroad_stopped_timer.py"
       ]
     },
     {
@@ -32067,6 +32037,12 @@
       "source": "Blindspot Alert While Lateral Is Off",
       "refs": [
         "openpilot/starpilot/ui/sounds_owner.py"
+      ]
+    },
+    {
+      "source": "Test alert",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js"
       ]
     },
     {

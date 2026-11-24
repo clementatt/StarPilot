@@ -20,7 +20,9 @@ function templates(messages) {
     const fields = tokens(source), target = tokens(translated)
     if (!fields.length || fields.length !== target.length) continue
     let offset = 0, pattern = "^"
-    const keys = fields.map((field, index) => field[1].split(/[!:]/, 1)[0] || String(index))
+    // Unnamed fields are numbered among themselves, exactly as they are when the translation is filled in.
+    let unnamed = 0
+    const keys = fields.map(field => field[1].split(/[!:]/, 1)[0] || String(unnamed++))
     for (const field of fields) {
       pattern += escapeRegex(source.slice(offset, field.index)) + "([^\\n]*?)"
       offset = field.index + field[0].length
@@ -28,8 +30,9 @@ function templates(messages) {
     pattern += escapeRegex(source.slice(offset)) + "$"
     const literal = source.replace(/\{[^{}]*\}/g, "").toLowerCase()
     const stops = new Set(["to", "of", "in", "on", "at", "by", "for", "or", "and", "a", "the"])
-    const generic = !(literal.match(/[a-z]+/g) || []).some(word => !stops.has(word))
-    result.push({ generic, specificity: source.length - fields.reduce((sum, field) => sum + field[0].length, 0),
+    // Connectives and single-letter unit marks ("{}h {}m") need a number, so names such as "Smith Farm" stay literal.
+    const generic = !(literal.match(/[a-z]+/g) || []).some(word => word.length > 1 && !stops.has(word))
+    result.push({ generic, dotted: literal.includes("·"), specificity: source.length - fields.reduce((sum, field) => sum + field[0].length, 0),
       prefix: source.slice(0, fields[0].index), pattern: new RegExp(pattern), keys, translated })
   }
   result.sort((a, b) => b.specificity - a.specificity || a.keys.length - b.keys.length)
@@ -41,8 +44,10 @@ export function translateText(source, messages) {
   const text = source.trim()
   let translated = Object.hasOwn(messages, text) ? messages[text] : text
   if (translated === text && text.length <= 1024) {
+    // Text joined by " · " is translated segment by segment below, unless a template spans the separator itself.
+    const segmented = /\s+·\s+/.test(text)
     for (const template of templates(messages)) {
-      if (!text.startsWith(template.prefix)) continue
+      if ((segmented && !template.dotted) || !text.startsWith(template.prefix)) continue
       const matched = template.pattern.exec(text)
       if (!matched || template.generic && !matched.slice(1).some(value => /\d/.test(value))) continue
       const values = Object.fromEntries(template.keys.map((key, index) => [key, matched[index + 1]]))

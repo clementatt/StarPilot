@@ -101,6 +101,8 @@ from openpilot.starpilot.ui.shell import ShellInput, ShellMode, ShellRequest, Sh
 from openpilot.starpilot.ui.software_state import DownloadLabel, SoftwareAction, SoftwareRequest
 from openpilot.starpilot.ui.toggles_state import Personality, ToggleKey, ToggleRequest
 from openpilot.system.ui.lib.application import MouseEvent, MousePos, gui_app
+from openpilot.system.ui.lib.display_translation import DisplayText
+from openpilot.system.ui.lib.multilang import tr_display
 from openpilot.system.ui.widgets import Widget
 from openpilot.system.ui.widgets.list_view import button_item, text_item, toggle_item
 from openpilot.starpilot.ui.compact_settings_page import StarCompactSettings as StarCompactSettings
@@ -1558,7 +1560,8 @@ class StarShellSession(TeslaSpeedActions):
           self.view.settings.render_rail(snapshot.settings, selected=snapshot.selected)
         if self.notice and time.monotonic() < self.notice_until:
           rl.draw_rectangle(0, self.profile.size[1] - 42, self.profile.size[0], 42, rl.Color(0, 0, 0, 220))
-          self.fonts.draw(self.notice[:65], FontRole.MEDIUM, 23 if self.profile == Profile.COMPACT else 27,
+          # Translate the whole notice first; a truncated English notice matches no translation.
+          self.fonts.draw(DisplayText(tr_display(self.notice))[:65], FontRole.MEDIUM, 23 if self.profile == Profile.COMPACT else 27,
                           12, self.profile.size[1] - 37)
 
   def _unavailable(self, label: str) -> None:

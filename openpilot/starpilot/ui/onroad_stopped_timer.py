@@ -52,8 +52,9 @@ class StoppedTimer:
 
 def duration_text(seconds: int) -> tuple[str, str]:
   minutes, remainder = divmod(seconds, 60)
-  return (f"{minutes} minute{'s' if minutes != 1 else ''}",
-          f"{remainder} second{'s' if remainder != 1 else ''}")
+  # Whole singular/plural phrases, so each one can be translated on its own.
+  return (f"{minutes} minute" if minutes == 1 else f"{minutes} minutes",
+          f"{remainder} second" if remainder == 1 else f"{remainder} seconds")
 
 
 def duration_color(seconds: int) -> tuple[int, int, int]:

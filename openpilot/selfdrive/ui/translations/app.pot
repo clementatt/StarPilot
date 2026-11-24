@@ -20776,10 +20776,6 @@ msgstr ""
 msgid "{} installed · {} missing"
 msgstr ""
 
-#: openpilot/starpilot/ui/onroad_stopped_timer.py
-msgid "{} minute{}"
-msgstr ""
-
 #: openpilot/starpilot/ui/vehicle_compact.py
 msgid "{} models"
 msgstr ""
@@ -20803,14 +20799,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/plots.js
 msgid "{} samples / 30 s · robust error {} m/s²"
-msgstr ""
-
-#: openpilot/starpilot/ui/onroad_map.py
-msgid "{} satellite{} locked"
-msgstr ""
-
-#: openpilot/starpilot/ui/onroad_stopped_timer.py
-msgid "{} second{}"
 msgstr ""
 
 #: openpilot/starpilot/ui/replay_settings.py
@@ -22011,10 +21999,6 @@ msgstr ""
 msgid "{} hex"
 msgstr ""
 
-#: openpilot/selfdrive/selfdrived/events.py
-msgid "{} minute{} Left"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/replay.js
 msgid "{} missing recording {}"
 msgstr ""
@@ -22129,14 +22113,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/home.js
 msgid "{} days"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/home.js
-msgid "{} alert"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/home.js
-msgid "{} alerts"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/home.js
@@ -23320,21 +23296,25 @@ msgstr ""
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 #: openpilot/starpilot/galaxy/web/js/starport.js
 #: openpilot/starpilot/ui/onroad_map.py
+#: openpilot/starpilot/ui/onroad_stopped_timer.py
 msgid "{} minute"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 #: openpilot/starpilot/galaxy/web/js/starport.js
 #: openpilot/starpilot/ui/onroad_map.py
+#: openpilot/starpilot/ui/onroad_stopped_timer.py
 msgid "{} minutes"
 msgstr ""
 
+#: openpilot/selfdrive/selfdrived/events.py
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 #: openpilot/starpilot/galaxy/web/js/starport.js
 #: openpilot/starpilot/ui/onroad_map.py
 msgid "{} minute Left"
 msgstr ""
 
+#: openpilot/selfdrive/selfdrived/events.py
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 #: openpilot/starpilot/galaxy/web/js/starport.js
 #: openpilot/starpilot/ui/onroad_map.py
@@ -23344,12 +23324,14 @@ msgstr ""
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 #: openpilot/starpilot/galaxy/web/js/starport.js
 #: openpilot/starpilot/ui/onroad_map.py
+#: openpilot/starpilot/ui/onroad_stopped_timer.py
 msgid "{} second"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 #: openpilot/starpilot/galaxy/web/js/starport.js
 #: openpilot/starpilot/ui/onroad_map.py
+#: openpilot/starpilot/ui/onroad_stopped_timer.py
 msgid "{} seconds"
 msgstr ""
 
@@ -23505,4 +23487,8 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Storage & Account"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js
+msgid "Test alert"
 msgstr ""
