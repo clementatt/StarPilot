@@ -26732,6 +26732,7 @@
     {
       "source": "switch",
       "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py",
         "openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js"
       ]
     },
@@ -31594,6 +31595,30 @@
       ]
     },
     {
+      "source": "1. openpilot is a driver assistance system.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/onboarding.py"
+      ]
+    },
+    {
+      "source": "2. You must pay attention at all times.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/onboarding.py"
+      ]
+    },
+    {
+      "source": "3. You must be ready to take over at any time.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/onboarding.py"
+      ]
+    },
+    {
+      "source": "4. You are fully responsible for driving the car.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/onboarding.py"
+      ]
+    },
+    {
       "source": "A different verified model is chosen each start. Big GPU models are used. {} excluded. Favorites only mark your preferred models.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/models.js"
@@ -31603,6 +31628,18 @@
       "source": "A different verified model is chosen each start. Small on-device models are used. {} excluded. Favorites only mark your preferred models.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "ACTIVE",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/firehose.py"
+      ]
+    },
+    {
+      "source": "Access the device remotely using your SSH keys.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
       ]
     },
     {
@@ -31624,9 +31661,28 @@
       ]
     },
     {
+      "source": "Allow cellular data roaming.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py"
+      ]
+    },
+    {
       "source": "Allow this adapter to pair?",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Always Hold Enhanced Stops",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py",
+        "openpilot/starpilot/longitudinal/enhanced_stop_hold.py"
+      ]
+    },
+    {
+      "source": "Any fast phone or laptop charger should be fine.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/firehose.py"
       ]
     },
     {
@@ -31645,6 +31701,18 @@
       "source": "Auto install will run at {label} while offroad.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Awareness: {}%",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/onroad/cabin_camera_dialog.py"
+      ]
+    },
+    {
+      "source": "Background download: {label}",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/software.py"
       ]
     },
     {
@@ -31799,6 +31867,18 @@
       ]
     },
     {
+      "source": "Changes apply after the next reboot",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "Check USB and 12V connections, then restart the car.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
       "source": "Check for new models",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/models.js"
@@ -31811,9 +31891,93 @@
       ]
     },
     {
+      "source": "Check the 12V connection, then restart the car.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Check the GPU is securely seated, then restart the car.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Check the USB cable.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Check the USB cable. The current speed is {}.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
       "source": "Checked {label}",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Chestnut GPU unavailable",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Chestnut USB link is slow",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Chestnut detected",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Chestnut model error",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Chestnut not detected",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Chestnut overheated",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Chestnut power disconnected",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Chestnut power lost",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Chestnut power restored",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Chestnut update failed",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
       ]
     },
     {
@@ -31835,9 +31999,57 @@
       ]
     },
     {
+      "source": "Clear saved wheel-side detection. Automatic detection restarts next drive.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py"
+      ]
+    },
+    {
+      "source": "Click to update",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Cloud Provider",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "Cloud Provider is unavailable. Refresh and try again.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "Cloud account and recordings",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py"
+      ]
+    },
+    {
+      "source": "Connect to internet to check for updates",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
       "source": "Connecting to the selected device…",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Contact comma.ai/support if you believe this was made in error.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Control the car with a joystick for debugging.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
       ]
     },
     {
@@ -31856,6 +32068,18 @@
       "source": "Customize quick select",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/settings.js"
+      ]
+    },
+    {
+      "source": "Device must be registered with the comma.ai backend to pair.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py"
+      ]
+    },
+    {
+      "source": "Device temperature too high",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
       ]
     },
     {
@@ -31966,6 +32190,69 @@
       "source": "Disable {label}? This changes Panda firmware after the next device restart.",
       "refs": [
         "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Disengage to fast update selected branch",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py",
+        "openpilot/selfdrive/ui/mici/layouts/settings/software.py"
+      ]
+    },
+    {
+      "source": "Disengage to power off",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py"
+      ]
+    },
+    {
+      "source": "Disengage to reboot",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py"
+      ]
+    },
+    {
+      "source": "Disengage to reset",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py"
+      ]
+    },
+    {
+      "source": "Disengage to reset driver monitoring",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py"
+      ]
+    },
+    {
+      "source": "Disengage to restore previous version",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py",
+        "openpilot/selfdrive/ui/mici/layouts/settings/software.py"
+      ]
+    },
+    {
+      "source": "Disengage to uninstall",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py",
+        "openpilot/selfdrive/ui/mici/layouts/settings/software.py"
+      ]
+    },
+    {
+      "source": "Do all of my segments get pulled in Firehose Mode?",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/firehose.py"
+      ]
+    },
+    {
+      "source": "Does it matter how or where I drive?",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/firehose.py"
+      ]
+    },
+    {
+      "source": "Does it matter which software I run?",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/firehose.py"
       ]
     },
     {
@@ -32090,9 +32377,45 @@
       ]
     },
     {
+      "source": "Enable to use openpilot driver assistance.\nDisable to use your car's stock driver assistance.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/toggles.py"
+      ]
+    },
+    {
       "source": "Enable {label}? This changes Panda firmware after the next device restart.",
       "refs": [
         "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Ensure good airflow.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Ensure the device has a clear view of the driver. This can be checked in the device settings. Extreme lighting conditions and/or unconventional mounting positions may also trigger this alert.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Ensure the device is fully seated in the mount and the mount is firmly secured to the windshield.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Ensure the software is correctly installed",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Ensure you're connected to the internet and try again.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py"
       ]
     },
     {
@@ -32114,6 +32437,18 @@
       ]
     },
     {
+      "source": "Excessive lateral actuation detected on your last drive",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Excessive longitudinal actuation detected on your last drive",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
       "source": "Expires in {} day ({})",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
@@ -32129,6 +32464,18 @@
       "source": "Expires within a day ({})",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Failed to get available branches. Ensure you're connected to the internet and try again.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/software.py"
+      ]
+    },
+    {
+      "source": "Failed to register with comma.ai backend",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
       ]
     },
     {
@@ -32150,6 +32497,24 @@
       ]
     },
     {
+      "source": "Finish setup",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "For maximum effectiveness, bring your device inside and connect to a good USB-C adapter and Wi-Fi weekly.\n\nFirehose Mode can also work while you're driving if connected to a hotspot or unlimited SIM card.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/firehose.py"
+      ]
+    },
+    {
+      "source": "Frequently Asked Questions",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/firehose.py"
+      ]
+    },
+    {
       "source": "From Spotify’s Downloads page, to this computer",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/spotify.js"
@@ -32162,15 +32527,69 @@
       ]
     },
     {
+      "source": "GPS fix: no",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/onroad/navigation.py"
+      ]
+    },
+    {
+      "source": "GPS fix: yes",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/onroad/navigation.py"
+      ]
+    },
+    {
       "source": "GPS: {label}",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/navigation.js"
       ]
     },
     {
+      "source": "Grant SSH access to all public keys in your GitHub settings. Only enter your own username.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "Hang up cellular data and don't redial. The modem stays registered and the SIM is untouched. Remote access over cellular data is unavailable while this is enabled.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
       "source": "Hover or tap a segment",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "INACTIVE: connect to an unmetered network",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/firehose.py"
+      ]
+    },
+    {
+      "source": "If it does not have a clear view of the driver, unplug and remount before continuing.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/onboarding.py"
+      ]
+    },
+    {
+      "source": "If you do not connect to the internet, openpilot won't engage in {} hour.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "If you do not connect to the internet, openpilot won't engage in {} hours.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Immediately connect to the internet to check for updates",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
       ]
     },
     {
@@ -32186,9 +32605,70 @@
       ]
     },
     {
+      "source": "It will not connect or upload to comma.ai servers, and receives no support from comma.ai. If this is a device purchased at comma.ai/shop, open a ticket at https://comma.ai/support.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Jetlink unavailable: {}",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Keep Enhanced Stops held until you manually resume, even if a traffic light appears to turn green.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py",
+        "openpilot/starpilot/longitudinal/enhanced_stop_hold.py"
+      ]
+    },
+    {
+      "source": "Let the driving model control gas and brakes.\nIncludes stopping for red lights and stop signs.\nSet speed is a maximum, not a target.\nThese are alpha features. Expect mistakes.\nThe path colors show acceleration and braking.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/toggles.py"
+      ]
+    },
+    {
       "source": "Longitudinal: {label}",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/diagnostic-tools.js"
+      ]
+    },
+    {
+      "source": "Map frames: no",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/onroad/navigation.py"
+      ]
+    },
+    {
+      "source": "Map frames: yes",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/onroad/navigation.py"
+      ]
+    },
+    {
+      "source": "Max speed when engaging openpilot.\nIf you are already driving faster, your current speed is used.\nResume restores the previous max speed.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/initial_cruise_speed.py"
+      ]
+    },
+    {
+      "source": "Metered prevents large uploads on this Wi-Fi connection. Default uses the network's detected setting.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py"
+      ]
+    },
+    {
+      "source": "Monitor the driver even when openpilot is not engaged.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/toggles.py"
+      ]
+    },
+    {
+      "source": "Mount the device within 4° left or right and 5° up or 9° down. openpilot calibrates continuously; resetting is rarely needed. Resetting clears learned calibration.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py"
       ]
     },
     {
@@ -32204,9 +32684,39 @@
       ]
     },
     {
+      "source": "Next, we'll check if comma four can detect the driver properly.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/onboarding.py"
+      ]
+    },
+    {
+      "source": "No, we selectively pull a subset of your segments.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/firehose.py"
+      ]
+    },
+    {
+      "source": "Nope, just drive as you normally would.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/firehose.py"
+      ]
+    },
+    {
       "source": "Nothing found yet. Keep your adapter in pairing mode.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "On selects right-hand; Off selects left-hand for the next drive. Automatic side detection continues.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/toggles.py"
+      ]
+    },
+    {
+      "source": "On this car, openpilot defaults to the stock system's built-in ACC.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
       ]
     },
     {
@@ -32231,6 +32741,12 @@
       "source": "Pair with your car",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Pair your device with comma connect to view recent drives and bookmarked routes.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
       ]
     },
     {
@@ -32264,6 +32780,48 @@
       ]
     },
     {
+      "source": "Pay Attention - level {}",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/onroad/cabin_camera_dialog.py"
+      ]
+    },
+    {
+      "source": "Please connect to Wi-Fi to complete initial pairing.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py"
+      ]
+    },
+    {
+      "source": "Please connect to Wi-Fi to fetch your key.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "Please connect to Wi-Fi to update.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/software.py"
+      ]
+    },
+    {
+      "source": "Poor visibility detected for driver monitoring",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Prevent large uploads over the cellular connection.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py"
+      ]
+    },
+    {
+      "source": "Preview the cabin camera to check driver monitoring visibility. The vehicle must be off.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py"
+      ]
+    },
+    {
       "source": "Previous segment",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/route-workspace.js"
@@ -32288,9 +32846,27 @@
       ]
     },
     {
+      "source": "Record microphone audio while driving.\nAudio is included in dashcam videos in comma connect.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/toggles.py"
+      ]
+    },
+    {
       "source": "Recording drive: {label} · {free} free",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "Remount if your face is blocked, or driver monitoring has difficulty tracking your face.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/onboarding.py"
+      ]
+    },
+    {
+      "source": "Remove openpilot from this device.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/software.py"
       ]
     },
     {
@@ -32354,6 +32930,12 @@
       ]
     },
     {
+      "source": "Restart the car to retry.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
       "source": "Restore layout?",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/toggle-backup.js"
@@ -32363,6 +32945,24 @@
       "source": "Restore toggles?",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/toggle-backup.js"
+      ]
+    },
+    {
+      "source": "Route: no",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/onroad/navigation.py"
+      ]
+    },
+    {
+      "source": "Route: yes",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/onroad/navigation.py"
+      ]
+    },
+    {
+      "source": "SSH keys",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
       ]
     },
     {
@@ -32381,6 +32981,12 @@
       "source": "Searching for your car…",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Select the software branch to download on the next update check.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/software.py"
       ]
     },
     {
@@ -32528,6 +33134,12 @@
       ]
     },
     {
+      "source": "Set the access point name required by your cellular carrier. Leave blank for automatic configuration.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py"
+      ]
+    },
+    {
       "source": "Set {label} to Off?",
       "refs": [
         "openpilot/starpilot/ui/conditional_feature.py"
@@ -32544,6 +33156,18 @@
       "refs": [
         "openpilot/starpilot/galaxy/settings.py",
         "openpilot/starpilot/ui/conditional_feature.py"
+      ]
+    },
+    {
+      "source": "Share the device's internet connection through a Wi-Fi hotspot.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py"
+      ]
+    },
+    {
+      "source": "Sharing your data with comma helps improve openpilot for everyone.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/onboarding.py"
       ]
     },
     {
@@ -32574,6 +33198,12 @@
       "source": "Show top 6",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "Show touch locations and the UI frame rate.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
       ]
     },
     {
@@ -32613,6 +33243,12 @@
       ]
     },
     {
+      "source": "Standard is recommended.\nAggressive follows closer, with firmer gas and braking.\nRelaxed leaves more space.\nUse the steering wheel distance button on supported cars.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/toggles.py"
+      ]
+    },
+    {
       "source": "State: {label}",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/diagnostic-tools.js"
@@ -32628,6 +33264,18 @@
       "source": "Storage: {label}",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "Switch to the release-chestnut branch to use chestnut-class models.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "System cooling down before starting. Current internal component temperature: {}",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
       ]
     },
     {
@@ -32649,6 +33297,12 @@
       ]
     },
     {
+      "source": "This requests openpilot longitudinal control after a verified vehicle takeover at startup.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
       "source": "Totals include recorded portions of {} incomplete drive. Personal records use complete drives.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/home.js"
@@ -32658,6 +33312,18 @@
       "source": "Totals include recorded portions of {} incomplete drives. Personal records use complete drives.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "Touch Wheel - level {}",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/onroad/cabin_camera_dialog.py"
+      ]
+    },
+    {
+      "source": "Turn ignition off, then tap to acknowledge. Have the cause checked before re-engaging.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
       ]
     },
     {
@@ -32673,9 +33339,69 @@
       ]
     },
     {
+      "source": "Turn-by-turn navigation with a route map. Set a destination from comma connect.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "Unable to acknowledge",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Unable to download updates",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
       "source": "Unavailable unresponsive moments",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "Uninstall and re-install if this error persists.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Update available",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Upload cabin camera data to help improve driver monitoring.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/toggles.py"
+      ]
+    },
+    {
+      "source": "Uploads ignored due to a potential detected safety policy violation",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Use Android Debug Bridge (ADB) over USB or the network.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "Use StarPilot speed control instead of stock adaptive cruise control.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "Use alpha openpilot longitudinal control instead of stock ACC. This may disable Automatic Emergency Braking (AEB).",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
       ]
     },
     {
@@ -32697,15 +33423,814 @@
       ]
     },
     {
+      "source": "WARNING: alpha longitudinal control may disable Automatic Emergency Braking (AEB)",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "Waiting for route",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/onroad/navigation.py"
+      ]
+    },
+    {
       "source": "Waiting for the device to switch {label}…",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/drive-state.js"
       ]
     },
     {
+      "source": "Warn when you drift across a detected lane line.\nOnly above 31 mph (50 km/h), with no turn signal.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/toggles.py"
+      ]
+    },
+    {
       "source": "Warns when signaling toward a detected blind-spot vehicle with steering assistance off or paused. Independent of Loud Blindspot Alert. Hazards do not trigger it.",
       "refs": [
         "openpilot/starpilot/ui/sounds_owner.py"
+      ]
+    },
+    {
+      "source": "What's a good USB-C adapter?",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/firehose.py"
+      ]
+    },
+    {
+      "source": "Yes, only upstream openpilot (and particular forks) are able to be used for training.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/firehose.py"
+      ]
+    },
+    {
+      "source": "You must accept the Terms & Conditions to use openpilot.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/onboarding.py"
+      ]
+    },
+    {
+      "source": "Your car is either unsupported or its ECUs are not recognized. Please submit a pull request to add the firmware versions to the proper vehicle. Need help? Join discord.comma.ai.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "account",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py"
+      ]
+    },
+    {
+      "source": "add profile",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py"
+      ]
+    },
+    {
+      "source": "allow data uploading",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/onboarding.py"
+      ]
+    },
+    {
+      "source": "alpha longitudinal",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "always-on driver monitor",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/toggles.py"
+      ]
+    },
+    {
+      "source": "apn settings",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py"
+      ]
+    },
+    {
+      "source": "cabin camera data",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/onboarding.py"
+      ]
+    },
+    {
+      "source": "camera switching",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/onroad/augmented_road_view.py"
+      ]
+    },
+    {
+      "source": "cellular metered",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py"
+      ]
+    },
+    {
+      "source": "check for update",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/software.py"
+      ]
+    },
+    {
+      "source": "checking version metadata...",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/software.py"
+      ]
+    },
+    {
+      "source": "claim\nprime trial",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py"
+      ]
+    },
+    {
+      "source": "claim prime trial",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py"
+      ]
+    },
+    {
+      "source": "connect lets you review recent driving footage and bookmark events.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py"
+      ]
+    },
+    {
+      "source": "connecting...",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py",
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py"
+      ]
+    },
+    {
+      "source": "decline &\nuninstall",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/onboarding.py"
+      ]
+    },
+    {
+      "source": "device ID",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py"
+      ]
+    },
+    {
+      "source": "disable cellular",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "disengage on accelerator",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/toggles.py"
+      ]
+    },
+    {
+      "source": "do you want to share video data for training?",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/onboarding.py"
+      ]
+    },
+    {
+      "source": "download update",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/software.py"
+      ]
+    },
+    {
+      "source": "driver\ncamera preview",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py"
+      ]
+    },
+    {
+      "source": "driver camera unavailable",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/onroad/augmented_road_view.py"
+      ]
+    },
+    {
+      "source": "driver monitoring\ncheck",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/onboarding.py"
+      ]
+    },
+    {
+      "source": "enable ADB",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "enable SSH",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "enable alpha\nlongitudinal",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "enable openpilot",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/toggles.py"
+      ]
+    },
+    {
+      "source": "enable roaming",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py"
+      ]
+    },
+    {
+      "source": "enable tethering",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py"
+      ]
+    },
+    {
+      "source": "enabling alpha longitudinal",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "enter APN...",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py"
+      ]
+    },
+    {
+      "source": "enter GitHub username...",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "enter a nickname...",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py"
+      ]
+    },
+    {
+      "source": "enter password...",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py",
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py"
+      ]
+    },
+    {
+      "source": "esim",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py"
+      ]
+    },
+    {
+      "source": "esim error",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py"
+      ]
+    },
+    {
+      "source": "experimental mode",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/toggles.py"
+      ]
+    },
+    {
+      "source": "failed to update",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/software.py"
+      ]
+    },
+    {
+      "source": "fast update selected branch",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/software.py"
+      ]
+    },
+    {
+      "source": "finish setup",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py"
+      ]
+    },
+    {
+      "source": "forgetting...",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py"
+      ]
+    },
+    {
+      "source": "hold QR code to camera",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py"
+      ]
+    },
+    {
+      "source": "initial max speed",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/initial_cruise_speed.py"
+      ]
+    },
+    {
+      "source": "install now",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/software.py"
+      ]
+    },
+    {
+      "source": "installing profile",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py"
+      ]
+    },
+    {
+      "source": "joystick debug\nmode",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "lane departure warnings",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/toggles.py"
+      ]
+    },
+    {
+      "source": "loading...",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py"
+      ]
+    },
+    {
+      "source": "looking for driver",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/onboarding.py"
+      ]
+    },
+    {
+      "source": "make sure comma\nfour can see your face",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/onboarding.py"
+      ]
+    },
+    {
+      "source": "manage prime",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py"
+      ]
+    },
+    {
+      "source": "navigation (alpha)",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "network usage",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py"
+      ]
+    },
+    {
+      "source": "nickname",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py"
+      ]
+    },
+    {
+      "source": "no sim",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py"
+      ]
+    },
+    {
+      "source": "no, don't upload",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/onboarding.py"
+      ]
+    },
+    {
+      "source": "not an LPA code",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py"
+      ]
+    },
+    {
+      "source": "not connected",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py"
+      ]
+    },
+    {
+      "source": "not in range",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py"
+      ]
+    },
+    {
+      "source": "not subscribed",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py"
+      ]
+    },
+    {
+      "source": "obtaining IP...",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py"
+      ]
+    },
+    {
+      "source": "openpilot detected a change in the device's mounting position",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "openpilot learns to drive by watching humans, like you, drive.\n\nFirehose Mode allows you to maximize your training data uploads to improve openpilot's driving models. More data means bigger models, which means better Experimental Mode.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/firehose.py"
+      ]
+    },
+    {
+      "source": "openpilot uses the cabin camera to check if the driver is distracted.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/onboarding.py"
+      ]
+    },
+    {
+      "source": "openpilot was unable to identify your car",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "openpilot won't automatically start until it connects to internet to check for updates.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "or go to https://comma.ai/terms",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/onboarding.py"
+      ]
+    },
+    {
+      "source": "pair to connect",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py"
+      ]
+    },
+    {
+      "source": "please wait",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py"
+      ]
+    },
+    {
+      "source": "please wait.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py"
+      ]
+    },
+    {
+      "source": "please wait..",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py"
+      ]
+    },
+    {
+      "source": "please wait...",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py"
+      ]
+    },
+    {
+      "source": "prime adds 24/7 LTE to device and 1 year of cloud storage in connect.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py"
+      ]
+    },
+    {
+      "source": "prime also includes commacare extended device warranty.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py"
+      ]
+    },
+    {
+      "source": "prime lets you view live video and GPS location remotely in connect.",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py"
+      ]
+    },
+    {
+      "source": "record & upload cabin camera",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/toggles.py"
+      ]
+    },
+    {
+      "source": "record & upload mic audio",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/toggles.py"
+      ]
+    },
+    {
+      "source": "regulatory info",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py"
+      ]
+    },
+    {
+      "source": "reset calibration",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py"
+      ]
+    },
+    {
+      "source": "reset driver\nmonitoring",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py"
+      ]
+    },
+    {
+      "source": "restore previous version",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/software.py"
+      ]
+    },
+    {
+      "source": "review\ntraining guide",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py"
+      ]
+    },
+    {
+      "source": "right hand driving",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/toggles.py"
+      ]
+    },
+    {
+      "source": "safe mode",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/toggles.py"
+      ]
+    },
+    {
+      "source": "scan QR code",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py"
+      ]
+    },
+    {
+      "source": "scan QR code or visit {}",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py"
+      ]
+    },
+    {
+      "source": "scan to claim trial",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py"
+      ]
+    },
+    {
+      "source": "scan to manage\nprime status",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py"
+      ]
+    },
+    {
+      "source": "scan to open\ndevice prime settings",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py"
+      ]
+    },
+    {
+      "source": "scroll for details",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/widgets/dialog.py"
+      ]
+    },
+    {
+      "source": "scroll to continue",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/onboarding.py",
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "searching for networks",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py"
+      ]
+    },
+    {
+      "source": "serial",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py"
+      ]
+    },
+    {
+      "source": "sim",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py"
+      ]
+    },
+    {
+      "source": "sim (...{})",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py"
+      ]
+    },
+    {
+      "source": "slide to\nfast update selected branch",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py",
+        "openpilot/selfdrive/ui/mici/layouts/settings/software.py"
+      ]
+    },
+    {
+      "source": "slide to\npower off",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py"
+      ]
+    },
+    {
+      "source": "slide to\nreboot",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py"
+      ]
+    },
+    {
+      "source": "slide to\nreset",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py"
+      ]
+    },
+    {
+      "source": "slide to\nreset driver monitoring",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py"
+      ]
+    },
+    {
+      "source": "slide to\nrestore previous version",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py",
+        "openpilot/selfdrive/ui/mici/layouts/settings/software.py"
+      ]
+    },
+    {
+      "source": "slide to\nuninstall",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py",
+        "openpilot/selfdrive/ui/mici/layouts/settings/software.py"
+      ]
+    },
+    {
+      "source": "slide to delete",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py"
+      ]
+    },
+    {
+      "source": "slide to forget",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py"
+      ]
+    },
+    {
+      "source": "starting...",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py"
+      ]
+    },
+    {
+      "source": "swipe for QR code",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/onboarding.py"
+      ]
+    },
+    {
+      "source": "target branch",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/software.py"
+      ]
+    },
+    {
+      "source": "terms &\nconditions",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py"
+      ]
+    },
+    {
+      "source": "terms and\nconditions",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/onboarding.py"
+      ]
+    },
+    {
+      "source": "tethering",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py"
+      ]
+    },
+    {
+      "source": "tethering password",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py"
+      ]
+    },
+    {
+      "source": "try prime for\n30 days",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py"
+      ]
+    },
+    {
+      "source": "ui debug mode",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "uninstall openpilot",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/software.py"
+      ]
+    },
+    {
+      "source": "unsupported",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py"
+      ]
+    },
+    {
+      "source": "up to date",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/software.py"
+      ]
+    },
+    {
+      "source": "updater failed\nto respond",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/software.py"
+      ]
+    },
+    {
+      "source": "updating...",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/software.py"
+      ]
+    },
+    {
+      "source": "upgrade\nto prime",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py"
+      ]
+    },
+    {
+      "source": "upgrade to prime",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py",
+        "openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py"
+      ]
+    },
+    {
+      "source": "use metric units",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/toggles.py"
+      ]
+    },
+    {
+      "source": "what is openpilot?",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/onboarding.py"
+      ]
+    },
+    {
+      "source": "wi-fi",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py"
+      ]
+    },
+    {
+      "source": "wrong password",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py"
       ]
     },
     {
