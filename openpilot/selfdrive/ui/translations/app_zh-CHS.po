@@ -273,6 +273,22 @@ msgstr "关于手机 GPS 与更换手机"
 msgid "About this editor"
 msgstr "关于此编辑器"
 
+#: openpilot/starpilot/ui/drive_mode_notice.py
+msgid "Accel: Eco, Decel: Eco"
+msgstr "加速：经济，减速：经济"
+
+#: openpilot/starpilot/ui/drive_mode_notice.py
+msgid "Accel: Sport+, Decel: Sport"
+msgstr "加速：运动+，减速：运动"
+
+#: openpilot/starpilot/ui/drive_mode_notice.py
+msgid "Accel: Standard, Decel: Standard"
+msgstr "加速：标准，减速：标准"
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Acceleration"
+msgstr "加速"
+
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Acceleration colors"
 msgstr "加速颜色"
@@ -376,6 +392,14 @@ msgstr "实际按延迟配对的转向跟踪误差"
 msgid "Actual full surface coordinates"
 msgstr "实际完整曲面坐标"
 
+#: openpilot/starpilot/longitudinal/developer_tuning.py
+msgid "Actuator Delay"
+msgstr "执行器延迟"
+
+#: openpilot/starpilot/ui/delay_feature.py
+msgid "Actuator delay"
+msgstr "执行器延迟"
+
 #: openpilot/starpilot/galaxy/web/js/bluetooth.js
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Adapter"
@@ -475,6 +499,14 @@ msgid "Adds or subtracts this offset from the accepted speed limit within the di
 msgstr "在显示的速度范围内，为已采用的限速加上或减去此偏移量。"
 
 #: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Adds space behind slow or stopped leads with the StarPilot planner; zero keeps the normal gap."
+msgstr "使用 StarPilot 规划器时，在慢速或静止的前车后方留出更多空间；为零时保持正常间距。"
+
+#: openpilot/starpilot/ui/tesla_set_speed_feature.py
+msgid "Adds the right scroll wheel, right stalk and three-finger screen tap as controls, and lets the comma set the speed on the Tesla's dashboard. Model 3 and Model Y, HW3 or HW4. Checked when the car starts."
+msgstr "增加右滚轮、右拨杆和三指轻点屏幕作为控制按键，并允许 comma 设置 Tesla 仪表盘上的速度。适用于 Model 3 和 Model Y（HW3 或 HW4）。车辆启动时检测。"
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Adjust Aggressive, Standard, Relaxed and Traffic profiles"
 msgstr "调整激进、标准、从容和拥堵配置"
 
@@ -562,9 +594,21 @@ msgstr "按您的来源优先级和偏移，将设定速度调整到已采用的
 msgid "Adopt fixed offsets"
 msgstr "采用固定偏移"
 
+#: openpilot/starpilot/ui/slc_policy_feature.py
+msgid "Adopt higher limits early"
+msgstr "提前采用更高限速"
+
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Adopt limits early"
 msgstr "提前采用限速"
+
+#: openpilot/starpilot/ui/slc_policy_feature.py
+msgid "Adopt lower limits early"
+msgstr "提前采用更低限速"
+
+#: openpilot/starpilot/controllers/wheel_actions.py
+msgid "Adopt speed limit"
+msgstr "采用限速"
 
 #: openpilot/starpilot/ui/unified_speed_presentation.py
 msgid "Adopting limit"
@@ -582,9 +626,21 @@ msgstr "高级"
 msgid "Advanced Network Settings"
 msgstr "高级网络设置"
 
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Advanced acceleration and braking parameters"
+msgstr "高级加速与制动参数"
+
 #: openpilot/starpilot/galaxy/web/js/software-status.js
 msgid "Advanced options"
 msgstr "高级选项"
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Advanced steering parameters and total actuator delay"
+msgstr "高级转向参数与总执行器延迟"
+
+#: openpilot/starpilot/ui/slc_policy_feature.py
+msgid "After an accelerator override"
+msgstr "加速踏板超控后"
 
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "After signaling off, only when speed went below half the pause threshold. Applies within one second."
@@ -597,6 +653,10 @@ msgstr "再来"
 #: openpilot/selfdrive/ui/layouts/settings/toggles.py
 msgid "Aggressive"
 msgstr "激进"
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Aggressive Personality"
+msgstr "激进风格"
 
 #: openpilot/selfdrive/ui/layouts/onboarding.py
 msgid "Agree"
@@ -712,6 +772,10 @@ msgstr "允许一次辅助变道，直到松开转向灯。"
 msgid "Allows queued full logs and videos to upload over metered networks. This uses mobile data."
 msgstr "允许排队的完整日志和视频在按流量计费的网络上上传。会使用移动数据。"
 
+#: openpilot/starpilot/ui/lane_change_feature.py
+msgid "Allows the model to anticipate a signaled intersection turn. Off waits for driver initiation for Turn Assist."
+msgstr "允许模型预判已打灯的路口转弯。关闭时，转弯辅助将等待驾驶员开始转向。"
+
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Alpha Longitudinal"
 msgstr "Alpha 纵向控制"
@@ -744,6 +808,18 @@ msgstr "全时"
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Always On Lateral"
 msgstr "全时横向控制"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Always On Lateral on/off"
+msgstr "全时横向控制开/关"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Always On Lateral on/off applies after the next startup"
+msgstr "全时横向控制开/关在下次启动后生效"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Always On Lateral on/off stays on this tap until the next startup"
+msgstr "下次启动前，此轻点仍为全时横向控制开/关"
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Always above other widgets"
@@ -899,6 +975,10 @@ msgstr "下次启动后生效；仍需通过车辆接管检查。"
 msgid "Applies at next startup"
 msgstr "下次启动时生效"
 
+#: openpilot/starpilot/ui/longitudinal_developer.py
+msgid "Applies next drive."
+msgstr "下次行驶生效。"
+
 #: openpilot/starpilot/ui/ford_lateral_feature.py
 msgid "Applies next drive. BluePilot angle works with Always On Lateral. Safe Mode must be off."
 msgstr "下次行驶生效。BluePilot 转向角可配合全时横向控制（AOL）使用。必须关闭安全模式。"
@@ -1007,6 +1087,10 @@ msgstr "区域已保存。将通过 Wi-Fi 下载；您可以离开此页面。"
 #: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
 msgid "Areas"
 msgstr "区域"
+
+#: openpilot/starpilot/car/tesla/stock_events.py
+msgid "Arm Stock Cruise to Enable Speed Control"
+msgstr "请开启原厂巡航以启用速度控制"
 
 #: openpilot/starpilot/ui/sentry_owner.py
 msgid "Arming"
@@ -1153,17 +1237,41 @@ msgstr "自动"
 msgid "Automatic Brake Hold"
 msgstr "自动刹车保持"
 
+#: openpilot/starpilot/lateral/lane_change_status_wire.py
+msgid "Automatic Change Unavailable"
+msgstr "自动变道不可用"
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Automatic Conditions"
+msgstr "自动条件"
+
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "Automatic Experimental"
 msgstr "自动实验"
+
+#: openpilot/starpilot/lateral/lane_change_status_wire.py
+msgid "Automatic Lane Change Pending"
+msgstr "即将自动变道"
 
 #: openpilot/starpilot/ui/lane_change_feature.py
 msgid "Automatic Lane Changes"
 msgstr "自动变道"
 
+#: openpilot/starpilot/ui/lane_change_feature.py
+msgid "Automatic Turn Initiation"
+msgstr "自动转弯启动"
+
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Automatic adoption"
 msgstr "自动采用"
+
+#: openpilot/starpilot/ui/conditional_feature.py
+msgid "Automatic conditions"
+msgstr "自动条件"
+
+#: openpilot/starpilot/ui/delay_feature.py
+msgid "Automatic delay. Shown value is the vehicle default."
+msgstr "自动延迟。显示值为车辆默认值。"
 
 #: openpilot/starpilot/galaxy/web/js/software-status.js
 msgid "Automatic download preference saved."
@@ -1173,6 +1281,10 @@ msgstr "自动下载偏好已保存。"
 msgid "Automatic lane-change delay"
 msgstr "自动变道延时"
 
+#: openpilot/starpilot/ui/conditional_feature.py
+msgid "Automatic switches between Chill and Experimental using your saved conditions."
+msgstr "“自动”会根据已保存的条件在安稳和实验模式之间切换。"
+
 #: openpilot/selfdrive/ui/layouts/arabesque/desktop.py
 msgid "Automatic sync unavailable. Set the date and time."
 msgstr "无法自动同步，请设置日期和时间。"
@@ -1180,6 +1292,10 @@ msgstr "无法自动同步，请设置日期和时间。"
 #: openpilot/starpilot/ui/torque_feature.py
 msgid "Automatic torque learning"
 msgstr "自动扭矩学习"
+
+#: openpilot/starpilot/ui/longitudinal_developer.py
+msgid "Automatic. Changes apply next drive."
+msgstr "自动。更改将在下次行驶时生效。"
 
 #: openpilot/selfdrive/ui/layouts/settings/software.py
 msgid "Automatically Download Updates"
@@ -1260,6 +1376,10 @@ msgstr "基础横向加速度"
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "BIG"
 msgstr "大"
+
+#: openpilot/selfdrive/selfdrived/events.py
+msgid "BRAKE!"
+msgstr "刹车！"
 
 #: openpilot/selfdrive/ui/layouts/onboarding.py
 #: openpilot/system/ui/widgets/network.py
@@ -1370,6 +1490,10 @@ msgstr "大模型失败"
 msgid "Big Model Loading"
 msgstr "大模型加载中"
 
+#: openpilot/selfdrive/selfdrived/helpers.py
+msgid "Big Model Lost"
+msgstr "大模型丢失"
+
 #: openpilot/starpilot/ui/layout_preview_sidebar.py
 msgid "Big developer sidebar supports up to seven metrics"
 msgstr "大号开发者侧栏最多支持七项指标"
@@ -1443,6 +1567,19 @@ msgstr "蓝色为目标，橙色为实测。缺失或过期的来源绝不会按
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Blue lane-centering and orange steering-effort indicators stay blue and orange."
 msgstr "蓝色的车道居中指示和橙色的转向力度指示保持蓝色和橙色。"
+
+#: openpilot/starpilot/car/ford/controller_selection.py
+msgid "BluePilot Angle"
+msgstr "BluePilot 转向角"
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+#: openpilot/starpilot/ui/ford_bluepilot_feature.py
+msgid "BluePilot Controller Options"
+msgstr "BluePilot 控制器选项"
+
+#: openpilot/starpilot/car/ford/controller_selection.py
+msgid "BluePilot Curvature"
+msgstr "BluePilot 曲率"
 
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Bluetooth"
@@ -1537,6 +1674,10 @@ msgstr "蓝牙、Galaxy Wi-Fi 或局域网"
 msgid "Bookmark"
 msgstr "书签"
 
+#: openpilot/selfdrive/selfdrived/bookmarks.py
+msgid "Bookmark #{} Saved"
+msgstr "书签 #{} 已保存"
+
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Bookmark Saved"
 msgstr "书签已保存"
@@ -1556,6 +1697,10 @@ msgstr "请收藏此本地地址，以便在无网络时通过热点或 Wi-Fi �
 #: openpilot/starpilot/galaxy/settings.py
 msgid "Borrowed authority requires a message source"
 msgstr "借用权限需要消息来源"
+
+#: openpilot/starpilot/speed_limits/runtime_settings.py
+msgid "Both"
+msgstr "全部"
 
 #: openpilot/starpilot/galaxy/web/js/model-laboratory.js
 msgid "Both models must have downloaded eGPU variants"
@@ -1656,6 +1801,14 @@ msgstr "按键测试仅显示输入，不会执行其操作。"
 #: openpilot/starpilot/galaxy/web/js/controllers.js
 msgid "Button {} · {}"
 msgstr "按键 {} · {}"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "By 1 km/h"
+msgstr "每次 1 km/h"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "By 1 mph"
+msgstr "每次 1 mph"
 
 #: openpilot/starpilot/ui/appearance_owner.py
 msgid "C4 amber signal border"
@@ -2119,6 +2272,10 @@ msgstr "更改目标分支"
 msgid "Change tuning preparation? Turning it off restores your previous steering preferences."
 msgstr "更改调校准备？关闭后将恢复您之前的转向偏好。"
 
+#: openpilot/starpilot/ui/ford_bluepilot_feature.py
+msgid "Change while parked"
+msgstr "请在驻车时更改"
+
 #: openpilot/starpilot/ui/torque_feature.py
 msgid "Changed geometry source"
 msgstr "几何来源已更改"
@@ -2215,6 +2372,14 @@ msgstr "检查更新"
 #: openpilot/starpilot/galaxy/web/js/models.js
 msgid "Check model catalog"
 msgstr "检查模型目录"
+
+#: openpilot/starpilot/lateral/lane_change_status_wire.py
+msgid "Check surroundings"
+msgstr "请观察周围"
+
+#: openpilot/starpilot/lateral/lane_change_status_wire.py
+msgid "Check surroundings; steer to confirm now"
+msgstr "请观察周围；打方向可立即确认"
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Check that this code matches your adapter, then confirm."
@@ -2416,6 +2581,14 @@ msgstr "安稳条件"
 msgid "Chill conditions"
 msgstr "安稳条件"
 
+#: openpilot/starpilot/audio/departure_alert.py
+msgid "Chimes when the model’s traffic-light stop prediction clears while you remain stopped."
+msgstr "停车等待时，若模型对红绿灯的停车预测解除，则发出提示音。"
+
+#: openpilot/starpilot/audio/departure_alert.py
+msgid "Chimes when the tracked vehicle ahead starts moving while you remain stopped."
+msgstr "停车等待时，若跟踪的前车开始移动，则发出提示音。"
+
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Choose Another File"
@@ -2432,6 +2605,10 @@ msgstr "启用自定义显示前请选择自动"
 #: openpilot/starpilot/ui/sounds_owner.py
 msgid "Choose Auto to repair"
 msgstr "选择“自动”以修复"
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Choose Automatic, Chill or Experimental"
+msgstr "选择自动、安稳或实验模式"
 
 #: openpilot/starpilot/ui/conditional_feature.py
 msgid "Choose Chill, Experimental, or automatic switching from your saved conditions."
@@ -2576,6 +2753,10 @@ msgstr "选择驾驶警报播放的声音"
 #: openpilot/starpilot/ui/controller_feature.py
 msgid "Choose the steering controller for your next drive."
 msgstr "为下次行程选择转向控制器。"
+
+#: openpilot/starpilot/ui/controller_feature.py
+msgid "Choose the steering controller for your next drive. StarPilot's torque controller can provide higher low-speed steering accuracy, but may require additional tuning. Join the StarPilot Discord and open a tuning request: https://firestar.link/discord"
+msgstr "为下次行程选择转向控制器。StarPilot 的扭矩控制器可提高低速转向精度，但可能需要额外调校。加入 StarPilot Discord 并提交调校请求：https://firestar.link/discord"
 
 #: openpilot/starpilot/ui/conditional_feature.py
 msgid "Choose this button action. May take effect this drive."
@@ -2843,6 +3024,10 @@ msgstr "云服务提供方"
 msgid "Cloud provider status is unavailable"
 msgstr "云服务提供方状态不可用"
 
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Coast Downhills"
+msgstr "下坡滑行"
+
 #: openpilot/starpilot/galaxy/web/js/flm-training-results.js
 msgid "Collecting comparable driving examples"
 msgstr "正在收集可比的驾驶样本"
@@ -2915,6 +3100,10 @@ msgstr "舒适/普通/运动 (m/s²)：全局 0.6/1.2/2.4；指定驾驶风格 0
 msgid "Comfort/Normal/Sport (m/s²): global 0.6/1.2/2.4; explicit personality 0.5/1.0/2.0. Selected Profile inherits global values. These separate scales preserve existing tuning. StarPilot Default keeps native cruise braking. Lead and stop braking retain priority."
 msgstr "舒适/普通/运动 (m/s²)：全局 0.6/1.2/2.4；指定驾驶风格 0.5/1.0/2.0。所选配置继承全局值。这些独立刻度可保留现有调校。StarPilot 默认值保持原厂巡航制动。前车和停车制动保持优先。"
 
+#: openpilot/starpilot/ui/long_profile_feature.py
+msgid "Comfort/Normal/Sport (m/s²): global 0.6/1.2/2.4; explicit personality 0.5/1.0/2.0. Use global preset inherits global values. These separate scales preserve existing tuning. StarPilot Default keeps native cruise braking. Lead and stop braking retain priority."
+msgstr "舒适/普通/运动 (m/s²)：全局 0.6/1.2/2.4；指定驾驶风格 0.5/1.0/2.0。“使用全局预设”继承全局值。这些独立刻度可保留现有调校。StarPilot 默认值保持原厂巡航制动。前车和停车制动保持优先。"
+
 #: openpilot/starpilot/ui/onroad_map.py
 msgid "Comma GPS"
 msgstr "Comma GPS"
@@ -2922,6 +3111,10 @@ msgstr "Comma GPS"
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 msgid "Comma and car GPS only"
 msgstr "仅 comma 和车辆 GPS"
+
+#: openpilot/starpilot/ui/tesla_set_speed_feature.py
+msgid "Comma can set speed on Tesla dashboard"
+msgstr "comma 可设置 Tesla 仪表盘速度"
 
 #: openpilot/starpilot/galaxy/web/js/system-monitor.js
 msgid "Comma processes"
@@ -2954,6 +3147,10 @@ msgstr "按模型检测到的停止位置停车；踩下加速踏板继续"
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Commits to stops detected by the driving model. Press the accelerator to continue."
 msgstr "按驾驶模型检测到的停车点停车。踩加速踏板可继续行驶。"
+
+#: openpilot/selfdrive/selfdrived/selfdrived.py
+msgid "Communication Issue"
+msgstr "通信异常"
 
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Communication Issue Between Processes"
@@ -3100,6 +3297,10 @@ msgstr "确认已保存的偏好"
 #: openpilot/starpilot/galaxy/web/js/vehicle-controls.js
 msgid "Confirm Vehicle Selection"
 msgstr "确认车辆选择"
+
+#: openpilot/starpilot/ui/slc_policy_feature.py
+msgid "Confirm limits"
+msgstr "确认限速"
 
 #: openpilot/starpilot/ui/bluetooth_compact.py
 msgid "Confirm on both devices"
@@ -3531,6 +3732,10 @@ msgstr "巡航已关闭"
 msgid "Cruise speed must be finite and nonnegative"
 msgstr "巡航速度必须为有限的非负值"
 
+#: openpilot/starpilot/ui/slc_policy_feature.py
+msgid "Cruise uses this target when you lift off the accelerator. Held speed stays at or below SET."
+msgstr "松开加速踏板后，巡航以此为目标。保持的速度不超过设定速度。"
+
 #: openpilot/starpilot/galaxy/web/js/device-picker.js
 msgid "Current"
 msgstr "当前"
@@ -3570,6 +3775,10 @@ msgstr "当前已保存的阈值"
 #: openpilot/starpilot/ui/onroad_customization.py
 msgid "Current speed"
 msgstr "当前车速"
+
+#: openpilot/starpilot/ui/torque_feature.py
+msgid "Current vehicle and readable saved settings are required"
+msgstr "需要当前车辆和可读取的已存设置"
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Current version:"
@@ -3623,6 +3832,10 @@ msgstr "自定义显示设置"
 msgid "Custom Following and Jerk"
 msgstr "自定义跟车与急动度"
 
+#: openpilot/starpilot/ui/ford_bluepilot_feature.py
+msgid "Custom Tuning Profile"
+msgstr "自定义调校配置"
+
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Custom color"
 msgstr "自定义颜色"
@@ -3657,6 +3870,10 @@ msgstr "自定义快捷选择"
 
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "Cycle Driving Personality"
+msgstr "切换驾驶风格"
+
+#: openpilot/starpilot/controllers/wheel_actions.py
+msgid "Cycle personality"
 msgstr "切换驾驶风格"
 
 #: openpilot/starpilot/ui/speed_limit_widget.py
@@ -3763,6 +3980,10 @@ msgstr "拒绝并卸载 openpilot"
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "Decrease Speed"
 msgstr "降低速度"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Decrease set speed"
+msgstr "降低设定速度"
 
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Default"
@@ -3974,6 +4195,10 @@ msgstr "详情"
 msgid "Details need a saved full log (rlog)."
 msgstr "详情需要已保存的完整日志（rlog）。"
 
+#: openpilot/starpilot/ui/tesla_set_speed_feature.py
+msgid "Detected"
+msgstr "已检测到"
+
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Detected, inactive"
 msgstr "已检测到，未启用"
@@ -3985,6 +4210,10 @@ msgstr "检测置信度"
 #: openpilot/selfdrive/ui/layouts/settings/settings.py
 msgid "Developer"
 msgstr "开发者"
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Developer Parameters"
+msgstr "开发者参数"
 
 #: openpilot/starpilot/ui/appearance_owner.py
 msgid "Developer Sidebar"
@@ -4217,6 +4446,10 @@ msgstr "刹车时脱离 AOL"
 msgid "Disengage Openpilot"
 msgstr "脱离 openpilot"
 
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Disengage StarPilot"
+msgstr "脱离 StarPilot"
+
 #: openpilot/selfdrive/ui/layouts/settings/toggles.py
 msgid "Disengage on Accelerator Pedal"
 msgstr "踩下加速踏板时脱离"
@@ -4268,6 +4501,10 @@ msgstr "脱离以卸载"
 #: openpilot/starpilot/ui/onroad.py
 msgid "Disengaged"
 msgstr "已脱离"
+
+#: openpilot/starpilot/audio/alert_volume.py
+msgid "Disengagement Alert"
+msgstr "脱离警报"
 
 #: openpilot/starpilot/galaxy/web/js/galaxy.js
 msgid "Dismiss"
@@ -4359,6 +4596,10 @@ msgstr "利用车旁空间区分转弯与变道。转向灯信号"
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Distinguishes a turn from a lane change using the space beside the car. A signal requests Experimental only when no adjacent lane is detected."
 msgstr "利用车旁空间区分转弯与变道。转向灯信号仅在未检测到相邻车道时才请求实验模式。"
+
+#: openpilot/starpilot/audio/alert_volume.py
+msgid "Distracted Driver"
+msgstr "驾驶员分心"
 
 #: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
 msgid "Do all of my segments get pulled in Firehose Mode?"
@@ -4703,6 +4944,10 @@ msgstr "驾驶控制"
 msgid "Driving Interaction Timeout"
 msgstr "驾驶操作超时"
 
+#: openpilot/starpilot/ui/conditional_feature.py
+msgid "Driving Mode"
+msgstr "驾驶模式"
+
 #: openpilot/starpilot/ui/onroad_customization.py
 msgid "Driving Mode Descriptions"
 msgstr "驾驶模式说明"
@@ -4714,6 +4959,10 @@ msgstr "驾驶模型"
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Driving Model Lagging"
 msgstr "驾驶模型延迟"
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Driving Modes"
+msgstr "驾驶模式"
 
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Driving Personalities"
@@ -4853,6 +5102,14 @@ msgstr "较早的学习报告，当前应用情况未知"
 #: openpilot/starpilot/ui/long_profile_feature.py
 msgid "Eco"
 msgstr "经济"
+
+#: openpilot/starpilot/ui/drive_mode_notice.py
+msgid "Eco Mode"
+msgstr "经济模式"
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Eco, Normal and Sport select Eco, Standard and Sport+ acceleration with Eco, Standard and Sport deceleration, replacing the selected profiles below. Traffic Mode is unchanged."
+msgstr "经济、普通和运动模式分别选用经济、标准和运动+加速，以及经济、标准和运动减速，替代下方所选的配置。拥堵模式不变。"
 
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Edit"
@@ -5116,13 +5373,29 @@ msgstr "结束导航"
 msgid "End route"
 msgstr "结束路线"
 
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Engage StarPilot"
+msgstr "启用 StarPilot"
+
 #: openpilot/starpilot/galaxy/web/js/layout-preview.js
 msgid "Engaged"
 msgstr "已启用"
 
+#: openpilot/starpilot/audio/alert_volume.py
+msgid "Engagement Chime"
+msgstr "启用提示音"
+
+#: openpilot/starpilot/audio/alert_volume.py
+msgid "Engagement Refused"
+msgstr "拒绝启用"
+
 #: openpilot/starpilot/galaxy/localization_settings.py
 msgid "English"
 msgstr "English"
+
+#: openpilot/selfdrive/selfdrived/selfdrived.py
+msgid "Enhanced Stop"
+msgstr "增强停车"
 
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Enhanced Stops"
@@ -5341,6 +5614,10 @@ msgstr "此车型当前无法使用实验模式，因为纵向控制使用的是
 msgid "Experimental only when there is no adjacent lane."
 msgstr "仅在没有相邻车道时请求实验模式。"
 
+#: openpilot/starpilot/controllers/wheel_actions.py
+msgid "Experimental override"
+msgstr "实验模式覆盖"
+
 #: openpilot/starpilot/galaxy/developer_settings.py
 msgid "Experimental. Join the car's Wi-Fi on a second interface so the comma stays on home Wi-Fi or your"
 msgstr "实验性。通过第二网络接口加入车辆 Wi-Fi，使 comma 在无线 StarPort 期间保持连接家庭 Wi-Fi 或您的"
@@ -5428,6 +5705,10 @@ msgstr "导出状态不可用。正在重试…"
 #: openpilot/starpilot/galaxy/web/js/record-history.js
 msgid "Exporting replay"
 msgstr "正在导出回放"
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Extra stopped-lead distance"
+msgstr "静止前车额外距离"
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Eyes follow this driving scene. Choose General edit to arrange widgets hidden here."
@@ -5694,6 +5975,10 @@ msgstr "文件夹"
 msgid "Follow"
 msgstr "跟车"
 
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Follow accepted limits plus offsets, up to your SET speed"
+msgstr "跟随已采用的限速加偏移，不超过您的设定速度"
+
 #: openpilot/starpilot/ui/sounds_owner.py
 msgid "Follow ambient sound"
 msgstr "跟随环境噪音"
@@ -5701,6 +5986,10 @@ msgstr "跟随环境噪音"
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Follow the pairing steps above, then connect to your dashboard."
 msgstr "请按上方配对步骤操作，然后连接到您的仪表盘。"
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Following"
+msgstr "跟车"
 
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Following distance"
@@ -5806,6 +6095,10 @@ msgstr "强制自动"
 msgid "Force auto temporarily ignores saved factor, friction and ratio."
 msgstr "“强制自动”会暂时忽略已存的系数、摩擦和比例。"
 
+#: openpilot/starpilot/controllers/wheel_actions.py
+msgid "Force coast"
+msgstr "强制滑行"
+
 #: openpilot/starpilot/ui/torque_feature.py
 msgid "Force off"
 msgstr "强制关闭"
@@ -5821,6 +6114,10 @@ msgstr "强制使用 StarPilot UI 需要已审核的资源："
 #: openpilot/starpilot/ui/startup.py
 msgid "Forced StarPilot UI requires reviewed assets: {}"
 msgstr "强制使用 StarPilot UI 需要已审核的资源：{}"
+
+#: openpilot/starpilot/ui/ford_bluepilot_feature.py
+msgid "Ford Controller"
+msgstr "Ford 控制器"
 
 #: openpilot/starpilot/ui/ford_lateral_feature.py
 msgid "Ford hands-free cluster display"
@@ -6099,6 +6396,10 @@ msgstr "正在收集独立测得的驾驶样本"
 msgid "Gear not D"
 msgstr "非 D 挡"
 
+#: openpilot/starpilot/audio/alert_volume.py
+msgid "General Prompt"
+msgstr "一般提示"
+
 #: openpilot/starpilot/galaxy/web/js/layout-preview.js
 msgid "General edit"
 msgstr "通用编辑"
@@ -6176,6 +6477,14 @@ msgstr "向您 GitHub 设置中的所有公钥授予 SSH 访问权限。请只�
 #: openpilot/starpilot/galaxy/web/js/plots.js
 msgid "Great"
 msgstr "极佳"
+
+#: openpilot/starpilot/audio/departure_alert.py
+msgid "Green Light"
+msgstr "绿灯"
+
+#: openpilot/starpilot/audio/departure_alert.py
+msgid "Green Light Alert"
+msgstr "绿灯提醒"
 
 #: openpilot/starpilot/galaxy/web/data/catalog.json
 msgid "Guides and community help"
@@ -6280,6 +6589,10 @@ msgstr "隐藏驾驶风格变化时显示的警报。"
 msgid "High-speed follow"
 msgstr "高速跟车"
 
+#: openpilot/starpilot/speed_limits/runtime_settings.py
+msgid "Higher only"
+msgstr "仅更高"
+
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Higher values let a confident model path reduce lane-centering correction when it differs from the lane center"
 msgstr "值越高，当模型路径可信且偏离车道中心时，越能减少车道居中的修正"
@@ -6291,6 +6604,14 @@ msgstr "数值越高，警告变化越慢"
 #: openpilot/starpilot/ui/vasm_owner.py
 msgid "Higher values require stronger model evidence"
 msgstr "数值越高，要求模型依据越充分"
+
+#: openpilot/starpilot/ui/gain_feature.py
+msgid "Higher values respond more strongly. Applies at restart. Only the proportional gain is fixed."
+msgstr "数值越大响应越强。重启后生效。仅固定比例增益。"
+
+#: openpilot/starpilot/ui/gain_feature.py
+msgid "Higher values respond more strongly. First manual activation requires a driving-process restart."
+msgstr "数值越大响应越强。首次手动启用需要重启驾驶进程。"
 
 #: openpilot/starpilot/ui/gain_feature.py
 msgid "Higher values respond more strongly; lower values respond more gently. First manual activation"
@@ -6312,6 +6633,10 @@ msgstr "最长连续天数"
 msgid "Highlight the side windows a driver would check in the cabin camera, and tune visual spot-monitoring options."
 msgstr "标出驾驶员会在车内摄像头中查看的侧窗，并调整视觉盲区监测选项。"
 
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Highway Smoothing"
+msgstr "高速平顺"
+
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "History"
 msgstr "历史"
@@ -6332,6 +6657,10 @@ msgstr "完全停车且巡航主开关开启、巡航未启用时，踩住刹车
 msgid "Hold the brake for over one second at a complete stop with cruise main on and cruise disengaged. Holds until you press the gas; normal cruise stop-and-go is unchanged. Applies after the next startup."
 msgstr "完全停车且巡航主开关开启、巡航未启用时，踩住刹车超过一秒。保持到您踩油门；正常巡航跟停不变。下次启动后生效。"
 
+#: openpilot/starpilot/speed_limits/runtime_settings.py
+msgid "Hold the speed you reached"
+msgstr "保持已达到的速度"
+
 #: openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js
 msgid "Hold to fine scrub"
 msgstr "按住进行精细调节"
@@ -6351,6 +6680,10 @@ msgstr "巡航主开关开启时在停车状态保持刹车。请按"
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Holds the brakes at a stop with cruise main on. Press the accelerator or the supported regen paddle to release."
 msgstr "巡航主开关开启并停车时保持制动。踩加速踏板或受支持的动能回收拨片即可释放。"
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Holds the brakes at a stop with cruise main on. Press the gas or regen paddle to release. Requires StarPilot speed control and applies after the next startup"
+msgstr "巡航主开关开启并停车时保持制动。踩油门或使用动能回收拨片即可释放。需要 StarPilot 速度控制，下次启动后生效"
 
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Holds the brakes at a stop with cruise main on. Press the {} to release."
@@ -6412,6 +6745,10 @@ msgstr "连接方式："
 msgid "How the widget list works"
 msgstr "组件列表的使用方法"
 
+#: openpilot/starpilot/ui/ford_bluepilot_feature.py
+msgid "Human Turn Detection"
+msgstr "人工转弯检测"
+
 #: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
 msgid "INACTIVE: connect to an unmetered network"
 msgstr "未启用：请连接不限流量的网络"
@@ -6472,6 +6809,10 @@ msgstr "仅为示例数值，未读取任何设备。"
 #: openpilot/starpilot/ui/pip_owner.py
 msgid "Image crop; view remains off without a live camera"
 msgstr "图像裁剪；无实时摄像头时视图保持关闭"
+
+#: openpilot/starpilot/audio/alert_volume.py
+msgid "Immediate Warning"
+msgstr "紧急警告"
 
 #: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
 msgid "Immediately connect to the internet to check for updates"
@@ -6568,6 +6909,10 @@ msgstr "录制不完整"
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "Increase Speed"
 msgstr "提高速度"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Increase set speed"
+msgstr "提高设定速度"
 
 #: openpilot/starpilot/ui/gm_tune_feature.py
 msgid "Individual personality and custom curves remain as selected."
@@ -6972,6 +7317,10 @@ msgstr "已存操作无效"
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Invalid saved advance time; restore Off"
 msgstr "已保存的提前时间无效；恢复为关闭"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Invalid saved assignments"
+msgstr "已存的按键分配无效"
 
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Invalid saved brake threshold"
@@ -7417,6 +7766,14 @@ msgstr "车道居中强度"
 msgid "Lane Change"
 msgstr "变道"
 
+#: openpilot/starpilot/ui/ford_bluepilot_feature.py
+msgid "Lane Change Factor"
+msgstr "变道系数"
+
+#: openpilot/starpilot/lateral/lane_change_status_wire.py
+msgid "Lane Change Pending"
+msgstr "等待变道"
+
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Lane Change Settings"
 msgstr "变道设置"
@@ -7679,6 +8036,10 @@ msgstr "布局尺寸"
 msgid "Layout target"
 msgstr "布局对象"
 
+#: openpilot/starpilot/audio/departure_alert.py
+msgid "Lead Departing Alert"
+msgstr "前车起步提醒"
+
 #: openpilot/starpilot/ui/appearance_owner.py
 msgid "Lead Indicator"
 msgstr "前车指示"
@@ -7687,6 +8048,10 @@ msgstr "前车指示"
 #: openpilot/starpilot/ui/appearance_owner.py
 msgid "Lead Info"
 msgstr "前车信息"
+
+#: openpilot/starpilot/audio/departure_alert.py
+msgid "Lead Vehicle Departing"
+msgstr "前车已起步"
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Lead car"
@@ -7815,6 +8180,10 @@ msgstr ""
 "这些是 Alpha 功能，可能会出错。\n"
 "路径颜色表示加速和刹车。"
 
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Lets StarPilot SET at your current speed down to the vehicle’s minimum engagement speed. Factory cruise still uses the car’s minimum speed."
+msgstr "允许 StarPilot 以当前车速设定巡航，最低可至车辆的最低启用速度。原厂巡航仍使用车辆的最低速度。"
+
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Lets a confident driving-model path reduce lane-centering correction when the model path differs from the lane center."
 msgstr "当模型路径与车道中心不一致时，让有把握的驾驶模型路径减小车道居中的修正量。"
@@ -7822,6 +8191,10 @@ msgstr "当模型路径与车道中心不一致时，让有把握的驾驶模型
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Lets a three-finger tap on a supported Tesla screen toggle Always On Lateral."
 msgstr "在受支持的 Tesla 屏幕上，三指点击可切换全时横向控制。"
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Lets gravity carry the car above set speed without targeting a higher speed. Changes apply while driving."
+msgstr "下坡时借重力让车速超过设定速度，但不以更高速度为目标。更改在行驶中生效。"
 
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Lets the Ioniq 5 or Ioniq 6 left paddle pause acceleration and braking while Always On Lateral keeps steering."
@@ -7846,6 +8219,10 @@ msgstr "按速度限制加速度。舒适较柔和；运动和运动+允许更�
 #: openpilot/starpilot/ui/long_profile_feature.py
 msgid "Limits acceleration by speed. Comfort is gentler; Sport and Sport+ allow stronger acceleration. Selected Profile follows the global choice. An explicit choice overrides it; StarPilot Default keeps vehicle behavior."
 msgstr "按速度限制加速度。舒适较柔和；运动和运动+允许更强的加速。所选配置跟随全局选择。明确选择会覆盖此项；StarPilot 默认值保持车辆原有表现。"
+
+#: openpilot/starpilot/ui/long_profile_feature.py
+msgid "Limits acceleration by speed. Comfort is gentler; Sport and Sport+ allow stronger acceleration. Use global preset follows the global choice. An explicit choice overrides it; StarPilot Default keeps vehicle behavior."
+msgstr "按速度限制加速度。舒适较柔和；运动和运动+允许更强的加速。“使用全局预设”跟随全局选择。明确选择会覆盖此项；StarPilot 默认值保持车辆原有表现。"
 
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Limits the low-speed steering pause to times when a turn signal is on."
@@ -8281,6 +8658,10 @@ msgstr "内存不足"
 msgid "Low Memory: Reboot Your Device"
 msgstr "内存不足：请重启设备"
 
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Low-Speed Cruise Start"
+msgstr "低速启动巡航"
+
 #: openpilot/starpilot/ui/power_owner.py
 msgid "Low-Voltage Cutoff"
 msgstr "低电压切断"
@@ -8289,6 +8670,10 @@ msgstr "低电压切断"
 #: openpilot/starpilot/ui/traffic_feature.py
 msgid "Low-speed follow"
 msgstr "低速跟车"
+
+#: openpilot/starpilot/speed_limits/runtime_settings.py
+msgid "Lower only"
+msgstr "仅更低"
 
 #: openpilot/starpilot/ui/sentry_owner.py
 msgid "Lower values detect smaller acceleration changes"
@@ -8363,6 +8748,10 @@ msgstr "管理网络连接"
 msgid "Manage regions"
 msgstr "管理地区"
 
+#: openpilot/starpilot/ui/delay_feature.py
+msgid "Manual actuator delay. Reset restores automatic delay."
+msgstr "手动执行器延迟。重置可恢复自动延迟。"
+
 #: openpilot/starpilot/galaxy/web/js/layout-preview.js
 msgid "Manual experimental"
 msgstr "手动实验模式"
@@ -8374,6 +8763,14 @@ msgstr "手动摩擦"
 #: openpilot/starpilot/ui/gain_feature.py
 msgid "Manual steering response"
 msgstr "手动转向响应"
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Manual steering tune"
+msgstr "手动转向调校"
+
+#: openpilot/starpilot/ui/torque_feature.py
+msgid "Manual tune"
+msgstr "手动调校"
 
 #: openpilot/starpilot/galaxy/web/js/vehicle-controls.js
 msgid "Manually Selected"
@@ -8523,9 +8920,21 @@ msgstr "核对蓝牙码"
 msgid "Match Bluetooth code {}?"
 msgstr "核对蓝牙码 {}？"
 
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Match Drive Mode"
+msgstr "匹配驾驶模式"
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Match Speed Limit on Engage"
+msgstr "启用时匹配限速"
+
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Matches Spotify’s official download"
 msgstr "与 Spotify 官方下载一致"
+
+#: openpilot/starpilot/car/tesla/pedal_events.py
+msgid "Max Regen Being Used"
+msgstr "正在使用最大动能回收"
 
 #: openpilot/selfdrive/ui/mici/layouts/settings/initial_cruise_speed.py
 msgid ""
@@ -8544,6 +8953,10 @@ msgstr "启用 openpilot 时的最高速度。若您已在更高车速行驶，�
 #: openpilot/selfdrive/ui/widgets/setup.py
 msgid "Maximize your training data uploads to improve openpilot's driving models."
 msgstr "最大化上传训练数据，以改进 openpilot 的驾驶模型。"
+
+#: openpilot/starpilot/longitudinal/developer_tuning.py
+msgid "Maximum Acceleration"
+msgstr "最大加速度"
 
 #: openpilot/starpilot/ui/power_owner.py
 msgid "Maximum Parked Time"
@@ -8830,9 +9243,17 @@ msgstr "音乐：{label}"
 msgid "Mute"
 msgstr "静音"
 
+#: openpilot/starpilot/ui/sounds_owner.py
+msgid "Mute Blindspot Alert at Standstill"
+msgstr "静止时静音盲区警报"
+
 #: openpilot/starpilot/ui/feature_settings_state.py
 msgid "Muted"
 msgstr "已静音"
+
+#: openpilot/starpilot/ui/sounds_owner.py
+msgid "Mutes Blindspot Alert While Lateral Is Off when stopped or moving below 1 mph."
+msgstr "横向控制关闭时，在停车或车速低于 1 mph 时静音盲区警报。"
 
 #: openpilot/selfdrive/ui/layouts/settings/device.py
 msgid "N/A"
@@ -8845,6 +9266,10 @@ msgstr "导航"
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "NEEDS ATTENTION"
 msgstr "需要处理"
+
+#: openpilot/starpilot/ui/speed_limit_widget.py
+msgid "NEW LIMIT"
+msgstr "新限速"
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "NEXT · CONNECT"
@@ -8934,6 +9359,15 @@ msgstr "需要重新安装"
 msgid "Needs review"
 msgstr "需要检查"
 
+#: openpilot/starpilot/ui/tesla_set_speed_feature.py
+msgid "Needs the Tesla CAN add-on cable"
+msgstr "需要 Tesla CAN 附加线束"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+#: openpilot/starpilot/ui/tesla_set_speed_feature.py
+msgid "Needs the Tesla CAN add-on cable."
+msgstr "需要 Tesla CAN 附加线束。"
+
 #: openpilot/starpilot/ui/wheel_feature.py
 msgid "Neither LKAS nor MAIN is assigned Toggle AOL, so both retain the default AOL toggle."
 msgstr "LKAS 和 MAIN 均未分配“切换 AOL”，因此两者都保留默认的 AOL 切换。"
@@ -8959,10 +9393,6 @@ msgstr "空挡"
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Never at standstill. Applies next drive."
 msgstr "静止时绝不启用。下次行程生效。"
-
-#: openpilot/starpilot/ui/speed_limit_widget.py
-msgid "New Limit"
-msgstr "新限速"
 
 #: openpilot/starpilot/galaxy/web/js/layout-preview.js
 msgid "New Limit notice"
@@ -9273,6 +9703,10 @@ msgstr "没有，像平常一样驾驶即可。"
 msgid "Normal"
 msgstr "普通"
 
+#: openpilot/starpilot/ui/drive_mode_notice.py
+msgid "Normal Mode"
+msgstr "普通模式"
+
 #: openpilot/starpilot/ui/slc_action_dispatch.py
 msgid "Not applied"
 msgstr "未应用"
@@ -9412,6 +9846,14 @@ msgstr "通知状态不可用。"
 msgid "Notifications"
 msgstr "通知"
 
+#: openpilot/starpilot/ui/speed_limit_widget.py
+msgid "Now: OVERRIDE"
+msgstr "当前：超控"
+
+#: openpilot/starpilot/ui/speed_limit_widget.py
+msgid "Now: OVERRIDE {}"
+msgstr "当前：超控 {}"
+
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "OFF"
 msgstr "关闭"
@@ -9434,6 +9876,14 @@ msgstr "在线"
 #: openpilot/starpilot/ui/starpilot_settings_adapter_large.py
 msgid "OPEN"
 msgstr "打开"
+
+#: openpilot/starpilot/ui/speed_limit_widget.py
+msgid "OVERRIDE"
+msgstr "超控"
+
+#: openpilot/starpilot/ui/speed_limit_widget.py
+msgid "OVERRIDE {}"
+msgstr "超控 {}"
 
 #: openpilot/starpilot/galaxy/web/js/flm.js
 msgid "Observed measurement"
@@ -9459,6 +9909,10 @@ msgstr "关闭时，不会为车辆原有的按键行为添加任何操作。纵
 msgid "Off adds no action to the vehicle's existing button behavior. Axis pause and AOL assignments apply after restarting. Other actions can apply this drive. Long actions fire while held."
 msgstr "关闭时，不会为车辆原有的按键行为添加任何操作。纵向/转向暂停和 AOL 分配需重启后生效。其他操作可在本次行驶中生效。长按操作在按住时触发。"
 
+#: openpilot/starpilot/ui/slc_policy_feature.py
+msgid "Off adopts limits automatically. For prompts, + accepts and − declines within 30 seconds"
+msgstr "关闭时自动采用限速。提示时，30 秒内按 + 接受、按 − 拒绝"
+
 #: openpilot/starpilot/ui/sentry_owner.py
 msgid "Off and defaults"
 msgstr "关闭并恢复默认"
@@ -9478,6 +9932,14 @@ msgstr "默认关闭。在控制和 panda 安全中使用转向小齿轮曲率�
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Off uses the upstream planner. Supported longitudinal control stays active. Changes apply on the next drive."
 msgstr "关闭则使用上游规划器。受支持的纵向控制保持启用。更改在下次行驶生效。"
+
+#: openpilot/starpilot/ui/slc_policy_feature.py
+msgid "Offer or adopt higher mapped limits this many seconds early at the current speed"
+msgstr "按当前车速，提前此秒数提示或采用地图上更高的限速"
+
+#: openpilot/starpilot/ui/slc_policy_feature.py
+msgid "Offer or adopt lower mapped limits this many seconds early at the current speed"
+msgstr "按当前车速，提前此秒数提示或采用地图上更低的限速"
 
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Offer or adopt mapped limits this many seconds early at the current speed; applies to increases and decreases"
@@ -9597,6 +10059,10 @@ msgstr "开启为右舵，关闭为左舵，下次行驶生效。方向盘侧自
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 msgid "On the app’s main Settings page, turn on"
 msgstr "在 App 的主设置页面，开启"
+
+#: openpilot/starpilot/ui/appearance_owner.py
+msgid "On the comma screen only; StarPort has its own layout"
+msgstr "仅限 comma 屏幕；StarPort 有自己的布局"
 
 #: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
 msgid "On this car, openpilot defaults to the stock system's built-in ACC."
@@ -9865,6 +10331,10 @@ msgstr "可选的 RAV4 2022/2023 接收器。关闭则保留原雷达选择。�
 msgid "Optional RAV4 2022/2023 receiver. Off retains the original radar choice. Applies after startup; native safety and ECU configuration are unchanged."
 msgstr "可选的 RAV4 2022/2023 接收器。关闭则保留原雷达选择。启动后生效；原生安全和 ECU 配置不变。"
 
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Optional source. Select Off to disable."
+msgstr "可选来源。选择“关闭”即可停用。"
+
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Options"
 msgstr "选项"
@@ -9921,6 +10391,10 @@ msgstr "外侧车道线"
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "Overridden Chill"
 msgstr "已覆盖的安稳"
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Override speed limit with +"
+msgstr "按 + 超越限速"
 
 #: openpilot/starpilot/galaxy/web/js/plots.js
 msgid "P / I / D / F · controller output units ·"
@@ -10317,6 +10791,10 @@ msgstr "驻车屏幕超时"
 msgid "Parked availability was lost"
 msgstr "驻车状态已丢失"
 
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Parked changes apply after the next drive starts. These are explicit manual overrides, separate from Auto Learn."
+msgstr "驻车时的更改在下次行程开始后生效。这些是明确的手动覆盖，独立于自动学习。"
+
 #: openpilot/starpilot/ui/maps_state.py
 msgid "Parked downloads and cancellation are managed there"
 msgstr "驻车时的下载和取消在那里管理"
@@ -10332,6 +10810,10 @@ msgstr "驻车时设置硬件。重启后生效。"
 #: openpilot/starpilot/galaxy/web/js/map-operations.js
 msgid "Parked map management is unavailable in the offline preview."
 msgstr "离线预览中无法使用驻车地图管理。"
+
+#: openpilot/starpilot/ui/torque_feature.py
+msgid "Parked only. Saved for the next drive; zero restores this stage's original baseline. Only changed settings are locked; the other settings continue Auto Learn."
+msgstr "仅限驻车。保存后下次行驶生效；设为零可恢复此阶段的原始基线。仅锁定已更改的设置；其他设置继续自动学习。"
 
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Parking Brake Engaged"
@@ -10490,6 +10972,14 @@ msgstr "请集中注意力 - {} 级"
 msgid "Pay Attention to Engage"
 msgstr "请集中注意力后再启用"
 
+#: openpilot/starpilot/car/tesla/pedal_events.py
+msgid "Pedal Cruise Disengaged"
+msgstr "踏板巡航已脱离"
+
+#: openpilot/starpilot/car/tesla/pedal_events.py
+msgid "Pedal Cruise Engaged"
+msgstr "踏板巡航已启用"
+
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Pedal Pressed"
 msgstr "踏板被踩下"
@@ -10517,6 +11007,10 @@ msgstr "驾驶风格"
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Personalities set to Selected Profile follow this choice; explicit overrides stay unchanged."
 msgstr "设为“所选配置”的风格会跟随此选择；明确的覆盖项保持不变。"
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Personalities set to Use global preset follow this choice; explicit overrides stay unchanged."
+msgstr "设为“使用全局预设”的风格会跟随此选择；明确的覆盖项保持不变。"
 
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Personality"
@@ -10722,6 +11216,14 @@ msgstr "电源与温度管理"
 msgid "Powered"
 msgstr "已开启"
 
+#: openpilot/starpilot/ui/ford_bluepilot_feature.py
+msgid "Predicted Blend, High Curvature"
+msgstr "预测混合，高曲率"
+
+#: openpilot/starpilot/ui/ford_bluepilot_feature.py
+msgid "Predicted Blend, Low Curvature"
+msgstr "预测混合，低曲率"
+
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 msgid "Prefer phone GPS"
 msgstr "优先使用手机 GPS"
@@ -10798,6 +11300,10 @@ msgstr "已保留 · {}"
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Preset"
 msgstr "预设"
+
+#: openpilot/selfdrive/selfdrived/selfdrived.py
+msgid "Press RES or accelerator to proceed"
+msgstr "按 RES 或踩加速踏板继续"
 
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Press Resume"
@@ -11020,6 +11526,10 @@ msgstr "Mapbox 公共访问令牌"
 msgid "Pulse and Glide"
 msgstr "脉冲滑行"
 
+#: openpilot/starpilot/controllers/wheel_actions.py
+msgid "Pulse and glide"
+msgstr "脉冲滑行"
+
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Put it in pairing mode, then tap Find adapter."
 msgstr "请让其进入配对模式，然后点按“查找适配器”。"
@@ -11159,6 +11669,10 @@ msgstr "雷达恢复警报"
 msgid "Radar Temporarily Unavailable"
 msgstr "雷达暂时不可用"
 
+#: openpilot/starpilot/car/gm/radar_recovery.py
+msgid "Radar available again"
+msgstr "雷达已恢复可用"
+
 #: openpilot/starpilot/ui/preap_radar_feature.py
 msgid "Radar lateral offset"
 msgstr "雷达横向偏移"
@@ -11182,6 +11696,10 @@ msgstr "提高"
 #: openpilot/starpilot/ui/models_state.py
 msgid "Randomizer selects at the next start"
 msgstr "随机器将在下次启动时选择"
+
+#: openpilot/starpilot/ui/slc_offset_feature.py
+msgid "Ranges show whole-number posted limits. Unsafe reductions use the unadjusted limit"
+msgstr "范围按整数限速显示。不安全的降速采用未调整的限速"
 
 #: openpilot/starpilot/galaxy/web/data/catalog.json
 msgid "Read device and vehicle diagnostics"
@@ -11314,6 +11832,10 @@ msgstr "用当前车辆调校重新应用已保存的扭矩值（{}）？"
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Rear"
 msgstr "后"
+
+#: openpilot/starpilot/ui/ford_rear_fog_feature.py
+msgid "Rear Fog Indicator"
+msgstr "后雾灯指示"
 
 #: openpilot/selfdrive/ui/layouts/arabesque/tools/rebecca.py
 msgid "Rebecca, Adrift"
@@ -11488,6 +12010,10 @@ msgstr "减少快捷选择动效"
 msgid "Reduces interface animations for a steadier display."
 msgstr "减少界面动画，使显示更稳定。"
 
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Reduces small steering corrections on highways above about 40 mph. 0% is off; higher values add more smoothing."
+msgstr "在约 40 mph 以上的高速公路上减少细微的转向修正。0% 为关闭；数值越大越平顺。"
+
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Refresh"
 msgstr "刷新"
@@ -11499,6 +12025,10 @@ msgstr "刷新 Galaxy"
 #: openpilot/starpilot/galaxy/settings.py
 msgid "Refresh settings"
 msgstr "刷新设置"
+
+#: openpilot/starpilot/car/gm/events.py
+msgid "Regen Gear Selected"
+msgstr "已选择动能回收挡"
 
 #: openpilot/starpilot/galaxy/web/js/map-operations.js
 msgid "Region"
@@ -11523,6 +12053,10 @@ msgstr "拒绝配对"
 #: openpilot/selfdrive/ui/layouts/settings/toggles.py
 msgid "Relaxed"
 msgstr "从容"
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Relaxed Personality"
+msgstr "从容风格"
 
 #: openpilot/starpilot/ui/unified_speed_presentation.py
 msgid "Release"
@@ -12075,6 +12609,10 @@ msgstr "下次启动后，在 P 挡或空挡静止时请求关闭一次自动启
 msgid "Requests {} {} this speed {}, when the remaining driving conditions qualify."
 msgstr "请求 {}：车速{}此速度且{}，同时其余驾驶条件满足。"
 
+#: openpilot/starpilot/ui/lane_change_feature.py
+msgid "Require Cruise for Automatic Lane Changes"
+msgstr "自动变道需开启巡航"
+
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Required"
 msgstr "必需"
@@ -12110,6 +12648,10 @@ msgstr "需要重启设备以加载匹配的 panda 点火固件。"
 #: openpilot/starpilot/ui/pip_owner.py
 msgid "Requires confirmation; old bytes stay until you reset"
 msgstr "需要确认；旧数据保留至重置"
+
+#: openpilot/starpilot/ui/lane_change_feature.py
+msgid "Requires factory cruise or openpilot speed control to be engaged for a nudgeless start. With cruise off, a wheel nudge still works. Engage cruise before signaling."
+msgstr "需启用原厂巡航或 openpilot 速度控制，才能免轻推开始变道。巡航关闭时，轻推方向盘仍可变道。请在打转向灯前启用巡航。"
 
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Requires the next vehicle startup to configure the brake-hold permission in CarParams and Panda safety."
@@ -12271,6 +12813,10 @@ msgstr "重置组件颜色"
 #: openpilot/starpilot/ui/onroad_alerts.py
 msgid "Reset {label} to default"
 msgstr "将 {label} 重置为默认"
+
+#: openpilot/starpilot/ui/long_profile_feature.py
+msgid "Reset {label} to its seven default follow and jerk values? Saved curves, profile switches, and other profiles stay as they are. Saved tuning may resume if its switch was On; a failed reset leaves the switch Off."
+msgstr "将“{label}”重置为七项默认跟车和急动度数值？已保存的曲线、配置开关和其他配置保持不变。若其开关原为开启，已保存的调校可能恢复生效；重置失败时开关将保持关闭。"
 
 #: openpilot/starpilot/galaxy/settings.py
 msgid "Reset {} to its default?"
@@ -12478,9 +13024,18 @@ msgstr "恢复…"
 msgid "Resume Driving Manually"
 msgstr "请恢复手动驾驶"
 
+#: openpilot/starpilot/ui/slc_resume_action.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Resume Speed Limit + Offset"
+msgstr "恢复限速 + 偏移"
+
 #: openpilot/starpilot/ui/unified_speed_presentation.py
 msgid "Resume at"
 msgstr "恢复至"
+
+#: openpilot/starpilot/speed_limits/runtime_settings.py
+msgid "Resume the adjusted limit"
+msgstr "恢复调整后的限速"
 
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Retains a cruise-controlled stop until you press a pedal or cancel cruise. Applies after the next startup"
@@ -12629,6 +13184,71 @@ msgstr "右舵驾驶"
 #: openpilot/starpilot/galaxy/web/js/pip.js
 msgid "Right camera"
 msgstr "右侧摄像头"
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right scroll wheel / Fast scroll down"
+msgstr "右滚轮 / 快速向下滚动"
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right scroll wheel / Fast scroll up"
+msgstr "右滚轮 / 快速向上滚动"
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right scroll wheel / Nudge left"
+msgstr "右滚轮 / 向左拨"
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right scroll wheel / Nudge left — hold"
+msgstr "右滚轮 / 向左拨 — 按住"
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right scroll wheel / Nudge right"
+msgstr "右滚轮 / 向右拨"
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right scroll wheel / Nudge right — hold"
+msgstr "右滚轮 / 向右拨 — 按住"
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right scroll wheel / Scroll down"
+msgstr "右滚轮 / 向下滚动"
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right scroll wheel / Scroll up"
+msgstr "右滚轮 / 向上滚动"
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right stalk / Down"
+msgstr "右拨杆 / 向下"
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right stalk / Down — full press while engaged"
+msgstr "右拨杆 / 向下 — 启用时全按"
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right stalk / Down — half press while engaged"
+msgstr "右拨杆 / 向下 — 启用时半按"
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right stalk / Down — hold"
+msgstr "右拨杆 / 向下 — 按住"
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right stalk / Up"
+msgstr "右拨杆 / 向上"
 
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Right-Hand Drive"
@@ -13134,6 +13754,30 @@ msgstr "已保存的驾驶模式"
 msgid "Saved follow and jerk settings apply when Traffic mode is selected"
 msgstr "选择拥堵模式时应用已存的跟车和急动度设置"
 
+#: openpilot/starpilot/ui/traffic_feature.py
+msgid "Saved follow and jerk settings apply when Traffic mode is selected. Following time at low speeds; blends toward Relaxed as speed rises."
+msgstr "选择拥堵模式时应用已存的跟车和急动度设置。低速时的跟车时距；随车速升高逐渐向“从容”过渡。"
+
+#: openpilot/starpilot/ui/traffic_feature.py
+msgid "Saved follow and jerk settings apply when Traffic mode is selected. Resists changes in acceleration while slowing down. Higher values favor smoother changes; 100% is the base weight."
+msgstr "选择拥堵模式时应用已存的跟车和急动度设置。减缓减速时加速度的变化。数值越大越偏向平顺变化；100% 为基础权重。"
+
+#: openpilot/starpilot/ui/traffic_feature.py
+msgid "Saved follow and jerk settings apply when Traffic mode is selected. Resists changes in acceleration while speeding up. Higher values favor smoother changes; 100% is the base weight."
+msgstr "选择拥堵模式时应用已存的跟车和急动度设置。减缓加速时加速度的变化。数值越大越偏向平顺变化；100% 为基础权重。"
+
+#: openpilot/starpilot/ui/traffic_feature.py
+msgid "Saved follow and jerk settings apply when Traffic mode is selected. Smooths acceleration changes while slowing down. Higher values favor gradual responses; 100% is the base weight."
+msgstr "选择拥堵模式时应用已存的跟车和急动度设置。使减速时的加速度变化更平滑。数值越大响应越渐进；100% 为基础权重。"
+
+#: openpilot/starpilot/ui/traffic_feature.py
+msgid "Saved follow and jerk settings apply when Traffic mode is selected. Smooths acceleration changes while speeding up. Higher values favor gradual responses; 100% is the base weight."
+msgstr "选择拥堵模式时应用已存的跟车和急动度设置。使加速时的加速度变化更平滑。数值越大响应越渐进；100% 为基础权重。"
+
+#: openpilot/starpilot/ui/traffic_feature.py
+msgid "Saved follow and jerk settings apply when Traffic mode is selected. Weights the planner's penalty for entering a lead vehicle's buffer. Higher values discourage smaller gaps; not a safety limit."
+msgstr "选择拥堵模式时应用已存的跟车和急动度设置。为规划器进入前车缓冲区的惩罚加权。数值越大越不倾向缩小间距；不是安全限值。"
+
 #: openpilot/starpilot/galaxy/web/js/driving.js
 msgid "Saved follow, jerk, and profile curves"
 msgstr "已保存的跟车、急动度与配置曲线"
@@ -13323,6 +13967,30 @@ msgstr "已保存的值"
 #: openpilot/starpilot/ui/traffic_feature.py
 msgid "Saved values are inactive while Custom Driving Profiles is Off"
 msgstr "“自定义驾驶配置”关闭时，已存值不生效"
+
+#: openpilot/starpilot/ui/traffic_feature.py
+msgid "Saved values are inactive while Custom Driving Profiles is Off. Following time at low speeds; blends toward Relaxed as speed rises."
+msgstr "“自定义驾驶配置”关闭时，已存值不生效。低速时的跟车时距；随车速升高逐渐向“从容”过渡。"
+
+#: openpilot/starpilot/ui/traffic_feature.py
+msgid "Saved values are inactive while Custom Driving Profiles is Off. Resists changes in acceleration while slowing down. Higher values favor smoother changes; 100% is the base weight."
+msgstr "“自定义驾驶配置”关闭时，已存值不生效。减缓减速时加速度的变化。数值越大越偏向平顺变化；100% 为基础权重。"
+
+#: openpilot/starpilot/ui/traffic_feature.py
+msgid "Saved values are inactive while Custom Driving Profiles is Off. Resists changes in acceleration while speeding up. Higher values favor smoother changes; 100% is the base weight."
+msgstr "“自定义驾驶配置”关闭时，已存值不生效。减缓加速时加速度的变化。数值越大越偏向平顺变化；100% 为基础权重。"
+
+#: openpilot/starpilot/ui/traffic_feature.py
+msgid "Saved values are inactive while Custom Driving Profiles is Off. Smooths acceleration changes while slowing down. Higher values favor gradual responses; 100% is the base weight."
+msgstr "“自定义驾驶配置”关闭时，已存值不生效。使减速时的加速度变化更平滑。数值越大响应越渐进；100% 为基础权重。"
+
+#: openpilot/starpilot/ui/traffic_feature.py
+msgid "Saved values are inactive while Custom Driving Profiles is Off. Smooths acceleration changes while speeding up. Higher values favor gradual responses; 100% is the base weight."
+msgstr "“自定义驾驶配置”关闭时，已存值不生效。使加速时的加速度变化更平滑。数值越大响应越渐进；100% 为基础权重。"
+
+#: openpilot/starpilot/ui/traffic_feature.py
+msgid "Saved values are inactive while Custom Driving Profiles is Off. Weights the planner's penalty for entering a lead vehicle's buffer. Higher values discourage smaller gaps; not a safety limit."
+msgstr "“自定义驾驶配置”关闭时，已存值不生效。为规划器进入前车缓冲区的惩罚加权。数值越大越不倾向缩小间距；不是安全限值。"
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout.js
 msgid "Saved values changed while editing. Your edits are kept here. Reload before saving again."
@@ -13895,6 +14563,14 @@ msgstr "将分辨率设为 480p、720p 或 1080p，视频编码设为 H.264 或�
 msgid "Set Speed To"
 msgstr "将速度设为"
 
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Set Speed To needs Comma can set speed on Tesla dashboard turned on in Vehicle Settings"
+msgstr "“将速度设为”需要在车辆设置中开启“comma 可设置 Tesla 仪表盘速度”"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Set Speed To needs Comma can set speed on Tesla dashboard turned on in Vehicle Settings."
+msgstr "“将速度设为”需要在车辆设置中开启“comma 可设置 Tesla 仪表盘速度”。"
+
 #: openpilot/selfdrive/ui/layouts/arabesque/tools/clock.py
 msgid "Set Time"
 msgstr "设置时间"
@@ -14375,6 +15051,10 @@ msgstr "护盾就绪"
 msgid "Shift"
 msgstr "Shift"
 
+#: openpilot/selfdrive/selfdrived/selfdrived.py
+msgid "Shift to L for speed control"
+msgstr "请挂入 L 挡以控制车速"
+
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Short press"
 msgstr "短按"
@@ -14534,6 +15214,10 @@ msgstr "在 comma 4 上，盲区警告时显示红色边框。"
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Shows an amber border for turn signals on comma 4."
 msgstr "在 comma 4 上，转向灯亮起时显示琥珀色边框。"
+
+#: openpilot/starpilot/ui/ford_rear_fog_feature.py
+msgid "Shows fresh Ford rear-fog status only. Move or hide the widget per display in Galaxy."
+msgstr "仅显示 Ford 最新的后雾灯状态。可在 Galaxy 中按显示屏移动或隐藏该组件。"
 
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Shows live developer metrics on the right of the Big driving screen. Off gives that space back to the road view."
@@ -14739,6 +15423,10 @@ msgstr "延后更新"
 #: openpilot/starpilot/ui/models_state.py
 msgid "So"
 msgstr "So"
+
+#: openpilot/starpilot/audio/alert_volume.py
+msgid "Soft Warning"
+msgstr "轻度警告"
 
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Softens small acceleration requests, reduces grade correction and smooths light braking on supported GM trucks."
@@ -14985,6 +15673,14 @@ msgstr "速度窗口坐标会把原始基准值乘以 (1 + correction)。死区�
 msgid "Sport"
 msgstr "运动"
 
+#: openpilot/starpilot/ui/drive_mode_notice.py
+msgid "Sport Mode"
+msgstr "运动模式"
+
+#: openpilot/starpilot/ui/long_profile_feature.py
+msgid "Sport+"
+msgstr "运动+"
+
 #: openpilot/starpilot/galaxy/web/js/spotify.js openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Spotify & Phone Audio"
 msgstr "Spotify 与手机音频"
@@ -15053,6 +15749,10 @@ msgstr "绘图数值已过期"
 #: openpilot/selfdrive/ui/layouts/settings/toggles.py
 msgid "Standard"
 msgstr "标准"
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Standard Personality"
+msgstr "标准风格"
 
 #: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
 msgid ""
@@ -15150,6 +15850,10 @@ msgstr "StarPilot 更新后正在重启。Galaxy 正在等待您的设备上线�
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "StarPilot is showing on your screen. You’re ready to drive."
 msgstr "StarPilot 已显示在您的屏幕上，可以出发了。"
+
+#: openpilot/starpilot/ui/tesla_set_speed_feature.py
+msgid "StarPilot keeps its own set speed and scrolls the Tesla's set speed to match, so the dashboard shows the same speed. The Tesla's can lag a second or two behind. The comma and the Tesla must use the same units. Experimental."
+msgstr "StarPilot 保持自己的设定速度，并滚动调整 Tesla 的设定速度与之一致，使仪表盘显示相同速度。Tesla 的显示可能滞后一两秒。comma 与 Tesla 必须使用相同单位。实验性功能。"
 
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "StarPilot speed control is off in this configuration"
@@ -15259,6 +15963,14 @@ msgstr "星爆！"
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Start"
 msgstr "开始"
+
+#: openpilot/starpilot/longitudinal/developer_tuning.py
+msgid "Start Acceleration"
+msgstr "起步加速度"
+
+#: openpilot/starpilot/longitudinal/developer_tuning.py
+msgid "Start Speed"
+msgstr "起步速度"
 
 #: openpilot/starpilot/galaxy/web/js/map-operations.js
 msgid "Start download"
@@ -15383,6 +16095,10 @@ msgstr "确认安全后向右打方向以开始变道"
 msgid "Steer ratio mismatch"
 msgstr "转向比不匹配"
 
+#: openpilot/starpilot/lateral/lane_change_status_wire.py
+msgid "Steer to confirm when safe"
+msgstr "安全时打方向确认"
+
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Steering & Torque"
 msgstr "转向与扭矩"
@@ -15402,6 +16118,10 @@ msgstr "转向控制器"
 #: openpilot/starpilot/galaxy/web/js/plots.js
 msgid "Steering PID"
 msgstr "转向 PID"
+
+#: openpilot/selfdrive/selfdrived/selfdrived.py
+msgid "Steering Paused"
+msgstr "转向已暂停"
 
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Steering Pressed"
@@ -15551,9 +16271,21 @@ msgstr "原厂跟踪（"
 msgid "Stock tracked ({})"
 msgstr "原厂跟踪（{}）"
 
+#: openpilot/starpilot/ui/power_owner.py
+msgid "Stock uses the standard shutdown policy. Custom limits use the maximum parked time and voltage cutoff below; other protections can shut down earlier."
+msgstr "原厂使用标准关机策略。自定义限制使用下方的最长驻车时间和低电压切断；其他保护可能更早关机。"
+
+#: openpilot/starpilot/ui/power_owner.py
+msgid "Stock uses the standard shutdown policy. Custom limits use the maximum parked time and voltage cutoff below; other protections can shut down earlier. Stock limits apply until a custom policy is saved"
+msgstr "原厂使用标准关机策略。自定义限制使用下方的最长驻车时间和低电压切断；其他保护可能更早关机。保存自定义策略前沿用原厂限制"
+
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Stop"
 msgstr "停止"
+
+#: openpilot/starpilot/longitudinal/developer_tuning.py
+msgid "Stop Acceleration"
+msgstr "停车加速度"
 
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Stop Distance Adjustment"
@@ -15562,6 +16294,10 @@ msgstr "停车距离调整"
 #: openpilot/starpilot/galaxy/web/js/bluetooth.js
 msgid "Stop Search"
 msgstr "停止搜索"
+
+#: openpilot/starpilot/longitudinal/developer_tuning.py
+msgid "Stop Speed"
+msgstr "停车速度"
 
 #: openpilot/starpilot/ui/conditional_feature.py
 msgid "Stop lights"
@@ -15603,6 +16339,10 @@ msgstr "静止的前车"
 #: openpilot/starpilot/ui/onroad_customization.py
 msgid "Stopped timer"
 msgstr "停车计时"
+
+#: openpilot/starpilot/longitudinal/developer_tuning.py
+msgid "Stopping Rate"
+msgstr "停车速率"
 
 #: openpilot/starpilot/ui/feature_settings.py
 msgid "Stops driving services"
@@ -15819,6 +16559,10 @@ msgstr "扭矩 %"
 msgid "Tab"
 msgstr "Tab"
 
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Take Comma Selfie"
+msgstr "拍摄 comma 自拍"
+
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Take Control"
 msgstr "请接管"
@@ -15893,6 +16637,10 @@ msgstr "点按漂浮，躲开一切。"
 msgid "Tap to change"
 msgstr "点按更改"
 
+#: openpilot/starpilot/ui/speed_limit_widget.py
+msgid "Tap to review"
+msgstr "点按查看"
+
 #: openpilot/starpilot/galaxy/web/js/plots.js
 msgid "Target / measured · m/s² ·"
 msgstr "目标 / 实测 · m/s² ·"
@@ -15936,6 +16684,23 @@ msgstr "车道和前车间距空旷时，变道期间暂时缩短跟车时距；
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Temporarily selects Chill when a tracked lead moves away from a stop and the launch conditions are met."
 msgstr "跟踪的前车从停止状态驶离且满足起步条件时，暂时选用安稳模式。"
+
+#: openpilot/starpilot/ui/tesla_set_speed_feature.py
+msgid "Tesla CAN add-on cable"
+msgstr "Tesla CAN 附加线束"
+
+#: openpilot/starpilot/car/tesla/stock_events.py
+msgid "Tesla Cruise Disengaged"
+msgstr "Tesla 巡航已脱离"
+
+#: openpilot/starpilot/car/tesla/stock_events.py
+msgid "Tesla Cruise Engaged"
+msgstr "Tesla 巡航已启用"
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Tesla screen / Three-finger tap"
+msgstr "Tesla 屏幕 / 三指轻点"
 
 #: openpilot/starpilot/galaxy/web/js/sentry-notifications.js
 msgid "Test"
@@ -16295,6 +17060,10 @@ msgstr "这些模型文件需要外接 GPU。您现在可以下载，但在连�
 msgid "They're experimental. Stay alert and ready to take over."
 msgstr "它们属于实验性质，请保持警惕，随时准备接管。"
 
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Third source"
+msgstr "第三来源"
+
 #: openpilot/starpilot/galaxy/web/js/logs.js
 msgid "This Logs & Diagnostics page is unavailable in the offline preview."
 msgstr "离线预览中无法使用“日志与诊断”页面。"
@@ -16575,6 +17344,14 @@ msgstr "如需更换手机，请先在旧 App 中停止 GPS 共享，再在另�
 msgid "To stop, open Connections and select"
 msgstr "如需停止，请打开“连接”并选择"
 
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "To the next 5 km/h"
+msgstr "调至下一个 5 km/h 整倍数"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "To the next 5 mph"
+msgstr "调至下一个 5 mph 整倍数"
+
 #: openpilot/starpilot/galaxy/web/js/toggle-search.js
 msgid "Toggle"
 msgstr "功能开关"
@@ -16639,6 +17416,10 @@ msgstr "工具"
 #: openpilot/starpilot/galaxy/web/js/flm.js
 msgid "Torque / torque-actuated PID"
 msgstr "扭矩 / 扭矩驱动 PID"
+
+#: openpilot/starpilot/ui/controller_feature.py
+msgid "Torque Controller"
+msgstr "扭矩控制器"
 
 #: openpilot/starpilot/ui/onroad_customization.py
 msgid "Torque bar"
@@ -16735,8 +17516,16 @@ msgid "Traffic Mode"
 msgstr "拥堵模式"
 
 #: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Traffic Personality"
+msgstr "拥堵风格"
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Traffic Profile"
 msgstr "拥堵配置"
+
+#: openpilot/starpilot/controllers/wheel_actions.py
+msgid "Traffic mode"
+msgstr "拥堵模式"
 
 #: openpilot/starpilot/galaxy/web/js/flm.js
 msgid "Training windows:"
@@ -16921,6 +17710,10 @@ msgstr "开启"
 msgid "Turn on Bluetooth on the Bluetooth page."
 msgstr "请在蓝牙页面开启蓝牙。"
 
+#: openpilot/starpilot/ui/ford_bluepilot_feature.py
+msgid "Turn on Custom Tuning Profile first"
+msgstr "请先开启“自定义调校配置”"
+
 #: openpilot/starpilot/galaxy/web/js/onroad-layout.js
 #: openpilot/starpilot/ui/appearance_owner.py
 msgid "Turn on Lead Indicator first"
@@ -16974,6 +17767,10 @@ msgstr "关闭车辆后才能更换模型"
 #: openpilot/starpilot/galaxy/web/js/vasm.js
 msgid "Turn the vehicle off to change these settings."
 msgstr "请关闭点火开关后再更改这些设置。"
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Turn this on to use your car's factory adaptive cruise instead of StarPilot's"
+msgstr "开启后使用车辆的原厂自适应巡航，而非 StarPilot 的巡航"
 
 #: openpilot/starpilot/ui/onroad_customization.py
 msgid "Turn-by-turn"
@@ -17143,6 +17940,10 @@ msgstr "无法加载方向盘图"
 msgid "Unable to upload speed-limit shapes"
 msgstr "无法上传限速图形"
 
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Unassigned"
+msgstr "未分配"
+
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Unavailable"
 msgstr "不可用"
@@ -17193,8 +17994,8 @@ msgid "Unavailable with the current vehicle or feature settings"
 msgstr "当前车辆或功能设置下不可用"
 
 #: openpilot/starpilot/ui/runtime_app.py
-msgid "Unavailable: {}"
-msgstr "不可用：{}"
+msgid "Unavailable: {label}"
+msgstr "不可用：{label}"
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Undo"
@@ -17267,6 +18068,10 @@ msgstr "未知系列"
 #: openpilot/starpilot/galaxy/web/js/flm.js
 msgid "Unknown — waiting for a current report"
 msgstr "未知 — 正在等待最新报告"
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Unlocks assistance for a signaled turn once speed reaches 2 mph or less. Existing steering limits still apply. Never at standstill. Applies next drive."
+msgstr "车速降至 2 mph 或以下时，为已打灯的转弯解锁辅助。现有转向限制仍然适用。静止时不启用。下次行驶生效。"
 
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Unpacked safely"
@@ -17624,6 +18429,10 @@ msgstr "将取消键用作辅助键"
 msgid "Use Download for full update"
 msgstr "请使用“下载”进行完整更新"
 
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Use Factory ACC"
+msgstr "使用原厂 ACC"
+
 #: openpilot/starpilot/ui/panda_wake_feature.py
 msgid "Use GM CAN ignition instead of the harness ignition signal."
 msgstr "使用 GM CAN 点火，而非线束点火信号。"
@@ -17724,6 +18533,10 @@ msgstr "使用默认的 mph 速度区间"
 msgid "Use default {} speed ranges"
 msgstr "使用默认的 {} 速度区间"
 
+#: openpilot/starpilot/ui/long_profile_feature.py
+msgid "Use global preset"
+msgstr "使用全局预设"
+
 #: openpilot/starpilot/galaxy/web/js/toyota-tools.js
 msgid "Use key"
 msgstr "使用密钥"
@@ -17775,6 +18588,10 @@ msgstr "使用纯视觉自适应巡航，而不是雷达辅助的前车检测。
 #: openpilot/starpilot/ui/vasm_owner.py
 msgid "Use visual spot monitoring"
 msgstr "使用视觉盲区监测"
+
+#: openpilot/starpilot/speed_limits/runtime_settings.py
+msgid "Use your SET speed"
+msgstr "使用您的设定速度"
 
 #: openpilot/starpilot/ui/galaxy_access.py
 msgid "Use your existing Galaxy password, or set a new one"
@@ -17881,6 +18698,10 @@ msgstr "使用加速踏板"
 #: openpilot/starpilot/ui/unified_speed_presentation.py
 msgid "Using set speed"
 msgstr "使用设定速度"
+
+#: openpilot/selfdrive/selfdrived/helpers.py
+msgid "Using small model"
+msgstr "正在使用小模型"
 
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 msgid "Using your last saved location to plan routes. Route planning requires Internet; offline map downloads aren't required. Live guidance starts when GPS is available."
@@ -21816,9 +22637,17 @@ msgstr "模型"
 msgid "model action failed"
 msgstr "模型操作失败"
 
+#: openpilot/starpilot/ui/runtime_app.py
+msgid "model action; turn the vehicle off and try again"
+msgstr "模型操作；请熄火后重试"
+
 #: openpilot/starpilot/ui/models_compact.py
 msgid "model details"
 msgstr "模型详情"
+
+#: openpilot/starpilot/ui/runtime_app.py
+msgid "model list changed; try again"
+msgstr "模型列表已更改；请重试"
 
 #: openpilot/starpilot/ui/models_compact.py
 msgid "model manager"
@@ -25061,6 +25890,14 @@ msgstr "区域"
 msgid "zoom"
 msgstr "缩放"
 
+#: openpilot/starpilot/ui/speed_limit_widget.py
+msgid "{label} / OVERRIDE"
+msgstr "{label} / 超控"
+
+#: openpilot/starpilot/ui/speed_limit_widget.py
+msgid "{label} / OVERRIDE {}"
+msgstr "{label} / 超控 {}"
+
 #: openpilot/starpilot/galaxy/web/js/home.js
 msgid "{label} AOL steering only"
 msgstr "{label} 仅 AOL 转向"
@@ -25068,6 +25905,10 @@ msgstr "{label} 仅 AOL 转向"
 #: openpilot/starpilot/galaxy/web/js/home.js
 msgid "{label} engaged"
 msgstr "启用占比 {label}"
+
+#: openpilot/starpilot/ui/torque_feature.py
+msgid "{label} — Reset to Default"
+msgstr "{label} — 恢复默认"
 
 #: openpilot/starpilot/ui/maps_state.py
 msgid "{} / {} groups"
@@ -25219,6 +26060,14 @@ msgstr "{} 已安装 / 共 {}"
 msgid "{} installed · {} missing"
 msgstr "{} 已安装 · {} 缺失"
 
+#: openpilot/starpilot/ui/slc_offset_feature.py
+msgid "{} km/h and above"
+msgstr "{} km/h 及以上"
+
+#: openpilot/starpilot/ui/slc_offset_feature.py
+msgid "{} km/h offset"
+msgstr "{} km/h 偏移"
+
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 #: openpilot/starpilot/galaxy/web/js/starport.js
 #: openpilot/starpilot/ui/onroad_map.py
@@ -25264,6 +26113,14 @@ msgstr "{} 个缺失录像区间"
 #: openpilot/starpilot/ui/vehicle_compact.py
 msgid "{} models"
 msgstr "{} 车型"
+
+#: openpilot/starpilot/ui/slc_offset_feature.py
+msgid "{} mph and above"
+msgstr "{} mph 及以上"
+
+#: openpilot/starpilot/ui/slc_offset_feature.py
+msgid "{} mph offset"
+msgstr "{} mph 偏移"
 
 #: openpilot/starpilot/galaxy/web/js/longitudinal-curves.js
 #: openpilot/starpilot/ui/feature_settings_owner.py
