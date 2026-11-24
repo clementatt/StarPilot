@@ -12,6 +12,7 @@ from openpilot.starpilot.ui.raylib import rl
 from openpilot.selfdrive.ui.mici.widgets.button import BigButton, GreyBigButton
 from openpilot.selfdrive.ui.ui_state import device, ui_state
 from openpilot.starpilot.ui.clip import placed_at
+from openpilot.starpilot.ui.compact_text import joined
 from openpilot.starpilot.ui.feature_settings import FeatureSettingsView
 from openpilot.starpilot.ui.feature_settings_state import (FEATURE_ROW_HEIGHT, FeatureInput, FeatureRow, FeatureSettingsState,
                                                          FeatureUiAction, feature_scroll)
@@ -733,7 +734,7 @@ class ReplayPage(Widget):
     self.card_signature = signature
     cards = []
     for row in rows:
-      detail = ' - '.join(part for part in (row.value, row.reason) if part).lower()
+      detail = joined(row.value, row.reason).lower()
       if row.actions:
         button = BigButton(row.label.lower(), detail, scroll=True)
         size = 30

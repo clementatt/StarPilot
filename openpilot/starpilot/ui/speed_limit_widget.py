@@ -14,6 +14,8 @@ from openpilot.starpilot.ui.presentation import BitmapFonts, FontRole, Profile
 from openpilot.starpilot.ui.speed_limit_pulse import SpeedLimitPulse
 from openpilot.starpilot.ui.speed_limit_shapes import SpeedLimitShapes
 from openpilot.starpilot.ui.unified_speed_presentation import displayed_adjusted_limit_mps, positive, resolve_unified_speed
+from openpilot.system.ui.lib.display_translation import DisplayText
+from openpilot.system.ui.lib.multilang import tr_display
 
 
 INK = rl.Color(241, 246, 243, 255)
@@ -38,6 +40,11 @@ SET_STATUS_ROW = SHARED_NUMBER_ROW + 40
 
 # A soft shade around large text keeps it readable over bright or busy camera views.
 HALO = tuple((4 * math.cos(k * math.pi / 4), 4 * math.sin(k * math.pi / 4)) for k in range(8))
+
+
+def capitals(text):
+  """Upper-case a label after translating it, so "Accept" still finds its translation."""
+  return DisplayText(tr_display(text)).upper()
 
 
 def draw_text(fonts, text, role, size, x, y, color=INK):
@@ -196,7 +203,7 @@ class SpeedLimitWidget:
         self.shapes.button(x + (left + w / 2) * scale, y + (top + h / 2) * scale, accent,
                            profile=self.profile, scale=scale, pressed=selected)
         start = top + (h - heading_height - gap - number_height) / 2
-        text(control.label.upper(), label_size, left + w / 2, start + heading_height / 2, ink, FontRole.SEMI_BOLD)
+        text(capitals(control.label), label_size, left + w / 2, start + heading_height / 2, ink, FontRole.SEMI_BOLD)
         detail_y = start + heading_height + gap + number_height / 2
         if control.label == 'Accept':
           # Bind the adjusted proposal to its action, not to the current override or source reading.
@@ -250,13 +257,14 @@ class SpeedLimitWidget:
     draw_line(self.profile, rl.Vector2(ax + 2 * scale, ay), rl.Vector2(ax - 2 * scale, ay + 4 * scale), 1.5 * scale, accent)
     if state.slc_wheel_confirmation_available:
       hint_size = 23
-      accept, reject = ink_width('ACCEPT', hint_size), ink_width('REJECT', hint_size)
+      accept_label, reject_label = capitals('Accept'), capitals('Reject')
+      accept, reject = ink_width(accept_label, hint_size), ink_width(reject_label, hint_size)
       start = (width - 18 - 4 - accept - 10 - 18 - 4 - reject) / 2
       for left, plus in ((start, True), (start + 18 + 4 + accept + 10, False)):
         self.shapes.wheel_key(plus, x + (left + 9) * scale, content_top + hint_row * scale, scale=scale)
       hint_ink = rl.Color(210, 216, 216, 255)
-      text('ACCEPT', hint_size, start + 22 + accept / 2, row_origin + hint_row, hint_ink if slc_accept_available(state) else MUTED)
-      text('REJECT', hint_size, start + 18 + 4 + accept + 10 + 22 + reject / 2, row_origin + hint_row, hint_ink)
+      text(accept_label, hint_size, start + 22 + accept / 2, row_origin + hint_row, hint_ink if slc_accept_available(state) else MUTED)
+      text(reject_label, hint_size, start + 18 + 4 + accept + 10 + 22 + reject / 2, row_origin + hint_row, hint_ink)
     else:
       text('Tap to review', 22, width / 2, row_origin + hint_row, secondary)
 

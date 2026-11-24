@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 from openpilot.selfdrive.ui.mici.layouts.main import MiciMainLayout
-from openpilot.starpilot.ui.settings_state import Destination
+from openpilot.starpilot.ui.settings_state import Destination, destination_label
 
 
 class StarMiciMainLayout(MiciMainLayout):
@@ -136,7 +136,7 @@ class StarMiciMainLayout(MiciMainLayout):
                    runtime.Destination.DEVELOPER: DeveloperLayoutMici}
     panel_type = panel_types.get(destination)
     if panel_type is None:
-      self.star._unavailable(destination.value)
+      self.star._unavailable(destination_label(destination))
       return
     panel = self._compact_panels.get(destination)
     if panel is None:

@@ -2,6 +2,7 @@
 
 from typing import Protocol
 
+from openpilot.starpilot.ui.compact_text import joined, step_label
 from openpilot.starpilot.ui.feature_settings_state import FeatureSettingsRequest, FeatureSettingsState, row_change
 from openpilot.system.ui.lib.application import gui_app
 from openpilot.system.ui.widgets.scroller import NavScroller
@@ -31,14 +32,14 @@ class DisplayCompact:
     state = self.session.display_snapshot()
     cards = [GreyBigButton("display", "saved brightness and screen timing")]
     for row in state.rows:
-      description = row.value + (" " + row.unit if row.unit and row.value != "Auto" else "") + (". " + row.reason if row.reason else "")
+      description = joined(row.value + (" " + row.unit if row.unit and row.value != "Auto" else ""), row.reason)
       if not row.available:
         cards.append(GreyBigButton(row.label.lower(), description.lower()))
         continue
       numeric = row.step > 0 and row.value != "Auto" and not row.repair_value
       for direction in ((-1, 1) if numeric else (1,)):
-        label = row.label.lower() + (" set " + row.repair_value.lower() if row.repair_value else
-                                    " -" if numeric and direction < 0 else " +" if numeric else "")
+        label = (row.label.lower() + " set " + row.repair_value.lower() if row.repair_value else
+                 step_label(row.label, " -" if direction < 0 else " +") if numeric else row.label.lower())
         button = BigButton(label, description.lower())
         button.set_enabled(row_change(row, direction) is not None)
         def clicked(source=row, step=direction) -> None:

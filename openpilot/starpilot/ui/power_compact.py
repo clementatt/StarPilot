@@ -2,6 +2,7 @@
 
 from typing import Protocol
 
+from openpilot.starpilot.ui.compact_text import joined
 from openpilot.starpilot.ui.feature_settings_state import FeatureSettingsRequest, FeatureSettingsState
 from openpilot.starpilot.ui.power_owner import ENABLED, confirm_question, power_row_change
 from openpilot.system.ui.lib.application import gui_app
@@ -35,7 +36,7 @@ class PowerCompact:
     state = self.session.power_snapshot()
     cards = [GreyBigButton("parked power", "saved offroad shutdown limits")]
     for row in state.rows:
-      description = row.value + (". " + row.reason if row.reason else "")
+      description = joined(row.value, row.reason)
       if not row.available:
         cards.append(GreyBigButton(row.label.lower(), description.lower()))
         continue

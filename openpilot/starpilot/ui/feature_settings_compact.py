@@ -17,6 +17,7 @@ from openpilot.starpilot.ui.lane_change_feature import KEYS as LANE_CHANGE_KEYS,
 from openpilot.starpilot.ui.long_profile_feature import long_confirm_question
 from openpilot.starpilot.ui.conditional_feature import confirmation_question as conditional_question
 from openpilot.starpilot.ui.controller_feature import SETUP_ACTION, SETUP_QUESTION
+from openpilot.starpilot.ui.compact_text import step_label
 from openpilot.system.ui.lib.application import gui_app
 from openpilot.system.ui.widgets.scroller import NavScroller
 from openpilot.selfdrive.ui.mici.widgets.button import BigButton, GreyBigButton
@@ -72,8 +73,8 @@ class FeatureSettingsCompact:
     result: list[BigButton] = []
     directions = (1,) if row.repair_value else (-1, 1) if row.step else (1,)
     for direction in directions:
-      label = row.label.lower() + (" set " + row.repair_value.lower() if row.repair_value else
-                                   " −" if direction < 0 else " +" if row.step else "")
+      label = (row.label.lower() + " set " + row.repair_value.lower() if row.repair_value else
+               step_label(row.label, " −" if direction < 0 else " +") if row.step else row.label.lower())
       detail = value_text(row) if row.key == "LaneCenteringStrength" else (row.value + " " + row.unit).strip()
       if row.learned_value:
         detail += " · " + row.learned_value
@@ -115,7 +116,7 @@ class FeatureSettingsCompact:
       return
     if row.key in CONDITIONAL_CONFIRM_ACTIONS:
       if page is not None:
-        self._confirm(request, conditional_question(request), refresh, page)
+        self._confirm(request, conditional_question(request, row.label, row.unit), refresh, page)
       return
     def confirmed() -> None:
       if self.session.feature_request(request):

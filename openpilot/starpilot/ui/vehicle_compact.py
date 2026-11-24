@@ -3,6 +3,7 @@
 from collections import defaultdict
 
 from openpilot.selfdrive.ui.mici.widgets.button import BigButton, GreyBigButton
+from openpilot.starpilot.ui.compact_text import joined
 from openpilot.selfdrive.ui.mici.widgets.dialog import BigDialog
 from openpilot.selfdrive.ui.ui_state import ui_state
 from openpilot.starpilot.vehicle_selection import SelectionSnapshot, VehicleChoice, VehicleSelectionOwner
@@ -65,7 +66,7 @@ class VehicleCompact(NavScroller):
         if row.available:
           cards.extend(adapter._editable(row, self._populate, self))
         else:
-          cards.append(GreyBigButton(row.label.lower(), (row.value + " " + row.reason).strip().lower()))
+          cards.append(GreyBigButton(row.label.lower(), joined(row.value, row.reason).lower()))
     self._scroller.items.clear()
     self._scroller.add_widgets(cards)
 

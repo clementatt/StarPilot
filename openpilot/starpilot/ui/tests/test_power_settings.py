@@ -306,7 +306,7 @@ class PowerSettingsTests(unittest.TestCase):
       dialog = pushed.call_args.args[0]
       dialog._callback(DialogResult.CONFIRM)
       self.assertTrue(read_saved(self.params).policy.enabled)
-      self.assertTrue(page._scroller.items[1].description.startswith("custom limits."))
+      self.assertTrue(page._scroller.items[1].description.startswith("custom limits · "))
       page._scroller.items[2].click()
       picker = pushed.call_args.args[0]
       self.assertIn("6 h", picker.options)
@@ -314,7 +314,7 @@ class PowerSettingsTests(unittest.TestCase):
       picker._callback(DialogResult.CONFIRM)
       pushed.call_args.args[0]._callback(DialogResult.CONFIRM)
       self.assertEqual(read_saved(self.params).policy.delay_hours, 6)
-      self.assertEqual(page._scroller.items[2].description.split(".")[0], "6 h")
+      self.assertEqual(page._scroller.items[2].description.split(" · ")[0], "6 h")
       page._scroller.items[2].click()
       picker = pushed.call_args.args[0]
       picker.selection = "7 h"

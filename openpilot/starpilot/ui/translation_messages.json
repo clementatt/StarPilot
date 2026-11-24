@@ -9394,12 +9394,6 @@
       ]
     },
     {
-      "source": "New Limit",
-      "refs": [
-        "openpilot/starpilot/ui/speed_limit_widget.py"
-      ]
-    },
-    {
       "source": "New Limit notice",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/layout-preview.js"
@@ -18557,12 +18551,6 @@
       "source": "Unavailable with the current vehicle or feature settings",
       "refs": [
         "openpilot/starpilot/ui/feature_settings_owner.py"
-      ]
-    },
-    {
-      "source": "Unavailable: {}",
-      "refs": [
-        "openpilot/starpilot/ui/runtime_app.py"
       ]
     },
     {
@@ -31637,6 +31625,30 @@
       ]
     },
     {
+      "source": "Accel: Eco, Decel: Eco",
+      "refs": [
+        "openpilot/starpilot/ui/drive_mode_notice.py"
+      ]
+    },
+    {
+      "source": "Accel: Sport+, Decel: Sport",
+      "refs": [
+        "openpilot/starpilot/ui/drive_mode_notice.py"
+      ]
+    },
+    {
+      "source": "Accel: Standard, Decel: Standard",
+      "refs": [
+        "openpilot/starpilot/ui/drive_mode_notice.py"
+      ]
+    },
+    {
+      "source": "Acceleration",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
       "source": "Access the device remotely using your SSH keys.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
@@ -31646,6 +31658,18 @@
       "source": "Active Big",
       "refs": [
         "openpilot/starpilot/ui/models_state.py"
+      ]
+    },
+    {
+      "source": "Actuator Delay",
+      "refs": [
+        "openpilot/starpilot/longitudinal/developer_tuning.py"
+      ]
+    },
+    {
+      "source": "Actuator delay",
+      "refs": [
+        "openpilot/starpilot/ui/delay_feature.py"
       ]
     },
     {
@@ -31661,6 +31685,60 @@
       ]
     },
     {
+      "source": "Adds space behind slow or stopped leads with the StarPilot planner; zero keeps the normal gap.",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
+      "source": "Adds the right scroll wheel, right stalk and three-finger screen tap as controls, and lets the comma set the speed on the Tesla's dashboard. Model 3 and Model Y, HW3 or HW4. Checked when the car starts.",
+      "refs": [
+        "openpilot/starpilot/ui/tesla_set_speed_feature.py"
+      ]
+    },
+    {
+      "source": "Adopt higher limits early",
+      "refs": [
+        "openpilot/starpilot/ui/slc_policy_feature.py"
+      ]
+    },
+    {
+      "source": "Adopt lower limits early",
+      "refs": [
+        "openpilot/starpilot/ui/slc_policy_feature.py"
+      ]
+    },
+    {
+      "source": "Adopt speed limit",
+      "refs": [
+        "openpilot/starpilot/controllers/wheel_actions.py"
+      ]
+    },
+    {
+      "source": "Advanced acceleration and braking parameters",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
+      "source": "Advanced steering parameters and total actuator delay",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
+      "source": "After an accelerator override",
+      "refs": [
+        "openpilot/starpilot/ui/slc_policy_feature.py"
+      ]
+    },
+    {
+      "source": "Aggressive Personality",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
       "source": "Allow cellular data roaming.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py"
@@ -31673,10 +31751,34 @@
       ]
     },
     {
+      "source": "Allows the model to anticipate a signaled intersection turn. Off waits for driver initiation for Turn Assist.",
+      "refs": [
+        "openpilot/starpilot/ui/lane_change_feature.py"
+      ]
+    },
+    {
       "source": "Always Hold Enhanced Stops",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/developer.py",
         "openpilot/starpilot/longitudinal/enhanced_stop_hold.py"
+      ]
+    },
+    {
+      "source": "Always On Lateral on/off",
+      "refs": [
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
+      "source": "Always On Lateral on/off applies after the next startup",
+      "refs": [
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
+      "source": "Always On Lateral on/off stays on this tap until the next startup",
+      "refs": [
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
       ]
     },
     {
@@ -31692,6 +31794,18 @@
       ]
     },
     {
+      "source": "Applies next drive.",
+      "refs": [
+        "openpilot/starpilot/ui/longitudinal_developer.py"
+      ]
+    },
+    {
+      "source": "Arm Stock Cruise to Enable Speed Control",
+      "refs": [
+        "openpilot/starpilot/car/tesla/stock_events.py"
+      ]
+    },
+    {
       "source": "Audio waits for {}.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/spotify.js"
@@ -31704,9 +31818,63 @@
       ]
     },
     {
+      "source": "Automatic Change Unavailable",
+      "refs": [
+        "openpilot/starpilot/lateral/lane_change_status_wire.py"
+      ]
+    },
+    {
+      "source": "Automatic Conditions",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
+      "source": "Automatic Lane Change Pending",
+      "refs": [
+        "openpilot/starpilot/lateral/lane_change_status_wire.py"
+      ]
+    },
+    {
+      "source": "Automatic Turn Initiation",
+      "refs": [
+        "openpilot/starpilot/ui/lane_change_feature.py"
+      ]
+    },
+    {
+      "source": "Automatic conditions",
+      "refs": [
+        "openpilot/starpilot/ui/conditional_feature.py"
+      ]
+    },
+    {
+      "source": "Automatic delay. Shown value is the vehicle default.",
+      "refs": [
+        "openpilot/starpilot/ui/delay_feature.py"
+      ]
+    },
+    {
+      "source": "Automatic switches between Chill and Experimental using your saved conditions.",
+      "refs": [
+        "openpilot/starpilot/ui/conditional_feature.py"
+      ]
+    },
+    {
+      "source": "Automatic. Changes apply next drive.",
+      "refs": [
+        "openpilot/starpilot/ui/longitudinal_developer.py"
+      ]
+    },
+    {
       "source": "Awareness: {}%",
       "refs": [
         "openpilot/selfdrive/ui/mici/onroad/cabin_camera_dialog.py"
+      ]
+    },
+    {
+      "source": "BRAKE!",
+      "refs": [
+        "openpilot/selfdrive/selfdrived/events.py"
       ]
     },
     {
@@ -31813,6 +31981,12 @@
       ]
     },
     {
+      "source": "Big Model Lost",
+      "refs": [
+        "openpilot/selfdrive/selfdrived/helpers.py"
+      ]
+    },
+    {
       "source": "Highest streak",
       "refs": [
         "openpilot/starpilot/galaxy/drive_stats.py"
@@ -31855,15 +32029,64 @@
       ]
     },
     {
+      "source": "BluePilot Angle",
+      "refs": [
+        "openpilot/starpilot/car/ford/controller_selection.py"
+      ]
+    },
+    {
+      "source": "BluePilot Controller Options",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py",
+        "openpilot/starpilot/ui/ford_bluepilot_feature.py"
+      ]
+    },
+    {
+      "source": "BluePilot Curvature",
+      "refs": [
+        "openpilot/starpilot/car/ford/controller_selection.py"
+      ]
+    },
+    {
+      "source": "Bookmark #{} Saved",
+      "refs": [
+        "openpilot/selfdrive/selfdrived/bookmarks.py"
+      ]
+    },
+    {
+      "source": "Both",
+      "refs": [
+        "openpilot/starpilot/speed_limits/runtime_settings.py"
+      ]
+    },
+    {
       "source": "Brand: {label}",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/diagnostic-tools.js"
       ]
     },
     {
+      "source": "By 1 km/h",
+      "refs": [
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
+      "source": "By 1 mph",
+      "refs": [
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
       "source": "Calibrating: {}%",
       "refs": [
         "openpilot/selfdrive/selfdrived/events.py"
+      ]
+    },
+    {
+      "source": "Change while parked",
+      "refs": [
+        "openpilot/starpilot/ui/ford_bluepilot_feature.py"
       ]
     },
     {
@@ -31882,6 +32105,18 @@
       "source": "Check for new models",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Check surroundings",
+      "refs": [
+        "openpilot/starpilot/lateral/lane_change_status_wire.py"
+      ]
+    },
+    {
+      "source": "Check surroundings; steer to confirm now",
+      "refs": [
+        "openpilot/starpilot/lateral/lane_change_status_wire.py"
       ]
     },
     {
@@ -31981,6 +32216,30 @@
       ]
     },
     {
+      "source": "Chimes when the model’s traffic-light stop prediction clears while you remain stopped.",
+      "refs": [
+        "openpilot/starpilot/audio/departure_alert.py"
+      ]
+    },
+    {
+      "source": "Chimes when the tracked vehicle ahead starts moving while you remain stopped.",
+      "refs": [
+        "openpilot/starpilot/audio/departure_alert.py"
+      ]
+    },
+    {
+      "source": "Choose Automatic, Chill or Experimental",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
+      "source": "Choose the steering controller for your next drive. StarPilot's torque controller can provide higher low-speed steering accuracy, but may require additional tuning. Join the StarPilot Discord and open a tuning request: https://firestar.link/discord",
+      "refs": [
+        "openpilot/starpilot/ui/controller_feature.py"
+      ]
+    },
+    {
       "source": "Choose your adapter below.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
@@ -32029,6 +32288,36 @@
       ]
     },
     {
+      "source": "Coast Downhills",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
+      "source": "Comfort/Normal/Sport (m/s²): global 0.6/1.2/2.4; explicit personality 0.5/1.0/2.0. Use global preset inherits global values. These separate scales preserve existing tuning. StarPilot Default keeps native cruise braking. Lead and stop braking retain priority.",
+      "refs": [
+        "openpilot/starpilot/ui/long_profile_feature.py"
+      ]
+    },
+    {
+      "source": "Comma can set speed on Tesla dashboard",
+      "refs": [
+        "openpilot/starpilot/ui/tesla_set_speed_feature.py"
+      ]
+    },
+    {
+      "source": "Communication Issue",
+      "refs": [
+        "openpilot/selfdrive/selfdrived/selfdrived.py"
+      ]
+    },
+    {
+      "source": "Confirm limits",
+      "refs": [
+        "openpilot/starpilot/ui/slc_policy_feature.py"
+      ]
+    },
+    {
       "source": "Connect to internet to check for updates",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
@@ -32053,6 +32342,24 @@
       ]
     },
     {
+      "source": "Cruise uses this target when you lift off the accelerator. Held speed stays at or below SET.",
+      "refs": [
+        "openpilot/starpilot/ui/slc_policy_feature.py"
+      ]
+    },
+    {
+      "source": "Current vehicle and readable saved settings are required",
+      "refs": [
+        "openpilot/starpilot/ui/torque_feature.py"
+      ]
+    },
+    {
+      "source": "Custom Tuning Profile",
+      "refs": [
+        "openpilot/starpilot/ui/ford_bluepilot_feature.py"
+      ]
+    },
+    {
       "source": "Customize blind spot camera & preview",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/settings.js"
@@ -32068,6 +32375,30 @@
       "source": "Customize quick select",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/settings.js"
+      ]
+    },
+    {
+      "source": "Cycle personality",
+      "refs": [
+        "openpilot/starpilot/controllers/wheel_actions.py"
+      ]
+    },
+    {
+      "source": "Decrease set speed",
+      "refs": [
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
+      "source": "Detected",
+      "refs": [
+        "openpilot/starpilot/ui/tesla_set_speed_feature.py"
+      ]
+    },
+    {
+      "source": "Developer Parameters",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
       ]
     },
     {
@@ -32193,6 +32524,12 @@
       ]
     },
     {
+      "source": "Disengage StarPilot",
+      "refs": [
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
       "source": "Disengage to fast update selected branch",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py",
@@ -32238,6 +32575,18 @@
       ]
     },
     {
+      "source": "Disengagement Alert",
+      "refs": [
+        "openpilot/starpilot/audio/alert_volume.py"
+      ]
+    },
+    {
+      "source": "Distracted Driver",
+      "refs": [
+        "openpilot/starpilot/audio/alert_volume.py"
+      ]
+    },
+    {
       "source": "Do all of my segments get pulled in Firehose Mode?",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/firehose.py"
@@ -32275,9 +32624,33 @@
       ]
     },
     {
+      "source": "Driving Mode",
+      "refs": [
+        "openpilot/starpilot/ui/conditional_feature.py"
+      ]
+    },
+    {
+      "source": "Driving Modes",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
       "source": "Driving models",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Eco Mode",
+      "refs": [
+        "openpilot/starpilot/ui/drive_mode_notice.py"
+      ]
+    },
+    {
+      "source": "Eco, Normal and Sport select Eco, Standard and Sport+ acceleration with Eco, Standard and Sport deceleration, replacing the selected profiles below. Traffic Mode is unchanged.",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
       ]
     },
     {
@@ -32389,6 +32762,30 @@
       ]
     },
     {
+      "source": "Engage StarPilot",
+      "refs": [
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
+      "source": "Engagement Chime",
+      "refs": [
+        "openpilot/starpilot/audio/alert_volume.py"
+      ]
+    },
+    {
+      "source": "Engagement Refused",
+      "refs": [
+        "openpilot/starpilot/audio/alert_volume.py"
+      ]
+    },
+    {
+      "source": "Enhanced Stop",
+      "refs": [
+        "openpilot/selfdrive/selfdrived/selfdrived.py"
+      ]
+    },
+    {
       "source": "Ensure good airflow.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
@@ -32449,6 +32846,12 @@
       ]
     },
     {
+      "source": "Experimental override",
+      "refs": [
+        "openpilot/starpilot/controllers/wheel_actions.py"
+      ]
+    },
+    {
       "source": "Expires in {} day ({})",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
@@ -32464,6 +32867,12 @@
       "source": "Expires within a day ({})",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Extra stopped-lead distance",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
       ]
     },
     {
@@ -32503,9 +32912,33 @@
       ]
     },
     {
+      "source": "Follow accepted limits plus offsets, up to your SET speed",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
+      "source": "Following",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
       "source": "For maximum effectiveness, bring your device inside and connect to a good USB-C adapter and Wi-Fi weekly.\n\nFirehose Mode can also work while you're driving if connected to a hotspot or unlimited SIM card.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/firehose.py"
+      ]
+    },
+    {
+      "source": "Force coast",
+      "refs": [
+        "openpilot/starpilot/controllers/wheel_actions.py"
+      ]
+    },
+    {
+      "source": "Ford Controller",
+      "refs": [
+        "openpilot/starpilot/ui/ford_bluepilot_feature.py"
       ]
     },
     {
@@ -32545,9 +32978,27 @@
       ]
     },
     {
+      "source": "General Prompt",
+      "refs": [
+        "openpilot/starpilot/audio/alert_volume.py"
+      ]
+    },
+    {
       "source": "Grant SSH access to all public keys in your GitHub settings. Only enter your own username.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "Green Light",
+      "refs": [
+        "openpilot/starpilot/audio/departure_alert.py"
+      ]
+    },
+    {
+      "source": "Green Light Alert",
+      "refs": [
+        "openpilot/starpilot/audio/departure_alert.py"
       ]
     },
     {
@@ -32557,9 +33008,51 @@
       ]
     },
     {
+      "source": "Higher only",
+      "refs": [
+        "openpilot/starpilot/speed_limits/runtime_settings.py"
+      ]
+    },
+    {
+      "source": "Higher values respond more strongly. Applies at restart. Only the proportional gain is fixed.",
+      "refs": [
+        "openpilot/starpilot/ui/gain_feature.py"
+      ]
+    },
+    {
+      "source": "Higher values respond more strongly. First manual activation requires a driving-process restart.",
+      "refs": [
+        "openpilot/starpilot/ui/gain_feature.py"
+      ]
+    },
+    {
+      "source": "Highway Smoothing",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
+      "source": "Hold the speed you reached",
+      "refs": [
+        "openpilot/starpilot/speed_limits/runtime_settings.py"
+      ]
+    },
+    {
+      "source": "Holds the brakes at a stop with cruise main on. Press the gas or regen paddle to release. Requires StarPilot speed control and applies after the next startup",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
       "source": "Hover or tap a segment",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "Human Turn Detection",
+      "refs": [
+        "openpilot/starpilot/ui/ford_bluepilot_feature.py"
       ]
     },
     {
@@ -32587,6 +33080,12 @@
       ]
     },
     {
+      "source": "Immediate Warning",
+      "refs": [
+        "openpilot/starpilot/audio/alert_volume.py"
+      ]
+    },
+    {
       "source": "Immediately connect to the internet to check for updates",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
@@ -32599,9 +33098,21 @@
       ]
     },
     {
+      "source": "Increase set speed",
+      "refs": [
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
       "source": "Internal storage: {label} · {free} free",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "Invalid saved assignments",
+      "refs": [
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
       ]
     },
     {
@@ -32624,15 +33135,87 @@
       ]
     },
     {
+      "source": "Lane Change Factor",
+      "refs": [
+        "openpilot/starpilot/ui/ford_bluepilot_feature.py"
+      ]
+    },
+    {
+      "source": "Lane Change Pending",
+      "refs": [
+        "openpilot/starpilot/lateral/lane_change_status_wire.py"
+      ]
+    },
+    {
+      "source": "Lead Departing Alert",
+      "refs": [
+        "openpilot/starpilot/audio/departure_alert.py"
+      ]
+    },
+    {
+      "source": "Lead Vehicle Departing",
+      "refs": [
+        "openpilot/starpilot/audio/departure_alert.py"
+      ]
+    },
+    {
       "source": "Let the driving model control gas and brakes.\nIncludes stopping for red lights and stop signs.\nSet speed is a maximum, not a target.\nThese are alpha features. Expect mistakes.\nThe path colors show acceleration and braking.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/toggles.py"
       ]
     },
     {
+      "source": "Lets StarPilot SET at your current speed down to the vehicle’s minimum engagement speed. Factory cruise still uses the car’s minimum speed.",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
+      "source": "Lets gravity carry the car above set speed without targeting a higher speed. Changes apply while driving.",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
+      "source": "Limits acceleration by speed. Comfort is gentler; Sport and Sport+ allow stronger acceleration. Use global preset follows the global choice. An explicit choice overrides it; StarPilot Default keeps vehicle behavior.",
+      "refs": [
+        "openpilot/starpilot/ui/long_profile_feature.py"
+      ]
+    },
+    {
       "source": "Longitudinal: {label}",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/diagnostic-tools.js"
+      ]
+    },
+    {
+      "source": "Low-Speed Cruise Start",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
+      "source": "Lower only",
+      "refs": [
+        "openpilot/starpilot/speed_limits/runtime_settings.py"
+      ]
+    },
+    {
+      "source": "Manual actuator delay. Reset restores automatic delay.",
+      "refs": [
+        "openpilot/starpilot/ui/delay_feature.py"
+      ]
+    },
+    {
+      "source": "Manual steering tune",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
+      "source": "Manual tune",
+      "refs": [
+        "openpilot/starpilot/ui/torque_feature.py"
       ]
     },
     {
@@ -32648,9 +33231,33 @@
       ]
     },
     {
+      "source": "Match Drive Mode",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
+      "source": "Match Speed Limit on Engage",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
+      "source": "Max Regen Being Used",
+      "refs": [
+        "openpilot/starpilot/car/tesla/pedal_events.py"
+      ]
+    },
+    {
       "source": "Max speed when engaging openpilot.\nIf you are already driving faster, your current speed is used.\nResume restores the previous max speed.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/initial_cruise_speed.py"
+      ]
+    },
+    {
+      "source": "Maximum Acceleration",
+      "refs": [
+        "openpilot/starpilot/longitudinal/developer_tuning.py"
       ]
     },
     {
@@ -32678,6 +33285,37 @@
       ]
     },
     {
+      "source": "Mute Blindspot Alert at Standstill",
+      "refs": [
+        "openpilot/starpilot/ui/sounds_owner.py"
+      ]
+    },
+    {
+      "source": "Mutes Blindspot Alert While Lateral Is Off when stopped or moving below 1 mph.",
+      "refs": [
+        "openpilot/starpilot/ui/sounds_owner.py"
+      ]
+    },
+    {
+      "source": "NEW LIMIT",
+      "refs": [
+        "openpilot/starpilot/ui/speed_limit_widget.py"
+      ]
+    },
+    {
+      "source": "Needs the Tesla CAN add-on cable",
+      "refs": [
+        "openpilot/starpilot/ui/tesla_set_speed_feature.py"
+      ]
+    },
+    {
+      "source": "Needs the Tesla CAN add-on cable.",
+      "refs": [
+        "openpilot/starpilot/ui/tesla_controls_feature.py",
+        "openpilot/starpilot/ui/tesla_set_speed_feature.py"
+      ]
+    },
+    {
       "source": "Next segment",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/route-workspace.js"
@@ -32702,9 +33340,57 @@
       ]
     },
     {
+      "source": "Normal Mode",
+      "refs": [
+        "openpilot/starpilot/ui/drive_mode_notice.py"
+      ]
+    },
+    {
       "source": "Nothing found yet. Keep your adapter in pairing mode.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Now: OVERRIDE",
+      "refs": [
+        "openpilot/starpilot/ui/speed_limit_widget.py"
+      ]
+    },
+    {
+      "source": "Now: OVERRIDE {}",
+      "refs": [
+        "openpilot/starpilot/ui/speed_limit_widget.py"
+      ]
+    },
+    {
+      "source": "OVERRIDE",
+      "refs": [
+        "openpilot/starpilot/ui/speed_limit_widget.py"
+      ]
+    },
+    {
+      "source": "OVERRIDE {}",
+      "refs": [
+        "openpilot/starpilot/ui/speed_limit_widget.py"
+      ]
+    },
+    {
+      "source": "Off adopts limits automatically. For prompts, + accepts and − declines within 30 seconds",
+      "refs": [
+        "openpilot/starpilot/ui/slc_policy_feature.py"
+      ]
+    },
+    {
+      "source": "Offer or adopt higher mapped limits this many seconds early at the current speed",
+      "refs": [
+        "openpilot/starpilot/ui/slc_policy_feature.py"
+      ]
+    },
+    {
+      "source": "Offer or adopt lower mapped limits this many seconds early at the current speed",
+      "refs": [
+        "openpilot/starpilot/ui/slc_policy_feature.py"
       ]
     },
     {
@@ -32714,9 +33400,27 @@
       ]
     },
     {
+      "source": "On the comma screen only; StarPort has its own layout",
+      "refs": [
+        "openpilot/starpilot/ui/appearance_owner.py"
+      ]
+    },
+    {
       "source": "On this car, openpilot defaults to the stock system's built-in ACC.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "Optional source. Select Off to disable.",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
+      "source": "Override speed limit with +",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
       ]
     },
     {
@@ -32762,6 +33466,18 @@
       ]
     },
     {
+      "source": "Parked changes apply after the next drive starts. These are explicit manual overrides, separate from Auto Learn.",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
+      "source": "Parked only. Saved for the next drive; zero restores this stage's original baseline. Only changed settings are locked; the other settings continue Auto Learn.",
+      "refs": [
+        "openpilot/starpilot/ui/torque_feature.py"
+      ]
+    },
+    {
       "source": "Partial: {label} / unknown",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/models.js"
@@ -32783,6 +33499,24 @@
       "source": "Pay Attention - level {}",
       "refs": [
         "openpilot/selfdrive/ui/mici/onroad/cabin_camera_dialog.py"
+      ]
+    },
+    {
+      "source": "Pedal Cruise Disengaged",
+      "refs": [
+        "openpilot/starpilot/car/tesla/pedal_events.py"
+      ]
+    },
+    {
+      "source": "Pedal Cruise Engaged",
+      "refs": [
+        "openpilot/starpilot/car/tesla/pedal_events.py"
+      ]
+    },
+    {
+      "source": "Personalities set to Use global preset follow this choice; explicit overrides stay unchanged.",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
       ]
     },
     {
@@ -32810,6 +33544,24 @@
       ]
     },
     {
+      "source": "Predicted Blend, High Curvature",
+      "refs": [
+        "openpilot/starpilot/ui/ford_bluepilot_feature.py"
+      ]
+    },
+    {
+      "source": "Predicted Blend, Low Curvature",
+      "refs": [
+        "openpilot/starpilot/ui/ford_bluepilot_feature.py"
+      ]
+    },
+    {
+      "source": "Press RES or accelerator to proceed",
+      "refs": [
+        "openpilot/selfdrive/selfdrived/selfdrived.py"
+      ]
+    },
+    {
       "source": "Prevent large uploads over the cellular connection.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py"
@@ -32828,6 +33580,12 @@
       ]
     },
     {
+      "source": "Pulse and glide",
+      "refs": [
+        "openpilot/starpilot/controllers/wheel_actions.py"
+      ]
+    },
+    {
       "source": "Put your adapter in pairing mode, then pick it from the list",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
@@ -32837,6 +33595,24 @@
       "source": "Put your car in pairing mode, then pick it from the list",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Radar available again",
+      "refs": [
+        "openpilot/starpilot/car/gm/radar_recovery.py"
+      ]
+    },
+    {
+      "source": "Ranges show whole-number posted limits. Unsafe reductions use the unadjusted limit",
+      "refs": [
+        "openpilot/starpilot/ui/slc_offset_feature.py"
+      ]
+    },
+    {
+      "source": "Rear Fog Indicator",
+      "refs": [
+        "openpilot/starpilot/ui/ford_rear_fog_feature.py"
       ]
     },
     {
@@ -32855,6 +33631,24 @@
       "source": "Recording drive: {label} · {free} free",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "Reduces small steering corrections on highways above about 40 mph. 0% is off; higher values add more smoothing.",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
+      "source": "Regen Gear Selected",
+      "refs": [
+        "openpilot/starpilot/car/gm/events.py"
+      ]
+    },
+    {
+      "source": "Relaxed Personality",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
       ]
     },
     {
@@ -32918,9 +33712,27 @@
       ]
     },
     {
+      "source": "Require Cruise for Automatic Lane Changes",
+      "refs": [
+        "openpilot/starpilot/ui/lane_change_feature.py"
+      ]
+    },
+    {
+      "source": "Requires factory cruise or openpilot speed control to be engaged for a nudgeless start. With cruise off, a wheel nudge still works. Engage cruise before signaling.",
+      "refs": [
+        "openpilot/starpilot/ui/lane_change_feature.py"
+      ]
+    },
+    {
       "source": "Reset speed-limit offsets to zero? {label}. Saved SLC control may resume if its switch is On; the switch will not change.",
       "refs": [
         "openpilot/starpilot/ui/feature_reset_question.py"
+      ]
+    },
+    {
+      "source": "Reset {label} to its seven default follow and jerk values? Saved curves, profile switches, and other profiles stay as they are. Saved tuning may resume if its switch was On; a failed reset leaves the switch Off.",
+      "refs": [
+        "openpilot/starpilot/ui/long_profile_feature.py"
       ]
     },
     {
@@ -32948,6 +33760,110 @@
       ]
     },
     {
+      "source": "Resume Speed Limit + Offset",
+      "refs": [
+        "openpilot/starpilot/ui/slc_resume_action.py",
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
+      "source": "Resume the adjusted limit",
+      "refs": [
+        "openpilot/starpilot/speed_limits/runtime_settings.py"
+      ]
+    },
+    {
+      "source": "Right scroll wheel / Fast scroll down",
+      "refs": [
+        "openpilot/starpilot/common/car_control_config.py",
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
+      "source": "Right scroll wheel / Fast scroll up",
+      "refs": [
+        "openpilot/starpilot/common/car_control_config.py",
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
+      "source": "Right scroll wheel / Nudge left",
+      "refs": [
+        "openpilot/starpilot/common/car_control_config.py",
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
+      "source": "Right scroll wheel / Nudge left — hold",
+      "refs": [
+        "openpilot/starpilot/common/car_control_config.py",
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
+      "source": "Right scroll wheel / Nudge right",
+      "refs": [
+        "openpilot/starpilot/common/car_control_config.py",
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
+      "source": "Right scroll wheel / Nudge right — hold",
+      "refs": [
+        "openpilot/starpilot/common/car_control_config.py",
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
+      "source": "Right scroll wheel / Scroll down",
+      "refs": [
+        "openpilot/starpilot/common/car_control_config.py",
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
+      "source": "Right scroll wheel / Scroll up",
+      "refs": [
+        "openpilot/starpilot/common/car_control_config.py",
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
+      "source": "Right stalk / Down",
+      "refs": [
+        "openpilot/starpilot/common/car_control_config.py",
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
+      "source": "Right stalk / Down — full press while engaged",
+      "refs": [
+        "openpilot/starpilot/common/car_control_config.py",
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
+      "source": "Right stalk / Down — half press while engaged",
+      "refs": [
+        "openpilot/starpilot/common/car_control_config.py",
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
+      "source": "Right stalk / Down — hold",
+      "refs": [
+        "openpilot/starpilot/common/car_control_config.py",
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
+      "source": "Right stalk / Up",
+      "refs": [
+        "openpilot/starpilot/common/car_control_config.py",
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
       "source": "Route: no",
       "refs": [
         "openpilot/selfdrive/ui/mici/onroad/navigation.py"
@@ -32969,6 +33885,78 @@
       "source": "Sampled {label}",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "Saved follow and jerk settings apply when Traffic mode is selected. Following time at low speeds; blends toward Relaxed as speed rises.",
+      "refs": [
+        "openpilot/starpilot/ui/traffic_feature.py"
+      ]
+    },
+    {
+      "source": "Saved follow and jerk settings apply when Traffic mode is selected. Resists changes in acceleration while slowing down. Higher values favor smoother changes; 100% is the base weight.",
+      "refs": [
+        "openpilot/starpilot/ui/traffic_feature.py"
+      ]
+    },
+    {
+      "source": "Saved follow and jerk settings apply when Traffic mode is selected. Resists changes in acceleration while speeding up. Higher values favor smoother changes; 100% is the base weight.",
+      "refs": [
+        "openpilot/starpilot/ui/traffic_feature.py"
+      ]
+    },
+    {
+      "source": "Saved follow and jerk settings apply when Traffic mode is selected. Smooths acceleration changes while slowing down. Higher values favor gradual responses; 100% is the base weight.",
+      "refs": [
+        "openpilot/starpilot/ui/traffic_feature.py"
+      ]
+    },
+    {
+      "source": "Saved follow and jerk settings apply when Traffic mode is selected. Smooths acceleration changes while speeding up. Higher values favor gradual responses; 100% is the base weight.",
+      "refs": [
+        "openpilot/starpilot/ui/traffic_feature.py"
+      ]
+    },
+    {
+      "source": "Saved follow and jerk settings apply when Traffic mode is selected. Weights the planner's penalty for entering a lead vehicle's buffer. Higher values discourage smaller gaps; not a safety limit.",
+      "refs": [
+        "openpilot/starpilot/ui/traffic_feature.py"
+      ]
+    },
+    {
+      "source": "Saved values are inactive while Custom Driving Profiles is Off. Following time at low speeds; blends toward Relaxed as speed rises.",
+      "refs": [
+        "openpilot/starpilot/ui/traffic_feature.py"
+      ]
+    },
+    {
+      "source": "Saved values are inactive while Custom Driving Profiles is Off. Resists changes in acceleration while slowing down. Higher values favor smoother changes; 100% is the base weight.",
+      "refs": [
+        "openpilot/starpilot/ui/traffic_feature.py"
+      ]
+    },
+    {
+      "source": "Saved values are inactive while Custom Driving Profiles is Off. Resists changes in acceleration while speeding up. Higher values favor smoother changes; 100% is the base weight.",
+      "refs": [
+        "openpilot/starpilot/ui/traffic_feature.py"
+      ]
+    },
+    {
+      "source": "Saved values are inactive while Custom Driving Profiles is Off. Smooths acceleration changes while slowing down. Higher values favor gradual responses; 100% is the base weight.",
+      "refs": [
+        "openpilot/starpilot/ui/traffic_feature.py"
+      ]
+    },
+    {
+      "source": "Saved values are inactive while Custom Driving Profiles is Off. Smooths acceleration changes while speeding up. Higher values favor gradual responses; 100% is the base weight.",
+      "refs": [
+        "openpilot/starpilot/ui/traffic_feature.py"
+      ]
+    },
+    {
+      "source": "Saved values are inactive while Custom Driving Profiles is Off. Weights the planner's penalty for entering a lead vehicle's buffer. Higher values discourage smaller gaps; not a safety limit.",
+      "refs": [
+        "openpilot/starpilot/ui/traffic_feature.py"
       ]
     },
     {
@@ -33011,6 +33999,18 @@
       "source": "Set Close lane-change gap to On? Changes refresh during this drive.",
       "refs": [
         "openpilot/starpilot/ui/lane_change_feature.py"
+      ]
+    },
+    {
+      "source": "Set Speed To needs Comma can set speed on Tesla dashboard turned on in Vehicle Settings",
+      "refs": [
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
+      "source": "Set Speed To needs Comma can set speed on Tesla dashboard turned on in Vehicle Settings.",
+      "refs": [
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
       ]
     },
     {
@@ -33171,6 +34171,12 @@
       ]
     },
     {
+      "source": "Shift to L for speed control",
+      "refs": [
+        "openpilot/selfdrive/selfdrived/selfdrived.py"
+      ]
+    },
+    {
       "source": "Show all models",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/models.js"
@@ -33213,6 +34219,12 @@
       ]
     },
     {
+      "source": "Shows fresh Ford rear-fog status only. Move or hide the widget per display in Galaxy.",
+      "refs": [
+        "openpilot/starpilot/ui/ford_rear_fog_feature.py"
+      ]
+    },
+    {
       "source": "Signal {}% · Enterprise Wi-Fi (unsupported)",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/networks.js"
@@ -33237,9 +34249,33 @@
       ]
     },
     {
+      "source": "Soft Warning",
+      "refs": [
+        "openpilot/starpilot/audio/alert_volume.py"
+      ]
+    },
+    {
       "source": "Sort and filter models",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Sport Mode",
+      "refs": [
+        "openpilot/starpilot/ui/drive_mode_notice.py"
+      ]
+    },
+    {
+      "source": "Sport+",
+      "refs": [
+        "openpilot/starpilot/ui/long_profile_feature.py"
+      ]
+    },
+    {
+      "source": "Standard Personality",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
       ]
     },
     {
@@ -33249,15 +34285,75 @@
       ]
     },
     {
+      "source": "StarPilot keeps its own set speed and scrolls the Tesla's set speed to match, so the dashboard shows the same speed. The Tesla's can lag a second or two behind. The comma and the Tesla must use the same units. Experimental.",
+      "refs": [
+        "openpilot/starpilot/ui/tesla_set_speed_feature.py"
+      ]
+    },
+    {
+      "source": "Start Acceleration",
+      "refs": [
+        "openpilot/starpilot/longitudinal/developer_tuning.py"
+      ]
+    },
+    {
+      "source": "Start Speed",
+      "refs": [
+        "openpilot/starpilot/longitudinal/developer_tuning.py"
+      ]
+    },
+    {
       "source": "State: {label}",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/diagnostic-tools.js"
       ]
     },
     {
+      "source": "Steer to confirm when safe",
+      "refs": [
+        "openpilot/starpilot/lateral/lane_change_status_wire.py"
+      ]
+    },
+    {
+      "source": "Steering Paused",
+      "refs": [
+        "openpilot/selfdrive/selfdrived/selfdrived.py"
+      ]
+    },
+    {
       "source": "Steering: {label}",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/diagnostic-tools.js"
+      ]
+    },
+    {
+      "source": "Stock uses the standard shutdown policy. Custom limits use the maximum parked time and voltage cutoff below; other protections can shut down earlier.",
+      "refs": [
+        "openpilot/starpilot/ui/power_owner.py"
+      ]
+    },
+    {
+      "source": "Stock uses the standard shutdown policy. Custom limits use the maximum parked time and voltage cutoff below; other protections can shut down earlier. Stock limits apply until a custom policy is saved",
+      "refs": [
+        "openpilot/starpilot/ui/power_owner.py"
+      ]
+    },
+    {
+      "source": "Stop Acceleration",
+      "refs": [
+        "openpilot/starpilot/longitudinal/developer_tuning.py"
+      ]
+    },
+    {
+      "source": "Stop Speed",
+      "refs": [
+        "openpilot/starpilot/longitudinal/developer_tuning.py"
+      ]
+    },
+    {
+      "source": "Stopping Rate",
+      "refs": [
+        "openpilot/starpilot/longitudinal/developer_tuning.py"
       ]
     },
     {
@@ -33279,9 +34375,46 @@
       ]
     },
     {
+      "source": "Take Comma Selfie",
+      "refs": [
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
       "source": "Takes over from the phone or speaker Spotify is playing on now. Music plays through {label}. You might need to confirm the switch in the Spotify app.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "Tap to review",
+      "refs": [
+        "openpilot/starpilot/ui/speed_limit_widget.py"
+      ]
+    },
+    {
+      "source": "Tesla CAN add-on cable",
+      "refs": [
+        "openpilot/starpilot/ui/tesla_set_speed_feature.py"
+      ]
+    },
+    {
+      "source": "Tesla Cruise Disengaged",
+      "refs": [
+        "openpilot/starpilot/car/tesla/stock_events.py"
+      ]
+    },
+    {
+      "source": "Tesla Cruise Engaged",
+      "refs": [
+        "openpilot/starpilot/car/tesla/stock_events.py"
+      ]
+    },
+    {
+      "source": "Tesla screen / Three-finger tap",
+      "refs": [
+        "openpilot/starpilot/common/car_control_config.py",
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
       ]
     },
     {
@@ -33297,9 +34430,33 @@
       ]
     },
     {
+      "source": "Third source",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
       "source": "This requests openpilot longitudinal control after a verified vehicle takeover at startup.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "To the next 5 km/h",
+      "refs": [
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
+      "source": "To the next 5 mph",
+      "refs": [
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
+      "source": "Torque Controller",
+      "refs": [
+        "openpilot/starpilot/ui/controller_feature.py"
       ]
     },
     {
@@ -33321,6 +34478,18 @@
       ]
     },
     {
+      "source": "Traffic Personality",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
+      "source": "Traffic mode",
+      "refs": [
+        "openpilot/starpilot/controllers/wheel_actions.py"
+      ]
+    },
+    {
       "source": "Turn ignition off, then tap to acknowledge. Have the cause checked before re-engaging.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
@@ -33333,9 +34502,21 @@
       ]
     },
     {
+      "source": "Turn on Custom Tuning Profile first",
+      "refs": [
+        "openpilot/starpilot/ui/ford_bluepilot_feature.py"
+      ]
+    },
+    {
       "source": "Turn on StarPilot speed control after the next startup? Steering stays unchanged.",
       "refs": [
         "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Turn this on to use your car's factory adaptive cruise instead of StarPilot's",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
       ]
     },
     {
@@ -33357,15 +34538,33 @@
       ]
     },
     {
+      "source": "Unassigned",
+      "refs": [
+        "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
       "source": "Unavailable unresponsive moments",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/home.js"
       ]
     },
     {
+      "source": "Unavailable: {label}",
+      "refs": [
+        "openpilot/starpilot/ui/runtime_app.py"
+      ]
+    },
+    {
       "source": "Uninstall and re-install if this error persists.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Unlocks assistance for a signaled turn once speed reaches 2 mph or less. Existing steering limits still apply. Never at standstill. Applies next drive.",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
       ]
     },
     {
@@ -33393,6 +34592,12 @@
       ]
     },
     {
+      "source": "Use Factory ACC",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
       "source": "Use StarPilot speed control instead of stock adaptive cruise control.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
@@ -33414,6 +34619,24 @@
       "source": "Use default mph speed ranges",
       "refs": [
         "openpilot/starpilot/ui/slc_offset_feature.py"
+      ]
+    },
+    {
+      "source": "Use global preset",
+      "refs": [
+        "openpilot/starpilot/ui/long_profile_feature.py"
+      ]
+    },
+    {
+      "source": "Use your SET speed",
+      "refs": [
+        "openpilot/starpilot/speed_limits/runtime_settings.py"
+      ]
+    },
+    {
+      "source": "Using small model",
+      "refs": [
+        "openpilot/selfdrive/selfdrived/helpers.py"
       ]
     },
     {
@@ -33788,6 +35011,18 @@
       "source": "manage prime",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py"
+      ]
+    },
+    {
+      "source": "model action; turn the vehicle off and try again",
+      "refs": [
+        "openpilot/starpilot/ui/runtime_app.py"
+      ]
+    },
+    {
+      "source": "model list changed; try again",
+      "refs": [
+        "openpilot/starpilot/ui/runtime_app.py"
       ]
     },
     {
@@ -34231,6 +35466,48 @@
       "source": "wrong password",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py"
+      ]
+    },
+    {
+      "source": "{label} / OVERRIDE",
+      "refs": [
+        "openpilot/starpilot/ui/speed_limit_widget.py"
+      ]
+    },
+    {
+      "source": "{label} / OVERRIDE {}",
+      "refs": [
+        "openpilot/starpilot/ui/speed_limit_widget.py"
+      ]
+    },
+    {
+      "source": "{label} — Reset to Default",
+      "refs": [
+        "openpilot/starpilot/ui/torque_feature.py"
+      ]
+    },
+    {
+      "source": "{} km/h and above",
+      "refs": [
+        "openpilot/starpilot/ui/slc_offset_feature.py"
+      ]
+    },
+    {
+      "source": "{} km/h offset",
+      "refs": [
+        "openpilot/starpilot/ui/slc_offset_feature.py"
+      ]
+    },
+    {
+      "source": "{} mph and above",
+      "refs": [
+        "openpilot/starpilot/ui/slc_offset_feature.py"
+      ]
+    },
+    {
+      "source": "{} mph offset",
+      "refs": [
+        "openpilot/starpilot/ui/slc_offset_feature.py"
       ]
     },
     {

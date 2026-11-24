@@ -4,6 +4,7 @@ from collections.abc import Callable
 import time
 from typing import Protocol
 
+from openpilot.starpilot.ui.compact_text import joined
 from openpilot.starpilot.ui.feature_settings_state import FeatureSettingsState
 from openpilot.system.ui.lib.application import gui_app
 from openpilot.system.ui.widgets.scroller import NavScroller
@@ -59,6 +60,6 @@ class MapsCompact:
   def _populate(page: _MapsPage, state: FeatureSettingsState) -> None:
     page.current = state
     cards = [GreyBigButton(state.title.lower(), state.subtitle.lower())]
-    cards.extend(GreyBigButton(row.label.lower(), f"{row.value}. {row.reason}".lower()) for row in state.rows)
+    cards.extend(GreyBigButton(row.label.lower(), joined(row.value, row.reason).lower()) for row in state.rows)
     page._scroller.items.clear()
     page._scroller.add_widgets(cards)

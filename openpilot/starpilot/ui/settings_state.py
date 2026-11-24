@@ -82,6 +82,12 @@ class SettingsState:
     return next(item for item in self.availability if item.destination == destination)
 
 
+def destination_label(destination: Destination) -> str:
+  """A destination's menu or tile name for notices; the enum value is an internal id."""
+  names = {item[0]: item[1] for item in (*RAIL, *TILES, *COMPACT_MENU)}
+  return names.get(destination, destination.value.replace("_", " ").title())
+
+
 def compact_menu(state: SettingsState):
   return tuple((item[0], state.force_drive_label, *item[2:]) if item[0] == Destination.FORCE_DRIVE else item
                for item in COMPACT_MENU if not (state.paired and item[0] == Destination.PAIR))

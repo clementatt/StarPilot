@@ -2,6 +2,7 @@
 
 from typing import Protocol
 
+from openpilot.starpilot.ui.compact_text import joined
 from openpilot.starpilot.ui.feature_settings_state import FeatureSettingsRequest, FeatureSettingsState, row_change
 from openpilot.starpilot.ui.appearance_preferences import CAMERA_LABELS, LEAD_INFO_LABELS
 from openpilot.starpilot.ui.pip_owner import FORMAT_PREFIX as PIP_FORMAT_PREFIX, RESET as PIP_RESET
@@ -84,7 +85,7 @@ class AppearanceCompact:
         cards.append(button)
         continue
       if not row.available:
-        cards.append(GreyBigButton(SLC_VISUAL_LABELS.get(row.key, row.label.lower()), f"{row.value}. {row.reason}".lower()))
+        cards.append(GreyBigButton(SLC_VISUAL_LABELS.get(row.key, row.label.lower()), joined(row.value, row.reason).lower()))
         continue
       label = SLC_VISUAL_LABELS.get(row.key, row.label.lower()) + (" set " + row.repair_value.lower() if row.repair_value else "")
       button = BigButton(label, row.value.lower())
