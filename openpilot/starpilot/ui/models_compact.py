@@ -4,6 +4,7 @@ from collections.abc import Callable
 import time
 from typing import Protocol
 
+from openpilot.starpilot.ui.compact_text import joined
 from openpilot.starpilot.ui.feature_settings_state import FeatureSettingsState
 from openpilot.starpilot.ui.models_state import (big_none_label, model_action_allowed, model_catalog_rows, model_needs_gpu, model_request,
                                                 model_display_text as _display_text)
@@ -19,6 +20,11 @@ SET_ACTIVE_TITLES = {"small": "set active small", "big": "set active big"}
 
 def _grey_card(title: str, value: str) -> GreyBigButton:
   return GreyBigButton(_display_text(title), _display_text(value))
+
+
+def _row_card(row) -> GreyBigButton:
+  # Clean the value and description separately, so the " · " between them still splits them for translation.
+  return GreyBigButton(_display_text(row.label).lower(), joined(_display_text(row.value), _display_text(row.reason)).lower())
 
 
 class ModelSession(Protocol):
@@ -99,7 +105,7 @@ class ModelsCompact:
     page.current, page.manager = state, data
     if data is None:
       cards = [_grey_card(state.title.lower(), state.subtitle.lower())]
-      cards.extend(_grey_card(row.label.lower(), f"{row.value}. {row.reason}".lower()) for row in state.rows)
+      cards.extend(_row_card(row) for row in state.rows)
     else:
       kind = getattr(page, "kind", "overview")
       cards = self._overview(page, state, data) if kind == "overview" else self._catalog(page, data) if kind == "catalog" else self._details(page, data)
@@ -126,7 +132,7 @@ class ModelsCompact:
                               model_action_allowed(data, "refresh_manifest")))
     if data.get("progress"):
       cards.append(_grey_card("download status", data["progress"].lower()))
-    cards.extend(_grey_card(row.label.lower(), f"{row.value}. {row.reason}".lower()) for row in state.rows)
+    cards.extend(_row_card(row) for row in state.rows)
     return cards
 
   def _catalog(self, page: _ModelsPage, data: dict) -> list:

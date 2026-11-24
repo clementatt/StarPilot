@@ -7809,10 +7809,6 @@ msgstr ""
 msgid "Never at standstill. Applies next drive."
 msgstr ""
 
-#: openpilot/starpilot/ui/speed_limit_widget.py
-msgid "New Limit"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/layout-preview.js
 msgid "New Limit notice"
 msgstr ""
@@ -13984,10 +13980,6 @@ msgstr ""
 
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Unavailable with the current vehicle or feature settings"
-msgstr ""
-
-#: openpilot/starpilot/ui/runtime_app.py
-msgid "Unavailable: {}"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
@@ -25039,4 +25031,869 @@ msgstr ""
 
 #: openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py
 msgid "wrong password"
+msgstr ""
+
+#: openpilot/starpilot/ui/drive_mode_notice.py
+msgid "Accel: Eco, Decel: Eco"
+msgstr ""
+
+#: openpilot/starpilot/ui/drive_mode_notice.py
+msgid "Accel: Sport+, Decel: Sport"
+msgstr ""
+
+#: openpilot/starpilot/ui/drive_mode_notice.py
+msgid "Accel: Standard, Decel: Standard"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Acceleration"
+msgstr ""
+
+#: openpilot/starpilot/longitudinal/developer_tuning.py
+msgid "Actuator Delay"
+msgstr ""
+
+#: openpilot/starpilot/ui/delay_feature.py
+msgid "Actuator delay"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Adds space behind slow or stopped leads with the StarPilot planner; zero keeps the normal gap."
+msgstr ""
+
+#: openpilot/starpilot/ui/tesla_set_speed_feature.py
+msgid "Adds the right scroll wheel, right stalk and three-finger screen tap as controls, and lets the comma set the speed on the Tesla's dashboard. Model 3 and Model Y, HW3 or HW4. Checked when the car starts."
+msgstr ""
+
+#: openpilot/starpilot/ui/slc_policy_feature.py
+msgid "Adopt higher limits early"
+msgstr ""
+
+#: openpilot/starpilot/ui/slc_policy_feature.py
+msgid "Adopt lower limits early"
+msgstr ""
+
+#: openpilot/starpilot/controllers/wheel_actions.py
+msgid "Adopt speed limit"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Advanced acceleration and braking parameters"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Advanced steering parameters and total actuator delay"
+msgstr ""
+
+#: openpilot/starpilot/ui/slc_policy_feature.py
+msgid "After an accelerator override"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Aggressive Personality"
+msgstr ""
+
+#: openpilot/starpilot/ui/lane_change_feature.py
+msgid "Allows the model to anticipate a signaled intersection turn. Off waits for driver initiation for Turn Assist."
+msgstr ""
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Always On Lateral on/off"
+msgstr ""
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Always On Lateral on/off applies after the next startup"
+msgstr ""
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Always On Lateral on/off stays on this tap until the next startup"
+msgstr ""
+
+#: openpilot/starpilot/ui/longitudinal_developer.py
+msgid "Applies next drive."
+msgstr ""
+
+#: openpilot/starpilot/car/tesla/stock_events.py
+msgid "Arm Stock Cruise to Enable Speed Control"
+msgstr ""
+
+#: openpilot/starpilot/lateral/lane_change_status_wire.py
+msgid "Automatic Change Unavailable"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Automatic Conditions"
+msgstr ""
+
+#: openpilot/starpilot/lateral/lane_change_status_wire.py
+msgid "Automatic Lane Change Pending"
+msgstr ""
+
+#: openpilot/starpilot/ui/lane_change_feature.py
+msgid "Automatic Turn Initiation"
+msgstr ""
+
+#: openpilot/starpilot/ui/conditional_feature.py
+msgid "Automatic conditions"
+msgstr ""
+
+#: openpilot/starpilot/ui/delay_feature.py
+msgid "Automatic delay. Shown value is the vehicle default."
+msgstr ""
+
+#: openpilot/starpilot/ui/conditional_feature.py
+msgid "Automatic switches between Chill and Experimental using your saved conditions."
+msgstr ""
+
+#: openpilot/starpilot/ui/longitudinal_developer.py
+msgid "Automatic. Changes apply next drive."
+msgstr ""
+
+#: openpilot/selfdrive/selfdrived/events.py
+msgid "BRAKE!"
+msgstr ""
+
+#: openpilot/selfdrive/selfdrived/helpers.py
+msgid "Big Model Lost"
+msgstr ""
+
+#: openpilot/starpilot/car/ford/controller_selection.py
+msgid "BluePilot Angle"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+#: openpilot/starpilot/ui/ford_bluepilot_feature.py
+msgid "BluePilot Controller Options"
+msgstr ""
+
+#: openpilot/starpilot/car/ford/controller_selection.py
+msgid "BluePilot Curvature"
+msgstr ""
+
+#: openpilot/selfdrive/selfdrived/bookmarks.py
+msgid "Bookmark #{} Saved"
+msgstr ""
+
+#: openpilot/starpilot/speed_limits/runtime_settings.py
+msgid "Both"
+msgstr ""
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "By 1 km/h"
+msgstr ""
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "By 1 mph"
+msgstr ""
+
+#: openpilot/starpilot/ui/ford_bluepilot_feature.py
+msgid "Change while parked"
+msgstr ""
+
+#: openpilot/starpilot/lateral/lane_change_status_wire.py
+msgid "Check surroundings"
+msgstr ""
+
+#: openpilot/starpilot/lateral/lane_change_status_wire.py
+msgid "Check surroundings; steer to confirm now"
+msgstr ""
+
+#: openpilot/starpilot/audio/departure_alert.py
+msgid "Chimes when the model’s traffic-light stop prediction clears while you remain stopped."
+msgstr ""
+
+#: openpilot/starpilot/audio/departure_alert.py
+msgid "Chimes when the tracked vehicle ahead starts moving while you remain stopped."
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Choose Automatic, Chill or Experimental"
+msgstr ""
+
+#: openpilot/starpilot/ui/controller_feature.py
+msgid "Choose the steering controller for your next drive. StarPilot's torque controller can provide higher low-speed steering accuracy, but may require additional tuning. Join the StarPilot Discord and open a tuning request: https://firestar.link/discord"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Coast Downhills"
+msgstr ""
+
+#: openpilot/starpilot/ui/long_profile_feature.py
+msgid "Comfort/Normal/Sport (m/s²): global 0.6/1.2/2.4; explicit personality 0.5/1.0/2.0. Use global preset inherits global values. These separate scales preserve existing tuning. StarPilot Default keeps native cruise braking. Lead and stop braking retain priority."
+msgstr ""
+
+#: openpilot/starpilot/ui/tesla_set_speed_feature.py
+msgid "Comma can set speed on Tesla dashboard"
+msgstr ""
+
+#: openpilot/selfdrive/selfdrived/selfdrived.py
+msgid "Communication Issue"
+msgstr ""
+
+#: openpilot/starpilot/ui/slc_policy_feature.py
+msgid "Confirm limits"
+msgstr ""
+
+#: openpilot/starpilot/ui/slc_policy_feature.py
+msgid "Cruise uses this target when you lift off the accelerator. Held speed stays at or below SET."
+msgstr ""
+
+#: openpilot/starpilot/ui/torque_feature.py
+msgid "Current vehicle and readable saved settings are required"
+msgstr ""
+
+#: openpilot/starpilot/ui/ford_bluepilot_feature.py
+msgid "Custom Tuning Profile"
+msgstr ""
+
+#: openpilot/starpilot/controllers/wheel_actions.py
+msgid "Cycle personality"
+msgstr ""
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Decrease set speed"
+msgstr ""
+
+#: openpilot/starpilot/ui/tesla_set_speed_feature.py
+msgid "Detected"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Developer Parameters"
+msgstr ""
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Disengage StarPilot"
+msgstr ""
+
+#: openpilot/starpilot/audio/alert_volume.py
+msgid "Disengagement Alert"
+msgstr ""
+
+#: openpilot/starpilot/audio/alert_volume.py
+msgid "Distracted Driver"
+msgstr ""
+
+#: openpilot/starpilot/ui/conditional_feature.py
+msgid "Driving Mode"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Driving Modes"
+msgstr ""
+
+#: openpilot/starpilot/ui/drive_mode_notice.py
+msgid "Eco Mode"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Eco, Normal and Sport select Eco, Standard and Sport+ acceleration with Eco, Standard and Sport deceleration, replacing the selected profiles below. Traffic Mode is unchanged."
+msgstr ""
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Engage StarPilot"
+msgstr ""
+
+#: openpilot/starpilot/audio/alert_volume.py
+msgid "Engagement Chime"
+msgstr ""
+
+#: openpilot/starpilot/audio/alert_volume.py
+msgid "Engagement Refused"
+msgstr ""
+
+#: openpilot/selfdrive/selfdrived/selfdrived.py
+msgid "Enhanced Stop"
+msgstr ""
+
+#: openpilot/starpilot/controllers/wheel_actions.py
+msgid "Experimental override"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Extra stopped-lead distance"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Follow accepted limits plus offsets, up to your SET speed"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Following"
+msgstr ""
+
+#: openpilot/starpilot/controllers/wheel_actions.py
+msgid "Force coast"
+msgstr ""
+
+#: openpilot/starpilot/ui/ford_bluepilot_feature.py
+msgid "Ford Controller"
+msgstr ""
+
+#: openpilot/starpilot/audio/alert_volume.py
+msgid "General Prompt"
+msgstr ""
+
+#: openpilot/starpilot/audio/departure_alert.py
+msgid "Green Light"
+msgstr ""
+
+#: openpilot/starpilot/audio/departure_alert.py
+msgid "Green Light Alert"
+msgstr ""
+
+#: openpilot/starpilot/speed_limits/runtime_settings.py
+msgid "Higher only"
+msgstr ""
+
+#: openpilot/starpilot/ui/gain_feature.py
+msgid "Higher values respond more strongly. Applies at restart. Only the proportional gain is fixed."
+msgstr ""
+
+#: openpilot/starpilot/ui/gain_feature.py
+msgid "Higher values respond more strongly. First manual activation requires a driving-process restart."
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Highway Smoothing"
+msgstr ""
+
+#: openpilot/starpilot/speed_limits/runtime_settings.py
+msgid "Hold the speed you reached"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Holds the brakes at a stop with cruise main on. Press the gas or regen paddle to release. Requires StarPilot speed control and applies after the next startup"
+msgstr ""
+
+#: openpilot/starpilot/ui/ford_bluepilot_feature.py
+msgid "Human Turn Detection"
+msgstr ""
+
+#: openpilot/starpilot/audio/alert_volume.py
+msgid "Immediate Warning"
+msgstr ""
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Increase set speed"
+msgstr ""
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Invalid saved assignments"
+msgstr ""
+
+#: openpilot/starpilot/ui/ford_bluepilot_feature.py
+msgid "Lane Change Factor"
+msgstr ""
+
+#: openpilot/starpilot/lateral/lane_change_status_wire.py
+msgid "Lane Change Pending"
+msgstr ""
+
+#: openpilot/starpilot/audio/departure_alert.py
+msgid "Lead Departing Alert"
+msgstr ""
+
+#: openpilot/starpilot/audio/departure_alert.py
+msgid "Lead Vehicle Departing"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Lets StarPilot SET at your current speed down to the vehicle’s minimum engagement speed. Factory cruise still uses the car’s minimum speed."
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Lets gravity carry the car above set speed without targeting a higher speed. Changes apply while driving."
+msgstr ""
+
+#: openpilot/starpilot/ui/long_profile_feature.py
+msgid "Limits acceleration by speed. Comfort is gentler; Sport and Sport+ allow stronger acceleration. Use global preset follows the global choice. An explicit choice overrides it; StarPilot Default keeps vehicle behavior."
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Low-Speed Cruise Start"
+msgstr ""
+
+#: openpilot/starpilot/speed_limits/runtime_settings.py
+msgid "Lower only"
+msgstr ""
+
+#: openpilot/starpilot/ui/delay_feature.py
+msgid "Manual actuator delay. Reset restores automatic delay."
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Manual steering tune"
+msgstr ""
+
+#: openpilot/starpilot/ui/torque_feature.py
+msgid "Manual tune"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Match Drive Mode"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Match Speed Limit on Engage"
+msgstr ""
+
+#: openpilot/starpilot/car/tesla/pedal_events.py
+msgid "Max Regen Being Used"
+msgstr ""
+
+#: openpilot/starpilot/longitudinal/developer_tuning.py
+msgid "Maximum Acceleration"
+msgstr ""
+
+#: openpilot/starpilot/ui/sounds_owner.py
+msgid "Mute Blindspot Alert at Standstill"
+msgstr ""
+
+#: openpilot/starpilot/ui/sounds_owner.py
+msgid "Mutes Blindspot Alert While Lateral Is Off when stopped or moving below 1 mph."
+msgstr ""
+
+#: openpilot/starpilot/ui/speed_limit_widget.py
+msgid "NEW LIMIT"
+msgstr ""
+
+#: openpilot/starpilot/ui/tesla_set_speed_feature.py
+msgid "Needs the Tesla CAN add-on cable"
+msgstr ""
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+#: openpilot/starpilot/ui/tesla_set_speed_feature.py
+msgid "Needs the Tesla CAN add-on cable."
+msgstr ""
+
+#: openpilot/starpilot/ui/drive_mode_notice.py
+msgid "Normal Mode"
+msgstr ""
+
+#: openpilot/starpilot/ui/speed_limit_widget.py
+msgid "Now: OVERRIDE"
+msgstr ""
+
+#: openpilot/starpilot/ui/speed_limit_widget.py
+msgid "Now: OVERRIDE {}"
+msgstr ""
+
+#: openpilot/starpilot/ui/speed_limit_widget.py
+msgid "OVERRIDE"
+msgstr ""
+
+#: openpilot/starpilot/ui/speed_limit_widget.py
+msgid "OVERRIDE {}"
+msgstr ""
+
+#: openpilot/starpilot/ui/slc_policy_feature.py
+msgid "Off adopts limits automatically. For prompts, + accepts and − declines within 30 seconds"
+msgstr ""
+
+#: openpilot/starpilot/ui/slc_policy_feature.py
+msgid "Offer or adopt higher mapped limits this many seconds early at the current speed"
+msgstr ""
+
+#: openpilot/starpilot/ui/slc_policy_feature.py
+msgid "Offer or adopt lower mapped limits this many seconds early at the current speed"
+msgstr ""
+
+#: openpilot/starpilot/ui/appearance_owner.py
+msgid "On the comma screen only; StarPort has its own layout"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Optional source. Select Off to disable."
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Override speed limit with +"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Parked changes apply after the next drive starts. These are explicit manual overrides, separate from Auto Learn."
+msgstr ""
+
+#: openpilot/starpilot/ui/torque_feature.py
+msgid "Parked only. Saved for the next drive; zero restores this stage's original baseline. Only changed settings are locked; the other settings continue Auto Learn."
+msgstr ""
+
+#: openpilot/starpilot/car/tesla/pedal_events.py
+msgid "Pedal Cruise Disengaged"
+msgstr ""
+
+#: openpilot/starpilot/car/tesla/pedal_events.py
+msgid "Pedal Cruise Engaged"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Personalities set to Use global preset follow this choice; explicit overrides stay unchanged."
+msgstr ""
+
+#: openpilot/starpilot/ui/ford_bluepilot_feature.py
+msgid "Predicted Blend, High Curvature"
+msgstr ""
+
+#: openpilot/starpilot/ui/ford_bluepilot_feature.py
+msgid "Predicted Blend, Low Curvature"
+msgstr ""
+
+#: openpilot/selfdrive/selfdrived/selfdrived.py
+msgid "Press RES or accelerator to proceed"
+msgstr ""
+
+#: openpilot/starpilot/controllers/wheel_actions.py
+msgid "Pulse and glide"
+msgstr ""
+
+#: openpilot/starpilot/car/gm/radar_recovery.py
+msgid "Radar available again"
+msgstr ""
+
+#: openpilot/starpilot/ui/slc_offset_feature.py
+msgid "Ranges show whole-number posted limits. Unsafe reductions use the unadjusted limit"
+msgstr ""
+
+#: openpilot/starpilot/ui/ford_rear_fog_feature.py
+msgid "Rear Fog Indicator"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Reduces small steering corrections on highways above about 40 mph. 0% is off; higher values add more smoothing."
+msgstr ""
+
+#: openpilot/starpilot/car/gm/events.py
+msgid "Regen Gear Selected"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Relaxed Personality"
+msgstr ""
+
+#: openpilot/starpilot/ui/lane_change_feature.py
+msgid "Require Cruise for Automatic Lane Changes"
+msgstr ""
+
+#: openpilot/starpilot/ui/lane_change_feature.py
+msgid "Requires factory cruise or openpilot speed control to be engaged for a nudgeless start. With cruise off, a wheel nudge still works. Engage cruise before signaling."
+msgstr ""
+
+#: openpilot/starpilot/ui/long_profile_feature.py
+msgid "Reset {label} to its seven default follow and jerk values? Saved curves, profile switches, and other profiles stay as they are. Saved tuning may resume if its switch was On; a failed reset leaves the switch Off."
+msgstr ""
+
+#: openpilot/starpilot/ui/slc_resume_action.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Resume Speed Limit + Offset"
+msgstr ""
+
+#: openpilot/starpilot/speed_limits/runtime_settings.py
+msgid "Resume the adjusted limit"
+msgstr ""
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right scroll wheel / Fast scroll down"
+msgstr ""
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right scroll wheel / Fast scroll up"
+msgstr ""
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right scroll wheel / Nudge left"
+msgstr ""
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right scroll wheel / Nudge left — hold"
+msgstr ""
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right scroll wheel / Nudge right"
+msgstr ""
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right scroll wheel / Nudge right — hold"
+msgstr ""
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right scroll wheel / Scroll down"
+msgstr ""
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right scroll wheel / Scroll up"
+msgstr ""
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right stalk / Down"
+msgstr ""
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right stalk / Down — full press while engaged"
+msgstr ""
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right stalk / Down — half press while engaged"
+msgstr ""
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right stalk / Down — hold"
+msgstr ""
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right stalk / Up"
+msgstr ""
+
+#: openpilot/starpilot/ui/traffic_feature.py
+msgid "Saved follow and jerk settings apply when Traffic mode is selected. Following time at low speeds; blends toward Relaxed as speed rises."
+msgstr ""
+
+#: openpilot/starpilot/ui/traffic_feature.py
+msgid "Saved follow and jerk settings apply when Traffic mode is selected. Resists changes in acceleration while slowing down. Higher values favor smoother changes; 100% is the base weight."
+msgstr ""
+
+#: openpilot/starpilot/ui/traffic_feature.py
+msgid "Saved follow and jerk settings apply when Traffic mode is selected. Resists changes in acceleration while speeding up. Higher values favor smoother changes; 100% is the base weight."
+msgstr ""
+
+#: openpilot/starpilot/ui/traffic_feature.py
+msgid "Saved follow and jerk settings apply when Traffic mode is selected. Smooths acceleration changes while slowing down. Higher values favor gradual responses; 100% is the base weight."
+msgstr ""
+
+#: openpilot/starpilot/ui/traffic_feature.py
+msgid "Saved follow and jerk settings apply when Traffic mode is selected. Smooths acceleration changes while speeding up. Higher values favor gradual responses; 100% is the base weight."
+msgstr ""
+
+#: openpilot/starpilot/ui/traffic_feature.py
+msgid "Saved follow and jerk settings apply when Traffic mode is selected. Weights the planner's penalty for entering a lead vehicle's buffer. Higher values discourage smaller gaps; not a safety limit."
+msgstr ""
+
+#: openpilot/starpilot/ui/traffic_feature.py
+msgid "Saved values are inactive while Custom Driving Profiles is Off. Following time at low speeds; blends toward Relaxed as speed rises."
+msgstr ""
+
+#: openpilot/starpilot/ui/traffic_feature.py
+msgid "Saved values are inactive while Custom Driving Profiles is Off. Resists changes in acceleration while slowing down. Higher values favor smoother changes; 100% is the base weight."
+msgstr ""
+
+#: openpilot/starpilot/ui/traffic_feature.py
+msgid "Saved values are inactive while Custom Driving Profiles is Off. Resists changes in acceleration while speeding up. Higher values favor smoother changes; 100% is the base weight."
+msgstr ""
+
+#: openpilot/starpilot/ui/traffic_feature.py
+msgid "Saved values are inactive while Custom Driving Profiles is Off. Smooths acceleration changes while slowing down. Higher values favor gradual responses; 100% is the base weight."
+msgstr ""
+
+#: openpilot/starpilot/ui/traffic_feature.py
+msgid "Saved values are inactive while Custom Driving Profiles is Off. Smooths acceleration changes while speeding up. Higher values favor gradual responses; 100% is the base weight."
+msgstr ""
+
+#: openpilot/starpilot/ui/traffic_feature.py
+msgid "Saved values are inactive while Custom Driving Profiles is Off. Weights the planner's penalty for entering a lead vehicle's buffer. Higher values discourage smaller gaps; not a safety limit."
+msgstr ""
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Set Speed To needs Comma can set speed on Tesla dashboard turned on in Vehicle Settings"
+msgstr ""
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Set Speed To needs Comma can set speed on Tesla dashboard turned on in Vehicle Settings."
+msgstr ""
+
+#: openpilot/selfdrive/selfdrived/selfdrived.py
+msgid "Shift to L for speed control"
+msgstr ""
+
+#: openpilot/starpilot/ui/ford_rear_fog_feature.py
+msgid "Shows fresh Ford rear-fog status only. Move or hide the widget per display in Galaxy."
+msgstr ""
+
+#: openpilot/starpilot/audio/alert_volume.py
+msgid "Soft Warning"
+msgstr ""
+
+#: openpilot/starpilot/ui/drive_mode_notice.py
+msgid "Sport Mode"
+msgstr ""
+
+#: openpilot/starpilot/ui/long_profile_feature.py
+msgid "Sport+"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Standard Personality"
+msgstr ""
+
+#: openpilot/starpilot/ui/tesla_set_speed_feature.py
+msgid "StarPilot keeps its own set speed and scrolls the Tesla's set speed to match, so the dashboard shows the same speed. The Tesla's can lag a second or two behind. The comma and the Tesla must use the same units. Experimental."
+msgstr ""
+
+#: openpilot/starpilot/longitudinal/developer_tuning.py
+msgid "Start Acceleration"
+msgstr ""
+
+#: openpilot/starpilot/longitudinal/developer_tuning.py
+msgid "Start Speed"
+msgstr ""
+
+#: openpilot/starpilot/lateral/lane_change_status_wire.py
+msgid "Steer to confirm when safe"
+msgstr ""
+
+#: openpilot/selfdrive/selfdrived/selfdrived.py
+msgid "Steering Paused"
+msgstr ""
+
+#: openpilot/starpilot/ui/power_owner.py
+msgid "Stock uses the standard shutdown policy. Custom limits use the maximum parked time and voltage cutoff below; other protections can shut down earlier."
+msgstr ""
+
+#: openpilot/starpilot/ui/power_owner.py
+msgid "Stock uses the standard shutdown policy. Custom limits use the maximum parked time and voltage cutoff below; other protections can shut down earlier. Stock limits apply until a custom policy is saved"
+msgstr ""
+
+#: openpilot/starpilot/longitudinal/developer_tuning.py
+msgid "Stop Acceleration"
+msgstr ""
+
+#: openpilot/starpilot/longitudinal/developer_tuning.py
+msgid "Stop Speed"
+msgstr ""
+
+#: openpilot/starpilot/longitudinal/developer_tuning.py
+msgid "Stopping Rate"
+msgstr ""
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Take Comma Selfie"
+msgstr ""
+
+#: openpilot/starpilot/ui/speed_limit_widget.py
+msgid "Tap to review"
+msgstr ""
+
+#: openpilot/starpilot/ui/tesla_set_speed_feature.py
+msgid "Tesla CAN add-on cable"
+msgstr ""
+
+#: openpilot/starpilot/car/tesla/stock_events.py
+msgid "Tesla Cruise Disengaged"
+msgstr ""
+
+#: openpilot/starpilot/car/tesla/stock_events.py
+msgid "Tesla Cruise Engaged"
+msgstr ""
+
+#: openpilot/starpilot/common/car_control_config.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Tesla screen / Three-finger tap"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Third source"
+msgstr ""
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "To the next 5 km/h"
+msgstr ""
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "To the next 5 mph"
+msgstr ""
+
+#: openpilot/starpilot/ui/controller_feature.py
+msgid "Torque Controller"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Traffic Personality"
+msgstr ""
+
+#: openpilot/starpilot/controllers/wheel_actions.py
+msgid "Traffic mode"
+msgstr ""
+
+#: openpilot/starpilot/ui/ford_bluepilot_feature.py
+msgid "Turn on Custom Tuning Profile first"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Turn this on to use your car's factory adaptive cruise instead of StarPilot's"
+msgstr ""
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Unassigned"
+msgstr ""
+
+#: openpilot/starpilot/ui/runtime_app.py
+msgid "Unavailable: {label}"
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Unlocks assistance for a signaled turn once speed reaches 2 mph or less. Existing steering limits still apply. Never at standstill. Applies next drive."
+msgstr ""
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Use Factory ACC"
+msgstr ""
+
+#: openpilot/starpilot/ui/long_profile_feature.py
+msgid "Use global preset"
+msgstr ""
+
+#: openpilot/starpilot/speed_limits/runtime_settings.py
+msgid "Use your SET speed"
+msgstr ""
+
+#: openpilot/selfdrive/selfdrived/helpers.py
+msgid "Using small model"
+msgstr ""
+
+#: openpilot/starpilot/ui/runtime_app.py
+msgid "model action; turn the vehicle off and try again"
+msgstr ""
+
+#: openpilot/starpilot/ui/runtime_app.py
+msgid "model list changed; try again"
+msgstr ""
+
+#: openpilot/starpilot/ui/speed_limit_widget.py
+msgid "{label} / OVERRIDE"
+msgstr ""
+
+#: openpilot/starpilot/ui/speed_limit_widget.py
+msgid "{label} / OVERRIDE {}"
+msgstr ""
+
+#: openpilot/starpilot/ui/torque_feature.py
+msgid "{label} — Reset to Default"
+msgstr ""
+
+#: openpilot/starpilot/ui/slc_offset_feature.py
+msgid "{} km/h and above"
+msgstr ""
+
+#: openpilot/starpilot/ui/slc_offset_feature.py
+msgid "{} km/h offset"
+msgstr ""
+
+#: openpilot/starpilot/ui/slc_offset_feature.py
+msgid "{} mph and above"
+msgstr ""
+
+#: openpilot/starpilot/ui/slc_offset_feature.py
+msgid "{} mph offset"
 msgstr ""

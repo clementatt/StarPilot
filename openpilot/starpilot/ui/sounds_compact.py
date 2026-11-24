@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from typing import Protocol
 
+from openpilot.starpilot.ui.compact_text import joined, step_label
 from openpilot.starpilot.ui.feature_settings_state import FeatureSettingsRequest, FeatureSettingsState, row_change
 from openpilot.system.ui.lib.application import gui_app
 from openpilot.system.ui.widgets.scroller import NavScroller
@@ -34,10 +35,11 @@ class SoundsCompact:
     for row in state.rows:
       value = row.value + (row.unit if row.value != "Auto" else "")
       if not row.available:
-        cards.append(GreyBigButton(row.label.lower(), f"{value}. {row.reason}".lower()))
+        cards.append(GreyBigButton(row.label.lower(), joined(value, row.reason).lower()))
         continue
       for direction in ((1,) if row.repair_value else (-1, 1)):
-        label = row.label.lower() + (f" set {row.repair_value.lower()}" if row.repair_value else " −" if direction < 0 else " +")
+        label = (row.label.lower() + f" set {row.repair_value.lower()}" if row.repair_value else
+                 step_label(row.label, " −" if direction < 0 else " +"))
         button = BigButton(label, value.lower())
         def clicked(source=row, step=direction) -> None:
           request = row_change(source, step)

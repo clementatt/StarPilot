@@ -95,7 +95,7 @@ from openpilot.starpilot.feature_runtime import enabled as feature_enabled
 from openpilot.starpilot.conditional_mode.preferences import PreferenceError, SavedPreferences, decode_preferences
 from openpilot.starpilot.conditional_mode.policy import ModeChoice
 from openpilot.starpilot.conditional_mode.ui_action import ConditionalUiActionOwner
-from openpilot.starpilot.ui.settings_state import Destination, SettingsAction, SettingsActionKind
+from openpilot.starpilot.ui.settings_state import Destination, SettingsAction, SettingsActionKind, destination_label
 from openpilot.starpilot.ui.shell import ShellInput, ShellMode, ShellRequest, ShellSnapshot, ShellView
 from openpilot.starpilot.ui.software_state import DownloadLabel, SoftwareAction, SoftwareRequest
 from openpilot.starpilot.ui.toggles_state import Personality, ToggleKey, ToggleRequest
@@ -1667,7 +1667,7 @@ class StarShellSession(TeslaSpeedActions):
         elif action.destination.available and self._on_compact_destination is not None:
           self._on_compact_destination(destination)
         else:
-          self._unavailable(destination.value)
+          self._unavailable(destination_label(destination))
     elif (request.source in ("toggles", "device", "software") and self._mode == ShellMode.SETTINGS and
           self.profile == Profile.LARGE and self._request_owner is not None and self._request_owner(action)):
       self._snapshot_cache = None  # the owner acknowledged; read its state on the next frame
