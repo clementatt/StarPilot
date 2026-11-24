@@ -50,6 +50,28 @@ assert.equal(translateText("Saved 12 items for Dom", dynamicMessages), "Para Dom
 assert.equal(translateText("Preparing Alpha (23%)", dynamicMessages), "Preparando Alpha (23%)")
 assert.equal(translateText("Some unknown diagnostic", dynamicMessages), "Some unknown diagnostic")
 
+// A template whose literal lacks "·" must not swallow " · "-joined segments; each segment is translated on its own.
+const segmentMessages = { "{} remaining": "剩余 {}", "Updating drive history": "正在更新行驶记录", "In {}": "{} 后",
+  "In range, signal {}%": "在范围内，信号 {}%", "{label} AOL steering only · {count} drives": "{label} 仅 AOL 转向 · {count} 次行程",
+  "Unavailable": "不可用" }
+assert.equal(translateText("Updating drive history · 3 remaining", segmentMessages), "正在更新行驶记录 · 剩余 3")
+assert.equal(translateText("3 remaining", segmentMessages), "剩余 3", "undotted text still uses undotted templates")
+assert.equal(translateText("In range, signal 80% · Auto-join", segmentMessages), "在范围内，信号 80% · Auto-join")
+assert.equal(translateText("In 5 min", segmentMessages), "5 min 后")
+assert.equal(translateText("Unavailable AOL steering only · 4 drives", segmentMessages), "不可用 仅 AOL 转向 · 4 次行程",
+  "a template whose literal contains · still matches the whole text")
+assert.equal(translateText("Updating drive history\n3 remaining", segmentMessages), "正在更新行驶记录\n剩余 3")
+assert.equal(translateText("Mise à jour · 3 remaining", { "{} remaining": "{} restants" }), "Mise à jour · 3 restants")
+
+// Single-letter unit marks are as generic as connectives: names without a number stay literal.
+const durationMessages = { "{}h {}m": "{} 小时 {} 分" }
+assert.equal(translateText("1h 05m", durationMessages), "1 小时 05 分")
+assert.equal(translateText("Smith Farm", durationMessages), "Smith Farm")
+assert.equal(translateText("Search by platform", durationMessages), "Search by platform")
+
+// Unnamed fields after a named one are numbered like the translation's unnamed fields.
+assert.equal(translateText("Partial: Unavailable / 1.2 GB", { "Partial: {label} / {}": "部分：{label} / {}", Unavailable: "不可用" }),
+  "部分：不可用 / 1.2 GB")
 assert.equal(translateText('Expires in 1 day', {'{} day':'{}일','Expires in {} day{}':'{}일{} 후 만료'}), '1일 후 만료')
 assert.equal(translateText('1 minute Left', {'{} minute{} Left':'{}분{} 남음'}), '1분 남음')
 

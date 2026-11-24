@@ -5,6 +5,8 @@ from openpilot.starpilot.ui.raylib import rl
 from openpilot.starpilot.ui import clip
 
 from openpilot.starpilot.ui.presentation import BitmapFonts, FontRole, Profile
+from openpilot.system.ui.lib.display_translation import DisplayText
+from openpilot.system.ui.lib.multilang import tr_display
 from openpilot.starpilot.ui.software_state import DownloadLabel, SoftwareRequest, SoftwareState, DIRECT_BUTTONS, button_rect
 
 
@@ -76,7 +78,7 @@ class SoftwareView:
         else:
           self._button("VIEW", row, SoftwareRequest.OPEN_ERROR_LOG in state.available_actions)
         if row == 2 and state.download_status:
-          self.fonts.draw(state.download_status[:100], FontRole.NORMAL, 25, 570, top + 140, VALUE_COLOR)
+          self.fonts.draw(DisplayText(tr_display(state.download_status))[:100], FontRole.NORMAL, 25, 570, top + 140, VALUE_COLOR)
         if row < len(TITLES) - 1:
           rl.draw_line(590, top + 170, 2070, top + 170, rl.GRAY)
     finally:

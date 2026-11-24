@@ -1044,7 +1044,7 @@ class MapOverlay:
     data = self._input
     elapsed = max(0, int(data.gps_wait_seconds))
     satellites = ('Searching for satellites' if data.satellites is None else
-                  f"{data.satellites} satellite{'s' if data.satellites != 1 else ''} locked")
+                  f"{data.satellites} satellite locked" if data.satellites == 1 else f"{data.satellites} satellites locked")
     rows = [('Navigation active', FontRole.SEMI_BOLD, 22)] if data.navigation_active else []
     rows += [('Waiting for GPS', FontRole.MEDIUM, 26), (f'{satellites}  •  {elapsed // 60}:{elapsed % 60:02d}', FontRole.NORMAL, 18)]
     scale = max(.7, min(1.0, rect.width / 560, rect.height / 420))

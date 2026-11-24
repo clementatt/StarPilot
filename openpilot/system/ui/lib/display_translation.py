@@ -3,6 +3,9 @@
 import re
 from string import Formatter
 
+# Joins independent display parts, e.g. "Updating drive history · 3 remaining".
+SEPARATOR = re.compile(r'\s+·\s+')
+
 
 class DisplayText(str):
   """A translated or literal display value; never translate it a second time."""
@@ -49,9 +52,12 @@ def display_templates(messages):
       continue
     prefix = source_parts[0][0]
     pattern = ''.join(re.escape(literal) + (r'([^\n]*?)' if key is not None else '') for literal, key in source_parts)
-    words = re.findall(r"[a-z]+", ''.join(literal for literal, _ in source_parts).lower())
-    generic = not any(word not in {'to', 'of', 'in', 'on', 'at', 'by', 'for', 'or', 'and', 'a', 'the'} for word in words)
-    grouped.setdefault(prefix[:1], []).append((prefix, re.compile('^' + pattern + '$'), keys, target_parts, generic))
+    literal_text = ''.join(literal for literal, _ in source_parts)
+    words = re.findall(r"[a-z]+", literal_text.lower())
+    # Only connectives or one-letter units ("{}h {}m"): such a template needs a number in a value, or it would split any text.
+    generic = all(word in {'to', 'of', 'in', 'on', 'at', 'by', 'for', 'or', 'and', 'a', 'the'} or len(word) == 1 for word in words)
+    grouped.setdefault(prefix[:1], []).append((prefix, re.compile('^' + pattern + '$'), keys, target_parts, generic,
+                                               '·' in literal_text))
   return grouped
 
 
@@ -61,7 +67,11 @@ def translate_display(text, messages, templates):
   if messages.get(text):
     return DisplayText(messages[text])
   if len(text) <= 1024:
-    for prefix, pattern, keys, target, generic in (*templates.get(text[:1], ()), *templates.get('', ())):
+    # A template without its own "·" must not swallow neighbouring " · " parts; those are translated one by one below.
+    separated = SEPARATOR.search(text) is not None
+    for prefix, pattern, keys, target, generic, dotted in (*templates.get(text[:1], ()), *templates.get('', ())):
+      if separated and not dotted:
+        continue
       if text.startswith(prefix) and (matched := pattern.fullmatch(text)):
         if generic and not any(re.search(r"\d", value) for value in matched.groups()):
           continue
@@ -69,7 +79,7 @@ def translate_display(text, messages, templates):
         if "label" in values:
           values["label"] = messages.get(values["label"], values["label"])
         return DisplayText(''.join(literal + (values[key] if key is not None else '') for literal, key in target))
-  segments = re.split(r'(\n|\s+·\s+)', text)
+  segments = re.split(rf'(\n|{SEPARATOR.pattern})', text)
   if len(segments) > 1:
     translated = [translate_display(part, messages, templates) if index % 2 == 0 else part for index, part in enumerate(segments)]
     if translated != segments:

@@ -10,6 +10,8 @@ from openpilot.system.ui.widgets.label import UnifiedLabel
 from openpilot.system.ui.widgets.mici_keyboard import MiciKeyboard
 from openpilot.system.ui.lib.text_measure import measure_text_cached
 from openpilot.system.ui.lib.application import gui_app, FontWeight, MousePos
+from openpilot.system.ui.lib.display_translation import DisplayText
+from openpilot.system.ui.lib.multilang import tr_display
 from openpilot.system.ui.widgets.slider import RedBigSlider, BigSlider
 from openpilot.common.filter_simple import FirstOrderFilter
 from openpilot.selfdrive.ui.mici.widgets.button import BigCircleButton, GreyBigButton
@@ -39,27 +41,52 @@ class BigDialog(BigDialogBase):
     ))
 
 
+# Scripts written without spaces between words; their text may break between any two of these characters.
+_UNSPACED = "　-ヿ㐀-䶿一-鿿豈-﫿＀-￯"
+_SENTENCE_END = re.compile(r"(?<=[.!?])\s+|(?<=[。！？])\s*")
+_UNSPACED_UNIT = re.compile(rf"\s*(?:[{_UNSPACED}]|[^\s{_UNSPACED}]+)")
+
+
+def _paragraphs(text: str) -> list[str]:
+  # Explicit lines are authored cards; otherwise prefer sentence boundaries.
+  return text.splitlines() if "\n" in text else [part for part in _SENTENCE_END.split(text.strip()) if part]
+
+
+def description_paragraphs(description: str) -> list[DisplayText]:
+  """Translate the whole description before splitting it, so whole-sentence translations still match."""
+  translated = tr_display(description)
+  if isinstance(translated, DisplayText):
+    return [DisplayText(part) for part in _paragraphs(translated)]
+  # Without a translation of the whole text, each authored line or sentence may still have its own.
+  return [DisplayText(tr_display(part)) for part in _paragraphs(description)]
+
+
+def _break_units(paragraph: str) -> tuple[list[str], str]:
+  if re.search(f"[{_UNSPACED}]", paragraph):
+    return _UNSPACED_UNIT.findall(paragraph), ""
+  return paragraph.split(), " "
+
+
 class SettingDescriptionDialog(NavScroller):
   def __init__(self, title: str, description: str, icon: Union[rl.Texture, None] = None):
     super().__init__()
     cards = [GreyBigButton(title, "scroll for details", icon or gui_app.texture("icons_mici/setup/green_info.png", 64, 64))]
-    # Explicit lines are authored cards; otherwise prefer sentence boundaries.
-    paragraphs = description.splitlines() if "\n" in description else re.split(r"(?<=[.!?])\s+", description.strip())
     # Measure each card so longer text still fits with the actual font and padding.
-    for sentence in paragraphs:
+    for paragraph in description_paragraphs(description):
+      units, joiner = _break_units(paragraph)
       card = GreyBigButton("", "")
-      words: list[str] = []
-      for word in sentence.split():
-        card.set_value(" ".join([*words, word]))
+      taken: list[str] = []
+      for unit in units:
+        card.set_value(DisplayText(joiner.join([*taken, unit]).strip()))
         height = card._sub_label.get_content_height(card._subtitle_width_hint())
-        if words and height > card.rect.height - 2 * card.LABEL_VERTICAL_PADDING:
-          card.set_value(" ".join(words))
+        if taken and height > card.rect.height - 2 * card.LABEL_VERTICAL_PADDING:
+          card.set_value(DisplayText(joiner.join(taken).strip()))
           cards.append(card)
           card = GreyBigButton("", "")
-          words = []
-        words.append(word)
-      if words:
-        card.set_value(" ".join(words))
+          taken = []
+        taken.append(unit)
+      if taken:
+        card.set_value(DisplayText(joiner.join(taken).strip()))
         cards.append(card)
     self._scroller.add_widgets(cards)
 

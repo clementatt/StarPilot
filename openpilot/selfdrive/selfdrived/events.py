@@ -267,7 +267,7 @@ def calibration_incomplete_alert(CP: car.CarParams, CS: car.CarState, sm: messag
 def too_distracted_alert(CP: car.CarParams, CS: car.CarState, sm: messaging.SubMaster, metric: bool, soft_disable_time: int, personality) -> Alert:
   if sm['driverMonitoringState'].lockout:
     mins_left = sm['driverMonitoringState'].lockoutMinutesRemaining
-    return NoEntryAlert("Too Distracted", f"{mins_left} minute{'s' if mins_left != 1 else ''} Left", priority=Priority.HIGH)
+    return NoEntryAlert("Too Distracted", f"{mins_left} minute Left" if mins_left == 1 else f"{mins_left} minutes Left", priority=Priority.HIGH)
   return NoEntryAlert("Pay Attention to Engage", priority=Priority.HIGH)
 
 
