@@ -20,7 +20,7 @@ export const RouteCleanup = {
         })
         this.confirmOpen = false
         const count = Number.isSafeInteger(result?.deleted) ? result.deleted : 0
-        this.notice = `${count} ${count === 1 ? "driving route" : "driving routes"} deleted.`
+        this.notice = count === 1 ? `${count} driving route deleted.` : `${count} driving routes deleted.`
       } catch (error) {
         if (error.status === 401) this.unauthorized()
         else this.error = error.message || "Driving routes could not be deleted."

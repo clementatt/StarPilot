@@ -100,9 +100,14 @@ export function serviceLabel(setup) {
   if (!setup?.enabled) return "Off"
   const service = setup.service
   if (!service) return "Starting…"
-  const text = service.state === "ready" && service.player?.status === "paused" ? "Paused" :
+  return service.state === "ready" && service.player?.status === "paused" ? "Paused" :
     service.message && !["ready", "playing", "waiting"].includes(service.state) ? service.message : STATE_TEXT[service.state] || "Starting…"
-  return service.outputWaiting ? `${text} Audio waits for ${service.outputWaiting}.` : text
+}
+
+// Shown in its own element after serviceLabel, so each sentence is translated on its own.
+export function outputWaitLabel(setup) {
+  const waiting = setup?.enabled && setup.service?.outputWaiting
+  return waiting ? `Audio waits for ${waiting}.` : ""
 }
 
 // Where the track is now, from Soloist's anchor and the browser time elapsed since it.
@@ -296,6 +301,7 @@ export const SpotifyPage = {
     can() { return new Set(this.player?.actions || []) },
     elapsed() { return positionNow(this.player?.position, this.track?.durationMs, this.now) },
     statusText() { return serviceLabel(this.setup) },
+    outputWaitText() { return outputWaitLabel(this.setup) },
     outputName() {
       const prefs = this.setup?.preferences
       if (!prefs) return ""
@@ -456,7 +462,7 @@ export const SpotifyPage = {
           </label>
           <GalaxySettingRow :row="switchRow('Phone Audio', setup.enabled, 'Forward music from the selected phone. Playback and volume stay on your phone.')"
             :index="0" :busy="busy" :save-value="(index, value) => setEnabled(value === 'On')" />
-          <p class="gx-note" role="status">{{ statusText }}</p>
+          <p class="gx-note" role="status">{{ statusText }}<span v-if="outputWaitText"> {{ outputWaitText }}</span></p>
           <label class="gx-stack"><span>Pause smoothing · {{ pauseMuteLabel }}</span>
             <input type="range" class="gx-slider" min="0" :max="setup.preferences.muteMax || 1.5" step="0.05" :value="pauseDraft ?? setup.preferences.pauseMute"
               aria-label="Pause smoothing" :disabled="busy" @input="pauseDraft = Number($event.target.value)" @change="commitMute('pause', $event)" /></label>
@@ -487,7 +493,7 @@ export const SpotifyPage = {
           <div class="gx-spotify-now__text">
             <h3 id="gx-spotify-now-title" class="gx-truncate"><span translate="no">{{ track?.title || setup.preferences.deviceName }}</span></h3>
             <p v-if="track" class="gx-truncate"><span translate="no">{{ track.artists }}</span><template v-if="track.album"> · <span translate="no">{{ track.album }}</span></template></p>
-            <p role="status" class="gx-note gx-truncate">{{ statusText }}<template v-if="setup.enabled"> · {{ outputName }}</template></p>
+            <p role="status" class="gx-note gx-truncate">{{ statusText }}<span v-if="outputWaitText"> {{ outputWaitText }}</span><template v-if="setup.enabled"> · <span>{{ outputName }}</span></template></p>
           </div>
         </div>
         <div v-if="track && track.durationMs" class="gx-spotify-now__progress">
@@ -599,7 +605,7 @@ export const SpotifyPage = {
           <div class="gx-step__body">
             <GalaxySettingRow :row="switchRow('Spotify', setup.enabled, 'Runs Spotify on your comma. Turn off to stop playing; your setup stays saved.')"
               :index="0" :busy="busy" :save-value="(index, value) => setEnabled(value === 'On')" />
-            <p v-if="setup.enabled" class="gx-note" role="status">{{ statusText }}</p>
+            <p v-if="setup.enabled" class="gx-note" role="status">{{ statusText }}<span v-if="outputWaitText"> {{ outputWaitText }}</span></p>
             <p class="gx-note">Pair once on the same Wi‑Fi or hotspot. After pairing, keep Spotify enabled and both devices online; your comma can use cellular or a phone hotspot. Use the same Spotify account on your phone.</p>
             <form class="gx-stack" @submit.prevent="saveName">
               <label class="gx-stack"><span>Name in Spotify</span>
@@ -695,7 +701,7 @@ export const SpotifyPage = {
                 <div class="gx-step-card__head">
                   <span class="gx-step__num gx-step-card__num">1</span>
                   <div class="gx-step-card__title"><strong>Download Soloist</strong>
-                    <small>From Spotify’s Downloads page, to this {{ onPhone ? 'phone' : 'computer' }}</small></div>
+                    <small>{{ onPhone ? 'From Spotify’s Downloads page, to this phone' : 'From Spotify’s Downloads page, to this computer' }}</small></div>
                 </div>
                 <div class="gx-step-card__body">
                   <a class="gx-btn gx-btn--tonal" :href="setup.links.download" target="_blank" rel="noopener noreferrer" @click="markDownloadStarted">

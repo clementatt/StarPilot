@@ -2,7 +2,7 @@ import { settingControl } from "../web/js/galaxy-setting-row.js"
 import assert from "node:assert/strict"
 import { readFileSync } from "node:fs"
 import { StarPortFeed, StarPortPage, validPairingStatus, validPromptInput, uploadPackage, uploadTimeout,
-  expiryInfo, packagePreflight, importProblem, installChecks } from "../web/js/starport.js"
+  expiryInfo, packagePreflight, importProblem, installChecks, PAIRING_TEXT } from "../web/js/starport.js"
 
 const setup = { enabled: true, bluetoothEnabled: true, parked: true, installReady: true, serviceReady: true,
   identity: { installed: true, message: "Package ready" },
@@ -17,7 +17,8 @@ assert.equal(validPromptInput({ kind: "pin" }, "1234"), true)
 assert.equal(validPromptInput({ kind: "pin" }, "\n"), false)
 assert.equal(validPromptInput({ kind: "passkey" }, "1234567"), false)
 assert.equal(validPromptInput(prompt, ""), true)
-assert.match(StarPortPage.template, /Check that this code matches your/)
+assert.match(StarPortPage.template, /pairing\.prompt\.kind === 'confirmation' \? pairText\.confirmation/)
+assert.equal(PAIRING_TEXT.car.confirmation, "Check that this code matches your car, then confirm.")
 assert.match(StarPortPage.template, /Cancel Search \/ Pairing/)
 assert.equal(StarPortPage.computed.deviceChosen.call({ pairing: { ...pairing, state: "pairing" } }), true)
 assert.equal(StarPortPage.computed.deviceChosen.call({ pairing: { ...pairing, state: "failed" } }), false)
@@ -485,10 +486,20 @@ assert.equal(typed.carType, 'builtin', 'built-in wireless is the default')
 typed.runtime = { car_type: 'adapter' }
 assert.equal(typed.adapterSetup, true)
 assert.equal(typed.pairsHere, true)
-assert.equal(typed.findLabel, 'adapter')
+assert.equal(typed.pairText.find, 'Find adapter')
 assert.equal(typed.deviceWord, 'adapter', 'the pairing prompts name the adapter, not the car')
+assert.equal(typed.pairText.ended, 'The pairing window ended without choosing an adapter. Try again when your adapter is in pairing mode.')
 typed.runtime = { car_type: 'builtin' }
 assert.equal(typed.deviceWord, 'car')
+assert.equal(typed.pairText.passkey, 'Enter your car’s passkey.')
+// Each prompt is one whole sentence per device type so translations never see a bare "car"/"adapter".
+assert.deepEqual(Object.keys(PAIRING_TEXT.car), Object.keys(PAIRING_TEXT.adapter))
+for (const [key, sentence] of Object.entries(PAIRING_TEXT.adapter)) {
+  assert.match(sentence, /adapter/i, key)
+  assert.doesNotMatch(sentence, /\bcar\b/i, key)
+  assert.doesNotMatch(PAIRING_TEXT.car[key], /adapter/i, key)
+}
+assert.doesNotMatch(StarPortPage.template, /deviceWord|findLabel/)
 typed.runtime = { car_type: 'usb' }
 assert.equal(typed.pairsHere, false, 'a USB cable needs no Bluetooth pairing')
 typed.runtime = { running: false, connection: 'wired' }
@@ -532,7 +543,7 @@ dongle.saveAdapter(0, 'AAWireless')
 dongle.saveAdapter(0, 'Unofficial dongle')
 assert.deepEqual(dongleCalls, [['car_profile', { profile: 'default' }], ['car_profile', { profile: 'aawireless' }], ['car_profile', { profile: 'unofficial' }]])
 assert.match(StarPortPage.template, /runtime\?\.pairing_note/)
-assert.match(StarPortPage.template, /'Find ' \+ findLabel/)
+assert.match(StarPortPage.template, /selected \? pairText\.another : pairText\.find/)
 // A session that is only waiting or retrying never locks the pickers or Find; it is stopped first.
 const idle = page(setup)
 idle.runtime = { car_type: 'builtin', running: true, state: 'backoff' }

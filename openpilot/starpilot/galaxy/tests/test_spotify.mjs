@@ -1,5 +1,5 @@
 import assert from "node:assert/strict"
-import { SpotifyFeed, SpotifyPage, archivePreflight, importProblem, installChecks, releaseInfo, serviceLabel,
+import { SpotifyFeed, SpotifyPage, archivePreflight, importProblem, installChecks, releaseInfo, serviceLabel, outputWaitLabel,
   positionNow, formatTime, muteLabel, DOWNLOAD_PAGE } from "../web/js/spotify.js"
 
 const setup = {
@@ -38,8 +38,12 @@ assert.equal(serviceLabel({ enabled: false }), "Off")
 assert.equal(serviceLabel({ enabled: true, service: { state: "waiting_output", message: "Waiting for Car to connect over Bluetooth." } }),
   "Waiting for Car to connect over Bluetooth.")
 assert.equal(serviceLabel({ enabled: true, service: { state: "waiting", message: "" } }), "Signing in to Spotify…")
-assert.match(serviceLabel({ enabled: true, service: { state: "ready", message: "", outputWaiting: "Car" } }),
-  /Pick this device.*Audio waits for Car\./)
+assert.equal(serviceLabel({ enabled: true, service: { state: "ready", message: "", outputWaiting: "Car" } }),
+  "Ready. Pick this device in Spotify to play.", "the waiting output is a separate sentence")
+assert.equal(outputWaitLabel({ enabled: true, service: { state: "ready", message: "", outputWaiting: "Car" } }), "Audio waits for Car.")
+assert.equal(outputWaitLabel({ enabled: false, service: { state: "ready", outputWaiting: "Car" } }), "")
+assert.equal(outputWaitLabel({ enabled: true, service: { state: "ready" } }), "")
+assert.match(SpotifyPage.template, /\{\{ statusText \}\}<span v-if="outputWaitText"> \{\{ outputWaitText \}\}<\/span>/)
 assert.equal(serviceLabel({ enabled: true, service: { state: "waiting_network", message: "Waiting for the comma’s network…" } }),
   "Waiting for the comma’s network…")
 assert.equal(serviceLabel({ enabled: true, service: { state: "retrying", message: "Couldn’t sign in to Spotify yet. Trying again…" } }),
@@ -143,7 +147,8 @@ assert.doesNotMatch(SpotifyPage.template, /Pause smoothing[^>]*parked/)
   assert.equal(SpotifyPage.computed.skipMuteLabel.call({ skipDraft: null, setup: { preferences: { skipMute: 0.25 } } }), "250 ms")
 }
 
-assert.equal(serviceLabel({ enabled: true, service: { state: "ready", player: { status: "paused" }, outputWaiting: "Car" } }), "Paused Audio waits for Car.")
+assert.equal(serviceLabel({ enabled: true, service: { state: "ready", player: { status: "paused" }, outputWaiting: "Car" } }), "Paused")
+assert.equal(outputWaitLabel({ enabled: true, service: { state: "ready", player: { status: "paused" }, outputWaiting: "Car" } }), "Audio waits for Car.")
 
 // Audio outputs require the receiving-music profile; the phone source list stays separate.
 {

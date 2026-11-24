@@ -83,7 +83,7 @@ export const LocalRecordingsPage = {
       <template v-else>
         <GxNotice v-if="exports?.job?.owned" tone="info">
           <span>{{ exports.running ? 'Exporting replay' : exports.job.state === 'ready' ? 'Replay export ready' : 'Replay export ' + exports.job.state }} · {{ exports.job.segment == null ? 'Saved route' : 'Segment ' + exports.job.segment }}<template v-if="exports.running"> · {{ Math.round(exports.job.progress * 100) }}%</template></span>
-          <template #actions><a v-if="exports.job.state === 'ready'" class="gx-btn gx-btn--tonal" :href="exports.downloadUrl" :download="exports.job.filename">Download replay {{ exports.job.segment == null ? 'route' : 'segment' }} (.mp4)</a>
+          <template #actions><a v-if="exports.job.state === 'ready'" class="gx-btn gx-btn--tonal" :href="exports.downloadUrl" :download="exports.job.filename">{{ exports.job.segment == null ? 'Download replay route (.mp4)' : 'Download replay segment (.mp4)' }}</a>
           <button v-if="exports.running" class="gx-btn gx-btn--tonal" :disabled="exports.busy" @click="exports.cancel()">Cancel export</button>
           <button class="gx-btn gx-btn--tonal" @click="openRoute({routeId: exports.job.routeId}, 'replay')">Open route</button>
           </template>

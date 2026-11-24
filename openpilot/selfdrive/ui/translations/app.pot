@@ -2419,10 +2419,6 @@ msgstr ""
 msgid "Behind nosecone"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/models.js
-msgid "Big GPU"
-msgstr ""
-
 #: openpilot/starpilot/ui/layout_preview_sidebar.py
 msgid "Big developer sidebar supports up to seven metrics"
 msgstr ""
@@ -2592,10 +2588,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/software-status.js
 msgid "Branch"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/diagnostic-tools.js
-msgid "Brand: {}"
 msgstr ""
 
 #: openpilot/starpilot/ui/runtime_app.py
@@ -4111,10 +4103,6 @@ msgstr ""
 msgid "Customization too large"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/settings.js
-msgid "Customize"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Customize Layout"
 msgstr ""
@@ -4378,11 +4366,6 @@ msgstr ""
 msgid "Device state is unavailable."
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/diagnostic-tools.js
-#: openpilot/starpilot/ui/runtime_app.py
-msgid "Device: {}"
-msgstr ""
-
 #: openpilot/starpilot/ui/vehicle_bool.py
 msgid "Disable"
 msgstr ""
@@ -4581,11 +4564,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/software-status.js
 msgid "Download only prepares an update without restarting. Previous version restores your last installed build."
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/record-history.js
-#: openpilot/starpilot/galaxy/web/js/route-workspace.js
-msgid "Download replay"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/route-workspace.js
@@ -5044,10 +5022,6 @@ msgid "Expired on {}"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
-msgid "Expires in {} day{}"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Expires within a day"
 msgstr ""
 
@@ -5394,10 +5368,6 @@ msgstr ""
 msgid "From APKPure, a third-party mirror ("
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/spotify.js
-msgid "From Spotify’s Downloads page, to this"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/recording-data.js
 msgid "Full log"
 msgstr ""
@@ -5428,10 +5398,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 msgid "GPS: No fix"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/navigation.js
-msgid "GPS: {}"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/models.js
@@ -7286,10 +7252,6 @@ msgstr ""
 msgid "Longitudinal profiles"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/diagnostic-tools.js
-msgid "Longitudinal: {}"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Looking up the newest release…"
 msgstr ""
@@ -8660,10 +8622,6 @@ msgstr ""
 msgid "Pair again here."
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/starport.js
-msgid "Pair another"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/model-laboratory.js
 msgid "Pair artifact status unavailable"
 msgstr ""
@@ -8904,10 +8862,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/models.js
 msgid "Partial Files"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/models.js
-msgid "Partial: {} / {}"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/spotify.js
@@ -9435,10 +9389,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Put your phone on the same Wi‑Fi or hotspot as your comma. Some hotspots and guest networks block devices from seeing each other."
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/starport.js
-msgid "Put your {} in pairing mode, then pick it from the list"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/galaxy.js
@@ -11577,10 +11527,6 @@ msgstr ""
 msgid "Set"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/models.js
-msgid "Set Active"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Set Resolution to 480p, 720p or 1080p and Video Codec to H.264 or Auto."
 msgstr ""
@@ -12133,10 +12079,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/home.js
 msgid "Small model after Chestnut load failure"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/models.js
-msgid "Small on-device"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
@@ -12741,10 +12683,6 @@ msgstr ""
 
 #: openpilot/starpilot/ui/onroad_customization.py
 msgid "Steering wheel"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/diagnostic-tools.js
-msgid "Steering: {}"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
@@ -14730,10 +14668,6 @@ msgstr ""
 msgid "Vehicle {} crop {}"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/diagnostic-tools.js
-msgid "Vehicle: {}"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/sound-packs.js
 msgid "Verifying"
 msgstr ""
@@ -16603,10 +16537,6 @@ msgstr ""
 msgid "distance"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/home.js
-msgid "distracted"
-msgstr ""
-
 #: openpilot/starpilot/ui/onroad_favorites.py
 msgid "divider"
 msgstr ""
@@ -16927,10 +16857,6 @@ msgstr ""
 #: openpilot/starpilot/galaxy/web/js/starport.js
 #: openpilot/starpilot/ui/slc_action_dispatch.py
 msgid "expired"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/spotify.js
-msgid "expires in {} day{}"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/spotify.js
@@ -17918,10 +17844,6 @@ msgstr ""
 msgid "missing"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/replay.js
-msgid "missing recording"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/replay-timeline.js
 msgid "mixed"
 msgstr ""
@@ -17979,14 +17901,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/models.js
 msgid "models are used."
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/home.js
-msgid "moment"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/home.js
-msgid "moments"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/flm.js
@@ -20268,10 +20182,6 @@ msgstr ""
 msgid "unreadable"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/home.js
-msgid "unresponsive"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/sentry-notifications.js
 msgid "unsubscribe"
 msgstr ""
@@ -20608,10 +20518,6 @@ msgstr ""
 msgid "{} / {} groups"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/spotify.js
-msgid "{} Audio waits for {}."
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/hotspot.js
 msgid "{} If Wi-Fi disconnected, reconnect and reload to check whether settings saved."
 msgstr ""
@@ -20661,6 +20567,7 @@ msgstr ""
 msgid "{} samples / 30 s · robust error {} m/s²"
 msgstr ""
 
+#: openpilot/starpilot/galaxy/web/js/record-history.js
 #: openpilot/starpilot/ui/replay_settings.py
 msgid "{} segment"
 msgstr ""
@@ -20679,10 +20586,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/toggle-backup.js
 msgid "{} {} backed up{}."
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/route-cleanup.js
-msgid "{} {} deleted."
 msgstr ""
 
 #: openpilot/starpilot/galaxy/settings.py
@@ -20713,10 +20616,6 @@ msgstr ""
 #: openpilot/starpilot/galaxy/web/js/recording-data.js
 #: openpilot/starpilot/galaxy/web/js/system-monitor.js
 msgid "{}h {}m"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/models.js
-msgid "A different verified model is chosen each start. {} models are used. {} excluded. Favorites only mark your preferred models."
 msgstr ""
 
 #: openpilot/selfdrive/selfdrived/events.py
@@ -20755,10 +20654,6 @@ msgstr ""
 msgid "App paired ({}). iPhone: tap"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/bluetooth.js
-msgid "App: {} · Music: {}"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Applies when driving processes next start: the controller class, vehicle policy and PID/filter state are constructed together."
 msgstr ""
@@ -20793,10 +20688,6 @@ msgstr ""
 
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Bookmark Saved"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/diagnostic-tools.js
-msgid "Brand: {} · Longitudinal: {} · Steering: {}"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/controllers.js
@@ -20885,10 +20776,6 @@ msgstr ""
 
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Check tires, pressure, or alignment (Factor: {})"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/software-status.js
-msgid "Checked {}"
 msgstr ""
 
 #: openpilot/starpilot/ui/pip_owner.py
@@ -21007,11 +20894,6 @@ msgstr ""
 msgid "Download failed: {}"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/record-history.js
-#: openpilot/starpilot/galaxy/web/js/route-workspace.js
-msgid "Download replay {} (.mp4)"
-msgstr ""
-
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Drive Above"
 msgstr ""
@@ -21114,10 +20996,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/bluetooth.js
 msgid "Forget {}?"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/spotify.js
-msgid "From Spotify’s Downloads page, to this {}"
 msgstr ""
 
 #: openpilot/selfdrive/selfdrived/events.py
@@ -21262,10 +21140,6 @@ msgstr ""
 msgid "Parking Brake Engaged"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/spotify.js
-msgid "Pause smoothing · {}"
-msgstr ""
-
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Pay Attention"
 msgstr ""
@@ -21370,10 +21244,6 @@ msgstr ""
 msgid "Replay stopped: {}"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/toggle-backup.js
-msgid "Restore {}?"
-msgstr ""
-
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Resume Driving Manually"
 msgstr ""
@@ -21388,10 +21258,6 @@ msgstr ""
 
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Risk of Collision"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/home.js
-msgid "Sampled {}"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
@@ -21447,14 +21313,6 @@ msgstr ""
 msgid "Sensor Data Invalid"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/models.js
-msgid "Set Active {}"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/spotify.js
-msgid "Skip smoothing · {}"
-msgstr ""
-
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Slow down to engage"
 msgstr ""
@@ -21485,10 +21343,6 @@ msgstr ""
 
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "State"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/diagnostic-tools.js
-msgid "State: {}"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/hotspot.js
@@ -21563,10 +21417,6 @@ msgstr ""
 msgid "Stock LKAS: Lane Departure Detected"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/home.js
-msgid "Storage: {}"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/sentry-notifications.js
 msgid "Subscribed browsers: {}"
 msgstr ""
@@ -21597,10 +21447,6 @@ msgstr ""
 
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Take Control"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/spotify.js
-msgid "Takes over from the phone or speaker Spotify is playing on now. Music plays through {}. You might need to confirm the switch in the Spotify app."
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/plots.js
@@ -21699,20 +21545,12 @@ msgstr ""
 msgid "WARNING: This branch is not tested"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/drive-state.js
-msgid "Waiting for the device to switch {}…"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Width · {}"
 msgstr ""
 
 #: openpilot/starpilot/ui/tesla_screen_feature.py
 msgid "With screen-tap steering enabled, pressing the brake disarms Always On Lateral. Turn off to keep steering armed during braking. Applies after the next startup."
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/home.js
-msgid "across {}"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/map-operations.js
@@ -21767,18 +21605,6 @@ msgstr ""
 msgid "turn exceeds limit"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/home.js
-msgid "{} AOL steering only"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/home.js
-msgid "{} AOL steering only · {}"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/home.js
-msgid "{} AOL steering only · {}/{} drives measured"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "{} Blue lane-centering and orange steering-effort indicators stay blue and orange."
 msgstr ""
@@ -21827,10 +21653,6 @@ msgstr ""
 msgid "{} drives · ~{}"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/home.js
-msgid "{} engaged"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/sentry.js
 msgid "{} events · {}{} stored"
 msgstr ""
@@ -21841,10 +21663,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "{} hex"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/replay.js
-msgid "{} missing recording {}"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/map-operations.js
@@ -21891,10 +21709,6 @@ msgstr ""
 msgid "{} to {} {}"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/home.js
-msgid "{} unresponsive {}"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/route-workspace.js
 msgid "{} · Available for 30 minutes, or until the next export."
 msgstr ""
@@ -21909,10 +21723,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/companion.js
 msgid "{} · {} MB today"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/home.js
-msgid "{} · {} engaged"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/map-operations.js
@@ -23720,6 +23530,422 @@ msgstr ""
 msgid "{} recorded routes - Newest first"
 msgstr ""
 
+#: openpilot/starpilot/galaxy/web/js/record-history.js
 #: openpilot/starpilot/ui/replay_settings.py
 msgid "{} segments"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "A different verified model is chosen each start. Big GPU models are used. {} excluded. Favorites only mark your preferred models."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "A different verified model is chosen each start. Small on-device models are used. {} excluded. Favorites only mark your preferred models."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Adapter PIN"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Adapter passkey"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Allow this adapter to pair?"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/bluetooth.js
+msgid "App: {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "Audio waits for {}."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Auto install will run at {label} while offroad."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/diagnostic-tools.js
+msgid "Brand: {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Check for new models"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Check that this code matches your adapter, then confirm."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Checked {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Choose your adapter below."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Choose your car below."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Connecting to the selected device…"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/settings.js
+msgid "Customize blind spot camera & preview"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/settings.js
+msgid "Customize driving screen widgets, colors & layout"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/settings.js
+msgid "Customize quick select"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/diagnostic-tools.js
+#: openpilot/starpilot/galaxy/web/js/drive-state.js
+#: openpilot/starpilot/ui/runtime_app.py
+msgid "Device: {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/record-history.js
+#: openpilot/starpilot/galaxy/web/js/route-workspace.js
+msgid "Download replay route (.mp4)"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/record-history.js
+msgid "Download replay segment (.mp4)"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/route-workspace.js
+msgid "Download replay segment {} (.mp4)"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Driving models"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Enter the PIN shown by your adapter."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Enter this code in your adapter."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Enter your adapter’s passkey."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Expires in {} day ({})"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Expires in {} days ({})"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Expires within a day ({})"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Find adapter"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Finish connecting to your adapter"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Finish connecting to your car"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "From Spotify’s Downloads page, to this computer"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "From Spotify’s Downloads page, to this phone"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "GPS: {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "Hover or tap a segment"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/networks.js
+msgid "In range, signal {}%"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "Internal storage: {label} · {free} free"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/diagnostic-tools.js
+msgid "Longitudinal: {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/bluetooth.js
+msgid "Music: {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/route-workspace.js
+msgid "Next segment"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Nothing found yet. Keep your adapter in pairing mode."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Pair another adapter"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Pair another car"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Pair with your adapter"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Pair with your car"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Pairing canceled. Start again when your adapter is ready."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Pairing with the selected device…"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Partial: {label} / unknown"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Partial: {label} / {total}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "Pause smoothing · {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/route-workspace.js
+msgid "Previous segment"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Put your adapter in pairing mode, then pick it from the list"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Put your car in pairing mode, then pick it from the list"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "Recording drive: {label} · {free} free"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/toggle-backup.js
+msgid "Restore layout?"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/toggle-backup.js
+msgid "Restore toggles?"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "Sampled {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Searching for your adapter…"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Searching for your car…"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Set Active Big"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Set Active Small"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Show all models"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "Show all {} models"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Show fewer models"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Show pairable models"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "Show top 6"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Show {} more models"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/networks.js
+msgid "Signal {}% · Enterprise Wi-Fi (unsupported)"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/networks.js
+msgid "Signal {}% · Open"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/networks.js
+msgid "Signal {}% · Password required"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "Skip smoothing · {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Sort and filter models"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/diagnostic-tools.js
+msgid "State: {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/diagnostic-tools.js
+msgid "Steering: {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "Storage: {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "Takes over from the phone or speaker Spotify is playing on now. Music plays through {label}. You might need to confirm the switch in the Spotify app."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "The pairing window ended without choosing an adapter. Try again when your adapter is in pairing mode."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "Totals include recorded portions of {} incomplete drive. Personal records use complete drives."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "Totals include recorded portions of {} incomplete drives. Personal records use complete drives."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "Unavailable unresponsive moments"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/diagnostic-tools.js
+msgid "Vehicle: {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/drive-state.js
+msgid "Waiting for the device to switch {label}…"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "across {} drive"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "across {} drives"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "expired on {}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "expires in {} day ({})"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "expires in {} days ({})"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "expires on {}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "expires within a day ({})"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "expiry date unavailable"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "{label} AOL steering only"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "{label} engaged"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "{} distracted moment"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "{} distracted moments"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/route-cleanup.js
+msgid "{} driving route deleted."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/route-cleanup.js
+msgid "{} driving routes deleted."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/replay.js
+msgid "{} missing recording range"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/replay.js
+msgid "{} missing recording ranges"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "{} unresponsive moment"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "{} unresponsive moments"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "{}/{} drives measured"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "· Downloaded {label}"
 msgstr ""
