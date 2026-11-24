@@ -55,6 +55,15 @@ def duration(value):
   return f'{minutes}:{seconds:02d}'
 
 
+# Whole singular and plural phrases, so each translates on its own.
+def segment_count_text(count):
+  return f'{count} segment' if count == 1 else f'{count} segments'
+
+
+def routes_subtitle(count):
+  return f'{count} recorded route - Newest first' if count == 1 else f'{count} recorded routes - Newest first'
+
+
 def route_date(route, profile, clock24_hour=False):
   for key in ('startTime', 'fileTime'):
     value = route.get(key)
@@ -477,7 +486,7 @@ class ReplayPage(Widget):
         name = route.get('displayName') or identifier
         named = name != identifier
         count = route.get('segmentCount', 0)
-        segments = f'{count} segment' + ('s' if count != 1 else '')
+        segments = segment_count_text(count)
         label = name if named or not clock else calendar + (f' - {clock}' if self.profile == Profile.LARGE else '')
         if self.profile == Profile.LARGE:
           label = name if named else calendar + (f' - {clock}' if clock else '')
@@ -516,7 +525,7 @@ class ReplayPage(Widget):
     if detail:
       self.fonts.draw(detail, FontRole.NORMAL, 30, x, label_y + bottom + 14 - detail_top, TEXT_SECONDARY)
     if row.page:
-      count = f'{row.segment_count} segment' + ('s' if row.segment_count != 1 else '')
+      count = segment_count_text(row.segment_count)
       measured = self.fonts.measure(count, FontRole.NORMAL, 32)
       top, bottom = self.fonts.vertical_ink(count, FontRole.NORMAL, 32)
       self.fonts.draw(count, FontRole.NORMAL, 32, right - 76 - measured.width,
@@ -637,7 +646,7 @@ class ReplayPage(Widget):
     size, width, x, y = 16, 340, 12, 91
     self.fonts.draw(elide_text(self.fonts, identifier, FontRole.NORMAL, size, width), FontRole.NORMAL, size, x, y, TEXT_MUTED)
     count = route.get('segmentCount', 0)
-    segments = f'{count} segment' + ('s' if count != 1 else '')
+    segments = segment_count_text(count)
     width = self.fonts.measure(segments, FontRole.NORMAL, 18).width
     self.fonts.draw(segments, FontRole.NORMAL, 18, 524 - width, 91, TEXT_MUTED)
     reason = owner.error or ('Loading route details...' if owner.busy else route.get('reason'))
@@ -686,8 +695,7 @@ class ReplayPage(Widget):
     self.scroll = feature_scroll(self.scroll, 0, len(rows))
     return FeatureSettingsState(page=f'replay:{self.page}:{self.controller.selected_route}', title='Replay',
                                 parent_title='Device' if self.page == 'routes' else 'Recorded Routes', rows=rows,
-                                subtitle=self.controller.error or (f'{len(self.controller.routes)} recorded route' +
-                                                                   ('s' if len(self.controller.routes) != 1 else '') + ' - Newest first'
+                                subtitle=self.controller.error or (routes_subtitle(len(self.controller.routes))
                                                                    if self.controller.routes else ''),
                                 sidebar_expanded=False, scroll=self.scroll,
                                 save_hint='Recorded driving routes on this device')

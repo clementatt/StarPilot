@@ -256,9 +256,10 @@ def below_steer_speed_alert(CP: car.CarParams, CS: car.CarState, sm: messaging.S
 
 
 def calibration_incomplete_alert(CP: car.CarParams, CS: car.CarState, sm: messaging.SubMaster, metric: bool, soft_disable_time: int, personality) -> Alert:
-  first_word = 'Recalibrating' if sm['extrinsicsCalibration'].calStatus == log.ExtrinsicsCalibration.Status.recalibrating else 'Calibrating'
+  percent = sm['extrinsicsCalibration'].calPerc
+  recalibrating = sm['extrinsicsCalibration'].calStatus == log.ExtrinsicsCalibration.Status.recalibrating
   return Alert(
-    f"{first_word}: {sm['extrinsicsCalibration'].calPerc:.0f}%",
+    f"Recalibrating: {percent:.0f}%" if recalibrating else f"Calibrating: {percent:.0f}%",
     f"Drive Above {get_display_speed(MIN_SPEED_FILTER, metric)}",
     AlertStatus.normal, AlertSize.mid,
     Priority.LOWEST, VisualAlert.none, AudibleAlert.none, .2)
