@@ -64,6 +64,10 @@ msgstr "1 年行驶数据存储"
 msgid "1. Android Auto support"
 msgstr "1. Android Auto 支持"
 
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "1. openpilot is a driver assistance system."
+msgstr "1. openpilot 是一套驾驶辅助系统。"
+
 #: openpilot/starpilot/ui/galaxy_access.py
 msgid "1. set a password"
 msgstr "1. 设置密码"
@@ -85,6 +89,10 @@ msgstr "1–10；5 为正常。数值越小居中越弱，越大越强"
 msgid "2 minutes"
 msgstr "2 分钟"
 
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "2. You must pay attention at all times."
+msgstr "2. 您必须始终保持注意力集中。"
+
 #: openpilot/selfdrive/ui/widgets/prime.py
 msgid "24/7 LTE connectivity"
 msgstr "全天候 LTE 连接"
@@ -97,6 +105,10 @@ msgstr "2G"
 msgid "3. Connect"
 msgstr "3. 连接"
 
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "3. You must be ready to take over at any time."
+msgstr "3. 您必须随时准备接管车辆。"
+
 #: openpilot/starpilot/galaxy/web/js/plots.js
 msgid "30 s match:"
 msgstr "30 秒吻合度："
@@ -108,6 +120,10 @@ msgstr "32 位十六进制密钥"
 #: openpilot/selfdrive/ui/layouts/sidebar.py
 msgid "3G"
 msgstr "3G"
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "4. You are fully responsible for driving the car."
+msgstr "4. 您对驾驶车辆负全部责任。"
 
 #: openpilot/selfdrive/ui/layouts/sidebar.py
 msgid "5G"
@@ -188,6 +204,10 @@ msgstr "ACC 调校在行驶中刷新。Volt 调校在驾驶进程启动时初始
 #: openpilot/starpilot/ui/live_developer_sidebar.py
 msgid "ACCEL"
 msgstr "加速"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
+msgid "ACTIVE"
+msgstr "已启用"
 
 #: openpilot/selfdrive/ui/widgets/ssh_key.py
 msgid "ADD"
@@ -281,6 +301,10 @@ msgstr "已自动接受。如果手机上显示此验证码，请点按“配对
 #: openpilot/starpilot/galaxy/web/js/flm.js
 msgid "Accepted baseline"
 msgstr "已接受的基线"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "Access the device remotely using your SSH keys."
+msgstr "使用您的 SSH 密钥远程访问设备。"
 
 #: openpilot/selfdrive/ui/widgets/offroad_alerts.py
 msgid "Acknowledge Excessive Actuation"
@@ -643,6 +667,10 @@ msgstr "允许蓝牙配对？"
 msgid "Allow browser notifications to subscribe."
 msgstr "请允许浏览器通知以便订阅。"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py
+msgid "Allow cellular data roaming."
+msgstr "允许蜂窝数据漫游。"
+
 #: openpilot/starpilot/ui/lane_change_feature.py
 msgid "Allow lane changes"
 msgstr "允许变道"
@@ -703,6 +731,11 @@ msgstr "始终"
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Always Allow Uploads"
 msgstr "始终允许上传"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+#: openpilot/starpilot/longitudinal/enhanced_stop_hold.py
+msgid "Always Hold Enhanced Stops"
+msgstr "始终保持增强停车"
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout.js
 msgid "Always On"
@@ -799,6 +832,10 @@ msgstr "另一个回放正在运行。请先在其播放器中关闭它，再开
 #: openpilot/starpilot/galaxy/web/js/route-workspace.js
 msgid "Another route is being exported. Open it from Routes to check progress."
 msgstr "正在导出另一条路线，请在“路线”中打开它查看进度。"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
+msgid "Any fast phone or laptop charger should be fine."
+msgstr "任何手机或笔记本电脑的快充充电器都可以。"
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "App"
@@ -1192,6 +1229,10 @@ msgstr "避开高速公路"
 msgid "Avoid tolls"
 msgstr "避开收费路段"
 
+#: openpilot/selfdrive/ui/mici/onroad/cabin_camera_dialog.py
+msgid "Awareness: {}%"
+msgstr "注意力：{}%"
+
 #: openpilot/starpilot/ui/wheel_feature.py
 msgid "Axis pause and AOL assignments apply after restarting. Other actions can apply this drive."
 msgstr "轴暂停和 AOL 分配需重启后生效。其他操作可在本次行驶中生效。"
@@ -1236,6 +1277,10 @@ msgstr "备份功能开关"
 #: openpilot/selfdrive/ui/layouts/settings/software.py
 msgid "Background download"
 msgstr "后台下载"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "Background download: {label}"
+msgstr "后台下载：{label}"
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Background opacity"
@@ -2086,6 +2131,10 @@ msgstr "已更改的设置"
 msgid "Changes apply after the current signal and maneuver end."
 msgstr "更改将在当前转向灯和操作结束后生效。"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "Changes apply after the next reboot"
+msgstr "下次重启后生效"
+
 #: openpilot/starpilot/galaxy/web/js/toyota-tools.js
 msgid "Changes apply after the next start. Only the connected Toyota controller can send door commands."
 msgstr "更改将在下次启动后生效。只有已连接的 Toyota 控制器才能发送车门指令。"
@@ -2146,6 +2195,10 @@ msgstr "若车辆通电，更改此设置将重启 openpilot。"
 msgid "Charge phone over USB"
 msgstr "通过 USB 给手机充电"
 
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Check USB and 12V connections, then restart the car."
+msgstr "请检查 USB 和 12V 连接，然后重新启动车辆。"
+
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "Check alignment on the device."
 msgstr "请在设备上检查对齐。"
@@ -2170,6 +2223,22 @@ msgstr "请核对此代码与适配器上的一致，然后确认。"
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Check that this code matches your car, then confirm."
 msgstr "请核对此代码与车机上的一致，然后确认。"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Check the 12V connection, then restart the car."
+msgstr "请检查 12V 连接，然后重新启动车辆。"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Check the GPU is securely seated, then restart the car."
+msgstr "请检查 GPU 是否安装牢固，然后重新启动车辆。"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Check the USB cable."
+msgstr "请检查 USB 线缆。"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Check the USB cable. The current speed is {}."
+msgstr "请检查 USB 线缆。当前速度为 {}。"
 
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Check tires, pressure, or alignment (Factor:"
@@ -2269,10 +2338,22 @@ msgstr "正在检查您的安装包…"
 msgid "Checking…"
 msgstr "检查中…"
 
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Chestnut GPU unavailable"
+msgstr "Chestnut GPU 不可用"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Chestnut USB link is slow"
+msgstr "Chestnut USB 连接速度慢"
+
 #: openpilot/starpilot/galaxy/web/js/home.js
 #: openpilot/starpilot/ui/models_state.py
 msgid "Chestnut big"
 msgstr "Chestnut 大"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Chestnut detected"
+msgstr "检测到 Chestnut"
 
 #: openpilot/starpilot/galaxy/web/js/models.js
 msgid "Chestnut is connected. Jetlink stays off while Chestnut is fitted."
@@ -2282,10 +2363,34 @@ msgstr "Chestnut 已连接。装有 Chestnut 时 JetLink 保持关闭。"
 msgid "Chestnut load or run failed"
 msgstr "Chestnut 加载或运行失败"
 
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Chestnut model error"
+msgstr "Chestnut 模型错误"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Chestnut not detected"
+msgstr "未检测到 Chestnut"
+
 #: openpilot/starpilot/galaxy/web/js/home.js
 #: openpilot/starpilot/ui/models_state.py
 msgid "Chestnut output stopped; Small restarted for this drive"
 msgstr "Chestnut 输出已停止；本次行程已重启小模型"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Chestnut overheated"
+msgstr "Chestnut 过热"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Chestnut power disconnected"
+msgstr "Chestnut 电源已断开"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Chestnut power lost"
+msgstr "Chestnut 断电"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Chestnut power restored"
+msgstr "Chestnut 电源已恢复"
 
 #: openpilot/starpilot/galaxy/web/js/model-laboratory.js
 msgid "Chestnut ready"
@@ -2294,6 +2399,10 @@ msgstr "Chestnut 就绪"
 #: openpilot/starpilot/galaxy/web/js/model-laboratory.js
 msgid "Chestnut required"
 msgstr "需要 Chestnut"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Chestnut update failed"
+msgstr "Chestnut 更新失败"
 
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Chill"
@@ -2645,6 +2754,10 @@ msgstr "清除已存的区域和选择"
 msgid "Clear saved spot-monitor settings"
 msgstr "清除已存的盲区监测设置"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "Clear saved wheel-side detection. Automatic detection restarts next drive."
+msgstr "清除已保存的方向盘侧检测结果。下次行驶时将重新自动检测。"
+
 #: openpilot/starpilot/galaxy/developer_settings.py
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Clear saved wheel-side detection. Automatic detection restarts on the next drive."
@@ -2682,6 +2795,10 @@ msgstr "点击"
 msgid "Click \"add new device\" and scan the QR code on the right"
 msgstr "点击“添加新设备”，扫描右侧二维码"
 
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Click to update"
+msgstr "点按以更新"
+
 #: openpilot/starpilot/ui/onroad_customization.py
 msgid "Clock"
 msgstr "时钟"
@@ -2705,6 +2822,18 @@ msgstr "关闭搜索"
 #: openpilot/starpilot/galaxy/web/js/onroad-layout.js
 msgid "Closest lane markings"
 msgstr "最近的车道标线"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "Cloud Provider"
+msgstr "云服务提供方"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "Cloud Provider is unavailable. Refresh and try again."
+msgstr "云服务提供方不可用。请刷新后重试。"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid "Cloud account and recordings"
+msgstr "云账户与录像"
 
 #: openpilot/starpilot/galaxy/web/js/cloud-provider.js
 msgid "Cloud provider"
@@ -3060,6 +3189,10 @@ msgstr "连接到适配器"
 msgid "Connect to car"
 msgstr "连接到车辆"
 
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Connect to internet to check for updates"
+msgstr "请联网检查更新"
+
 #: openpilot/starpilot/galaxy/web/js/favorites.js
 msgid "Connect to local Galaxy to configure Quick Select."
 msgstr "请连接到本地 Galaxy 以配置快捷选择。"
@@ -3188,6 +3321,10 @@ msgstr "开始行驶时自动连接。"
 msgid "Contact comma.ai/support"
 msgstr "请联系 comma.ai/support"
 
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Contact comma.ai/support if you believe this was made in error."
+msgstr "如果您认为这是误判，请联系 comma.ai/support。"
+
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Continental Radar"
 msgstr "大陆雷达"
@@ -3203,6 +3340,10 @@ msgstr "控制项"
 #: openpilot/starpilot/galaxy/web/js/settings.js
 msgid "Control how speed limits change your set speed."
 msgstr "控制限速如何改变您的设定速度。"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "Control the car with a joystick for debugging."
+msgstr "使用摇杆控制车辆，用于调试。"
 
 #: openpilot/starpilot/galaxy/web/js/controllers.js
 msgid "Controller Buttons"
@@ -3898,6 +4039,10 @@ msgstr "设备显示语言。未翻译的文本显示英文。更改语言前请
 msgid "Device motion"
 msgstr "设备运动"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "Device must be registered with the comma.ai backend to pair."
+msgstr "设备须先在 comma.ai 后台注册才能配对。"
+
 #: openpilot/starpilot/galaxy/web/js/bluetooth.js
 msgid "Device paired."
 msgstr "设备已配对。"
@@ -3909,6 +4054,10 @@ msgstr "设备电源"
 #: openpilot/starpilot/galaxy/web/js/device-state.js
 msgid "Device state is unavailable."
 msgstr "设备状态不可用。"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Device temperature too high"
+msgstr "设备温度过高"
 
 #: openpilot/selfdrive/ui/layouts/arabesque/desktop.py
 msgid "Device:"
@@ -4084,6 +4233,37 @@ msgstr "脱离以重启"
 msgid "Disengage to Reset Calibration"
 msgstr "脱离以重置校准"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "Disengage to fast update selected branch"
+msgstr "脱离以快速更新所选分支"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "Disengage to power off"
+msgstr "脱离以关机"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "Disengage to reboot"
+msgstr "脱离以重启"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "Disengage to reset"
+msgstr "脱离以重置"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "Disengage to reset driver monitoring"
+msgstr "脱离以重置驾驶员监控"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "Disengage to restore previous version"
+msgstr "脱离以恢复上一版本"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "Disengage to uninstall"
+msgstr "脱离以卸载"
+
 #: openpilot/starpilot/galaxy/web/js/layout-preview.js
 #: openpilot/starpilot/ui/onroad.py
 msgid "Disengaged"
@@ -4179,6 +4359,18 @@ msgstr "利用车旁空间区分转弯与变道。转向灯信号"
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Distinguishes a turn from a lane change using the space beside the car. A signal requests Experimental only when no adjacent lane is detected."
 msgstr "利用车旁空间区分转弯与变道。转向灯信号仅在未检测到相邻车道时才请求实验模式。"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
+msgid "Do all of my segments get pulled in Firehose Mode?"
+msgstr "Firehose 模式会获取我所有的片段吗？"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
+msgid "Does it matter how or where I drive?"
+msgstr "我的驾驶方式或地点有影响吗？"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
+msgid "Does it matter which software I run?"
+msgstr "运行哪种软件有影响吗？"
 
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Does it use my data plan?"
@@ -4871,6 +5063,14 @@ msgstr "启用软件巡航？下次启动后生效。踏板控制仍由原厂 AC
 msgid "Enable the openpilot longitudinal control (alpha) toggle to allow Experimental mode."
 msgstr "启用 openpilot 纵向控制（alpha）开关，以使用实验模式。"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid ""
+"Enable to use openpilot driver assistance.\n"
+"Disable to use your car's stock driver assistance."
+msgstr ""
+"启用以使用 openpilot 驾驶辅助。\n"
+"停用则使用车辆原厂驾驶辅助。"
+
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Enable your car's LKAS to engage"
 msgstr "请开启车辆 LKAS 后再启用"
@@ -4928,9 +5128,29 @@ msgstr "English"
 msgid "Enhanced Stops"
 msgstr "增强停车"
 
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Ensure good airflow."
+msgstr "请确保通风良好。"
+
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Ensure road ahead is clear"
 msgstr "请确保前方道路畅通"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Ensure the device has a clear view of the driver. This can be checked in the device settings. Extreme lighting conditions and/or unconventional mounting positions may also trigger this alert."
+msgstr "请确保设备能清楚看到驾驶员。可在设备设置中检查。极端光照条件和/或非常规安装位置也可能触发此警报。"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Ensure the device is fully seated in the mount and the mount is firmly secured to the windshield."
+msgstr "请确保设备完全卡入支架，且支架牢固固定在挡风玻璃上。"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Ensure the software is correctly installed"
+msgstr "请确保软件已正确安装"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "Ensure you're connected to the internet and try again."
+msgstr "请确认已联网后重试。"
 
 #: openpilot/starpilot/galaxy/web/js/navigation-map.js
 #: openpilot/starpilot/galaxy/web/js/onroad-layout.js
@@ -5051,6 +5271,14 @@ msgstr "事件 ID：{}"
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Excessive Actuation"
 msgstr "过度作动"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Excessive lateral actuation detected on your last drive"
+msgstr "上次行驶中检测到横向过度作动"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Excessive longitudinal actuation detected on your last drive"
+msgstr "上次行驶中检测到纵向过度作动"
 
 #: openpilot/starpilot/galaxy/web/js/home.js
 msgid "Excluded from totals"
@@ -5229,6 +5457,14 @@ msgstr "原厂巡航"
 msgid "Factory cruise / AOL"
 msgstr "原厂巡航 / AOL"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "Failed to get available branches. Ensure you're connected to the internet and try again."
+msgstr "无法获取可用分支。请确认已联网后重试。"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Failed to register with comma.ai backend"
+msgstr "无法在 comma.ai 后台注册"
+
 #: openpilot/starpilot/galaxy/web/js/plots.js
 msgid "Fair"
 msgstr "一般"
@@ -5366,6 +5602,10 @@ msgstr "完成与您设备的连接"
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Finish or cancel pairing first."
 msgstr "请先完成或取消配对。"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Finish setup"
+msgstr "完成设置"
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Finish step 1 first — Connect will walk you through it."
@@ -5515,6 +5755,16 @@ msgstr "配对后若使用蜂窝网络或其他网络，请关闭"
 msgid "For local access, type or paste the full http:// address into a new browser tab and bookmark it. The public Galaxy link uses the Internet tunnel, independently of hotspot access. If your browser or phone asks for local-network permission, allow access to this comma."
 msgstr "如需本地访问，请在新的浏览器标签页中输入或粘贴完整的 http:// 地址，并将其收藏。公共 Galaxy 链接通过互联网隧道访问，与热点访问相互独立。如果浏览器或手机请求本地网络权限，请允许其访问这台 comma。"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
+msgid ""
+"For maximum effectiveness, bring your device inside and connect to a good USB-C adapter and Wi-Fi weekly.\n"
+"\n"
+"Firehose Mode can also work while you're driving if connected to a hotspot or unlimited SIM card."
+msgstr ""
+"为获得最佳效果，请每周将设备带到室内，连接优质的 USB-C 电源适配器和 Wi-Fi。\n"
+"\n"
+"如果连接了热点或不限流量的 SIM 卡，Firehose 模式也可在行驶时工作。"
+
 #: openpilot/starpilot/galaxy/web/js/route-workspace.js
 msgid "For this saved segment only. Distance is estimated from recorded speed."
 msgstr "仅针对此已保存片段，里程根据记录的车速估算。"
@@ -5616,6 +5866,10 @@ msgstr "正在忽略…"
 msgid "Forward ten seconds"
 msgstr "前进 10 秒"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
+msgid "Frequently Asked Questions"
+msgstr "常见问题"
+
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "Fresh onroad control required"
 msgstr "需要最新的行驶控制"
@@ -5684,6 +5938,14 @@ msgstr "良好"
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 msgid "GPS Source"
 msgstr "GPS 来源"
+
+#: openpilot/selfdrive/ui/mici/onroad/navigation.py
+msgid "GPS fix: no"
+msgstr "GPS 定位：否"
+
+#: openpilot/selfdrive/ui/mici/onroad/navigation.py
+msgid "GPS fix: yes"
+msgstr "GPS 定位：是"
 
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 msgid "GPS setup guides"
@@ -5907,6 +6169,10 @@ msgstr "接近较慢或正在刹车的前车时，逐渐增加跟车距离"
 msgid "Gradually adds following distance when approaching a slower or braking lead vehicle."
 msgstr "接近较慢或正在刹车的前车时，逐渐增加跟车距离。"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "Grant SSH access to all public keys in your GitHub settings. Only enter your own username."
+msgstr "向您 GitHub 设置中的所有公钥授予 SSH 访问权限。请只输入您自己的用户名。"
+
 #: openpilot/starpilot/galaxy/web/js/plots.js
 msgid "Great"
 msgstr "极佳"
@@ -5930,6 +6196,10 @@ msgstr "HTTPS 网址"
 #: openpilot/starpilot/galaxy/web/js/sentry-notifications.js
 msgid "HTTPS push relay URL"
 msgstr "HTTPS 推送中继网址"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "Hang up cellular data and don't redial. The modem stays registered and the SIM is untouched. Remote access over cellular data is unavailable while this is enabled."
+msgstr "断开蜂窝数据且不再重拨。调制解调器保持注册，SIM 卡不受影响。启用期间无法通过蜂窝数据远程访问。"
 
 #: openpilot/starpilot/ui/preap_radar_feature.py
 msgid "Hardware radar"
@@ -6142,6 +6412,10 @@ msgstr "连接方式："
 msgid "How the widget list works"
 msgstr "组件列表的使用方法"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
+msgid "INACTIVE: connect to an unmetered network"
+msgstr "未启用：请连接不限流量的网络"
+
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "INCOMPATIBLE"
 msgstr "不兼容"
@@ -6171,9 +6445,21 @@ msgstr "身份未验证"
 msgid "Idle"
 msgstr "空闲"
 
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "If it does not have a clear view of the driver, unplug and remount before continuing."
+msgstr "如果无法清楚看到驾驶员，请拔下设备重新安装后再继续。"
+
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "If it still does not appear, turn Spotify off and back on here. This reconnects using your saved account; you do not need to clear the account or cache."
 msgstr "如果仍未出现，请在此关闭 Spotify 再重新开启。这会使用已保存的账号重新连接，无需清除账号或缓存。"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "If you do not connect to the internet, openpilot won't engage in {} hour."
+msgstr "如果不联网，openpilot 将在 {} 小时后无法启用。"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "If you do not connect to the internet, openpilot won't engage in {} hours."
+msgstr "如果不联网，openpilot 将在 {} 小时后无法启用。"
 
 #: openpilot/starpilot/galaxy/web/js/home.js
 msgid "Ignore drive stats"
@@ -6186,6 +6472,10 @@ msgstr "仅为示例数值，未读取任何设备。"
 #: openpilot/starpilot/ui/pip_owner.py
 msgid "Image crop; view remains off without a live camera"
 msgstr "图像裁剪；无实时摄像头时视图保持关闭"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Immediately connect to the internet to check for updates"
+msgstr "请立即联网检查更新"
 
 #: openpilot/starpilot/galaxy/settings.py
 msgid "Imperial"
@@ -6865,6 +7155,10 @@ msgstr "组件位置无效"
 msgid "Invalid widget size"
 msgstr "组件尺寸无效"
 
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "It will not connect or upload to comma.ai servers, and receives no support from comma.ai. If this is a device purchased at comma.ai/shop, open a ticket at https://comma.ai/support."
+msgstr "设备将不会连接或上传到 comma.ai 服务器，也不会获得 comma.ai 的支持。如果这是在 comma.ai/shop 购买的设备，请在 https://comma.ai/support 提交工单。"
+
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Jeep Brake Hold"
 msgstr "Jeep 刹车保持"
@@ -6892,6 +7186,10 @@ msgstr "JetLink 在其主机上运行当前大模型，该主机会自行下载�
 #: openpilot/starpilot/ui/onroad_customization.py
 msgid "Jetlink status"
 msgstr "JetLink 状态"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Jetlink unavailable: {}"
+msgstr "JetLink 不可用：{}"
 
 #: openpilot/starpilot/galaxy/web/js/logs.js
 msgid "Join Discord"
@@ -6925,6 +7223,11 @@ msgstr "摇杆调试模式"
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Joystick Mode"
 msgstr "摇杆模式"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+#: openpilot/starpilot/longitudinal/enhanced_stop_hold.py
+msgid "Keep Enhanced Stops held until you manually resume, even if a traffic light appears to turn green."
+msgstr "增强停车将一直保持，直到您手动恢复，即使红绿灯看似已变绿。"
 
 #: openpilot/starpilot/ui/display_owner.py
 msgid "Keep Screen On While eGPU Loads"
@@ -7497,6 +7800,20 @@ msgstr "旧版已存值；采用后才能编辑"
 #: openpilot/starpilot/ui/slc_offset_feature.py
 msgid "Legacy value; adopt to edit"
 msgstr "旧版数值；采用后才能编辑"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid ""
+"Let the driving model control gas and brakes.\n"
+"Includes stopping for red lights and stop signs.\n"
+"Set speed is a maximum, not a target.\n"
+"These are alpha features. Expect mistakes.\n"
+"The path colors show acceleration and braking."
+msgstr ""
+"由驾驶模型控制油门和刹车。\n"
+"包括在红灯和停车标志前停车。\n"
+"设定速度是上限，而非目标。\n"
+"这些是 Alpha 功能，可能会出错。\n"
+"路径颜色表示加速和刹车。"
 
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Lets a confident driving-model path reduce lane-centering correction when the model path differs from the lane center."
@@ -8082,6 +8399,14 @@ msgstr "地图目录不可用。"
 msgid "Map downloads need a fresh parked status. Refresh and try again."
 msgstr "下载地图需要最新的驻车状态，请刷新后重试。"
 
+#: openpilot/selfdrive/ui/mici/onroad/navigation.py
+msgid "Map frames: no"
+msgstr "地图帧：否"
+
+#: openpilot/selfdrive/ui/mici/onroad/navigation.py
+msgid "Map frames: yes"
+msgstr "地图帧：是"
+
 #: openpilot/starpilot/ui/maps_state.py
 msgid "Map manager"
 msgstr "地图管理器"
@@ -8202,6 +8527,16 @@ msgstr "核对蓝牙码 {}？"
 msgid "Matches Spotify’s official download"
 msgstr "与 Spotify 官方下载一致"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/initial_cruise_speed.py
+msgid ""
+"Max speed when engaging openpilot.\n"
+"If you are already driving faster, your current speed is used.\n"
+"Resume restores the previous max speed."
+msgstr ""
+"启用 openpilot 时的最高速度。\n"
+"若您已在更高车速行驶，则使用当前速度。\n"
+"“恢复”会还原之前的最高速度。"
+
 #: openpilot/selfdrive/ui/layouts/settings/toggles.py
 msgid "Max speed when engaging openpilot. If you are already driving faster, your current speed is used. Resume restores the previous max speed. Changes apply the next time you engage."
 msgstr "启用 openpilot 时的最高速度。若您已在更高车速行驶，则使用当前速度。“恢复”会还原之前的最高速度。更改在下次启用时生效。"
@@ -8234,6 +8569,10 @@ msgstr "内存使用"
 #: openpilot/starpilot/galaxy/web/js/app.js
 msgid "Menu"
 msgstr "菜单"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py
+msgid "Metered prevents large uploads on this Wi-Fi connection. Default uses the network's detected setting."
+msgstr "“计量”会在此 Wi-Fi 连接上避免大量上传。“默认”使用网络检测到的设置。"
 
 #: openpilot/starpilot/galaxy/settings.py
 msgid "Metric"
@@ -8383,6 +8722,10 @@ msgstr "模型"
 msgid "Models, downloads, and Jetlink connections"
 msgstr "模型、下载与 Jetlink 连接"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid "Monitor the driver even when openpilot is not engaged."
+msgstr "即使未启用 openpilot 也监控驾驶员。"
+
 #: openpilot/starpilot/galaxy/web/js/monitor-feed.js
 msgid "Monitor unavailable"
 msgstr "监视器不可用"
@@ -8426,6 +8769,10 @@ msgstr "动作监测状态不可用，正在自动重新连接…"
 #: openpilot/starpilot/ui/sentry_owner.py
 msgid "Motion sensitivity"
 msgstr "动作灵敏度"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "Mount the device within 4° left or right and 5° up or 9° down. openpilot calibrates continuously; resetting is rarely needed. Resetting clears learned calibration."
+msgstr "安装设备时，左右偏差需在 4° 以内，上仰 5°、下俯 9° 以内。openpilot 会持续校准，很少需要重置。重置会清除已学习的校准。"
 
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Move Spotify to"
@@ -8648,6 +8995,10 @@ msgstr "下一步"
 #: openpilot/starpilot/galaxy/web/js/route-workspace.js
 msgid "Next segment"
 msgstr "下一片段"
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "Next, we'll check if comma four can detect the driver properly."
+msgstr "接下来，我们将检查 comma four 能否正确识别驾驶员。"
 
 #: openpilot/starpilot/galaxy/web/js/flm-training-results.js
 msgid "No"
@@ -8897,6 +9248,10 @@ msgstr "没有已保存的版本。"
 msgid "No visible items."
 msgstr "没有可见项目。"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
+msgid "No, we selectively pull a subset of your segments."
+msgstr "不会，我们只会有选择地获取部分片段。"
+
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "None"
 msgstr "无"
@@ -8909,6 +9264,10 @@ msgstr "无上报"
 #: openpilot/starpilot/ui/models_state.py
 msgid "None — always use Active Small"
 msgstr "无 — 始终使用当前小模型"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
+msgid "Nope, just drive as you normally would."
+msgstr "没有，像平常一样驾驶即可。"
 
 #: openpilot/starpilot/ui/long_profile_feature.py
 msgid "Normal"
@@ -9231,9 +9590,17 @@ msgstr "开启时速度和距离以公里显示，关闭则使用英里。已保
 msgid "On iPhone, allow Spotify’s"
 msgstr "在 iPhone 上，请允许 Spotify 的"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid "On selects right-hand; Off selects left-hand for the next drive. Automatic side detection continues."
+msgstr "开启为右舵，关闭为左舵，下次行驶生效。方向盘侧自动检测仍会继续。"
+
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 msgid "On the app’s main Settings page, turn on"
 msgstr "在 App 的主设置页面，开启"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "On this car, openpilot defaults to the stock system's built-in ACC."
+msgstr "在此车上，openpilot 默认使用原厂系统自带的 ACC。"
 
 #: openpilot/starpilot/galaxy/localization_settings.py
 msgid "On uses kilometers; Off uses miles. Saved speed-limit offsets keep their physical values."
@@ -9765,6 +10132,10 @@ msgstr "将设备配对到您的 comma 账号"
 msgid "Pair your device with comma connect (connect.comma.ai) and claim your comma prime offer."
 msgstr "将设备与 comma connect（connect.comma.ai）配对，领取您的 comma prime 优惠。"
 
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Pair your device with comma connect to view recent drives and bookmarked routes."
+msgstr "将设备与 comma connect 配对，即可查看最近的行程和已加书签的路线。"
+
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Pair your phone in the companion app, or tap"
 msgstr "请在配套 App 中配对手机，或点按"
@@ -10111,6 +10482,10 @@ msgstr "低于此速度时暂停转向辅助。设为零则禁用基于速度的
 msgid "Pay Attention"
 msgstr "请集中注意力"
 
+#: openpilot/selfdrive/ui/mici/onroad/cabin_camera_dialog.py
+msgid "Pay Attention - level {}"
+msgstr "请集中注意力 - {} 级"
+
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Pay Attention to Engage"
 msgstr "请集中注意力后再启用"
@@ -10275,6 +10650,18 @@ msgstr "播放中"
 msgid "Please connect to Wi-Fi to complete initial pairing"
 msgstr "请连接 Wi‑Fi 以完成初始配对"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "Please connect to Wi-Fi to complete initial pairing."
+msgstr "请连接 Wi-Fi 以完成初始配对。"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "Please connect to Wi-Fi to fetch your key."
+msgstr "请连接 Wi-Fi 以获取您的密钥。"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "Please connect to Wi-Fi to update."
+msgstr "请连接 Wi-Fi 以进行更新。"
+
 #: openpilot/starpilot/galaxy/web/js/plots.js
 msgid "Plot refresh timed out"
 msgstr "绘图刷新超时"
@@ -10294,6 +10681,10 @@ msgstr "Polaris 模型并非由 comma 制作或认可，而是社区对 comma �
 #: openpilot/starpilot/galaxy/web/js/plots.js
 msgid "Poor"
 msgstr "较差"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Poor visibility detected for driver monitoring"
+msgstr "驾驶员监控视野不佳"
 
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Posenet Speed Invalid"
@@ -10440,6 +10831,10 @@ msgstr "在计量制 Wi‑Fi 连接时避免大量上传"
 msgid "Prevent large data uploads when on a metered cellular connection"
 msgstr "在计量制蜂窝网络时避免大量上传"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py
+msgid "Prevent large uploads over the cellular connection."
+msgstr "避免通过蜂窝网络大量上传。"
+
 #: openpilot/starpilot/galaxy/web/js/app.js
 msgid "Preview"
 msgstr "预览"
@@ -10527,6 +10922,10 @@ msgstr "预览 socket 目录不是私有的"
 #: openpilot/starpilot/ui/layout_preview_transport.py
 msgid "Preview socket path is occupied"
 msgstr "预览 socket 路径已被占用"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "Preview the cabin camera to check driver monitoring visibility. The vehicle must be off."
+msgstr "预览车内摄像头，检查驾驶员监控的视野。车辆须熄火。"
 
 #: openpilot/selfdrive/ui/layouts/settings/device.py
 msgid "Preview the cabin camera to ensure that driver monitoring has good visibility. (vehicle must be off)"
@@ -11009,6 +11408,14 @@ msgstr "录制并上传麦克风音频"
 msgid "Record and store microphone audio while driving. The audio will be included in the dashcam video in comma connect."
 msgstr "行驶时录制并保存麦克风音频。音频将包含在 comma connect 的行车记录视频中。"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid ""
+"Record microphone audio while driving.\n"
+"Audio is included in dashcam videos in comma connect."
+msgstr ""
+"行驶时录制麦克风音频。\n"
+"音频会包含在 comma connect 的行车记录视频中。"
+
 #: openpilot/starpilot/galaxy/web/js/home.js
 msgid "Recorded Models"
 msgstr "已记录的模型"
@@ -11210,6 +11617,10 @@ msgstr "请重新安装设备（俯仰角："
 msgid "Remount Device (Pitch: {}°, Yaw: {}°)"
 msgstr "请重新安装设备（俯仰角：{}°，偏航角：{}°）"
 
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "Remount if your face is blocked, or driver monitoring has difficulty tracking your face."
+msgstr "如果面部被遮挡，或驾驶员监控难以追踪您的面部，请重新安装设备。"
+
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Remove"
 msgstr "移除"
@@ -11249,6 +11660,10 @@ msgstr "从我的收藏中移除"
 #: openpilot/starpilot/galaxy/web/js/models.js
 msgid "Remove from your favorites:"
 msgstr "从我的收藏中移除："
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "Remove openpilot from this device."
+msgstr "从此设备移除 openpilot。"
 
 #: openpilot/starpilot/ui/bluetooth_compact.py
 msgid "Remove phones paired for the StarPilot app only?"
@@ -11926,6 +12341,10 @@ msgstr ""
 "重启车辆后重试，\n"
 "小模型仍可使用"
 
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Restart the car to retry."
+msgstr "请重新启动车辆后重试。"
+
 #: openpilot/starpilot/galaxy/web/js/software-status.js
 msgid "Restart the device to install the finalized update for {}? Keep the vehicle parked and the device accessible."
 msgstr "重启设备以安装 {} 的已完成更新？请保持车辆驻车且设备便于操作。"
@@ -12293,6 +12712,14 @@ msgstr "路线片段"
 msgid "Route viewer"
 msgstr "路线查看器"
 
+#: openpilot/selfdrive/ui/mici/onroad/navigation.py
+msgid "Route: no"
+msgstr "路线：否"
+
+#: openpilot/selfdrive/ui/mici/onroad/navigation.py
+msgid "Route: yes"
+msgstr "路线：是"
+
 #: openpilot/starpilot/galaxy/web/js/app.js
 #: openpilot/starpilot/galaxy/web/js/bottom-nav.js
 #: openpilot/starpilot/galaxy/web/js/navigation.js
@@ -12347,6 +12774,10 @@ msgstr "速度"
 
 #: openpilot/selfdrive/ui/layouts/settings/developer.py
 msgid "SSH Keys"
+msgstr "SSH 密钥"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "SSH keys"
 msgstr "SSH 密钥"
 
 #: openpilot/starpilot/ui/layout_preview_sidebar.py
@@ -13206,6 +13637,10 @@ msgstr "选择其他分支"
 msgid "Select or connect a vehicle to configure speed control"
 msgstr "选择或连接车辆以配置速度控制"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "Select the software branch to download on the next update check."
+msgstr "选择下次检查更新时要下载的软件分支。"
+
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Select the steering controller and tune its response"
 msgstr "选择转向控制器并调校其响应"
@@ -13613,6 +14048,10 @@ msgstr "将转向速度设为 {value}？更改将在当前转向灯和操作结�
 msgid "Set target branch"
 msgstr "设置目标分支"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py
+msgid "Set the access point name required by your cellular carrier. Leave blank for automatic configuration."
+msgstr "设置蜂窝运营商要求的接入点名称。留空则自动配置。"
+
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 msgid "Set up GPS sharing"
 msgstr "设置 GPS 共享"
@@ -13908,9 +14347,17 @@ msgstr "共享手机位置"
 msgid "Share phone GPS with comma"
 msgstr "与 comma 共享手机 GPS"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py
+msgid "Share the device's internet connection through a Wi-Fi hotspot."
+msgstr "通过 Wi-Fi 热点共享设备的网络连接。"
+
 #: openpilot/starpilot/galaxy/web/js/share-destination.js
 msgid "Shared destination"
 msgstr "共享目的地"
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "Sharing your data with comma helps improve openpilot for everyone."
+msgstr "与 comma 分享数据，有助于为所有人改进 openpilot。"
 
 #: openpilot/selfdrive/ui/layouts/arabesque/tools/terminal.py
 msgid "Shell exited. Return to Desktop to open a new session."
@@ -14039,6 +14486,10 @@ msgstr "在车机屏幕上显示 StarPilot 驾驶画面。请选择您的设备�
 #: openpilot/starpilot/galaxy/web/js/home.js
 msgid "Show top 6"
 msgstr "显示前 6 个"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "Show touch locations and the UI frame rate."
+msgstr "显示触摸位置和界面帧率。"
 
 #: openpilot/starpilot/galaxy/web/js/navigation-map.js
 msgid "Show whole route"
@@ -14602,6 +15053,18 @@ msgstr "绘图数值已过期"
 #: openpilot/selfdrive/ui/layouts/settings/toggles.py
 msgid "Standard"
 msgstr "标准"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid ""
+"Standard is recommended.\n"
+"Aggressive follows closer, with firmer gas and braking.\n"
+"Relaxed leaves more space.\n"
+"Use the steering wheel distance button on supported cars."
+msgstr ""
+"推荐使用“标准”。\n"
+"“激进”跟车更近，油门和刹车更果断。\n"
+"“从容”留出更多车距。\n"
+"支持的车型可使用方向盘距离键切换。"
 
 #: openpilot/starpilot/galaxy/web/js/device-state.js
 msgid "Standby"
@@ -15253,6 +15716,10 @@ msgstr "切换到深色模式"
 msgid "Switch to light mode"
 msgstr "切换到浅色模式"
 
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Switch to the release-chestnut branch to use chestnut-class models."
+msgstr "请切换到 release-chestnut 分支以使用 chestnut 级模型。"
+
 #: openpilot/starpilot/ui/conditional_feature.py
 #: openpilot/starpilot/ui/onroad.py
 #: openpilot/starpilot/ui/runtime_app.py
@@ -15311,6 +15778,10 @@ msgstr "系统活动已过期。"
 #: openpilot/starpilot/galaxy/web/js/monitor-feed.js
 msgid "System activity is unavailable."
 msgstr "系统活动不可用。"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "System cooling down before starting. Current internal component temperature: {}"
+msgstr "系统正在降温，之后再启动。当前内部组件温度：{}"
 
 #: openpilot/starpilot/galaxy/web/js/sentry.js
 msgid "System time:"
@@ -15980,6 +16451,10 @@ msgstr "无法打开此页面。"
 msgid "This permanently removes every saved route, including preserved routes and their logs. Settings and software are not changed."
 msgstr "这将永久删除所有已保存的路线（包括已保留的路线）及其日志，设置和软件不受影响。"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "This requests openpilot longitudinal control after a verified vehicle takeover at startup."
+msgstr "启动时确认车辆接管后，将请求 openpilot 纵向控制。"
+
 #: openpilot/starpilot/ui/conditional_feature.py
 msgid "This resets the mode's remembered choice to Automatic."
 msgstr "这会将该模式已记住的选择重置为自动。"
@@ -16209,6 +16684,10 @@ msgstr "请触摸方向盘"
 msgid "Touch Steering Wheel: No Face Detected"
 msgstr "请触摸方向盘：未检测到人脸"
 
+#: openpilot/selfdrive/ui/mici/onroad/cabin_camera_dialog.py
+msgid "Touch Wheel - level {}"
+msgstr "请触摸方向盘 - {} 级"
+
 #: openpilot/starpilot/ui/tesla_screen_feature.py
 msgid "Touch the Tesla screen with three fingers to toggle Always On Lateral. Requires Always On Lateral and the detected Vehicle CAN add-on cable."
 msgstr "三指触摸 Tesla 屏幕可切换全时横向控制。需要全时横向控制和已检测到的车辆 CAN 附加线束。"
@@ -16340,6 +16819,10 @@ msgstr "开启并安装"
 #: openpilot/starpilot/ui/lane_change_feature.py
 msgid "Turn Signal Guidance"
 msgstr "转向灯引导"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Turn ignition off, then tap to acknowledge. Have the cause checked before re-engaging."
+msgstr "请关闭点火开关，然后点按以确认。重新启用前请排查原因。"
 
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Turn it on, then pick"
@@ -16496,6 +16979,10 @@ msgstr "请关闭点火开关后再更改这些设置。"
 msgid "Turn-by-turn"
 msgstr "逐向导航"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "Turn-by-turn navigation with a route map. Set a destination from comma connect."
+msgstr "带路线地图的逐向导航。请在 comma connect 中设置目的地。"
+
 #: openpilot/starpilot/ui/onroad_customization.py
 msgid "Turning it on here turns it off in the other screen's layout."
 msgstr "在此开启会在另一屏幕的布局中关闭。"
@@ -16556,6 +17043,10 @@ msgstr "更新"
 msgid "USB computer"
 msgstr "USB 电脑"
 
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Unable to acknowledge"
+msgstr "无法确认"
+
 #: openpilot/starpilot/ui/settings_assets.py
 msgid "Unable to create Settings vector cache"
 msgstr "无法创建设置矢量缓存"
@@ -16571,6 +17062,10 @@ msgstr "无法创建布局预览目标"
 #: openpilot/starpilot/ui/onroad_large_widgets.py
 msgid "Unable to create steering wheel texture"
 msgstr "无法创建方向盘纹理"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Unable to download updates"
+msgstr "无法下载更新"
 
 #: openpilot/starpilot/ui/home.py
 msgid "Unable to load Home texture:"
@@ -16720,6 +17215,10 @@ msgstr "摄像头区域草稿异常"
 #: openpilot/selfdrive/ui/layouts/settings/software.py
 msgid "Uninstall"
 msgstr "卸载"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Uninstall and re-install if this error persists."
+msgstr "如果此错误持续出现，请卸载后重新安装。"
 
 #: openpilot/starpilot/galaxy/settings.py
 msgid "Units"
@@ -16918,6 +17417,10 @@ msgstr "更新 Soloist"
 msgid "Update app"
 msgstr "更新 App"
 
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Update available"
+msgstr "有可用更新"
+
 #: openpilot/starpilot/galaxy/web/js/software-status.js
 msgid "Update available — operating system update required. This is a large download and may take a while. Keep the device powered and connected to Wi-Fi."
 msgstr "有可用更新 — 需要更新操作系统。下载量较大，可能耗时较长，请保持设备通电并连接 Wi‑Fi。"
@@ -17043,6 +17546,10 @@ msgstr "正在更新 {}…"
 msgid "Upgrade Now"
 msgstr "立即升级"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid "Upload cabin camera data to help improve driver monitoring."
+msgstr "上传车内摄像头数据，帮助改进驾驶员监控。"
+
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Upload canceled."
 msgstr "上传已取消。"
@@ -17062,6 +17569,10 @@ msgstr "上传缓慢或中断："
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Upload timed out. Check your connection and retry."
 msgstr "上传超时。请检查网络连接后重试。"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Uploads ignored due to a potential detected safety policy violation"
+msgstr "检测到可能违反安全策略，上传已被忽略"
 
 #: openpilot/starpilot/ui/slc_offset_feature.py
 msgid "Upper boundary excluded; displayed ranges rounded to whole speeds. Unsafe reductions use the unadjusted limit"
@@ -17087,6 +17598,10 @@ msgstr "使用"
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Use 24-hour time"
 msgstr "使用 24 小时制"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "Use Android Debug Bridge (ADB) over USB or the network."
+msgstr "通过 USB 或网络使用 Android 调试桥（ADB）。"
 
 #: openpilot/starpilot/ui/display_owner.py
 #: openpilot/starpilot/ui/sounds_owner.py
@@ -17141,6 +17656,10 @@ msgstr "使用 StarPilot 纵向规划器"
 msgid "Use StarPilot Widgets"
 msgstr "使用 StarPilot 组件"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "Use StarPilot speed control instead of stock adaptive cruise control."
+msgstr "使用 StarPilot 速度控制，取代原厂自适应巡航。"
+
 #: openpilot/starpilot/galaxy/developer_settings.py
 msgid "Use VOACC"
 msgstr "使用 VOACC"
@@ -17172,6 +17691,10 @@ msgstr "请使用与 comma 处于同一 Wi-Fi 的平板。"
 #: openpilot/starpilot/ui/power_owner.py
 msgid "Use a {}-hour maximum and {}-V cutoff while parked?"
 msgstr "驻车时使用 {} 小时上限和 {} V 切断？"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "Use alpha openpilot longitudinal control instead of stock ACC. This may disable Automatic Emergency Braking (AEB)."
+msgstr "使用 Alpha 版 openpilot 纵向控制，取代原厂 ACC。这可能会禁用自动紧急制动（AEB）。"
 
 #: openpilot/starpilot/ui/subaru_smoothing_feature.py
 msgid "Use an explicit saved Subaru smoothing value next drive. Off uses the vehicle default."
@@ -17668,6 +18191,10 @@ msgstr "音量 {}% - 如需调整请在 Spotify App 中更改，否则使用车�
 msgid "WARNING: This branch is not tested"
 msgstr "警告：此分支未经测试"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "WARNING: alpha longitudinal control may disable Automatic Emergency Braking (AEB)"
+msgstr "警告：Alpha 纵向控制可能会禁用自动紧急制动（AEB）"
+
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Wait for the current install to finish."
 msgstr "请等待当前安装完成。"
@@ -17745,6 +18272,10 @@ msgstr "正在等待提交拟合后的新存储"
 #: openpilot/starpilot/galaxy/web/js/model-laboratory.js
 msgid "Waiting for parked device status"
 msgstr "正在等待驻车的设备状态"
+
+#: openpilot/selfdrive/ui/mici/onroad/navigation.py
+msgid "Waiting for route"
+msgstr "等待路线"
 
 #: openpilot/starpilot/galaxy/web/js/plots.js
 msgid "Waiting for startup to settle"
@@ -17835,6 +18366,14 @@ msgstr "Tesla 唤醒时，在您踩刹车前唤醒 comma。"
 msgid "Warming up the camera · about 10 seconds…"
 msgstr "摄像头预热中 · 约 10 秒…"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid ""
+"Warn when you drift across a detected lane line.\n"
+"Only above 31 mph (50 km/h), with no turn signal."
+msgstr ""
+"车辆越过检测到的车道线时发出警示。\n"
+"仅在 31 mph（50 km/h）以上且未打转向灯时生效。"
+
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Warning"
 msgstr "警告"
@@ -17858,6 +18397,10 @@ msgstr "为规划器进入前车缓冲区的惩罚加权。数值越大越不倾
 #: openpilot/selfdrive/ui/layouts/onboarding.py
 msgid "Welcome to openpilot"
 msgstr "欢迎使用 openpilot"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
+msgid "What's a good USB-C adapter?"
+msgstr "什么样的 USB-C 电源适配器比较好？"
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "What’s your device?"
@@ -18056,6 +18599,10 @@ msgstr "密码错误"
 msgid "Yes"
 msgstr "是"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
+msgid "Yes, only upstream openpilot (and particular forks) are able to be used for training."
+msgstr "有，只有上游 openpilot（及特定分支）的数据才能用于训练。"
+
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Yes, when your comma streams over cellular. Music usually uses about 40–150 MB an hour depending on quality. Songs you’ve played recently come from the cache instead."
 msgstr "会，当 comma 使用蜂窝网络串流时。音乐通常每小时消耗约 40–150 MB，视音质而定。最近播放过的歌曲会从缓存读取，不耗流量。"
@@ -18072,6 +18619,10 @@ msgstr "您不需要 APKMirror Installer 应用。"
 #: openpilot/starpilot/ui/navigation_state.py
 msgid "You have arrived"
 msgstr "您已到达"
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "You must accept the Terms & Conditions to use openpilot."
+msgstr "您必须接受条款与条件才能使用 openpilot。"
 
 #: openpilot/selfdrive/ui/layouts/onboarding.py
 msgid "You must accept the Terms and Conditions in order to use openpilot."
@@ -18096,6 +18647,10 @@ msgstr "您的 Galaxy 会话已过期，请重新登录。"
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Your browser unpacked the download. Download it again and keep the .tar.gz file as it is."
 msgstr "您的浏览器已自动解压了下载文件。请重新下载，并保持 .tar.gz 文件原样不变。"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Your car is either unsupported or its ECUs are not recognized. Please submit a pull request to add the firmware versions to the proper vehicle. Need help? Join discord.comma.ai."
+msgstr "您的车辆不受支持，或其 ECU 未被识别。请提交 pull request，将固件版本添加到对应车型。需要帮助？请加入 discord.comma.ai。"
 
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 msgid "Your comma has no network connection. Download maps when you're back online to see them offline. New routes need internet."
@@ -18216,6 +18771,10 @@ msgstr "加速急动度"
 msgid "accept"
 msgstr "接受"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid "account"
+msgstr "账户"
+
 #: openpilot/starpilot/galaxy/web/js/home.js
 msgid "across"
 msgstr "共"
@@ -18286,6 +18845,10 @@ msgstr "适配器"
 msgid "add favorite"
 msgstr "添加收藏"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "add profile"
+msgstr "添加配置文件"
+
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 #: openpilot/starpilot/ui/bluetooth_compact.py
 #: openpilot/starpilot/ui/bluetooth_large.py
@@ -18340,9 +18903,17 @@ msgstr "全部缺失的模型"
 msgid "all models"
 msgstr "所有模型"
 
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "allow data uploading"
+msgstr "允许上传数据"
+
 #: openpilot/starpilot/ui/bluetooth_compact.py
 msgid "allow pairing"
 msgstr "允许配对"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "alpha longitudinal"
+msgstr "Alpha 纵向控制"
 
 #: openpilot/starpilot/ui/models_compact.py
 msgid "alphabetical"
@@ -18360,6 +18931,10 @@ msgstr "始终"
 #: openpilot/starpilot/ui/models_compact.py
 msgid "always use active small"
 msgstr "始终使用当前小模型"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid "always-on driver monitor"
+msgstr "始终启用驾驶员监控"
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout.js
 #: openpilot/starpilot/galaxy/web/js/toggle-search.js
@@ -18393,6 +18968,10 @@ msgstr "Android"
 #: openpilot/starpilot/ui/torque_feedback.py
 msgid "angle"
 msgstr "角度"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py
+msgid "apn settings"
+msgstr "APN 设置"
 
 #: openpilot/starpilot/galaxy/web/js/sentry-notifications.js
 #: openpilot/starpilot/galaxy/web/js/starport.js
@@ -18780,6 +19359,10 @@ msgstr "字节"
 msgid "cabin"
 msgstr "车内"
 
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "cabin camera data"
+msgstr "车内摄像头数据"
+
 #: openpilot/starpilot/galaxy/web/js/flm-training-results.js
 msgid "calibrating"
 msgstr "校准中"
@@ -18803,6 +19386,10 @@ msgstr "摄像头快照"
 #: openpilot/selfdrive/ui/onroad/cabin_camera_dialog.py
 msgid "camera starting"
 msgstr "摄像头启动中"
+
+#: openpilot/selfdrive/ui/mici/onroad/augmented_road_view.py
+msgid "camera switching"
+msgstr "摄像头切换中"
 
 #: openpilot/starpilot/ui/appearance_compact.py
 msgid "camera view"
@@ -18889,6 +19476,10 @@ msgstr "ccm"
 msgid "cell"
 msgstr "蜂窝"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py
+msgid "cellular metered"
+msgstr "蜂窝计量"
+
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 #: openpilot/starpilot/ui/conditional_feature.py
 #: openpilot/starpilot/ui/developer_preview.py
@@ -18949,6 +19540,10 @@ msgstr "检查"
 msgid "check for model downloads"
 msgstr "检查模型下载"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "check for update"
+msgstr "检查更新"
+
 #: openpilot/starpilot/ui/bluetooth_compact.py
 msgid "check your device"
 msgstr "请查看设备"
@@ -18971,6 +19566,10 @@ msgstr "正在检查执行"
 #: openpilot/starpilot/ui/galaxy_access.py
 msgid "checking pairing"
 msgstr "正在检查配对"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "checking version metadata..."
+msgstr "正在检查版本元数据…"
 
 #: openpilot/selfdrive/ui/layouts/settings/software.py
 msgid "checking..."
@@ -19009,6 +19608,18 @@ msgstr "选择模型"
 #: openpilot/starpilot/ui/appearance_compact.py
 msgid "choose the onroad camera"
 msgstr "选择行驶摄像头"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid ""
+"claim\n"
+"prime trial"
+msgstr ""
+"领取\n"
+"prime 试用"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "claim prime trial"
+msgstr "领取 prime 试用"
 
 #: openpilot/starpilot/galaxy/web/js/galaxy-select.js
 msgid "class"
@@ -19220,6 +19831,10 @@ msgstr "已确认"
 msgid "connect"
 msgstr "连接"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid "connect lets you review recent driving footage and bookmark events."
+msgstr "connect 可让您查看最近的行车录像，并为事件添加书签。"
+
 #: openpilot/starpilot/ui/galaxy_access.py
 msgid "connect to Wi-Fi"
 msgstr "连接 Wi-Fi"
@@ -19246,6 +19861,11 @@ msgstr "已连接"
 #: openpilot/starpilot/ui/runtime_snapshot.py
 msgid "connecting"
 msgstr "连接中"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py
+msgid "connecting..."
+msgstr "连接中…"
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "connection"
@@ -19406,6 +20026,14 @@ msgstr "截止时间"
 msgid "deceleration jerk"
 msgstr "减速急动度"
 
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid ""
+"decline &\n"
+"uninstall"
+msgstr ""
+"拒绝并\n"
+"卸载"
+
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "decrypting"
 msgstr "解密中"
@@ -19491,6 +20119,10 @@ msgstr "开发者选择启用和最新的驻车传感器数据仍是两回事。
 msgid "device"
 msgstr "设备"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "device ID"
+msgstr "设备 ID"
+
 #: openpilot/starpilot/galaxy/web/js/plots.js
 msgid "device motion"
 msgstr "设备运动"
@@ -19519,6 +20151,10 @@ msgstr "路线指引"
 #: openpilot/starpilot/galaxy/web/js/model-laboratory.js
 msgid "disable"
 msgstr "停用"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "disable cellular"
+msgstr "禁用蜂窝网络"
 
 #: openpilot/starpilot/galaxy/web/js/companion.js
 #: openpilot/starpilot/galaxy/web/js/hotspot.js
@@ -19556,6 +20192,10 @@ msgstr "搜索中"
 msgid "disengage"
 msgstr "脱离"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid "disengage on accelerator"
+msgstr "踩油门时脱离"
+
 #: openpilot/starpilot/ui/onroad_favorites.py
 msgid "dismiss"
 msgstr "关闭"
@@ -19587,6 +20227,10 @@ msgstr "分隔线"
 #: openpilot/starpilot/ui/bluetooth_compact.py
 msgid "do not pair"
 msgstr "不配对"
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "do you want to share video data for training?"
+msgstr "是否分享视频数据用于训练？"
 
 #: openpilot/starpilot/ui/layout_preview_renderer.py
 #: openpilot/starpilot/ui/layout_preview_transport.py
@@ -19639,6 +20283,10 @@ msgstr "需要下载"
 msgid "download status"
 msgstr "下载状态"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "download update"
+msgstr "下载更新"
+
 #: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
 #: openpilot/starpilot/galaxy/web/js/sound-packs.js
 #: openpilot/starpilot/ui/models_compact.py
@@ -19662,6 +20310,26 @@ msgstr "漂移"
 #: openpilot/starpilot/galaxy/web/js/home.js
 msgid "drive"
 msgstr "次行程"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid ""
+"driver\n"
+"camera preview"
+msgstr ""
+"驾驶员\n"
+"摄像头预览"
+
+#: openpilot/selfdrive/ui/mici/onroad/augmented_road_view.py
+msgid "driver camera unavailable"
+msgstr "驾驶员摄像头不可用"
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid ""
+"driver monitoring\n"
+"check"
+msgstr ""
+"驾驶员监控\n"
+"检查"
 
 #: openpilot/starpilot/galaxy/web/js/home.js
 #: openpilot/starpilot/ui/home_stats.py
@@ -19750,6 +20418,34 @@ msgstr "生效"
 msgid "enable"
 msgstr "启用"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "enable ADB"
+msgstr "启用 ADB"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "enable SSH"
+msgstr "启用 SSH"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid ""
+"enable alpha\n"
+"longitudinal"
+msgstr ""
+"启用 Alpha\n"
+"纵向控制"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid "enable openpilot"
+msgstr "启用 openpilot"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py
+msgid "enable roaming"
+msgstr "启用漫游"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py
+msgid "enable tethering"
+msgstr "启用网络共享"
+
 #: openpilot/starpilot/galaxy/web/js/companion.js
 #: openpilot/starpilot/galaxy/web/js/favorites.js
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-document.js
@@ -19779,6 +20475,10 @@ msgstr "启用"
 msgid "enabled"
 msgstr "已启用"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "enabling alpha longitudinal"
+msgstr "启用 Alpha 纵向控制"
+
 #: openpilot/starpilot/galaxy/web/js/layout-snap.js
 #: openpilot/starpilot/ui/replay_settings.py
 msgid "end"
@@ -19798,9 +20498,21 @@ msgstr "已结束"
 msgid "engaged"
 msgstr "已启用"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py
+msgid "enter APN..."
+msgstr "输入 APN…"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "enter GitHub username..."
+msgstr "输入 GitHub 用户名…"
+
 #: openpilot/starpilot/ui/bluetooth_compact.py
 msgid "enter PIN"
 msgstr "输入 PIN"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "enter a nickname..."
+msgstr "输入昵称…"
 
 #: openpilot/starpilot/ui/bluetooth_compact.py
 msgid "enter code from your device"
@@ -19809,6 +20521,11 @@ msgstr "输入设备上显示的码"
 #: openpilot/starpilot/ui/bluetooth_compact.py
 msgid "enter passkey"
 msgstr "输入密钥"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py
+msgid "enter password..."
+msgstr "输入密码…"
 
 #: openpilot/starpilot/ui/models_compact.py
 msgid "entire catalog"
@@ -19833,6 +20550,14 @@ msgstr "纪元"
 #: openpilot/starpilot/ui/replay_settings.py
 msgid "error"
 msgstr "错误"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py
+msgid "esim"
+msgstr "eSIM"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "esim error"
+msgstr "eSIM 错误"
 
 #: openpilot/starpilot/ui/torque_feedback.py
 msgid "estimated"
@@ -19894,6 +20619,10 @@ msgstr "需要大屏或小屏 UI 配置"
 #: openpilot/starpilot/ui/toggles_state.py
 msgid "experimental"
 msgstr "实验"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid "experimental mode"
+msgstr "实验模式"
 
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "experimental mode owner"
@@ -19995,6 +20724,10 @@ msgstr "失败"
 msgid "failed to check for update"
 msgstr "检查更新失败"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "failed to update"
+msgstr "更新失败"
+
 #: openpilot/starpilot/ui/presentation.py
 msgid "fallback"
 msgstr "回退"
@@ -20008,6 +20741,10 @@ msgstr "远"
 #: openpilot/starpilot/ui/software_update.py
 msgid "fast"
 msgstr "快速"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "fast update selected branch"
+msgstr "快速更新所选分支"
 
 #: openpilot/starpilot/galaxy/web/js/models.js
 #: openpilot/starpilot/galaxy/web/js/navigation.js
@@ -20088,6 +20825,10 @@ msgstr "查找其他设备"
 msgid "fingerprint"
 msgstr "车辆指纹"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid "finish setup"
+msgstr "完成设置"
+
 #: openpilot/starpilot/ui/settings_state.py
 msgid "firehose"
 msgstr "firehose"
@@ -20147,6 +20888,10 @@ msgstr "忽略此 App 连接"
 #: openpilot/starpilot/ui/bluetooth_compact.py
 msgid "forget this app pairing"
 msgstr "忽略此 App 配对"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py
+msgid "forgetting..."
+msgstr "正在忘记…"
 
 #: openpilot/starpilot/galaxy/web/js/bluetooth.js
 msgid "forgotten"
@@ -20316,6 +21061,10 @@ msgstr "高"
 msgid "high-speed follow"
 msgstr "高速跟车"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "hold QR code to camera"
+msgstr "将二维码对准摄像头"
+
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 #: openpilot/starpilot/ui/runtime_app.py
 #: openpilot/starpilot/ui/shell.py
@@ -20438,6 +21187,10 @@ msgstr "未完成"
 msgid "info"
 msgstr "信息"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/initial_cruise_speed.py
+msgid "initial max speed"
+msgstr "初始最高速度"
+
 #: openpilot/starpilot/ui/onroad_favorites.py
 msgid "ink"
 msgstr "墨色"
@@ -20451,6 +21204,10 @@ msgstr "内嵌"
 #: openpilot/starpilot/galaxy/web/js/software-status.js
 msgid "install"
 msgstr "安装"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "install now"
+msgstr "立即安装"
 
 #: openpilot/starpilot/galaxy/web/js/models.js
 #: openpilot/starpilot/galaxy/web/js/sound-packs.js
@@ -20480,6 +21237,10 @@ msgstr "已安装 ·"
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "installing"
 msgstr "安装中"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "installing profile"
+msgstr "正在安装配置文件"
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout.js
 msgid "instant"
@@ -20566,6 +21327,14 @@ msgstr "JetLink"
 msgid "join the Android beta on Google Groups to get the app for use over Galaxy Wi-Fi or your local network without Internet."
 msgstr "请在 Google Groups 加入 Android 测试版，以便通过 Galaxy Wi-Fi 或本地网络在无网络时使用该 App。"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid ""
+"joystick debug\n"
+"mode"
+msgstr ""
+"摇杆调试\n"
+"模式"
+
 #: openpilot/starpilot/ui/feature_settings_compact.py
 msgid "keep these offsets and speed ranges when units change? old saved values remain, but no longer control the offsets"
 msgstr "更改单位时保留这些偏移和速度区间？旧的已保存值会保留，但不再控制偏移"
@@ -20623,6 +21392,10 @@ msgstr "实验室"
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "lane"
 msgstr "车道"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid "lane departure warnings"
+msgstr "车道偏离警示"
 
 #: openpilot/starpilot/ui/lane_change_feature.py
 msgid "lane-change assistance"
@@ -20787,6 +21560,10 @@ msgstr "实时"
 msgid "loading"
 msgstr "加载中"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py
+msgid "loading..."
+msgstr "加载中…"
+
 #: openpilot/starpilot/galaxy/web/js/app.js
 #: openpilot/starpilot/galaxy/web/js/bluetooth.js
 #: openpilot/starpilot/galaxy/web/js/cloud-provider.js
@@ -20890,6 +21667,10 @@ msgstr "经度"
 msgid "longitudinal"
 msgstr "纵向"
 
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "looking for driver"
+msgstr "正在寻找驾驶员"
+
 #: openpilot/starpilot/ui/home.py
 msgid "low"
 msgstr "低"
@@ -20902,6 +21683,14 @@ msgstr "初始化时创建其低速反馈控制器和滤波器状态。"
 msgid "low-speed follow"
 msgstr "低速跟车"
 
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid ""
+"make sure comma\n"
+"four can see your face"
+msgstr ""
+"请确保 comma four\n"
+"能看到您的面部"
+
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "make sure the app is"
 msgstr "请确认该应用是"
@@ -20909,6 +21698,10 @@ msgstr "请确认该应用是"
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "make sure wireless Android Auto (sometimes called “smartphone connection”) is turned on in the car’s settings, and that step 1 shows Ready."
 msgstr "请确认车辆设置中已开启无线 Android Auto（有时称为“智能手机连接”），并且第 1 步显示“就绪”。"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid "manage prime"
+msgstr "管理 prime"
 
 #: openpilot/starpilot/galaxy/web/js/models.js
 #: openpilot/starpilot/ui/models_compact.py
@@ -21106,6 +21899,10 @@ msgstr "原厂安全与 ECU 配置保持不变。"
 msgid "navigate"
 msgstr "导航"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "navigation (alpha)"
+msgstr "导航（Alpha）"
+
 #: openpilot/starpilot/galaxy/web/js/onroad-layout.js
 msgid "nearest"
 msgstr "最近"
@@ -21129,6 +21926,10 @@ msgstr "网络"
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "network panel is unavailable"
 msgstr "网络面板不可用"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py
+msgid "network usage"
+msgstr "网络计量"
 
 #: openpilot/selfdrive/ui/layouts/settings/software.py
 msgid "never"
@@ -21166,6 +21967,10 @@ msgstr "下次启动"
 msgid "next-frame completion"
 msgstr "下一帧完成"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "nickname"
+msgstr "昵称"
+
 #: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
 msgid "no alerts"
 msgstr "无警报"
@@ -21185,6 +21990,14 @@ msgstr "没有已保存的配对"
 #: openpilot/starpilot/galaxy/web/js/starport-logs.js
 msgid "no session"
 msgstr "无会话"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py
+msgid "no sim"
+msgstr "无 SIM 卡"
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "no, don't upload"
+msgstr "不，不上传"
 
 #: openpilot/starpilot/galaxy/web/js/models.js
 #: openpilot/starpilot/galaxy/web/js/spotify.js
@@ -21223,13 +22036,25 @@ msgstr "常规"
 msgid "nosecone"
 msgstr "车鼻罩"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "not an LPA code"
+msgstr "不是 LPA 码"
+
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "not available"
 msgstr "不可用"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py
+msgid "not connected"
+msgstr "未连接"
+
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "not detected"
 msgstr "未检测到"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py
+msgid "not in range"
+msgstr "不在范围内"
 
 #: openpilot/starpilot/galaxy/web/js/bluetooth.js
 msgid "not paired"
@@ -21250,6 +22075,10 @@ msgstr "未上报"
 #: openpilot/starpilot/ui/bluetooth_compact.py
 msgid "not responding"
 msgstr "无响应"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid "not subscribed"
+msgstr "未订阅"
 
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "not supported"
@@ -21317,6 +22146,10 @@ msgstr "对象"
 #: openpilot/starpilot/ui/torque_feedback.py
 msgid "observed"
 msgstr "观测"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py
+msgid "obtaining IP..."
+msgstr "正在获取 IP…"
 
 #: openpilot/starpilot/galaxy/web/js/map-operations.js
 #: openpilot/starpilot/galaxy/web/js/navigation.js
@@ -21498,6 +22331,20 @@ msgstr ""
 "openpilot 无法启动\n"
 "请查看警报"
 
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "openpilot detected a change in the device's mounting position"
+msgstr "openpilot 检测到设备安装位置发生变化"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/firehose.py
+msgid ""
+"openpilot learns to drive by watching humans, like you, drive.\n"
+"\n"
+"Firehose Mode allows you to maximize your training data uploads to improve openpilot's driving models. More data means bigger models, which means better Experimental Mode."
+msgstr ""
+"openpilot 通过观察像您这样的人类驾驶来学习驾驶。\n"
+"\n"
+"Firehose 模式可让您最大化上传训练数据，以改进 openpilot 的驾驶模型。数据越多，模型就越大，实验模式也就越好。"
+
 #: openpilot/selfdrive/ui/layouts/settings/toggles.py
 msgid "openpilot longitudinal control may come in a future update."
 msgstr "openpilot 纵向控制可能会在未来更新中提供。"
@@ -21506,9 +22353,21 @@ msgstr "openpilot 纵向控制可能会在未来更新中提供。"
 msgid "openpilot requires the device to be mounted within 4° left or right and within 5° up or 9° down."
 msgstr "openpilot 要求设备安装在左右 4°、上 5° 或下 9° 以内。"
 
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "openpilot uses the cabin camera to check if the driver is distracted."
+msgstr "openpilot 通过车内摄像头检测驾驶员是否分心。"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "openpilot was unable to identify your car"
+msgstr "openpilot 无法识别您的车辆"
+
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "openpilot will disengage"
 msgstr "openpilot 即将脱离"
+
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "openpilot won't automatically start until it connects to internet to check for updates."
+msgstr "openpilot 需联网检查更新后才会自动启动。"
 
 #: openpilot/starpilot/galaxy/web/js/map-operations.js
 msgid "operation"
@@ -21529,6 +22388,10 @@ msgstr "选项"
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "or"
 msgstr "或"
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "or go to https://comma.ai/terms"
+msgstr "或访问 https://comma.ai/terms"
 
 #: openpilot/starpilot/galaxy/web/js/flm.js
 msgid "original endpoints"
@@ -21595,6 +22458,10 @@ msgstr "配对设备"
 #: openpilot/starpilot/ui/bluetooth_compact.py
 msgid "pair phone"
 msgstr "配对手机"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "pair to connect"
+msgstr "配对 connect"
 
 #: openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js
 #: openpilot/starpilot/ui/onroad_alerts.py
@@ -21801,6 +22668,22 @@ msgstr "可播放"
 msgid "playing"
 msgstr "播放中"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "please wait"
+msgstr "请稍候"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "please wait."
+msgstr "请稍候."
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "please wait.."
+msgstr "请稍候.."
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "please wait..."
+msgstr "请稍候..."
+
 #: openpilot/starpilot/ui/home.py
 #: openpilot/starpilot/ui/runtime_snapshot.py
 msgid "plugged"
@@ -21886,6 +22769,18 @@ msgstr "上一个"
 #: openpilot/starpilot/ui/runtime_snapshot.py
 msgid "previously"
 msgstr "此前"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid "prime adds 24/7 LTE to device and 1 year of cloud storage in connect."
+msgstr "prime 为设备提供全天候 LTE 网络，并在 connect 中提供 1 年云存储。"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid "prime also includes commacare extended device warranty."
+msgstr "prime 还包含 commacare 设备延长保修。"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid "prime lets you view live video and GPS location remotely in connect."
+msgstr "借助 prime，您可以在 connect 中远程查看实时视频和 GPS 位置。"
 
 #: openpilot/starpilot/ui/controller_feature.py
 #: openpilot/starpilot/ui/tuning_preparation.py
@@ -22071,6 +22966,14 @@ msgstr "原因"
 msgid "recent"
 msgstr "最近"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid "record & upload cabin camera"
+msgstr "录制并上传车内摄像头"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid "record & upload mic audio"
+msgstr "录制并上传麦克风音频"
+
 #: openpilot/starpilot/ui/replay_settings.py
 msgid "recorded driving routes on this device"
 msgstr "本设备上录制的行驶路线"
@@ -22100,6 +23003,10 @@ msgstr "刷新中"
 #: openpilot/starpilot/galaxy/web/js/map-operations.js
 msgid "regions shown · Up to"
 msgstr "个区域 · 最多"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "regulatory info"
+msgstr "法规信息"
 
 #: openpilot/starpilot/ui/onroad_state.py
 #: openpilot/starpilot/ui/slc_action_dispatch.py
@@ -22244,9 +23151,21 @@ msgstr "需要确认"
 msgid "reset"
 msgstr "重置"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "reset calibration"
+msgstr "重置校准"
+
 #: openpilot/starpilot/ui/appearance_compact.py
 msgid "reset crop?"
 msgstr "重置裁剪？"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid ""
+"reset driver\n"
+"monitoring"
+msgstr ""
+"重置驾驶员\n"
+"监控"
 
 #: openpilot/starpilot/ui/feature_settings_compact.py
 msgid "reset invalid profiles"
@@ -22291,6 +23210,10 @@ msgstr "重启"
 msgid "restarting"
 msgstr "重启中"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "restore previous version"
+msgstr "恢复上一版本"
+
 #: openpilot/starpilot/ui/maps_state.py
 #: openpilot/starpilot/ui/replay_settings.py
 msgid "result"
@@ -22315,6 +23238,14 @@ msgstr "倒车"
 #: openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js
 msgid "review"
 msgstr "复核"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid ""
+"review\n"
+"training guide"
+msgstr ""
+"查看\n"
+"训练指南"
 
 #: openpilot/starpilot/ui/bluetooth_compact.py
 msgid "review and confirm"
@@ -22342,6 +23273,10 @@ msgstr "修订"
 #: openpilot/selfdrive/ui/layouts/settings/device.py
 msgid "right"
 msgstr "右"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid "right hand driving"
+msgstr "右舵驾驶"
 
 #: openpilot/starpilot/ui/speed_limit_shapes.py
 msgid "ring"
@@ -22409,6 +23344,10 @@ msgstr "通过 JetLink 运行"
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "s clock, since the comma"
 msgstr "的时钟，因为 comma"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid "safe mode"
+msgstr "安全模式"
 
 #: openpilot/starpilot/galaxy/web/js/app.js
 #: openpilot/starpilot/galaxy/web/js/monitor-feed.js
@@ -22508,6 +23447,34 @@ msgstr "保存中"
 msgid "scan"
 msgstr "扫描"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "scan QR code"
+msgstr "扫描二维码"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid "scan QR code or visit {}"
+msgstr "扫描二维码或访问 {}"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid "scan to claim trial"
+msgstr "扫码领取试用"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid ""
+"scan to manage\n"
+"prime status"
+msgstr ""
+"扫码管理\n"
+"prime 状态"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid ""
+"scan to open\n"
+"device prime settings"
+msgstr ""
+"扫码打开\n"
+"设备 prime 设置"
+
 #: openpilot/starpilot/galaxy/web/js/onroad-layout.js
 #: openpilot/starpilot/ui/layout_preview_renderer.py
 #: openpilot/starpilot/ui/layout_preview_transport.py
@@ -22525,6 +23492,15 @@ msgstr "场景"
 msgid "scroll"
 msgstr "滚动"
 
+#: openpilot/selfdrive/ui/mici/widgets/dialog.py
+msgid "scroll for details"
+msgstr "滚动查看详情"
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "scroll to continue"
+msgstr "滚动以继续"
+
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 msgid "search"
 msgstr "搜索"
@@ -22532,6 +23508,10 @@ msgstr "搜索"
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "searching"
 msgstr "搜索中"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py
+msgid "searching for networks"
+msgstr "正在搜索网络"
 
 #: openpilot/starpilot/ui/onroad_stopped_timer.py
 msgid "second"
@@ -22646,6 +23626,10 @@ msgstr "已发送"
 msgid "sentry"
 msgstr "哨兵"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid "serial"
+msgstr "序列号"
+
 #: openpilot/starpilot/ui/bluetooth_compact.py
 msgid "service"
 msgstr "服务"
@@ -22729,6 +23713,14 @@ msgstr "侧方摄像头"
 msgid "signal delay"
 msgstr "转向灯延时"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py
+msgid "sim"
+msgstr "SIM 卡"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py
+msgid "sim (...{})"
+msgstr "SIM 卡（...{}）"
+
 #: openpilot/starpilot/galaxy/web/js/sentry-notifications.js
 msgid "simulate"
 msgstr "模拟"
@@ -22747,6 +23739,73 @@ msgstr "大小"
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "slide offroad"
 msgstr "滑动切换到停车状态"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid ""
+"slide to\n"
+"fast update selected branch"
+msgstr ""
+"滑动以\n"
+"快速更新所选分支"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid ""
+"slide to\n"
+"power off"
+msgstr ""
+"滑动以\n"
+"关机"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid ""
+"slide to\n"
+"reboot"
+msgstr ""
+"滑动以\n"
+"重启"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid ""
+"slide to\n"
+"reset"
+msgstr ""
+"滑动以\n"
+"重置"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid ""
+"slide to\n"
+"reset driver monitoring"
+msgstr ""
+"滑动以\n"
+"重置驾驶员监控"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid ""
+"slide to\n"
+"restore previous version"
+msgstr ""
+"滑动以\n"
+"恢复上一版本"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid ""
+"slide to\n"
+"uninstall"
+msgstr ""
+"滑动以\n"
+"卸载"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
+msgid "slide to delete"
+msgstr "滑动以删除"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py
+msgid "slide to forget"
+msgstr "滑动以忘记"
 
 #: openpilot/starpilot/ui/galaxy_access.py
 msgid "slide to unpair"
@@ -22939,6 +23998,10 @@ msgstr ""
 msgid "starting"
 msgstr "正在启动"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py
+msgid "starting..."
+msgstr "启动中…"
+
 #: openpilot/starpilot/galaxy/web/js/system-monitor-data.js
 #: openpilot/starpilot/ui/bluetooth_compact.py
 #: openpilot/starpilot/ui/bluetooth_large.py
@@ -23120,9 +24183,14 @@ msgstr "表面"
 msgid "suspended"
 msgstr "已暂停"
 
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "swipe for QR code"
+msgstr "滑动查看二维码"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py
 #: openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js
 msgid "switch"
-msgstr "开关"
+msgstr "切换"
 
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "switchback"
@@ -23176,6 +24244,10 @@ msgstr "点按配对"
 msgid "target"
 msgstr "目标"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "target branch"
+msgstr "目标分支"
+
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "temporarily ignored"
 msgstr "暂时忽略"
@@ -23188,6 +24260,22 @@ msgstr "暂时忽略"
 msgid "terms"
 msgstr "条款"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+msgid ""
+"terms &\n"
+"conditions"
+msgstr ""
+"条款与\n"
+"条件"
+
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid ""
+"terms and\n"
+"conditions"
+msgstr ""
+"条款与\n"
+"条件"
+
 #: openpilot/starpilot/galaxy/web/js/controllers.js
 #: openpilot/starpilot/galaxy/web/js/sentry-notifications.js
 #: openpilot/starpilot/galaxy/web/js/spotify.js
@@ -23197,6 +24285,14 @@ msgstr "测试"
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "testing"
 msgstr "测试中"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py
+msgid "tethering"
+msgstr "网络共享中"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py
+msgid "tethering password"
+msgstr "网络共享密码"
 
 #: openpilot/starpilot/galaxy/web/js/localization.js
 #: openpilot/starpilot/galaxy/web/js/navigation.js
@@ -23420,6 +24516,14 @@ msgstr "试验"
 msgid "trusted"
 msgstr "已信任"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid ""
+"try prime for\n"
+"30 days"
+msgstr ""
+"试用 prime\n"
+"30 天"
+
 #: openpilot/starpilot/ui/layout_preview_renderer.py
 #: openpilot/starpilot/ui/navigation_icons.py
 #: openpilot/starpilot/ui/onroad_compact_widgets.py
@@ -23441,6 +24545,10 @@ msgstr "请在第 2 步开启“有线 AA”，用数据线将车辆的数据 US
 #: openpilot/starpilot/ui/lane_change_feature.py
 msgid "turn signal guidance"
 msgstr "转向灯引导"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/developer.py
+msgid "ui debug mode"
+msgstr "界面调试模式"
 
 #: openpilot/starpilot/ui/onroad_favorites.py
 #: openpilot/starpilot/ui/runtime_app.py
@@ -23496,6 +24604,10 @@ msgstr "底层"
 msgid "unfavorite"
 msgstr "取消收藏"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "uninstall openpilot"
+msgstr "卸载 openpilot"
+
 #: openpilot/starpilot/galaxy/settings.py
 msgid "unit"
 msgstr "单位"
@@ -23540,6 +24652,10 @@ msgstr "无法读取"
 msgid "unsubscribe"
 msgstr "取消订阅"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py
+msgid "unsupported"
+msgstr "不支持"
+
 #: openpilot/starpilot/ui/pip_preferences.py
 msgid "unsupported camera format"
 msgstr "不支持的摄像头格式"
@@ -23551,6 +24667,10 @@ msgstr "未验证"
 #: openpilot/selfdrive/ui/layouts/settings/device.py
 msgid "up"
 msgstr "上"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "up to date"
+msgstr "已是最新"
 
 #: openpilot/starpilot/ui/runtime_snapshot.py
 msgid "up to date, last checked"
@@ -23576,6 +24696,14 @@ msgstr "有可用更新"
 msgid "updater"
 msgstr "更新程序"
 
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid ""
+"updater failed\n"
+"to respond"
+msgstr ""
+"更新程序\n"
+"无响应"
+
 #: openpilot/starpilot/ui/runtime_snapshot.py
 msgid "updater status unavailable"
 msgstr "更新器状态不可用"
@@ -23585,6 +24713,23 @@ msgstr "更新器状态不可用"
 #: openpilot/starpilot/galaxy/web/js/settings.js
 msgid "updating"
 msgstr "更新中"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/software.py
+msgid "updating..."
+msgstr "更新中..."
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid ""
+"upgrade\n"
+"to prime"
+msgstr ""
+"升级到\n"
+"prime"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py
+#: openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py
+msgid "upgrade to prime"
+msgstr "升级到 prime"
 
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 #: openpilot/starpilot/galaxy/web/js/starport.js
@@ -23610,6 +24755,10 @@ msgstr "使用率"
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "usb"
 msgstr "USB"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/toggles.py
+msgid "use metric units"
+msgstr "使用公制单位"
 
 #: openpilot/starpilot/ui/feature_settings_compact.py
 msgid "use new torque editor for this vehicle model? old values remain saved but inactive"
@@ -23775,6 +24924,10 @@ msgstr "网页"
 msgid "webhook"
 msgstr "Webhook"
 
+#: openpilot/selfdrive/ui/mici/layouts/onboarding.py
+msgid "what is openpilot?"
+msgstr "openpilot 是什么？"
+
 #: openpilot/starpilot/galaxy/settings.py
 #: openpilot/starpilot/galaxy/web/js/navigation-map.js
 #: openpilot/starpilot/galaxy/web/js/settings.js
@@ -23793,6 +24946,10 @@ msgstr "跟随前车时"
 #: openpilot/starpilot/galaxy/web/js/flm.js
 msgid "whole bundles retained."
 msgstr "个完整数据包已保留。"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py
+msgid "wi-fi"
+msgstr "Wi-Fi"
 
 #: openpilot/starpilot/galaxy/web/js/sentry.js
 msgid "wide"
@@ -23867,6 +25024,10 @@ msgstr "公司"
 #: openpilot/starpilot/galaxy/web/js/bluetooth.js
 msgid "working"
 msgstr "处理中"
+
+#: openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py
+msgid "wrong password"
+msgstr "密码错误"
 
 #: openpilot/starpilot/ui/onroad_cem_gauge.py
 msgid "yellow"
