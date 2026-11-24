@@ -944,7 +944,7 @@ export const ModelsPage = {
                 </div>
                 <span class="gx-chip gx-model-driving__running">Running now: {{ runningModelLabel }}<template v-if="pendingNextStart"> · saved changes pending next start</template></span>
               </div>
-              <p v-if="status.randomizer" class="gx-model-reason">A different verified model is chosen each start. {{ status.gpuAvailable && activeBigModel ? 'Big GPU' : 'Small on-device' }} models are used. {{ (status.blacklistedModels || []).length }} excluded. Favorites only mark your preferred models.</p>
+              <p v-if="status.randomizer" class="gx-model-reason">{{ status.gpuAvailable && activeBigModel ? 'A different verified model is chosen each start. Big GPU models are used.' : 'A different verified model is chosen each start. Small on-device models are used.' }} {{ (status.blacklistedModels || []).length }} excluded. Favorites only mark your preferred models.</p>
               <p v-if="gpuNote" class="gx-model-reason">{{ gpuNote }}</p>
               <p class="gx-model-reason">{{ laboratoryEnabled ? 'Small/Big selections are saved as fallback choices. Turn off Laboratory to use them normally at the next start.' : 'Selections take effect the next time the driving model starts.' }}</p>
             </template>
@@ -1181,7 +1181,7 @@ export const ModelsPage = {
                     </div>
                     <button v-else-if="downloadStage(m) === 'queued'" type="button" class="gx-btn gx-btn--tonal" disabled><i aria-hidden="true" class="bi bi-hourglass-split"></i> Waiting in the queue</button>
                     <button v-else-if="rowState(m) === 'active'" type="button" class="gx-btn gx-btn--tonal gx-model-item__active-btn" disabled><i aria-hidden="true" class="bi bi-check-lg"></i> {{ activeButtonLabel(m) }}</button>
-                    <button v-else-if="m.installed" type="button" class="gx-btn" :disabled="!actionAvailable(m.requiresGpu ? 'select-big' : 'select-small', m)" @click="runAction(m.requiresGpu ? 'select-big' : 'select-small', m)"><i aria-hidden="true" class="bi bi-play-fill"></i> Set Active {{ m.requiresGpu ? 'Big' : 'Small' }}</button>
+                    <button v-else-if="m.installed" type="button" class="gx-btn" :disabled="!actionAvailable(m.requiresGpu ? 'select-big' : 'select-small', m)" @click="runAction(m.requiresGpu ? 'select-big' : 'select-small', m)"><i aria-hidden="true" class="bi bi-play-fill"></i> {{ m.requiresGpu ? 'Set Active Big' : 'Set Active Small' }}</button>
                     <button v-else-if="m.downloadAvailable" type="button" class="gx-btn gx-btn--tonal" :disabled="!actionAvailable('download', m)" :aria-label="'Download ' + m.label" @click="runAction('download', m)"><i aria-hidden="true" class="bi bi-download"></i> Download · {{ fileSizeText(m) }}</button>
                     <button v-else type="button" class="gx-btn gx-btn--tonal" disabled>Not available yet</button>
                   </div>

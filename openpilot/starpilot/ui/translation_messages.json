@@ -1372,12 +1372,6 @@
       ]
     },
     {
-      "source": "Big GPU",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/models.js"
-      ]
-    },
-    {
       "source": "Big developer sidebar supports up to seven metrics",
       "refs": [
         "openpilot/starpilot/ui/layout_preview_sidebar.py"
@@ -1630,12 +1624,6 @@
       "source": "Branch",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/software-status.js"
-      ]
-    },
-    {
-      "source": "Brand: {}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/diagnostic-tools.js"
       ]
     },
     {
@@ -3899,12 +3887,6 @@
       ]
     },
     {
-      "source": "Customize",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/settings.js"
-      ]
-    },
-    {
       "source": "Customize Layout",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
@@ -4296,13 +4278,6 @@
       ]
     },
     {
-      "source": "Device: {}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/diagnostic-tools.js",
-        "openpilot/starpilot/ui/runtime_app.py"
-      ]
-    },
-    {
       "source": "Disable",
       "refs": [
         "openpilot/starpilot/ui/vehicle_bool.py"
@@ -4598,13 +4573,6 @@
       "source": "Download only prepares an update without restarting. Previous version restores your last installed build.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/software-status.js"
-      ]
-    },
-    {
-      "source": "Download replay",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/record-history.js",
-        "openpilot/starpilot/galaxy/web/js/route-workspace.js"
       ]
     },
     {
@@ -5285,12 +5253,6 @@
       ]
     },
     {
-      "source": "Expires in {} day{}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/starport.js"
-      ]
-    },
-    {
       "source": "Expires within a day",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
@@ -5808,12 +5770,6 @@
       ]
     },
     {
-      "source": "From Spotify’s Downloads page, to this",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/spotify.js"
-      ]
-    },
-    {
       "source": "Full log",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/recording-data.js"
@@ -5857,12 +5813,6 @@
     },
     {
       "source": "GPS: No fix",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/navigation.js"
-      ]
-    },
-    {
-      "source": "GPS: {}",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/navigation.js"
       ]
@@ -8615,12 +8565,6 @@
       ]
     },
     {
-      "source": "Longitudinal: {}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/diagnostic-tools.js"
-      ]
-    },
-    {
       "source": "Looking up the newest release…",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
@@ -10651,12 +10595,6 @@
       ]
     },
     {
-      "source": "Pair another",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/starport.js"
-      ]
-    },
-    {
       "source": "Pair artifact status unavailable",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/model-laboratory.js"
@@ -11014,12 +10952,6 @@
     },
     {
       "source": "Partial Files",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/models.js"
-      ]
-    },
-    {
-      "source": "Partial: {} / {}",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/models.js"
       ]
@@ -11807,12 +11739,6 @@
       "source": "Put your phone on the same Wi‑Fi or hotspot as your comma. Some hotspots and guest networks block devices from seeing each other.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/spotify.js"
-      ]
-    },
-    {
-      "source": "Put your {} in pairing mode, then pick it from the list",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/starport.js"
       ]
     },
     {
@@ -14994,12 +14920,6 @@
       ]
     },
     {
-      "source": "Set Active",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/models.js"
-      ]
-    },
-    {
       "source": "Set Resolution to 480p, 720p or 1080p and Video Codec to H.264 or Auto.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
@@ -15817,12 +15737,6 @@
       "source": "Small model after Chestnut load failure",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/home.js"
-      ]
-    },
-    {
-      "source": "Small on-device",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/models.js"
       ]
     },
     {
@@ -16712,12 +16626,6 @@
       "source": "Steering wheel",
       "refs": [
         "openpilot/starpilot/ui/onroad_customization.py"
-      ]
-    },
-    {
-      "source": "Steering: {}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/diagnostic-tools.js"
       ]
     },
     {
@@ -19672,12 +19580,6 @@
       ]
     },
     {
-      "source": "Vehicle: {}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/diagnostic-tools.js"
-      ]
-    },
-    {
       "source": "Verifying",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/sound-packs.js"
@@ -22289,12 +22191,6 @@
       ]
     },
     {
-      "source": "distracted",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/home.js"
-      ]
-    },
-    {
       "source": "divider",
       "refs": [
         "openpilot/starpilot/ui/onroad_favorites.py"
@@ -22742,12 +22638,6 @@
         "openpilot/starpilot/galaxy/web/js/spotify.js",
         "openpilot/starpilot/galaxy/web/js/starport.js",
         "openpilot/starpilot/ui/slc_action_dispatch.py"
-      ]
-    },
-    {
-      "source": "expires in {} day{}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/spotify.js"
       ]
     },
     {
@@ -24086,12 +23976,6 @@
       ]
     },
     {
-      "source": "missing recording",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/replay.js"
-      ]
-    },
-    {
       "source": "mixed",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/replay-timeline.js"
@@ -24172,18 +24056,6 @@
       "source": "models are used.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/models.js"
-      ]
-    },
-    {
-      "source": "moment",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/home.js"
-      ]
-    },
-    {
-      "source": "moments",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/home.js"
       ]
     },
     {
@@ -27352,12 +27224,6 @@
       ]
     },
     {
-      "source": "unresponsive",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/home.js"
-      ]
-    },
-    {
       "source": "unsubscribe",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/sentry-notifications.js"
@@ -27826,12 +27692,6 @@
       ]
     },
     {
-      "source": "{} Audio waits for {}.",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/spotify.js"
-      ]
-    },
-    {
       "source": "{} If Wi-Fi disconnected, reconnect and reload to check whether settings saved.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/hotspot.js"
@@ -27907,6 +27767,7 @@
     {
       "source": "{} segment",
       "refs": [
+        "openpilot/starpilot/galaxy/web/js/record-history.js",
         "openpilot/starpilot/ui/replay_settings.py"
       ]
     },
@@ -27932,12 +27793,6 @@
       "source": "{} {} backed up{}.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/toggle-backup.js"
-      ]
-    },
-    {
-      "source": "{} {} deleted.",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/route-cleanup.js"
       ]
     },
     {
@@ -27982,12 +27837,6 @@
         "openpilot/starpilot/galaxy/web/js/home.js",
         "openpilot/starpilot/galaxy/web/js/recording-data.js",
         "openpilot/starpilot/galaxy/web/js/system-monitor.js"
-      ]
-    },
-    {
-      "source": "A different verified model is chosen each start. {} models are used. {} excluded. Favorites only mark your preferred models.",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/models.js"
       ]
     },
     {
@@ -28045,12 +27894,6 @@
       ]
     },
     {
-      "source": "App: {} · Music: {}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/bluetooth.js"
-      ]
-    },
-    {
       "source": "Applies when driving processes next start: the controller class, vehicle policy and PID/filter state are constructed together.",
       "refs": [
         "openpilot/starpilot/galaxy/setting_descriptions.py"
@@ -28102,12 +27945,6 @@
       "source": "Bookmark Saved",
       "refs": [
         "openpilot/selfdrive/selfdrived/events.py"
-      ]
-    },
-    {
-      "source": "Brand: {} · Longitudinal: {} · Steering: {}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/diagnostic-tools.js"
       ]
     },
     {
@@ -28240,12 +28077,6 @@
       "source": "Check tires, pressure, or alignment (Factor: {})",
       "refs": [
         "openpilot/selfdrive/selfdrived/events.py"
-      ]
-    },
-    {
-      "source": "Checked {}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/software-status.js"
       ]
     },
     {
@@ -28423,13 +28254,6 @@
       ]
     },
     {
-      "source": "Download replay {} (.mp4)",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/record-history.js",
-        "openpilot/starpilot/galaxy/web/js/route-workspace.js"
-      ]
-    },
-    {
       "source": "Drive Above",
       "refs": [
         "openpilot/selfdrive/selfdrived/events.py"
@@ -28583,12 +28407,6 @@
       "source": "Forget {}?",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/bluetooth.js"
-      ]
-    },
-    {
-      "source": "From Spotify’s Downloads page, to this {}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/spotify.js"
       ]
     },
     {
@@ -28804,12 +28622,6 @@
       ]
     },
     {
-      "source": "Pause smoothing · {}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/spotify.js"
-      ]
-    },
-    {
       "source": "Pay Attention",
       "refs": [
         "openpilot/selfdrive/selfdrived/events.py"
@@ -28966,12 +28778,6 @@
       ]
     },
     {
-      "source": "Restore {}?",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/toggle-backup.js"
-      ]
-    },
-    {
       "source": "Resume Driving Manually",
       "refs": [
         "openpilot/selfdrive/selfdrived/events.py"
@@ -28993,12 +28799,6 @@
       "source": "Risk of Collision",
       "refs": [
         "openpilot/selfdrive/selfdrived/events.py"
-      ]
-    },
-    {
-      "source": "Sampled {}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/home.js"
       ]
     },
     {
@@ -29081,18 +28881,6 @@
       ]
     },
     {
-      "source": "Set Active {}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/models.js"
-      ]
-    },
-    {
-      "source": "Skip smoothing · {}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/spotify.js"
-      ]
-    },
-    {
       "source": "Slow down to engage",
       "refs": [
         "openpilot/selfdrive/selfdrived/events.py"
@@ -29138,12 +28926,6 @@
       "source": "State",
       "refs": [
         "openpilot/selfdrive/selfdrived/events.py"
-      ]
-    },
-    {
-      "source": "State: {}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/diagnostic-tools.js"
       ]
     },
     {
@@ -29255,12 +29037,6 @@
       ]
     },
     {
-      "source": "Storage: {}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/home.js"
-      ]
-    },
-    {
       "source": "Subscribed browsers: {}",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/sentry-notifications.js"
@@ -29306,12 +29082,6 @@
       "source": "Take Control",
       "refs": [
         "openpilot/selfdrive/selfdrived/events.py"
-      ]
-    },
-    {
-      "source": "Takes over from the phone or speaker Spotify is playing on now. Music plays through {}. You might need to confirm the switch in the Spotify app.",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/spotify.js"
       ]
     },
     {
@@ -29459,12 +29229,6 @@
       ]
     },
     {
-      "source": "Waiting for the device to switch {}…",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/drive-state.js"
-      ]
-    },
-    {
       "source": "Width · {}",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/onroad-layout-template.js"
@@ -29474,12 +29238,6 @@
       "source": "With screen-tap steering enabled, pressing the brake disarms Always On Lateral. Turn off to keep steering armed during braking. Applies after the next startup.",
       "refs": [
         "openpilot/starpilot/ui/tesla_screen_feature.py"
-      ]
-    },
-    {
-      "source": "across {}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/home.js"
       ]
     },
     {
@@ -29561,24 +29319,6 @@
       ]
     },
     {
-      "source": "{} AOL steering only",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/home.js"
-      ]
-    },
-    {
-      "source": "{} AOL steering only · {}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/home.js"
-      ]
-    },
-    {
-      "source": "{} AOL steering only · {}/{} drives measured",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/home.js"
-      ]
-    },
-    {
       "source": "{} Blue lane-centering and orange steering-effort indicators stay blue and orange.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/onroad-layout-template.js"
@@ -29651,12 +29391,6 @@
       ]
     },
     {
-      "source": "{} engaged",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/home.js"
-      ]
-    },
-    {
       "source": "{} events · {}{} stored",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/sentry.js"
@@ -29672,12 +29406,6 @@
       "source": "{} hex",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/onroad-layout-template.js"
-      ]
-    },
-    {
-      "source": "{} missing recording {}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/replay.js"
       ]
     },
     {
@@ -29747,12 +29475,6 @@
       ]
     },
     {
-      "source": "{} unresponsive {}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/home.js"
-      ]
-    },
-    {
       "source": "{} · Available for 30 minutes, or until the next export.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/route-workspace.js"
@@ -29774,12 +29496,6 @@
       "source": "{} · {} MB today",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/companion.js"
-      ]
-    },
-    {
-      "source": "{} · {} engaged",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/home.js"
       ]
     },
     {
@@ -31559,6 +31275,24 @@
       ]
     },
     {
+      "source": "{} unresponsive moment",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "{} unresponsive moments",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "{}/{} drives measured",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
       "source": "{}? This replaces the saved crop; check alignment on the device.",
       "refs": [
         "openpilot/starpilot/galaxy/settings.py"
@@ -31657,6 +31391,42 @@
       ]
     },
     {
+      "source": "{label} AOL steering only",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "{label} engaged",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "{} distracted moment",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "{} distracted moments",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "{} driving route deleted.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/route-cleanup.js"
+      ]
+    },
+    {
+      "source": "{} driving routes deleted.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/route-cleanup.js"
+      ]
+    },
+    {
       "source": "{} minute",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/spotify.js",
@@ -31690,6 +31460,18 @@
         "openpilot/starpilot/galaxy/web/js/spotify.js",
         "openpilot/starpilot/galaxy/web/js/starport.js",
         "openpilot/starpilot/ui/onroad_map.py"
+      ]
+    },
+    {
+      "source": "{} missing recording range",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/replay.js"
+      ]
+    },
+    {
+      "source": "{} missing recording ranges",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/replay.js"
       ]
     },
     {
@@ -31741,6 +31523,7 @@
     {
       "source": "{} segments",
       "refs": [
+        "openpilot/starpilot/galaxy/web/js/record-history.js",
         "openpilot/starpilot/ui/replay_settings.py"
       ]
     },
@@ -31811,9 +31594,69 @@
       ]
     },
     {
+      "source": "A different verified model is chosen each start. Big GPU models are used. {} excluded. Favorites only mark your preferred models.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "A different verified model is chosen each start. Small on-device models are used. {} excluded. Favorites only mark your preferred models.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
       "source": "Active Big",
       "refs": [
         "openpilot/starpilot/ui/models_state.py"
+      ]
+    },
+    {
+      "source": "Adapter PIN",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Adapter passkey",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Allow this adapter to pair?",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "App: {label}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/bluetooth.js"
+      ]
+    },
+    {
+      "source": "Audio waits for {}.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "Auto install will run at {label} while offroad.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "across {} drive",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "across {} drives",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/home.js"
       ]
     },
     {
@@ -31826,6 +31669,42 @@
       "source": "active small",
       "refs": [
         "openpilot/starpilot/ui/models_compact.py"
+      ]
+    },
+    {
+      "source": "expired on {}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "expires in {} day ({})",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "expires in {} days ({})",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "expires on {}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "expires within a day ({})",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "expiry date unavailable",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
       ]
     },
     {
@@ -31908,15 +31787,83 @@
       ]
     },
     {
+      "source": "Brand: {label}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/diagnostic-tools.js"
+      ]
+    },
+    {
       "source": "Calibrating: {}%",
       "refs": [
         "openpilot/selfdrive/selfdrived/events.py"
       ]
     },
     {
+      "source": "Check for new models",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Check that this code matches your adapter, then confirm.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Checked {label}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Choose your adapter below.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Choose your car below.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
       "source": "Clear alert",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Connecting to the selected device…",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Customize blind spot camera & preview",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/settings.js"
+      ]
+    },
+    {
+      "source": "Customize driving screen widgets, colors & layout",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/settings.js"
+      ]
+    },
+    {
+      "source": "Customize quick select",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/settings.js"
+      ]
+    },
+    {
+      "source": "Device: {label}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/diagnostic-tools.js",
+        "openpilot/starpilot/galaxy/web/js/drive-state.js",
+        "openpilot/starpilot/ui/runtime_app.py"
       ]
     },
     {
@@ -32022,6 +31969,31 @@
       ]
     },
     {
+      "source": "Download replay route (.mp4)",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/record-history.js",
+        "openpilot/starpilot/galaxy/web/js/route-workspace.js"
+      ]
+    },
+    {
+      "source": "Download replay segment (.mp4)",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/record-history.js"
+      ]
+    },
+    {
+      "source": "Download replay segment {} (.mp4)",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/route-workspace.js"
+      ]
+    },
+    {
+      "source": "Driving models",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
       "source": "Enable AVH ON at the next startup? A bounded request runs once in Park with the engine running.",
       "refs": [
         "openpilot/starpilot/ui/vehicle_bool.py"
@@ -32124,9 +32096,201 @@
       ]
     },
     {
+      "source": "Enter the PIN shown by your adapter.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Enter this code in your adapter.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Enter your adapter’s passkey.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Expires in {} day ({})",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Expires in {} days ({})",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Expires within a day ({})",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Find adapter",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Finish connecting to your adapter",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Finish connecting to your car",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "From Spotify’s Downloads page, to this computer",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "From Spotify’s Downloads page, to this phone",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "GPS: {label}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Hover or tap a segment",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "In range, signal {}%",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/networks.js"
+      ]
+    },
+    {
+      "source": "Internal storage: {label} · {free} free",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "Longitudinal: {label}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/diagnostic-tools.js"
+      ]
+    },
+    {
+      "source": "Music: {label}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/bluetooth.js"
+      ]
+    },
+    {
+      "source": "Next segment",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/route-workspace.js"
+      ]
+    },
+    {
+      "source": "Nothing found yet. Keep your adapter in pairing mode.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Pair another adapter",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Pair another car",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Pair with your adapter",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Pair with your car",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Pairing canceled. Start again when your adapter is ready.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Pairing with the selected device…",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Partial: {label} / unknown",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Partial: {label} / {total}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Pause smoothing · {label}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "Previous segment",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/route-workspace.js"
+      ]
+    },
+    {
+      "source": "Put your adapter in pairing mode, then pick it from the list",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Put your car in pairing mode, then pick it from the list",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
       "source": "Recalibrating: {}%",
       "refs": [
         "openpilot/selfdrive/selfdrived/events.py"
+      ]
+    },
+    {
+      "source": "Recording drive: {label} · {free} free",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/home.js"
       ]
     },
     {
@@ -32187,6 +32351,48 @@
       "source": "Resetting device...\nThis may take up to a minute.",
       "refs": [
         "openpilot/system/ui/tici_reset.py"
+      ]
+    },
+    {
+      "source": "Restore layout?",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/toggle-backup.js"
+      ]
+    },
+    {
+      "source": "Restore toggles?",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/toggle-backup.js"
+      ]
+    },
+    {
+      "source": "Sampled {label}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "Searching for your adapter…",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Searching for your car…",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Set Active Big",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Set Active Small",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
       ]
     },
     {
@@ -32341,9 +32547,117 @@
       ]
     },
     {
+      "source": "Show all models",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Show all {} models",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "Show fewer models",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Show pairable models",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Show top 6",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "Show {} more models",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Signal {}% · Enterprise Wi-Fi (unsupported)",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/networks.js"
+      ]
+    },
+    {
+      "source": "Signal {}% · Open",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/networks.js"
+      ]
+    },
+    {
+      "source": "Signal {}% · Password required",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/networks.js"
+      ]
+    },
+    {
+      "source": "Skip smoothing · {label}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "Sort and filter models",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "State: {label}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/diagnostic-tools.js"
+      ]
+    },
+    {
+      "source": "Steering: {label}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/diagnostic-tools.js"
+      ]
+    },
+    {
+      "source": "Storage: {label}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "Takes over from the phone or speaker Spotify is playing on now. Music plays through {label}. You might need to confirm the switch in the Spotify app.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
       "source": "Test alert",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js"
+      ]
+    },
+    {
+      "source": "The pairing window ended without choosing an adapter. Try again when your adapter is in pairing mode.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Totals include recorded portions of {} incomplete drive. Personal records use complete drives.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "Totals include recorded portions of {} incomplete drives. Personal records use complete drives.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/home.js"
       ]
     },
     {
@@ -32359,6 +32673,12 @@
       ]
     },
     {
+      "source": "Unavailable unresponsive moments",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
       "source": "Use default km/h speed ranges",
       "refs": [
         "openpilot/starpilot/ui/slc_offset_feature.py"
@@ -32371,9 +32691,27 @@
       ]
     },
     {
+      "source": "Vehicle: {label}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/diagnostic-tools.js"
+      ]
+    },
+    {
+      "source": "Waiting for the device to switch {label}…",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/drive-state.js"
+      ]
+    },
+    {
       "source": "Warns when signaling toward a detected blind-spot vehicle with steering assistance off or paused. Independent of Loud Blindspot Alert. Hazards do not trigger it.",
       "refs": [
         "openpilot/starpilot/ui/sounds_owner.py"
+      ]
+    },
+    {
+      "source": "· Downloaded {label}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
       ]
     }
   ]

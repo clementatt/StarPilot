@@ -49,9 +49,9 @@ const SECTION_LINKS = {
   ],
   visual: [
     { label: "Display", page: "display", value: "Adjust screen brightness and display timing" },
-    { label: "Driving Screen Widgets, Colors & Layout", page: "ui_layout" },
-    { label: "Quick Select", page: "favorites" },
-    { label: "Adj Spot Camera & Preview", page: "pip" },
+    { label: "Driving Screen Widgets, Colors & Layout", page: "ui_layout", value: "Customize driving screen widgets, colors & layout" },
+    { label: "Quick Select", page: "favorites", value: "Customize quick select" },
+    { label: "Adj Spot Camera & Preview", page: "pip", value: "Customize adj spot camera & preview" },
   ],
 }
 
@@ -330,7 +330,7 @@ export const SettingsPage = {
       const inHub = this.initialPage === "hub" && this.state.data?.page === "hub"
       const section = this.activeSection
       const entries = inHub && SECTION_LINKS[section.id]
-        ? SECTION_LINKS[section.id].map((row, index) => ({ row: { ...row, available: true, action: false, value: row.value || "Customize " + row.label.toLocaleLowerCase() }, index }))
+        ? SECTION_LINKS[section.id].map((row, index) => ({ row: { ...row, available: true, action: false }, index }))
         : rows.map((row, index) => ({ row, index })).filter(({ row }) => !inHub || section.pages.includes(row.page))
       if (inHub && section.id === "longitudinal") {
         entries.sort((a, b) => section.pages.indexOf(a.row.page) - section.pages.indexOf(b.row.page))

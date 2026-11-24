@@ -110,8 +110,8 @@ const PAIR_UI = `
               </li>
             </ul>
             <p v-else-if="!pairing?.active && selected" class="gx-starport-row"><i class="bi bi-car-front" aria-hidden="true"></i><span class="gx-starport-row__text"><strong>{{ selected.name }}</strong><small>Used for Android Auto</small></span></p>
-            <p v-if="!pairing?.active && endReason === 'canceled'" class="gx-note" role="status">Pairing canceled. Start again when your {{ deviceWord }} is ready.</p>
-            <p v-else-if="!pairing?.active && endReason" class="gx-note" role="status">The pairing window ended without choosing a {{ deviceWord }}. Try again when your {{ adapterSetup ? 'adapter is in pairing mode' : 'car’s pairing screen is open' }}.</p>
+            <p v-if="!pairing?.active && endReason === 'canceled'" class="gx-note" role="status">{{ pairText.canceled }}</p>
+            <p v-else-if="!pairing?.active && endReason" class="gx-note" role="status">{{ pairText.ended }}</p>
             <ol v-if="showPairSteps" class="gx-starport-list" aria-label="Pairing progress">
               <li v-for="step in pairSteps" :key="step.label" class="gx-starport-row" :class="'gx-starport-row--' + step.status" :aria-current="step.status === 'active' ? 'step' : undefined">
                 <i v-if="step.status === 'done'" class="bi bi-check-circle-fill gx-starport-ok" aria-hidden="true"></i>
@@ -120,14 +120,14 @@ const PAIR_UI = `
                 <span class="gx-starport-row__text"><strong>{{ step.label }}</strong></span>
               </li>
             </ol>
-            <p v-if="waitingForCar" role="status">{{ pairing.discovering ? "Searching for your " + deviceWord + "…" : "Choose your " + deviceWord + " below." }}</p>
+            <p v-if="waitingForCar" role="status">{{ pairing.discovering ? pairText.searching : pairText.choose }}</p>
             <p v-else-if="pairing?.active && pairing.approved && (!pairing.state || pairing.state === 'idle')" role="status">Approved {{ pairing.receiver?.name }}. Finishing Bluetooth pairing…</p>
             <p v-if="pairing?.state === 'pairing' && !pairing.prompt && !pairing.approved" role="status">Pairing with {{ pairing.receiver?.name || 'the selected device' }}…</p>
             <p v-if="pairing?.state === 'connecting'" role="status">Connecting to {{ pairing.receiver?.name || 'the selected device' }}…</p>
             <p v-if="['paired', 'connected'].includes(pairing?.state)" role="status"><i class="bi bi-check-circle-fill gx-starport-ok"></i> {{ pairing.receiver?.name || 'Device' }} {{ pairing.state === 'connected' ? 'connected' : 'paired' }}.</p>
             <GxNotice tone="danger" v-if="pairing?.error">{{ pairing.error }}</GxNotice>
             <ul v-if="pairing?.active && !deviceChosen" class="gx-starport-list" aria-label="Nearby devices">
-              <li v-if="!pairing.devices?.length && waitingForCar" class="gx-starport-row gx-note" role="status"><span class="gx-spinner" aria-hidden="true"></span>Nothing found yet. {{ adapterSetup ? 'Keep your adapter in pairing mode.' : 'Keep your car’s pairing screen open.' }}</li>
+              <li v-if="!pairing.devices?.length && waitingForCar" class="gx-starport-row gx-note" role="status"><span class="gx-spinner" aria-hidden="true"></span>{{ pairText.nothingFound }}</li>
               <li v-for="device in pairing.devices || []" :key="device.address" class="gx-starport-row">
                 <i :class="device.starport ? 'bi bi-car-front' : 'bi bi-bluetooth'" aria-hidden="true"></i>
                 <span class="gx-starport-row__text"><strong>{{ device.name }}</strong><small>{{ device.starport ? 'StarPort ready' : 'Bluetooth device' }} · {{ device.connected ? 'Connected' : device.paired ? 'Paired before' : 'Nearby' }}</small></span>
@@ -135,13 +135,11 @@ const PAIR_UI = `
               </li>
             </ul>
             <div v-if="pairing?.prompt" ref="pairPrompt" class="gx-starport-prompt" role="status"><strong>{{ pairing.receiver.name }}</strong>
-              <p>{{ pairing.prompt.kind === 'confirmation' ? 'Check that this code matches your ' + deviceWord + ', then confirm.' :
-                pairing.prompt.kind === 'pin' ? 'Enter the PIN shown by your ' + deviceWord + '.' :
-                pairing.prompt.kind === 'passkey' ? 'Enter your ' + deviceWord + '’s passkey.' :
-                pairing.prompt.kind === 'authorization' ? 'Allow this ' + deviceWord + ' to pair?' : 'Enter this code in your ' + deviceWord + '.' }}</p>
+              <p>{{ pairing.prompt.kind === 'confirmation' ? pairText.confirmation : pairing.prompt.kind === 'pin' ? pairText.pin :
+                pairing.prompt.kind === 'passkey' ? pairText.passkey : pairing.prompt.kind === 'authorization' ? pairText.authorization : pairText.code }}</p>
               <strong v-if="pairing.prompt.value" class="gx-starport-prompt__code">{{ pairing.prompt.value }}</strong>
               <input v-if="['pin','passkey'].includes(pairing.prompt.kind)" class="gx-field" type="text" maxlength="16" autocomplete="off"
-                :inputmode="pairing.prompt.kind === 'passkey' ? 'numeric' : 'text'" :aria-label="pairing.prompt.kind === 'pin' ? (adapterSetup ? 'Adapter' : 'Car') + ' PIN' : (adapterSetup ? 'Adapter' : 'Car') + ' passkey'" v-model="pairValue" />
+                :inputmode="pairing.prompt.kind === 'passkey' ? 'numeric' : 'text'" :aria-label="pairing.prompt.kind === 'pin' ? pairText.pinLabel : pairText.passkeyLabel" v-model="pairValue" />
               <div v-if="!pairing.prompt.displayOnly" class="gx-driving__actions gx-actions">
                 <button class="gx-btn gx-btn--tonal" @click="respond(false)">Reject</button>
                 <button class="gx-btn" :disabled="!canRespond" @click="respond(true)">{{ pairing.prompt.kind === 'pin' ? 'Send PIN' : pairing.prompt.kind === 'passkey' ? 'Send Passkey' : 'Confirm' }}</button></div>
@@ -149,7 +147,7 @@ const PAIR_UI = `
             <p v-if="pairWhenReady" class="gx-note" role="status"><span class="gx-spinner" aria-hidden="true"></span> Turning on Android Auto, then searching…</p>
             <p v-else-if="!pairing?.active && pairingReason" class="gx-note" role="status">{{ pairingReason }}</p>
             <div class="gx-driving__actions gx-actions">
-              <button v-if="!pairing?.active" class="gx-btn" :class="{ 'gx-btn--tonal': !!selected }" :disabled="pairWhenReady || !!pairingReason" @click="beginPairing"><span v-if="starting" class="gx-spinner" aria-hidden="true"></span><i v-else class="bi bi-search"></i> {{ starting ? 'Starting search…' : selected ? 'Pair another ' + findLabel : 'Find ' + findLabel }}</button>
+              <button v-if="!pairing?.active" class="gx-btn" :class="{ 'gx-btn--tonal': !!selected }" :disabled="pairWhenReady || !!pairingReason" @click="beginPairing"><span v-if="starting" class="gx-spinner" aria-hidden="true"></span><i v-else class="bi bi-search"></i> {{ starting ? 'Starting search…' : selected ? pairText.another : pairText.find }}</button>
               <button v-else class="gx-btn gx-btn--tonal" @click="cancelPairing">Cancel Search / Pairing</button>
             </div>
             <details class="gx-starport-wiki"><summary>Stuck pairing? Pairing order and wireless adapters</summary>
@@ -170,6 +168,31 @@ const PAIR_UI = `
 `
 export const CAR_TYPES = {
   builtin: "Built-in wireless", adapter: "Wireless adapter", usb: "Wired AA", app: "App"
+}
+// Whole sentences per device type, so each language keeps its own word order and grammar.
+export const PAIRING_TEXT = {
+  car: {
+    canceled: "Pairing canceled. Start again when your car is ready.",
+    ended: "The pairing window ended without choosing a car. Try again when your car’s pairing screen is open.",
+    searching: "Searching for your car…", choose: "Choose your car below.",
+    nothingFound: "Nothing found yet. Keep your car’s pairing screen open.",
+    confirmation: "Check that this code matches your car, then confirm.", pin: "Enter the PIN shown by your car.",
+    passkey: "Enter your car’s passkey.", authorization: "Allow this car to pair?", code: "Enter this code in your car.",
+    pinLabel: "Car PIN", passkeyLabel: "Car passkey", find: "Find car", another: "Pair another car",
+    pickStep: "Put your car in pairing mode, then pick it from the list", pairStep: "Pair with your car",
+    connectStep: "Finish connecting to your car",
+  },
+  adapter: {
+    canceled: "Pairing canceled. Start again when your adapter is ready.",
+    ended: "The pairing window ended without choosing an adapter. Try again when your adapter is in pairing mode.",
+    searching: "Searching for your adapter…", choose: "Choose your adapter below.",
+    nothingFound: "Nothing found yet. Keep your adapter in pairing mode.",
+    confirmation: "Check that this code matches your adapter, then confirm.", pin: "Enter the PIN shown by your adapter.",
+    passkey: "Enter your adapter’s passkey.", authorization: "Allow this adapter to pair?", code: "Enter this code in your adapter.",
+    pinLabel: "Adapter PIN", passkeyLabel: "Adapter passkey", find: "Find adapter", another: "Pair another adapter",
+    pickStep: "Put your adapter in pairing mode, then pick it from the list", pairStep: "Pair with your adapter",
+    connectStep: "Finish connecting to your adapter",
+  },
 }
 const PROMPT = new Set(["pin", "passkey", "confirmation", "authorization", "display_pin", "display_passkey"])
 
@@ -478,7 +501,7 @@ export function expiryInfo(identity, locale = undefined) {
     const days = Number.isSafeInteger(identity.days_left) ? identity.days_left : null
     if (days !== null && days <= 14) {
       const day = formatDate(identity.expires, { month: "short", day: "numeric" }, locale)
-      const left = days <= 0 ? "Expires within a day" : `Expires in ${days} day${days === 1 ? "" : "s"}`
+      const left = days <= 0 ? "Expires within a day" : days === 1 ? `Expires in ${days} day` : `Expires in ${days} days`
       return { level: "soon", label: day ? `${left} (${day})` : left }
     }
     const until = formatDate(identity.expires, undefined, locale)
@@ -640,8 +663,8 @@ export const StarPortPage = {
     carType() { return this.runtime?.car_type || (this.wired ? "usb" : this.app ? "app" : "builtin") },
     adapterSetup() { return this.carType === "adapter" },
     deviceWord() { return this.adapterSetup ? "adapter" : "car" },
+    pairText() { return PAIRING_TEXT[this.deviceWord] },
     pairsHere() { return this.carType === "builtin" || this.carType === "adapter" },
-    findLabel() { return this.adapterSetup ? "adapter" : "car" },
     carTypeLabels() { return { ...CAR_TYPES, app: this.app ? `App (${this.app})` : CAR_TYPES.app } },
     wiredUnavailable() { return !this.wired && !!this.runtime?.wired_blocked },
     appDisabled() {
@@ -722,15 +745,15 @@ export const StarPortPage = {
       const state = this.pairing?.state, active = !!this.pairing?.active
       const paired = ["paired", "connected"].includes(state)
       const picked = !!(this.pairing?.receiver || this.pairing?.approved || ["pairing", "connecting"].includes(state) || paired)
-      const what = this.adapterSetup ? "adapter" : "car"
+      const text = PAIRING_TEXT[this.adapterSetup ? "adapter" : "car"]
       const failed = state === "failed" || !!this.pairing?.error
       const rank = paired ? 5 : state === "connecting" ? 4 : this.pairing?.approved ? 3 : this.pairing?.prompt ? 2 : picked ? 2 : active ? 1 : 0
       const steps = [
         `Start the search${this.starting ? "…" : ""}`,
-        `Put your ${what} in pairing mode, then pick it from the list`,
-        this.pairing?.prompt ? "Confirm the code on both screens" : `Pair with your ${what}`,
+        text.pickStep,
+        this.pairing?.prompt ? "Confirm the code on both screens" : text.pairStep,
         "Finish Bluetooth pairing",
-        `Finish connecting to your ${what}`
+        text.connectStep
       ]
       return steps.map((label, index) => ({ label, status: index < rank ? "done" : index === rank ? (failed ? "failed" : "active") : "pending" }))
     },

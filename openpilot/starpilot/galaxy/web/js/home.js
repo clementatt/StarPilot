@@ -218,8 +218,8 @@ export const Home = {
               <div><strong>{{ driving.last.engaged }}</strong><span>engaged</span></div>
               <div><strong>{{ driving.last.average }}</strong><span>average speed</span></div></div>
             <p class="gx-home__subtle">{{ driving.last.aol }} AOL steering only · {{ driving.last.aolDuration }}</p>
-            <div class="gx-home__attention"><span class="gx-home__model-tag"><i class="bi bi-cpu"></i> {{ driving.last.model }}</span><span><i class="bi bi-eye"></i> {{ driving.last.distracted === "Unavailable" ? "Attention data unavailable" : driving.last.distracted + " distracted " + (driving.last.distracted === "1" ? "moment" : "moments") }}</span>
-              <span><i class="bi bi-exclamation-triangle"></i> {{ driving.last.unresponsive }} unresponsive {{ driving.last.unresponsive === "1" ? "moment" : "moments" }}</span></div>
+            <div class="gx-home__attention"><span class="gx-home__model-tag"><i class="bi bi-cpu"></i> {{ driving.last.model }}</span><span><i class="bi bi-eye"></i> {{ driving.last.distracted === "Unavailable" ? "Attention data unavailable" : driving.last.distracted + (driving.last.distracted === "1" ? " distracted moment" : " distracted moments") }}</span>
+              <span><i class="bi bi-exclamation-triangle"></i> {{ driving.last.unresponsive + (driving.last.unresponsive === "1" ? " unresponsive moment" : " unresponsive moments") }}</span></div>
           </template>
         </section>
         <template v-if="driving">
@@ -307,7 +307,7 @@ export const Home = {
             <template v-else><div class="gx-home__metrics"><div><strong>{{ summary.system.cpu }}</strong><span>CPU</span></div>
               <div><strong>{{ summary.system.memory }}</strong><span>Memory</span></div></div>
               <p>12 V battery: <strong>{{ summary.system.battery }}</strong></p>
-              <p>{{ summary.system.storageLabel }}: {{ summary.system.storage }}<span v-if="summary.system.storageFree !== null"> · {{ summary.system.storageFree }} free</span></p>
+              <p>{{ summary.system.storageLabel }}: {{ summary.system.storage }}{{ summary.system.storageFree !== null ? " · " + summary.system.storageFree + " free" : "" }}</p>
               <p v-if="summary.system.recordingStorage">Recording drive: {{ summary.system.recordingStorage.usage }} · {{ summary.system.recordingStorage.free }} free</p><small>Sampled {{ summary.system.observed }}</small></template>
             <WeatherVitals :metric="drives.data?.isMetric === true" :mode="mode" :unauthorized="unauthorized" />
             <button type="button" class="gx-home__link" @click="go('/logs/monitor')">Open System Monitor <i class="bi bi-arrow-right"></i></button>
