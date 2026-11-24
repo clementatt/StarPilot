@@ -12,6 +12,10 @@ from openpilot.system.ui.widgets.scroller import NavScroller
 from openpilot.selfdrive.ui.mici.widgets.button import BigButton, GreyBigButton
 from openpilot.selfdrive.ui.mici.widgets.dialog import BigConfirmationDialog, BigDialog
 
+# Whole titles per profile, so each translates as one phrase.
+ACTIVE_TITLES = {"small": "active small", "big": "active big"}
+SET_ACTIVE_TITLES = {"small": "set active small", "big": "set active big"}
+
 
 def _grey_card(title: str, value: str) -> GreyBigButton:
   return GreyBigButton(_display_text(title), _display_text(value))
@@ -110,7 +114,7 @@ class ModelsCompact:
       mid = data.get(field, "")
       label = next((m.get("label", mid) for m in data["models"] if m["value"] == mid),
                    mid or (big_none_label(data).lower() if profile == "big" else "none — always use small"))
-      cards.append(self._button(f"active {profile}", label, lambda p=profile: self.open("catalog", p),
+      cards.append(self._button(ACTIVE_TITLES[profile], label, lambda p=profile: self.open("catalog", p),
                                 data.get("capabilities", {}).get("select") is True and not data.get("randomizer")))
     cards.append(self._button("model randomizer", "on · choose at each start" if data.get("randomizer") else "off",
                               lambda: self._action(page, "randomizer"), model_action_allowed(data, "randomizer")))
@@ -127,7 +131,7 @@ class ModelsCompact:
 
   def _catalog(self, page: _ModelsPage, data: dict) -> list:
     profile = page.profile
-    cards = [_grey_card(f"active {profile}" if profile else "models", "choose a model" if profile else "browse the catalog")]
+    cards = [_grey_card(ACTIVE_TITLES[profile] if profile else "models", "choose a model" if profile else "browse the catalog")]
     cards.append(self._button("sort and filter", self.SORTS[page.sort_mode], lambda: self._next_sort(page)))
     jetlink = profile == "big" and data.get("jetlinkBig") is True
     if profile == "big":
@@ -171,7 +175,7 @@ class ModelsCompact:
     if model.get("installed"):
       for profile in ("small", "big"):
         if model_action_allowed(data, "active", model, profile):
-          cards.append(self._button(f"set active {profile}", "next start", lambda p=profile: self._action(page, "active", mid, p)))
+          cards.append(self._button(SET_ACTIVE_TITLES[profile], "next start", lambda p=profile: self._action(page, "active", mid, p)))
       if not model.get("builtin"):
         cards.append(self._button("delete model", "remove local files", lambda: self._action(page, "delete", mid),
                                   model_action_allowed(data, "delete", model)))

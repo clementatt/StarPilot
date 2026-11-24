@@ -1325,7 +1325,8 @@ class StarShellSession(TeslaSpeedActions):
         if request.key in VEHICLE_BOOL_KEYS:
           self._confirm_vehicle_bool(request)
         elif request.key in ("CustomCruise", "CustomCruiseLong"):
-          self._confirm_vehicle_bool(request, f"Set {action.row.label.lower()} to {request.value} {action.row.unit}".rstrip() + "?")
+          value = f"{request.value} {action.row.unit}".rstrip()
+          self._confirm_vehicle_bool(request, f"Set short press to {value}?" if request.key == "CustomCruise" else f"Set hold to {value}?")
         elif request.key in LANE_CHANGE_KEYS:
           self._confirm_lane_change(request)
         else:

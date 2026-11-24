@@ -67,15 +67,35 @@ def _unit(field: str, metric: bool) -> str:
   return "km/h" if metric else "mph"
 
 
+MODE_QUESTIONS = {
+  "Automatic": "Set driving mode to Automatic?",
+  "Chill": "Set driving mode to Chill?",
+  "Experimental": "Set driving mode to Experimental?",
+}
+PERSIST_MANUAL_QUESTIONS = {
+  "On": "Set remember manual choice to On? This resets the mode's remembered choice to Automatic.",
+  "Off": "Set remember manual choice to Off? This resets the mode's remembered choice to Automatic.",
+}
+
+
 def confirmation_question(request: FeatureSettingsRequest, label: str = "", unit: str = "") -> str:
   if request.key == RESET:
     return "Replace the invalid conditional mode settings with Chill defaults?"
   if request.key == MANUAL_RESET:
     return "Reset both remembered manual choices to Automatic?"
+  # Mode names and switch states change the sentence, so they are whole questions. Other rows keep their label's own
+  # case so the label is translated like the row title.
+  if request.key == MODE and request.value in MODE_QUESTIONS:
+    return MODE_QUESTIONS[request.value]
+  if request.key.endswith(":persist_manual") and request.value in PERSIST_MANUAL_QUESTIONS:
+    return PERSIST_MANUAL_QUESTIONS[request.value]
+  label = label or "this setting"
+  if request.value == "On":
+    return f"Set {label} to On?"
+  if request.value == "Off":
+    return f"Set {label} to Off?"
   value = f"{request.value} {unit}".rstrip()
-  target = f"{label.lower()} to" if label else "to"
-  tail = " This resets the mode's remembered choice to Automatic." if request.key.endswith(":persist_manual") else ""
-  return f"Set {target} {value}?{tail}"
+  return f"Set {label} to {value}?"
 
 
 class ConditionalFeature:

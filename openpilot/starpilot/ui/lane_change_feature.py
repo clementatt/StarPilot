@@ -31,25 +31,39 @@ PACE = "lane_change:pace"
 RESET = "lane_change:reset"
 
 
+# Whole questions, so each can be translated as one sentence. Numbers keep only the value (and mph or km/h) as a field.
+SWITCH_QUESTIONS = {
+  (GUIDANCE, "On"): "Set automatic turn initiation to On? Changes apply after the current signal and maneuver end.",
+  (GUIDANCE, "Off"): "Set automatic turn initiation to Off? Changes apply after the current signal and maneuver end.",
+  (ENABLED, "On"): "Set lane-change assistance to On? Changes apply after the current signal and maneuver end.",
+  (ENABLED, "Off"): "Turn off lane-change assistance? The current assistance cancels after the preference refresh.",
+  (ONE, "On"): "Set one lane change per signal to On? Changes apply after the current signal and maneuver end.",
+  (ONE, "Off"): "Set one lane change per signal to Off? Changes apply after the current signal and maneuver end.",
+  (AUTO, "On"): "Set automatic lane changes to On? Changes apply after the current signal and maneuver end. Lane and blindspot checks remain required.",
+  (AUTO, "Off"): "Turn off automatic lane changes? New automatic triggers stop after the preference refresh.",
+  (REQUIRE_CRUISE, "On"): "Set cruise requirement for automatic lane changes to On? Changes apply after the current signal and maneuver end.",
+  (REQUIRE_CRUISE, "Off"): "Set cruise requirement for automatic lane changes to Off? Changes apply after the current signal and maneuver end.",
+  (CLOSE, "On"): "Set Close lane-change gap to On? Changes refresh during this drive.",
+  (CLOSE, "Off"): "Set Close lane-change gap to Off? Changes refresh during this drive.",
+}
+NUMBER_QUESTIONS = {
+  SPEED: "Set minimum lane-change speed to {value}? Changes apply after the current signal and maneuver end.",
+  PACE: "Set steering pace to {value}? Changes apply after the current signal and maneuver end.",
+  DELAY: "Set signal delay to {value} seconds? Changes apply after the current signal and maneuver end.",
+  WIDTH: "Set minimum adjacent lane width to {value} feet? Changes apply after the current signal and maneuver end.",
+  GAP: "Set lane-change following time to {value} seconds? Changes refresh during this drive.",
+}
+
+
 def confirm_question(request: FeatureSettingsRequest) -> str:
   if request.key == RESET:
     return "Restore the default lane-change assistance, signal timing, pace and gap settings?"
-  if request.key == ENABLED and request.value == "Off":
-    return "Turn off lane-change assistance? The current assistance cancels after the preference refresh."
-  if request.key == AUTO and request.value == "Off":
-    return "Turn off automatic lane changes? New automatic triggers stop after the preference refresh."
-  label = {GUIDANCE: "automatic turn initiation", ENABLED: "lane-change assistance", AUTO: "automatic lane changes",
-           REQUIRE_CRUISE: "cruise requirement for automatic lane changes", SPEED: "minimum lane-change speed",
-           ONE: "one lane change per signal", PACE: "steering pace", DELAY: "signal delay",
-           WIDTH: "minimum adjacent lane width", CLOSE: "Close lane-change gap", GAP: "lane-change following time"}[request.key]
-  unit = request.display_unit
-  if not unit:
-    unit = "seconds" if request.key in (DELAY, GAP) else "feet" if request.key == WIDTH else ""
-  value = f"{request.value} {unit}".rstrip()
-  timing = ("Changes refresh during this drive." if request.key in (CLOSE, GAP) else
-            "Changes apply after the current signal and maneuver end.")
-  checks = ' Lane and blindspot checks remain required.' if request.key == AUTO and request.value == 'On' else ''
-  return f"Set {label} to {value}? {timing}{checks}"
+  if (request.key, request.value) in SWITCH_QUESTIONS:
+    return SWITCH_QUESTIONS[request.key, request.value]
+  if request.key not in NUMBER_QUESTIONS:
+    raise ValueError("Unsupported lane-change preference value")
+  value = f"{request.value} {request.display_unit}".rstrip() if request.key == SPEED else request.value
+  return NUMBER_QUESTIONS[request.key].format(value=value)
 KEYS = frozenset((GUIDANCE, ENABLED, SPEED, ONE, AUTO, REQUIRE_CRUISE, DELAY, WIDTH, CLOSE, GAP, PACE, RESET))
 
 

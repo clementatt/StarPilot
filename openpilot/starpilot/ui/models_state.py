@@ -66,7 +66,8 @@ def model_page(status: ModelStatus, manager: dict | None = None, page: str = "mo
                                 subtitle_tone="ok" if status.health is ModelHealth.ACTIVE else "warn",
                                 rows=(model_manager_rows(manager) if manager is not None else ()) + rows)
   profile = page.split(":", 2)[2] if page.startswith("models:pick:") else ""
-  return FeatureSettingsState(page=page, title=f"Active {profile.title()}" if profile else "Model Catalog", parent_title="Driving Model",
+  return FeatureSettingsState(page=page, title={"small": "Active Small", "big": "Active Big"}.get(profile, "Model Catalog"),
+                              parent_title="Driving Model",
                               subtitle=progress or "Selections apply at next start; tap a name for details",
                               rows=model_list_rows(manager, profile, filter_, sort, size),
                               toolbar=tuple((title, dict(options)[chosen]) for (_, title, options), chosen in

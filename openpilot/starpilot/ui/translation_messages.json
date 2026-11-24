@@ -80,12 +80,6 @@
       ]
     },
     {
-      "source": "A compatible connected interceptor must be detected before StarPilot can control it.",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
-      ]
-    },
-    {
       "source": "A different verified model is chosen each start.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/models.js"
@@ -177,12 +171,6 @@
       "source": "AOL steering only ·",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/home.js"
-      ]
-    },
-    {
-      "source": "AVH ON at the next startup? A bounded request runs once in Park with the engine running.",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
       ]
     },
     {
@@ -727,12 +715,6 @@
       ]
     },
     {
-      "source": "Alpha Longitudinal after the next startup? StarPilot will request speed control instead of factory ACC.",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
-      ]
-    },
-    {
       "source": "Also remove the comma from the device's Bluetooth list, or it may keep trying to reconnect or fail to pair again later.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/bluetooth.js"
@@ -1195,12 +1177,6 @@
       "source": "Automatic Brake Hold",
       "refs": [
         "openpilot/starpilot/ui/feature_settings_owner.py"
-      ]
-    },
-    {
-      "source": "Automatic Brake Hold after the next startup? Press the",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
       ]
     },
     {
@@ -11228,12 +11204,6 @@
       ]
     },
     {
-      "source": "Pedal Speed Control after the next startup?",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
-      ]
-    },
-    {
       "source": "Pending trial target",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/flm.js"
@@ -13139,12 +13109,6 @@
       "source": "Reset speed-limit offsets to zero?",
       "refs": [
         "openpilot/starpilot/galaxy/settings.py",
-        "openpilot/starpilot/ui/runtime_app.py"
-      ]
-    },
-    {
-      "source": "Reset speed-limit offsets to zero? {}.",
-      "refs": [
         "openpilot/starpilot/ui/runtime_app.py"
       ]
     },
@@ -15170,33 +15134,9 @@
       ]
     },
     {
-      "source": "Set {} to {} {}",
-      "refs": [
-        "openpilot/starpilot/ui/runtime_app.py"
-      ]
-    },
-    {
-      "source": "Set {} to {}?",
-      "refs": [
-        "openpilot/starpilot/galaxy/settings.py"
-      ]
-    },
-    {
       "source": "Set {} to {}? Cruise-button increments refresh during the drive.",
       "refs": [
         "openpilot/starpilot/galaxy/settings.py"
-      ]
-    },
-    {
-      "source": "Set {} to {}? {}{}",
-      "refs": [
-        "openpilot/starpilot/ui/lane_change_feature.py"
-      ]
-    },
-    {
-      "source": "Set {} {}?{}",
-      "refs": [
-        "openpilot/starpilot/ui/conditional_feature.py"
       ]
     },
     {
@@ -16423,12 +16363,6 @@
       ]
     },
     {
-      "source": "StarPilot speed control after the next startup? Steering stays unchanged.",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
-      ]
-    },
-    {
       "source": "StarPilot speed control is off in this configuration",
       "refs": [
         "openpilot/starpilot/ui/feature_settings_owner.py"
@@ -16877,12 +16811,6 @@
       ]
     },
     {
-      "source": "Stop/Start OFF at the next startup? A bounded request runs once while stationary in Park or Neutral.",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
-      ]
-    },
-    {
       "source": "Stop/Start Off at Startup",
       "refs": [
         "openpilot/starpilot/ui/feature_settings_owner.py"
@@ -16965,12 +16893,6 @@
       "source": "Subaru model curvature smoothing",
       "refs": [
         "openpilot/starpilot/ui/subaru_smoothing_feature.py"
-      ]
-    },
-    {
-      "source": "Subaru stop-and-go assistance after the next startup? Factory ACC retains speed control.",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
       ]
     },
     {
@@ -19893,18 +19815,6 @@
       ]
     },
     {
-      "source": "Volt one-pedal driving after the next startup? Lifting off the accelerator can apply the brakes with cruise disengaged and cruise main on.",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
-      ]
-    },
-    {
-      "source": "Volt stop-and-go assistance after the next startup?",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
-      ]
-    },
-    {
       "source": "Volume",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/spotify.js"
@@ -20631,12 +20541,6 @@
         "openpilot/starpilot/ui/onroad_jetlink.py",
         "openpilot/starpilot/ui/runtime_app.py",
         "openpilot/starpilot/ui/runtime_snapshot.py"
-      ]
-    },
-    {
-      "source": "active {}",
-      "refs": [
-        "openpilot/starpilot/ui/models_compact.py"
       ]
     },
     {
@@ -21781,12 +21685,6 @@
       ]
     },
     {
-      "source": "compensation for road grade? This refreshes during the drive.",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
-      ]
-    },
-    {
       "source": "complete",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/offline-road-maps.js",
@@ -22316,12 +22214,6 @@
         "openpilot/starpilot/galaxy/web/js/companion.js",
         "openpilot/starpilot/galaxy/web/js/hotspot.js",
         "openpilot/starpilot/galaxy/web/js/navigation.js"
-      ]
-    },
-    {
-      "source": "disarming Always On Lateral with the brake after the next startup? This applies to screen-tap steering.",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
       ]
     },
     {
@@ -25836,12 +25728,6 @@
       ]
     },
     {
-      "source": "reset speed-limit offsets to zero? {}.",
-      "refs": [
-        "openpilot/starpilot/ui/feature_settings_compact.py"
-      ]
-    },
-    {
       "source": "reset this vehicle model's custom torque profile?",
       "refs": [
         "openpilot/starpilot/ui/feature_settings_compact.py"
@@ -26377,12 +26263,6 @@
       ]
     },
     {
-      "source": "set active {}",
-      "refs": [
-        "openpilot/starpilot/ui/models_compact.py"
-      ]
-    },
-    {
       "source": "set {}",
       "refs": [
         "openpilot/starpilot/ui/sounds_compact.py"
@@ -26566,12 +26446,6 @@
         "openpilot/starpilot/ui/runtime_app.py",
         "openpilot/starpilot/ui/settings_state.py",
         "openpilot/starpilot/ui/shell.py"
-      ]
-    },
-    {
-      "source": "software cruise after the next startup? Stock ACC keeps pedal control.",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
       ]
     },
     {
@@ -27147,12 +27021,6 @@
       ]
     },
     {
-      "source": "three-finger screen taps for Always On Lateral after the next startup? Cruise control stays independent.",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
-      ]
-    },
-    {
       "source": "tiles",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/map-operations.js"
@@ -27230,12 +27098,6 @@
       "source": "to its seven default follow and jerk values? Saved curves, profile switches,",
       "refs": [
         "openpilot/starpilot/ui/long_profile_feature.py"
-      ]
-    },
-    {
-      "source": "to release a hold.",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
       ]
     },
     {
@@ -27964,27 +27826,9 @@
       ]
     },
     {
-      "source": "{} AVH ON at the next startup? A bounded request runs once in Park with the engine running.",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
-      ]
-    },
-    {
-      "source": "{} Alpha Longitudinal after the next startup? StarPilot will request speed control instead of factory ACC.",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
-      ]
-    },
-    {
       "source": "{} Audio waits for {}.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/spotify.js"
-      ]
-    },
-    {
-      "source": "{} Automatic Brake Hold after the next startup? Press the {} to release a hold.",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
       ]
     },
     {
@@ -27994,63 +27838,15 @@
       ]
     },
     {
-      "source": "{} Pedal Speed Control after the next startup?",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
-      ]
-    },
-    {
-      "source": "{} StarPilot speed control after the next startup? Steering stays unchanged.",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
-      ]
-    },
-    {
-      "source": "{} Stop/Start OFF at the next startup? A bounded request runs once while stationary in Park or Neutral.",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
-      ]
-    },
-    {
-      "source": "{} Subaru stop-and-go assistance after the next startup? Factory ACC retains speed control.",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
-      ]
-    },
-    {
-      "source": "{} Volt one-pedal driving after the next startup? Lifting off the accelerator can apply the brakes with cruise disengaged and cruise main on.",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
-      ]
-    },
-    {
-      "source": "{} Volt stop-and-go assistance after the next startup?",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
-      ]
-    },
-    {
       "source": "{} available to play",
       "refs": [
         "openpilot/starpilot/ui/replay_settings.py"
       ]
     },
     {
-      "source": "{} compensation for road grade? This refreshes during the drive.",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
-      ]
-    },
-    {
       "source": "{} differs from the reviewed font manifest",
       "refs": [
         "openpilot/starpilot/ui/presentation.py"
-      ]
-    },
-    {
-      "source": "{} disarming Always On Lateral with the brake after the next startup? This applies to screen-tap steering.",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
       ]
     },
     {
@@ -28103,12 +27899,6 @@
       ]
     },
     {
-      "source": "{} recorded route",
-      "refs": [
-        "openpilot/starpilot/ui/replay_settings.py"
-      ]
-    },
-    {
       "source": "{} samples / 30 s · robust error {} m/s²",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/plots.js"
@@ -28127,27 +27917,9 @@
       ]
     },
     {
-      "source": "{} software cruise after the next startup? Stock ACC keeps pedal control.",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
-      ]
-    },
-    {
-      "source": "{} three-finger screen taps for Always On Lateral after the next startup? Cruise control stays independent.",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
-      ]
-    },
-    {
       "source": "{} tiles missing · retries later",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/offline-road-maps.js"
-      ]
-    },
-    {
-      "source": "{} to",
-      "refs": [
-        "openpilot/starpilot/ui/conditional_feature.py"
       ]
     },
     {
@@ -28166,12 +27938,6 @@
       "source": "{} {} deleted.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/route-cleanup.js"
-      ]
-    },
-    {
-      "source": "{} {}? This changes Panda firmware after the next device restart.",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
       ]
     },
     {
@@ -30217,12 +29983,6 @@
       ]
     },
     {
-      "source": "Automatic Emergency Braking may be disabled; exact startup checks still apply.",
-      "refs": [
-        "openpilot/starpilot/ui/vehicle_bool.py"
-      ]
-    },
-    {
       "source": "Before and after use separate completed, comparable driving episodes. Unmeasured values remain “Not measured”. Passing future checks does not itself confirm controller application or saving; currently applied values require fresh controller evidence.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/flm.js"
@@ -31837,6 +31597,66 @@
       ]
     },
     {
+      "source": "reset speed-limit offsets to zero? {label}. saved control may resume if its switch is on; its switch will not change",
+      "refs": [
+        "openpilot/starpilot/ui/feature_settings_compact.py"
+      ]
+    },
+    {
+      "source": "resetting device",
+      "refs": [
+        "openpilot/system/ui/mici_reset.py"
+      ]
+    },
+    {
+      "source": "set active big",
+      "refs": [
+        "openpilot/starpilot/ui/models_compact.py"
+      ]
+    },
+    {
+      "source": "set active small",
+      "refs": [
+        "openpilot/starpilot/ui/models_compact.py"
+      ]
+    },
+    {
+      "source": "start the car to\nuse openpilot",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/onroad/augmented_road_view.py"
+      ]
+    },
+    {
+      "source": "system booting",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/onroad/augmented_road_view.py"
+      ]
+    },
+    {
+      "source": "this may take up to\na minute",
+      "refs": [
+        "openpilot/system/ui/mici_reset.py"
+      ]
+    },
+    {
+      "source": "this may take up to\na minute.",
+      "refs": [
+        "openpilot/system/ui/mici_reset.py"
+      ]
+    },
+    {
+      "source": "this may take up to\na minute..",
+      "refs": [
+        "openpilot/system/ui/mici_reset.py"
+      ]
+    },
+    {
+      "source": "this may take up to\na minute...",
+      "refs": [
+        "openpilot/system/ui/mici_reset.py"
+      ]
+    },
+    {
       "source": "{} minute",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/spotify.js",
@@ -31873,6 +31693,18 @@
       ]
     },
     {
+      "source": "{} recorded route - Newest first",
+      "refs": [
+        "openpilot/starpilot/ui/replay_settings.py"
+      ]
+    },
+    {
+      "source": "{} recorded routes - Newest first",
+      "refs": [
+        "openpilot/starpilot/ui/replay_settings.py"
+      ]
+    },
+    {
       "source": "{} second",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/spotify.js",
@@ -31904,6 +31736,12 @@
         "openpilot/starpilot/galaxy/web/js/spotify.js",
         "openpilot/starpilot/galaxy/web/js/starport.js",
         "openpilot/starpilot/ui/onroad_map.py"
+      ]
+    },
+    {
+      "source": "{} segments",
+      "refs": [
+        "openpilot/starpilot/ui/replay_settings.py"
       ]
     },
     {
@@ -31970,6 +31808,36 @@
       "refs": [
         "openpilot/starpilot/ui/onroad_alerts.py",
         "openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js"
+      ]
+    },
+    {
+      "source": "Active Big",
+      "refs": [
+        "openpilot/starpilot/ui/models_state.py"
+      ]
+    },
+    {
+      "source": "active big",
+      "refs": [
+        "openpilot/starpilot/ui/models_compact.py"
+      ]
+    },
+    {
+      "source": "active small",
+      "refs": [
+        "openpilot/starpilot/ui/models_compact.py"
+      ]
+    },
+    {
+      "source": "no alerts",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "openpilot can't start\ncheck alerts",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/onroad/augmented_road_view.py"
       ]
     },
     {
@@ -32040,9 +31908,466 @@
       ]
     },
     {
+      "source": "Calibrating: {}%",
+      "refs": [
+        "openpilot/selfdrive/selfdrived/events.py"
+      ]
+    },
+    {
+      "source": "Clear alert",
+      "refs": [
+        "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Disable AVH ON at the next startup? A bounded request runs once in Park with the engine running.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Disable Alpha Longitudinal after the next startup? StarPilot will request speed control instead of factory ACC. Automatic Emergency Braking may be disabled; exact startup checks still apply.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Disable Automatic Brake Hold after the next startup? Press the gas or regen paddle to release a hold.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Disable Automatic Brake Hold after the next startup? Press the gas to release a hold.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Disable Comma can set speed on Tesla dashboard? While it is on, StarPilot keeps its own set speed and scrolls the Tesla's set speed to match it.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Disable Pedal Speed Control after the next startup? A compatible connected interceptor must be detected before StarPilot can control it.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Disable Redneck Cruise after the next startup? Factory cruise keeps control of the pedals.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Disable Stop/Start OFF at the next startup? A bounded request runs once while stationary in Park or Neutral.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Disable Subaru stop-and-go assistance after the next startup? Factory ACC retains speed control.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Disable Tesla cooperative steering after the next startup? Light steering input adjusts the assisted steering angle within its limits.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Disable Toyota stop-and-go assistance after the next startup?",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Disable Volt one-pedal driving after the next startup? Lifting off the accelerator can apply the brakes with cruise disengaged and cruise main on.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Disable Volt stop-and-go assistance after the next startup?",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Disable compensation for road grade? This refreshes during the drive.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Disable disarming Always On Lateral with the brake after the next startup? This applies with either Tesla harness.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Disable software cruise after the next startup? Stock ACC keeps pedal control.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Disable {label}? This changes Panda firmware after the next device restart.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Enable AVH ON at the next startup? A bounded request runs once in Park with the engine running.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Enable Alpha Longitudinal after the next startup? StarPilot will request speed control instead of factory ACC. Automatic Emergency Braking may be disabled; exact startup checks still apply.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Enable Automatic Brake Hold after the next startup? Press the gas or regen paddle to release a hold.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Enable Automatic Brake Hold after the next startup? Press the gas to release a hold.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Enable Comma can set speed on Tesla dashboard? While it is on, StarPilot keeps its own set speed and scrolls the Tesla's set speed to match it.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Enable Pedal Speed Control after the next startup? A compatible connected interceptor must be detected before StarPilot can control it.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Enable Redneck Cruise after the next startup? Factory cruise keeps control of the pedals.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Enable Stop/Start OFF at the next startup? A bounded request runs once while stationary in Park or Neutral.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Enable Subaru stop-and-go assistance after the next startup? Factory ACC retains speed control.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Enable Tesla cooperative steering after the next startup? Light steering input adjusts the assisted steering angle within its limits.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Enable Toyota stop-and-go assistance after the next startup?",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Enable Volt one-pedal driving after the next startup? Lifting off the accelerator can apply the brakes with cruise disengaged and cruise main on.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Enable Volt stop-and-go assistance after the next startup?",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Enable compensation for road grade? This refreshes during the drive.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Enable disarming Always On Lateral with the brake after the next startup? This applies with either Tesla harness.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Enable software cruise after the next startup? Stock ACC keeps pedal control.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Enable {label}? This changes Panda firmware after the next device restart.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Recalibrating: {}%",
+      "refs": [
+        "openpilot/selfdrive/selfdrived/events.py"
+      ]
+    },
+    {
+      "source": "Replay buffering",
+      "refs": [
+        "openpilot/starpilot/ui/replay_settings.py"
+      ]
+    },
+    {
+      "source": "Replay ended",
+      "refs": [
+        "openpilot/starpilot/ui/replay_settings.py"
+      ]
+    },
+    {
+      "source": "Replay failed",
+      "refs": [
+        "openpilot/starpilot/ui/replay_settings.py"
+      ]
+    },
+    {
+      "source": "Replay idle",
+      "refs": [
+        "openpilot/starpilot/ui/replay_settings.py"
+      ]
+    },
+    {
+      "source": "Replay paused",
+      "refs": [
+        "openpilot/starpilot/ui/replay_settings.py"
+      ]
+    },
+    {
+      "source": "Replay playing",
+      "refs": [
+        "openpilot/starpilot/ui/replay_settings.py"
+      ]
+    },
+    {
+      "source": "Replay seeking",
+      "refs": [
+        "openpilot/starpilot/ui/replay_settings.py"
+      ]
+    },
+    {
+      "source": "Replay stopping",
+      "refs": [
+        "openpilot/starpilot/ui/replay_settings.py"
+      ]
+    },
+    {
+      "source": "Reset speed-limit offsets to zero? {label}. Saved SLC control may resume if its switch is On; the switch will not change.",
+      "refs": [
+        "openpilot/starpilot/ui/feature_reset_question.py"
+      ]
+    },
+    {
+      "source": "Resetting device...\nThis may take up to a minute.",
+      "refs": [
+        "openpilot/system/ui/tici_reset.py"
+      ]
+    },
+    {
+      "source": "Set Close lane-change gap to Off? Changes refresh during this drive.",
+      "refs": [
+        "openpilot/starpilot/ui/lane_change_feature.py"
+      ]
+    },
+    {
+      "source": "Set Close lane-change gap to On? Changes refresh during this drive.",
+      "refs": [
+        "openpilot/starpilot/ui/lane_change_feature.py"
+      ]
+    },
+    {
+      "source": "Set automatic lane changes to On? Changes apply after the current signal and maneuver end. Lane and blindspot checks remain required.",
+      "refs": [
+        "openpilot/starpilot/ui/lane_change_feature.py"
+      ]
+    },
+    {
+      "source": "Set automatic turn initiation to Off? Changes apply after the current signal and maneuver end.",
+      "refs": [
+        "openpilot/starpilot/ui/lane_change_feature.py"
+      ]
+    },
+    {
+      "source": "Set automatic turn initiation to On? Changes apply after the current signal and maneuver end.",
+      "refs": [
+        "openpilot/starpilot/ui/lane_change_feature.py"
+      ]
+    },
+    {
+      "source": "Set cruise requirement for automatic lane changes to Off? Changes apply after the current signal and maneuver end.",
+      "refs": [
+        "openpilot/starpilot/ui/lane_change_feature.py"
+      ]
+    },
+    {
+      "source": "Set cruise requirement for automatic lane changes to On? Changes apply after the current signal and maneuver end.",
+      "refs": [
+        "openpilot/starpilot/ui/lane_change_feature.py"
+      ]
+    },
+    {
+      "source": "Set driving mode to Automatic?",
+      "refs": [
+        "openpilot/starpilot/ui/conditional_feature.py"
+      ]
+    },
+    {
+      "source": "Set driving mode to Chill?",
+      "refs": [
+        "openpilot/starpilot/ui/conditional_feature.py"
+      ]
+    },
+    {
+      "source": "Set driving mode to Experimental?",
+      "refs": [
+        "openpilot/starpilot/ui/conditional_feature.py"
+      ]
+    },
+    {
+      "source": "Set hold to {}?",
+      "refs": [
+        "openpilot/starpilot/ui/runtime_app.py"
+      ]
+    },
+    {
+      "source": "Set lane-change assistance to On? Changes apply after the current signal and maneuver end.",
+      "refs": [
+        "openpilot/starpilot/ui/lane_change_feature.py"
+      ]
+    },
+    {
+      "source": "Set lane-change following time to {value} seconds? Changes refresh during this drive.",
+      "refs": [
+        "openpilot/starpilot/ui/lane_change_feature.py"
+      ]
+    },
+    {
+      "source": "Set minimum adjacent lane width to {value} feet? Changes apply after the current signal and maneuver end.",
+      "refs": [
+        "openpilot/starpilot/ui/lane_change_feature.py"
+      ]
+    },
+    {
+      "source": "Set minimum lane-change speed to {value}? Changes apply after the current signal and maneuver end.",
+      "refs": [
+        "openpilot/starpilot/ui/lane_change_feature.py"
+      ]
+    },
+    {
+      "source": "Set one lane change per signal to Off? Changes apply after the current signal and maneuver end.",
+      "refs": [
+        "openpilot/starpilot/ui/lane_change_feature.py"
+      ]
+    },
+    {
+      "source": "Set one lane change per signal to On? Changes apply after the current signal and maneuver end.",
+      "refs": [
+        "openpilot/starpilot/ui/lane_change_feature.py"
+      ]
+    },
+    {
+      "source": "Set remember manual choice to Off? This resets the mode's remembered choice to Automatic.",
+      "refs": [
+        "openpilot/starpilot/ui/conditional_feature.py"
+      ]
+    },
+    {
+      "source": "Set remember manual choice to On? This resets the mode's remembered choice to Automatic.",
+      "refs": [
+        "openpilot/starpilot/ui/conditional_feature.py"
+      ]
+    },
+    {
+      "source": "Set short press to {}?",
+      "refs": [
+        "openpilot/starpilot/ui/runtime_app.py"
+      ]
+    },
+    {
+      "source": "Set signal delay to {value} seconds? Changes apply after the current signal and maneuver end.",
+      "refs": [
+        "openpilot/starpilot/ui/lane_change_feature.py"
+      ]
+    },
+    {
+      "source": "Set steering pace to {value}? Changes apply after the current signal and maneuver end.",
+      "refs": [
+        "openpilot/starpilot/ui/lane_change_feature.py"
+      ]
+    },
+    {
+      "source": "Set {label} to Off?",
+      "refs": [
+        "openpilot/starpilot/ui/conditional_feature.py"
+      ]
+    },
+    {
+      "source": "Set {label} to On?",
+      "refs": [
+        "openpilot/starpilot/ui/conditional_feature.py"
+      ]
+    },
+    {
+      "source": "Set {label} to {value}?",
+      "refs": [
+        "openpilot/starpilot/galaxy/settings.py",
+        "openpilot/starpilot/ui/conditional_feature.py"
+      ]
+    },
+    {
       "source": "Test alert",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js"
+      ]
+    },
+    {
+      "source": "Turn off StarPilot speed control after the next startup? Steering stays unchanged.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Turn on StarPilot speed control after the next startup? Steering stays unchanged.",
+      "refs": [
+        "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Use default km/h speed ranges",
+      "refs": [
+        "openpilot/starpilot/ui/slc_offset_feature.py"
+      ]
+    },
+    {
+      "source": "Use default mph speed ranges",
+      "refs": [
+        "openpilot/starpilot/ui/slc_offset_feature.py"
       ]
     },
     {
