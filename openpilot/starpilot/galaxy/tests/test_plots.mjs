@@ -226,7 +226,15 @@ const context = { embedded: false, mode: 'local', status: 'current', data: paylo
   lateralChart: chart, longChart: chart, lateralTermsChart: chart, longTermsChart: chart,
   lateralQuality: { label: 'Good', detail: '8 samples' }, longQuality: { label: 'Fair', detail: '8 samples' },
   source: (source) => source, label: (number) => String(number), togglePause: () => {}, }
+context.longitudinalSourceText = PlotsPage.computed.longitudinalSourceText.call(context)
+// Each source line is one whole sentence; the source name is the only inserted value.
+assert.equal(context.longitudinalSourceText, `Target / measured · m/s² · ${context.data.values.longitudinalSource}; measured from device motion`)
+assert.match(PlotsPage.computed.longitudinalSourceText.call({ ...context, data: { values: { ...context.data.values, poseFresh: false } } }),
+  /; measured from unavailable motion source$/)
+assert.match(PlotsPage.template, /'Hide controller terms' : 'Show controller terms'/)
 const rendered = JSON.stringify(render(context, []))
+assert.match(rendered, /measured from device motion/)
+assert.match(rendered, /Show controller terms/)
 assert.match(rendered, /Lateral acceleration/)
 assert.match(rendered, /Longitudinal acceleration/)
 assert.match(rendered, /Good/)

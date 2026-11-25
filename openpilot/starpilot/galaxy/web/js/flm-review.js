@@ -15,16 +15,18 @@ export function ideaStatus(row) {
   return 'Suggested change'
 }
 
+// One translatable sentence per line; HTML shows the line breaks as spaces.
 export function ideaExplanation(row) {
   if (!isConsistentSuggestion(row)) return 'Different parts of the drive did not support the same change. Your tune was left unchanged.'
-  const source = row.earlierDrive ? 'From an earlier drive with the same setup. ' : ''
-  const next = SURFACE_NAMES.includes(row.parameter) ? ' You can review the suggested value and adjust this setting manually while parked.' :
-    ' Auto Learn will review it as more driving is recorded.'
-  if (row.reason === 'partial_drive_provisional_only')
-    return source + 'This suggestion comes from intact sections of an incomplete recording. Auto Learn will not save it automatically.' + next
-  if (row.reason === 'independent_support_for_frozen_training_profile')
-    return source + 'Separate parts of your drive support this suggestion. Auto Learn still needs to confirm the controller checks before saving it.' + next
-  return source + 'Your drive suggests this change, but Auto Learn needs more evidence before saving it automatically.' + next
+  const source = row.earlierDrive ? 'From an earlier drive with the same setup.' : ''
+  const next = SURFACE_NAMES.includes(row.parameter) ? 'You can review the suggested value and adjust this setting manually while parked.' :
+    'Auto Learn will review it as more driving is recorded.'
+  const main = row.reason === 'partial_drive_provisional_only' ?
+    'This suggestion comes from intact sections of an incomplete recording. Auto Learn will not save it automatically.' :
+    row.reason === 'independent_support_for_frozen_training_profile' ?
+      'Separate parts of your drive support this suggestion. Auto Learn still needs to confirm the controller checks before saving it.' :
+      'Your drive suggests this change, but Auto Learn needs more evidence before saving it automatically.'
+  return [source, main, next].filter(Boolean).join('\n')
 }
 
 export function coordinateStatus(row) {

@@ -37,7 +37,9 @@ export const SettingsRecoveryPage = {
       this.busy = true
       try {
         const value = await this.request("./api/settings/recovery/confirm", { intent: this.pending.intent, confirmed: true })
-        this.result = value.saved ? "Selected settings restored to defaults." : `${value.applied.length} settings restored. ${value.reason}`
+        const applied = value.applied.length
+        this.result = value.saved ? "Selected settings restored to defaults."
+          : applied === 1 ? `${applied} setting restored. ${value.reason}` : `${applied} settings restored. ${value.reason}`
         this.pending = null; this.selected = []; await this.refresh()
       } catch (error) { this.error = error.message; this.pending = null; await this.refresh() }
       finally { this.busy = false }
@@ -55,7 +57,7 @@ export const SettingsRecoveryPage = {
       <p v-if="!snapshot.rows.length" class="gx-note gx-inset">All available settings use their defaults.</p>
       <div v-for="row in snapshot.rows" :key="row.id" class="gx-row gx-row--wrap">
         <div class="gx-row__info"><label class="gx-row__label"><input type="checkbox" v-model="selected" :value="row.id" :disabled="busy || !row.resetAvailable"> {{ row.label }}</label>
-          <span class="gx-row__desc">Current: <strong>{{ row.current }}</strong> · Default: {{ row.default }}</span>
+          <span class="gx-row__desc"><span>Current:</span> <strong>{{ row.current }}</strong> <span aria-hidden="true">·</span> <span>Default:</span> <span>{{ row.default }}</span></span>
           <span v-if="!row.available" class="gx-row__desc">{{ row.reason }}</span></div>
         <button class="gx-btn gx-btn--tonal" @click="review([row.id])" :disabled="busy || !row.resetAvailable">Reset to Default</button>
       </div>

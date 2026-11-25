@@ -81,7 +81,7 @@ assert.equal(cannotReset.resetDraft,null)
 const interrupted = {...ToggleBackup.data(),resetDraft:{intent:'approved'},request:async () =>
   ({saved:false,applied:['First'],reason:'Vehicle state changed'})}
 await ToggleBackup.methods.resetDefaults.call(interrupted)
-assert.match(interrupted.error,/1 settings reset.*Vehicle state changed/)
+assert.match(interrupted.error,/1 setting reset\..*Vehicle state changed/)
 assert.equal(interrupted.notice,'')
 assert.equal(interrupted.resetDraft,null)
 

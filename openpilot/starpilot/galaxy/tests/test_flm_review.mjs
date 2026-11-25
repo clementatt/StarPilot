@@ -14,7 +14,8 @@ const route = { suggestions: [idea('highway_center_taper_max'), ...FRICTION_NAME
 const review = reviewModel(route)
 assert.match(ideaExplanation({ ...idea('turn_in_boost_right'), earlierDrive: true }), /earlier drive with the same setup/)
 assert.match(ideaExplanation({ ...idea('turn_in_boost_right'), earlierDrive: true, reason: 'partial_drive_provisional_only' }),
-  /earlier drive.*incomplete recording.*will not save it automatically/)
+  /earlier drive[\s\S]*incomplete recording[\s\S]*will not save it automatically/)
+assert.equal(ideaExplanation({ ...idea('turn_in_boost_right'), earlierDrive: true }).split('\n').length, 3, 'each sentence stays a separate translatable line')
 assert.equal(review.count, 5)
 assert.equal(review.manual.length, 1)
 assert.equal(review.curve.length, 4)

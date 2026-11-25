@@ -13,6 +13,7 @@ const missing = report(); missing.current.progress.samples = null
 assert(validTrainingResults(missing))
 assert.equal(detailText(null), "Not reported")
 assert.equal(detailText({ steering_override: 4 }), "steering override: 4")
+assert.equal(detailText({ collecting: true, rejected: false }), "Gathering driving examples: Yes · Fit did not pass validation: No", "object entries are separate translatable segments")
 assert.match(trainingSummary({ version: 1, current: null, history: [] }), /No training results/)
 const stale = report(); stale.current.fresh = false
 assert.match(trainingSummary(stale), /Saved report only/)
@@ -254,7 +255,7 @@ for (const [phase, percent, detail] of [
 scan.current.details['Parked analysis progress'] = ['reading', 6, 43]
 scan.current.details['Parked recording queue'] = [2, 4]
 assert(validTrainingResults(scan))
-assert.equal(parkedAnalysisProgress(scan).detail, 'Recording 2 of 4. 6 of 43 sections read in this recording')
+assert.equal(parkedAnalysisProgress(scan).detail, 'Recording 2 of 4.\n6 of 43 sections read in this recording')
 scan.current.details['Parked recording queue'] = [0, 4]
 assert.match(parkedAnalysisProgress(scan).detail, /^Rechecking with evidence from other drives/)
 scan.current.details['Parked recording queue'] = [8, 4]
