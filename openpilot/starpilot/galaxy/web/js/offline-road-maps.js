@@ -53,7 +53,8 @@ export function areaLabel(area) {
   const percent = progress.total ? Math.floor(progress.done / progress.total * 100) : 0
   return ({
     queued: "Queued", downloading: `Downloading · ${percent}%`, waiting_wifi: `Waiting for Wi-Fi · ${percent}%`,
-    complete: "Saved for offline", incomplete: `${progress.failed} tiles missing · retries later`, no_space: "Storage full"
+    complete: "Saved for offline", incomplete: progress.failed === 1 ? "1 tile missing · retries later" : `${progress.failed} tiles missing · retries later`,
+    no_space: "Storage full"
   })[progress.state]
 }
 
@@ -257,7 +258,7 @@ export const OfflineRoadMapsPanel = {
           <div v-if="storage" class="gx-offline-roads__stat gx-offline-roads__stat--wide"><span>Offline overlay road lines</span><strong>{{ formatBytes(storage.used) }}</strong>
             <div class="gx-offline-roads__bar" role="img" :aria-label="formatBytes(storage.used) + ' used for road maps'">
               <i v-for="[label, value, color] in storage.parts" :key="label" :style="{ width: (storage.cap ? Math.max(value ? 1.5 : 0, value / storage.cap * 100) : 0) + '%', background: color }"></i></div>
-            <small><span v-for="[label, value, color] in storage.parts" :key="label" class="gx-offline-roads__legend"><b :style="{ background: color }"></b>{{ label }} {{ formatBytes(value) }}</span></small></div>
+            <small><span v-for="[label, value, color] in storage.parts" :key="label" class="gx-offline-roads__legend"><b :style="{ background: color }"></b>{{ label }} <span>{{ formatBytes(value) }}</span></span></small></div>
         </div>
         <GalaxySettingRow :row="switchRow('Save roads as you drive', data?.settings.saveDriven, 'Downloads road lines around and ahead of your car while the map overlay is on and internet is available. Saved lines keep the overlay visible offline; older driven areas are removed when its 600 MB cache fills.')"
           :index="0" :busy="busy" :disabled="!data" :save-value="(index, value) => setSaveDriven(value === 'On')" />
@@ -285,16 +286,16 @@ export const OfflineRoadMapsPanel = {
         </div>
         <ul v-if="data?.areas.length" class="gx-offline-roads__areas" aria-label="Saved offline areas">
           <li v-for="area in data.areas" :key="area.id">
-            <div class="gx-offline-roads__area"><strong>{{ area.name }}</strong><small>{{ radiusLabel(area.radiusKm, metric) }} radius · {{ areaLabel(area) }}</small>
+            <div class="gx-offline-roads__area"><strong>{{ area.name }}</strong><small><span>{{ radiusLabel(area.radiusKm, metric) }} radius</span> · <span>{{ areaLabel(area) }}</span></small>
               <div v-if="area.progress && area.progress.state !== 'complete'" class="gx-offline-roads__bar"><i :style="{ width: (area.progress.total ? area.progress.done / area.progress.total * 100 : 0) + '%', background: '#9d72ff' }"></i></div></div>
             <div class="gx-navigation__actions">
               <button type="button" class="gx-btn gx-btn--tonal" @click="focus(area, area.radiusKm)">Show</button>
               <button v-if="confirmDelete !== area.id" type="button" class="gx-btn gx-btn--tonal" @click="confirmDelete = area.id">Delete</button>
-              <button v-else type="button" class="gx-btn" @click="remove(area)">Delete {{ area.name }}?</button>
+              <button v-else type="button" class="gx-btn" @click="remove(area)">Delete this area?</button>
             </div>
           </li>
         </ul>
-        <p v-else-if="data" class="gx-note">No offline areas yet.{{ data.settings.saveDriven ? ' Road lines are saved while the map overlay is on.' : ' Turn on Save roads as you drive to retain road lines along your drives.' }}</p>
+        <p v-else-if="data" class="gx-note">No offline areas yet. <span>{{ data.settings.saveDriven ? 'Road lines are saved while the map overlay is on.' : 'Turn on Save roads as you drive to retain road lines along your drives.' }}</span></p>
         <p v-if="data?.route" class="gx-note">Active route: {{ data.route.done }} of {{ data.route.total }} corridor tiles checked.</p>
       </template>
     </section>`,

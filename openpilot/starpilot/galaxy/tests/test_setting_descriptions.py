@@ -3,7 +3,7 @@ from dataclasses import replace
 import json
 from pathlib import Path
 
-from openpilot.starpilot.galaxy.setting_descriptions import DESCRIPTIONS, FLM_DESCRIPTIONS, INITIALIZATION, description, purpose
+from openpilot.starpilot.galaxy.setting_descriptions import DESCRIPTIONS, FLM_DESCRIPTIONS, INITIALIZATION, SEGMENT_BREAK, description, purpose
 from openpilot.starpilot.ui.feature_settings_state import FeatureRow
 from openpilot.starpilot.ui.long_profile_feature import CATEGORY_HELP, VALUE_HELP
 from openpilot.starpilot.longitudinal.profile_preferences import SCALARS
@@ -174,4 +174,17 @@ def test_alpha_longitudinal_has_one_plain_description(monkeypatch):
   expected = ('Let StarPilot control acceleration and braking instead of factory ACC. ' +
               'Takes effect next drive. May disable factory Automatic Emergency Braking.')
   assert description(row) == expected
-  assert description(replace(row, available=False, reason='Current vehicle status unavailable')) == expected + ' Current vehicle status unavailable'
+  assert description(replace(row, available=False, reason='Current vehicle status unavailable')) == expected + SEGMENT_BREAK + 'Current vehicle status unavailable'
+
+
+def test_description_sentences_are_joined_by_a_segment_break_so_each_translates_whole():
+  row = FeatureRow('StarPortAllowHevc', 'Allow H.265 video', 'Off', reason='')
+  assert description(row).split(SEGMENT_BREAK) == [purpose(row), INITIALIZATION['StarPortAllowHevc']]
+  assert SEGMENT_BREAK.strip() == '' and '\n' in SEGMENT_BREAK  # renders as one space; the translator splits on the newline
+
+
+def test_conditional_speed_requests_are_finished_sentences():
+  for section, mode, direction in (('cem', 'Experimental', 'below'), ('ccm', 'Chill', 'at or above')):
+    for field, lead in (('speed_mps', 'without a tracked lead'), ('speed_with_lead_mps', 'while following a lead')):
+      row = FeatureRow(f'conditional:{section}:{field}', 'Speed', '0')
+      assert purpose(row) == f'Requests {mode} {direction} this speed {lead}, when the remaining driving conditions qualify.'

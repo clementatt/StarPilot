@@ -598,7 +598,7 @@ export const ModelsPage = {
       const info = this.progressInfo
       if (!info) return ""
       if (info.failed) return info.name ? `Couldn’t download ${info.name}` : "Download stopped"
-      return info.title || (info.name ? `Downloading ${info.name}` : "Downloading")
+      return info.title || (info.name ? `Downloading model: ${info.name}` : "Downloading")
     },
     retryDownloadRequest() {
       if (this.busy) return null
@@ -978,7 +978,7 @@ export const ModelsPage = {
                     </GalaxySelect>
                   </div>
                 </div>
-                <p class="gx-model-reason">{{ labModelLabel(labConfig.lateralModel) }} steers · {{ labModelLabel(labConfig.longitudinalModel) }} paces</p>
+                <p class="gx-model-reason">{{ labModelLabel(labConfig.lateralModel) }} controls steering · {{ labModelLabel(labConfig.longitudinalModel) }} controls speed</p>
                 <p class="gx-model-reason">The pair takes effect the next time the driving model starts.</p>
                 <p v-if="!lab.runtimeSupported && labSelectionError !== lab.runtimeUnavailableReason" class="gx-model-reason">{{ lab.runtimeUnavailableReason || 'Pair runtime is unavailable.' }}</p>
                 <GxNotice v-if="labSelectionError" :tone="labChoiceProblem ? 'danger' : 'info'">{{ labSelectionError }}</GxNotice>
@@ -1007,7 +1007,7 @@ export const ModelsPage = {
                   <option value="ios" :disabled="!status.jetlink.supported || status.jetlink.chestnut">iPhone / iPad</option>
                 </GalaxySelect>
               </div>
-              <p class="gx-note" role="status"><span class="gx-chip">{{ status.jetlink.state }}</span><span v-if="status.jetlink.model && !status.jetlink.active"> · selected: {{ status.jetlink.model }}</span></p>
+              <p class="gx-note" role="status"><span class="gx-chip">{{ status.jetlink.state }}</span><span v-if="status.jetlink.model && !status.jetlink.active"> · selected model: {{ status.jetlink.model }}</span></p>
               <p v-if="status.jetlink.progress">{{ status.jetlink.progress }}</p>
               <p v-if="status.jetlink.reason" class="gx-model-reason">{{ status.jetlink.reason }}</p>
               <p v-if="status.jetlink.chestnut" class="gx-model-reason">Chestnut is connected. Jetlink stays off while Chestnut is fitted.</p>
@@ -1086,11 +1086,11 @@ export const ModelsPage = {
                     <div class="gx-model-item__icons gx-model-item__icons--pair">
                       <span class="gx-model-item__icon-slot">
                         <ModelDownloadProgress v-if="downloadStage(m) === 'active' && !isPairDownloading(m) && progressInfo"
-                          :label="'Downloading ' + m.label" :percent="progressInfo.percent" :gradient-id="'gx-ring-main-' + m.value" />
+                          :label="'Downloading model: ' + m.label" :percent="progressInfo.percent" :gradient-id="'gx-ring-main-' + m.value" />
                         <span v-else-if="m.installed" class="gx-pair-cloud-done" title="Model downloaded">
                           <i aria-hidden="true" class="bi bi-cloud-check-fill"></i>
                         </span>
-                        <button v-else-if="m.downloadAvailable" type="button" class="gx-icon-btn gx-pair-cloud-btn" :disabled="!actionAvailable('download', m)" :aria-label="'Download ' + m.label" :title="'Download ' + m.label + ' (' + fileSizeText(m) + ')'" @click="runAction('download', m)">
+                        <button v-else-if="m.downloadAvailable" type="button" class="gx-icon-btn gx-pair-cloud-btn" :disabled="!actionAvailable('download', m)" :aria-label="'Download model: ' + m.label" :title="'Download model: ' + m.label + ' (' + fileSizeText(m) + ')'" @click="runAction('download', m)">
                           <i aria-hidden="true" class="bi bi-cloud-arrow-down"></i>
                         </button>
                       </span>
@@ -1175,14 +1175,14 @@ export const ModelsPage = {
                 <div class="gx-model-item__date">{{ releasedText(m.released) }}</div>
                 <div class="gx-model-item__actions">
                   <div class="gx-model-item__primary">
-                    <div v-if="downloadStage(m) === 'active' && progressInfo" class="gx-model-card__progress" role="progressbar" :aria-label="'Downloading ' + m.label" aria-valuemin="0" aria-valuemax="100" :aria-valuenow="progressInfo.indeterminate ? undefined : progressInfo.percent ?? undefined">
+                    <div v-if="downloadStage(m) === 'active' && progressInfo" class="gx-model-card__progress" role="progressbar" :aria-label="'Downloading model: ' + m.label" aria-valuemin="0" aria-valuemax="100" :aria-valuenow="progressInfo.indeterminate ? undefined : progressInfo.percent ?? undefined">
                       <span class="gx-model-card__progress-fill" :class="{'gx-update-progress__fill--indeterminate': progressInfo.indeterminate}" :style="!progressInfo.indeterminate && progressInfo.percent !== null ? {width: progressInfo.percent + '%'} : {}"></span>
                       <span class="gx-model-card__progress-label">{{ cardProgressLabel }}</span>
                     </div>
                     <button v-else-if="downloadStage(m) === 'queued'" type="button" class="gx-btn gx-btn--tonal" disabled><i aria-hidden="true" class="bi bi-hourglass-split"></i> Waiting in the queue</button>
                     <button v-else-if="rowState(m) === 'active'" type="button" class="gx-btn gx-btn--tonal gx-model-item__active-btn" disabled><i aria-hidden="true" class="bi bi-check-lg"></i> {{ activeButtonLabel(m) }}</button>
                     <button v-else-if="m.installed" type="button" class="gx-btn" :disabled="!actionAvailable(m.requiresGpu ? 'select-big' : 'select-small', m)" @click="runAction(m.requiresGpu ? 'select-big' : 'select-small', m)"><i aria-hidden="true" class="bi bi-play-fill"></i> {{ m.requiresGpu ? 'Set Active Big' : 'Set Active Small' }}</button>
-                    <button v-else-if="m.downloadAvailable" type="button" class="gx-btn gx-btn--tonal" :disabled="!actionAvailable('download', m)" :aria-label="'Download ' + m.label" @click="runAction('download', m)"><i aria-hidden="true" class="bi bi-download"></i> Download · {{ fileSizeText(m) }}</button>
+                    <button v-else-if="m.downloadAvailable" type="button" class="gx-btn gx-btn--tonal" :disabled="!actionAvailable('download', m)" :aria-label="'Download model: ' + m.label" @click="runAction('download', m)"><i aria-hidden="true" class="bi bi-download"></i> Download · {{ fileSizeText(m) }}</button>
                     <button v-else type="button" class="gx-btn gx-btn--tonal" disabled>Not available yet</button>
                   </div>
                   <div class="gx-model-item__icons">

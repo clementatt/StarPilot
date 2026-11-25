@@ -4,6 +4,7 @@ import { GxState } from "./state.js"
 import { GxDialog } from "./dialog.js"
 import { GxIconButton } from "./icon-button.js"
 import { requestJson } from "./startup.js"
+import { displayLocale } from "./localization.js"
 import { GxNotice } from "./notice.js"
 import { connectionError } from "./polling.js"
 import { BluetoothDeviceList } from "./bluetooth-devices.js"
@@ -57,14 +58,14 @@ const WIRED_STATUS = `<div v-if="wired" class="gx-note">
   </div>
   <p>{{ wiredStatus.detail }}</p>
 </div>`
-const CONNECT = `<button v-if="!runtime?.running" class="gx-btn gx-starport-cta" :disabled="!!connectReason" @click="connect">{{ selected && pairsHere ? 'Connect to ' + selected.name : app ? 'Connect to ' + app : adapterSetup ? 'Connect to adapter' : 'Connect to car' }}</button>
+const CONNECT = `<button v-if="!runtime?.running" class="gx-btn gx-starport-cta" :disabled="!!connectReason" @click="connect"><template v-if="connectTarget">Connect to <span translate="no">{{ connectTarget }}</span></template><template v-else>{{ adapterSetup ? 'Connect to adapter' : 'Connect to car' }}</template></button>
   <button v-else class="gx-btn gx-btn--tonal gx-starport-cta" @click="control('stop')">Disconnect</button>`
 const CONNECTION_PROGRESS = `
   <div v-if="!showPairSteps" class="gx-starport-progress" :class="'gx-starport-progress--' + connectionProgress.tone" role="status" aria-live="polite" aria-atomic="true">
     <div class="gx-starport-progress__heading">
       <span v-if="connectionProgress.active" class="gx-spinner gx-starport-orbit" aria-hidden="true"></span>
       <i v-else :class="'bi bi-' + connectionProgress.icon" aria-hidden="true"></i>
-      <div><small>{{ connectionProgress.eyebrow }}</small><strong>{{ connectionProgress.title }}</strong></div>
+      <div><small>{{ connectionProgress.eyebrow }}</small><strong>{{ connectionProgress.title }}<template v-if="connectionProgress.name"> <span translate="no">{{ connectionProgress.name }}</span></template></strong></div>
     </div>
     <p>{{ connectionProgress.detail }}</p>
     <div v-if="connectionProgress.active" class="gx-starport-progress__track" aria-hidden="true"><span></span></div>
@@ -77,7 +78,7 @@ const APP_SETUP = `
     <strong>HeadunitPad setup (iPad)</strong>
     <ol>
       <li>Install <a class="gx-link" href="https://github.com/andyching168/HeadunitPad" target="_blank" rel="noopener noreferrer">HeadunitPad from GitHub</a> on the iPad.</li>
-      <li>Put the iPad on the same Wi-Fi as the comma, or turn on the ${HOTSPOT_LINK} and join its TheGalaxy network.</li>
+      <li>Put the iPad on the same Wi-Fi as the comma, or join the comma’s TheGalaxy network after turning on its hotspot: ${HOTSPOT_LINK}</li>
       <li>In HeadunitPad, choose Headunit Server or Auto mode, landscape, at 800x480, 1280x720 or 1920x1080.</li>
       <li>Tap Connect here, then open HeadunitPad.</li>
     </ol>
@@ -86,7 +87,7 @@ const APP_SETUP = `
     <strong>Open Headunit setup (Android tablet)</strong>
     <ol>
       <li>Install <a class="gx-link" href="https://github.com/andreknieriem/open-headunit/releases" target="_blank" rel="noopener noreferrer">Open Headunit from GitHub</a> on the tablet.</li>
-      <li>Put the tablet on the same Wi-Fi as the comma, or turn on the ${HOTSPOT_LINK} and join its TheGalaxy network.</li>
+      <li>Put the tablet on the same Wi-Fi as the comma, or join the comma’s TheGalaxy network after turning on its hotspot: ${HOTSPOT_LINK}</li>
       <li>In Open Headunit Settings, add WiFi to Connection mode. Under Wireless Connection, set Wireless Mode to Headunit Server and Server Mode to Auto.</li>
       <li>Set Resolution to 480p, 720p or 1080p and Video Codec to H.264 or Auto.</li>
       <li>Tap Connect here, then tap the WiFi button in Open Headunit.</li>
@@ -124,7 +125,7 @@ const PAIR_UI = `
             <p v-else-if="pairing?.active && pairing.approved && (!pairing.state || pairing.state === 'idle')" role="status">Approved {{ pairing.receiver?.name }}. Finishing Bluetooth pairing…</p>
             <p v-if="pairing?.state === 'pairing' && !pairing.prompt && !pairing.approved" role="status">Pairing with {{ pairing.receiver?.name || 'the selected device' }}…</p>
             <p v-if="pairing?.state === 'connecting'" role="status">Connecting to {{ pairing.receiver?.name || 'the selected device' }}…</p>
-            <p v-if="['paired', 'connected'].includes(pairing?.state)" role="status"><i class="bi bi-check-circle-fill gx-starport-ok"></i> {{ pairing.receiver?.name || 'Device' }} {{ pairing.state === 'connected' ? 'connected' : 'paired' }}.</p>
+            <p v-if="['paired', 'connected'].includes(pairing?.state)" role="status"><i class="bi bi-check-circle-fill gx-starport-ok"></i> <template v-if="pairing.receiver?.name"><span translate="no">{{ pairing.receiver.name }}</span> {{ pairing.state === 'connected' ? 'connected.' : 'paired.' }}</template><template v-else>{{ pairing.state === 'connected' ? 'Device connected.' : 'Device paired.' }}</template></p>
             <GxNotice tone="danger" v-if="pairing?.error">{{ pairing.error }}</GxNotice>
             <ul v-if="pairing?.active && !deviceChosen" class="gx-starport-list" aria-label="Nearby devices">
               <li v-if="!pairing.devices?.length && waitingForCar" class="gx-starport-row gx-note" role="status"><span class="gx-spinner" aria-hidden="true"></span>{{ pairText.nothingFound }}</li>
@@ -537,11 +538,11 @@ export function importProblem(job, fileName = "", locale = undefined) {
     case "NO_CODE": return "This file is only part of the app. Download the full Android Auto APK, or the XAPK/APKM bundle."
     case "WRONG_APP":
       return packagePreflight({ name: fileName }) ||
-        `Wrong app selected${fileName ? ` (${fileName})` : ""}. Choose Android Auto by Google LLC.`
+        (fileName ? `Wrong app selected (${fileName}). Choose Android Auto by Google LLC.` : "Wrong app selected. Choose Android Auto by Google LLC.")
     case "UNVERIFIED": return "No phone certificate issued by Google’s Automotive Link root was found. Choose another Android Auto release."
     case "EXPIRED": {
       const on = formatDate(job.expires, undefined, locale)
-      return `This Android Auto version expired${on ? ` on ${on}` : ""}. Download a newer stable release.`
+      return on ? `This Android Auto version expired on ${on}. Download a newer stable release.` : "This Android Auto version expired. Download a newer stable release."
     }
     case "NOT_YET_VALID": return "This version isn’t valid yet. Check that the comma’s date and time are correct."
     case "UNSUPPORTED_VERSION":
@@ -579,7 +580,9 @@ export function connectionProgress(runtime, { wired = false, app = "", selected 
     const titles = { wifi_info: "Getting car Wi-Fi details", joining_wifi: "Joining car Wi-Fi", connecting_bluetooth: "Connecting over Bluetooth", discovering: "Finding Android Auto", rfcomm: "Starting wireless setup", wifi_start: "Waiting for car Wi-Fi", connecting_tcp: "Opening the connection", authenticating: "Securing your connection", negotiating: "Preparing your dashboard", waiting_for_usb: "Waiting for your USB cable", usb_accessory: "Starting USB connection", waiting_for_ipad: "Open HeadunitPad on your iPad", waiting_for_tablet: "Open Open Headunit on your tablet", stopping: "Disconnecting" }
     return { ...base, active: true, tone: "active", eyebrow: "CONNECTION IN PROGRESS", title: titles[state] || runtime.label || "Connecting to your device", detail: runtime.detail || (wired ? "Keep the data cable connected and the car’s screen on." : app ? "Keep the app open and both devices on the same Wi-Fi." : "Keep your car’s screen on. We’ll move to the next step automatically.") }
   }
-  return { ...base, title: wired ? "Connect your USB cable" : app ? `Ready for ${app}` : selected ? `Ready for ${selected.name}` : "Pair your device first", detail: wired ? "Use the car’s Android Auto data port, then tap Connect below." : app ? "Complete the app setup above, then tap Connect below." : selected ? "Tap Connect to bring StarPilot to your dashboard." : "Follow the pairing steps above, then connect to your dashboard." }
+  // A device or app name follows "Ready for" as its own node, so it stays as written in every language.
+  const name = wired ? "" : app || selected?.name || ""
+  return { ...base, title: wired ? "Connect your USB cable" : name ? "Ready for" : "Pair your device first", name, detail: wired ? "Use the car’s Android Auto data port, then tap Connect below." : app ? "Complete the app setup above, then tap Connect below." : selected ? "Tap Connect to bring StarPilot to your dashboard." : "Follow the pairing steps above, then connect to your dashboard." }
 }
 
 export const StarPortPage = {
@@ -622,7 +625,7 @@ export const StarPortPage = {
   computed: {
     connectionProgress() { return connectionProgress(this.runtime, { wired: this.wired, app: this.app, selected: this.selected }) },
     canRespond() { return validPromptInput(this.pairing?.prompt, this.pairValue) },
-    expiry() { return expiryInfo(this.setup?.identity) },
+    expiry() { return expiryInfo(this.setup?.identity, displayLocale()) },
     projecting() { return this.runtime?.state === "streaming" },
     installedVersion() {
       const version = this.setup?.identity.installed && this.setup.identity.app_version
@@ -635,10 +638,15 @@ export const StarPortPage = {
     homeTitle() {
       if (this.wired) return "Wired Android Auto"
       if (this.app) return "Headunit Emulator"
-      return this.projecting ? "Connected to " + this.connectionName : this.runtime?.running ? "Connecting to " + this.connectionName : this.connectionName
+      const named = !!this.homeDevice
+      if (this.projecting) return named ? "Connected to" : "Connected to car"
+      if (this.runtime?.running) return named ? "Connecting to" : "Connecting to car"
+      return named ? "" : "car"
     },
+    // The paired device's own name, shown after the title as written.
+    homeDevice() { return this.wirelessHome ? this.selected?.name || "" : "" },
     wirelessHome() { return !this.wired && !this.app },
-    connectionName() { return this.app === "HeadunitPad" ? "iPad" : this.app ? "tablet" : this.wired ? "car" : this.selected?.name || "car" },
+    connectTarget() { return this.selected && this.pairsHere ? this.selected.name : this.app },
     // Waiting or retrying is not a connection: only a live link blocks changes, and those stop the wait first.
     linked() { return ["streaming", "suspended"].includes(this.runtime?.state) },
     waiting() { return !!this.runtime?.running && !this.linked },
@@ -708,8 +716,8 @@ export const StarPortPage = {
       if (job.state === "done" && this.setup.identity.installed) return "done"
       return job.state === "failed" ? "failed" : "choose"
     },
-    checks() { return installChecks(this.setup?.import) },
-    problem() { return importProblem(this.setup?.import, this.installFileName) },
+    checks() { return installChecks(this.setup?.import, displayLocale()) },
+    problem() { return importProblem(this.setup?.import, this.installFileName, displayLocale()) },
     hasPackage() { return !!(this.setup?.identity.installed || this.setup?.identity.expired || this.setup?.identity.error) },
     onPhone() {
       return typeof navigator !== "undefined" && (navigator.userAgentData?.mobile === true ||
@@ -953,8 +961,8 @@ export const StarPortPage = {
             <details class="gx-starport-wiki"><summary>Stuck installing? Common problems</summary>
               <ul>
                 <li><strong>The download button opens APKMirror instead:</strong> the comma couldn’t reach APKPure just now. Download the newest Android Auto release from APKMirror, or close this window and try again in a few minutes.</li>
-                <li><strong>“This is the APKMirror Installer app”:</strong> you downloaded the helper app. Go back to the Android Auto release page and use <strong>Download APK Bundle</strong> there.</li>
-                <li><strong>“Not Android Auto” or an unverified file:</strong> make sure the app is <strong>Android Auto</strong> by <strong>Google LLC</strong>, and that the variant name ends in <strong>‑release</strong> (not beta or alpha).</li>
+                <li><strong>“This is the APKMirror Installer app”:</strong> you downloaded the helper app. Go back to the Android Auto release page and use “Download APK Bundle” there.</li>
+                <li><strong>“Not Android Auto” or an unverified file:</strong> make sure the app is Android Auto by Google LLC, and that the variant name ends in “‑release” (not beta or alpha).</li>
                 <li><strong>Certificate expired:</strong> that release is too old. Download again in step 1; it always gets the newest release.</li>
                 <li><strong>The file won’t pick or was rejected:</strong> don’t unzip it. Use the .apk, .xapk or .apkm file exactly as downloaded. A .zip name from Safari is fine too.</li>
                 <li><strong>Upload is slow or stops:</strong> stay on this page and keep the comma awake and on the same Wi-Fi until it finishes.</li>
@@ -988,7 +996,7 @@ export const StarPortPage = {
       <section v-if="setup && setupDone && !showSteps && !guided.show" class="gx-card gx-step gx-starport-home" aria-labelledby="gx-starport-home-title">
         <div class="gx-step__head">
           <span class="gx-step__num" :class="{ 'gx-starport-home__icon--live': projecting }" aria-hidden="true"><i class="bi bi-car-front"></i></span>
-          <div><h3 id="gx-starport-home-title">{{ homeTitle }}</h3>
+          <div><h3 id="gx-starport-home-title">{{ homeTitle }}<template v-if="homeDevice"> <span translate="no">{{ homeDevice }}</span></template></h3>
             <p role="status">{{ runtime?.running && runtime.state !== 'streaming' ? connectionProgress.title : projecting ? 'Showing StarPilot on your car’s screen.' : wired ? wiredStatus.label : runtime?.auto_connect ? 'Connects automatically when you start driving.' : 'Ready to connect.' }}</p></div>
         </div>
         <div class="gx-step__body">
@@ -999,7 +1007,7 @@ export const StarPortPage = {
               <span class="gx-starport-row__text"><strong>1. Android Auto support</strong><small>{{ expiry.label }}</small></span>
               <span class="gx-starport-pill" :class="supportReady ? 'gx-starport-pill--ready' : ''">{{ supportReady ? 'Ready' : 'Not ready' }}</span></li>
             <li class="gx-starport-row"><i class="bi bi-bluetooth" aria-hidden="true"></i>
-              <span class="gx-starport-row__text"><strong>2. {{ adapterSetup ? 'Adapter paired' : 'Car paired' }}</strong><small>{{ selected ? selected.name : 'Not paired yet.' }}</small></span>
+              <span class="gx-starport-row__text"><strong>{{ adapterSetup ? '2. Adapter paired' : '2. Car paired' }}</strong><small>{{ selected ? selected.name : 'Not paired yet.' }}</small></span>
               <span class="gx-starport-pill" :class="selected ? 'gx-starport-pill--ready' : ''">{{ selected ? 'Paired' : 'Not paired' }}</span></li>
             <li class="gx-starport-row"><i class="bi bi-car-front" aria-hidden="true"></i>
               <span class="gx-starport-row__text"><strong>3. Connect</strong><small>{{ projecting ? 'Showing on your car’s screen.' : runtime?.running ? connectionProgress.title : 'Tap Connect below.' }}</small></span>
@@ -1084,7 +1092,8 @@ export const StarPortPage = {
               <div class="gx-cluster gx-starport-sheet__lead">
                 <div>
                   <h3 id="gx-starport-install-title">{{ setup.identity.installed ? 'Install a Newer Version' : 'Set Up StarPort' }}</h3>
-                  <p v-if="setup.identity.installed" class="gx-note"><template v-if="installedVersion">Current version: {{ installedVersion }} · </template>{{ expiry.label }}. Your paired car and settings stay as they are.</p>
+                  <p v-if="setup.identity.installed" class="gx-note"><template v-if="installedVersion">Current version: {{ installedVersion }} · </template>{{ expiry.label }}</p>
+                  <p v-if="setup.identity.installed" class="gx-note">Your paired car and settings stay as they are.</p>
                   <p v-else class="gx-note">One-time setup so your car accepts your comma.</p>
                 </div>
               </div>
@@ -1095,7 +1104,7 @@ export const StarPortPage = {
                   <span class="gx-step__num gx-step-card__num">1</span>
                   <div class="gx-step-card__title">
                     <strong>Download Android Auto</strong>
-                    <small>{{ download.direct ? 'Saves the app to this ' + (onPhone ? 'phone' : 'computer') : download.pending ? 'Looking up the newest release…' : 'Get the newest release from APKMirror' }}<template v-if="installedVersion"> · You have {{ installedVersion }}</template></small>
+                    <small>{{ download.direct ? (onPhone ? 'Saves the app to this phone' : 'Saves the app to this computer') : download.pending ? 'Looking up the newest release…' : 'Get the newest release from APKMirror' }}<template v-if="installedVersion"> · You have {{ installedVersion }}</template></small>
                   </div>
                 </div>
                 <div class="gx-step-card__body">
@@ -1109,13 +1118,13 @@ export const StarPortPage = {
                     <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Open APKMirror
                   </a>
                   <ol v-if="!download.direct && !download.pending" class="gx-note gx-starport-mirror-steps">
-                    <li>Open <strong>Android Auto</strong> on APKMirror, then open the <strong>All versions</strong> list and click through the versions to compare their release dates.</li>
-                    <li>Open the version with the <strong>newest release date</strong>.</li>
-                    <li>Scroll down to <strong>Available downloads</strong>. Under <strong>Variant</strong>, click the <strong>17.x.xxxx‑release</strong> or <strong>18.x.xxxx‑release</strong> entry.</li>
-                    <li>Click <strong>Download APK Bundle</strong> (or <strong>Download APK</strong>). You get an <strong>.apk</strong>, <strong>.xapk</strong> or <strong>.apkm</strong> file. Leave it zipped.</li>
+                    <li>Open Android Auto on APKMirror, then open the “All versions” list and click through the versions to compare their release dates.</li>
+                    <li>Open the version with the newest release date.</li>
+                    <li>Scroll down to “Available downloads”. Under “Variant”, click the 17.x.xxxx‑release or 18.x.xxxx‑release entry.</li>
+                    <li>Click “Download APK Bundle” (or “Download APK”). You get an .apk, .xapk or .apkm file. Leave it zipped.</li>
                   </ol>
                   <small v-if="!download.direct && !download.pending" class="gx-note">You don’t need the APKMirror Installer app.</small>
-                  <small v-if="download.direct" class="gx-note">From APKPure, a third-party mirror (<a class="gx-link" href="https://apkpure.com/terms.html" target="_blank" rel="noopener noreferrer">terms</a>). Don’t unzip it.</small>
+                  <small v-if="download.direct" class="gx-note">From APKPure, a third-party mirror. Don’t unzip it. <a class="gx-link" href="https://apkpure.com/terms.html" target="_blank" rel="noopener noreferrer">APKPure terms</a></small>
                 </div>
               </li>
               <li class="gx-step-card" :class="{ 'gx-starport-sheet__step--muted': installState !== 'choose' }">

@@ -7,11 +7,14 @@ import { GxNotice } from "./notice.js"
 import { GalaxySelect } from "./galaxy-select.js"
 import { GalaxySettingRow, switchRow } from "./galaxy-setting-row.js"
 import { requestJson } from "./startup.js"
+import { displayLocale } from "./localization.js"
 
 const ACTIONS = new Set(["check", "download", "select", "install", "preferences", "install-preferences", "update", "fast", "rollback", "versions", "version", "download-version"])
 const REQUEST_STATES = new Set(["pending", "complete", "failed"])
 const UPDATER_ACTIVE = new Set(["checking...", "downloading...", "finalizing update...", "updating..."])
 const PRIMARY_BRANCH_LABELS = { stable: "Stable", testing: "Testing", StarPilot: "Stable — StarPilot (legacy name)", Dom: "Testing — Dom (legacy name)" }
+// Whole button labels per primary branch, so each language keeps its own word order.
+const SWITCH_LABELS = { stable: "Switch to Stable", testing: "Switch to Testing", StarPilot: "Switch to Stable — StarPilot (legacy name)", Dom: "Switch to Testing — Dom (legacy name)" }
 const PRIMARY_BRANCH_HELP = {
   stable: "Stable releases. Recommended for most users.",
   testing: "Latest features and fixes for testing. May introduce bugs.",
@@ -614,10 +617,17 @@ export const SoftwarePage = {
         { expectedCommit: this.data.installed.commit, selectedCommit: this.selectedVersion.hash })
     },
     branchLabel(branch) { return PRIMARY_BRANCH_LABELS[branch] || branch },
+    switchLabel(branch) { return SWITCH_LABELS[branch] || `Switch to ${branch}` },
     primaryBranchHelpFor(branch) { return PRIMARY_BRANCH_HELP[branch] || "" },
     shown(value) { return value ?? "Unavailable" },
-    reported(value) { return value ? new Date(value).toLocaleString() : "Unavailable" },
+    reported(value) { return value ? new Date(value).toLocaleString(displayLocale()) : "Unavailable" },
     shortCommit(value) { return value ? value.slice(0, 8) : "Unavailable" },
+    // Whole sentences per count, so each language keeps its own plural forms.
+    collapsedLabel(count) {
+      if (count > 10) return `Load 10 of ${count} collapsed versions`
+      return count === 1 ? "Load 1 collapsed version" : `Load ${count} collapsed versions`
+    },
+    olderLabel(count) { return count === 1 ? "Load 1 more older version" : `Load ${Math.min(10, count)} more older versions` },
     requestMessage(request) {
       if (!request) return ""
       if (request.state === "failed") return request.error || "Update request failed. Refresh and try again."
@@ -658,7 +668,8 @@ export const SoftwarePage = {
       this.dialog = { action: downloaded ? "install" : "version", branch: this.draftBranch,
         selectedCommit: entry.hash, expectedCommit: this.data.installed.commit,
         title: this.selectedVersionAction, label: this.selectedVersionAction,
-        message: `${downloaded ? "Install" : "Download and install"} ${entry.subject} (${this.shortCommit(entry.hash)}) and restart the device?` }
+        message: downloaded ? `Install ${entry.subject} (${this.shortCommit(entry.hash)}) and restart the device?` :
+          `Download and install ${entry.subject} (${this.shortCommit(entry.hash)}) and restart the device?` }
     },
     askRollback() {
       const branch = this.data?.installed?.branch
@@ -713,7 +724,7 @@ export const SoftwarePage = {
       <template v-else>
         <section class="gx-card gx-panel gx-stack gx-software-card">
           <dl v-if="data" class="gx-software-summary">
-            <div><dt>Branch</dt><dd><a v-if="commitsUrl" class="gx-link" :href="commitsUrl" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i> {{ data.installed.branch }}</a><span v-else>{{ shown(data.installed.branch) }}</span></dd></div>
+            <div><dt>Branch</dt><dd><a v-if="commitsUrl" class="gx-link" :href="commitsUrl" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i> <span translate="no">{{ data.installed.branch }}</span></a><span v-else>{{ shown(data.installed.branch) }}</span></dd></div>
             <div><dt>Version</dt><dd>{{ shown(data.installed.displayVersion) }}</dd></div>
             <div><dt>Commit</dt><dd class="gx-actions">
               <a v-if="commitUrl" class="gx-link" :href="commitUrl" target="_blank" rel="noopener noreferrer" title="View commit on GitHub"><i class="bi bi-github" aria-hidden="true"></i> {{ shortCommit(data.installed.commit) }}</a>
@@ -731,7 +742,7 @@ export const SoftwarePage = {
           </div>
           <div v-if="!initialChecking && !updateProgress" class="gx-actions">
             <button type="button" class="gx-btn gx-btn--tonal" :disabled="metadataActionDisabled || !operations?.canCheck" @click="feed.action('check')">Check for updates</button>
-            <button v-if="updateAvailable || branchChanging" type="button" class="gx-btn" :disabled="actionDisabled || !canUpdate" @click="askUpdate">{{ branchChanging ? 'Switch to ' + branchLabel(draftBranch) : 'Update' }}</button>
+            <button v-if="updateAvailable || branchChanging" type="button" class="gx-btn" :disabled="actionDisabled || !canUpdate" @click="askUpdate">{{ branchChanging ? switchLabel(draftBranch) : 'Update' }}</button>
           </div>
           <div v-if="backgroundProgress" class="gx-update-progress" role="status" aria-live="polite">
             <div class="gx-update-progress__heading"><span>Background download · {{ backgroundProgress.label }}</span><span v-if="backgroundProgress.percent !== null">{{ Math.round(backgroundProgress.percent) }}%</span></div>
@@ -781,26 +792,26 @@ export const SoftwarePage = {
               <ol class="gx-version-list">
                 <template v-for="entry in visibleVersions" :key="entry.hash">
                   <li v-if="hiddenNewerCount && entry.hash === data.installed.commit" class="gx-version-gap">
-                    <button type="button" class="gx-btn gx-btn--tonal" @click="newerVersionLimit+=10">Load {{ Math.min(10, hiddenNewerCount) }}{{ hiddenNewerCount > 10 ? ' of ' + hiddenNewerCount : '' }} collapsed {{ hiddenNewerCount === 1 ? 'version' : 'versions' }}</button>
+                    <button type="button" class="gx-btn gx-btn--tonal" @click="newerVersionLimit+=10">{{ collapsedLabel(hiddenNewerCount) }}</button>
                   </li>
                   <li v-if="hiddenCollapsedOlderCount && entry.hash === listedPreviousVersion?.hash" class="gx-version-gap">
-                    <button type="button" class="gx-btn gx-btn--tonal" @click="collapsedOlderLimit+=Math.min(10, hiddenCollapsedOlderCount)">Load {{ Math.min(10, hiddenCollapsedOlderCount) }}{{ hiddenCollapsedOlderCount > 10 ? ' of ' + hiddenCollapsedOlderCount : '' }} collapsed {{ hiddenCollapsedOlderCount === 1 ? 'version' : 'versions' }}</button>
+                    <button type="button" class="gx-btn gx-btn--tonal" @click="collapsedOlderLimit+=Math.min(10, hiddenCollapsedOlderCount)">{{ collapsedLabel(hiddenCollapsedOlderCount) }}</button>
                   </li>
                   <li>
                     <label class="gx-version-row" :class="{ 'gx-version-row--installed': entry.hash === data.installed.commit, 'gx-version-row--selected': entry.hash === (version || data.installed.commit) }">
                       <input type="radio" name="software-version" :value="entry.hash" :checked="entry.hash === (version || data.installed.commit)" @change="version=entry.hash" :disabled="actionDisabled" />
                       <span class="gx-version-content">
                         <strong>{{ entry.subject.trim() || shortCommit(entry.hash) }}</strong>
-                        <small class="gx-version-meta">{{ entry.date ? reported(entry.date) + ' · ' : '' }}<a v-if="repositoryUrl" class="gx-link" :href="repositoryUrl + '/commit/' + entry.hash" target="_blank" rel="noopener noreferrer" title="View commit on GitHub" @click.stop>{{ shortCommit(entry.hash) }}</a><span v-else>{{ shortCommit(entry.hash) }}</span><span v-if="entry.hash === data.installed.commit && branchChanging"> · {{ data.installed.branch }}</span><span v-if="entry.hash === data.installed.commit" class="gx-version-badge gx-version-badge--installed">Installed</span><span v-else-if="entry.hash === previousVersion?.hash" class="gx-version-badge gx-version-badge--downloaded">Previous version</span><span v-else class="gx-version-badge" :class="{ 'gx-version-badge--downloaded': downloadedVersions.has(entry.hash) }">{{ downloadedVersions.has(entry.hash) ? 'Downloaded' : 'Not downloaded' }}</span></small>
+                        <small class="gx-version-meta">{{ entry.date ? reported(entry.date) + ' · ' : '' }}<a v-if="repositoryUrl" class="gx-link" :href="repositoryUrl + '/commit/' + entry.hash" target="_blank" rel="noopener noreferrer" title="View commit on GitHub" @click.stop>{{ shortCommit(entry.hash) }}</a><span v-else>{{ shortCommit(entry.hash) }}</span><span v-if="entry.hash === data.installed.commit && branchChanging"> · <span translate="no">{{ data.installed.branch }}</span></span><span v-if="entry.hash === data.installed.commit" class="gx-version-badge gx-version-badge--installed">Installed</span><span v-else-if="entry.hash === previousVersion?.hash" class="gx-version-badge gx-version-badge--downloaded">Previous version</span><span v-else class="gx-version-badge" :class="{ 'gx-version-badge--downloaded': downloadedVersions.has(entry.hash) }">{{ downloadedVersions.has(entry.hash) ? 'Downloaded' : 'Not downloaded' }}</span></small>
                       </span>
                     </label>
                   </li>
                 </template>
                 <li v-if="!hasInstalledVersion && hiddenNewerCount" class="gx-version-gap">
-                  <button type="button" class="gx-btn gx-btn--tonal" @click="newerVersionLimit+=10">Load {{ Math.min(10, hiddenNewerCount) }} more older {{ hiddenNewerCount === 1 ? 'version' : 'versions' }}</button>
+                  <button type="button" class="gx-btn gx-btn--tonal" @click="newerVersionLimit+=10">{{ olderLabel(hiddenNewerCount) }}</button>
                 </li>
                 <li v-if="hiddenOlderCount" class="gx-version-gap">
-                  <button type="button" class="gx-btn gx-btn--tonal" @click="olderVersionLimit+=10">Load {{ Math.min(10, hiddenOlderCount) }} more older {{ hiddenOlderCount === 1 ? 'version' : 'versions' }}</button>
+                  <button type="button" class="gx-btn gx-btn--tonal" @click="olderVersionLimit+=10">{{ olderLabel(hiddenOlderCount) }}</button>
                 </li>
               </ol>
             </div>

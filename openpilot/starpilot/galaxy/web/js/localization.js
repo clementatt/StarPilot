@@ -152,7 +152,14 @@ export function localizeDocument(root, { language, messages }, records = new Wea
   visit(root)
   root.ownerDocument.documentElement.lang = language
   setDisplayLanguage(language)
+  appliedMessages = messages
   return records
+}
+
+// Text shown outside the DOM (window.confirm) uses the catalog last applied to the page; English until one loads.
+let appliedMessages = null
+export function localize(text) {
+  return appliedMessages && typeof text === "string" ? translateText(text, appliedMessages) : text
 }
 
 export function startLocalization(root = document.body, fetcher = fetch) {

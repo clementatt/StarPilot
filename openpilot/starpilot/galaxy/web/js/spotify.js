@@ -1,6 +1,7 @@
 import { WikiHelp } from './wiki-help.js'
 import { GxDialog } from "./dialog.js"
 import { requestJson } from "./startup.js"
+import { displayLocale } from "./localization.js"
 import { GxNotice } from "./notice.js"
 import { connectionError } from "./polling.js"
 import { uploadPackage } from "./starport.js"
@@ -284,7 +285,7 @@ export const SpotifyPage = {
     "setup.preferences.deviceName": { immediate: true, handler(value) { if (typeof value === "string") this.nameValue = value } },
   },
   computed: {
-    release() { return releaseInfo(this.setup?.release) },
+    release() { return releaseInfo(this.setup?.release, displayLocale()) },
     installed() { return !!this.setup?.release.installed && !this.setup.release.expired },
     outputChosen() {
       const prefs = this.setup?.preferences
@@ -453,7 +454,7 @@ export const SpotifyPage = {
         </label>
         <p v-if="!phoneSource" class="gx-note">Spotify streams on the comma. Your phone controls playback in Spotify; the comma sends the music to the audio output you choose below.</p>
         <template v-if="phoneSource">
-          <p class="gx-note">Pair your phone in the companion app, or choose <strong>Add a device → Pair phone</strong> on the <a class="gx-link" href="#/bluetooth">Bluetooth page</a>. Then choose it below and turn on phone audio. On your phone, select the comma as the media audio output. No Spotify install or API key is needed.</p>
+          <p class="gx-note">Pair your phone in the companion app, or choose “Add a device → Pair phone” on the Bluetooth page. Then choose it below and turn on phone audio. On your phone, select the comma as the media audio output. No Spotify install or API key is needed. <a class="gx-link" href="#/bluetooth">Open Bluetooth</a></p>
           <label class="gx-stack"><span>Phone</span>
             <select class="gx-field" :value="setup.preferences.phoneAddress" :disabled="busy || !setup.parked" @change="choosePhone">
               <option value="">Choose your paired phone…</option>
@@ -483,7 +484,7 @@ export const SpotifyPage = {
             <option value="test">Silent test (no speaker)</option>
           </select></label>
         <p class="gx-note">Choose your car speakers through StarPort, or a Bluetooth car stereo or speaker paired with the comma. Only Bluetooth devices that support receiving music appear here.</p>
-        <p v-if="!outputChoices.length" class="gx-note">No paired Bluetooth audio outputs found. Pair your car stereo or speaker on the <a class="gx-link" href="#/bluetooth">Bluetooth page</a>, or use StarPort.</p>
+        <p v-if="!outputChoices.length" class="gx-note">No paired Bluetooth audio outputs found. Pair your car stereo or speaker on the Bluetooth page, or use StarPort. <a class="gx-link" href="#/bluetooth">Open Bluetooth</a></p>
         </template>
         <small v-if="phoneSource && !setup.parked" class="gx-note">Put the car in Park or use offroad mode to change the phone.</small>
       </section>
@@ -540,7 +541,7 @@ export const SpotifyPage = {
             </div>
             <p v-if="installBlocked" class="gx-note" role="status">Installing Spotify needs your local network or the Galaxy tunnel. Phone audio works over Bluetooth.</p>
             <p v-if="setup.import?.state === 'running' && !installOpen" class="gx-note" role="status">Installing…</p>
-            <p class="gx-note">Each Soloist build works for 90 days from its build date, not its install date. Before it runs out, this step shows <strong>Update</strong>; download again the same way.</p>
+            <p class="gx-note">Each Soloist build works for 90 days from its build date, not its install date. Before it runs out, this step shows “Update”; download again the same way.</p>
           </div>
         </li>
 
@@ -592,7 +593,7 @@ export const SpotifyPage = {
             <p class="gx-note">Only Bluetooth devices that support receiving music appear here. Pairing a phone or radar detector does not make it an audio output.</p>
             <small v-if="!setup.parked" class="gx-note">Put the car in Park or use offroad mode to change this.</small>
             <p v-if="setup.preferences.output === 'starport'" class="gx-note">Music plays through the car while <a class="gx-link" href="#/starport">StarPort</a> is connected, and the car shows it as Android Auto audio. If you switch the car to the radio, playback is paused when the source supports it.</p>
-            <p v-else-if="!outputChoices.length" class="gx-note">No paired Bluetooth audio outputs found. Pair your car stereo or speaker on the <a class="gx-link" href="#/bluetooth">Bluetooth</a> page first.</p>
+            <p v-else-if="!outputChoices.length" class="gx-note">No paired Bluetooth audio outputs found. Pair your car stereo or speaker on the Bluetooth page first. <a class="gx-link" href="#/bluetooth">Open Bluetooth</a></p>
             <p v-else-if="setup.preferences.output === 'bluetooth'" class="gx-note">Don’t see it? Pair it on the <a class="gx-link" href="#/bluetooth">Bluetooth</a> page. In your car, choose <strong>Bluetooth Audio</strong> as the source.</p>
           </div>
         </li>
@@ -654,7 +655,7 @@ export const SpotifyPage = {
           <p>Music plays through your car or speaker; alerts keep playing from the comma’s own speaker. Keep the music at a level where you can still hear the comma.</p>
         </details>
         <details class="gx-starport-wiki"><summary>Can I use it with Android Auto?</summary>
-          <p>Yes. Under <strong>Send audio to</strong>, choose <strong>Car speakers via StarPort (Android Auto)</strong>, and music plays through the car as Android Auto audio alongside the StarPilot screen. It needs Android Auto to be connected, so if it isn’t, music has nowhere to play.</p>
+          <p>Yes. Under “Send audio to”, choose “Car speakers via StarPort (Android Auto)”, and music plays through the car as Android Auto audio alongside the StarPilot screen. It needs Android Auto to be connected, so if it isn’t, music has nowhere to play.</p>
         </details>
         <details class="gx-starport-wiki"><summary>More help from Spotify</summary>
           <p><a class="gx-link" :href="setup?.links.help || '#'" target="_blank" rel="noopener noreferrer">Spotify’s Soloist getting-started guide</a></p>
@@ -694,7 +695,8 @@ export const SpotifyPage = {
           <div v-else class="gx-stack">
             <div class="gx-stack gx-starport-sheet__head">
               <h3 id="gx-spotify-install-title">{{ setup.release.installed ? 'Install a Newer Soloist' : 'Install Spotify Soloist' }}</h3>
-              <p class="gx-note">{{ setup.release.installed ? release.label + '. Your settings and Spotify sign-in stay as they are.' : 'Download it from Spotify, then send it to your comma.' }}</p>
+              <p class="gx-note">{{ setup.release.installed ? release.label : 'Download it from Spotify, then send it to your comma.' }}</p>
+              <p v-if="setup.release.installed" class="gx-note">Your settings and Spotify sign-in stay as they are.</p>
             </div>
             <ol class="gx-steps gx-steps--compact">
               <li class="gx-step-card" :class="{ 'gx-starport-sheet__step--muted': installState !== 'choose' }">

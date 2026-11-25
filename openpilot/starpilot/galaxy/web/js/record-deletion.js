@@ -1,4 +1,11 @@
 import { requestJson } from "./startup.js"
+import { localize } from "./localization.js"
+
+// Whole questions per record type, so each language keeps its own word order (window.confirm is not translated in the DOM).
+const DELETE_ALL_QUESTIONS = {
+  "crash reports": "Delete all crash reports and their saved artifacts? This cannot be undone.",
+  "Sentry events": "Delete all Sentry events and their saved artifacts? This cannot be undone.",
+}
 
 export const storedSize = bytes => Number.isFinite(bytes) && bytes >= 0
   ? bytes < 1024 ? `${bytes} B` : bytes < 1048576 ? `${(bytes / 1024).toFixed(1)} KB`
@@ -6,7 +13,8 @@ export const storedSize = bytes => Number.isFinite(bytes) && bytes >= 0
 
 export async function deleteRecords(feed, url, selection, { valid, accept, confirm = message => globalThis.confirm(message), subject }) {
   if (!feed.active || feed.deleting) return false
-  if (selection.all && !confirm(`Delete all ${subject} and their saved artifacts? This cannot be undone.`)) return false
+  const question = DELETE_ALL_QUESTIONS[subject] || `Delete all ${subject} and their saved artifacts? This cannot be undone.`
+  if (selection.all && !confirm(localize(question))) return false
   feed.deleting = true
   feed.poller.stop()
   const generation = ++feed.generation

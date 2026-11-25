@@ -59,6 +59,16 @@ class SpotifyClient:
     return result
 
 
+# One finished sentence per action, so each translates whole.
+PARK_REQUIRED = {
+  'install Spotify': 'Put the car in Park or use offroad mode to install Spotify',
+  'change the phone': 'Put the car in Park or use offroad mode to change the phone',
+  'change where music plays': 'Put the car in Park or use offroad mode to change where music plays',
+  'change your Spotify account': 'Put the car in Park or use offroad mode to change your Spotify account',
+  'clear the cache': 'Put the car in Park or use offroad mode to clear the cache',
+}
+
+
 class SpotifySetup:
   def __init__(self, *, parked: Callable[[], bool], session_valid: Callable[[tuple], bool],
                layout: Layout | None = None, client: SpotifyClient | None = None,
@@ -78,7 +88,7 @@ class SpotifySetup:
 
   def _require_parked(self, what: str) -> None:
     if not self.parked():
-      raise SetupRejected(f'Put the car in Park or use offroad mode to {what}')
+      raise SetupRejected(PARK_REQUIRED[what])
 
   def _service(self) -> dict | None:
     try:

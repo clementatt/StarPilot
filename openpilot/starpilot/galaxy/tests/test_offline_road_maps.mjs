@@ -31,7 +31,8 @@ assert.equal(formatBytes(3 * 1024 ** 3), "3.00 GB")
 assert.equal(areaLabel(area), "Downloading · 25%")
 assert.equal(areaLabel({ ...area, progress: null }), "Waiting for the downloader")
 assert.equal(areaLabel({ ...area, progress: { state: "complete", total: 4, done: 4, failed: 0 } }), "Saved for offline")
-assert.equal(areaLabel({ ...area, progress: { state: "incomplete", total: 4, done: 3, failed: 1 } }), "1 tiles missing · retries later")
+assert.equal(areaLabel({ ...area, progress: { state: "incomplete", total: 4, done: 3, failed: 1 } }), "1 tile missing · retries later")
+assert.equal(areaLabel({ ...area, progress: { state: "incomplete", total: 4, done: 2, failed: 2 } }), "2 tiles missing · retries later")
 
 // Imperial devices pick whole miles; areas are still saved in km within the device's limits.
 assert.equal(radiusLabel(24.14, false), "15 mi")
@@ -143,4 +144,8 @@ compile(OfflineRoadMapsPanel.template, { decodeEntities })
 compile(NavigationPage.template, { decodeEntities })
 assert.ok(NavigationPage.template.includes("<OfflineRoadMapsPanel"))
 assert.ok(NavigationPage.template.includes("<MapOperationsPanel"))
+// Radius, area status and the empty-state hint are separate text nodes, so each translates on its own.
+assert.ok(OfflineRoadMapsPanel.template.includes("<span>{{ radiusLabel(area.radiusKm, metric) }} radius</span> · <span>{{ areaLabel(area) }}</span>"))
+assert.ok(OfflineRoadMapsPanel.template.includes("No offline areas yet. <span>{{ data.settings.saveDriven ? 'Road lines"))
+assert.ok(OfflineRoadMapsPanel.template.includes(">Delete this area?</button>"))
 console.log("Offline road maps: validation, estimates, client actions, auth and templates passed")

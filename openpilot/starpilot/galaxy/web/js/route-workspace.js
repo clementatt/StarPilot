@@ -8,8 +8,12 @@ import { RecordingActions } from "./recording-actions.js"
 import { CameraViewer } from "./camera-viewer.js"
 import { ReplayViewer, replayableSegment } from "./replay.js"
 import { requestJson } from "./startup.js"
+import { displayLocale } from "./localization.js"
 import { LOCAL, VIDEOS, hasVideo, availableFiles, validRouteDetail, routeDate, cameraLabel, recordingUrl, driveVideoUrl,
   logUrl, logArchiveUrl, connectRouteUrl, formatBytes, detailMetric, segmentSummaryUrl, validSegmentSummary } from "./recording-data.js"
+
+// Whole names per camera, so each language keeps its own word order.
+const CAMERA_FOOTAGE = { fcamera: "Road camera", dcamera: "Driver camera", ecamera: "Wide camera", qcamera: "Quick camera" }
 
 export const RouteWorkspace = {
   components: { GxState, GxNotice, GxIconButton, GxDialog, GalaxySelect, RecordingActions, CameraViewer, ReplayViewer, DrivingHelp },
@@ -24,7 +28,7 @@ export const RouteWorkspace = {
     segment() { return this.route?.segments.find(segment => segment.number === this.segmentNumber) || this.route?.segments[0] || null },
     segmentIndex() { return this.route?.segments.indexOf(this.segment) ?? -1 },
     cameras() { return VIDEOS.filter(camera => this.route?.segments.some(segment => segment.files[camera])) },
-    date() { return routeDate({ ...this.summary, ...this.route, startTime: this.route?.startTime || this.summary?.startTime }) },
+    date() { return routeDate({ ...this.summary, ...this.route, startTime: this.route?.startTime || this.summary?.startTime }, displayLocale()) },
     title() { return this.route?.displayName && this.route.displayName !== this.routeId ? this.route.displayName : this.date.label },
     replayable() { return !!this.segment && replayableSegment(this.segment) },
     job() { return this.exports.job?.routeId === this.routeId && this.exports.job.owned ? this.exports.job : null },
@@ -38,6 +42,7 @@ export const RouteWorkspace = {
   beforeUnmount() { this.generation++; this.inventoryRequest?.abort(); this.deleteRequest?.abort(); this.closeDetails(); document.removeEventListener("visibilitychange", this.visibility) },
   methods: {
     cameraLabel, recordingUrl, driveVideoUrl, availableFiles, logUrl, logArchiveUrl, formatBytes, detailMetric, hasVideo,
+    footageFormat(camera) { return `${CAMERA_FOOTAGE[camera] || "Road camera"} · MP4` },
     async load() {
       this.inventoryRequest?.abort()
       const generation = ++this.generation, controller = this.inventoryRequest = new AbortController()
@@ -193,7 +198,7 @@ export const RouteWorkspace = {
   template: `<div class="gx-route-workspace">
     <header class="gx-route-workspace__header">
       <GxIconButton class="gx-route-workspace__back" label="Back to Routes" icon="bi-arrow-left" @click="$emit('back')" />
-      <div class="gx-route-workspace__identity"><h2>{{ title }}</h2><p class="gx-note"><template v-if="title !== date.label">{{ date.label }} · </template><template v-if="date.source">{{ date.source }} · </template><template v-if="route">{{ route.segments.length }} saved segments</template></p></div>
+      <div class="gx-route-workspace__identity"><h2>{{ title }}</h2><p class="gx-note"><template v-if="title !== date.label">{{ date.label }} · </template><template v-if="date.source">{{ date.source }} · </template><template v-if="route">{{ route.segments.length === 1 ? '1 saved segment' : route.segments.length + ' saved segments' }}</template></p></div>
       <RecordingActions v-if="route" :recording="route" collapsed :unauthorized="unauthorized" @changed="managed" />
     </header>
     <GxState v-if="status === 'loading'" loading>Reading saved route…</GxState>
@@ -203,7 +208,7 @@ export const RouteWorkspace = {
         <summary>Get help with this drive</summary>
         <DrivingHelp :route-id="routeId" :segment="segment?.number ?? null" :connect="connect || ''" />
       </details>
-      <GxNotice v-if="!route.inventoryComplete" tone="warn">{{ route.reason || 'Some route files could not be inspected.' }} Route downloads require a complete inventory.</GxNotice>
+      <GxNotice v-if="!route.inventoryComplete" tone="warn"><span>{{ route.reason || 'Some route files could not be inspected.' }}</span> Route downloads require a complete inventory.</GxNotice>
       <div class="gx-route-workspace__body">
       <section class="gx-card gx-route-workspace__viewer" aria-label="Route viewer">
         <div class="gx-route-workspace__toolbar">
@@ -223,7 +228,7 @@ export const RouteWorkspace = {
           <GxState v-else class="gx-route-workspace__empty">{{ exports.running ? 'Replay is rendering an export. You can watch camera footage while it finishes.' : !replayable ? 'This segment needs saved driving logs and road video for replay. Choose another segment.' : 'Replay is stopped.' }}<button v-if="!exports.running && replayable" class="gx-btn gx-btn--tonal" @click="replayMounted=true">Play replay</button></GxState>
           <div v-if="viewMode === 'replay' || cameras.length" class="gx-route-workspace__downloads">
             <div class="gx-route-workspace__download-row">
-              <div class="gx-route-workspace__download-context"><strong>{{ viewMode === 'footage' ? 'Download footage' : 'Export replay' }}</strong><span class="gx-note">{{ viewMode === 'footage' ? cameraLabel(camera) + ' camera · MP4' : 'Camera + driving UI · MP4' }}</span></div>
+              <div class="gx-route-workspace__download-context"><strong>{{ viewMode === 'footage' ? 'Download footage' : 'Export replay' }}</strong><span class="gx-note">{{ viewMode === 'footage' ? footageFormat(camera) : 'Camera + driving UI · MP4' }}</span></div>
               <div v-if="viewMode === 'footage'" class="gx-actions gx-route-workspace__download-actions">
                 <a v-if="segment.files[camera]" class="gx-btn gx-btn--tonal" :aria-label="'Download segment ' + segment.number + ' footage'" :href="recordingUrl(segment.segmentName, camera)" :download="routeId + '-' + camera + '-' + segment.number + '.mp4'"><i class="bi bi-download" aria-hidden="true"></i>Segment MP4</a>
                 <a v-if="route.footageDownloads?.[camera]" class="gx-btn gx-btn--tonal" aria-label="Download saved route footage" :href="driveVideoUrl(routeId, camera)" :download="routeId + '-' + camera + '.mp4'"><i class="bi bi-download" aria-hidden="true"></i>Route MP4</a>
@@ -235,9 +240,9 @@ export const RouteWorkspace = {
             </div>
             <template v-if="viewMode === 'replay'">
               <div v-if="job" class="gx-route-workspace__job" role="status">
-                <template v-if="exports.running"><label for="replay-export-progress">{{ job.state === 'finalizing' ? 'Preparing MP4' : 'Rendering ' + (job.segment == null ? 'route' : 'segment ' + job.segment) }} · {{ Math.round(job.progress * 100) }}%</label><progress id="replay-export-progress" :value="job.progress" max="1"></progress><button class="gx-btn gx-btn--tonal" :disabled="exports.busy" @click="exports.cancel()">Cancel export</button></template>
+                <template v-if="exports.running"><label for="replay-export-progress">{{ job.state === 'finalizing' ? 'Preparing MP4' : job.segment == null ? 'Rendering route' : 'Rendering segment ' + job.segment }} · {{ Math.round(job.progress * 100) }}%</label><progress id="replay-export-progress" :value="job.progress" max="1"></progress><button class="gx-btn gx-btn--tonal" :disabled="exports.busy" @click="exports.cancel()">Cancel export</button></template>
                 <template v-else-if="job.state === 'ready'"><a class="gx-btn" :href="exports.downloadUrl" :download="job.filename"><i class="bi bi-download" aria-hidden="true"></i>{{ job.segment == null ? 'Download replay route (.mp4)' : 'Download replay segment ' + job.segment + ' (.mp4)' }}</a><span class="gx-note">{{ formatBytes(job.bytes) }} · Available for 30 minutes, or until the next export.</span></template>
-                <span v-else>Replay export {{ job.state }}<template v-if="job.error">: {{ job.error.replaceAll('_', ' ') }}</template>. {{ job.state === 'failed' ? 'Try exporting an individual segment.' : '' }}</span>
+                <span v-else>{{ job.state === 'failed' ? 'Replay export failed.' : 'Replay export cancelled.' }}<template v-if="job.state === 'failed'"> Try exporting an individual segment.</template><template v-if="job.error"> Error details: {{ job.error.replaceAll('_', ' ') }}</template></span>
               </div>
               <GxNotice v-if="exports.error" tone="danger">{{ exports.error }}</GxNotice><p v-if="exports.running && !job" class="gx-note">Another route is being exported. Open it from Routes to check progress.</p>
             </template>

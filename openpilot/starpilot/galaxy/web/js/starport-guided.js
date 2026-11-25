@@ -122,8 +122,9 @@ export function guidedState({ setup = null, runtime = null, selected = null, rec
     const hangups = Number(runtime?.hangups) || 0
     // Only an unofficial dongle waits for a restart; for every other receiver repeated hang-ups are said, not acted on.
     const adapter = carType === "adapter"
-    const hangupNotice = wireless && !restarting && hangups >= HANGUP_NOTICE_AT ?
-      `${adapter ? "The adapter" : "The car"} has hung up ${hangups} times before answering. If this keeps happening, ${adapter ? "unplug the adapter for 10 seconds" : "turn the car off and on again"}.` : ""
+    const hangupNotice = !wireless || restarting || hangups < HANGUP_NOTICE_AT ? "" : adapter ?
+      `The adapter has hung up ${hangups} times before answering. If this keeps happening, unplug the adapter for 10 seconds.` :
+      `The car has hung up ${hangups} times before answering. If this keeps happening, turn the car off and on again.`
     return { ...base, show: true, phase: restarting ? "restart" : "connecting", title: restarting ? RESTART_TITLE : runtime?.label || "Connecting to your car",
       detail: restarting ? RESTART_DETAIL : runtime?.detail || "Keep your car’s screen on. We’ll move to the next step automatically.",
       progress: connectionStages(runtime), handshake: wireless ? handshakeSteps(ladder) : [], exhausted: !!ladder?.exhausted,
@@ -238,7 +239,8 @@ export const StarPortGuidedSetup = {
       </div>
 
       <div v-if="state.restart" class="gx-guided__callout" role="alert">
-        <span>It hung up {{ state.restart.hangups }} times before sending anything, so we stopped calling it.</span>
+        <span v-if="state.restart.hangups === 1">It hung up once before sending anything, so we stopped calling it.</span>
+        <span v-else>It hung up {{ state.restart.hangups }} times before sending anything, so we stopped calling it.</span>
         <button type="button" class="gx-btn gx-btn--tonal" :disabled="busy" @click="$emit('continue-ladder')">Continue</button>
       </div>
 

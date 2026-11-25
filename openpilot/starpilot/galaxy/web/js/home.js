@@ -307,8 +307,8 @@ export const Home = {
             <template v-else><div class="gx-home__metrics"><div><strong>{{ summary.system.cpu }}</strong><span>CPU</span></div>
               <div><strong>{{ summary.system.memory }}</strong><span>Memory</span></div></div>
               <p>12 V battery: <strong>{{ summary.system.battery }}</strong></p>
-              <p>{{ summary.system.storageLabel }}: {{ summary.system.storage }}{{ summary.system.storageFree !== null ? " · " + summary.system.storageFree + " free" : "" }}</p>
-              <p v-if="summary.system.recordingStorage">Recording drive: {{ summary.system.recordingStorage.usage }} · {{ summary.system.recordingStorage.free }} free</p><small>Sampled {{ summary.system.observed }}</small></template>
+              <p>{{ summary.system.storageLabel }}: {{ summary.system.storage }}<template v-if="summary.system.storageFree !== null"> · {{ summary.system.storageFree }} free</template></p>
+              <p v-if="summary.system.recordingStorage">Recording drive: {{ summary.system.recordingStorage.usage }}<span> · {{ summary.system.recordingStorage.free }} free</span></p><small>Sampled {{ summary.system.observed }}</small></template>
             <WeatherVitals :metric="drives.data?.isMetric === true" :mode="mode" :unauthorized="unauthorized" />
             <button type="button" class="gx-home__link" @click="go('/logs/monitor')">Open System Monitor <i class="bi bi-arrow-right"></i></button>
           </section>

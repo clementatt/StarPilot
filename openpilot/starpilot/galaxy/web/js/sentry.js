@@ -7,6 +7,7 @@ import { SentryNotifications } from "./sentry-notifications.js"
 import { SnapshotFeed } from "./snapshot-feed.js"
 import { BalancedImage } from "./white-balance.js"
 import { deleteRecords, storedSize } from "./record-deletion.js"
+import { displayLocale } from "./localization.js"
 
 // Historical motion records and independently configured notifications.
 const ID = /^[0-9a-f]{32}$/
@@ -33,7 +34,7 @@ export function validSentryEvents(value) {
 }
 
 export const systemTime = (milliseconds) => Number.isSafeInteger(milliseconds) && milliseconds > 0 && milliseconds <= 8_640_000_000_000_000
-  ? new Date(milliseconds).toLocaleString() : "Unavailable"
+  ? new Date(milliseconds).toLocaleString(displayLocale()) : "Unavailable"
 
 export class SentryEventsFeed extends SnapshotFeed {
   static endpoint = "./api/sentry/events"

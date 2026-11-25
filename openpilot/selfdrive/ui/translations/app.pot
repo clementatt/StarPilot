@@ -1510,10 +1510,6 @@ msgid "(active UI)"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
-msgid "(not beta or alpha)."
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "1. Android Auto support"
 msgstr ""
 
@@ -1922,10 +1918,6 @@ msgstr ""
 msgid "All set."
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/starport.js
-msgid "All versions"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/bluetooth.js
 msgid "Allow"
 msgstr ""
@@ -2219,10 +2211,6 @@ msgid "Assigns the action performed by"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/setting_descriptions.py
-msgid "Assigns the action performed by {}."
-msgstr ""
-
-#: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Assists automatic resume from a cruise-controlled stop when fresh lead and stopping information allow it."
 msgstr ""
 
@@ -2321,10 +2309,6 @@ msgstr ""
 
 #: openpilot/starpilot/ui/runtime_snapshot.py
 msgid "Available With the Vehicle Off"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/starport.js
-msgid "Available downloads"
 msgstr ""
 
 #: openpilot/starpilot/ui/settings_state.py
@@ -2515,10 +2499,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Bluetooth is off. Turn on StarPort to enable it when prompted, or use Bluetooth under Tools."
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/spotify.js
-msgid "Bluetooth page"
 msgstr ""
 
 #: openpilot/starpilot/ui/bluetooth_large.py
@@ -2882,10 +2862,6 @@ msgstr ""
 
 #: openpilot/starpilot/ui/wheel_feature.py
 msgid "Cancel very long press"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/map-operations.js
-msgid "Canceled"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/map-operations.js
@@ -3461,10 +3437,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/favorites.js
 msgid "Clear slot"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/starport.js
-msgid "Click"
 msgstr ""
 
 #: openpilot/starpilot/ui/onroad_customization.py
@@ -4355,6 +4327,7 @@ msgid "Device motion"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/bluetooth.js
+#: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Device paired."
 msgstr ""
 
@@ -4488,14 +4461,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Don’t see it? Pair it on the"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/starport.js
-msgid "Download APK"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/starport.js
-msgid "Download APK Bundle"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
@@ -4765,10 +4730,6 @@ msgstr ""
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "EXPIRED"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/spotify.js
-msgid "Each Soloist build works for 90 days from its build date, not its install date. Before it runs out, this step shows"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/vasm.js
@@ -5364,10 +5325,6 @@ msgstr ""
 msgid "Friction tuning paused"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/starport.js
-msgid "From APKPure, a third-party mirror ("
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/recording-data.js
 msgid "Full log"
 msgstr ""
@@ -5950,10 +5907,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/navigation-map.js
 msgid "Interactive navigation map"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/map-operations.js
-msgid "Interrupted"
 msgstr ""
 
 #: openpilot/starpilot/ui/conditional_feature.py
@@ -7374,10 +7327,6 @@ msgstr ""
 msgid "Map manager"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/map-operations.js
-msgid "Map manager unavailable"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Map opacity"
 msgstr ""
@@ -7400,10 +7349,6 @@ msgstr ""
 
 #: openpilot/starpilot/ui/maps_state.py
 msgid "Map owner unavailable"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/map-operations.js
-msgid "Map preparation failed"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/map-operations.js
@@ -7822,6 +7767,7 @@ msgid "Newest first"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
 msgid "No"
 msgstr ""
 
@@ -8256,6 +8202,7 @@ msgstr ""
 msgid "Offline preview"
 msgstr ""
 
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
 #: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
 msgid "Offline road maps"
 msgstr ""
@@ -8382,6 +8329,7 @@ msgstr ""
 msgid "Open Android Auto on your car’s screen to return to StarPilot."
 msgstr ""
 
+#: openpilot/starpilot/galaxy/web/js/spotify.js
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Open Bluetooth"
 msgstr ""
@@ -8485,10 +8433,6 @@ msgstr ""
 
 #: openpilot/starpilot/ui/pip_owner.py
 msgid "Open the live crop preview while parked to check the camera."
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/starport.js
-msgid "Open the version with the"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/cloud-provider.js
@@ -8635,7 +8579,6 @@ msgid "Pair lateral judgment from one model with longitudinal judgment from anot
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/bluetooth.js
-#: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Pair phone"
 msgstr ""
 
@@ -8685,10 +8628,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Pair your device first"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/spotify.js
-msgid "Pair your phone in the companion app, or tap"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
@@ -8834,10 +8773,6 @@ msgstr ""
 
 #: openpilot/starpilot/ui/display_owner.py
 msgid "Parked Screen Timeout"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/map-operations.js
-msgid "Parked availability was lost"
 msgstr ""
 
 #: openpilot/starpilot/ui/maps_state.py
@@ -9113,6 +9048,7 @@ msgstr ""
 msgid "Poor"
 msgstr ""
 
+#: openpilot/starpilot/galaxy/web/js/navigation.js
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Position"
 msgstr ""
@@ -9557,10 +9493,6 @@ msgid "Ready"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
-msgid "Ready for {}"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Ready to connect."
 msgstr ""
 
@@ -9928,11 +9860,6 @@ msgstr ""
 msgid "Replay disconnected. Refresh before continuing."
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/record-history.js
-#: openpilot/starpilot/galaxy/web/js/route-workspace.js
-msgid "Replay export"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/replay-export.js
 msgid "Replay export could not start. Try again."
 msgstr ""
@@ -10082,10 +10009,6 @@ msgstr ""
 msgid "Requested model"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/setting_descriptions.py
-msgid "Requests"
-msgstr ""
-
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Requests AVH ON once in Park with the engine running after the next startup."
 msgstr ""
@@ -10128,10 +10051,6 @@ msgstr ""
 
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Requests Stop/Start OFF once while stationary in Park or Neutral after the next startup."
-msgstr ""
-
-#: openpilot/starpilot/galaxy/setting_descriptions.py
-msgid "Requests {} {} this speed {}, when the remaining driving conditions qualify."
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
@@ -10539,10 +10458,6 @@ msgstr ""
 
 #: openpilot/starpilot/ui/maps_state.py
 msgid "Review the parked map operation"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/map-operations.js
-msgid "Review this operation in Galaxy"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/setting_descriptions.py
@@ -11146,10 +11061,6 @@ msgstr ""
 msgid "Saved {} · vehicle {} · range {}–{}"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/starport.js
-msgid "Saves the app to this"
-msgstr ""
-
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "Saving AOL preference…"
 msgstr ""
@@ -11185,10 +11096,6 @@ msgstr ""
 
 #: openpilot/starpilot/ui/galaxy_access.py
 msgid "Scan the code to open your Galaxy."
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/starport.js
-msgid "Scroll down to"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/toggle-search.js
@@ -13132,10 +13039,6 @@ msgstr ""
 msgid "The map overlay is now off in the"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/map-operations.js
-msgid "The map package is unavailable"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/model-laboratory.js
 msgid "The model catalog is unavailable. Refresh to retry."
 msgstr ""
@@ -13182,10 +13085,6 @@ msgstr ""
 
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "The saved preview switch will not change. If it is On,"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/map-operations.js
-msgid "The saved selection changed"
 msgstr ""
 
 #: openpilot/starpilot/ui/gm_tune_feature.py
@@ -14044,6 +13943,7 @@ msgid "Unpair"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/galaxy.js
+#: openpilot/starpilot/galaxy/web/js/remote-access.js
 msgid "Unpair from Galaxy? Remote access will stop until you pair again."
 msgstr ""
 
@@ -14572,10 +14472,6 @@ msgstr ""
 msgid "Value outside setting range"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/starport.js
-msgid "Variant"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/vehicle-controls.js
 msgid "Vehicle Controls"
 msgstr ""
@@ -14808,6 +14704,7 @@ msgid "Waiting for data"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/model-laboratory.js
+#: openpilot/starpilot/galaxy/web/js/models.js
 msgid "Waiting for device status"
 msgstr ""
 
@@ -15074,6 +14971,7 @@ msgid "Works standalone, or shares the channel of connected Wi-Fi or Android Aut
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
 msgid "Yes"
 msgstr ""
 
@@ -15460,10 +15358,6 @@ msgstr ""
 msgid "at"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/setting_descriptions.py
-msgid "at or above"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/onroad-layout.js
 msgid "at the edge"
 msgstr ""
@@ -15576,10 +15470,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/flm.js
 msgid "before ·"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/setting_descriptions.py
-msgid "below"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/models.js
@@ -15736,10 +15626,6 @@ msgstr ""
 msgid "button"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/starport.js
-msgid "by"
-msgstr ""
-
 #: openpilot/starpilot/ui/home.py
 #: openpilot/starpilot/ui/onroad.py
 #: openpilot/starpilot/ui/onroad_compact_widgets.py
@@ -15771,10 +15657,6 @@ msgstr ""
 
 #: openpilot/starpilot/ui/appearance_compact.py
 msgid "camera view"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/route-workspace.js
-msgid "camera · MP4"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/controllers.js
@@ -16953,10 +16835,6 @@ msgstr ""
 msgid "file"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/starport.js
-msgid "file. Leave it zipped."
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/route-workspace.js
 #: openpilot/starpilot/ui/home.py
 #: openpilot/starpilot/ui/navigation_icons.py
@@ -17610,10 +17488,6 @@ msgstr ""
 msgid "lined up with"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/starport.js
-msgid "list and click through the versions to compare their release dates."
-msgstr ""
-
 #: openpilot/starpilot/ui/onroad_map.py
 msgid "live"
 msgstr ""
@@ -17744,10 +17618,6 @@ msgstr ""
 
 #: openpilot/starpilot/ui/long_profile_feature.py
 msgid "low-speed follow"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/starport.js
-msgid "make sure the app is"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
@@ -17977,10 +17847,6 @@ msgstr ""
 msgid "newest first"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/starport.js
-msgid "newest release date"
-msgstr ""
-
 #: openpilot/starpilot/ui/onroad_favorites.py
 msgid "next"
 msgstr ""
@@ -18203,14 +18069,6 @@ msgstr ""
 msgid "on"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/starport.js
-msgid "on APKMirror, then open the"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/spotify.js
-msgid "on the"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 msgid "on the app’s main Settings page to stop sharing."
 msgstr ""
@@ -18301,10 +18159,6 @@ msgstr ""
 msgid "options"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/starport.js
-msgid "or"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/flm.js
 msgid "original endpoints"
 msgstr ""
@@ -18341,10 +18195,6 @@ msgstr ""
 #: openpilot/starpilot/galaxy/settings.py
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "page"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/spotify.js
-msgid "page first."
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/spotify.js
@@ -19875,10 +19725,6 @@ msgstr ""
 msgid "temporarily ignores"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/starport.js
-msgid "terms"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/controllers.js
 #: openpilot/starpilot/galaxy/web/js/sentry-notifications.js
 #: openpilot/starpilot/galaxy/web/js/spotify.js
@@ -19926,10 +19772,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/bluetooth.js
 msgid "this comma"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/setting_descriptions.py
-msgid "this speed"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/map-operations.js
@@ -20393,10 +20235,6 @@ msgstr ""
 msgid "when the adjacent lane and blind spot are clear."
 msgstr ""
 
-#: openpilot/starpilot/galaxy/setting_descriptions.py
-msgid "while following a lead"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/flm.js
 msgid "whole bundles retained."
 msgstr ""
@@ -20458,10 +20296,6 @@ msgstr ""
 msgid "within"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/setting_descriptions.py
-msgid "without a tracked lead"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-document.js
 #: openpilot/starpilot/galaxy/web/js/onroad-layout.js
 msgid "words"
@@ -20481,10 +20315,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/models.js
 msgid "yes"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/starport.js
-msgid "you downloaded the helper app. Go back to the Android Auto release page and use"
 msgstr ""
 
 #: openpilot/starpilot/ui/bluetooth_compact.py
@@ -20831,10 +20661,6 @@ msgstr ""
 msgid "Delete the videos for segment {}? Its logs stay on the device. This cannot be undone."
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
-msgid "Delete {}?"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/recording-actions.js
 msgid "Delete {}? This cannot be undone."
 msgstr ""
@@ -21085,10 +20911,6 @@ msgstr ""
 msgid "Move Spotify to {}"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
-msgid "No offline areas yet.{}"
-msgstr ""
-
 #: openpilot/starpilot/ui/wheel_feature.py
 msgid "Off adds no action to the vehicle's existing button behavior. Axis pause and AOL assignments apply after restarting. Other actions can apply this drive."
 msgstr ""
@@ -21227,10 +21049,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Remove {}?"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/route-workspace.js
-msgid "Replay export {}"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/replay.js
@@ -21396,10 +21214,6 @@ msgstr ""
 
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Steering rack geometry may be off (Ratio: {})"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js
-msgid "Step: {} {}"
 msgstr ""
 
 #: openpilot/selfdrive/selfdrived/events.py
@@ -21614,20 +21428,12 @@ msgstr ""
 msgid "{} Key values are never displayed."
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/route-workspace.js
-msgid "{} Route downloads require a complete inventory."
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "{} active"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/cloud-provider.js
 msgid "{} applies after the next reboot. No automatic reboot will occur."
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/map-operations.js
-msgid "{} available storage. {}"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
@@ -21678,10 +21484,6 @@ msgstr ""
 msgid "{} processes shown. {}"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
-msgid "{} radius · {}"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/map-operations.js
 msgid "{} regions shown · Up to {} transfer · {} new storage."
 msgstr ""
@@ -21692,14 +21494,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/route-workspace.js
 msgid "{} saved segments"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/model-laboratory.js
-msgid "{} steers · {} paces"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js
-msgid "{} to {} {}"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/route-workspace.js
@@ -21736,10 +21530,6 @@ msgstr ""
 
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "{}% used"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/starport.js
-msgid "{}. Your paired car and settings stay as they are."
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/logs.js
@@ -22047,10 +21837,6 @@ msgstr ""
 
 #: openpilot/starpilot/ui/vasm_owner.py
 msgid "Draw on a local still or an empty camera-sized canvas; image stays on this device browser"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/app.js
-msgid "Driving settings ·"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/flm.js
@@ -23679,10 +23465,6 @@ msgstr ""
 msgid "In range, signal {}%"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/home.js
-msgid "Internal storage: {label} · {free} free"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/diagnostic-tools.js
 msgid "Longitudinal: {label}"
 msgstr ""
@@ -23745,10 +23527,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Put your car in pairing mode, then pick it from the list"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/home.js
-msgid "Recording drive: {label} · {free} free"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/toggle-backup.js
@@ -25278,6 +25056,7 @@ msgstr ""
 msgid "Driving Mode"
 msgstr ""
 
+#: openpilot/starpilot/galaxy/web/js/driving.js
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Driving Modes"
 msgstr ""
@@ -25838,6 +25617,7 @@ msgstr ""
 msgid "Unassigned"
 msgstr ""
 
+#: openpilot/starpilot/galaxy/web/js/map-operations.js
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "Unavailable: {label}"
 msgstr ""
@@ -25896,4 +25676,3093 @@ msgstr ""
 
 #: openpilot/starpilot/ui/slc_offset_feature.py
 msgid "{} mph offset"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid ", current step"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid ", done"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/map-operations.js
+msgid "1 group"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
+msgid "1 tile missing · retries later"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "1 try"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
+msgid "100,000 map tiles, 10,000 routes, 5,000 traffic routes"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "12 V battery:"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "2. Adapter paired"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "2. Car paired"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/spotify_setup.py
+msgid "A Soloist install is running"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/starport_setup.py
+msgid "A StarPort package import is running"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "A data cable from the car to your comma."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "A device restart, shutdown or reset is already pending"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "AAWireless, Motorola MA1 or similar, plugged into the car."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "ACC Tune refreshes during the drive."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "APKPure terms"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "About the token and your allowance"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Access tokens ↗"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Accounts for the time between a steering request and the car’s response."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Accuracy is too low."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Adapter model"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/map-operations.js
+msgid "Add Offline Coverage?"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Add key"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Add to your favorites: {name}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Add your Android Auto package"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
+msgid "Add your Mapbox key in Setup. Offline road maps download with that key."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Add {name} to saved places"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Added on top of the Mapbox key. Unlocks Google's street & traffic map, live-traffic routes and place search."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Address, place or Google Maps link"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Adds low-speed steering help when the wheels have not reached the requested turn angle. Higher allows more extra help; lower limits it. This is an extra-assistance limit, not the car’s overall steering limit."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Adds more fading of the FF-gain adjustment when exiting a left curve within the curve-exit speed range. Higher fades it more; lower keeps more. The fade can be limited by Curvy unwind floor relief. No effect with FF gain at zero."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Adds more fading of the FF-gain adjustment when exiting a right curve within the curve-exit speed range. Higher fades it more; lower keeps more. The fade can be limited by Curvy unwind floor relief. No effect with FF gain at zero."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Adds planned steering effort while starting a left turn at very low speeds. Higher adds more help; lower adds less. Unlike Turn-in boost, this can act with FF gain at zero."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Adds planned steering effort while starting a right turn at very low speeds. Higher adds more help; lower adds less. Unlike Turn-in boost, this can act with FF gain at zero."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Adds straight-ahead softening at highway speeds. Higher softens small corrections more; lower keeps more steering response. This changes steering feel, not your target position in the lane."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Adds this distance to the following gap behind a stopped lead vehicle."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/settings.js
+msgid "Adjust alert and chime volumes. Test alert plays on your comma while offroad; Auto previews a quiet-cabin starting level. Immediate warnings keep their safety volume ramp."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/settings.js
+msgid "Adjust parked shutdown limits and supported fan cooling"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/settings.js
+msgid "Adjust supported steering parameters."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Adjusts conventional factory cruise with Resume and Set after the next startup."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/settings.py
+msgid "Advanced driving and display settings"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/settings.py
+msgid "Advanced driving and display settings."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/device_settings.py
+msgid "Allow H.265 video"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Allow precise location and leave the sharing notification on while driving."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Allows the FF-gain adjustment to fade further when exiting a left curve within the curve-exit speed range. Higher allows more fading; lower retains a higher minimum. Works with Unwind taper or Curvy unwind extra reduction; no effect with FF gain at zero."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Allows the FF-gain adjustment to fade further when exiting a right curve within the curve-exit speed range. Higher allows more fading; lower retains a higher minimum. Works with Unwind taper or Curvy unwind extra reduction; no effect with FF gain at zero."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Allows the model to anticipate a signaled intersection turn."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "An eGPU variant is published, so this model can be part of a model pair"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "An iPad or Android tablet shows the dashboard."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "An older update was ignored."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "An update arrived late."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Android Auto package downloads and uploads"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Android:"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/spotify_setup.py
+msgid "Another Soloist upload is running"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/starport_setup.py
+msgid "Another StarPort package upload is running"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Applies from the next StarPort connection."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Applies to new routes and reroutes, and recalculates your current route."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/settings.js
+msgid "Armed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Assigns the action performed by {label}."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js
+msgid "Auto at right"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Automatic Connection"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Automatic restart schedule"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/data/catalog.json
+msgid "Automatic steering tuning, measured corrections and live plots"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/driving.js
+msgid "Automatic, Chill and Experimental"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/route-workspace.js
+msgid "Back to Routes"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Background update download"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Big model"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Big model downloaded"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Big model: runs on an external GPU"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/starport_setup.py
+msgid "Bluetooth controls are unavailable in this build"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/starport_setup.py
+msgid "Bluetooth could not be enabled; StarPort was not turned on"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Both need the latest StarPilot app, a Mapbox key above, and a way to reach your comma: Bluetooth, local Wi-Fi or the remote route. If your comma can't be reached, the phone keeps the place and sends it when it next connects, within 12 hours."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Branch is not in the current updater list"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "Branch:"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Bring up your dashboard"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/app-reminder.js
+#: openpilot/starpilot/galaxy/web/js/settings.js
+msgid "Browser preferences"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Cable"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/map-operations.js
+msgid "Canada — All Canada"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/map-operations.js
+msgid "Canada — Provinces and territories"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Cancel · {} of {}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/map-operations.js
+msgid "Canceled."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Caps positive acceleration when pulling away below the Start Speed."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Caps positive acceleration. Vehicle and acceleration profile limits still apply."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "Car speakers via StarPort (Android Auto)"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Certificate valid until {}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Change how your car connects"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/device_settings.py
+msgid "Changes apply from the next StarPort connection."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/localization_settings.py
+msgid "Changes only the device TEMP gauge."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Checking the model catalog"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Chimes once when the model’s traffic-light stop prediction clears while you remain stopped."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Chimes once when the tracked vehicle ahead starts moving while you remain stopped."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "Choose an audio output…"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Choose at least one model with a Chestnut variant"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/settings.js
+msgid "Choose language, units and regional preferences"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/settings.js
+msgid "Choose preferences saved for this browser"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "Choose the soloist_release_arm64.tar.gz file you downloaded."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Choose what drives your car, pair models, and manage downloads."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Choose your adapter to continue."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Choose your adapter, put it in pairing mode, then tap Find adapter."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Choose your app to continue."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Choose your app, open it on your tablet on the same Wi-Fi, then tap Connect."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "Choose your car speakers through StarPort, or a Bluetooth car stereo or speaker paired with the comma. Only Bluetooth devices that support receiving music appear here."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Choose your sources"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Chooses BluePilot Curvature, BluePilot Angle or StarPilot Controller. Mach-E and classic Explorer default to StarPilot; other supported Fords default to BluePilot Curvature. Lane centering and offset use the global StarPilot settings. Change while parked."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Chooses an optional third place SLC gets speed limits. Its new limits are used like the others. Choose Off to stop using it."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Chooses the acceleration curve used by personalities set to Use global preset."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Chooses the braking response used by personalities set to Use global preset."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Clear Active Big (use Active Small)"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Clear Active Big model"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/device_settings.py
+msgid "Clear camera and steering calibration. The device recalibrates on the next drive."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Clears saved camera and steering calibration. The device recalibrates on the next drive."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Click “Download APK Bundle” (or “Download APK”). You get an .apk, .xapk or .apkm file. Leave it zipped."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
+msgid "Close details"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/settings.js
+msgid "Cloud services, remote access, mobile-data uploads and usage-statistics sharing"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Comma and car only"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Comma and car, phone as backup"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Community"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
+msgid "Compare Mapbox and Google"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Compensates for the delay between an acceleration request and vehicle response."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/settings.js
+msgid "Configure cloud services, remote access and data uploads."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Confirm the device restart first"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Connect to your car whenever you start driving."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Connect to your comma to set up navigation."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Connect your car in Bluetooth first, then come back and tap Connect."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/local-access.js
+msgid "Connect your phone to the Galaxy hotspot or the same network as your comma, then open an address below. No Internet or Galaxy password needed."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Connected to car"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Connecting to car"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Connecting to your car"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Connection progress"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Copy it."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Could not start Save Me"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Couldn’t download"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Couldn’t download {name}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Counted against your Mapbox allowance."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/map-operations.js
+msgid "Country, province, territory or US state"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
+msgid "Counts cover this comma only. Mapbox and Google bill everything that uses your key, including other apps."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Create a project."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Create an API key, limit it to those three APIs and leave application restrictions off; the comma's address changes on cellular. Keys are under"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Create an account."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Create the key."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Credentials ↗"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Cron: {} · Schedule timezone: {}."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Cruise uses this target when you lift off the accelerator. Holding your speed uses the highest speed you reached, up to SET."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Current sources"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Current vehicle status refresh failed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/settings.py
+#: openpilot/starpilot/galaxy/web/js/settings.js
+msgid "Data & Connections"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Day (1–31)"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Default: daily at local midnight. Uses the selected timezone, including daylight saving time. Use * for every value; ranges, commas and steps are supported. Weekday 0 or 7 is Sunday. Schedule is skipped if onroad."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/record-deletion.js
+msgid "Delete all Sentry events and their saved artifacts? This cannot be undone."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/record-deletion.js
+msgid "Delete all crash reports and their saved artifacts? This cannot be undone."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/route-cleanup.js
+msgid "Delete all saved routes and logs, including preserved routes."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Delete eGPU variant: {name}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Delete files for {name}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
+msgid "Delete this area?"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
+msgid "Details about {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/settings.py
+#: openpilot/starpilot/galaxy/web/js/settings.js
+msgid "Device & System"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Device actions"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Device connected."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Directions"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Directions: {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/settings.js
+msgid "Disarmed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Disarms Tesla Always On Lateral when you press the brake, with either harness."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/app-reminder.js
+msgid "Don't Remind Me"
+msgstr ""
+
+#: openpilot/starpilot/system/starport/head_unit_fixes.py
+msgid "Dongle Wi-Fi setup: ping like a phone"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Download Big model: {name}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Download Small model: {name}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Download all"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Download and install selected version"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Download and install {} ({}) and restart the device?"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Download model: {name}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Download model: {name} (Partial: {} / {})"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Download model: {name} ({label})"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Download model: {name} ({} · size mismatch)"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Download pair variants: {name}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/route-workspace.js
+msgid "Download segment {} footage"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Download stopped"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Download updates automatically"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Download · {} · size mismatch"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Downloaded · Ready to install"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Downloading Big model: {name}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Downloading Big model: {name}: {}%"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Downloading and installing AGNOS"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Downloading eGPU variant: {name}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Downloading eGPU variant: {name}: {}%"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Downloading model: {name}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Downloading model: {name}: {}%"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Downloading selected version…"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Downloading {}%"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
+msgid "Downloads road lines around and ahead of your car while the map overlay is on and internet is available. Saved lines keep the overlay visible offline; older driven areas are removed when its 600 MB cache fills."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/route-workspace.js
+msgid "Driver camera"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/app.js
+#: openpilot/starpilot/galaxy/web/js/driving.js
+msgid "Driving settings · aol"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/app.js
+#: openpilot/starpilot/galaxy/web/js/driving.js
+msgid "Driving settings · conditional"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/app.js
+#: openpilot/starpilot/galaxy/web/js/driving.js
+msgid "Driving settings · curve"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/app.js
+#: openpilot/starpilot/galaxy/web/js/driving.js
+msgid "Driving settings · lane"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/app.js
+#: openpilot/starpilot/galaxy/web/js/driving.js
+msgid "Driving settings · lane change"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/app.js
+#: openpilot/starpilot/galaxy/web/js/driving.js
+msgid "Driving settings · profiles"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/app.js
+#: openpilot/starpilot/galaxy/web/js/driving.js
+msgid "Driving settings · slc"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/app.js
+#: openpilot/starpilot/galaxy/web/js/driving.js
+msgid "Driving settings · torque"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/app.js
+#: openpilot/starpilot/galaxy/web/js/driving.js
+msgid "Driving settings · traffic"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "Each Soloist build works for 90 days from its build date, not its install date. Before it runs out, this step shows “Update”; download again the same way."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Eases off steering while you turn the wheel through a turn yourself."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/starport_setup.py
+msgid "Enable StarPort, then upload your Android Auto APK, XAPK, or APKM on-road or off-road."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Enable three APIs."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/route-workspace.js
+msgid "Error details: {}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/weather.js
+msgid "Estimate near last saved location"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/device_settings.py
+msgid "Experimental test for a car that only takes H.265. Sends every frame as a keyframe and logs the car's acknowledgments. H.264 cars are not affected. Applies from the next StarPort connection."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/device_settings.py
+msgid "Experimental test for a car that only takes H.265. Uses the car's 1080x1920 screen mode instead of 720x1280 when it offers one. Needs Allow H.265 video on. H.264 cars are not affected. Applies from the next StarPort connection."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/device_settings.py
+msgid "Experimental. A Mavlou dongle never sends its Wi-Fi start request to the comma. A phone pings it once a second after its version reply. Applies from the next StarPort connection."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/device_settings.py
+msgid "Experimental. For a car that shows video but never acknowledges it, so the picture freezes and reconnects every few seconds. Sends video without waiting for acknowledgments, on H.264 or H.265. Applies from the next StarPort connection."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/device_settings.py
+msgid "Experimental. For a car that stays on its own screen over USB, or shows Bluetooth connecting. Connects hands-free to the car and sends the Bluetooth pairing request before asking for the screen, as a phone does. Pair the comma in the car's Bluetooth menu first. It may take the car's hands-free link from your phone. Applies from the next StarPort connection."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/device_settings.py
+msgid "Experimental. For a wireless adapter that hands over its Wi-Fi but then refuses the connection, as if it is still starting up. Keeps trying for up to a minute instead of about 15 seconds. Applies from the next StarPort connection."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/device_settings.py
+msgid "Experimental. Only for a car that offers H.265 and no H.264 video. Cars that offer H.264 are not affected. Applies from the next StarPort connection."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/device_settings.py
+msgid "Experimental. The car ends every session 10-25 s after video starts (shutdown reason 1), wired and wireless. Applies from the next StarPort connection."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/device_settings.py
+msgid "Experimental. The car shows every frame but never acknowledges one, so the comma gives up after 2.5 s; unacked it ran 100 s. Applies from the next StarPort connection."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/route-workspace.js
+msgid "Export replay segment {}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "External"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Fades the FF-gain adjustment as a left turn straightens out. Higher fades it more; lower keeps more of it during the exit. No effect with FF gain at zero."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Fades the FF-gain adjustment as a right turn straightens out. Higher fades it more; lower keeps more of it during the exit. No effect with FF gain at zero."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Finalized update does not match selected branch"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Follows accepted limits plus offsets up to SET speed. Missing data uses the previous accepted limit."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "For model pair"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "Forward music from the selected phone. Playback and volume stay on your phone."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
+msgid "Free monthly allowance"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "From APKPure, a third-party mirror. Don’t unzip it."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/replay.js
+msgid "Fullscreen video"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/update-restart.js
+msgid "Galaxy could not verify the update after five minutes. Your device may still be updating. Check its connection and refresh to read its status before trying another update."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Galaxy lost the connection. Check whether the device is restarting before trying again."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/spotify_setup.py
+#: openpilot/starpilot/galaxy/starport_setup.py
+msgid "Galaxy session expired; sign in again"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/starport_setup.py
+msgid "Galaxy session or setup state changed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Galaxy will disconnect briefly. If an update is ready, it may install during the restart."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/app-reminder.js
+msgid "Get the Galaxy app"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Getting the updater ready…"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Go back to the standard handshake. Your Bluetooth pairing is kept."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Google Maps Platform API key"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Google Maps or Apple Maps → Share → StarPilot. The route starts on your comma."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Google Maps → Share → StarPilot. The route starts on your comma."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Google asks for a card and puts a temporary $50 hold on it, like a gas station does. It is not a charge and it drops off on its own. StarPilot blocks Google at 99% of the free usage, so you won't be charged. Turn it on in"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Google choices need both keys. Each one falls back to Mapbox if it can't work."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Google couldn't search just now, so these places are from Mapbox."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Google isn't used until the Mapbox key above is added too."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Google key"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
+msgid "Google key with billing on"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Google use"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Google's street map with traffic colors."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Guided StarPort setup"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/device_settings.py
+msgid "H.265 at 1080x1920"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Handshake options"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Hides the alert shown when the driving personality changes on the comma and Android Auto."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Hour (0–23)"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "How the Google limits work"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "How to share a place from your phone"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "How to share phone GPS from the StarPilot app"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "How your car connects"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Ignores very small steering tracking errors at crawling speeds. Higher tolerates a larger error before correcting; lower reacts to smaller errors. This can reduce constant tiny corrections, but too much allows more tracking error. Blends with the neighboring speed settings."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Ignores very small steering tracking errors at higher speeds. Higher tolerates a larger error before correcting; lower reacts to smaller errors. This can reduce constant tiny corrections, but too much allows more tracking error. Blends with the neighboring speed settings."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Ignores very small steering tracking errors at highway speeds. Higher tolerates a larger error before correcting; lower reacts to smaller errors. This can reduce constant tiny corrections, but too much allows more tracking error. Blends with the neighboring speed settings."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Ignores very small steering tracking errors at low speeds. Higher tolerates a larger error before correcting; lower reacts to smaller errors. This can reduce constant tiny corrections, but too much allows more tracking error. Blends with the neighboring speed settings."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Ignores very small steering tracking errors at medium speeds. Higher tolerates a larger error before correcting; lower reacts to smaller errors. This can reduce constant tiny corrections, but too much allows more tracking error. Blends with the neighboring speed settings."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "In iPhone Settings, set location access to Always and turn on Precise Location."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/starport_setup.py
+msgid "In offroad mode or Park, pair the car over Bluetooth. The car then gives the comma its Wi-Fi access point."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Include {name} in Randomizer"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Install preferences are unreadable. Save the schedule to repair them."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Install selected version"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/starport_setup.py
+msgid "Install the StarPort display and encoder before enabling"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Install updates automatically"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Install {} ({}) and restart the device?"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Installed checkout changed while preparing the update; retry when it finishes"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Installed checkout or update target is unavailable"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Installed revision changed before version request; refresh and try again"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Installed version"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "Installed:"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Installing model"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "Internal storage: {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/map-operations.js
+msgid "Interrupted."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/spotify_setup.py
+msgid "Invalid Soloist download size"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/spotify_setup.py
+msgid "Invalid Spotify action"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/spotify_setup.py
+msgid "Invalid Spotify control"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/spotify_setup.py
+msgid "Invalid Spotify setting"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/spotify_setup.py
+msgid "Invalid Spotify settings"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/starport_setup.py
+msgid "Invalid StarPort package size"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Invalid branch"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Invalid install preferences"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Invalid selected version"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Invalid software action"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Invalid software preferences"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Invalid updater command"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "It hung up once before sending anything, so we stopped calling it."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "It hung up {} times before sending anything, so we stopped calling it."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "It stopped at {}%."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Join the car’s Wi-Fi"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Joins the car's Wi-Fi on a second interface so the comma stays on its home Wi-Fi or phone hotspot."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Keep your Mapbox key; Google works alongside it. Paste the Google key below while parked, press Save key, then Test key. It checks all three APIs."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Keeps trying for up to a minute when a wireless adapter hands over its Wi-Fi but refuses the connection."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Key saved"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/device_settings.py
+msgid "Keyframe-only video test"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/data/catalog.json
+msgid "Keys, map and route sources, and GPS"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Laboratory output unavailable"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
+msgid "Lane arrows on the turn card"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Largest first"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Latest features and fixes for testing. May introduce bugs."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Let StarPilot control acceleration and braking instead of factory ACC. Takes effect next drive. May disable factory Automatic Emergency Braking."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Lets a car that offers only H.265 video receive H.265; a car with an H.264 mode keeps H.264."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Lets the car coast above set speed on descents within the configured allowance."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Limits nudgeless lane changes to when factory cruise or openpilot speed control is engaged. With cruise off, use a wheel nudge. If cruise engages after signaling, release and reapply the signal. Off also allows automatic changes during lateral-only driving; lane and blindspot checks still apply."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Load {} collapsed version"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Load {} collapsed versions"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Load {} more older version"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Load {} more older versions"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Load {} of {} collapsed versions"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/record-history.js
+msgid "Local recordings and replay"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Lower starts later; higher starts earlier. Save while parked. Applies next drive."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Makes friction compensation respond sooner to small tracking errors when entering a left curve. Higher makes that response sharper; lower makes it more gradual. Changes the response ramp, not maximum friction compensation. Torque controllers only; no PID friction effect."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Makes friction compensation respond sooner to small tracking errors when entering a right curve. Higher makes that response sharper; lower makes it more gradual. Changes the response ramp, not maximum friction compensation. Torque controllers only; no PID friction effect."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/settings.js
+msgid "Manage Android Auto connection options"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-map.js
+msgid "Map data © Google"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-map.js
+msgid "Map data ©{}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/map-operations.js
+msgid "Map extent"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/map-operations.js
+msgid "Map manager unavailable."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Map picture"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/map-operations.js
+msgid "Map preparation failed."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Map preview"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Map tiles this month"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Map tiles today"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Map: {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
+msgid "Mapbox compared with Google"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Mapbox key"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
+msgid "Mapbox map. Tap or press Enter to center a new offline area; drag or use arrow keys to pan."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
+msgid "Mapbox only"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
+msgid "Mapbox preview"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
+msgid "Mapbox token"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Matches acceleration and deceleration profiles to the vehicle’s Eco, Normal or Sport drive mode."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Matches the acceleration profile to the vehicle’s drive mode."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Matches the deceleration profile to the vehicle’s drive mode."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Measures curvature from the steering pinion angle instead of the yaw-rate sensor, in control and Panda safety. For Fords with a faulty yaw sensor."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Metadata check did not report completion. Retry the check."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Metadata check was interrupted when the updater restarted. Retry the check."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Minute (0–59)"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Mixes predicted curvature into gentle curves: 0 follows the plan, 1 follows the prediction."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Mixes predicted curvature into sharp curves: 0 follows the plan, 1 follows the prediction."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Model downloaded"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Model pair"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Models are unavailable in the offline preview."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/data/catalog.json
+msgid "Models, downloads, Jetlink, and Model Laboratory"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Month (1–12)"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
+msgid "More info about {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "Move to {} While Driving"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Name A–Z"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
+msgid "Needs"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Needs GPU or Jetlink"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Needs a key"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Needs internet and the Mapbox key. Google tiles can't be saved offline."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Needs key"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Needs the Mapbox key too. No lane arrows. Falls back to Mapbox when its limits run out."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/data/catalog.json
+msgid "Networks"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Never uses the phone. Choose this if you don't share phone GPS."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "No changes selected"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "No fix"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "No models match these filters."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "No new download was reported for this branch"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "No paired Bluetooth audio outputs found. Pair your car stereo or speaker on the Bluetooth page first."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "No paired Bluetooth audio outputs found. Pair your car stereo or speaker on the Bluetooth page, or use StarPort."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/weather.js
+msgid "No saved location"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
+msgid "No, Google tiles can't be saved"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "None selected"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/app-reminder.js
+msgid "Not Now"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Not available yet"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Now: {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Off adopts new limits automatically. Both, Higher only, and Lower only prompt relative to the last accepted limit. + accepts and − declines within 30 seconds."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Offers higher mapped limits early using road distance and current speed. Existing adoption and confirmation settings still apply."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Offers lower mapped limits early using road distance and current speed. Existing adoption and confirmation settings still apply."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
+msgid "Offline Map Management"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
+msgid "Offline area map preview"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/map-operations.js
+msgid "Offline speed-limit and curve data. Download another region to add coverage. Previously downloaded regions stay available."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "On the comma"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "On the main Settings page, turn on Share Phone Location."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "On-device"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "Only Bluetooth devices that support receiving music appear here. Pairing a phone or radar detector does not make it an audio output."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Open Android Auto on APKMirror, then open the “All versions” list and click through the versions to compare their release dates."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Open Connections → Phone GPS and turn on Share phone GPS with comma."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/record-history.js
+msgid "Open route {}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Open the StarPilot app and connect to your comma."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Open the version with the newest release date."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Open your car’s phone pairing screen, then tap Find car below."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Open your tokens."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Open {} in Google Cloud"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Optional"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Our wiki (click book icon at the top right corner) has detailed help for pairing, connection status, other phones, wireless adapters, and screen problems."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/weather.js
+msgid "Outside temperature:"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Over USB, connects hands-free to the car and sends the Bluetooth pairing request before asking for the screen, as a phone does."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Pair lateral judgment from one model with longitudinal judgment from another."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/spotify_setup.py
+msgid "Pair that speaker or car on the Bluetooth page first"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "Pair your phone in the companion app, or tap “Pair phone” on the Bluetooth page. Then choose it below and turn on phone audio. On your phone, select the comma as the media audio output. No Spotify install or API key is needed."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/spotify_setup.py
+msgid "Pair your phone on the Bluetooth page first"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Pairable"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Paired and offers Android Auto"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Paired cars that offer Android Auto"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Pairing increases inference time. Two Big models cannot run together at the required speed. Choose a Small model for one role. Other combinations can also cause model lag warnings. When available, the comma GPU runs one Small role while Chestnut runs the other role."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/device_settings.py
+msgid "Park the vehicle and wait for any pending reset to finish."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Park the vehicle before restarting"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Park the vehicle before running Save Me"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Park the vehicle to change install preferences"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Park the vehicle to change update preferences"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/map-operations.js
+msgid "Parked availability was lost."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Past 20 reroutes in an hour, or when traffic routes run out, routes ignore traffic. Past both limits the comma uses Mapbox until they reset. Google routes have no lane arrows. Place search uses Google when Google gives directions, and Mapbox if Google can't answer."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Paste a Google Maps link"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Paste a place link into search, short links included."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Paste and save."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Paste and test."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Paste the token below while parked, then press Save key."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "Phone Audio"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Phone GPS: {label} · {}s ago"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Phone first"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Pick a destination, save maps for offline use, and choose where maps, directions and position come from."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
+msgid "Place search and addresses"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Place searches this month"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Places found with Google."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Places: {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js
+msgid "Playing on your comma…"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js
+msgid "Playing…"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/index.html
+msgid "Plotting the stars..."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Plug the car’s Android Auto USB data port into the comma, then tap Connect."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Position: {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/settings.py
+#: openpilot/starpilot/galaxy/web/js/settings.js
+msgid "Power & Cooling"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/data/catalog.json
+msgid "Preferred Wi-Fi, cellular data and the Galaxy hotspot"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Prepare updates while parked; restart when ready."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Press + to raise SET past the adjusted limit and use your new SET speed."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Press Enable on each one: Map Tiles API for the map, Routes API for routes and Places API (New) for place search."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/spotify_setup.py
+msgid "Put the car in Park or use offroad mode to change the phone"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/spotify_setup.py
+msgid "Put the car in Park or use offroad mode to change where music plays"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/spotify_setup.py
+msgid "Put the car in Park or use offroad mode to change your Spotify account"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/spotify_setup.py
+msgid "Put the car in Park or use offroad mode to clear the cache"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/spotify_setup.py
+msgid "Put the car in Park or use offroad mode to install Spotify"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Put the iPad on the same Wi-Fi as the comma, or join the comma’s TheGalaxy network after turning on its hotspot:"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Put the tablet on the same Wi-Fi as the comma, or join the comma’s TheGalaxy network after turning on its hotspot:"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/route-workspace.js
+msgid "Quick"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/route-workspace.js
+msgid "Quick camera"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Reach the car over Bluetooth"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Reaches your comma over Bluetooth or local Wi-Fi, never the remote tunnel."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Ready for"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Reboot is pending"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Receiving updates"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/settings.js
+msgid "Reconnecting to the motion monitor…"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "Recorded model distance. Hover, tap or focus a segment for details."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "Recorded portion included in totals"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "Recorded portion only"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "Recording drive: {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Release notes"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Release notes are not available for this version."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Remove from your favorites: {name}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/settings.py
+msgid "Remove the thirty manual overrides for this vehicle? Saved Auto Learn history is kept."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Remove {name} from recent places"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Remove {name} from saved places"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/route-workspace.js
+msgid "Rendering route"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/route-workspace.js
+msgid "Rendering segment {}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/record-history.js
+msgid "Replay export cancelled"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/route-workspace.js
+msgid "Replay export cancelled."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/record-history.js
+msgid "Replay export failed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/route-workspace.js
+msgid "Replay export failed."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Request timed out; the updater may still be running"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Requests Chill at or above this speed while following a lead, when the remaining driving conditions qualify."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Requests Chill at or above this speed without a tracked lead, when the remaining driving conditions qualify."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Requests Experimental below this speed while following a lead, when the remaining driving conditions qualify."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Requests Experimental below this speed without a tracked lead, when the remaining driving conditions qualify."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Required, with or without Google. Finds places, saves offline roads, plans routes and backs up Google."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Requires the next vehicle startup to configure the Tesla brake/disarm safety permission."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Requires the next vehicle startup to configure the pinion measurement in Panda safety."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/settings.py
+msgid "Reset camera and steering calibration? Automatic steering learning will be invalidated and the device will recalibrate on the next drive."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Reset handshake"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Restart device"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Restart device?"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Restart is unavailable on this device"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Restart on the configured schedule, only while offroad."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Restart requested. Galaxy will reconnect when the device is back online."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Restores automatic actuator delay for this vehicle without changing other steering settings."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/map-operations.js
+msgid "Review this operation in Galaxy."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/route-workspace.js
+msgid "Road camera"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
+msgid "Road lines"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Road lines, drawn from saved or live Mapbox data."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Round {} of {}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/replay.js
+msgid "Route replay and video"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Routes that follow live traffic, and place search by Google."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Routes this month"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Running now: {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "Runs Spotify on your comma. Turn off to stop playing; your setup stays saved."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Save Me is already pending"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Save Me is unavailable on this device"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Save restart schedule"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
+msgid "Save roads as you drive"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/vehicle_selection.py
+msgid "Save {label} for the next start?"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Save {name} as Home, Work, or Other"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/app-reminder.js
+msgid "Saved for this browser."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Saved place: {name}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
+msgid "Saves Mapbox road lines on your comma so the map overlay keeps drawing roads with no cell signal. Google Maps tiles require internet and can't be saved offline, so these road lines always back them up. Downloads happen on Wi-Fi."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Saves the app to this computer"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Saves the app to this phone"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Scales steering during a lane change in angle mode. Values over 1.0 strengthen it."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Scales steering during a lane change. Values under 1.0 soften it."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Scales the high-speed steering response in angle mode. 1.0 is the default feel."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Scales the low-speed steering response in angle mode. 1.0 is the default feel."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Schedule timezone"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Scroll down to “Available downloads”. Under “Variant”, click the 17.x.xxxx‑release or 18.x.xxxx‑release entry."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Search here"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Search models…"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Secure the connection"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/replay.js
+msgid "Seeks move to the nearest recorded position."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Select previous version"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Selected updater target changed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Selected version changed; refresh before installing"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Selected version or installed revision changed; refresh and try again"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Selected version was not prepared; refresh and try again"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Selections apply next onroad cycle. Park before downloading models or changing Jetlink."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "Send audio to"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "Send music from the comma to your car speakers through StarPort (Android Auto), or to a Bluetooth car stereo or speaker. Alerts keep playing from the comma itself."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Sends every H.265 frame as a keyframe and logs the car's acknowledgments, to diagnose H.265-only cars."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Sends video without waiting for the car's acknowledgments, on H.264 or H.265, for cars that show video but never acknowledge it."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Session expired"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Session or parked state changed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js
+msgid "Set Auto"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js
+msgid "Set Both"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js
+msgid "Set Off"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js
+msgid "Set On"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js
+msgid "Set Recommended"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js
+msgid "Set Standard"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js
+msgid "Set Stock"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
+msgid "Set by Mapbox; counted for this comma"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Set up your car"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Sets how far above set speed downhill coasting can go."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Sets how quickly the shared stopping ramp adds braking."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Sets the braking target for the shared stopping ramp."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Sets the extra planned steering effort in left curves, before tracking-error corrections. Higher adds more effort; lower adds less. Negative values reduce the baseline effort. This is the FF gain used by the entry-boost and unwind settings."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Sets the extra planned steering effort in right curves, before tracking-error corrections. Higher adds more effort; lower adds less. Negative values reduce the baseline effort. This is the FF gain used by the entry-boost and unwind settings."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Sets the low-speed threshold for the planner's ordinary stop detection."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Sets the lower end of the curve-entry softening speed range. Higher starts the effect at faster speeds; lower extends it to slower speeds. This changes where Turn-in trim applies, not cruise speed."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Sets the lower end of the curve-exit smoothing speed range. Higher starts the effect at faster speeds; lower extends it to slower speeds. This changes where steering smoothing applies, not cruise speed."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Sets the speed below which the Start Acceleration cap applies."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Sets the upper end of the curve-entry softening speed range. Higher extends the effect to faster speeds; lower ends it at slower speeds. This changes where Turn-in trim applies, not cruise speed."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Sets the upper end of the curve-exit smoothing speed range. Higher extends the effect to faster speeds; lower ends it at slower speeds. This changes where steering smoothing applies, not cruise speed."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Setup progress"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Setup your google key"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Setup your mapbox key"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Shapes small steering corrections at crawling speeds. Higher makes compensation build more gradually; lower makes it respond sooner. Auto Learn can refine an accepted finding."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Shapes small steering corrections at higher speeds. Higher makes compensation build more gradually; lower makes it respond sooner. Auto Learn can refine an accepted finding."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Shapes small steering corrections at highway speeds. Higher makes compensation build more gradually; lower makes it respond sooner. Auto Learn can refine an accepted finding."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Shapes small steering corrections at low speeds. Higher makes compensation build more gradually; lower makes it respond sooner. Auto Learn can refine an accepted finding."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Shapes small steering corrections at medium speeds. Higher makes compensation build more gradually; lower makes it respond sooner. Auto Learn can refine an accepted finding."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Share from Android"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Share from iPhone"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Shows a movable amber telltale while the Ford rear fog light is on, using read-only vehicle status."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Shows experimental fixes for specific cars and dongles, each with its own switch. Off is the standard connection."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/device_settings.py
+msgid "Shows experimental fixes for specific cars and dongles, each with its own switch. Turn off to use the standard connection for every car. Applies from the next StarPort connection."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Shows the next maneuver on the comma screen without changing the StarPort layout."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Sign in and create a project in"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Sign up free, or sign in if you already have an account, at"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Single model"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Single-model only"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Small model: runs on the comma itself"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Small/Big selections are saved as fallback choices. Turn off Laboratory to use them normally at the next start."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Softens friction compensation while straightening out of a left curve, mainly at higher speeds. Higher builds compensation more gradually; lower responds more sharply. Changes the response ramp, not maximum friction compensation. Torque controllers only; no PID friction effect."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Softens friction compensation while straightening out of a right curve, mainly at higher speeds. Higher builds compensation more gradually; lower responds more sharply. Changes the response ramp, not maximum friction compensation. Torque controllers only; no PID friction effect."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Softens planned steering near straight ahead. Higher reduces small steering corrections more; lower keeps a firmer response. This can calm weaving, but too much can make centering less precise."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Softens planned steering while entering a left curve within the Turn-in trim speed range. Higher softens the entry more; lower keeps more steering effort. Too much can make turn-in feel weak."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Softens planned steering while entering a right curve within the Turn-in trim speed range. Higher softens the entry more; lower keeps more steering effort. Too much can make turn-in feel weak."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/spotify_setup.py
+msgid "Soloist upload ended early"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/spotify_setup.py
+msgid "Spotify did not respond"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/spotify_setup.py
+msgid "Spotify is still stopping; try again in a moment"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/spotify_setup.py
+msgid "Spotify isn’t responding"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/spotify_setup.py
+msgid "Spotify isn’t running"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "Spotify streams on the comma. Your phone controls playback in Spotify; the comma sends the music to the audio output you choose below."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Stable"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Stable — StarPilot (legacy name)"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "StarPilot’s FLM tuning will attempt to automatically correct torque profiles as you drive. On allows automatic learning; Off disables it. Manual FLM overrides lock only the settings you change."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/starport_setup.py
+msgid "StarPort controls are unavailable in this build"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/starport_setup.py
+msgid "StarPort package exceeds declared size"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/starport_setup.py
+msgid "StarPort package upload ended early"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/starport_setup.py
+msgid "StarPort requires Bluetooth. Enable Bluetooth and turn on StarPort, or cancel."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Start a trip from Galaxy or share a place straight from your phone."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Start navigation to {name}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Start over with the standard handshake"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/starport_setup.py
+msgid "Start wireless projection after the car is selected, or turn on Wired USB Connection and plug the car data USB port into the comma."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Starts software cruise SET at the SLC limit plus offset. A limit accepted this session remains available during data gaps. Previous-drive history does not initialize SET. RES restores the previous SET. Redneck Cruise lowers the new SET only when a current limit is available."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/device_settings.py
+msgid "Stay on Wi-Fi"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js
+msgid "Step: {}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
+msgid "Street map with traffic colors"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Strengthens the FF-gain adjustment while entering a left curve, mainly at lower speeds. Higher strengthens that adjustment; lower weakens it. A positive FF gain adds effort; a negative gain reduces it. No effect with FF gain at zero."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Strengthens the FF-gain adjustment while entering a right curve, mainly at lower speeds. Higher strengthens that adjustment; lower weakens it. A positive FF gain adds effort; a negative gain reduces it. No effect with FF gain at zero."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Suggestions from Google"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Suggestions from Mapbox, Google unavailable"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Switch & restart"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Switch software branch"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Switch the device Offroad and confirm the vehicle is parked before updating"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Switch to Stable"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Switch to Stable — StarPilot (legacy name)"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Switch to Testing"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Switch to Testing — Dom (legacy name)"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Switch to {}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Switching phones:"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/localization_settings.py
+msgid "TEMP Gauge Units"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Tablet app"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-map.js
+msgid "Terms"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Test key"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js
+msgid "Test {label} on your comma"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Testing"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Testing — Dom (legacy name)"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "That isn’t the Soloist download. Choose soloist_release_arm64.tar.gz."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "That’s the download for a different computer. Choose ARMv8/AArch64 Linux (soloist_release_arm64.tar.gz)."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "The Default public token is the one you need. It starts with pk. Find it under"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "The adapter has hung up {} times before answering. If this keeps happening, unplug the adapter for 10 seconds."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "The car has hung up {} times before answering. If this keeps happening, turn the car off and on again."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/starport_setup.py
+msgid "The comma acts as the Android Auto phone; the car is the receiver."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
+msgid "The comma stops at 99% and uses Mapbox until it resets"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "The comma stops at 99% of Google's free allowance: 100,000 map tiles a month (15,000 a day), 10,000 routes, 5,000 traffic routes, 5,000 place searches (shared places included) and 10,000 typing suggestions. Every route and reroute uses live traffic, and one more request every 7½ minutes corrects the arrival time."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "The download stopped."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "The first connection can take a few minutes, and sometimes more than one drive, while we find what your car accepts. Keep the car on and its screen awake. Later connections are much faster because we remember what worked."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/map-operations.js
+msgid "The map package is unavailable."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/app-reminder.js
+msgid "The most seamless way to connect to your StarPilot via Bluetooth, Wi-Fi, or over the network."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "The pair takes effect the next time the driving model starts."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/map-operations.js
+msgid "The saved selection changed."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "This Android Auto version expired on {}. Download a newer stable release."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "This Android Auto version expired. Download a newer stable release."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/map-operations.js
+msgid "This can transfer up to {} and use up to {} of new disk space. Existing regions are kept; overlapping areas are refreshed. The combined map is selected for the next map service start."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Timezone"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
+msgid "Traffic in route times"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Traffic routes this month"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/device_settings.py
+msgid "Try experimental fixes"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Trying again"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Tunes the straight-road response at highway speed in angle mode: lower it if the car oversteers, raise it if it understeers."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/data/catalog.json
+#: openpilot/starpilot/galaxy/web/js/driving.js
+msgid "Tuning & Analysis"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Turn off StarPort to stop connecting to your car. Your setup and paired car stay saved."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "Turn off to stop playing and free up the comma. Your setup stays saved."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/settings.js
+msgid "Turn on StarPort to manage connection options."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Turn on billing"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Turn on billing."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Turn slowdown distance"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Turn-by-turn guidance on your comma. It works with every driving model and never steers for you."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Turn-by-turn with lane arrows."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Two Big models cannot run together at the required speed. Choose a Small model for one role."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Type ERASE STARPILOT DATA to run Save Me"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Type an address or place on the Destination page."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Typing suggestions this month"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
+msgid "Typing suggestions, address lookups and offline downloads pause until the 1st"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Typing suggestions, address lookups and offline road maps stop just short of their free monthly allowances and resume on the 1st. Routes, full searches and map views are counted but not limited. Saved places and recents skip search entirely."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "USB cable"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/device_settings.py
+msgid "Unacknowledged video"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Unofficial dongle"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Unplug it for 10 seconds, plug it back in and keep the car on. We carry on by ourselves when it comes back, or tap Continue."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Update checks require the device updater service, which is unavailable when Galaxy runs alone on a development computer."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Update is no longer ready"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Update preference changed; refresh before saving"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Update preference could not be verified"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Update process restarted before completion; check the installed version and retry."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Update was interrupted when the updater stopped. Retry while parked."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Updater control is unavailable"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Updater did not report completion"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Updater is busy"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Updater is not running"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Updater manager status is unavailable"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Updater process changed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Updater process identity is unavailable"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Updater reported a failure"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Updater state changed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Updater target changed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Updates are disabled"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/weather.js
+msgid "Updating weather…"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/local-access.js
+msgid "Use the full http:// address and bookmark it. Allow local-network access if prompted. Your Firestar Link uses Internet instead."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Use the public token only. A secret token (starts with sk.) isn't needed, and URL-restricted tokens may be rejected."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Use the public token that starts with pk. A secret token isn't needed, and URL-restricted tokens may be rejected. Galaxy keeps the token on your comma and never shows it again."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Uses a stronger fan curve on supported devices to reduce temperature at the cost of fan noise."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Uses the car's 1080x1920 H.265 screen mode instead of 720x1280, to diagnose H.265-only cars. Needs Allow H.265 video on."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Uses the comma's or car's GPS. The phone fills in only when neither has a fix."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Uses the phone whenever it has a recent fix, otherwise the comma or car."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Uses the two predicted-curvature blend settings below instead of the built-in profile."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Uses the vehicle’s minimum engagement speed as the floor when pressing SET with StarPilot cruise. SET uses your current speed when you are above that floor."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Vehicle is not safely parked"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Verified downloads: {} of {} published for pairing."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Verifying download"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Version branch"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Versions"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/starport_setup.py
+msgid "Wait for on-device certificate/key verification; replace it before expiry."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/spotify_setup.py
+msgid "Wait for the Soloist install to finish"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Wait for the USB cable"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Wait for the software operation to finish before restarting"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Wait for the software operation to finish before running Save Me"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Wait for your app"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/device_settings.py
+msgid "Wait longer for the adapter"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Waiting for a usable fix"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Waiting for model status"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Waiting for the device updater service…"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Waiting in the queue"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Ways to send a destination"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Ways to set a destination"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "We tried every option we have this drive. We keep what works best and will try again the next time the car starts."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/weather.js
+msgid "Weather by Open-Meteo"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Weekday (0–7)"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js
+msgid "What this changes"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "What we are trying"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
+msgid "What you get"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
+msgid "When the allowance runs out"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Which adapter?"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Which app?"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "While driving, takes Spotify over from your phone or another speaker whenever it is playing somewhere else."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/route-workspace.js
+msgid "Wide camera"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/device_settings.py
+msgid "Wired hands-free"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Works offline once roads are saved."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Wrong app selected ({}). Choose Android Auto by Google LLC."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Wrong app selected. Choose Android Auto by Google LLC."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
+msgid "Yes, when Google gives directions; Mapbox is the fallback"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
+msgid "Yes, with a correction every 7½ minutes"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "Yes. Under “Send audio to”, choose “Car speakers via StarPort (Android Auto)”, and music plays through the car as Android Auto audio alongside the StarPilot screen. It needs Android Auto to be connected, so if it isn’t, music has nowhere to play."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Your Bluetooth pairing is kept."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Your car has wireless Android Auto."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Your car needs to be connected in Bluetooth first"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Your car only talks to devices that present Google’s Android Auto certificate. Follow the support step above, then come back here."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Your comma turns on navigation and starts the route. Places without coordinates are looked up on your comma with your chosen route provider. A name alone opens the StarPilot app as a search."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "Your dongle keeps hanging up"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "Your paired car and settings stay as they are."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "Your settings and Spotify sign-in stay as they are."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation-setup.js
+msgid "Your {label} options"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Zero keeps this stage’s original baseline. The % is an adjustment to this stage, not a percentage of overall steering strength."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "connected."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/map-operations.js
+msgid "covers 1 group in an approximate rectangle:"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/map-operations.js
+msgid "covers {} groups in an approximate rectangle:"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/map-operations.js
+msgid "date line bounds"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "eGPU variant"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "eGPU variant downloaded"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "iPhone:"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/map-operations.js
+msgid "invalid bounds"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "is ready for install. Click Update when ready."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "last: {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "make sure the app is Android Auto by Google LLC, and that the variant name ends in “‑release” (not beta or alpha)."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "of distance"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "open a place in Google Maps or Apple Maps, tap Share, then choose StarPilot. The first time, scroll the app row to More and turn on StarPilot."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "open a place in Google Maps, tap Share, then choose StarPilot."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "paired."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "saved changes pending next start"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "selected model: {model}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "speed & lead pacing"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "steering & path"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "stop sharing in the old app before turning it on in the new one."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/map-operations.js
+msgid "too large"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "under 1 min"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "you downloaded the helper app. Go back to the Android Auto release page and use “Download APK Bundle” there."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/map-operations.js
+msgid "{label} available storage."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "{label} controls speed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "{label} controls steering"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/home.js
+msgid "{label} free"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "{} (Not Connected)"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/map-operations.js
+msgid "{} groups"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "{} min"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "{} of {} APIs working"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "{} of {} free"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
+msgid "{} radius"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/route-workspace.js
+msgid "{} saved segment"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js
+msgid "{} to {}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
+msgid "{} tries"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
+msgid "{} used for road maps"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "~{} hr {} min"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "~{} min"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "· You have {}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "“Not Android Auto” or an unverified file:"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/starport.js
+msgid "“This is the APKMirror Installer app”:"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
+msgid "≈ {} tiles · {} to download · {} on the comma"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "Active models"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/app-reminder.js
+msgid "Hide app download reminder"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/galaxy.js
+msgid "Open Networks"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/settings.js
+msgid "Open StarPort setup"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Removes the thirty manual steering overrides while keeping saved Auto Learn history."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/app-reminder.js
+msgid "Your browser could not save this preference. Check its storage settings and try again."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/models.js
+msgid "tries a different model each drive"
 msgstr ""

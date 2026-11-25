@@ -1,6 +1,7 @@
 import { GxState } from "./state.js"
 import { PollTimer, connectionError } from "./polling.js"
 import { requestJson } from "./startup.js"
+import { localize } from "./localization.js"
 import { GalaxySelect } from "./galaxy-select.js"
 import { GxNotice } from "./notice.js"
 
@@ -46,7 +47,7 @@ export const CloudProviderPage = {
     async select(name) {
       if (!this.status?.canSelect || this.busy || !this.status.providers.some(p => p.id === name)) return
       const label = this.status.providers.find(p => p.id === name).label
-      if (!window.confirm(`Use ${label} after the next device reboot? The current session stays unchanged. Returning to comma restores its saved cloud identity.`)) return
+      if (!window.confirm(localize(`Use ${label} after the next device reboot? The current session stays unchanged. Returning to comma restores its saved cloud identity.`))) return
       this.busy = true
       this.selection = name
       this.error = ""

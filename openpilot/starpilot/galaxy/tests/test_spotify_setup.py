@@ -277,3 +277,14 @@ def test_old_config_without_mute_windows_loads_with_defaults(owner):
   layout.config.write_text(json.dumps(raw))
   loaded = preferences.load(layout)
   assert (loaded.pause_mute, loaded.skip_mute) == (0.5, 0.25)
+
+
+def test_every_park_requirement_is_one_finished_sentence(owner):
+  setup, state, _, _ = owner
+  state['parked'] = False
+  from openpilot.starpilot.galaxy.spotify_setup import PARK_REQUIRED
+  for what, message in PARK_REQUIRED.items():
+    assert message == f'Put the car in Park or use offroad mode to {what}'
+    with pytest.raises(SetupRejected) as raised:
+      setup._require_parked(what)
+    assert str(raised.value) == message

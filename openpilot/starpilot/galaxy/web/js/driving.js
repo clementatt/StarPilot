@@ -29,6 +29,20 @@ export const DRIVING_GROUPS = Object.freeze([
   ] },
 ])
 
+// One whole English title per page, so each translates as a sentence.
+const DRIVING_TITLES = Object.freeze({
+  aol: "Driving settings · aol",
+  conditional: "Driving settings · conditional",
+  curve: "Driving settings · curve",
+  slc: "Driving settings · slc",
+  torque: "Driving settings · torque",
+  profiles: "Driving settings · profiles",
+  traffic: "Driving settings · traffic",
+  lane: "Driving settings · lane",
+  lane_change: "Driving settings · lane change",
+})
+export const drivingTitle = page => DRIVING_TITLES[page] || "Driving settings"
+
 export function drivingPage(path) {
   const match = /^\/driving\/([a-z_]+)$/.exec(path)
   return match && DRIVING_PAGES[match[1]] || null

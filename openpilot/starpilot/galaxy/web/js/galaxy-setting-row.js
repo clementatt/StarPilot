@@ -268,7 +268,7 @@ export const GalaxySettingRow = {
           @pointerdown="onSliderPointerDown" @pointermove="onSliderPointerMove" @pointerup="onSliderPointerEnd"
           @pointercancel="onSliderCancel" @lostpointercapture="onSliderCancel" @keydown="beginInteract">
         <p v-if="soundError || testingSound" class="gx-alert-preview-note" role="status" aria-live="polite">{{ soundError || 'Playing on your comma…' }}</p>
-        <div class="gx-slider-meta"><span>{{ Number(bounds.min.toPrecision(7)) }} to {{ Number((bounds.numericMax ?? bounds.max).toPrecision(7)) }} {{ presentedRow.unit }}<template v-if="bounds.auto"> · Auto at right</template></span><span>Step: {{ Number(bounds.step.toPrecision(7)) }} {{ presentedRow.unit }}</span></div>
+        <div class="gx-slider-meta"><span><span>{{ Number(bounds.min.toPrecision(7)) }} to {{ Number((bounds.numericMax ?? bounds.max).toPrecision(7)) }}</span><span v-if="presentedRow.unit"> {{ presentedRow.unit }}</span><template v-if="bounds.auto"> · Auto at right</template></span><span><span>Step: {{ Number(bounds.step.toPrecision(7)) }}</span><span v-if="presentedRow.unit"> {{ presentedRow.unit }}</span></span></div>
       </div>
       <GalaxySelect v-else-if="control === 'select'" class="gx-field" :aria-label="row.label" :value="currentValue" :disabled="dimmed" @change="onSelect">
         <option v-for="choice in presentedRow.choices" :key="choice" :value="choice">{{ choice }}</option>
