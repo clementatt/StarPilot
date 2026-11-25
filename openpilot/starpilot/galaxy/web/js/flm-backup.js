@@ -2,6 +2,32 @@ import { GxDialog } from './dialog.js'
 import { GxNotice } from './notice.js'
 import { requestJson } from './startup.js'
 
+// Whole-sentence messages with "{}" for the count, so each sentence is one catalog message.
+const counted = (count, one, many) => (count === 1 ? one : many).replace('{}', count)
+
+// Restore previews name settings by coordinate ("ff_gain_left") or, for manual tunes, as a capitalised phrase ("Ff gain left").
+const PARAMETER_LABELS = {
+  friction_threshold_crawl: 'Crawl friction threshold', friction_threshold_low: 'Low-speed friction threshold',
+  friction_threshold_mid: 'Mid-speed friction threshold', friction_threshold_fast: 'Fast friction threshold', friction_threshold_highway: 'Highway friction threshold',
+  ff_gain_left: 'Left steering gain', ff_gain_right: 'Right steering gain',
+  turn_in_boost_left: 'Left turn-in boost', turn_in_boost_right: 'Right turn-in boost',
+  unwind_taper_left: 'Left unwind taper', unwind_taper_right: 'Right unwind taper',
+  center_taper_max: 'Center taper', highway_center_taper_max: 'Highway center taper',
+  center_deadband_crawl_deg: 'Crawl center deadband', center_deadband_low_deg: 'Low-speed center deadband',
+  center_deadband_mid_deg: 'Mid-speed center deadband', center_deadband_fast_deg: 'Fast center deadband',
+  center_deadband_highway_deg: 'Highway center deadband',
+  turn_in_threshold_reduction_left: 'Left turn-in threshold', turn_in_threshold_reduction_right: 'Right turn-in threshold',
+  unwind_threshold_increase_left: 'Left unwind threshold', unwind_threshold_increase_right: 'Right unwind threshold',
+  crawl_turn_in_ff_boost_left: 'Left crawl turn-in boost', crawl_turn_in_ff_boost_right: 'Right crawl turn-in boost',
+  low_speed_angle_assist_max_torque: 'Low-speed angle assistance',
+  curvy_speed_min: 'Lower unwind speed', curvy_speed_max: 'Upper unwind speed',
+  curvy_turn_in_trim_speed_min: 'Lower turn-in speed', curvy_turn_in_trim_speed_max: 'Upper turn-in speed',
+  curvy_turn_in_trim_left: 'Left turn-in trim', curvy_turn_in_trim_right: 'Right turn-in trim',
+  curvy_unwind_floor_relief_left: 'Left unwind floor relief', curvy_unwind_floor_relief_right: 'Right unwind floor relief',
+  curvy_unwind_extra_reduction_left: 'Left extra unwind relief', curvy_unwind_extra_reduction_right: 'Right extra unwind relief',
+}
+export const parameterLabel = name => typeof name === 'string' && PARAMETER_LABELS[name.toLowerCase().replaceAll(' ', '_')] || name
+
 export const MAX_TUNE_BYTES = 64 * 1024
 export function parseTune(text) {
   if (new TextEncoder().encode(text).length > MAX_TUNE_BYTES) throw new Error('Tune backup is too large.')
@@ -18,7 +44,13 @@ export const FlmBackup = {
   props: { unauthorized: { type: Function, required: true }, parked: { type: Boolean, default: false }, bluetooth: { type: Boolean, default: false } },
   emits: ['restored'],
   data: () => ({ busy: false, draft: null, mode: 'learned', pending: null, error: '', notice: '' }),
+  computed: {
+    manualSummary() { return counted(this.draft.manual.length, '{} manual setting', '{} manual settings') },
+    learnedSummary() { return counted(Object.keys(this.draft.learned).length, '{} Auto Learn setup', '{} Auto Learn setups') },
+    changeSummary() { return counted(this.pending.count, '{} setting would change.', '{} settings would change.') },
+  },
   methods: {
+    parameterLabel,
     async request(path, body) {
       try { return await requestJson(path, { timeout: 30000, request: body === undefined ? {} : {
         method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) } }) }
@@ -64,7 +96,7 @@ export const FlmBackup = {
       try {
         const result = await this.request('./api/settings/flm-backup/confirm', { intent, confirmed: true })
         if (result.complete !== true) throw new Error(result.error || 'Restore stopped. Refresh your tune before retrying.')
-        this.pending = this.draft = null;this.notice = result.manual ? 'Tune recovered. Manual values stay locked; other settings can keep learning.' : result.restored ? `${result.restored} ${result.restored === 1 ? 'setting' : 'settings'} restored. Current application is shown separately.` : 'Your saved settings already match this backup.'
+        this.pending = this.draft = null;this.notice = result.manual ? 'Tune recovered. Manual values stay locked; other settings can keep learning.' : result.restored ? counted(result.restored, '{} setting restored. Current application is shown separately.', '{} settings restored. Current application is shown separately.') : 'Your saved settings already match this backup.'
         this.$emit('restored')
       } catch (error) { this.pending = null;this.error = error.message || 'Could not confirm the restore. Refresh your tune before retrying.';this.$emit('restored') }
       finally { this.busy = false }
@@ -79,7 +111,7 @@ export const FlmBackup = {
     <p v-if="!parked">Park and switch off the vehicle to restore settings.</p><p v-if="busy" role="status">Working…</p>
     <GxNotice v-if="notice" tone="success">{{ notice }}</GxNotice><GxNotice v-if="error" tone="danger">{{ error }}</GxNotice>
     <GxDialog v-if="draft && !pending" labelledby="flm-import-title" @close="!busy && (draft=null)"><h3 id="flm-import-title">Review imported tune</h3>
-      <p>{{ draft.vehicle.replaceAll('_', ' ') }} · {{ draft.manual.length }} manual {{ draft.manual.length === 1 ? 'setting' : 'settings' }} · {{ Object.keys(draft.learned).length }} Auto Learn setups</p>
+      <p>{{ draft.vehicle.replaceAll('_', ' ') }} · {{ manualSummary }} · {{ learnedSummary }}</p>
       <div class="gx-flm-backup-choices" role="radiogroup" aria-label="Restore section"><label><input name="flm-import-mode" type="radio" value="learned" v-model="mode" :disabled="!Object.keys(draft.learned).length || busy"> Auto Learn setup</label>
       <label><input name="flm-import-mode" type="radio" value="manual" v-model="mode" :disabled="!draft.manual.length || busy"> Manual sliders</label>
       <label><input name="flm-import-mode" type="radio" value="recovery" v-model="mode" :disabled="draft.version !== 2 || busy"> Recover as manual tune</label></div>
@@ -87,8 +119,8 @@ export const FlmBackup = {
       <GxNotice v-if="error" tone="danger">{{ error }}</GxNotice><div class="gx-actions"><button type="button" class="gx-btn gx-btn--tonal" :disabled="busy" @click="draft=null">Cancel</button>
       <button type="button" class="gx-btn" :disabled="busy || !parked" @click="review">Review restore</button></div></GxDialog>
     <GxDialog v-if="pending" labelledby="flm-restore-title" @close="!busy && (pending=null)"><h3 id="flm-restore-title">Restore this tune?</h3>
-      <p>{{ pending.question }}</p><p v-if="busy" role="status">Restoring…</p><p>{{ pending.count }} {{ pending.count === 1 ? 'setting' : 'settings' }} would change.</p>
-      <details><summary>Changes</summary><p v-for="(row, index) in pending.changes" :key="index">{{ row[0] }}: {{ row[1] ?? 'not saved' }} → {{ row[2] }}</p></details>
+      <p>{{ pending.question }}</p><p v-if="busy" role="status">Restoring…</p><p>{{ changeSummary }}</p>
+      <details><summary>Changes</summary><p v-for="(row, index) in pending.changes" :key="index"><span>{{ parameterLabel(row[0]) }}</span>: <span>{{ row[1] ?? 'not saved' }}</span> → <span>{{ row[2] }}</span></p></details>
       <div class="gx-actions"><button type="button" class="gx-btn gx-btn--tonal" :disabled="busy" @click="pending=null">Back</button>
       <button type="button" class="gx-btn" :disabled="busy || !parked" @click="restore">Restore settings</button></div></GxDialog></details>`,
 }

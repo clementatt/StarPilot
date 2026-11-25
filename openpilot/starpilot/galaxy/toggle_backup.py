@@ -116,14 +116,16 @@ class ToggleBackup:
         restored += 1
       except (SettingsChanged, OSError, RuntimeError) as error:
         return {'complete': False, 'restored': restored, 'unchanged': unchanged, 'skipped': skipped,
-                'error': f'Restore stopped after {restored} changes: {error}. Review Toggles before retrying.'}
+                'error': ('Restore stopped after {} change: {}. Review Toggles before retrying.' if restored == 1 else
+                          'Restore stopped after {} changes: {}. Review Toggles before retrying.').format(restored, error)}
     if document is not None:
       try:
         revision = self.layout.snapshot()['revision']
         result = self.layout.save({'revision': revision, 'document': document}, session_valid=authorized)
         if result['failed']:
-          raise LayoutChanged('Could not apply: ' + ', '.join(result['failed']))
+          return {'complete': False, 'restored': restored, 'unchanged': unchanged, 'skipped': skipped,
+                  'error': 'Toggles restored, but these layout options did not change: {}'.format(', '.join(result['failed']))}
       except (LayoutChanged, OSError, RuntimeError) as error:
         return {'complete': False, 'restored': restored, 'unchanged': unchanged, 'skipped': skipped,
-                'error': f'Toggles restored, but the layout could not be restored: {error}'}
+                'error': 'Toggles restored, but the layout could not be restored: {}'.format(error)}
     return {'complete': True, 'restored': restored, 'unchanged': unchanged, 'skipped': skipped}

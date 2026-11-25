@@ -165,5 +165,5 @@ def accept_finding(settings, reports, payload, *, authorized):
     saved = commit_exact(settings.params, key=DOCUMENT_KEY, max_bytes=MAX_DOCUMENT_BYTES, raw=desired,
                          expected=raw, authorized=permitted, temp_prefix='.accepted-steering-')
     if not saved.committed or not saved.verified:
-      raise ValueError('Could not confirm that the finding was saved. Refresh the saved settings.')
+      raise ValueError('Could not confirm this finding was saved. Refresh the saved settings.')
     return {'status': 'saved', 'parameter': parameter, 'value': target, 'learning': 'automatic', 'for_next_drive': True}

@@ -256,3 +256,37 @@ try {
   assert.equal(pending.findingError, '')
 } finally { globalThis.fetch = acceptanceFetch }
 console.log('Accept finding survives stale polling, refreshes exact authority, refuses changed/driving/offline data and never retries a write')
+
+// Every visible phrase is one whole translatable sentence: counts pick a sentence per plural form, enums pick a sentence per value.
+{
+  const methods = FlmPage.methods
+  assert.equal(methods.counted(1, '{} finding', '{} findings'), '1 finding')
+  assert.equal(methods.counted(12, '{} finding', '{} findings'), '12 findings')
+  assert.equal(methods.counted(null, '{} finding', '{} findings'), '— findings')
+  assert.equal(methods.findingCounts.call({ review: { manual: [1], curve: [1, 2], other: [] } }), '1 steering finding · 2 speed-range findings')
+  assert.equal(methods.findingCounts.call({ review: { manual: [], curve: [1], other: [1] } }),
+    '0 steering findings · 1 speed-range finding · 1 earlier grouped finding')
+  assert.equal(methods.improvementText(12.34), '12.3% lower observed error')
+  assert.equal(methods.improvementText(-4), '4.0% higher observed error')
+  assert.equal(methods.detailLabel('Fit attempts'), 'Legacy fitter · Fit attempts')
+  assert.equal(methods.analyzedDriveText({ route: 'r1', retained: true }), 'Earlier analyzed drive: r1')
+  assert.equal(methods.analyzedDriveText({ route: 'r1' }), 'Completed drive: r1')
+  assert.equal(methods.recordedSourceText({ route: 'r1', segment: 3 }), 'Drive r1, segment 3.')
+  assert.match(methods.savedProfileText({ state: 'rolled_back', completedAt: '2026-11-20T10:00:00Z' }), /^Restored setup · Drive completed \S/)
+  assert.match(methods.savedProfileText({ state: 'accepted', completedAt: '2026-11-20T10:00:00Z' }), /^Saved setup · Drive completed \S/)
+  const offroadGroups = { offroad: {}, review: { saved: [{ parameter: 'a' }], findings: [{ parameter: 'a' }, { parameter: 'b' }] } }
+  assert.equal(methods.groupChanges.call(offroadGroups, { names: ['a'] }), '1 saved · 1 finding')
+  assert.equal(methods.groupChanges.call(offroadGroups, { names: ['a', 'b'] }), '1 saved · 2 findings')
+  const label = valid => FlmPage.computed.connectionLabel.call({ loading: false, report: {}, choiceLive: true, live: true, state: {}, preference: valid })
+  assert.equal(label({ valid: true, enabled: true, controller: 'torque' }), 'Connected · Auto Learn on')
+  assert.equal(label({ valid: true, enabled: false, controller: 'torque' }), 'Connected · Auto Learn off')
+  assert.equal(label({ valid: false }), 'Connected')
+  // A " · " inside a parameter label would split sentences such as "{label}: saved value confirmed at {value}."
+  const labelSource = readFileSync(new URL('../web/js/flm.js', import.meta.url), 'utf8')
+  const labels = labelSource.slice(labelSource.indexOf('const PARAMETER_LABELS'), labelSource.indexOf('export const FlmPage'))
+  assert.doesNotMatch(labels, /: "[^"]* · [^"]*"/)
+  // No sentence is assembled from separately chosen words or split by a value.
+  assert.doesNotMatch(FlmPage.template, /'finding' : 'findings'|' finding' : ' findings'|'lower' : 'higher'|window\(s\)|'Selected' : 'All'|'Restored setup' : 'Saved setup'/)
+  assert.doesNotMatch(FlmPage.template, /\.toLocaleString\(\)/)
+}
+console.log('Auto Learn text is built from whole sentences per count and per value')

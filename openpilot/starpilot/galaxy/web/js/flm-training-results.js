@@ -94,7 +94,7 @@ const labels = { collecting: "Gathering driving examples", unavailable: "Waiting
 export const readable = value => labels[value] || String(value ?? "Not reported").replaceAll("_", " ")
 export const detailText = value => value === null ? "Not reported" : Array.isArray(value) ? value.map(detailText).join(", ") :
   typeof value === "boolean" ? value ? "Yes" : "No" : typeof value === "object" ?
-    Object.entries(value).map(([key, item]) => `${readable(key)}: ${detailText(item)}`).join("; ") : String(value)
+    Object.entries(value).map(([key, item]) => `${readable(key)}: ${detailText(item)}`).join(" · ") : String(value)
 export const trainingSummary = (report, error = "") => error ? "Live update unavailable. Previous results may be out of date." :
   !report?.current ? "No training results have been reported yet." : !report.current.fresh ?
     "Saved report only. Current learning and application are unknown." : readable(report.current.status)
@@ -164,28 +164,48 @@ const frictionCoordinates = rows => Array.isArray(rows) && rows.length === 5 && 
   Array.isArray(row) && row.length === 2 && row[0] === FRICTION_NAMES[i] && typeof row[1] === 'number' &&
   Number.isFinite(row[1]) && Math.abs(row[1]) <= .25) ? Object.fromEntries(rows) : null
 
+// Fills "{}" in a whole-sentence message with display values, so every sentence the page shows is one catalog message.
+const fill = (message, ...values) => { let index = 0; return message.replace(/\{\}/g, () => values[index++]) }
+const recommendationDisplay = unit => {
+  // The setting owner displays every canonical coordinate as percent, including window edges.
+  const suffix = unit ?? '%'
+  return value => `${coordinateText(suffix === '%' ? value * 100 : value)}${suffix === 'm/s' ? ' ' : ''}${suffix}`
+}
+
 export function recommendationText(row, unit = null) {
   if (row.target === null) return 'No consistent suggested value'
   if (row.target === undefined) return `change ${coordinateText(row.delta)}`
-  // The setting owner displays every canonical coordinate as percent, including window edges.
-  const suffix = unit ?? '%'
-  const display = value => `${coordinateText(suffix === '%' ? value * 100 : value)}${suffix === 'm/s' ? ' ' : ''}${suffix}`
-  return `suggested ${display(row.target)} (from ${display(row.baseline)}; change ${display(row.delta)})`
+  const display = recommendationDisplay(unit)
+  return fill('suggested {} (from {}; change {})', display(row.target), display(row.baseline), display(row.delta))
 }
 
+function suggestionStatement(suggestion, earlier, unit) {
+  const display = recommendationDisplay(unit)
+  if (suggestion.target === null) return earlier ? 'Earlier analyzed drive: no consistent suggested value; not saved.' :
+    'Previous-drive recommendation: no consistent suggested value; not saved.'
+  if (suggestion.target === undefined) return fill(earlier ? 'Earlier analyzed drive: change {}; not saved.' :
+    'Previous-drive recommendation: change {}; not saved.', coordinateText(suggestion.delta))
+  return fill(earlier ? 'Earlier analyzed drive: suggested {} (from {}; change {}); not saved.' :
+    'Previous-drive recommendation: suggested {} (from {}; change {}); not saved.',
+  display(suggestion.target), display(suggestion.baseline), display(suggestion.delta))
+}
+
+// Each statement is one translatable sentence; they are separated by line breaks, which HTML shows as a space.
 export function offroadCoordinateEvidence(report, name, live = false, unit = null) {
   const route = offroadView(report), row = surfaceRows(report, live).find(row => row.name === name)
   const statements = []
   const display = value => unit === '%' ? `${coordinateText(value * 100)}%` : coordinateText(value) + (unit || '')
   if (row?.applied !== null && row?.applied !== undefined && row.applied !== 0)
-    statements.push(`Auto Learn applied now: ${display(row.applied)}.`)
+    statements.push(fill('Auto Learn applied now: {}.', display(row.applied)))
   const saved = route?.savedValues?.[name]
   if (saved !== undefined && saved !== 0)
-    statements.push(`Auto Learn saved: ${display(saved)}${route.configurationState === 'ready_for_next_drive' ? ' for the next drive' : ''}.`)
-  for (const suggestion of route?.suggestions || []) if (suggestion.parameter === name)
-    statements.push(`${route.retained || route.earlierDrive ? 'Earlier analyzed drive' : 'Previous-drive recommendation'}: ${recommendationText(suggestion, unit)}; not saved.${suggestion.reason ? ` ${learningReason(suggestion.reason)}` : ''}`)
+    statements.push(fill(route.configurationState === 'ready_for_next_drive' ? 'Auto Learn saved: {} for the next drive.' : 'Auto Learn saved: {}.', display(saved)))
+  for (const suggestion of route?.suggestions || []) if (suggestion.parameter === name) {
+    statements.push(suggestionStatement(suggestion, route.retained || route.earlierDrive, unit))
+    if (suggestion.reason) statements.push(learningReason(suggestion.reason))
+  }
   if (route && !statements.length) statements.push('No recommendation from this analyzed drive for this dial.')
-  return statements.join(' ')
+  return statements.join('\n')
 }
 
 export function validLearningPreference(value) {
@@ -259,6 +279,23 @@ const REASONS = {
   original_input_regime_after_baseline_ack_required: "The baseline is restored. Completed comparison samples are kept while waiting for the same driving conditions.",
   scoring_later_matched_whole_episodes: "Comparing new steering windows with the baseline.",
   accepted_target_currently_acknowledged: "The controller acknowledged the accepted correction.",
+  "Parked route input collection cancelled": "Reading was interrupted before the drive assessment finished. This report has no specific blocker.",
+  "Local drive inventory is incomplete": "FLM could not obtain a complete list of local recordings.",
+  "Valid manual coordinate settings required": "Saved manual steering settings require review; existing choices were preserved.",
+  "Manual coordinate settings require review: context_changed": "The saved steering settings do not match the vehicle configuration or controller for this recording.",
+  "Known vehicle and no manual coordinates required": "This older build rejected its vehicle/settings identity before route analysis. In the parked analysis path, missing or invalid recorded vehicle identity causes this refusal; it does not establish route corruption.",
+  "Manual or explicitly disabled tuning selected": "This older report did not distinguish a legacy GM FLM profile from a saved GM setting that turns learning off.",
+}
+const OBSERVED = {
+  understeer: { left: 'On left curves, the car turned less sharply than requested.', right: 'On right curves, the car turned less sharply than requested.' },
+  oversteer: { left: 'On left curves, the car turned more sharply than requested.', right: 'On right curves, the car turned more sharply than requested.' },
+  late_turn_in: { left: 'Steering was slow to build as left turns started.', right: 'Steering was slow to build as right turns started.' },
+  early_turn_in: { left: 'Steering built too early as left turns started.', right: 'Steering built too early as right turns started.' },
+  unwind_too_slow: { left: 'While easing out of left curves, steering stayed stronger than requested.', right: 'While easing out of right curves, steering stayed stronger than requested.' },
+  unwind_too_fast: { left: 'While easing out of left curves, steering eased off faster than requested.', right: 'While easing out of right curves, steering eased off faster than requested.' },
+  low_speed_unwillingness: { left: 'At low speed, steering was slow to build into left turns.', right: 'At low speed, steering was slow to build into right turns.' },
+  center_chatter: { left: 'Small steering corrections kept reversing on straights.', right: 'Small steering corrections kept reversing on straights.', center: 'Small steering corrections kept reversing on straights.' },
+  notchy_mid_curve: { left: 'Steering made repeated corrections while holding left curves.', right: 'Steering made repeated corrections while holding right curves.' },
 }
 export function learningReason(reason) {
   if (reason === 'waiting_for_ignition_off' || reason === 'waiting_for_vehicle_to_switch_off')
@@ -278,17 +315,7 @@ export function learningReason(reason) {
   const pattern = /^observed_(understeer|oversteer|late_turn_in|early_turn_in|unwind_too_slow|unwind_too_fast|low_speed_unwillingness|center_chatter|notchy_mid_curve)_(left|right|center)$/.exec(reason)
   if (pattern) {
     const [, behavior, side] = pattern
-    return {
-      understeer: `On ${side} curves, the car turned less sharply than requested.`,
-      oversteer: `On ${side} curves, the car turned more sharply than requested.`,
-      late_turn_in: `Steering was slow to build as ${side} turns started.`,
-      early_turn_in: `Steering built too early as ${side} turns started.`,
-      unwind_too_slow: `While easing out of ${side} curves, steering stayed stronger than requested.`,
-      unwind_too_fast: `While easing out of ${side} curves, steering eased off faster than requested.`,
-      low_speed_unwillingness: `At low speed, steering was slow to build into ${side} turns.`,
-      center_chatter: 'Small steering corrections kept reversing on straights.',
-      notchy_mid_curve: `Steering made repeated corrections while holding ${side} curves.`,
-    }[behavior]
+    if (OBSERVED[behavior][side]) return OBSERVED[behavior][side]
   }
   return "The device's detailed report is available in Activity."
 }
@@ -419,7 +446,7 @@ export function parkedAnalysisProgress(report) {
     verifying: 'Checking that the recording is unchanged.', checking: 'Checking the suggested changes.' }
   return { phase, label: labels[phase], completed: counted ? done : null, total: counted ? total : null,
     percent: counted && phase === 'reading' && done < total ? done / total * 100 : null,
-    detail: counted && phase === 'reading' ? `${done} of ${total} sections read in this recording` : steps[phase] }
+    detail: counted && phase === 'reading' ? (total === 1 ? fill('{} of 1 section read in this recording', done) : fill('{} of {} sections read in this recording', done, total)) : steps[phase] }
 }
 
 export function tunerStatus(report, live = false, choiceLive = false, error = "", reportFresh = live) {
@@ -429,7 +456,7 @@ export function tunerStatus(report, live = false, choiceLive = false, error = ""
   if (preference?.valid && preference.enabled === false || !preference && live && current?.enabled === false)
     return { key: "off", tone: "muted", title: "Auto Learn is off", description: "No driving samples are being collected by the learner. Turn it on in steering settings to begin." }
   if (reportFresh && current?.status === 'fitting' && ['analyzing_last_completed_drive', 'verifying_recorded_drive', 'checking_recorded_steering_recommendations'].includes(current.reason))
-    return { key: 'fitting', tone: 'active', title: 'Analyzing your drive', description: learningReason(current.reason) + (offroadView(report)?.retained ? ' Earlier drive findings remain below while this analysis runs.' : '') }
+    return { key: 'fitting', tone: 'active', title: 'Analyzing your drive', description: [learningReason(current.reason), offroadView(report)?.retained ? 'Earlier drive findings remain below while this analysis runs.' : ''].filter(Boolean).join('\n') }
   if (reportFresh && preference?.valid && preference.enabled && preference.parked && current?.reason?.startsWith('waiting_for_'))
     return { key: 'waiting-parked', tone: 'muted', title: 'Waiting to analyze your drive', description: learningReason(current.reason) }
   const route = reportFresh && (!preference || preference.parked) ? offroadView(report) : null

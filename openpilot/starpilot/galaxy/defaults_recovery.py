@@ -78,7 +78,9 @@ class DefaultsRecovery:
       self.intents[intent] = (saved, rows)
       if len(self.intents) > 16:
         self.intents.pop(next(iter(self.intents)))
-    return {'intent': intent, 'question': f'Reset {len(rows)} selected settings to their current StarPilot defaults?',
+    question = ('Reset the selected setting to its current StarPilot default?' if len(rows) == 1 else
+                'Reset {} selected settings to their current StarPilot defaults?'.format(len(rows)))
+    return {'intent': intent, 'question': question,
             'labels': [row.label for _, row in rows], 'count': len(rows)}
 
   def confirm(self, intent, token, generation, *, session_valid=lambda: True):

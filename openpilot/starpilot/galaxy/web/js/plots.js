@@ -216,6 +216,12 @@ export const PlotsPage = {
     longChart() { return chartGeometry(this.history, ['desiredLongitudinalAccel', 'actualLongitudinalAccel']) },
     lateralTermsChart() { return chartGeometry(this.history, ['lateralP', 'lateralI', 'lateralD', 'lateralF']) },
     longTermsChart() { return chartGeometry(this.history, ['longitudinalP', 'longitudinalI', 'longitudinalF']) },
+    // One whole sentence per measurement source; the source name is translated separately.
+    longitudinalSourceText() {
+      const source = this.source(this.data?.values?.longitudinalSource)
+      return this.data?.values?.poseFresh ? `Target / measured · m/s² · ${source}; measured from device motion` :
+        `Target / measured · m/s² · ${source}; measured from unavailable motion source`
+    },
   },
   methods: {
     togglePause() { this.paused = !this.paused; this.feed.setPaused(this.paused) },
@@ -230,7 +236,7 @@ export const PlotsPage = {
       <GxState v-if="mode !== 'local'">Live plots require the authenticated local Galaxy service.</GxState>
       <template v-else>
         <div class="gx-plots__toolbar"><GxIconButton :label="paused ? 'Resume live plots' : 'Pause live plots'" :icon="paused ? 'bi-play-fill' : 'bi-pause-fill'" @click="togglePause" />
-          <button type="button" class="gx-btn gx-btn--tonal" :aria-pressed="advanced" @click="advanced=!advanced">{{ advanced ? 'Hide' : 'Show' }} controller terms</button>
+          <button type="button" class="gx-btn gx-btn--tonal" :aria-pressed="advanced" @click="advanced=!advanced">{{ advanced ? 'Hide controller terms' : 'Show controller terms' }}</button>
           <span class="gx-plots__status" role="status">{{ paused ? 'Paused' : data?.bootStabilizing ? 'Starting vehicle systems' : status === 'current' ? 'Live' : status === 'stale' ? 'Reconnecting · last received values' : status === 'unavailable' ? 'Unavailable' : 'Connecting' }}</span></div>
         <p class="gx-note gx-plots__hint" role="status">{{ !paused && error ? error : 'Missing samples leave a gap in the graph.' }}</p>
         <div class="gx-plots__grid">
@@ -239,7 +245,7 @@ export const PlotsPage = {
             <dl class="gx-plots__readout"><div><dt>Desired</dt><dd>{{ label(data?.values?.desiredLateralAccel) }}</dd></div><div><dt>Actual</dt><dd>{{ label(data?.values?.actualLateralAccel) }}</dd></div></dl>
             <p class="gx-note gx-plots__source">Speed source: {{ source(data?.values?.speedSource) }}</p>
             <p class="gx-plots__match">30 s match: <strong>{{ !data || data?.bootStabilizing ? 'N/A' : lateralQuality.label }}</strong> · {{ data?.bootStabilizing ? 'Waiting for startup to settle' : status !== 'current' ? 'Last received window' : lateralQuality.detail }}</p></section>
-          <section class="gx-card gx-plots__panel"><div class="gx-section__header"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i><span class="gx-section__title">Longitudinal Acceleration</span></div><p class="gx-note gx-plots__source">Target / measured · m/s² · {{ source(data?.values?.longitudinalSource) }}; measured from {{ data?.values?.poseFresh ? 'device motion' : 'unavailable motion source' }}</p>
+          <section class="gx-card gx-plots__panel"><div class="gx-section__header"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i><span class="gx-section__title">Longitudinal Acceleration</span></div><p class="gx-note gx-plots__source">{{ longitudinalSourceText }}</p>
             <plot-graph :chart="longChart" title="Longitudinal acceleration history" />
             <dl class="gx-plots__readout"><div><dt>Target</dt><dd>{{ label(data?.values?.desiredLongitudinalAccel) }}</dd></div><div><dt>Measured</dt><dd>{{ label(data?.values?.actualLongitudinalAccel) }}</dd></div></dl>
             <p class="gx-plots__match">30 s match: <strong>{{ !data || data?.bootStabilizing ? 'N/A' : longQuality.label }}</strong> · {{ data?.bootStabilizing ? 'Waiting for startup to settle' : status !== 'current' ? 'Last received window' : longQuality.detail }}</p></section>

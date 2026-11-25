@@ -29,7 +29,11 @@ export const ToggleBackup = {
           link.href = url; link.download = "toggle-backup.json"
           document.body.append(link); link.click(); link.remove()
         } finally { link.remove(); setTimeout(() => URL.revokeObjectURL(url), 1000) }
-        this.notice = `${backup.settings.length} ${backup.settings.length === 1 ? "toggle" : "toggles"} backed up${backup.layout ? ", including layout and colors" : ""}.`
+        const count = backup.settings.length
+        // One whole sentence per count form and layout state, so each translates as a unit.
+        this.notice = backup.layout
+          ? (count === 1 ? `${count} toggle backed up, including layout and colors.` : `${count} toggles backed up, including layout and colors.`)
+          : (count === 1 ? `${count} toggle backed up.` : `${count} toggles backed up.`)
       } catch (error) { this.error = error.message || "Could not create toggle backup." }
       finally { this.busy = false }
     },
@@ -73,8 +77,9 @@ export const ToggleBackup = {
       this.resetDraft = null; this.busy = true; this.error = this.notice = ""
       try {
         const result = await this.request("./api/settings/recovery/confirm", { intent: pending.intent, confirmed: true })
-        if (!result.saved) throw new Error(`${result.applied.length} settings reset. ${result.reason || "Review Toggles before retrying."}`)
-        this.notice = `${result.applied.length} ${result.applied.length === 1 ? "setting" : "settings"} reset to default.`
+        const applied = result.applied.length, reason = result.reason || "Review Toggles before retrying."
+        if (!result.saved) throw new Error(applied === 1 ? `${applied} setting reset. ${reason}` : `${applied} settings reset. ${reason}`)
+        this.notice = applied === 1 ? `${applied} setting reset to default.` : `${applied} settings reset to default.`
       } catch (error) { this.error = error.message || "Could not reset toggles. Review Toggles before retrying." }
       finally { this.busy = false }
     },
@@ -95,7 +100,14 @@ export const ToggleBackup = {
         } else {
           const result = await this.request("./api/settings/restore", draft)
           if (!result.complete) throw new Error(result.error || "Restore could not be completed. Review Toggles.")
-          this.notice = `${result.restored} ${result.restored === 1 ? "toggle" : "toggles"} restored${result.unchanged ? ` · ${result.unchanged} already matched` : ""}${result.skipped.length ? ` · ${result.skipped.length} unavailable settings skipped` : ""}${draft.layout ? ". Layout and colors restored" : ""}.`
+          // Each " · " part is a whole sentence of its own, so every part translates separately.
+          const skipped = result.skipped.length
+          this.notice = [
+            result.restored === 1 ? `${result.restored} toggle restored` : `${result.restored} toggles restored`,
+            result.unchanged ? `${result.unchanged} already matched` : "",
+            skipped ? (skipped === 1 ? `${skipped} unavailable setting skipped` : `${skipped} unavailable settings skipped`) : "",
+            draft.layout ? "Layout and colors restored." : "",
+          ].filter(Boolean).join(" · ")
         }
       } catch (error) { this.error = error.message || "Could not restore toggle backup." }
       finally { this.busy = false }
@@ -111,7 +123,8 @@ export const ToggleBackup = {
     <p v-if="busy" class="gx-note gx-maintenance__feedback" role="status"><span class="gx-spinner" aria-hidden="true"></span> Working…</p>
     <GxNotice v-if="notice" tone="success">{{ notice }}</GxNotice><GxNotice v-if="error" tone="danger">{{ error }}</GxNotice>
     <GxDialog v-if="draft" :inert="busy" labelledby="gx-toggle-restore-title" @close="draft=null"><h3 id="gx-toggle-restore-title">{{ legacy ? 'Restore layout?' : 'Restore toggles?' }}</h3>
-      <p>{{ legacy ? 'Replace your saved layout and colors?' : 'Apply the compatible saved toggles, layout and colors from this backup? Unavailable settings will be skipped.' }} Keep the vehicle parked. Restoring a layout turns off Big UI steering wheel rotation.</p>
+      <p v-if="legacy">Replace your saved layout and colors? Keep the vehicle parked. Restoring a layout turns off Big UI steering wheel rotation.</p>
+      <p v-else>Apply the compatible saved toggles, layout and colors from this backup? Unavailable settings will be skipped. Keep the vehicle parked. Restoring a layout turns off Big UI steering wheel rotation.</p>
       <div class="gx-actions"><button type="button" class="gx-btn gx-btn--tonal" @click="draft=null">Cancel</button><button type="button" class="gx-btn" @click="restoreBackup">Restore</button></div>
     </GxDialog>
     <GxDialog v-if="resetDraft" :inert="busy" labelledby="gx-toggle-reset-title" @close="resetDraft=null">

@@ -249,6 +249,10 @@ def _recorded_model(init_data) -> str | None:
   return None
 
 
+# Whole sentences per variant so each translates as one catalog entry.
+UNRECORDED_MODEL = {True: 'Chestnut big model (identity not recorded)', False: 'Small model (identity not recorded)'}
+
+
 def _model_label(outputs, loads, selected):
   """Join actual output variants to recorded load boundaries; saved intent is not execution."""
   if not outputs:
@@ -265,7 +269,7 @@ def _model_label(outputs, loads, selected):
       entry = model_entries().get(load.model_id)
       label = f'{entry.name if entry is not None else load.model_id} ({variant})'
     else:
-      label = f'{variant} model (identity not recorded)'
+      label = UNRECORDED_MODEL[big]
     if label not in labels:
       labels.append(label)
   combined = ' → '.join(labels)

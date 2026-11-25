@@ -7,6 +7,10 @@ msgstr ""
 msgid "OK"
 msgstr ""
 
+#: openpilot/starpilot/galaxy/web/js/flm.js
+#: openpilot/starpilot/galaxy/web/js/route-cleanup.js
+#: openpilot/starpilot/galaxy/web/js/save-me.js
+#: openpilot/starpilot/galaxy/web/js/settings-recovery.js
 #: openpilot/system/ui/widgets/confirm_dialog.py
 #: openpilot/system/ui/widgets/keyboard.py
 #: openpilot/system/ui/widgets/network.py
@@ -401,6 +405,7 @@ msgid "Are you sure you want to reset calibration?"
 msgstr ""
 
 #: openpilot/selfdrive/ui/layouts/settings/device.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
 msgid "Reset"
 msgstr ""
 
@@ -497,6 +502,7 @@ msgid "Disengage to Power Off"
 msgstr ""
 
 #: openpilot/selfdrive/ui/layouts/settings/device.py
+#: openpilot/starpilot/galaxy/web/js/plots.js
 msgid "N/A"
 msgstr ""
 
@@ -829,6 +835,7 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
+#: openpilot/starpilot/galaxy/web/js/flm.js
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Driving"
 msgstr ""
@@ -881,6 +888,7 @@ msgstr ""
 msgid "Custom"
 msgstr ""
 
+#: openpilot/starpilot/galaxy/web/js/plots.js
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Unavailable"
 msgstr ""
@@ -905,6 +913,7 @@ msgstr ""
 msgid "Save"
 msgstr ""
 
+#: openpilot/starpilot/galaxy/web/js/flm.js
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Saved"
 msgstr ""
@@ -953,6 +962,7 @@ msgstr ""
 msgid "Reset to defaults"
 msgstr ""
 
+#: openpilot/starpilot/galaxy/web/js/toggle-backup.js
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Restore"
 msgstr ""
@@ -981,6 +991,7 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
+#: openpilot/starpilot/galaxy/web/js/settings-recovery.js
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Refresh"
 msgstr ""
@@ -1013,6 +1024,7 @@ msgstr ""
 msgid "Refresh Galaxy"
 msgstr ""
 
+#: openpilot/starpilot/galaxy/web/js/flm.js
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Connected"
 msgstr ""
@@ -1021,6 +1033,7 @@ msgstr ""
 msgid "Disconnected"
 msgstr ""
 
+#: openpilot/starpilot/galaxy/web/js/plots.js
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Connecting"
 msgstr ""
@@ -1293,6 +1306,7 @@ msgstr ""
 msgid "Personalities"
 msgstr ""
 
+#: openpilot/starpilot/galaxy/web/js/flm.js
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Saved settings"
 msgstr ""
@@ -1365,6 +1379,7 @@ msgstr ""
 msgid "Disabled"
 msgstr ""
 
+#: openpilot/starpilot/galaxy/web/js/flm.js
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Not reported"
 msgstr ""
@@ -1650,10 +1665,6 @@ msgstr ""
 msgid "Accepted automatically. Tap Pair on your phone if it shows this code:"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Accepted baseline"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/controllers.js
 msgid "Action Buttons"
 msgstr ""
@@ -1698,10 +1709,6 @@ msgstr ""
 #: openpilot/starpilot/ui/models_state.py
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "Active {}"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Actual delay-paired steering tracking error"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/flm-training-results.js
@@ -1892,10 +1899,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/record-history.js
 msgid "All"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "All 30 steering correction parameters"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/settings-recovery.js
@@ -2247,10 +2250,6 @@ msgstr ""
 msgid "Auto Learn results"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Auto Learn results require authenticated local Galaxy access."
-msgstr ""
-
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Auto adopts new limits immediately. With Automatic adoption off, + accepts and − declines within 10 seconds."
 msgstr ""
@@ -2387,16 +2386,8 @@ msgstr ""
 msgid "Baseline"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Baseline loss"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/sentry-notifications.js
 msgid "Bearer token (optional)"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Before trial"
 msgstr ""
 
 #: openpilot/starpilot/ui/preap_radar_feature.py
@@ -3074,6 +3065,7 @@ msgid "Checking your package…"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/drive-state.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
 #: openpilot/starpilot/galaxy/web/js/models.js
 #: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
 msgid "Checking…"
@@ -3463,22 +3455,6 @@ msgstr ""
 msgid "Collecting comparable driving examples"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Collection"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Collection & fitting"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Collection begins when the device reports eligible steering examples."
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Collection counts describe retained data. The fitter separately checks physical calibration, complete event support and validation."
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Colors & Layout"
 msgstr ""
@@ -3553,10 +3529,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/models.js
 msgid "Community favorites only"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Comparable episodes:"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/setting_descriptions.py
@@ -3830,6 +3802,7 @@ msgid "Connecting to your device…"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/app.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
 msgid "Connecting…"
 msgstr ""
 
@@ -3921,10 +3894,6 @@ msgstr ""
 msgid "Copy visible text"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Correction reported applied"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/flm-training-results.js
 msgid "Correction rollback acknowledged"
 msgstr ""
@@ -4011,10 +3980,6 @@ msgstr ""
 msgid "Current"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Current application"
-msgstr ""
-
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "Current cabin camera and drive required"
 msgstr ""
@@ -4037,10 +4002,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Current version:"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Currently applied"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/plots.js
@@ -4156,10 +4117,6 @@ msgstr ""
 msgid "Default threshold"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Delay-paired error: requested minus measured · m/s²"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/logs.js
 #: openpilot/starpilot/galaxy/web/js/sentry.js
 msgid "Delete All"
@@ -4259,18 +4216,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/sentry-notifications.js
 msgid "Delivery status:"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Desired / actual lateral acceleration · m/s²"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/plots.js
-msgid "Desired / actual · m/s² ·"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Desired and actual lateral acceleration"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/navigation.js
@@ -4887,10 +4832,6 @@ msgstr ""
 msgid "Enter your old password to keep the link, or choose a new one with at least 8 characters."
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Episode source timestamps"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/layout-preview.js
 msgid "Equal speed limits"
 msgstr ""
@@ -4919,10 +4860,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/flm-training-results.js
 msgid "Evaluating correction"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Evaluating the collected examples…"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/sentry.js
@@ -5341,10 +5278,6 @@ msgstr ""
 msgid "Future checks passed"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Future trial episodes"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 msgid "GPS Source"
 msgstr ""
@@ -5607,7 +5540,6 @@ msgid "Hidden while Model confidence uses the stock confidence ball."
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout.js
-#: openpilot/starpilot/galaxy/web/js/plots.js
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Hide"
 msgstr ""
@@ -6572,20 +6504,8 @@ msgstr ""
 msgid "Last auto-detected vehicle"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Last controller report:"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/plots.js
 msgid "Last received window"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Last received window — reconnecting"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Last reported:"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/vehicle-controls.js
@@ -6649,20 +6569,8 @@ msgstr ""
 msgid "Latest"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Latest completed delay-paired steering episode"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Latest control / applied output / measured pose:"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/software-status.js
 msgid "Latest features and fixes under development. Updates regularly and may introduce bugs."
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Latest fit comparison"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/galaxy.js
@@ -6775,22 +6683,6 @@ msgstr ""
 msgid "Learned Buttons"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Learned parameter corrections"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Learned proposal"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Learned proposal loss"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Learned steering corrections, collection progress and current application."
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/flm-training-results.js
 msgid "Learning paused"
 msgstr ""
@@ -6872,7 +6764,6 @@ msgstr ""
 msgid "Link up"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
 #: openpilot/starpilot/galaxy/web/js/plots.js
 #: openpilot/starpilot/galaxy/web/js/system-monitor.js
 msgid "Live"
@@ -6891,6 +6782,7 @@ msgid "Live local control observations. Graphs and match scores are diagnostic, 
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/driving.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
 msgid "Live plots"
 msgstr ""
 
@@ -6900,10 +6792,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/plots.js
 msgid "Live plots unavailable"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Live steering response"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/home.js
@@ -7815,24 +7703,12 @@ msgstr ""
 msgid "No controller is attached."
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "No correction reported applied"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/logs.js
 msgid "No crash reports."
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "No delay-paired steering episode plot has been reported yet."
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/record-history.js
 msgid "No drives match your filters."
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "No fit comparison has been reported yet."
 msgstr ""
 
 #: openpilot/starpilot/ui/pip_owner.py
@@ -7841,10 +7717,6 @@ msgstr ""
 
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "No learned samples"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "No learning history has been reported yet."
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/sentry.js
@@ -7983,6 +7855,7 @@ msgstr ""
 msgid "No versions saved."
 msgstr ""
 
+#: openpilot/starpilot/galaxy/web/js/flm.js
 #: openpilot/starpilot/galaxy/web/js/home.js
 msgid "None reported"
 msgstr ""
@@ -8123,14 +7996,6 @@ msgstr ""
 #: openpilot/starpilot/ui/runtime_app.py
 #: openpilot/starpilot/ui/starpilot_settings_adapter_large.py
 msgid "OPEN"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Observed measurement"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Observed tracking before and after the correction trial"
 msgstr ""
 
 #: openpilot/starpilot/ui/wheel_feature.py
@@ -8514,10 +8379,6 @@ msgstr ""
 msgid "Overridden Chill"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/plots.js
-msgid "P / I / D / F · controller output units ·"
-msgstr ""
-
 #: openpilot/starpilot/ui/home.py
 msgid "PAIR DEVICE"
 msgstr ""
@@ -8646,10 +8507,6 @@ msgstr ""
 msgid "Paired cars"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Paired requested and measured lateral acceleration"
-msgstr ""
-
 #: openpilot/starpilot/ui/galaxy_access.py
 msgid "Paired. Remote client unavailable."
 msgstr ""
@@ -8688,10 +8545,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/flm.js
 msgid "Parameter"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Parameters under evaluation:"
 msgstr ""
 
 #: openpilot/starpilot/ui/feature_settings.py
@@ -8763,6 +8616,7 @@ msgid "Park to restart the Bluetooth radio."
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/device-state.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
 #: openpilot/starpilot/galaxy/web/js/model-laboratory.js
 msgid "Parked"
 msgstr ""
@@ -8838,7 +8692,7 @@ msgstr ""
 msgid "Pause acceleration and braking while Always On Lateral keeps steering"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
+#: openpilot/starpilot/galaxy/web/js/plots.js
 msgid "Pause live plots"
 msgstr ""
 
@@ -8914,10 +8768,6 @@ msgstr ""
 
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Pedal Speed Control"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Pending trial target"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/home.js
@@ -9454,10 +9304,6 @@ msgstr ""
 msgid "Reading installed models and available downloads…"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Reading learning results…"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/sentry.js
 msgid "Reading local motion events…"
 msgstr ""
@@ -9537,10 +9383,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/home.js
 msgid "Recent Drives"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Recent findings"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/software-status.js
@@ -9981,10 +9823,6 @@ msgstr ""
 msgid "Replay {}"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Report provenance and details"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/home.js
 msgid "Reported health:"
 msgstr ""
@@ -9999,10 +9837,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/startup.js
 msgid "Request canceled"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Requested / measured lateral acceleration · m/s²"
 msgstr ""
 
 #: openpilot/starpilot/ui/models_state.py
@@ -10974,11 +10808,13 @@ msgstr ""
 msgid "Saved selection for the next start"
 msgstr ""
 
+#: openpilot/starpilot/galaxy/batch_routes.py
 #: openpilot/starpilot/ui/conditional_feature.py
 msgid "Saved settings are unavailable"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/settings.py
+#: openpilot/starpilot/galaxy/toggle_backup.py
 msgid "Saved settings changed"
 msgstr ""
 
@@ -11053,6 +10889,7 @@ msgstr ""
 msgid "Saved vehicle changed. Refresh before choosing again."
 msgstr ""
 
+#: openpilot/starpilot/galaxy/web/js/flm.js
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Saved {}"
 msgstr ""
@@ -11085,6 +10922,7 @@ msgstr ""
 msgid "Saving timed out. Your edits are kept here, but the saved result is unknown. Reload before saving again."
 msgstr ""
 
+#: openpilot/starpilot/galaxy/web/js/flm.js
 #: openpilot/starpilot/galaxy/web/js/hotspot.js
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Saving…"
@@ -11294,10 +11132,6 @@ msgstr ""
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Selected acceleration profiles, stop detection and vehicle limits still apply."
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Selected bundles:"
 msgstr ""
 
 #: openpilot/starpilot/ui/gain_feature.py
@@ -11767,7 +11601,6 @@ msgstr ""
 #: openpilot/starpilot/galaxy/web/js/galaxy.js
 #: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
 #: openpilot/starpilot/galaxy/web/js/onroad-layout.js
-#: openpilot/starpilot/galaxy/web/js/plots.js
 msgid "Show"
 msgstr ""
 
@@ -11794,10 +11627,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Show editing aids"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Show live plots"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/models.js
@@ -12170,10 +11999,6 @@ msgstr ""
 msgid "Speed must be finite and nonnegative"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/plots.js
-msgid "Speed source:"
-msgstr ""
-
 #: openpilot/starpilot/ui/conditional_feature.py
 msgid "Speed threshold"
 msgstr ""
@@ -12200,10 +12025,6 @@ msgstr ""
 
 #: openpilot/starpilot/ui/onroad_state.py
 msgid "Speed-limit values must be finite"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Speed-window coordinates multiply their original baseline by (1 + correction). Deadband and angle-assist coordinates use the controller’s physical normalizer. Raw degrees, torque and manual tune values are not published by this report."
 msgstr ""
 
 #: openpilot/starpilot/ui/long_profile_feature.py
@@ -12294,10 +12115,6 @@ msgstr ""
 
 #: openpilot/starpilot/ui/wheel_feature.py
 msgid "Star very long press"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "StarPilot Auto Learn"
 msgstr ""
 
 #: openpilot/starpilot/ui/sounds_owner.py
@@ -12540,20 +12357,8 @@ msgstr ""
 msgid "Steering assistance independent of cruise control"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Steering controller P I D and F terms"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Steering controller terms · controller units"
-msgstr ""
-
 #: openpilot/starpilot/ui/torque_feature.py
 msgid "Steering delay source"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Steering input checks:"
 msgstr ""
 
 #: openpilot/starpilot/ui/torque_feature.py
@@ -12721,7 +12526,7 @@ msgstr ""
 msgid "Subscribed browsers:"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
+#: openpilot/starpilot/galaxy/web/js/starport-guided.js
 msgid "Support"
 msgstr ""
 
@@ -12836,10 +12641,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
 msgid "Tap the map to center a new area."
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/plots.js
-msgid "Target / measured · m/s² ·"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/software-status.js
@@ -13126,10 +12927,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "The uploaded file is deleted after install. Maximum size"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "These are fitter-reported losses for the latest proposal. The live control plots are separate observations and do not measure a before/after learning benefit."
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
@@ -13429,10 +13226,6 @@ msgstr ""
 msgid "Tool"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Torque / torque-actuated PID"
-msgstr ""
-
 #: openpilot/starpilot/ui/onroad_customization.py
 msgid "Torque bar"
 msgstr ""
@@ -13497,10 +13290,6 @@ msgstr ""
 
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Traffic Profile"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Training windows:"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/map-operations.js
@@ -13927,10 +13716,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/model-laboratory.js
 msgid "Unknown series"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Unknown — waiting for a current report"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/spotify.js
@@ -14736,10 +14521,6 @@ msgstr ""
 msgid "Waiting for startup to settle"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Waiting for steering telemetry"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Waiting for the Android Auto service to start."
 msgstr ""
@@ -15180,10 +14961,6 @@ msgstr ""
 msgid "adopt"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "after"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "after Bluetooth, the car (or adapter) creates its own hidden 5 GHz Wi-Fi network and tells the comma how to join. The picture streams over that Wi-Fi."
 msgstr ""
@@ -15466,10 +15243,6 @@ msgstr ""
 
 #: openpilot/starpilot/ui/layout_preview_transport.py
 msgid "before render"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "before ·"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/models.js
@@ -16099,10 +15872,6 @@ msgstr ""
 msgid "control"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/plots.js
-msgid "controller terms"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/system-monitor.js
 msgid "cores · overall usage"
 msgstr ""
@@ -16320,10 +16089,6 @@ msgstr ""
 #: openpilot/starpilot/ui/settings_state.py
 #: openpilot/starpilot/ui/shell.py
 msgid "device"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/plots.js
-msgid "device motion"
 msgstr ""
 
 #: openpilot/starpilot/ui/runtime_app.py
@@ -16966,10 +16731,6 @@ msgstr ""
 #: openpilot/starpilot/galaxy/web/js/replay.js
 #: openpilot/starpilot/galaxy/web/js/software-status.js
 msgid "function"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "future episodes required"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/setting_descriptions.py
@@ -17765,10 +17526,6 @@ msgstr ""
 msgid "models are used."
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "monotonic seconds. Episode"
-msgstr ""
-
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "mph point"
 msgstr ""
@@ -18157,10 +17914,6 @@ msgstr ""
 
 #: openpilot/starpilot/ui/onroad_favorites.py
 msgid "options"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "original endpoints"
 msgstr ""
 
 #: openpilot/starpilot/ui/onroad_favorites.py
@@ -18825,10 +18578,6 @@ msgstr ""
 msgid "required"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "required ·"
-msgstr ""
-
 #: openpilot/starpilot/ui/appearance_compact.py
 msgid "requires confirmation"
 msgstr ""
@@ -18882,10 +18631,6 @@ msgstr ""
 #: openpilot/starpilot/ui/maps_state.py
 #: openpilot/starpilot/ui/replay_settings.py
 msgid "result"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "retained blocks"
 msgstr ""
 
 #: openpilot/starpilot/ui/models_compact.py
@@ -19001,10 +18746,6 @@ msgstr ""
 msgid "sample"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "samples ·"
-msgstr ""
-
 #: openpilot/starpilot/ui/onroad_map.py
 msgid "satellite"
 msgstr ""
@@ -19117,14 +18858,6 @@ msgstr ""
 msgid "seconds ago."
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "seconds old when read."
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "seconds since the last measured pose · Alignment delay"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/settings.py
 #: openpilot/starpilot/galaxy/web/js/onroad-layout.js
 msgid "sections"
@@ -19173,10 +18906,6 @@ msgstr ""
 #: openpilot/starpilot/ui/appearance_compact.py
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "selected"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "selected from"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/map-operations.js
@@ -19964,10 +19693,6 @@ msgstr ""
 msgid "unavailable"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/plots.js
-msgid "unavailable motion source"
-msgstr ""
-
 #: openpilot/starpilot/ui/home.py
 msgid "uncompiled"
 msgstr ""
@@ -20235,10 +19960,6 @@ msgstr ""
 msgid "when the adjacent lane and blind spot are clear."
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "whole bundles retained."
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/sentry.js
 msgid "wide"
 msgstr ""
@@ -20393,10 +20114,6 @@ msgstr ""
 #: openpilot/starpilot/galaxy/web/js/record-history.js
 #: openpilot/starpilot/ui/replay_settings.py
 msgid "{} segment"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/settings-recovery.js
-msgid "{} settings restored. {}"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
@@ -20609,10 +20326,6 @@ msgstr ""
 msgid "Communication Issue Between Processes"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Comparable episodes: {} before · {} after"
-msgstr ""
-
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Confirm Lane Change"
 msgstr ""
@@ -20671,14 +20384,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/sentry-notifications.js
 msgid "Delivery: {} · Pending: {}"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/plots.js
-msgid "Desired / actual · m/s² · {}"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/plots.js
-msgid "Desired: {} · Actual: {}"
 msgstr ""
 
 #: openpilot/selfdrive/selfdrived/events.py
@@ -20875,20 +20580,12 @@ msgstr ""
 msgid "Lane Departure Detected"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Last controller report: {} seconds old when read."
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Last usable screen: {} × {} pixels."
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/model-laboratory.js
 msgid "Lateral: {}"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Latest control / applied output / measured pose: {} / {} / {} monotonic seconds. Episode {} · Applied profile {}."
 msgstr ""
 
 #: openpilot/selfdrive/selfdrived/events.py
@@ -20935,20 +20632,8 @@ msgstr ""
 msgid "Out of Storage"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/plots.js
-msgid "P / I / D / F · controller output units · {}"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/plots.js
-msgid "P / I / F · m/s² · {}"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Pairing with {}…"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Parameters under evaluation: {}"
 msgstr ""
 
 #: openpilot/selfdrive/selfdrived/events.py
@@ -21103,10 +20788,6 @@ msgstr ""
 msgid "Select EV curves for inherited acceleration presets. Individual personality and custom curves remain as selected. Truck presets take priority. Updates within one second."
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Selected bundles: {} / {} required · {} whole bundles retained."
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/models.js
 msgid "Selected: {}"
 msgstr ""
@@ -21138,10 +20819,6 @@ msgstr ""
 
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Speed Too High"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/plots.js
-msgid "Speed source: {}"
 msgstr ""
 
 #: openpilot/selfdrive/selfdrived/events.py
@@ -21200,10 +20877,6 @@ msgstr ""
 msgid "Steering Temporarily Unavailable"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Steering input checks: {} · Steering delay: {}"
-msgstr ""
-
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Steering misalignment detected"
 msgstr ""
@@ -21256,10 +20929,6 @@ msgstr ""
 msgid "Take Control"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/plots.js
-msgid "Target: {} · Measured: {}"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "The pending vehicle configuration needs the next startup to admit its steering and native button permissions. An already admitted configuration refreshes the steering preference during the drive."
 msgstr ""
@@ -21298,10 +20967,6 @@ msgstr ""
 
 #: openpilot/starpilot/ui/tesla_screen_feature.py
 msgid "Touch the Tesla screen with three fingers to toggle Always On Lateral. Requires Always On Lateral and the detected Vehicle CAN add-on cable. Does not engage or cancel cruise control. Applies after the next startup."
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Training windows: {} · Validation windows: {}"
 msgstr ""
 
 #: openpilot/selfdrive/selfdrived/events.py
@@ -21396,10 +21061,6 @@ msgstr ""
 msgid "permanent"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "selected from {}"
-msgstr ""
-
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "take control"
 msgstr ""
@@ -21440,10 +21101,6 @@ msgstr ""
 msgid "{} colors"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/plots.js
-msgid "{} controller terms"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/system-monitor.js
 msgid "{} cores · overall usage"
 msgstr ""
@@ -21476,20 +21133,12 @@ msgstr ""
 msgid "{} of {} free this month"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "{} original endpoints"
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/system-monitor.js
 msgid "{} processes shown. {}"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/map-operations.js
 msgid "{} regions shown · Up to {} transfer · {} new storage."
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "{} samples · {} retained blocks"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/route-workspace.js
@@ -21605,10 +21254,6 @@ msgstr ""
 msgid "Adjust the camera crop with a live cabin preview."
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "All 30 parameters have torque stages; 26 have torque-actuated PID stages. The four friction thresholds have no PID friction measurement stage. Support describes controller capability; it does not establish a validated fit. Missing values remain “Not reported”."
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Always above other widgets"
 msgstr ""
@@ -21640,14 +21285,6 @@ msgstr ""
 
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Assists automatic resume from a cruise-controlled stop. Requires StarPilot speed control; applies after the next startup"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Before and after use separate completed, comparable driving episodes. Unmeasured values remain “Not measured”. Passing future checks does not itself confirm controller application or saving; currently applied values require fresh controller evidence."
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Blue is desired response; orange is actual. Existing live control telemetry; missing samples leave gaps."
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/install-app.js
@@ -21839,22 +21476,6 @@ msgstr ""
 msgid "Draw on a local still or an empty camera-sized canvas; image stays on this device browser"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Each requested value is paired by the learner with its genuine later measured pose. The horizontal axis uses those pose timestamps; selected endpoints are not resampled or upsampled. Blue is requested, orange is measured."
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Each value is an original-effect correction coordinate. Baseline 0 means no automatic correction. Learned values are the latest evaluated proposal; current values require fresh controller application evidence."
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Each value is an original-effect correction coordinate; baseline 0 means no automatic correction. Accepted baseline values were acknowledged by the controller. A pending trial target is an offer, not proof of application. Currently applied values require fresh controller evidence."
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Earlier episode only; the current steering context is not established by this plot."
-msgstr ""
-
 #: openpilot/starpilot/galaxy/web/js/flm-training-results.js
 msgid "Earlier learning report; current application unknown"
 msgstr ""
@@ -22000,10 +21621,6 @@ msgid "Keep Spotify enabled in step 4. A disconnected Bluetooth speaker can wait
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/flm-training-results.js
-msgid "Learning paused; steering context changed"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
 msgid "Learning state reported; trial application unknown"
 msgstr ""
 
@@ -22109,10 +21726,6 @@ msgstr ""
 
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Optional RAV4 2022/2023 receiver. Off retains the original radar choice. Applies after startup; native safety and ECU configuration are unchanged."
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "P · I · D · F; absent terms leave gaps."
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/data/catalog.json
@@ -22438,10 +22051,6 @@ msgstr ""
 msgid "System Tools"
 msgstr ""
 
-#: openpilot/starpilot/galaxy/web/js/plots.js
-msgid "Target / measured · m/s² · {}; measured from {}"
-msgstr ""
-
 #: openpilot/starpilot/ui/lane_change_feature.py
 msgid "Temporarily reduces following time during a lane change when the lane and lead gap are clear; requires StarPilot speed control"
 msgstr ""
@@ -22456,10 +22065,6 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/vasm.js
 msgid "The display is mirrored: vehicle left is camera right; vehicle right is camera left. Trace visible side glass, leaving pillars and interior out."
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "The live desired/observed plots show sampled controller telemetry; they are not actuator-delay aligned."
 msgstr ""
 
 #: openpilot/starpilot/galaxy/setting_descriptions.py
@@ -22488,10 +22093,6 @@ msgstr ""
 
 #: openpilot/starpilot/ui/lane_change_feature.py
 msgid "Time to wait after signaling before an automatic lane change; lane and blindspot checks still apply"
-msgstr ""
-
-#: openpilot/starpilot/galaxy/web/js/flm.js
-msgid "Torque; PID unsupported (no friction stage)"
 msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
@@ -28765,4 +28366,3411 @@ msgstr ""
 
 #: openpilot/starpilot/galaxy/web/js/models.js
 msgid "tries a different model each drive"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "A backed-up slider is unavailable for this controller. Nothing was changed."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "A configuration change was reported"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "A fresh device report is not available yet. Your tune has not changed. Try again when the connection is ready."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "A newer drive did not support this same adjustment. Auto Learn left the tune unchanged."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "A newer local outcome supersedes this backup. Existing rollback history was preserved."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "A rollback was requested. Current application is not yet acknowledged."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "A saved GM steering setting turns off Auto Learn for this vehicle."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/toggle_backup.py
+msgid "A setting is no longer available"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "A trial was offered. It has not yet been acknowledged as applied."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "A tune was suggested, but at least one original controller or encoder check refused it. Your saved tune was kept."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "About this graph"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Accept finding"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Accept this finding?"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Accepted"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Accepted findings stay eligible for Auto Learn. Review the other suggested values below."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Accepted for next drive"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Accepted · Auto Learn on"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "Active trial parameters"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Activity"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/plots.js
+msgid "Actual"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "Actual friction-curve adjustments"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Actual full original anchor"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Actual full profile hash"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Actual full surface manifest"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Actual live control timestamp"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Actual live target sequence"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Actual live trial ID"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "Actual route control timestamp"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Additional candidates are retained in the device's full assessment."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Adds low-speed steering help when the wheels have not reached the requested turn angle."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Adds more fading of the FF-gain adjustment when exiting a left curve within the curve-exit speed range."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Adds more fading of the FF-gain adjustment when exiting a right curve within the curve-exit speed range."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Adds planned steering effort while starting a left turn at very low speeds."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Adds planned steering effort while starting a right turn at very low speeds."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Adds straight-ahead softening at highway speeds."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Adjustment selected"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "After a completed drive, Auto Learn will show what it found and whether it saved a change."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "After active steering has been recorded, your drive review will appear here."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/toggle-backup.js
+msgid "All available toggles already use their defaults."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "All saved & applied values"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Allows the FF-gain adjustment to fade further when exiting a left curve within the curve-exit speed range."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Allows the FF-gain adjustment to fade further when exiting a right curve within the curve-exit speed range."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "An analysis was reported, but it is missing information needed for a complete drive review. Waiting for the full report."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "An original frame was inactive, limited or otherwise ineligible."
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "Analysis decision"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Analysis details"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "Analysis runs while parked"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Analyzing your drive"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Applied at that time"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Applied correction coordinates"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Applied now"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Applied profile sequence"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Applied steering data arrived late. Those samples cannot be used."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/toggle-backup.js
+msgid "Apply the compatible saved toggles, layout and colors from this backup? Unavailable settings will be skipped. Keep the vehicle parked. Restoring a layout turns off Big UI steering wheel rotation."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "At low speed, steering was slow to build into left turns."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "At low speed, steering was slow to build into right turns."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Auto Learn applied now: {}."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Auto Learn applied {}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Auto Learn is off"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Auto Learn is on"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Auto Learn is on, but no learner report has arrived yet."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Auto Learn is paused while an older manual FLM tune is active."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Auto Learn locked for this setting"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Auto Learn manages this curve automatically. Reviewing these values does not change them, and there are no manual sliders here."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Auto Learn manages this curve; your manual sliders are separate."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Auto Learn only"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Auto Learn reviewed the drive and left your tune unchanged. Consistent suggestions are listed when available."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Auto Learn saved a tune"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Auto Learn saved your steering adjustments for the next drive."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Auto Learn saved {}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Auto Learn saved: {} for the next drive."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Auto Learn saved: {}."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Auto Learn setup"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Auto Learn setup restores a setup this comma already knows. On a wiped or replacement comma, choose Recover as manual tune. Recovered manual values stay locked; accepted findings can keep learning."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Auto Learn will review it as more driving is recorded."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Auto Learn will save changes it can confirm. You can also review these suggestions and adjust the manual settings while parked."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Auto-learned settings"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "Automatic configuration changed"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+#: openpilot/starpilot/galaxy/flm_diagnostics.py
+msgid "Automatic tune refusal reasons"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Autotune is available for torque steering only. Live plots remain available."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Awaiting next-drive measurement"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Back up or restore your tune"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/system-maintenance.js
+msgid "Backup, Reset & Cleanup"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/system-maintenance.js
+msgid "Backup, reset and cleanup"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Baseline / candidate loss"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Baseline restored; waiting for matching road"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Baseline statistics use {} window."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Baseline statistics use {} windows."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Before"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/drive_analysis.py
+msgid "Big model (identity not recorded)"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Block sealed; waiting for a different maneuver"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "COMPLETED DRIVE REVIEW"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Calibration generation"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Candidate correction coordinates"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Candidate parameters"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Capture interruptions"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Center taper"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Change confirmed"
+msgstr ""
+
+#: openpilot/starpilot/ui/torque_feature.py
+msgid "Change confirmed. Eligible for Auto Learn."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Change {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Changes that make steering worse are rolled back. Accepted and saved values are shown separately."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Checking steering suggestions"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Checking that the recording is unchanged."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Checking the car's current steering response."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Checking the proposed adjustment against the current steering commands."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Checking the recorded-drive recommendations against the original controller and steering outputs."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Checking the suggested changes."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/drive_analysis.py
+msgid "Chestnut big model (identity not recorded)"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Choose FLM tune backup"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Choose a supported FLM tune backup."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Choose a valid JSON tune backup."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Choose an area below. Amber labels show findings from your drive."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "Choose manual settings or an Auto Learn setup."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Choose the speed ranges for changes at the start and end of a curve."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Collecting complete, comparable steering windows."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Collecting driving samples"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Collecting repeated examples before choosing an adjustment."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Collecting samples"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Collecting the next planned set of comparison windows."
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Collection duration seconds"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Collection reset reasons"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Collection session"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Collection starts while driving. No new correction is being applied while parked."
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Collector admission result retained"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Comparable driving showed a steering regression, so the prior tune was restored."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Comparable trial windows"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Comparable trial windows showed more oscillation, so the correction was rolled back."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Comparing new steering windows with the baseline."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Comparison passed; controller acknowledged"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_acceptance.py
+msgid "Complete the saved tune’s next-drive review before accepting another finding. The other findings remain available."
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Completed drive analyzed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Completed drive: {}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Completed window"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/server.py
+msgid "Confirm the restore preview first."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Conflicting findings"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Connect over Wi-Fi to download FLM logs."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Connect over Wi-Fi to transfer tune files."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "Connect the vehicle before backing up its tune."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Connect to the parked device before accepting a finding."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Connect to your device to see its learning activity and steering tune."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Connect to your device to see its steering tune."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Connected · Auto Learn off"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Connected · Auto Learn on"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Connection details"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Connection interrupted"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/save-me.js
+msgid "Connection lost. Check whether the comma is restarting before trying again."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Control / applied output / pose: {} / {} / {} monotonic seconds."
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "Control windows in steering evidence history"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+#: openpilot/starpilot/galaxy/flm_diagnostics.py
+msgid "Controller and encoder check windows"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "Controller eligibility refusals"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Corner entry"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Corner exit"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Correction applied"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Correction confirmed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Could not confirm the restore. Refresh your tune before retrying."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Could not confirm this change was saved. Reconnecting to check the saved values."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/server.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Could not confirm this finding was saved. Refresh the saved settings before trying again."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_acceptance.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Could not confirm this finding was saved. Refresh the saved settings."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Could not download the tune."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/toggle-backup.js
+msgid "Could not prepare toggle reset."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Could not read the backup."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Could not refresh the device report. No change was sent. Reconnect and try again."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/toggle-backup.js
+msgid "Could not reset toggles. Review Toggles before retrying."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Could not review this backup."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Crawl center deadband"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Crawl friction threshold"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Crawl-speed turn-in and angle assistance."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Crawling speed"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Current block samples"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Current native evidence healthy"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Current objective"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Current steering evidence is unavailable. A fresh qualified window is required."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/settings-recovery.js
+msgid "Current:"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/save-me.js
+msgid "Danger zone"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Default 0%"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/settings-recovery.js
+msgid "Default:"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Delay-paired error"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Delay-paired steering error"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/plots.js
+msgid "Desired"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/plots.js
+msgid "Desired / actual · m/s² · {label}"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "Diagnostic persistence error"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Diagnostics & source details"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Different parts of the drive did not support the same change. Your tune was left unchanged."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Different windows suggested different settings. No single setting is recommended."
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Discarded collection sessions"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Download FLM logs"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Download manual sliders and saved Auto Learn setups as a backup file. Import reviews compatibility before anything changes."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Download tune"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+#: openpilot/starpilot/galaxy/flm_diagnostics.py
+msgid "Drive analysis is partial"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Drive analysis is paused while the vehicle interface reports a fault."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Drive analysis is waiting for shutdown to finish."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Drive analysis is waiting for steering controls to disengage."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Drive analysis is waiting for the vehicle to be offroad."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Drive finding"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Drive review"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Drive review could not finish"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Drive {}, segment {}."
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+#: openpilot/starpilot/galaxy/flm_diagnostics.py
+msgid "Drives in steering evidence history"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+#: openpilot/starpilot/galaxy/flm_diagnostics.py
+msgid "Earlier analysis shown while updating"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Earlier analyzed drive: change {}; not saved."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Earlier analyzed drive: no consistent suggested value; not saved."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Earlier analyzed drive: suggested {} (from {}; change {}); not saved."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Earlier analyzed drive: {}"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "Earlier completed drive reviewed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Earlier drive findings remain below while this analysis runs."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Earlier grouped findings"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Earlier results are available below. Current steering activity is unknown."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Earlier saved Auto Learn values"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Earlier saved setup"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Eligible for Auto Learn"
+msgstr ""
+
+#: openpilot/starpilot/ui/torque_feature.py
+msgid "Eligible for Auto Learn."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_acceptance.py
+msgid "Enable Auto Learn before accepting a finding for continued learning."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "End · {}s"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Episode {} · All original endpoints. No interpolation."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Episode {} · Selected original endpoints. No interpolation."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/save-me.js
+msgid "Erase StarPilot data and restart. Wi-Fi and installed software are kept."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/save-me.js
+msgid "Erase StarPilot data?"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/save-me.js
+msgid "Erase data and restart"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Evaluating a trial"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Evidence & exact values"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "Existing automatic tuning could not be backed up. Nothing was restored."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "Existing manual settings are unreadable. Nothing was changed."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "Existing manual tuning could not be backed up. Nothing was restored."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Explore your settings"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "FLM could not obtain a complete list of local recordings."
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "FLM manifest"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "FLM ran out of space in its review history. The latest analysis could not be saved; this does not mean your saved tune was erased."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Fades the FF-gain adjustment as a left turn straightens out."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Fades the FF-gain adjustment as a right turn straightens out."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Fast center deadband"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Fast friction threshold"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Find both in Your tune."
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "Findings retained from earlier drive"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Finishing left turns"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Finishing right turns"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Fit attempts"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Fit in progress"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Fit results"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Five speed settings managed by Auto Learn, separate from the manual sliders."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Friction and relief as steering unwinds."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Friction thresholds and turn-in trimming."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "From an earlier drive with the same setup."
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "GLOBAL original source capture"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "GLOBAL response bootstrap readiness"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "GLOBAL source observation refusals"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/plots.js
+msgid "Hide controller terms"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Higher speeds"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Highway center deadband"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Highway center taper"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Highway friction threshold"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Highway speed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Highway steering smoothness"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "How steering response differs between left and right curves."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "How steering settles as a turn ends."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "How steering starts a turn."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "How to read these values"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "How your car followed the steering request"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Ignores very small steering tracking errors at crawling speeds."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Ignores very small steering tracking errors at higher speeds."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Ignores very small steering tracking errors at highway speeds."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Ignores very small steering tracking errors at low speeds."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Ignores very small steering tracking errors at medium speeds."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Import tune"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Independent trial windows showed lower steering error."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/server.py
+msgid "Invalid request"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/server.py
+msgid "Invalid restore preview."
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "Joined steering observations"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/toggle-backup.js
+msgid "Keep the vehicle parked. Settings unavailable for this vehicle are left unchanged. Calibration, downloaded models, accounts and network credentials are kept."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "LAST REPORTED EXPERIMENT"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "LEARNING ACTIVITY"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Last fit"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Last unsuccessful fit"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Later comparable driving showed lower steering error."
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "Latest completed recording reviewed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Latest legacy fit"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "Latest recording analysis decision"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Latest review incomplete"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/onroad_layout.py
+msgid "Layout could not be saved; check that the device is parked and reload"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/toggle-backup.js
+msgid "Layout restored, but these options did not change: {}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Learned tune in use"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Learning eligibility unavailable"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Learning paused; current steering evidence unavailable"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Left crawl turn-in boost"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Left extra unwind relief"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Left steering gain"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Left turn-in boost"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Left turn-in threshold"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Left turn-in trim"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Left unwind floor relief"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Left unwind taper"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Left unwind threshold"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Legacy collector reason"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Legacy collector state"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Legacy fitter · Fit attempts"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Legacy fitter · Fit in progress"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Legacy fitter · Fit results"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Legacy fitter · Submitted fit jobs (reporter lifetime)"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Legacy retained blocks"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Live learner reason"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Live learner state"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Loading saved manual tune…"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Low speed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Low-speed angle assistance"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Low-speed center deadband"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Low-speed friction threshold"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Lower turn-in speed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Lower unwind speed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "MANAGED BY AUTO LEARN"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Make sense of your tune"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Makes friction compensation respond sooner to small tracking errors when entering a left curve."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Makes friction compensation respond sooner to small tracking errors when entering a right curve."
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Maneuver block coverage"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Manual override"
+msgstr ""
+
+#: openpilot/starpilot/ui/torque_feature.py
+msgid "Manual override. Auto Learn is locked for this setting."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "Manual overrides are saved. Review them before restoring an Auto Learn setup."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "Manual recovery was not confirmed. Existing automatic history was left unchanged."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Manual setting"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Manual sliders"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "Manual tune configuration"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Manual tuning"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Manual tuning is locked while driving. Park to make changes."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Manual tuning is unavailable for this controller."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "Manual tuning is unreadable. Nothing was changed."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Manual tuning unavailable. Reconnecting…"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Maximum block samples"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/plots.js
+msgid "Measured"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Measuring comparable driving before testing a correction."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Measuring response"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Mid speed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Mid-speed center deadband"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Mid-speed friction threshold"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "More comparable driving is needed to distinguish a correction from normal variation."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "More evidence needed"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "More recorded suggestions omitted"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Moving a slider locks only that setting. Default releases it. Accepting a finding uses its value while keeping Auto Learn enabled for it."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/drive_analysis.py
+msgid "Multiple recorded models"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "Native delivery is not asserted by this status"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "Next-drive trial is reversible"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "No Auto Learn setup in this file matches the current controller and settings. It remains available for review."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "No action is needed. Auto Learn can review the next completed drive when it is enabled."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "No additional suggestions were reported for this drive."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "No automatic save is shown here."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "No bounded training step passed the original steering-output checks. The saved tune was kept."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "No compatible setup was exported. Its earlier values remain in the backup for review."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "No consistent suggested value"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "No current learner report"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "No driving samples are being collected by the learner. Turn it on in steering settings to begin."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "No findings reported yet"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "No new change"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "No new change was saved. Your current tune stays in place, and there is nothing you need to do."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "No new finding from this drive"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "No new findings"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "No new suggestions"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "No pending trial reported"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "No recommendation from this analyzed drive for this dial."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "No recorded response series was included in this report."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "No saved adjustments reported."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "No saved setup matches the current steering implementation and baseline. Nothing was changed."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "No saved value reported"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "No single suggested value"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "No steering recording yet"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "No supported suggestion was found in the usable sections. Your existing tune was kept."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Not confirmed across the drive"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Not saved"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Observation so far, not a confirmed improvement"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "Offroad assessment hash"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+#: openpilot/starpilot/galaxy/flm_diagnostics.py
+msgid "Omitted recorded segments"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "On left curves, the car turned less sharply than requested."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "On left curves, the car turned more sharply than requested."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "On right curves, the car turned less sharply than requested."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "On right curves, the car turned more sharply than requested."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Once the device reports steering measurements, the request and the car response will appear here."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "One recorded section · {}s"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "One short recorded section, not a full-drive score or a before-and-after comparison."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Only intact, fully saved sections were reviewed. These suggestions will not change your tune automatically."
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "Original completed route hash"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "Original controller observations"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Original full surface anchor"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Original samples in degrees at their source times. No interpolation or delay alignment."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Original samples in m/s² at their source times. No interpolation or delay alignment."
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Overrun batches"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Overview"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/plots.js
+msgid "P / I / D / F · controller output units · {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/plots.js
+msgid "P / I / F · m/s² · {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Paired inputs retained"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Parent fit profile retained"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "Park and switch off the vehicle before restoring a tune."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Park and switch off the vehicle to restore settings."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/save-me.js
+msgid "Park before continuing. Wi-Fi, AGNOS, and installed StarPilot stay in place. You will need to pair Galaxy again."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "Park before recovering a tune."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/toggle-backup.js
+msgid "Park the vehicle before resetting available toggles."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_acceptance.py
+msgid "Park with the current vehicle connected before accepting a finding."
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+#: openpilot/starpilot/galaxy/flm_diagnostics.py
+msgid "Parked analysis progress"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Part of the drive suggested this setting; separate windows did not confirm it."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Part of your drive could be reviewed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Part of your drive reviewed"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+#: openpilot/starpilot/galaxy/flm_diagnostics.py
+msgid "Partial drive segments"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Partial-drive suggestion"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Persisted history is prior only"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "Physical road improvement proven"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Possible change"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Preparing drive analysis"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Previous-drive recommendation: change {}; not saved."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Previous-drive recommendation: no consistent suggested value; not saved."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Previous-drive recommendation: suggested {} (from {}; change {}); not saved."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Previously saved tune"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Prior full profile hash"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Proposal"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "Proposed friction-curve adjustments"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Proposed full profile hash"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "RECORDED-DRIVE ANALYSIS"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Reading a recorded drive"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Reading the completed drive."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Reading the recording sections."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Reading was interrupted before the drive assessment finished. This report has no specific blocker."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Recommendation · not saved"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Recorded baseline"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+#: openpilot/starpilot/galaxy/flm_diagnostics.py
+msgid "Recorded coordinate recommendations"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Recorded drive"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+#: openpilot/starpilot/galaxy/flm_diagnostics.py
+msgid "Recorded drive coverage"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Recorded requested and measured steering"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "Recorded route suggestions"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+#: openpilot/starpilot/galaxy/flm_diagnostics.py
+msgid "Recorded steering observations"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "Recorded steering response"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+#: openpilot/starpilot/galaxy/flm_diagnostics.py
+msgid "Recorded suggestion assessments"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "Recorded suggestion count"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+#: openpilot/starpilot/galaxy/flm_diagnostics.py
+msgid "Recorded suggestion sources"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Recorded values"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+#: openpilot/starpilot/galaxy/flm_diagnostics.py
+msgid "Recorded vehicle identity"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/server.py
+msgid "Recording action could not be completed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Recover as manual tune"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "Recover these values as your manual tune? Auto Learn pauses until you reset the manual tune."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "Recovery state changed while preparing the backup. Try again."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_acceptance.py
+msgid "Refresh the drive findings before accepting this change."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Refresh the drive review before accepting a finding."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Refused in {} window:"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Refused in {} windows:"
+msgstr ""
+
+#: openpilot/starpilot/ui/torque_feature.py
+msgid "Remove manual overrides, including any restored speed adjustments. Auto Learn history is preserved."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Repeated finding"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/toggle-backup.js
+msgid "Replace your saved layout and colors? Keep the vehicle parked. Restoring a layout turns off Big UI steering wheel rotation."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Requested and measured steering acceleration, paired using the learner's measured delay"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Required maneuver groups"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Reset confirmed: your manual overrides are cleared."
+msgstr ""
+
+#: openpilot/starpilot/ui/torque_feature.py
+msgid "Reset manual tune"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Reset manual tune?"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/defaults_recovery.py
+msgid "Reset the selected setting to its current StarPilot default?"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/toggle-backup.js
+msgid "Reset toggles"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/toggle-backup.js
+msgid "Reset toggles to default"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/toggle-backup.js
+msgid "Reset toggles to default?"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/defaults_recovery.py
+msgid "Reset {} selected settings to their current StarPilot defaults?"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Response to left and right steering requests."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "Restore preview expired. Review the file again."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Restore preview is unavailable."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Restore section"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Restore settings"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/toggle_backup.py
+msgid "Restore stopped after {} change: {label}. Review Toggles before retrying."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/toggle_backup.py
+msgid "Restore stopped after {} changes: {label}. Review Toggles before retrying."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Restore stopped. Refresh your tune before retrying."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "Restore these manual slider values? Changed values stay locked; other settings can learn."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "Restore this locally verified Auto Learn setup? Current use is still confirmed by the controller while driving."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Restore this tune?"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "Restore was not confirmed. Refresh the saved tune before retrying."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Restored setup · Drive completed {}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/plots.js
+msgid "Resume live plots"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+#: openpilot/starpilot/galaxy/flm_diagnostics.py
+msgid "Retained control windows"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+#: openpilot/starpilot/galaxy/flm_diagnostics.py
+msgid "Retained tracking windows"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Returning to baseline"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Returning to the baseline"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/toggle-backup.js
+msgid "Review Toggles before retrying."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Review imported tune"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Review needed before learning"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Review only"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Review restore"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Review speed settings"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_acceptance.py
+msgid "Review the existing manual tune before accepting this finding."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Review the findings"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Review the findings for each setting below."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Review the latest saved state before treating an earlier tune as current."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_acceptance.py
+msgid "Review the recovered tune before accepting this finding."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Review these suggestions alongside your saved tune. Auto Learn saves changes after confirming them against your driving."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Review what Auto Learn found, or adjust a setting yourself."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Review what this setting changes before making a manual adjustment."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Review {} finding"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Review {} findings"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Right crawl turn-in boost"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Right extra unwind relief"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Right steering gain"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Right turn-in boost"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Right turn-in threshold"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Right turn-in trim"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Right unwind floor relief"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Right unwind taper"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Right unwind threshold"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "STEERING RESPONSE"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "SUGGESTIONS FROM RECENT DRIVING"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/save-me.js
+msgid "Save Me requested. Galaxy will disconnect during cleanup and restart."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Saved Auto Learn values"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Saved change"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Saved count not reported"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Saved for the next drive"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "Saved friction-curve adjustments"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/onroad_layout.py
+msgid "Saved layout changed; reload before saving"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Saved manual steering settings require review; existing choices were preserved."
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+#: openpilot/starpilot/galaxy/flm_diagnostics.py
+msgid "Saved route adjustment count"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+#: openpilot/starpilot/galaxy/flm_diagnostics.py
+msgid "Saved route configuration state"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Saved settings are temporarily unavailable."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "Saved settings changed after the preview. Nothing was restored."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/defaults_recovery.py
+msgid "Saved settings changed during reset"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/server.py
+msgid "Saved settings changed; refresh the page"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Saved setup history"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Saved setup · Drive completed {}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Saved state not confirmed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Saved state not confirmed."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_acceptance.py
+msgid "Saved steering settings are unreadable. Nothing was changed."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Saved tune not reported"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "Saved tuning is unavailable. Existing settings were left unchanged."
+msgstr ""
+
+#: openpilot/starpilot/ui/torque_feature.py
+msgid "Saved tuning or controller context is invalid; repair it in Toggles"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Saved values checked. Some manual overrides are still set; the reset is not confirmed."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Sections read in the current recording"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "See all {} findings"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "See {} finding"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_acceptance.py
+msgid "Select a current finding to accept."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "Select the same lateral controller as the backup before restoring."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Separate parts of your drive support this suggestion. Auto Learn still needs to confirm the controller checks before saving it."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Separate parts of your drive support this suggestion. The controller checks must also pass before it is saved."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/toggle_backup.py
+msgid "Session, vehicle or parked state changed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Sets the extra planned steering effort in left curves, before tracking-error corrections."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Sets the extra planned steering effort in right curves, before tracking-error corrections."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Sets the lower end of the curve-entry softening speed range."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Sets the lower end of the curve-exit smoothing speed range."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Sets the upper end of the curve-entry softening speed range."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Sets the upper end of the curve-exit smoothing speed range."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/defaults_recovery.py
+msgid "Setting could not be reset"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/defaults_recovery.py
+msgid "Settings became unavailable"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/toggle_backup.py
+msgid "Settings changed while preparing restore"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "Settings changed while preparing the backup. Try again."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Shapes small steering corrections at crawling speeds."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Shapes small steering corrections at higher speeds."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Shapes small steering corrections at highway speeds."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Shapes small steering corrections at low speeds."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Shapes small steering corrections at medium speeds."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Show all reported activity"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/plots.js
+msgid "Show controller terms"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Show recent activity"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/server.py
+msgid "Sign in to Galaxy"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "Skipped recorded drives"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Small corrections and straight-road steadiness."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Small corrections by speed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/drive_analysis.py
+msgid "Small model (identity not recorded)"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Small steering corrections at different speeds"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Small steering corrections kept reversing on straights."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Small steering corrections while travelling straight."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Small straight-road corrections"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Snapshot selection attempts (collector lifetime)"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Snapshot selections declined (collector lifetime)"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Softens friction compensation while straightening out of a left curve, mainly at higher speeds."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Softens friction compensation while straightening out of a right curve, mainly at higher speeds."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Softens planned steering near straight ahead."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Softens planned steering while entering a left curve within the Turn-in trim speed range."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Softens planned steering while entering a right curve within the Turn-in trim speed range."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/server.py
+msgid "Software updates are unavailable"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Some sections of the drive suggest this change. More independent driving is needed before Auto Learn can save it."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Source drive"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Source receipt age seconds"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Speed ranges"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/plots.js
+msgid "Speed source: {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Start · 0s"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Starting left turns"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Starting right turns"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Starting the parked analyzer."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Starting value"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Steering balance"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Steering built too early as left turns started."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Steering built too early as right turns started."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Steering comparison details"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Steering made repeated corrections while holding left curves."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Steering made repeated corrections while holding right curves."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Steering parameter groups"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Steering response in left turns"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Steering response in right turns"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Steering samples arrived late. Fresh data is required before learning can continue."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Steering setting to review"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Steering support in tight, slower turns."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Steering was slow to build as left turns started."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Steering was slow to build as right turns started."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Straight & center"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Strengthens the FF-gain adjustment while entering a left curve, mainly at lower speeds."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Strengthens the FF-gain adjustment while entering a right curve, mainly at lower speeds."
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Submitted fit jobs (reporter lifetime)"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "Suggested adjustment is not confirmed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Suggested change"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Suggested value"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Suggestions · needs more evidence"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "THE CURRENT EXPERIMENT"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/plots.js
+msgid "Target"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/plots.js
+msgid "Target / measured · m/s² · {label}; measured from device motion"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/plots.js
+msgid "Target / measured · m/s² · {label}; measured from unavailable motion source"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Testing a small correction"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "The backup checksum does not match. The file may be damaged."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "The backup compatibility record is invalid."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "The backup lifecycle record is invalid."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "The backup mixes different vehicle configurations."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "The baseline is restored. Completed comparison samples are kept while waiting for the same driving conditions."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "The candidate triggered an encoder limiter that the recorded request did not."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "The comparison passed and the controller acknowledged this correction. Disk saving is a separate result."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "The controller acknowledged the accepted correction."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "The controller acknowledged the rollback."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "The controller acknowledged the trial. Comparable new driving windows decide whether to keep it."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "The controller returned to its prior baseline."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "The device has not identified a current vehicle and Auto Learn setting."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "The device's detailed report is available in Activity."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "The drive findings changed. Review the latest finding before accepting it."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "The drive report is incomplete"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "The drive was analyzed. More complete independent steering windows are needed before saving a tune."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "The effect of this adjustment has not been verified yet."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "The existing manual baseline differs. Review it before recovering a tune."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "The existing saved tune is unreadable. It will not be overwritten."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "The file contains an unsupported manual setting."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "The independent parts of this drive did not support the same adjustment. The saved tune was kept."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "The latest compatible local setup was rolled back. Review that outcome before manual recovery."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "The learned values are saved. The controller reports their use separately during driving."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_acceptance.py
+msgid "The original drive review is unavailable. Refresh the findings."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_acceptance.py
+msgid "The original finding source changed. Refresh the review."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_acceptance.py
+msgid "The original finding source is unavailable."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "The recommendation failed an original controller or steering-output check. The saved tune was kept."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "The recording is missing inputs needed to verify its recommendations. The saved tune was kept."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "The recovered manual tune needs a different controller or vehicle. Nothing was changed."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "The report does not identify its saved state. Check the latest report before treating it as ready for the next drive."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "The reported steering output could not be verified."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "The restored values are listed in Your tune. Other findings are separate ideas."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "The saved Auto Learn setup is invalid."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_acceptance.py
+msgid "The saved automatic tune conflicts with a manual setting. Review the saved tune."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "The saved controller selection is unreadable. Nothing was restored."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_acceptance.py
+msgid "The saved learning settings are unreadable."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "The saved setup history is full. No existing setup was removed."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "The saved steering settings do not match the vehicle configuration or controller for this recording."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "The sections were read. Auto Learn is verifying the recording."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_acceptance.py
+msgid "The selected steering controller is unavailable."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "The separate drive did not support the same adjustment. Your saved tune was kept."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "The steering request kept swinging back and forth, and the car followed it."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_acceptance.py
+msgid "The steering settings changed since this finding. Review the current findings."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "The trial did not show a consistent improvement."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "The trial increased steering error or oscillation, so it was rolled back."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "The trial was rolled back. Any other ideas below are separate from the restored tune."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "The vehicle interface still reports ignition on. Drive analysis starts after the ignition turns off."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_acceptance.py
+msgid "The vehicle must identify itself before a finding from this review can be accepted."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_acceptance.py
+msgid "The vehicle or finding changed. Review it again."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "The vehicle or saved tune changed. Review the backup again."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "The vehicle or settings changed. Review this finding again while parked."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "These are earlier observations. They do not establish a correction being applied now."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "These are provisional suggestions from those sections. This partial review will not change your tune automatically."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "These are the last reported saved values. The controller checks that they match your setup before using them."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "These findings do not match your current vehicle. Waiting for its own completed-drive report."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "These reported results are separate from your manual settings."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "These saved values come from an earlier report. Current use is shown separately during driving."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "These suggestions are not saved. Auto Learn needs more evidence before saving them automatically."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "These suggestions come from an earlier drive. Newer driving is reviewed separately."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "This change did not pass the steering-command checks. Auto Learn kept your existing tune."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "This change did not pass the steering-limit checks."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "This device cannot verify the latest qualified setup. Backups cannot replace qualification or rollback history."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_acceptance.py
+msgid "This drive review is unavailable for accepting findings. Refresh the findings."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "This drive was reviewed on its own. Automatic saving is waiting for the car to identify itself."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_acceptance.py
+msgid "This finding belongs to a different controller setup. Review its current findings."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_acceptance.py
+msgid "This finding belongs to a different vehicle fingerprint. Review a drive from the current vehicle."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_acceptance.py
+msgid "This finding belongs to a different vehicle."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_acceptance.py
+msgid "This finding is no longer available. Refresh the drive review."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_acceptance.py
+msgid "This finding’s recording no longer matches its drive review. Refresh the findings."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "This is an analysis problem, not a report that your saved tune was erased. Download FLM logs in Activity for details."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "This older backup has no compatible manual recovery record. Its manual sliders can still be reviewed."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "This older build rejected its vehicle/settings identity before route analysis. In the parked analysis path, missing or invalid recorded vehicle identity causes this refusal; it does not establish route corruption."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_acceptance.py
+msgid "This older finding is missing its recorded vehicle fingerprint. Review a newer drive."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "This older report did not distinguish a legacy GM FLM profile from a saved GM setting that turns learning off."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "This older report does not identify a single dial or absolute target for these findings. They are not changes to apply."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/save-me.js
+msgid "This permanently erases settings, calibration, driving routes, downloaded maps and models, themes, backups, and Galaxy pairing. Back up anything you need first."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "This recording repeats driving already reviewed for this trial. Auto Learn is waiting for a different drive."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "This report is for another vehicle"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_acceptance.py
+msgid "This setting changed since the finding. Review the current value."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_acceptance.py
+msgid "This setting is manually locked. Select Default before accepting a finding."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "This setup was rolled back. It cannot be recovered as a new manual tune."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "This suggestion comes from intact sections of an incomplete recording. Auto Learn will not save it automatically."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "This trial has already started. Restoring a backup cannot start it again."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "This tune exceeds the backup size limit."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "This tune is for a different vehicle or vehicle configuration. Nothing was changed."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "This value is saved for your next drive. Auto Learn can keep refining it."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "This will show real collection, trial and rollback events as the learner reports them."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Three trial drives did not establish an improvement. The prior tune was restored."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/server.py
+msgid "Toggle backup is unavailable"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/toggle_backup.py
+msgid "Toggles restored, but the layout could not be restored: {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/toggle_backup.py
+msgid "Toggles restored, but these layout options did not change: {}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Torque only · PID unsupported"
+msgstr ""
+
+#: openpilot/starpilot/flm/training_report.py
+msgid "Total retained blocks"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Tracking error RMS · degrees · lower is better"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Tracking error RMS · m/s² · lower is better"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Training / held-out windows"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Trial"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Trial in progress"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Trial offered"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Trial results"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Tune backup download started."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Tune backup is too large."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/server.py
+msgid "Tune backup is unavailable"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Tune recovered. Manual values stay locked; other settings can keep learning."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/server.py
+msgid "Tune restore is unavailable. Refresh the saved tune before retrying."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Tune saved for the next drive"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Tuner views"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/recording_library.py
+msgid "Turn off the vehicle before managing recordings"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/save-me.js
+msgid "Type ERASE STARPILOT DATA to continue"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Upper turn-in speed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Upper unwind speed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "Use the backup’s metric or imperial units before restoring."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Use this value for your next drive. Auto Learn can keep improving this setting."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Uses {} recorded window, not just the section in the graph."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Uses {} recorded windows, not just the section in the graph."
+msgstr ""
+
+#: openpilot/starpilot/ui/torque_feature.py
+msgid "Vehicle tune, controller or effect definition changed. Reset this manual tune before editing."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Verifying the recording"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "View drive findings"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "View earlier saved values"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "View other findings"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "View saved change"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "View setting"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "View {} finding"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "View {} findings"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Viewing an idea does not change your tune."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Wait for a complete saved-state report before treating the change as ready."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Wait for a completed-drive report."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Waiting for active steering"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Waiting for active steering before collecting samples."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Waiting for current vehicle status before analyzing the recorded drive."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Waiting for device"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Waiting for matching road"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Waiting for samples"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Waiting for the controller"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Waiting for the learner"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Waiting for the vehicle interface before analyzing the recorded drive."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Waiting for vehicle status"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Waiting to analyze your drive"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "What StarPilot asked for"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "What happens next"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "What the car did"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "What the tuner found"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "When these lines are close, the car is following the steering request closely in this sample."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Where turn-in and unwind shaping take effect."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "While easing out of left curves, steering eased off faster than requested."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "While easing out of left curves, steering stayed stronger than requested."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "While easing out of right curves, steering eased off faster than requested."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "While easing out of right curves, steering stayed stronger than requested."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "YOUR MANUAL CONTROLS"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "You can review the suggested value and adjust this setting manually while parked."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Your changes"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Your drive produced this steering suggestion. Review the setting while parked."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Your drive review"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Your drive suggestions"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Your drive suggests this change, but Auto Learn needs more evidence before saving it automatically."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Your drive suggests this change. Auto Learn needs to confirm it before saving it automatically."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Your learned tune is saved"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Your learned values are saved. In-use status is reported separately during driving."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Your manual value below is separate."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Your next drive starts here"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Your previous tune was restored"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Your saved adjustments are ready for your next drive."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Your saved settings already match this backup."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Your saved steering adjustments are kept for the next drive."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Your saved steering adjustments are kept. Auto Learn continues reviewing your drives."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Your steering"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Your steering, measured"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Your tune"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "Your tune stayed the same"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Zero is the original baseline. These are correction coordinates, not raw degrees or torque. Speed-window coordinates scale the original speed range; deadband and angle assistance use the controller's physical normalizer. A trial is an offer, not proof of application. All 30 stages exist for torque; 26 exist for torque-actuated PID."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "existing manual settings"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "m/s² · delay aligned"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "not saved"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/flm_backup.py
+msgid "reviewed backup settings"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "suggested {} (from {}; change {})"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{label} accepted for your next drive. Auto Learn stays on for this setting."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "{label}: No"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "{label}: Not reported"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "{label}: Yes"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{label}: saved value confirmed at {value}."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{label}: the saved value is {value}. The requested {target} is not the current saved value."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{} / {} controller and encoder windows passed."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{} / {} original controller and encoder windows passed."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "{} Auto Learn setup"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "{} Auto Learn setups"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{} accepted"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{} accepted · saving not confirmed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/toggle-backup.js
+msgid "{} already matched"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{} drives in your steering history"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{} earlier grouped finding"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{} earlier grouped findings"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{} finding"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{} findings"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "{} manual setting"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "{} manual settings"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{} measured endpoints · {}s since the last pose"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "{} of 1 section read in this recording"
+msgstr ""
+
+#: openpilot/starpilot/flm/offroad_daemon.py
+msgid "{} of {} original recorded segments reviewed"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-review.js
+msgid "{} of {} recorded sections were usable. Your saved tune stayed the same."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "{} of {} sections read in this recording"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{} recorded steering observation"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{} recorded steering observation."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{} recorded steering observations"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{} recorded steering observations."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{} recorded window."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{} recorded windows."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{} saved"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/toggle-backup.js
+msgid "{} setting reset to default."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/toggle-backup.js
+msgid "{} setting reset. {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "{} setting restored. Current application is shown separately."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/settings-recovery.js
+msgid "{} setting restored. {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "{} setting would change."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/toggle-backup.js
+msgid "{} settings reset to default."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/toggle-backup.js
+msgid "{} settings reset. {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "{} settings restored. Current application is shown separately."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/settings-recovery.js
+msgid "{} settings restored. {label}"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "{} settings would change."
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{} speed-range finding"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{} speed-range finding · suggested change"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{} speed-range findings"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{} speed-range findings · suggested changes"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{} steering finding"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{} steering findings"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/toggle-backup.js
+msgid "{} toggle restored"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/toggle-backup.js
+msgid "{} toggles restored"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/toggle-backup.js
+msgid "{} unavailable setting skipped"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/toggle-backup.js
+msgid "{} unavailable settings skipped"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{}% higher observed error"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "{}% lower observed error"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Changes"
+msgstr ""
+
+#: openpilot/starpilot/galaxy/web/js/flm-backup.js
+msgid "Restoring…"
 msgstr ""
