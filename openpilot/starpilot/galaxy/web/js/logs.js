@@ -9,6 +9,7 @@ import { storedSize } from "./record-deletion.js"
 import { StarPortLogsFeed, StarPortLogSend, BUNDLE_URL, MESSAGE_LIMIT, fileUrl, outcomeLabel } from "./starport-logs.js"
 import { MenuTile } from "./menu-tile.js"
 import { BluetoothNotice, bluetoothConnection } from "./bluetooth-notice.js"
+import { displayLocale } from "./localization.js"
 
 export const Logs = {
   name: "Logs",
@@ -52,7 +53,7 @@ export const Logs = {
     async sendLogs() {
       if (await this.sendFeed.send(this.sendNote, this.sendDiscord)) this.sendNote = ""
     },
-    reportDate(seconds) { return new Date(seconds * 1000).toLocaleString() },
+    reportDate(seconds) { return new Date(seconds * 1000).toLocaleString(displayLocale()) },
     reportSize(bytes) { return `${(bytes / 1024).toFixed(1)} KiB` },
     async copyPreview() {
       if (!this.crashes.preview) return

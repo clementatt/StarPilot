@@ -1,6 +1,7 @@
 import { GxCollapse } from './disclosure.js'
 import { GxNotice } from "./notice.js"
 import { reportSave } from "./save-feedback.js"
+import { displayLocale } from "./localization.js"
 export const channels = ["webPush", "discord", "webhook", "ntfy"]
 export const labels = { webPush: "Browser push", discord: "Discord", webhook: "General webhook", ntfy: "ntfy" }
 
@@ -75,6 +76,7 @@ export const SentryNotifications = {
   computed: { relay() { return this.notifications?.relayEnrollment?.supported ? this.notifications.relayEnrollment : null } },
   methods: {
     reportSave,
+    testedAt(seconds) { return new Date(seconds * 1000).toLocaleString(displayLocale()) },
     otherPhones() { return (this.notifications?.appSubscriptions || []).filter(phone => !this.pushState.id || phone.id !== this.pushState.id) },
     refreshPush() { try { this.pushState = JSON.parse(window.StarPilotApp?.sentryPush?.() || '{}') } catch { this.pushState = {} } },
     togglePhone() { window.StarPilotApp?.setSentryPush?.(!this.pushState.enabled); this.refreshPush(); setTimeout(() => this.client.run(), 1000) },
@@ -193,7 +195,7 @@ export const SentryNotifications = {
               </div>
               <div v-for="phone in otherPhones()" :key="phone.id" class="gx-row gx-row--wrap">
                 <div class="gx-row__info gx-row__info--wide"><span class="gx-row__label">{{ phone.label || 'Phone' }}</span>
-                  <span class="gx-row__desc">{{ phone.lastResult || 'Not tested yet' }}<template v-if="phone.lastAt">, {{ new Date(phone.lastAt * 1000).toLocaleString() }}</template></span></div>
+                  <span class="gx-row__desc">{{ phone.lastResult || 'Not tested yet' }}<template v-if="phone.lastAt">, {{ testedAt(phone.lastAt) }}</template></span></div>
                 <div class="gx-actions">
                   <button type="button" class="gx-btn gx-btn--tonal" :disabled="!notifications.appPushAvailable || !!testingId" @click="testPhone(phone.id)">{{ testingId === phone.id ? 'Testing…' : 'Test' }}</button>
                   <button type="button" class="gx-btn gx-btn--tonal" @click="removePhone(phone.id)">Remove</button>

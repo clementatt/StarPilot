@@ -37,9 +37,9 @@ export const ChoiceGroup = {
         </label>
       </div>
       <p v-if="selectedOption?.detail && !infoOpen" class="gx-choice__active-summary">{{ selectedOption.detail }}</p>
-      <div v-if="infoOpen" class="gx-choice__popover" role="region" :aria-label="label + ' details'">
+      <div v-if="infoOpen" class="gx-choice__popover" role="region" :aria-label="'Details about ' + label">
         <div class="gx-choice__popover-head">
-          <strong>{{ label }} options</strong>
+          <strong>Your {{ label }} options</strong>
           <button type="button" class="gx-icon-btn gx-choice__popover-close" aria-label="Close details" @click="infoOpen = false">
             <i class="bi bi-x-lg" aria-hidden="true"></i>
           </button>

@@ -7,9 +7,9 @@ const STATES = new Set(["idle", "transferring", "validating", "selecting", "comp
 const GENERATION = /^(?:|[0-9a-f]{64})$/
 const TOKEN = /^(?:nation|us_state|ca_province)\.[A-Za-z0-9_-]+$/
 const ERROR_LABELS = {
-  canceled: "Canceled", interrupted: "Interrupted", selection_changed: "The saved selection changed",
-  not_parked: "Parked availability was lost", package_unavailable: "The map package is unavailable",
-  process_failed: "Map preparation failed", unavailable: "Map manager unavailable",
+  canceled: "Canceled.", interrupted: "Interrupted.", selection_changed: "The saved selection changed.",
+  not_parked: "Parked availability was lost.", package_unavailable: "The map package is unavailable.",
+  process_failed: "Map preparation failed.", unavailable: "Map manager unavailable.",
 }
 const ACTION_ERRORS = {
   busy: "Another map download is running. Check its progress below.",
@@ -298,7 +298,10 @@ export const MapOperationsPanel = {
   },
   methods: {
     formatBytes, formatBounds,
-    errorLabel(code) { return ERROR_LABELS[code] || "Review this operation in Galaxy" },
+    errorLabel(code) { return ERROR_LABELS[code] || "Review this operation in Galaxy." },
+    // Whole phrases per count, so each one has its own translation.
+    groupCount(count) { return count === 1 ? "1 group" : `${count} groups` },
+    groupCoverage(count) { return count === 1 ? "covers 1 group in an approximate rectangle:" : `covers ${count} groups in an approximate rectangle:` },
     reviewRegion(region) {
       if (!this.busy && region.available && this.operation)
         this.review = { region, selectedGeneration: this.operation.selectedGeneration, ownerSession: this.operation.ownerSession }
@@ -316,9 +319,9 @@ export const MapOperationsPanel = {
         <p class="gx-note">Offline speed-limit and curve data. Download another region to add coverage. Previously downloaded regions stay available.</p>
         <p v-if="mode !== 'local'">Parked map management is unavailable in the offline preview.</p>
         <template v-else>
-          <template v-if="setup"><p role="status">{{ setup.packageReady ? 'Map service ready.' : 'Map service setup required.' }} {{ setup.snapshotReady ? 'An offline map database is saved and selected for the next Maps service start.' : setup.packageReady ? 'Choose a region to download its maps.' : 'Update device software to set up offline maps.' }}</p>
+          <template v-if="setup"><p role="status"><span>{{ setup.packageReady ? 'Map service ready.' : 'Map service setup required.' }}</span> <span>{{ setup.snapshotReady ? 'An offline map database is saved and selected for the next Maps service start.' : setup.packageReady ? 'Choose a region to download its maps.' : 'Update device software to set up offline maps.' }}</span></p>
             <p v-if="!setup.packageReady" class="gx-note">The offline map service is unavailable. Update device software, then retry maps. Your saved map selection is retained.</p>
-            <p class="gx-note">{{ formatBytes(setup.freeDiskBytes) }} available storage. {{ setup.parked ? 'Parked downloads available.' : 'Park to download maps.' }}</p></template>
+            <p class="gx-note"><span>{{ formatBytes(setup.freeDiskBytes) }} available storage.</span> <span>{{ setup.parked ? 'Parked downloads available.' : 'Park to download maps.' }}</span></p></template>
           <GxNotice tone="danger" v-if="error">{{ error }}</GxNotice>
 
           <p v-if="!operation && !error" role="status">Loading map operation…</p>
@@ -333,7 +336,7 @@ export const MapOperationsPanel = {
               <dt>Map extent</dt><dd>{{ formatBounds(operation.selectedSnapshot.bounds) }}</dd></dl>
             <p v-if="operation.selectedForNextShadowStart" class="gx-note">Download complete and saved on this comma. The map database is selected for the next Maps service start.</p>
             <p v-if="operation.selectedGeneration && !operation.selectedForNextShadowStart" class="gx-note">An offline map database is saved and selected for the next Maps service start.</p>
-            <GxNotice v-if="operation.errorCode" tone="danger">{{ errorLabel(operation.errorCode) }}.</GxNotice>
+            <GxNotice v-if="operation.errorCode" tone="danger">{{ errorLabel(operation.errorCode) }}</GxNotice>
             <button v-if="running" type="button" class="gx-btn gx-btn--tonal" @click="client.cancel()">Cancel operation</button>
           </template>
           <div class="gx-map-manager__picker"><label for="map-region-search">Search regions</label>
@@ -342,14 +345,14 @@ export const MapOperationsPanel = {
           <template v-if="catalog"><p class="gx-note">{{ regions.length }} regions shown · Up to {{ formatBytes(catalog.maxTransferBytes) }} transfer · {{ formatBytes(catalog.maxNewDiskBytes) }} new storage.</p>
             <div class="gx-map-manager__regions">
               <div v-for="region in otherRegions" :key="region.token" class="gx-map-manager__region">
-                <div><strong>{{ region.token === 'nation.CA' ? 'Canada — All Canada' : region.name }}</strong><small>{{ region.token }} · {{ region.groups }} groups</small>
+                <div><strong>{{ region.token === 'nation.CA' ? 'Canada — All Canada' : region.name }}</strong><small>{{ region.token }} · {{ groupCount(region.groups) }}</small>
                   <small v-if="!region.available">Unavailable: {{ region.unavailable.replaceAll('_', ' ') }}</small></div>
                 <button type="button" class="gx-btn gx-btn--tonal" :disabled="running || !region.available || !operation" @click="reviewRegion(region)">Review…</button>
               </div>
               <details v-if="canadianRegions.length" :open="search.trim() ? true : undefined">
                 <summary>Canada — Provinces and territories</summary>
                 <div v-for="region in canadianRegions" :key="region.token" class="gx-map-manager__region">
-                  <div><strong>{{ region.name }}</strong><small>{{ region.groups }} groups</small>
+                  <div><strong>{{ region.name }}</strong><small>{{ groupCount(region.groups) }}</small>
                     <small v-if="!region.available">Unavailable: {{ region.unavailable.replaceAll('_', ' ') }}</small></div>
                   <button type="button" class="gx-btn gx-btn--tonal" :disabled="running || !region.available || !operation" @click="reviewRegion(region)">Review…</button>
                 </div>
@@ -358,7 +361,8 @@ export const MapOperationsPanel = {
         </template>
       </div>
       <GxDialog v-if="review" :inert="busy" labelledby="gx-map-operations-confirm-title" @close="review=null"><h3 id="gx-map-operations-confirm-title">Add Offline Coverage?</h3>
-          <p><strong>{{ review.region.name }}</strong> covers an approximate rectangle ({{ formatBounds(review.region.bounds) }}), {{ review.region.groups }} groups. This can transfer up to {{ formatBytes(catalog.maxTransferBytes) }} and use up to {{ formatBytes(catalog.maxNewDiskBytes) }} of new disk space. Existing regions are kept; overlapping areas are refreshed. The combined map is selected for the next map service start.</p>
+          <p><strong>{{ review.region.name }}</strong> {{ groupCoverage(review.region.groups) }} <span>{{ formatBounds(review.region.bounds) }}</span></p>
+          <p>This can transfer up to {{ formatBytes(catalog.maxTransferBytes) }} and use up to {{ formatBytes(catalog.maxNewDiskBytes) }} of new disk space. Existing regions are kept; overlapping areas are refreshed. The combined map is selected for the next map service start.</p>
           <div class="gx-settings__controls gx-actions"><button type="button" class="gx-btn gx-btn--tonal" @click="review=null">Cancel</button>
             <button type="button" class="gx-btn" :disabled="running || !operation" @click="confirm">Start download</button></div>
         </GxDialog>

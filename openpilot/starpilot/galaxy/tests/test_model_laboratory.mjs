@@ -104,7 +104,7 @@ const performanceNotice = 'Two Big models cannot run together at the required sp
 assert.ok(template.includes(performanceNotice))
 assert.match(template,/lab\.runtime\.error/)
 console.log('Model Laboratory contracts passed')
-assert.match(template,/steers · \{\{ labModelLabel\(labConfig\.longitudinalModel\) \}\} paces/)
+assert.match(template,/controls steering · \{\{ labModelLabel\(labConfig\.longitudinalModel\) \}\} controls speed/)
 assert.match(template,/The pair takes effect the next time the driving model starts/)
 assert.match(template,/row\?\.small \|\| row\?\.modelLabEligible/)
 assert.match(template,/Pair lateral judgment from one model with longitudinal judgment from another\./)

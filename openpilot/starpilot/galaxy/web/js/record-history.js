@@ -10,6 +10,7 @@ import { ReplayExportClient } from "./replay-export.js"
 import { replayableSegment } from "./replay.js"
 import { markRaw, shallowReactive } from "../vendor/vue/vue.esm-browser.js"
 import { validLocalHistory, hasVideo, routeMatchesSearch, routeDate, formatDuration } from "./recording-data.js"
+import { displayLocale } from "./localization.js"
 export * from "./recording-data.js"
 
 export class LocalHistoryFeed extends SnapshotFeed {
@@ -37,7 +38,7 @@ export const LocalRecordingsPage = {
         return ((b.startTime || b.fileTime || 0) - (a.startTime || a.fileTime || 0)) * (this.sortOrder === "oldest" ? -1 : 1)
       })
       return ordered.filter(route => (!this.preservedOnly || route.preserved) &&
-        routeMatchesSearch(route, this.query)).map((route) => ({ ...route, date: routeDate(route) }))
+        routeMatchesSearch(route, this.query)).map((route) => ({ ...route, date: routeDate(route, displayLocale()) }))
     },
   },
   created() {
@@ -82,7 +83,7 @@ export const LocalRecordingsPage = {
       <GxState v-if="mode !== 'local'">Local recordings are unavailable in the offline preview.</GxState>
       <template v-else>
         <GxNotice v-if="exports?.job?.owned" tone="info">
-          <span>{{ exports.running ? 'Exporting replay' : exports.job.state === 'ready' ? 'Replay export ready' : 'Replay export ' + exports.job.state }} · {{ exports.job.segment == null ? 'Saved route' : 'Segment ' + exports.job.segment }}<template v-if="exports.running"> · {{ Math.round(exports.job.progress * 100) }}%</template></span>
+          <span>{{ exports.running ? 'Exporting replay' : exports.job.state === 'ready' ? 'Replay export ready' : exports.job.state === 'failed' ? 'Replay export failed' : 'Replay export cancelled' }} · {{ exports.job.segment == null ? 'Saved route' : 'Segment ' + exports.job.segment }}<template v-if="exports.running"> · {{ Math.round(exports.job.progress * 100) }}%</template></span>
           <template #actions><a v-if="exports.job.state === 'ready'" class="gx-btn gx-btn--tonal" :href="exports.downloadUrl" :download="exports.job.filename">{{ exports.job.segment == null ? 'Download replay route (.mp4)' : 'Download replay segment (.mp4)' }}</a>
           <button v-if="exports.running" class="gx-btn gx-btn--tonal" :disabled="exports.busy" @click="exports.cancel()">Cancel export</button>
           <button class="gx-btn gx-btn--tonal" @click="openRoute({routeId: exports.job.routeId}, 'replay')">Open route</button>

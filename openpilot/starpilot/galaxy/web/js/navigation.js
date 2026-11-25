@@ -10,6 +10,7 @@ import { OfflineRoadMapsPanel } from "./offline-road-maps.js"
 import { GalaxySelect } from "./galaxy-select.js"
 import { reportSave } from "./save-feedback.js"
 import { ChoiceGroup, SourceCompare } from "./navigation-setup.js"
+import { displayLocale } from "./localization.js"
 
 export function searchUuid() {
   if (typeof crypto.randomUUID === "function") return crypto.randomUUID()
@@ -545,6 +546,8 @@ export const NavigationPage = {
         value < 160.9344 ? `${Math.round(value / 0.3048 / 10) * 10} ft` : `${(value / 1609.344).toFixed(1)} mi`
     },
     duration(value) { const minutes = Math.max(1, Math.round(value / 60)); return minutes >= 60 ? `${Math.floor(minutes / 60)} hr ${minutes % 60} min` : `${minutes} min` },
+    // The arrival clock follows the display language, not the browser's.
+    arrival(seconds, now = Date.now()) { return new Date(now + seconds * 1000).toLocaleTimeString(displayLocale(), { hour: "numeric", minute: "2-digit" }) },
   },
   template: `
     <div class="gx-view gx-navigation" :inert="busy || searchPending" :aria-busy="busy || searchPending || undefined">
@@ -610,10 +613,10 @@ export const NavigationPage = {
           </div>
           <GxCollapse><div id="navigation-mapbox" v-show="!data?.hasKey || mapboxOpen" class="gx-step__body">
             <details class="gx-starport-wiki gx-navigation__guide" :open="!data?.hasKey"><summary>Setup your mapbox key</summary>
-              <ol><li><strong>Create an account.</strong> Sign up free at <a href="https://account.mapbox.com/auth/signup/" target="_blank" rel="noopener noreferrer">Mapbox ↗</a>, or sign in if you already have one.</li>
-                <li><strong>Open your tokens.</strong> Go to <a href="https://account.mapbox.com/access-tokens/" target="_blank" rel="noopener noreferrer">Access tokens ↗</a>. The <strong>Default public token</strong> is the one you need. It starts with <strong>pk.</strong></li>
+              <ol><li><strong>Create an account.</strong> Sign up free, or sign in if you already have an account, at <a href="https://account.mapbox.com/auth/signup/" target="_blank" rel="noopener noreferrer">Mapbox ↗</a></li>
+                <li><strong>Open your tokens.</strong> The Default public token is the one you need. It starts with pk. Find it under <a href="https://account.mapbox.com/access-tokens/" target="_blank" rel="noopener noreferrer">Access tokens ↗</a></li>
                 <li><strong>Copy it.</strong> Use the public token only. A secret token (starts with sk.) isn't needed, and URL-restricted tokens may be rejected.</li>
-                <li><strong>Paste and save.</strong> Paste the token below while parked and press <strong>Save key</strong>.</li></ol>
+                <li><strong>Paste and save.</strong> Paste the token below while parked, then press Save key.</li></ol>
             </details>
             <form @submit.prevent="saveKey(false)" class="gx-navigation__search">
               <label for="navigation-token" class="gx-sr-only">Public Mapbox access token</label>
@@ -642,11 +645,12 @@ export const NavigationPage = {
           <GxNotice v-if="data?.hasGoogleKey && !data?.hasKey" tone="warn">Google isn't used until the Mapbox key above is added too.</GxNotice>
           <GxCollapse><div id="navigation-google" v-show="googleOpen" class="gx-step__body">
             <details class="gx-starport-wiki gx-navigation__guide" :open="!data?.hasGoogleKey"><summary>Setup your google key</summary>
-              <ol><li><strong>Create a project.</strong> Sign in to <a href="https://console.cloud.google.com/projectcreate" target="_blank" rel="noopener noreferrer">Google Cloud ↗</a> and create a project.</li>
-                <li><strong>Turn on billing.</strong> Open <a href="https://console.cloud.google.com/billing" target="_blank" rel="noopener noreferrer">Google Cloud Billing ↗</a>. Google asks for a card and puts a temporary $50 hold on it, like a gas station does. It is not a charge and it drops off on its own. StarPilot blocks Google at 99% of the free usage, so you won't be charged.</li>
-                <li><strong>Enable three APIs.</strong> Press Enable on each: <a href="https://console.cloud.google.com/apis/library/tile.googleapis.com" target="_blank" rel="noopener noreferrer">Map Tiles API ↗</a> for the map, <a href="https://console.cloud.google.com/apis/library/routes.googleapis.com" target="_blank" rel="noopener noreferrer">Routes API ↗</a> for routes and <a href="https://console.cloud.google.com/apis/library/places.googleapis.com" target="_blank" rel="noopener noreferrer">Places API (New) ↗</a> for place search.</li>
-                <li><strong>Create the key.</strong> Open <a href="https://console.cloud.google.com/apis/credentials" target="_blank" rel="noopener noreferrer">Credentials ↗</a>, create an API key and limit it to those three APIs. Leave application restrictions off; the comma's address changes on cellular.</li>
-                <li><strong>Paste and test.</strong> Keep your Mapbox key; Google works alongside it. Paste the Google key below while parked, press <strong>Save key</strong>, then <strong>Test key</strong>. It checks all three APIs.</li></ol>
+              <ol><li><strong>Create a project.</strong> Sign in and create a project in <a href="https://console.cloud.google.com/projectcreate" target="_blank" rel="noopener noreferrer">Google Cloud ↗</a></li>
+                <li><strong>Turn on billing.</strong> Google asks for a card and puts a temporary $50 hold on it, like a gas station does. It is not a charge and it drops off on its own. StarPilot blocks Google at 99% of the free usage, so you won't be charged. Turn it on in <a href="https://console.cloud.google.com/billing" target="_blank" rel="noopener noreferrer">Google Cloud Billing ↗</a></li>
+                <li><strong>Enable three APIs.</strong> Press Enable on each one: Map Tiles API for the map, Routes API for routes and Places API (New) for place search.
+                  <a href="https://console.cloud.google.com/apis/library/tile.googleapis.com" target="_blank" rel="noopener noreferrer">Map Tiles API ↗</a> · <a href="https://console.cloud.google.com/apis/library/routes.googleapis.com" target="_blank" rel="noopener noreferrer">Routes API ↗</a> · <a href="https://console.cloud.google.com/apis/library/places.googleapis.com" target="_blank" rel="noopener noreferrer">Places API (New) ↗</a></li>
+                <li><strong>Create the key.</strong> Create an API key, limit it to those three APIs and leave application restrictions off; the comma's address changes on cellular. Keys are under <a href="https://console.cloud.google.com/apis/credentials" target="_blank" rel="noopener noreferrer">Credentials ↗</a></li>
+                <li><strong>Paste and test.</strong> Keep your Mapbox key; Google works alongside it. Paste the Google key below while parked, press Save key, then Test key. It checks all three APIs.</li></ol>
             </details>
             <form @submit.prevent="saveGoogleKey" class="gx-navigation__search">
               <label for="navigation-google-key" class="gx-sr-only">Google Maps Platform API key</label>
@@ -655,7 +659,7 @@ export const NavigationPage = {
             </form>
             <div class="gx-actions"><button type="button" class="gx-btn gx-btn--tonal" :disabled="!available || !googleKey.trim() && !data?.hasGoogleKey" @click="testGoogleKey">Test key</button></div>
             <p v-if="googleWorking && !data?.hasGoogleKey" class="gx-note" role="status"><strong>{{ googleWorking }}</strong></p>
-            <GxNotice v-for="row in googleTests" :key="row.name" :tone="row.ok ? 'success' : 'warn'">{{ row.name }}: {{ row.message }}
+            <GxNotice v-for="row in googleTests" :key="row.name" :tone="row.ok ? 'success' : 'warn'">{{ row.name }}: <span>{{ row.message }}</span>
               <a v-if="row.link" :href="row.link.href" target="_blank" rel="noopener noreferrer">{{ row.link.label }}</a></GxNotice>
             <GxNotice v-if="data?.googleMap?.failure" tone="warn">{{ data.googleMap.failure }}</GxNotice>
             <GxNotice v-if="data?.googleRoutes?.failure" tone="warn">{{ data.googleRoutes.failure }}</GxNotice>
@@ -701,7 +705,7 @@ export const NavigationPage = {
                     <strong><i class="bi bi-android2" aria-hidden="true"></i> Android</strong>
                     <ol class="gx-starport-mirror-steps">
                       <li>Open the StarPilot app and connect to your comma.</li>
-                      <li>Open <strong>Connections → Phone GPS</strong> and turn on <strong>Share phone GPS with comma</strong>.</li>
+                      <li>Open Connections → Phone GPS and turn on Share phone GPS with comma.</li>
                       <li>Allow precise location and leave the sharing notification on while driving.</li>
                     </ol>
                   </div>
@@ -709,8 +713,8 @@ export const NavigationPage = {
                     <strong><i class="bi bi-apple" aria-hidden="true"></i> iPhone</strong>
                     <ol class="gx-starport-mirror-steps">
                       <li>Open the StarPilot app and connect to your comma.</li>
-                      <li>On the main Settings page, turn on <strong>Share Phone Location</strong>.</li>
-                      <li>Set location access to <strong>Always</strong> and turn on <strong>Precise Location</strong> in iPhone Settings.</li>
+                      <li>On the main Settings page, turn on Share Phone Location.</li>
+                      <li>In iPhone Settings, set location access to Always and turn on Precise Location.</li>
                     </ol>
                   </div>
                 </div>
@@ -777,7 +781,7 @@ export const NavigationPage = {
               <div v-for="place in recents" :key="'recent-' + place.id" class="gx-navigation__row">
                 <button type="button" class="gx-navigation__suggestion" :disabled="!controlsAvailable" @click="pick(place)">
                   <i class="bi bi-clock-history" aria-hidden="true"></i><span><strong><span translate="no">{{ place.name }}</span></strong><small v-if="place.address"><span translate="no">{{ place.address }}</span></small></span></button>
-                <button type="button" class="gx-navigation__icon" :aria-label="'Save ' + place.name" :aria-expanded="favoritePicker === favoriteKey(place)" :disabled="!controlsAvailable || place.temporary" :title="place.temporary ? 'Search for an address to save this place' : undefined" @click="openFavorite(place)"><i class="bi bi-star" aria-hidden="true"></i></button>
+                <button type="button" class="gx-navigation__icon" :aria-label="'Add ' + place.name + ' to saved places'" :aria-expanded="favoritePicker === favoriteKey(place)" :disabled="!controlsAvailable || place.temporary" :title="place.temporary ? 'Search for an address to save this place' : undefined" @click="openFavorite(place)"><i class="bi bi-star" aria-hidden="true"></i></button>
                 <button type="button" class="gx-navigation__icon" :aria-label="'Remove ' + place.name + ' from recent places'" :disabled="!controlsAvailable" @click="client.action('removeRecent',{id:place.id})"><i class="bi bi-x-lg" aria-hidden="true"></i></button>
                 <FavoriteChoices v-if="favoritePicker === favoriteKey(place)" :available="controlsAvailable" @choose="saveAs(place, $event)" />
               </div>
@@ -786,14 +790,14 @@ export const NavigationPage = {
               <div v-for="place in localMatches" :key="'local-' + place.id" class="gx-navigation__row">
                 <button type="button" class="gx-navigation__suggestion" :disabled="!controlsAvailable" @click="pick(place)">
                   <i class="bi" :class="placeIcon(place)" aria-hidden="true"></i><span><strong><span :translate="place.label ? undefined : 'no'">{{ placeName(place) }}</span></strong><small><span :translate="placeDetail(place) ? 'no' : undefined">{{ placeDetail(place) || (isFavorite(place) ? 'Saved place' : 'Recent') }}</span></small></span></button>
-                <button type="button" class="gx-navigation__icon" :aria-label="'Save ' + place.name" :aria-expanded="favoritePicker === favoriteKey(place)" :disabled="!controlsAvailable || place.temporary" :title="place.temporary ? 'Search for an address to save this place' : undefined" @click="openFavorite(place)"><i class="bi" :class="isFavorite(place) ? 'bi-star-fill' : 'bi-star'" aria-hidden="true"></i></button>
+                <button type="button" class="gx-navigation__icon" :aria-label="'Add ' + place.name + ' to saved places'" :aria-expanded="favoritePicker === favoriteKey(place)" :disabled="!controlsAvailable || place.temporary" :title="place.temporary ? 'Search for an address to save this place' : undefined" @click="openFavorite(place)"><i class="bi" :class="isFavorite(place) ? 'bi-star-fill' : 'bi-star'" aria-hidden="true"></i></button>
                 <FavoriteChoices v-if="favoritePicker === favoriteKey(place)" :available="controlsAvailable" @choose="saveAs(place, $event)" />
               </div>
               <div v-if="suggestions.length && googlePlaces" class="gx-navigation__group"><span>{{ suggestionsProvider === 'google' ? 'Suggestions from Google' : 'Suggestions from Mapbox, Google unavailable' }}</span></div>
               <div v-for="place in suggestions" :key="place.id" class="gx-navigation__row">
                 <button type="button" class="gx-navigation__suggestion" :disabled="!controlsAvailable" @click="pick(place)">
                   <i class="bi bi-geo-alt-fill" aria-hidden="true"></i><span><strong><span translate="no">{{ place.name }}</span></strong><small v-if="place.description">{{ place.description }}</small></span></button>
-                <button type="button" class="gx-navigation__icon" :aria-label="'Save ' + place.name" :aria-pressed="isFavorite(place)" :aria-expanded="favoritePicker === favoriteKey(place)" :disabled="!controlsAvailable || place.temporary" :title="place.temporary ? 'Search for an address to save this place' : undefined" @click="openFavorite(place)"><i class="bi" :class="isFavorite(place) ? 'bi-star-fill' : 'bi-star'" aria-hidden="true"></i></button>
+                <button type="button" class="gx-navigation__icon" :aria-label="'Add ' + place.name + ' to saved places'" :aria-pressed="isFavorite(place)" :aria-expanded="favoritePicker === favoriteKey(place)" :disabled="!controlsAvailable || place.temporary" :title="place.temporary ? 'Search for an address to save this place' : undefined" @click="openFavorite(place)"><i class="bi" :class="isFavorite(place) ? 'bi-star-fill' : 'bi-star'" aria-hidden="true"></i></button>
                 <FavoriteChoices v-if="favoritePicker === favoriteKey(place)" :available="controlsAvailable" @choose="saveAs(place, $event)" />
               </div>
             </template>
@@ -811,7 +815,7 @@ export const NavigationPage = {
             </div>
             <FavoriteChoices v-if="favoritePicker === favoriteKey(data.destination)" :available="controlsAvailable" @choose="saveAs(data.destination, $event)" />
             <div v-if="summary" class="gx-navigation__summary">
-              <div><strong>{{duration(summary.duration)}}</strong><span>{{distance(summary.distance)}}</span><span>Arrive {{new Date(Date.now()+summary.duration*1000).toLocaleTimeString([], {hour:'numeric',minute:'2-digit'})}}</span></div>
+              <div><strong>{{duration(summary.duration)}}</strong><span>{{distance(summary.distance)}}</span><span>Arrive {{ arrival(summary.duration) }}</span></div>
             </div>
             <p v-else class="gx-note">{{statusLabel}}</p>
             <template v-if="data.instruction && !stale">
@@ -839,7 +843,7 @@ export const NavigationPage = {
                 <button type="button" class="gx-navigation__suggestion" :disabled="!controlsAvailable" @click="pick(place)" :aria-label="'Start navigation to ' + place.name">
                   <i class="bi bi-arrow-up-right" aria-hidden="true"></i><span><strong><span translate="no">{{ place.name }}</span></strong><small v-if="place.address || place.description"><span translate="no">{{ place.address || place.description }}</span></small><small class="gx-navigation__start">Start navigation</small></span>
                 </button>
-                <button type="button" class="gx-navigation__icon" :aria-label="(isFavorite(place) ? 'Saved: ' : 'Save ') + place.name" :aria-pressed="isFavorite(place)" :aria-expanded="favoritePicker === favoriteKey(place)" :disabled="!controlsAvailable || place.temporary" :title="place.temporary ? 'Search for an address to save this place' : undefined" @click="openFavorite(place)"><i class="bi" :class="isFavorite(place) ? 'bi-star-fill' : 'bi-star'" aria-hidden="true"></i></button>
+                <button type="button" class="gx-navigation__icon" :aria-label="isFavorite(place) ? 'Saved place: ' + place.name : 'Add ' + place.name + ' to saved places'" :aria-pressed="isFavorite(place)" :aria-expanded="favoritePicker === favoriteKey(place)" :disabled="!controlsAvailable || place.temporary" :title="place.temporary ? 'Search for an address to save this place' : undefined" @click="openFavorite(place)"><i class="bi" :class="isFavorite(place) ? 'bi-star-fill' : 'bi-star'" aria-hidden="true"></i></button>
                 <FavoriteChoices v-if="favoritePicker === favoriteKey(place)" :available="controlsAvailable" @choose="saveAs(place, $event)" />
               </li>
             </ul>

@@ -8,6 +8,20 @@ from openpilot.starpilot.ui.feature_settings_state import SLC_OFFSET_KEYS
 
 from openpilot.starpilot.longitudinal.enhanced_stop_hold import KEY as HOLD_KEY, DESCRIPTION as HOLD_DESCRIPTION
 
+# Sentences of one description are separated by a line break so each is translated whole; browsers show it as a space.
+SEGMENT_BREAK = ' \n'
+TRAFFIC_BLEND = 'Blends toward Relaxed as speed rises in Traffic mode.'
+LANE_CHANGE_TIMING = 'Changes apply when the current signal and maneuver end; turning assistance off cancels it after the preference refresh.'
+TORQUE_STAGE_NOTE = ('Zero keeps this stage’s original baseline. The % is an adjustment to this stage, ' +
+                     'not a percentage of overall steering strength.')
+# Keyed by (Conditional Experimental Mode, with a lead): the finished sentences, so each translates whole.
+SPEED_REQUESTS = {
+  (True, False): 'Requests Experimental below this speed without a tracked lead, when the remaining driving conditions qualify.',
+  (True, True): 'Requests Experimental below this speed while following a lead, when the remaining driving conditions qualify.',
+  (False, False): 'Requests Chill at or above this speed without a tracked lead, when the remaining driving conditions qualify.',
+  (False, True): 'Requests Chill at or above this speed while following a lead, when the remaining driving conditions qualify.',
+}
+
 DESCRIPTIONS = {
   HOLD_KEY: HOLD_DESCRIPTION,
   'GreenLightAlert': 'Chimes once when the model’s traffic-light stop prediction clears while you remain stopped.',
@@ -375,13 +389,11 @@ def purpose(row):
   if key in DESCRIPTIONS:
     return DESCRIPTIONS[key]
   if key.startswith(('wheel:', 'conditional:button:')):
-    return f'Assigns the action performed by {row.label.lower()}.'
+    return f'Assigns the action performed by {row.label}.'
   if key.startswith('conditional:'):
     section, field = key.split(':')[1:]
     if field in ('speed_mps', 'speed_with_lead_mps'):
-      direction, mode = ('below', 'Experimental') if section == 'cem' else ('at or above', 'Chill')
-      lead = 'while following a lead' if field == 'speed_with_lead_mps' else 'without a tracked lead'
-      return f'Requests {mode} {direction} this speed {lead}, when the remaining driving conditions qualify.'
+      return SPEED_REQUESTS[section == 'cem', field == 'speed_with_lead_mps']
     if field == 'lead':
       return ('Requests Experimental when a qualified slower lead is detected.' if section == 'cem' else
               'Allows Chill while following a qualified stable lead above the lead-speed threshold.')
@@ -400,7 +412,7 @@ def purpose(row):
       return 'Sets following time at low speeds in Traffic mode, blending toward Relaxed as speed rises.'
     suffix = next((name for name in VALUE_HELP if key.endswith(name)), None)
     value = VALUE_HELP.get(suffix)
-    return value + ' Blends toward Relaxed as speed rises in Traffic mode.' if value and key.startswith('Traffic') else value
+    return value + SEGMENT_BREAK + TRAFFIC_BLEND if value and key.startswith('Traffic') else value
   if key in SLC_OFFSET_KEYS:
     return 'Adds or subtracts this offset from the accepted speed limit within the displayed speed range.'
   if key.startswith('long_repair:'):
@@ -445,36 +457,35 @@ def description(row):
   base = purpose(row)
   if base is None:
     return row.reason
-  suffix = INITIALIZATION.get(row.key, '')
+  suffix = [INITIALIZATION[row.key]] if row.key in INITIALIZATION else []
   if row.key == 'steering_delay':
-    suffix = row.reason.strip()
+    suffix = [row.reason.strip()]
   if row.key.startswith('lane_change:') and row.key not in ('lane_change:close_gap', 'lane_change:close_gap_seconds', 'lane_change:reset'):
-    suffix = 'Changes apply when the current signal and maneuver end; turning assistance off cancels it after the preference refresh.'
+    suffix = [LANE_CHANGE_TIMING]
   if row.key.startswith('torque:surface:'):
-    suffix = row.reason.strip()
+    suffix = [row.reason.strip()]
     if row.key != 'torque:surface:reset':
-      suffix = ('Zero keeps this stage’s original baseline. The % is an adjustment to this stage, ' +
-                'not a percentage of overall steering strength. ' + suffix).strip()
+      suffix = [TORQUE_STAGE_NOTE, *suffix]
   if row.key.startswith('torque:') and row.key.split(':')[1] in ('factor', 'friction', 'gain'):
-    suffix = ('First activation of a manual tuning owner requires a driving-process restart. An ' +
-      'already active owner refreshes saved adjustments during the drive.')
+    suffix = ['First activation of a manual tuning owner requires a driving-process restart. An ' +
+      'already active owner refreshes saved adjustments during the drive.']
   if row.key == 'ForceAutoTuneOff':
-    suffix = ('The native torque learner and controller eligibility are initialized when driving ' +
-      'processes start; compatible live learning consumers also recheck the preference.')
+    suffix = ['The native torque learner and controller eligibility are initialized when driving ' +
+      'processes start; compatible live learning consumers also recheck the preference.']
   if row.key == 'AlwaysOnLateral' and 'Applies after the next startup' in row.reason:
-    suffix = ('The pending vehicle configuration needs the next startup to admit its steering and ' +
-      'native button permissions. An already admitted configuration refreshes the steering preference during the drive.')
+    suffix = ['The pending vehicle configuration needs the next startup to admit its steering and ' +
+      'native button permissions. An already admitted configuration refreshes the steering preference during the drive.']
   if row.key.startswith('wheel:'):
-    suffix = ('Axis-pause and AOL assignments require the next vehicle startup to configure the ' +
-      'native button permissions. Other actions refresh during the drive.')
+    suffix = ['Axis-pause and AOL assignments require the next vehicle startup to configure the ' +
+      'native button permissions. Other actions refresh during the drive.']
   if row.key == 'GMLongitudinalTune':
-    suffix = 'ACC Tune refreshes during the drive.'
+    suffix = ['ACC Tune refreshes during the drive.']
   warning = row.reason.strip().removeprefix('Saved for this vehicle. ')
   related = any(word in warning.lower() for word in
     ('temporarily ignored', 'temporarily ignores', 'fixed torque conversion', 'inactive while', 'custom display is off',
      'require', 'needs', 'uses its vehicle tune', 'unavailable', 'paused'))
   actionable = warning and (related or (not row.available or row.repair_value) and any(word in warning.lower() for word in
     ('invalid', 'unreadable', 'cannot be read', 'unavailable', 'not supported', 'not available', 'turn on', 'repair', 'not detected', 'paused', 'required')))
-  if actionable and warning not in base and warning not in suffix:
-    suffix = (suffix + ' ' + warning).strip()
-  return ' '.join(value for value in (base, suffix) if value)
+  if actionable and warning not in base and warning not in ' '.join(suffix):
+    suffix = [*suffix, warning]
+  return SEGMENT_BREAK.join(value for value in (base, *suffix) if value)

@@ -179,6 +179,19 @@ assert.equal(expiredConflict.client.actionError, '')
 assert.equal(expiredConflict.client.active, false)
 console.log('Map operation conflicts: distinct reasons and expired response isolation passed')
 
+// Each translatable phrase is produced whole: labels carry their own period, counts pick singular or plural,
+// and the setup status keeps its two sentences in separate nodes.
+const methods = MapOperationsPanel.methods
+assert.equal(methods.errorLabel('canceled'), 'Canceled.')
+assert.equal(methods.errorLabel('unknown_code'), 'Review this operation in Galaxy.')
+assert.doesNotMatch(MapOperationsPanel.template, /errorLabel\(operation\.errorCode\) \}\}\./)
+assert.deepEqual([methods.groupCount(1), methods.groupCount(12)], ['1 group', '12 groups'])
+assert.deepEqual([methods.groupCoverage(1), methods.groupCoverage(99)],
+  ['covers 1 group in an approximate rectangle:', 'covers 99 groups in an approximate rectangle:'])
+assert.match(MapOperationsPanel.template, /<span>\{\{ formatBytes\(setup\.freeDiskBytes\) \}\} available storage\.<\/span> <span>/)
+assert.match(MapOperationsPanel.template, /<span>\{\{ formatBounds\(review\.region\.bounds\) \}\}<\/span><\/p>/)
+console.log('Map operation text: whole labels, group counts and separate status sentences passed')
+
 // A new provider can expose provinces; an older provider remains valid.
 const ontario = { ...region, token: 'ca_province.ON', name: 'Ontario', groups: 99 }
 const provinceCatalog = { ...largeCatalog, regions: [...largeCatalog.regions, ontario] }

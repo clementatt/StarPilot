@@ -20,12 +20,6 @@
       ]
     },
     {
-      "source": "(not beta or alpha).",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/starport.js"
-      ]
-    },
-    {
       "source": "1. Android Auto support",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
@@ -629,12 +623,6 @@
       ]
     },
     {
-      "source": "All versions",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/starport.js"
-      ]
-    },
-    {
       "source": "Allow",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/bluetooth.js"
@@ -1071,12 +1059,6 @@
       ]
     },
     {
-      "source": "Assigns the action performed by {}.",
-      "refs": [
-        "openpilot/starpilot/galaxy/setting_descriptions.py"
-      ]
-    },
-    {
       "source": "Assists automatic resume from a cruise-controlled stop when fresh lead and stopping information allow it.",
       "refs": [
         "openpilot/starpilot/galaxy/setting_descriptions.py"
@@ -1225,12 +1207,6 @@
       "source": "Available With the Vehicle Off",
       "refs": [
         "openpilot/starpilot/ui/runtime_snapshot.py"
-      ]
-    },
-    {
-      "source": "Available downloads",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/starport.js"
       ]
     },
     {
@@ -1515,12 +1491,6 @@
       "source": "Bluetooth is off. Turn on StarPort to enable it when prompted, or use Bluetooth under Tools.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
-      ]
-    },
-    {
-      "source": "Bluetooth page",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/spotify.js"
       ]
     },
     {
@@ -2062,12 +2032,6 @@
       "source": "Cancel very long press",
       "refs": [
         "openpilot/starpilot/ui/wheel_feature.py"
-      ]
-    },
-    {
-      "source": "Canceled",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/map-operations.js"
       ]
     },
     {
@@ -2925,12 +2889,6 @@
       "source": "Clear slot",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/favorites.js"
-      ]
-    },
-    {
-      "source": "Click",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/starport.js"
       ]
     },
     {
@@ -4262,7 +4220,8 @@
     {
       "source": "Device paired.",
       "refs": [
-        "openpilot/starpilot/galaxy/web/js/bluetooth.js"
+        "openpilot/starpilot/galaxy/web/js/bluetooth.js",
+        "openpilot/starpilot/galaxy/web/js/starport.js"
       ]
     },
     {
@@ -4459,18 +4418,6 @@
       "source": "Don’t see it? Pair it on the",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/spotify.js"
-      ]
-    },
-    {
-      "source": "Download APK",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/starport.js"
-      ]
-    },
-    {
-      "source": "Download APK Bundle",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/starport.js"
       ]
     },
     {
@@ -4872,12 +4819,6 @@
       "refs": [
         "openpilot/starpilot/galaxy/web/js/spotify.js",
         "openpilot/starpilot/galaxy/web/js/starport.js"
-      ]
-    },
-    {
-      "source": "Each Soloist build works for 90 days from its build date, not its install date. Before it runs out, this step shows",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/spotify.js"
       ]
     },
     {
@@ -5764,12 +5705,6 @@
       ]
     },
     {
-      "source": "From APKPure, a third-party mirror (",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/starport.js"
-      ]
-    },
-    {
       "source": "Full log",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/recording-data.js"
@@ -6637,12 +6572,6 @@
       "source": "Interactive navigation map",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/navigation-map.js"
-      ]
-    },
-    {
-      "source": "Interrupted",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/map-operations.js"
       ]
     },
     {
@@ -8745,12 +8674,6 @@
       ]
     },
     {
-      "source": "Map manager unavailable",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/map-operations.js"
-      ]
-    },
-    {
       "source": "Map opacity",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/onroad-layout-template.js"
@@ -8784,12 +8707,6 @@
       "source": "Map owner unavailable",
       "refs": [
         "openpilot/starpilot/ui/maps_state.py"
-      ]
-    },
-    {
-      "source": "Map preparation failed",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/map-operations.js"
       ]
     },
     {
@@ -9414,7 +9331,8 @@
     {
       "source": "No",
       "refs": [
-        "openpilot/starpilot/galaxy/web/js/flm-training-results.js"
+        "openpilot/starpilot/galaxy/web/js/flm-training-results.js",
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js"
       ]
     },
     {
@@ -10051,6 +9969,7 @@
     {
       "source": "Offline road maps",
       "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js",
         "openpilot/starpilot/galaxy/web/js/offline-road-maps.js"
       ]
     },
@@ -10239,6 +10158,7 @@
     {
       "source": "Open Bluetooth",
       "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js",
         "openpilot/starpilot/galaxy/web/js/starport.js"
       ]
     },
@@ -10391,12 +10311,6 @@
       "source": "Open the live crop preview while parked to check the camera.",
       "refs": [
         "openpilot/starpilot/ui/pip_owner.py"
-      ]
-    },
-    {
-      "source": "Open the version with the",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/starport.js"
       ]
     },
     {
@@ -10615,8 +10529,7 @@
     {
       "source": "Pair phone",
       "refs": [
-        "openpilot/starpilot/galaxy/web/js/bluetooth.js",
-        "openpilot/starpilot/galaxy/web/js/spotify.js"
+        "openpilot/starpilot/galaxy/web/js/bluetooth.js"
       ]
     },
     {
@@ -10689,12 +10602,6 @@
       "source": "Pair your device first",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
-      ]
-    },
-    {
-      "source": "Pair your phone in the companion app, or tap",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/spotify.js"
       ]
     },
     {
@@ -10912,12 +10819,6 @@
       "source": "Parked Screen Timeout",
       "refs": [
         "openpilot/starpilot/ui/display_owner.py"
-      ]
-    },
-    {
-      "source": "Parked availability was lost",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/map-operations.js"
       ]
     },
     {
@@ -11328,6 +11229,7 @@
     {
       "source": "Position",
       "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js",
         "openpilot/starpilot/galaxy/web/js/spotify.js"
       ]
     },
@@ -11987,12 +11889,6 @@
       ]
     },
     {
-      "source": "Ready for {}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/starport.js"
-      ]
-    },
-    {
       "source": "Ready to connect.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
@@ -12543,13 +12439,6 @@
       ]
     },
     {
-      "source": "Replay export",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/record-history.js",
-        "openpilot/starpilot/galaxy/web/js/route-workspace.js"
-      ]
-    },
-    {
       "source": "Replay export could not start. Try again.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/replay-export.js"
@@ -12773,12 +12662,6 @@
       ]
     },
     {
-      "source": "Requests",
-      "refs": [
-        "openpilot/starpilot/galaxy/setting_descriptions.py"
-      ]
-    },
-    {
       "source": "Requests AVH ON once in Park with the engine running after the next startup.",
       "refs": [
         "openpilot/starpilot/ui/feature_settings_owner.py"
@@ -12842,12 +12725,6 @@
       "source": "Requests Stop/Start OFF once while stationary in Park or Neutral after the next startup.",
       "refs": [
         "openpilot/starpilot/ui/feature_settings_owner.py"
-      ]
-    },
-    {
-      "source": "Requests {} {} this speed {}, when the remaining driving conditions qualify.",
-      "refs": [
-        "openpilot/starpilot/galaxy/setting_descriptions.py"
       ]
     },
     {
@@ -13455,12 +13332,6 @@
       "source": "Review the parked map operation",
       "refs": [
         "openpilot/starpilot/ui/maps_state.py"
-      ]
-    },
-    {
-      "source": "Review this operation in Galaxy",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/map-operations.js"
       ]
     },
     {
@@ -14357,12 +14228,6 @@
       ]
     },
     {
-      "source": "Saves the app to this",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/starport.js"
-      ]
-    },
-    {
       "source": "Saving AOL preference…",
       "refs": [
         "openpilot/starpilot/ui/runtime_app.py"
@@ -14415,12 +14280,6 @@
       "source": "Scan the code to open your Galaxy.",
       "refs": [
         "openpilot/starpilot/ui/galaxy_access.py"
-      ]
-    },
-    {
-      "source": "Scroll down to",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/starport.js"
       ]
     },
     {
@@ -17290,12 +17149,6 @@
       ]
     },
     {
-      "source": "The map package is unavailable",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/map-operations.js"
-      ]
-    },
-    {
       "source": "The model catalog is unavailable. Refresh to retry.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/model-laboratory.js"
@@ -17365,12 +17218,6 @@
       "source": "The saved preview switch will not change. If it is On,",
       "refs": [
         "openpilot/starpilot/ui/runtime_app.py"
-      ]
-    },
-    {
-      "source": "The saved selection changed",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/map-operations.js"
       ]
     },
     {
@@ -18647,7 +18494,8 @@
     {
       "source": "Unpair from Galaxy? Remote access will stop until you pair again.",
       "refs": [
-        "openpilot/starpilot/galaxy/web/js/galaxy.js"
+        "openpilot/starpilot/galaxy/web/js/galaxy.js",
+        "openpilot/starpilot/galaxy/web/js/remote-access.js"
       ]
     },
     {
@@ -19436,12 +19284,6 @@
       ]
     },
     {
-      "source": "Variant",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/starport.js"
-      ]
-    },
-    {
       "source": "Vehicle Controls",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/vehicle-controls.js"
@@ -19787,7 +19629,8 @@
     {
       "source": "Waiting for device status",
       "refs": [
-        "openpilot/starpilot/galaxy/web/js/model-laboratory.js"
+        "openpilot/starpilot/galaxy/web/js/model-laboratory.js",
+        "openpilot/starpilot/galaxy/web/js/models.js"
       ]
     },
     {
@@ -20173,7 +20016,8 @@
     {
       "source": "Yes",
       "refs": [
-        "openpilot/starpilot/galaxy/web/js/flm-training-results.js"
+        "openpilot/starpilot/galaxy/web/js/flm-training-results.js",
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js"
       ]
     },
     {
@@ -20718,12 +20562,6 @@
       ]
     },
     {
-      "source": "at or above",
-      "refs": [
-        "openpilot/starpilot/galaxy/setting_descriptions.py"
-      ]
-    },
-    {
       "source": "at the edge",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/onroad-layout.js"
@@ -20879,12 +20717,6 @@
       "source": "before ·",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/flm.js"
-      ]
-    },
-    {
-      "source": "below",
-      "refs": [
-        "openpilot/starpilot/galaxy/setting_descriptions.py"
       ]
     },
     {
@@ -21088,12 +20920,6 @@
       ]
     },
     {
-      "source": "by",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/starport.js"
-      ]
-    },
-    {
       "source": "bytes",
       "refs": [
         "openpilot/starpilot/ui/home.py",
@@ -21136,12 +20962,6 @@
       "source": "camera view",
       "refs": [
         "openpilot/starpilot/ui/appearance_compact.py"
-      ]
-    },
-    {
-      "source": "camera · MP4",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/route-workspace.js"
       ]
     },
     {
@@ -22765,12 +22585,6 @@
       ]
     },
     {
-      "source": "file. Leave it zipped.",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/starport.js"
-      ]
-    },
-    {
       "source": "files",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/route-workspace.js",
@@ -23660,12 +23474,6 @@
       ]
     },
     {
-      "source": "list and click through the versions to compare their release dates.",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/starport.js"
-      ]
-    },
-    {
       "source": "live",
       "refs": [
         "openpilot/starpilot/ui/onroad_map.py"
@@ -23831,12 +23639,6 @@
       "source": "low-speed follow",
       "refs": [
         "openpilot/starpilot/ui/long_profile_feature.py"
-      ]
-    },
-    {
-      "source": "make sure the app is",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/starport.js"
       ]
     },
     {
@@ -24167,12 +23969,6 @@
       ]
     },
     {
-      "source": "newest release date",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/starport.js"
-      ]
-    },
-    {
       "source": "next",
       "refs": [
         "openpilot/starpilot/ui/onroad_favorites.py"
@@ -24469,18 +24265,6 @@
       ]
     },
     {
-      "source": "on APKMirror, then open the",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/starport.js"
-      ]
-    },
-    {
-      "source": "on the",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/spotify.js"
-      ]
-    },
-    {
       "source": "on the app’s main Settings page to stop sharing.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/navigation.js"
@@ -24607,12 +24391,6 @@
       ]
     },
     {
-      "source": "or",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/starport.js"
-      ]
-    },
-    {
       "source": "original endpoints",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/flm.js"
@@ -24666,12 +24444,6 @@
       "refs": [
         "openpilot/starpilot/galaxy/settings.py",
         "openpilot/starpilot/ui/runtime_app.py"
-      ]
-    },
-    {
-      "source": "page first.",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/spotify.js"
       ]
     },
     {
@@ -26801,12 +26573,6 @@
       ]
     },
     {
-      "source": "terms",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/starport.js"
-      ]
-    },
-    {
       "source": "test",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/controllers.js",
@@ -26873,12 +26639,6 @@
       "source": "this comma",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/bluetooth.js"
-      ]
-    },
-    {
-      "source": "this speed",
-      "refs": [
-        "openpilot/starpilot/galaxy/setting_descriptions.py"
       ]
     },
     {
@@ -27515,12 +27275,6 @@
       ]
     },
     {
-      "source": "while following a lead",
-      "refs": [
-        "openpilot/starpilot/galaxy/setting_descriptions.py"
-      ]
-    },
-    {
       "source": "whole bundles retained.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/flm.js"
@@ -27602,12 +27356,6 @@
       ]
     },
     {
-      "source": "without a tracked lead",
-      "refs": [
-        "openpilot/starpilot/galaxy/setting_descriptions.py"
-      ]
-    },
-    {
       "source": "words",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/onroad-layout-document.js",
@@ -27636,12 +27384,6 @@
       "source": "yes",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/models.js"
-      ]
-    },
-    {
-      "source": "you downloaded the helper app. Go back to the Android Auto release page and use",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/starport.js"
       ]
     },
     {
@@ -28159,12 +27901,6 @@
       ]
     },
     {
-      "source": "Delete {}?",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/offline-road-maps.js"
-      ]
-    },
-    {
       "source": "Delete {}? This cannot be undone.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/recording-actions.js"
@@ -28539,12 +28275,6 @@
       ]
     },
     {
-      "source": "No offline areas yet.{}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/offline-road-maps.js"
-      ]
-    },
-    {
       "source": "Off adds no action to the vehicle's existing button behavior. Axis pause and AOL assignments apply after restarting. Other actions can apply this drive.",
       "refs": [
         "openpilot/starpilot/ui/wheel_feature.py"
@@ -28752,12 +28482,6 @@
       "source": "Remove {}?",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/onroad-layout-template.js"
-      ]
-    },
-    {
-      "source": "Replay export {}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/route-workspace.js"
       ]
     },
     {
@@ -29005,12 +28729,6 @@
       "source": "Steering rack geometry may be off (Ratio: {})",
       "refs": [
         "openpilot/selfdrive/selfdrived/events.py"
-      ]
-    },
-    {
-      "source": "Step: {} {}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js"
       ]
     },
     {
@@ -29332,12 +29050,6 @@
       ]
     },
     {
-      "source": "{} Route downloads require a complete inventory.",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/route-workspace.js"
-      ]
-    },
-    {
       "source": "{} active",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/onroad-layout-template.js"
@@ -29347,12 +29059,6 @@
       "source": "{} applies after the next reboot. No automatic reboot will occur.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/cloud-provider.js"
-      ]
-    },
-    {
-      "source": "{} available storage. {}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/map-operations.js"
       ]
     },
     {
@@ -29428,12 +29134,6 @@
       ]
     },
     {
-      "source": "{} radius · {}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/offline-road-maps.js"
-      ]
-    },
-    {
       "source": "{} regions shown · Up to {} transfer · {} new storage.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/map-operations.js"
@@ -29449,18 +29149,6 @@
       "source": "{} saved segments",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/route-workspace.js"
-      ]
-    },
-    {
-      "source": "{} steers · {} paces",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/model-laboratory.js"
-      ]
-    },
-    {
-      "source": "{} to {} {}",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js"
       ]
     },
     {
@@ -29515,12 +29203,6 @@
       "source": "{}% used",
       "refs": [
         "openpilot/selfdrive/selfdrived/events.py"
-      ]
-    },
-    {
-      "source": "{}. Your paired car and settings stay as they are.",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/starport.js"
       ]
     },
     {
@@ -29974,12 +29656,6 @@
       "source": "Draw on a local still or an empty camera-sized canvas; image stays on this device browser",
       "refs": [
         "openpilot/starpilot/ui/vasm_owner.py"
-      ]
-    },
-    {
-      "source": "Driving settings ·",
-      "refs": [
-        "openpilot/starpilot/galaxy/web/js/app.js"
       ]
     },
     {
@@ -31583,9 +31259,63 @@
       ]
     },
     {
+      "source": ", current step",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": ", done",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "1 group",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/map-operations.js"
+      ]
+    },
+    {
+      "source": "1 tile missing · retries later",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/offline-road-maps.js"
+      ]
+    },
+    {
+      "source": "1 try",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
       "source": "1. openpilot is a driver assistance system.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/onboarding.py"
+      ]
+    },
+    {
+      "source": "100,000 map tiles, 10,000 routes, 5,000 traffic routes",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js"
+      ]
+    },
+    {
+      "source": "12 V battery:",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "2. Adapter paired",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "2. Car paired",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
       ]
     },
     {
@@ -31607,6 +31337,30 @@
       ]
     },
     {
+      "source": "A Soloist install is running",
+      "refs": [
+        "openpilot/starpilot/galaxy/spotify_setup.py"
+      ]
+    },
+    {
+      "source": "A StarPort package import is running",
+      "refs": [
+        "openpilot/starpilot/galaxy/starport_setup.py"
+      ]
+    },
+    {
+      "source": "A data cable from the car to your comma.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "A device restart, shutdown or reset is already pending",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
       "source": "A different verified model is chosen each start. Big GPU models are used. {} excluded. Favorites only mark your preferred models.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/models.js"
@@ -31619,9 +31373,33 @@
       ]
     },
     {
+      "source": "AAWireless, Motorola MA1 or similar, plugged into the car.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "ACC Tune refreshes during the drive.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
       "source": "ACTIVE",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/firehose.py"
+      ]
+    },
+    {
+      "source": "APKPure terms",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "About the token and your allowance",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
       ]
     },
     {
@@ -31655,9 +31433,33 @@
       ]
     },
     {
+      "source": "Access tokens ↗",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Accounts for the time between a steering request and the car’s response.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Accuracy is too low.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
       "source": "Active Big",
       "refs": [
         "openpilot/starpilot/ui/models_state.py"
+      ]
+    },
+    {
+      "source": "Active models",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
       ]
     },
     {
@@ -31679,9 +31481,93 @@
       ]
     },
     {
+      "source": "Adapter model",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
       "source": "Adapter passkey",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Add Offline Coverage?",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/map-operations.js"
+      ]
+    },
+    {
+      "source": "Add key",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Add to your favorites: {name}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Add your Android Auto package",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "Add your Mapbox key in Setup. Offline road maps download with that key.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/offline-road-maps.js"
+      ]
+    },
+    {
+      "source": "Add {name} to saved places",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Added on top of the Mapbox key. Unlocks Google's street & traffic map, live-traffic routes and place search.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Address, place or Google Maps link",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Adds low-speed steering help when the wheels have not reached the requested turn angle. Higher allows more extra help; lower limits it. This is an extra-assistance limit, not the car’s overall steering limit.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Adds more fading of the FF-gain adjustment when exiting a left curve within the curve-exit speed range. Higher fades it more; lower keeps more. The fade can be limited by Curvy unwind floor relief. No effect with FF gain at zero.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Adds more fading of the FF-gain adjustment when exiting a right curve within the curve-exit speed range. Higher fades it more; lower keeps more. The fade can be limited by Curvy unwind floor relief. No effect with FF gain at zero.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Adds planned steering effort while starting a left turn at very low speeds. Higher adds more help; lower adds less. Unlike Turn-in boost, this can act with FF gain at zero.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Adds planned steering effort while starting a right turn at very low speeds. Higher adds more help; lower adds less. Unlike Turn-in boost, this can act with FF gain at zero.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
       ]
     },
     {
@@ -31691,9 +31577,45 @@
       ]
     },
     {
+      "source": "Adds straight-ahead softening at highway speeds. Higher softens small corrections more; lower keeps more steering response. This changes steering feel, not your target position in the lane.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
       "source": "Adds the right scroll wheel, right stalk and three-finger screen tap as controls, and lets the comma set the speed on the Tesla's dashboard. Model 3 and Model Y, HW3 or HW4. Checked when the car starts.",
       "refs": [
         "openpilot/starpilot/ui/tesla_set_speed_feature.py"
+      ]
+    },
+    {
+      "source": "Adds this distance to the following gap behind a stopped lead vehicle.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Adjust alert and chime volumes. Test alert plays on your comma while offroad; Auto previews a quiet-cabin starting level. Immediate warnings keep their safety volume ramp.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/settings.js"
+      ]
+    },
+    {
+      "source": "Adjust parked shutdown limits and supported fan cooling",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/settings.js"
+      ]
+    },
+    {
+      "source": "Adjust supported steering parameters.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/settings.js"
+      ]
+    },
+    {
+      "source": "Adjusts conventional factory cruise with Resume and Set after the next startup.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
       ]
     },
     {
@@ -31721,6 +31643,18 @@
       ]
     },
     {
+      "source": "Advanced driving and display settings",
+      "refs": [
+        "openpilot/starpilot/galaxy/settings.py"
+      ]
+    },
+    {
+      "source": "Advanced driving and display settings.",
+      "refs": [
+        "openpilot/starpilot/galaxy/settings.py"
+      ]
+    },
+    {
       "source": "Advanced steering parameters and total actuator delay",
       "refs": [
         "openpilot/starpilot/ui/feature_settings_owner.py"
@@ -31739,15 +31673,45 @@
       ]
     },
     {
+      "source": "Allow H.265 video",
+      "refs": [
+        "openpilot/starpilot/galaxy/device_settings.py"
+      ]
+    },
+    {
       "source": "Allow cellular data roaming.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py"
       ]
     },
     {
+      "source": "Allow precise location and leave the sharing notification on while driving.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
       "source": "Allow this adapter to pair?",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Allows the FF-gain adjustment to fade further when exiting a left curve within the curve-exit speed range. Higher allows more fading; lower retains a higher minimum. Works with Unwind taper or Curvy unwind extra reduction; no effect with FF gain at zero.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Allows the FF-gain adjustment to fade further when exiting a right curve within the curve-exit speed range. Higher allows more fading; lower retains a higher minimum. Works with Unwind taper or Curvy unwind extra reduction; no effect with FF gain at zero.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Allows the model to anticipate a signaled intersection turn.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
       ]
     },
     {
@@ -31782,6 +31746,54 @@
       ]
     },
     {
+      "source": "An eGPU variant is published, so this model can be part of a model pair",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "An iPad or Android tablet shows the dashboard.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "An older update was ignored.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "An update arrived late.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Android Auto package downloads and uploads",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Android:",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Another Soloist upload is running",
+      "refs": [
+        "openpilot/starpilot/galaxy/spotify_setup.py"
+      ]
+    },
+    {
+      "source": "Another StarPort package upload is running",
+      "refs": [
+        "openpilot/starpilot/galaxy/starport_setup.py"
+      ]
+    },
+    {
       "source": "Any fast phone or laptop charger should be fine.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/firehose.py"
@@ -31794,9 +31806,21 @@
       ]
     },
     {
+      "source": "Applies from the next StarPort connection.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
       "source": "Applies next drive.",
       "refs": [
         "openpilot/starpilot/ui/longitudinal_developer.py"
+      ]
+    },
+    {
+      "source": "Applies to new routes and reroutes, and recalculates your current route.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
       ]
     },
     {
@@ -31806,9 +31830,27 @@
       ]
     },
     {
+      "source": "Armed",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/settings.js"
+      ]
+    },
+    {
+      "source": "Assigns the action performed by {label}.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
       "source": "Audio waits for {}.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "Auto at right",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js"
       ]
     },
     {
@@ -31827,6 +31869,12 @@
       "source": "Automatic Conditions",
       "refs": [
         "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
+      "source": "Automatic Connection",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
       ]
     },
     {
@@ -31854,9 +31902,27 @@
       ]
     },
     {
+      "source": "Automatic restart schedule",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Automatic steering tuning, measured corrections and live plots",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/data/catalog.json"
+      ]
+    },
+    {
       "source": "Automatic switches between Chill and Experimental using your saved conditions.",
       "refs": [
         "openpilot/starpilot/ui/conditional_feature.py"
+      ]
+    },
+    {
+      "source": "Automatic, Chill and Experimental",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/driving.js"
       ]
     },
     {
@@ -31878,9 +31944,21 @@
       ]
     },
     {
+      "source": "Back to Routes",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/route-workspace.js"
+      ]
+    },
+    {
       "source": "Background download: {label}",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/software.py"
+      ]
+    },
+    {
+      "source": "Background update download",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
       ]
     },
     {
@@ -31987,6 +32065,24 @@
       ]
     },
     {
+      "source": "Big model",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Big model downloaded",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Big model: runs on an external GPU",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
       "source": "Highest streak",
       "refs": [
         "openpilot/starpilot/galaxy/drive_stats.py"
@@ -32048,6 +32144,18 @@
       ]
     },
     {
+      "source": "Bluetooth controls are unavailable in this build",
+      "refs": [
+        "openpilot/starpilot/galaxy/starport_setup.py"
+      ]
+    },
+    {
+      "source": "Bluetooth could not be enabled; StarPort was not turned on",
+      "refs": [
+        "openpilot/starpilot/galaxy/starport_setup.py"
+      ]
+    },
+    {
       "source": "Bookmark #{} Saved",
       "refs": [
         "openpilot/selfdrive/selfdrived/bookmarks.py"
@@ -32060,9 +32168,40 @@
       ]
     },
     {
+      "source": "Both need the latest StarPilot app, a Mapbox key above, and a way to reach your comma: Bluetooth, local Wi-Fi or the remote route. If your comma can't be reached, the phone keeps the place and sends it when it next connects, within 12 hours.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Branch is not in the current updater list",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Branch:",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
       "source": "Brand: {label}",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/diagnostic-tools.js"
+      ]
+    },
+    {
+      "source": "Bring up your dashboard",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "Browser preferences",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/app-reminder.js",
+        "openpilot/starpilot/galaxy/web/js/settings.js"
       ]
     },
     {
@@ -32078,9 +32217,70 @@
       ]
     },
     {
+      "source": "Cable",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
       "source": "Calibrating: {}%",
       "refs": [
         "openpilot/selfdrive/selfdrived/events.py"
+      ]
+    },
+    {
+      "source": "Canada — All Canada",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/map-operations.js"
+      ]
+    },
+    {
+      "source": "Canada — Provinces and territories",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/map-operations.js"
+      ]
+    },
+    {
+      "source": "Cancel · {} of {}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Canceled.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/map-operations.js"
+      ]
+    },
+    {
+      "source": "Caps positive acceleration when pulling away below the Start Speed.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Caps positive acceleration. Vehicle and acceleration profile limits still apply.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Car speakers via StarPort (Android Auto)",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "Certificate valid until {}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Change how your car connects",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js",
+        "openpilot/starpilot/galaxy/web/js/starport.js"
       ]
     },
     {
@@ -32093,6 +32293,18 @@
       "source": "Changes apply after the next reboot",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "Changes apply from the next StarPort connection.",
+      "refs": [
+        "openpilot/starpilot/galaxy/device_settings.py"
+      ]
+    },
+    {
+      "source": "Changes only the device TEMP gauge.",
+      "refs": [
+        "openpilot/starpilot/galaxy/localization_settings.py"
       ]
     },
     {
@@ -32156,6 +32368,12 @@
       ]
     },
     {
+      "source": "Checking the model catalog",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
       "source": "Chestnut GPU unavailable",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
@@ -32216,6 +32434,18 @@
       ]
     },
     {
+      "source": "Chimes once when the model’s traffic-light stop prediction clears while you remain stopped.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Chimes once when the tracked vehicle ahead starts moving while you remain stopped.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
       "source": "Chimes when the model’s traffic-light stop prediction clears while you remain stopped.",
       "refs": [
         "openpilot/starpilot/audio/departure_alert.py"
@@ -32234,9 +32464,45 @@
       ]
     },
     {
+      "source": "Choose an audio output…",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "Choose at least one model with a Chestnut variant",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Choose language, units and regional preferences",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/settings.js"
+      ]
+    },
+    {
+      "source": "Choose preferences saved for this browser",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/settings.js"
+      ]
+    },
+    {
+      "source": "Choose the soloist_release_arm64.tar.gz file you downloaded.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
       "source": "Choose the steering controller for your next drive. StarPilot's torque controller can provide higher low-speed steering accuracy, but may require additional tuning. Join the StarPilot Discord and open a tuning request: https://firestar.link/discord",
       "refs": [
         "openpilot/starpilot/ui/controller_feature.py"
+      ]
+    },
+    {
+      "source": "Choose what drives your car, pair models, and manage downloads.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
       ]
     },
     {
@@ -32246,9 +32512,81 @@
       ]
     },
     {
+      "source": "Choose your adapter to continue.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "Choose your adapter, put it in pairing mode, then tap Find adapter.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "Choose your app to continue.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "Choose your app, open it on your tablet on the same Wi-Fi, then tap Connect.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
       "source": "Choose your car below.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Choose your car speakers through StarPort, or a Bluetooth car stereo or speaker paired with the comma. Only Bluetooth devices that support receiving music appear here.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "Choose your sources",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Chooses BluePilot Curvature, BluePilot Angle or StarPilot Controller. Mach-E and classic Explorer default to StarPilot; other supported Fords default to BluePilot Curvature. Lane centering and offset use the global StarPilot settings. Change while parked.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Chooses an optional third place SLC gets speed limits. Its new limits are used like the others. Choose Off to stop using it.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Chooses the acceleration curve used by personalities set to Use global preset.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Chooses the braking response used by personalities set to Use global preset.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Clear Active Big (use Active Small)",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Clear Active Big model",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
       ]
     },
     {
@@ -32258,15 +32596,39 @@
       ]
     },
     {
+      "source": "Clear camera and steering calibration. The device recalibrates on the next drive.",
+      "refs": [
+        "openpilot/starpilot/galaxy/device_settings.py"
+      ]
+    },
+    {
       "source": "Clear saved wheel-side detection. Automatic detection restarts next drive.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py"
       ]
     },
     {
+      "source": "Clears saved camera and steering calibration. The device recalibrates on the next drive.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
       "source": "Click to update",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Click “Download APK Bundle” (or “Download APK”). You get an .apk, .xapk or .apkm file. Leave it zipped.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Close details",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js"
       ]
     },
     {
@@ -32288,6 +32650,12 @@
       ]
     },
     {
+      "source": "Cloud services, remote access, mobile-data uploads and usage-statistics sharing",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/settings.js"
+      ]
+    },
+    {
       "source": "Coast Downhills",
       "refs": [
         "openpilot/starpilot/ui/feature_settings_owner.py"
@@ -32297,6 +32665,18 @@
       "source": "Comfort/Normal/Sport (m/s²): global 0.6/1.2/2.4; explicit personality 0.5/1.0/2.0. Use global preset inherits global values. These separate scales preserve existing tuning. StarPilot Default keeps native cruise braking. Lead and stop braking retain priority.",
       "refs": [
         "openpilot/starpilot/ui/long_profile_feature.py"
+      ]
+    },
+    {
+      "source": "Comma and car only",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Comma and car, phone as backup",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
       ]
     },
     {
@@ -32312,9 +32692,39 @@
       ]
     },
     {
+      "source": "Community",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Compare Mapbox and Google",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js"
+      ]
+    },
+    {
+      "source": "Compensates for the delay between an acceleration request and vehicle response.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Configure cloud services, remote access and data uploads.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/settings.js"
+      ]
+    },
+    {
       "source": "Confirm limits",
       "refs": [
         "openpilot/starpilot/ui/slc_policy_feature.py"
+      ]
+    },
+    {
+      "source": "Confirm the device restart first",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
       ]
     },
     {
@@ -32324,9 +32734,57 @@
       ]
     },
     {
+      "source": "Connect to your car whenever you start driving.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Connect to your comma to set up navigation.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Connect your car in Bluetooth first, then come back and tap Connect.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "Connect your phone to the Galaxy hotspot or the same network as your comma, then open an address below. No Internet or Galaxy password needed.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/local-access.js"
+      ]
+    },
+    {
+      "source": "Connected to car",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Connecting to car",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
       "source": "Connecting to the selected device…",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Connecting to your car",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "Connection progress",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
       ]
     },
     {
@@ -32342,15 +32800,111 @@
       ]
     },
     {
+      "source": "Copy it.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Could not start Save Me",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Couldn’t download",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Couldn’t download {name}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Counted against your Mapbox allowance.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Country, province, territory or US state",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/map-operations.js"
+      ]
+    },
+    {
+      "source": "Counts cover this comma only. Mapbox and Google bill everything that uses your key, including other apps.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js"
+      ]
+    },
+    {
+      "source": "Create a project.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Create an API key, limit it to those three APIs and leave application restrictions off; the comma's address changes on cellular. Keys are under",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Create an account.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Create the key.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Credentials ↗",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Cron: {} · Schedule timezone: {}.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
       "source": "Cruise uses this target when you lift off the accelerator. Held speed stays at or below SET.",
       "refs": [
         "openpilot/starpilot/ui/slc_policy_feature.py"
       ]
     },
     {
+      "source": "Cruise uses this target when you lift off the accelerator. Holding your speed uses the highest speed you reached, up to SET.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Current sources",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
       "source": "Current vehicle and readable saved settings are required",
       "refs": [
         "openpilot/starpilot/ui/torque_feature.py"
+      ]
+    },
+    {
+      "source": "Current vehicle status refresh failed",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
       ]
     },
     {
@@ -32384,9 +32938,70 @@
       ]
     },
     {
+      "source": "Data & Connections",
+      "refs": [
+        "openpilot/starpilot/galaxy/settings.py",
+        "openpilot/starpilot/galaxy/web/js/settings.js"
+      ]
+    },
+    {
+      "source": "Day (1–31)",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
       "source": "Decrease set speed",
       "refs": [
         "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
+      "source": "Default: daily at local midnight. Uses the selected timezone, including daylight saving time. Use * for every value; ranges, commas and steps are supported. Weekday 0 or 7 is Sunday. Schedule is skipped if onroad.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Delete all Sentry events and their saved artifacts? This cannot be undone.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/record-deletion.js"
+      ]
+    },
+    {
+      "source": "Delete all crash reports and their saved artifacts? This cannot be undone.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/record-deletion.js"
+      ]
+    },
+    {
+      "source": "Delete all saved routes and logs, including preserved routes.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/route-cleanup.js"
+      ]
+    },
+    {
+      "source": "Delete eGPU variant: {name}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Delete files for {name}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Delete this area?",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/offline-road-maps.js"
+      ]
+    },
+    {
+      "source": "Details about {label}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js"
       ]
     },
     {
@@ -32399,6 +33014,25 @@
       "source": "Developer Parameters",
       "refs": [
         "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
+      "source": "Device & System",
+      "refs": [
+        "openpilot/starpilot/galaxy/settings.py",
+        "openpilot/starpilot/galaxy/web/js/settings.js"
+      ]
+    },
+    {
+      "source": "Device actions",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Device connected.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
       ]
     },
     {
@@ -32419,6 +33053,18 @@
         "openpilot/starpilot/galaxy/web/js/diagnostic-tools.js",
         "openpilot/starpilot/galaxy/web/js/drive-state.js",
         "openpilot/starpilot/ui/runtime_app.py"
+      ]
+    },
+    {
+      "source": "Directions",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Directions: {label}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
       ]
     },
     {
@@ -32524,6 +33170,18 @@
       ]
     },
     {
+      "source": "Disarmed",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/settings.js"
+      ]
+    },
+    {
+      "source": "Disarms Tesla Always On Lateral when you press the brake, with either harness.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
       "source": "Disengage StarPilot",
       "refs": [
         "openpilot/starpilot/ui/tesla_controls_feature.py"
@@ -32605,6 +33263,78 @@
       ]
     },
     {
+      "source": "Don't Remind Me",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/app-reminder.js"
+      ]
+    },
+    {
+      "source": "Dongle Wi-Fi setup: ping like a phone",
+      "refs": [
+        "openpilot/starpilot/system/starport/head_unit_fixes.py"
+      ]
+    },
+    {
+      "source": "Download Big model: {name}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Download Small model: {name}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Download all",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Download and install selected version",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Download and install {} ({}) and restart the device?",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Download model: {name}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Download model: {name} (Partial: {} / {})",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Download model: {name} ({label})",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Download model: {name} ({} · size mismatch)",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Download pair variants: {name}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
       "source": "Download replay route (.mp4)",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/record-history.js",
@@ -32624,6 +33354,102 @@
       ]
     },
     {
+      "source": "Download segment {} footage",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/route-workspace.js"
+      ]
+    },
+    {
+      "source": "Download stopped",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Download updates automatically",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Download · {} · size mismatch",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Downloaded · Ready to install",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Downloading Big model: {name}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Downloading Big model: {name}: {}%",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Downloading and installing AGNOS",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Downloading eGPU variant: {name}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Downloading eGPU variant: {name}: {}%",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Downloading model: {name}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Downloading model: {name}: {}%",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Downloading selected version…",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Downloading {}%",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Downloads road lines around and ahead of your car while the map overlay is on and internet is available. Saved lines keep the overlay visible offline; older driven areas are removed when its 600 MB cache fills.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/offline-road-maps.js"
+      ]
+    },
+    {
+      "source": "Driver camera",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/route-workspace.js"
+      ]
+    },
+    {
       "source": "Driving Mode",
       "refs": [
         "openpilot/starpilot/ui/conditional_feature.py"
@@ -32632,6 +33458,7 @@
     {
       "source": "Driving Modes",
       "refs": [
+        "openpilot/starpilot/galaxy/web/js/driving.js",
         "openpilot/starpilot/ui/feature_settings_owner.py"
       ]
     },
@@ -32639,6 +33466,81 @@
       "source": "Driving models",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Driving settings · aol",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/app.js",
+        "openpilot/starpilot/galaxy/web/js/driving.js"
+      ]
+    },
+    {
+      "source": "Driving settings · conditional",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/app.js",
+        "openpilot/starpilot/galaxy/web/js/driving.js"
+      ]
+    },
+    {
+      "source": "Driving settings · curve",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/app.js",
+        "openpilot/starpilot/galaxy/web/js/driving.js"
+      ]
+    },
+    {
+      "source": "Driving settings · lane",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/app.js",
+        "openpilot/starpilot/galaxy/web/js/driving.js"
+      ]
+    },
+    {
+      "source": "Driving settings · lane change",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/app.js",
+        "openpilot/starpilot/galaxy/web/js/driving.js"
+      ]
+    },
+    {
+      "source": "Driving settings · profiles",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/app.js",
+        "openpilot/starpilot/galaxy/web/js/driving.js"
+      ]
+    },
+    {
+      "source": "Driving settings · slc",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/app.js",
+        "openpilot/starpilot/galaxy/web/js/driving.js"
+      ]
+    },
+    {
+      "source": "Driving settings · torque",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/app.js",
+        "openpilot/starpilot/galaxy/web/js/driving.js"
+      ]
+    },
+    {
+      "source": "Driving settings · traffic",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/app.js",
+        "openpilot/starpilot/galaxy/web/js/driving.js"
+      ]
+    },
+    {
+      "source": "Each Soloist build works for 90 days from its build date, not its install date. Before it runs out, this step shows “Update”; download again the same way.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "Eases off steering while you turn the wheel through a turn yourself.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
       ]
     },
     {
@@ -32696,6 +33598,12 @@
       ]
     },
     {
+      "source": "Enable StarPort, then upload your Android Auto APK, XAPK, or APKM on-road or off-road.",
+      "refs": [
+        "openpilot/starpilot/galaxy/starport_setup.py"
+      ]
+    },
+    {
       "source": "Enable Stop/Start OFF at the next startup? A bounded request runs once while stationary in Park or Neutral.",
       "refs": [
         "openpilot/starpilot/ui/vehicle_bool.py"
@@ -32747,6 +33655,12 @@
       "source": "Enable software cruise after the next startup? Stock ACC keeps pedal control.",
       "refs": [
         "openpilot/starpilot/ui/vehicle_bool.py"
+      ]
+    },
+    {
+      "source": "Enable three APIs.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
       ]
     },
     {
@@ -32834,6 +33748,18 @@
       ]
     },
     {
+      "source": "Error details: {}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/route-workspace.js"
+      ]
+    },
+    {
+      "source": "Estimate near last saved location",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/weather.js"
+      ]
+    },
+    {
       "source": "Excessive lateral actuation detected on your last drive",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
@@ -32849,6 +33775,60 @@
       "source": "Experimental override",
       "refs": [
         "openpilot/starpilot/controllers/wheel_actions.py"
+      ]
+    },
+    {
+      "source": "Experimental test for a car that only takes H.265. Sends every frame as a keyframe and logs the car's acknowledgments. H.264 cars are not affected. Applies from the next StarPort connection.",
+      "refs": [
+        "openpilot/starpilot/galaxy/device_settings.py"
+      ]
+    },
+    {
+      "source": "Experimental test for a car that only takes H.265. Uses the car's 1080x1920 screen mode instead of 720x1280 when it offers one. Needs Allow H.265 video on. H.264 cars are not affected. Applies from the next StarPort connection.",
+      "refs": [
+        "openpilot/starpilot/galaxy/device_settings.py"
+      ]
+    },
+    {
+      "source": "Experimental. A Mavlou dongle never sends its Wi-Fi start request to the comma. A phone pings it once a second after its version reply. Applies from the next StarPort connection.",
+      "refs": [
+        "openpilot/starpilot/galaxy/device_settings.py"
+      ]
+    },
+    {
+      "source": "Experimental. For a car that shows video but never acknowledges it, so the picture freezes and reconnects every few seconds. Sends video without waiting for acknowledgments, on H.264 or H.265. Applies from the next StarPort connection.",
+      "refs": [
+        "openpilot/starpilot/galaxy/device_settings.py"
+      ]
+    },
+    {
+      "source": "Experimental. For a car that stays on its own screen over USB, or shows Bluetooth connecting. Connects hands-free to the car and sends the Bluetooth pairing request before asking for the screen, as a phone does. Pair the comma in the car's Bluetooth menu first. It may take the car's hands-free link from your phone. Applies from the next StarPort connection.",
+      "refs": [
+        "openpilot/starpilot/galaxy/device_settings.py"
+      ]
+    },
+    {
+      "source": "Experimental. For a wireless adapter that hands over its Wi-Fi but then refuses the connection, as if it is still starting up. Keeps trying for up to a minute instead of about 15 seconds. Applies from the next StarPort connection.",
+      "refs": [
+        "openpilot/starpilot/galaxy/device_settings.py"
+      ]
+    },
+    {
+      "source": "Experimental. Only for a car that offers H.265 and no H.264 video. Cars that offer H.264 are not affected. Applies from the next StarPort connection.",
+      "refs": [
+        "openpilot/starpilot/galaxy/device_settings.py"
+      ]
+    },
+    {
+      "source": "Experimental. The car ends every session 10-25 s after video starts (shutdown reason 1), wired and wireless. Applies from the next StarPort connection.",
+      "refs": [
+        "openpilot/starpilot/galaxy/device_settings.py"
+      ]
+    },
+    {
+      "source": "Experimental. The car shows every frame but never acknowledges one, so the comma gives up after 2.5 s; unacked it ran 100 s. Applies from the next StarPort connection.",
+      "refs": [
+        "openpilot/starpilot/galaxy/device_settings.py"
       ]
     },
     {
@@ -32870,9 +33850,33 @@
       ]
     },
     {
+      "source": "Export replay segment {}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/route-workspace.js"
+      ]
+    },
+    {
+      "source": "External",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
       "source": "Extra stopped-lead distance",
       "refs": [
         "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
+      "source": "Fades the FF-gain adjustment as a left turn straightens out. Higher fades it more; lower keeps more of it during the exit. No effect with FF gain at zero.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Fades the FF-gain adjustment as a right turn straightens out. Higher fades it more; lower keeps more of it during the exit. No effect with FF gain at zero.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
       ]
     },
     {
@@ -32885,6 +33889,12 @@
       "source": "Failed to register with comma.ai backend",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Finalized update does not match selected branch",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
       ]
     },
     {
@@ -32924,9 +33934,21 @@
       ]
     },
     {
+      "source": "Follows accepted limits plus offsets up to SET speed. Missing data uses the previous accepted limit.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
       "source": "For maximum effectiveness, bring your device inside and connect to a good USB-C adapter and Wi-Fi weekly.\n\nFirehose Mode can also work while you're driving if connected to a hotspot or unlimited SIM card.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/firehose.py"
+      ]
+    },
+    {
+      "source": "For model pair",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
       ]
     },
     {
@@ -32942,9 +33964,27 @@
       ]
     },
     {
+      "source": "Forward music from the selected phone. Playback and volume stay on your phone.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "Free monthly allowance",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js"
+      ]
+    },
+    {
       "source": "Frequently Asked Questions",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/firehose.py"
+      ]
+    },
+    {
+      "source": "From APKPure, a third-party mirror. Don’t unzip it.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
       ]
     },
     {
@@ -32957,6 +33997,12 @@
       "source": "From Spotify’s Downloads page, to this phone",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "Fullscreen video",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/replay.js"
       ]
     },
     {
@@ -32978,9 +34024,124 @@
       ]
     },
     {
+      "source": "Galaxy could not verify the update after five minutes. Your device may still be updating. Check its connection and refresh to read its status before trying another update.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/update-restart.js"
+      ]
+    },
+    {
+      "source": "Galaxy lost the connection. Check whether the device is restarting before trying again.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Galaxy session expired; sign in again",
+      "refs": [
+        "openpilot/starpilot/galaxy/spotify_setup.py",
+        "openpilot/starpilot/galaxy/starport_setup.py"
+      ]
+    },
+    {
+      "source": "Galaxy session or setup state changed",
+      "refs": [
+        "openpilot/starpilot/galaxy/starport_setup.py"
+      ]
+    },
+    {
+      "source": "Galaxy will disconnect briefly. If an update is ready, it may install during the restart.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
       "source": "General Prompt",
       "refs": [
         "openpilot/starpilot/audio/alert_volume.py"
+      ]
+    },
+    {
+      "source": "Get the Galaxy app",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/app-reminder.js"
+      ]
+    },
+    {
+      "source": "Getting the updater ready…",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Go back to the standard handshake. Your Bluetooth pairing is kept.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Google Maps Platform API key",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Google Maps or Apple Maps → Share → StarPilot. The route starts on your comma.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Google Maps → Share → StarPilot. The route starts on your comma.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Google asks for a card and puts a temporary $50 hold on it, like a gas station does. It is not a charge and it drops off on its own. StarPilot blocks Google at 99% of the free usage, so you won't be charged. Turn it on in",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Google choices need both keys. Each one falls back to Mapbox if it can't work.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Google couldn't search just now, so these places are from Mapbox.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Google isn't used until the Mapbox key above is added too.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Google key",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Google key with billing on",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js"
+      ]
+    },
+    {
+      "source": "Google use",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Google's street map with traffic colors.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
       ]
     },
     {
@@ -33002,9 +34163,39 @@
       ]
     },
     {
+      "source": "Guided StarPort setup",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "H.265 at 1080x1920",
+      "refs": [
+        "openpilot/starpilot/galaxy/device_settings.py"
+      ]
+    },
+    {
+      "source": "Handshake options",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
       "source": "Hang up cellular data and don't redial. The modem stays registered and the SIM is untouched. Remote access over cellular data is unavailable while this is enabled.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "Hide app download reminder",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/app-reminder.js"
+      ]
+    },
+    {
+      "source": "Hides the alert shown when the driving personality changes on the comma and Android Auto.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
       ]
     },
     {
@@ -33044,9 +34235,39 @@
       ]
     },
     {
+      "source": "Hour (0–23)",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
       "source": "Hover or tap a segment",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "How the Google limits work",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "How to share a place from your phone",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "How to share phone GPS from the StarPilot app",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "How your car connects",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
       ]
     },
     {
@@ -33080,6 +34301,36 @@
       ]
     },
     {
+      "source": "Ignores very small steering tracking errors at crawling speeds. Higher tolerates a larger error before correcting; lower reacts to smaller errors. This can reduce constant tiny corrections, but too much allows more tracking error. Blends with the neighboring speed settings.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Ignores very small steering tracking errors at higher speeds. Higher tolerates a larger error before correcting; lower reacts to smaller errors. This can reduce constant tiny corrections, but too much allows more tracking error. Blends with the neighboring speed settings.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Ignores very small steering tracking errors at highway speeds. Higher tolerates a larger error before correcting; lower reacts to smaller errors. This can reduce constant tiny corrections, but too much allows more tracking error. Blends with the neighboring speed settings.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Ignores very small steering tracking errors at low speeds. Higher tolerates a larger error before correcting; lower reacts to smaller errors. This can reduce constant tiny corrections, but too much allows more tracking error. Blends with the neighboring speed settings.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Ignores very small steering tracking errors at medium speeds. Higher tolerates a larger error before correcting; lower reacts to smaller errors. This can reduce constant tiny corrections, but too much allows more tracking error. Blends with the neighboring speed settings.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
       "source": "Immediate Warning",
       "refs": [
         "openpilot/starpilot/audio/alert_volume.py"
@@ -33092,9 +34343,27 @@
       ]
     },
     {
+      "source": "In iPhone Settings, set location access to Always and turn on Precise Location.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "In offroad mode or Park, pair the car over Bluetooth. The car then gives the comma its Wi-Fi access point.",
+      "refs": [
+        "openpilot/starpilot/galaxy/starport_setup.py"
+      ]
+    },
+    {
       "source": "In range, signal {}%",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/networks.js"
+      ]
+    },
+    {
+      "source": "Include {name} in Randomizer",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
       ]
     },
     {
@@ -33104,15 +34373,177 @@
       ]
     },
     {
-      "source": "Internal storage: {label} · {free} free",
+      "source": "Install preferences are unreadable. Save the schedule to repair them.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Install selected version",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Install the StarPort display and encoder before enabling",
+      "refs": [
+        "openpilot/starpilot/galaxy/starport_setup.py"
+      ]
+    },
+    {
+      "source": "Install updates automatically",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Install {} ({}) and restart the device?",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Installed checkout changed while preparing the update; retry when it finishes",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Installed checkout or update target is unavailable",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Installed revision changed before version request; refresh and try again",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Installed version",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Installed:",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "Installing model",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Internal storage: {label}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "Interrupted.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/map-operations.js"
+      ]
+    },
+    {
+      "source": "Invalid Soloist download size",
+      "refs": [
+        "openpilot/starpilot/galaxy/spotify_setup.py"
+      ]
+    },
+    {
+      "source": "Invalid Spotify action",
+      "refs": [
+        "openpilot/starpilot/galaxy/spotify_setup.py"
+      ]
+    },
+    {
+      "source": "Invalid Spotify control",
+      "refs": [
+        "openpilot/starpilot/galaxy/spotify_setup.py"
+      ]
+    },
+    {
+      "source": "Invalid Spotify setting",
+      "refs": [
+        "openpilot/starpilot/galaxy/spotify_setup.py"
+      ]
+    },
+    {
+      "source": "Invalid Spotify settings",
+      "refs": [
+        "openpilot/starpilot/galaxy/spotify_setup.py"
+      ]
+    },
+    {
+      "source": "Invalid StarPort package size",
+      "refs": [
+        "openpilot/starpilot/galaxy/starport_setup.py"
+      ]
+    },
+    {
+      "source": "Invalid branch",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Invalid install preferences",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
       ]
     },
     {
       "source": "Invalid saved assignments",
       "refs": [
         "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
+      "source": "Invalid selected version",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Invalid software action",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Invalid software preferences",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Invalid updater command",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "It hung up once before sending anything, so we stopped calling it.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "It hung up {} times before sending anything, so we stopped calling it.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "It stopped at {}%.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
       ]
     },
     {
@@ -33128,10 +34559,58 @@
       ]
     },
     {
+      "source": "Join the car’s Wi-Fi",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "Joins the car's Wi-Fi on a second interface so the comma stays on its home Wi-Fi or phone hotspot.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
       "source": "Keep Enhanced Stops held until you manually resume, even if a traffic light appears to turn green.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/developer.py",
         "openpilot/starpilot/longitudinal/enhanced_stop_hold.py"
+      ]
+    },
+    {
+      "source": "Keep your Mapbox key; Google works alongside it. Paste the Google key below while parked, press Save key, then Test key. It checks all three APIs.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Keeps trying for up to a minute when a wireless adapter hands over its Wi-Fi but refuses the connection.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Key saved",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Keyframe-only video test",
+      "refs": [
+        "openpilot/starpilot/galaxy/device_settings.py"
+      ]
+    },
+    {
+      "source": "Keys, map and route sources, and GPS",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/data/catalog.json"
+      ]
+    },
+    {
+      "source": "Laboratory output unavailable",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
       ]
     },
     {
@@ -33147,6 +34626,24 @@
       ]
     },
     {
+      "source": "Lane arrows on the turn card",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js"
+      ]
+    },
+    {
+      "source": "Largest first",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Latest features and fixes for testing. May introduce bugs.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
       "source": "Lead Departing Alert",
       "refs": [
         "openpilot/starpilot/audio/departure_alert.py"
@@ -33156,6 +34653,12 @@
       "source": "Lead Vehicle Departing",
       "refs": [
         "openpilot/starpilot/audio/departure_alert.py"
+      ]
+    },
+    {
+      "source": "Let StarPilot control acceleration and braking instead of factory ACC. Takes effect next drive. May disable factory Automatic Emergency Braking.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
       ]
     },
     {
@@ -33171,15 +34674,69 @@
       ]
     },
     {
+      "source": "Lets a car that offers only H.265 video receive H.265; a car with an H.264 mode keeps H.264.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
       "source": "Lets gravity carry the car above set speed without targeting a higher speed. Changes apply while driving.",
       "refs": [
         "openpilot/starpilot/ui/feature_settings_owner.py"
       ]
     },
     {
+      "source": "Lets the car coast above set speed on descents within the configured allowance.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
       "source": "Limits acceleration by speed. Comfort is gentler; Sport and Sport+ allow stronger acceleration. Use global preset follows the global choice. An explicit choice overrides it; StarPilot Default keeps vehicle behavior.",
       "refs": [
         "openpilot/starpilot/ui/long_profile_feature.py"
+      ]
+    },
+    {
+      "source": "Limits nudgeless lane changes to when factory cruise or openpilot speed control is engaged. With cruise off, use a wheel nudge. If cruise engages after signaling, release and reapply the signal. Off also allows automatic changes during lateral-only driving; lane and blindspot checks still apply.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Load {} collapsed version",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Load {} collapsed versions",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Load {} more older version",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Load {} more older versions",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Load {} of {} collapsed versions",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Local recordings and replay",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/record-history.js"
       ]
     },
     {
@@ -33201,6 +34758,30 @@
       ]
     },
     {
+      "source": "Lower starts later; higher starts earlier. Save while parked. Applies next drive.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Makes friction compensation respond sooner to small tracking errors when entering a left curve. Higher makes that response sharper; lower makes it more gradual. Changes the response ramp, not maximum friction compensation. Torque controllers only; no PID friction effect.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Makes friction compensation respond sooner to small tracking errors when entering a right curve. Higher makes that response sharper; lower makes it more gradual. Changes the response ramp, not maximum friction compensation. Torque controllers only; no PID friction effect.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Manage Android Auto connection options",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/settings.js"
+      ]
+    },
+    {
       "source": "Manual actuator delay. Reset restores automatic delay.",
       "refs": [
         "openpilot/starpilot/ui/delay_feature.py"
@@ -33219,6 +34800,24 @@
       ]
     },
     {
+      "source": "Map data © Google",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-map.js"
+      ]
+    },
+    {
+      "source": "Map data ©{}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-map.js"
+      ]
+    },
+    {
+      "source": "Map extent",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/map-operations.js"
+      ]
+    },
+    {
       "source": "Map frames: no",
       "refs": [
         "openpilot/selfdrive/ui/mici/onroad/navigation.py"
@@ -33231,6 +34830,85 @@
       ]
     },
     {
+      "source": "Map manager unavailable.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/map-operations.js"
+      ]
+    },
+    {
+      "source": "Map picture",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js",
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Map preparation failed.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/map-operations.js"
+      ]
+    },
+    {
+      "source": "Map preview",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Map tiles this month",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Map tiles today",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Map: {label}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Mapbox compared with Google",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js"
+      ]
+    },
+    {
+      "source": "Mapbox key",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Mapbox map. Tap or press Enter to center a new offline area; drag or use arrow keys to pan.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/offline-road-maps.js"
+      ]
+    },
+    {
+      "source": "Mapbox only",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/offline-road-maps.js"
+      ]
+    },
+    {
+      "source": "Mapbox preview",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/offline-road-maps.js"
+      ]
+    },
+    {
+      "source": "Mapbox token",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js"
+      ]
+    },
+    {
       "source": "Match Drive Mode",
       "refs": [
         "openpilot/starpilot/ui/feature_settings_owner.py"
@@ -33240,6 +34918,24 @@
       "source": "Match Speed Limit on Engage",
       "refs": [
         "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
+      "source": "Matches acceleration and deceleration profiles to the vehicle’s Eco, Normal or Sport drive mode.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Matches the acceleration profile to the vehicle’s drive mode.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Matches the deceleration profile to the vehicle’s drive mode.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
       ]
     },
     {
@@ -33261,9 +34957,69 @@
       ]
     },
     {
+      "source": "Measures curvature from the steering pinion angle instead of the yaw-rate sensor, in control and Panda safety. For Fords with a faulty yaw sensor.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Metadata check did not report completion. Retry the check.",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Metadata check was interrupted when the updater restarted. Retry the check.",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
       "source": "Metered prevents large uploads on this Wi-Fi connection. Default uses the network's detected setting.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/network/network_layout.py"
+      ]
+    },
+    {
+      "source": "Minute (0–59)",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Mixes predicted curvature into gentle curves: 0 follows the plan, 1 follows the prediction.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Mixes predicted curvature into sharp curves: 0 follows the plan, 1 follows the prediction.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Model downloaded",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Model pair",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Models are unavailable in the offline preview.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Models, downloads, Jetlink, and Model Laboratory",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/data/catalog.json"
       ]
     },
     {
@@ -33273,9 +35029,27 @@
       ]
     },
     {
+      "source": "Month (1–12)",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "More info about {label}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js"
+      ]
+    },
+    {
       "source": "Mount the device within 4° left or right and 5° up or 9° down. openpilot calibrates continuously; resetting is rarely needed. Resetting clears learned calibration.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py"
+      ]
+    },
+    {
+      "source": "Move to {} While Driving",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
       ]
     },
     {
@@ -33303,6 +35077,48 @@
       ]
     },
     {
+      "source": "Name A–Z",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Needs",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js"
+      ]
+    },
+    {
+      "source": "Needs GPU or Jetlink",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Needs a key",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Needs internet and the Mapbox key. Google tiles can't be saved offline.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Needs key",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Needs the Mapbox key too. No lane arrows. Falls back to Mapbox when its limits run out.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
       "source": "Needs the Tesla CAN add-on cable",
       "refs": [
         "openpilot/starpilot/ui/tesla_set_speed_feature.py"
@@ -33313,6 +35129,18 @@
       "refs": [
         "openpilot/starpilot/ui/tesla_controls_feature.py",
         "openpilot/starpilot/ui/tesla_set_speed_feature.py"
+      ]
+    },
+    {
+      "source": "Networks",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/data/catalog.json"
+      ]
+    },
+    {
+      "source": "Never uses the phone. Choose this if you don't share phone GPS.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
       ]
     },
     {
@@ -33328,9 +35156,63 @@
       ]
     },
     {
+      "source": "No changes selected",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "No fix",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "No models match these filters.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "No new download was reported for this branch",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "No paired Bluetooth audio outputs found. Pair your car stereo or speaker on the Bluetooth page first.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "No paired Bluetooth audio outputs found. Pair your car stereo or speaker on the Bluetooth page, or use StarPort.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "No saved location",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/weather.js"
+      ]
+    },
+    {
+      "source": "No, Google tiles can't be saved",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js"
+      ]
+    },
+    {
       "source": "No, we selectively pull a subset of your segments.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/firehose.py"
+      ]
+    },
+    {
+      "source": "None selected",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
       ]
     },
     {
@@ -33343,6 +35225,18 @@
       "source": "Normal Mode",
       "refs": [
         "openpilot/starpilot/ui/drive_mode_notice.py"
+      ]
+    },
+    {
+      "source": "Not Now",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/app-reminder.js"
+      ]
+    },
+    {
+      "source": "Not available yet",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
       ]
     },
     {
@@ -33364,6 +35258,12 @@
       ]
     },
     {
+      "source": "Now: {label}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
       "source": "OVERRIDE",
       "refs": [
         "openpilot/starpilot/ui/speed_limit_widget.py"
@@ -33382,6 +35282,12 @@
       ]
     },
     {
+      "source": "Off adopts new limits automatically. Both, Higher only, and Lower only prompt relative to the last accepted limit. + accepts and − declines within 30 seconds.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
       "source": "Offer or adopt higher mapped limits this many seconds early at the current speed",
       "refs": [
         "openpilot/starpilot/ui/slc_policy_feature.py"
@@ -33394,9 +35300,45 @@
       ]
     },
     {
+      "source": "Offers higher mapped limits early using road distance and current speed. Existing adoption and confirmation settings still apply.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Offers lower mapped limits early using road distance and current speed. Existing adoption and confirmation settings still apply.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Offline Map Management",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/offline-road-maps.js"
+      ]
+    },
+    {
+      "source": "Offline area map preview",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/offline-road-maps.js"
+      ]
+    },
+    {
+      "source": "Offline speed-limit and curve data. Download another region to add coverage. Previously downloaded regions stay available.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/map-operations.js"
+      ]
+    },
+    {
       "source": "On selects right-hand; Off selects left-hand for the next drive. Automatic side detection continues.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/toggles.py"
+      ]
+    },
+    {
+      "source": "On the comma",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
       ]
     },
     {
@@ -33406,15 +35348,117 @@
       ]
     },
     {
+      "source": "On the main Settings page, turn on Share Phone Location.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
       "source": "On this car, openpilot defaults to the stock system's built-in ACC.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
       ]
     },
     {
+      "source": "On-device",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Only Bluetooth devices that support receiving music appear here. Pairing a phone or radar detector does not make it an audio output.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "Open Android Auto on APKMirror, then open the “All versions” list and click through the versions to compare their release dates.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Open Connections → Phone GPS and turn on Share phone GPS with comma.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Open Networks",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/galaxy.js"
+      ]
+    },
+    {
+      "source": "Open StarPort setup",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/settings.js"
+      ]
+    },
+    {
+      "source": "Open route {}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/record-history.js"
+      ]
+    },
+    {
+      "source": "Open the StarPilot app and connect to your comma.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Open the version with the newest release date.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Open your car’s phone pairing screen, then tap Find car below.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "Open your tokens.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Open {} in Google Cloud",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Optional",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
       "source": "Optional source. Select Off to disable.",
       "refs": [
         "openpilot/starpilot/ui/feature_settings_owner.py"
+      ]
+    },
+    {
+      "source": "Our wiki (click book icon at the top right corner) has detailed help for pairing, connection status, other phones, wireless adapters, and screen problems.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Outside temperature:",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/weather.js"
+      ]
+    },
+    {
+      "source": "Over USB, connects hands-free to the car and sends the Bluetooth pairing request before asking for the screen, as a phone does.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
       ]
     },
     {
@@ -33436,6 +35480,18 @@
       ]
     },
     {
+      "source": "Pair lateral judgment from one model with longitudinal judgment from another.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Pair that speaker or car on the Bluetooth page first",
+      "refs": [
+        "openpilot/starpilot/galaxy/spotify_setup.py"
+      ]
+    },
+    {
       "source": "Pair with your adapter",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
@@ -33454,15 +35510,87 @@
       ]
     },
     {
+      "source": "Pair your phone in the companion app, or tap “Pair phone” on the Bluetooth page. Then choose it below and turn on phone audio. On your phone, select the comma as the media audio output. No Spotify install or API key is needed.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "Pair your phone on the Bluetooth page first",
+      "refs": [
+        "openpilot/starpilot/galaxy/spotify_setup.py"
+      ]
+    },
+    {
+      "source": "Pairable",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Paired and offers Android Auto",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "Paired cars that offer Android Auto",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
       "source": "Pairing canceled. Start again when your adapter is ready.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
       ]
     },
     {
+      "source": "Pairing increases inference time. Two Big models cannot run together at the required speed. Choose a Small model for one role. Other combinations can also cause model lag warnings. When available, the comma GPU runs one Small role while Chestnut runs the other role.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
       "source": "Pairing with the selected device…",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Park the vehicle and wait for any pending reset to finish.",
+      "refs": [
+        "openpilot/starpilot/galaxy/device_settings.py"
+      ]
+    },
+    {
+      "source": "Park the vehicle before restarting",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Park the vehicle before running Save Me",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Park the vehicle to change install preferences",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Park the vehicle to change update preferences",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Parked availability was lost.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/map-operations.js"
       ]
     },
     {
@@ -33487,6 +35615,42 @@
       "source": "Partial: {label} / {total}",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Past 20 reroutes in an hour, or when traffic routes run out, routes ignore traffic. Past both limits the comma uses Mapbox until they reset. Google routes have no lane arrows. Place search uses Google when Google gives directions, and Mapbox if Google can't answer.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Paste a Google Maps link",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Paste a place link into search, short links included.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Paste and save.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Paste and test.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Paste the token below while parked, then press Save key.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
       ]
     },
     {
@@ -33520,6 +35684,66 @@
       ]
     },
     {
+      "source": "Phone Audio",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "Phone GPS: {label} · {}s ago",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Phone first",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Pick a destination, save maps for offline use, and choose where maps, directions and position come from.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Place search and addresses",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js"
+      ]
+    },
+    {
+      "source": "Place searches this month",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Places found with Google.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Places: {label}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Playing on your comma…",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js"
+      ]
+    },
+    {
+      "source": "Playing…",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js"
+      ]
+    },
+    {
       "source": "Please connect to Wi-Fi to complete initial pairing.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py"
@@ -33538,9 +35762,34 @@
       ]
     },
     {
+      "source": "Plotting the stars...",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/index.html"
+      ]
+    },
+    {
+      "source": "Plug the car’s Android Auto USB data port into the comma, then tap Connect.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
       "source": "Poor visibility detected for driver monitoring",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Position: {label}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Power & Cooling",
+      "refs": [
+        "openpilot/starpilot/galaxy/settings.py",
+        "openpilot/starpilot/galaxy/web/js/settings.js"
       ]
     },
     {
@@ -33553,6 +35802,30 @@
       "source": "Predicted Blend, Low Curvature",
       "refs": [
         "openpilot/starpilot/ui/ford_bluepilot_feature.py"
+      ]
+    },
+    {
+      "source": "Preferred Wi-Fi, cellular data and the Galaxy hotspot",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/data/catalog.json"
+      ]
+    },
+    {
+      "source": "Prepare updates while parked; restart when ready.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Press + to raise SET past the adjusted limit and use your new SET speed.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Press Enable on each one: Map Tiles API for the map, Routes API for routes and Places API (New) for place search.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
       ]
     },
     {
@@ -33586,6 +35859,48 @@
       ]
     },
     {
+      "source": "Put the car in Park or use offroad mode to change the phone",
+      "refs": [
+        "openpilot/starpilot/galaxy/spotify_setup.py"
+      ]
+    },
+    {
+      "source": "Put the car in Park or use offroad mode to change where music plays",
+      "refs": [
+        "openpilot/starpilot/galaxy/spotify_setup.py"
+      ]
+    },
+    {
+      "source": "Put the car in Park or use offroad mode to change your Spotify account",
+      "refs": [
+        "openpilot/starpilot/galaxy/spotify_setup.py"
+      ]
+    },
+    {
+      "source": "Put the car in Park or use offroad mode to clear the cache",
+      "refs": [
+        "openpilot/starpilot/galaxy/spotify_setup.py"
+      ]
+    },
+    {
+      "source": "Put the car in Park or use offroad mode to install Spotify",
+      "refs": [
+        "openpilot/starpilot/galaxy/spotify_setup.py"
+      ]
+    },
+    {
+      "source": "Put the iPad on the same Wi-Fi as the comma, or join the comma’s TheGalaxy network after turning on its hotspot:",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Put the tablet on the same Wi-Fi as the comma, or join the comma’s TheGalaxy network after turning on its hotspot:",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
       "source": "Put your adapter in pairing mode, then pick it from the list",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
@@ -33595,6 +35910,18 @@
       "source": "Put your car in pairing mode, then pick it from the list",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Quick",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/route-workspace.js"
+      ]
+    },
+    {
+      "source": "Quick camera",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/route-workspace.js"
       ]
     },
     {
@@ -33610,9 +35937,33 @@
       ]
     },
     {
+      "source": "Reach the car over Bluetooth",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "Reaches your comma over Bluetooth or local Wi-Fi, never the remote tunnel.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Ready for",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
       "source": "Rear Fog Indicator",
       "refs": [
         "openpilot/starpilot/ui/ford_rear_fog_feature.py"
+      ]
+    },
+    {
+      "source": "Reboot is pending",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
       ]
     },
     {
@@ -33622,13 +35973,43 @@
       ]
     },
     {
+      "source": "Receiving updates",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Reconnecting to the motion monitor…",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/settings.js"
+      ]
+    },
+    {
       "source": "Record microphone audio while driving.\nAudio is included in dashcam videos in comma connect.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/toggles.py"
       ]
     },
     {
-      "source": "Recording drive: {label} · {free} free",
+      "source": "Recorded model distance. Hover, tap or focus a segment for details.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "Recorded portion included in totals",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "Recorded portion only",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "Recording drive: {label}",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/home.js"
       ]
@@ -33652,15 +36033,69 @@
       ]
     },
     {
+      "source": "Release notes",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Release notes are not available for this version.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
       "source": "Remount if your face is blocked, or driver monitoring has difficulty tracking your face.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/onboarding.py"
       ]
     },
     {
+      "source": "Remove from your favorites: {name}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
       "source": "Remove openpilot from this device.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/software.py"
+      ]
+    },
+    {
+      "source": "Remove the thirty manual overrides for this vehicle? Saved Auto Learn history is kept.",
+      "refs": [
+        "openpilot/starpilot/galaxy/settings.py"
+      ]
+    },
+    {
+      "source": "Remove {name} from recent places",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Remove {name} from saved places",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Removes the thirty manual steering overrides while keeping saved Auto Learn history.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Rendering route",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/route-workspace.js"
+      ]
+    },
+    {
+      "source": "Rendering segment {}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/route-workspace.js"
       ]
     },
     {
@@ -33673,6 +36108,30 @@
       "source": "Replay ended",
       "refs": [
         "openpilot/starpilot/ui/replay_settings.py"
+      ]
+    },
+    {
+      "source": "Replay export cancelled",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/record-history.js"
+      ]
+    },
+    {
+      "source": "Replay export cancelled.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/route-workspace.js"
+      ]
+    },
+    {
+      "source": "Replay export failed",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/record-history.js"
+      ]
+    },
+    {
+      "source": "Replay export failed.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/route-workspace.js"
       ]
     },
     {
@@ -33712,15 +36171,75 @@
       ]
     },
     {
+      "source": "Request timed out; the updater may still be running",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Requests Chill at or above this speed while following a lead, when the remaining driving conditions qualify.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Requests Chill at or above this speed without a tracked lead, when the remaining driving conditions qualify.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Requests Experimental below this speed while following a lead, when the remaining driving conditions qualify.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Requests Experimental below this speed without a tracked lead, when the remaining driving conditions qualify.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
       "source": "Require Cruise for Automatic Lane Changes",
       "refs": [
         "openpilot/starpilot/ui/lane_change_feature.py"
       ]
     },
     {
+      "source": "Required, with or without Google. Finds places, saves offline roads, plans routes and backs up Google.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
       "source": "Requires factory cruise or openpilot speed control to be engaged for a nudgeless start. With cruise off, a wheel nudge still works. Engage cruise before signaling.",
       "refs": [
         "openpilot/starpilot/ui/lane_change_feature.py"
+      ]
+    },
+    {
+      "source": "Requires the next vehicle startup to configure the Tesla brake/disarm safety permission.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Requires the next vehicle startup to configure the pinion measurement in Panda safety.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Reset camera and steering calibration? Automatic steering learning will be invalidated and the device will recalibrate on the next drive.",
+      "refs": [
+        "openpilot/starpilot/galaxy/settings.py"
+      ]
+    },
+    {
+      "source": "Reset handshake",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
       ]
     },
     {
@@ -33742,6 +36261,36 @@
       ]
     },
     {
+      "source": "Restart device",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Restart device?",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Restart is unavailable on this device",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Restart on the configured schedule, only while offroad.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Restart requested. Galaxy will reconnect when the device is back online.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
       "source": "Restart the car to retry.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
@@ -33760,6 +36309,12 @@
       ]
     },
     {
+      "source": "Restores automatic actuator delay for this vehicle without changing other steering settings.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
       "source": "Resume Speed Limit + Offset",
       "refs": [
         "openpilot/starpilot/ui/slc_resume_action.py",
@@ -33770,6 +36325,12 @@
       "source": "Resume the adjusted limit",
       "refs": [
         "openpilot/starpilot/speed_limits/runtime_settings.py"
+      ]
+    },
+    {
+      "source": "Review this operation in Galaxy.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/map-operations.js"
       ]
     },
     {
@@ -33864,6 +36425,36 @@
       ]
     },
     {
+      "source": "Road camera",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/route-workspace.js"
+      ]
+    },
+    {
+      "source": "Road lines",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js"
+      ]
+    },
+    {
+      "source": "Road lines, drawn from saved or live Mapbox data.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Round {} of {}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "Route replay and video",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/replay.js"
+      ]
+    },
+    {
       "source": "Route: no",
       "refs": [
         "openpilot/selfdrive/ui/mici/onroad/navigation.py"
@@ -33876,6 +36467,30 @@
       ]
     },
     {
+      "source": "Routes that follow live traffic, and place search by Google.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Routes this month",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Running now: {label}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Runs Spotify on your comma. Turn off to stop playing; your setup stays saved.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
       "source": "SSH keys",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
@@ -33885,6 +36500,42 @@
       "source": "Sampled {label}",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "Save Me is already pending",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Save Me is unavailable on this device",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Save restart schedule",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Save roads as you drive",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/offline-road-maps.js"
+      ]
+    },
+    {
+      "source": "Save {label} for the next start?",
+      "refs": [
+        "openpilot/starpilot/galaxy/vehicle_selection.py"
+      ]
+    },
+    {
+      "source": "Save {name} as Home, Work, or Other",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
       ]
     },
     {
@@ -33924,6 +36575,18 @@
       ]
     },
     {
+      "source": "Saved for this browser.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/app-reminder.js"
+      ]
+    },
+    {
+      "source": "Saved place: {name}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
       "source": "Saved values are inactive while Custom Driving Profiles is Off. Following time at low speeds; blends toward Relaxed as speed rises.",
       "refs": [
         "openpilot/starpilot/ui/traffic_feature.py"
@@ -33960,6 +36623,72 @@
       ]
     },
     {
+      "source": "Saves Mapbox road lines on your comma so the map overlay keeps drawing roads with no cell signal. Google Maps tiles require internet and can't be saved offline, so these road lines always back them up. Downloads happen on Wi-Fi.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/offline-road-maps.js"
+      ]
+    },
+    {
+      "source": "Saves the app to this computer",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Saves the app to this phone",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Scales steering during a lane change in angle mode. Values over 1.0 strengthen it.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Scales steering during a lane change. Values under 1.0 soften it.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Scales the high-speed steering response in angle mode. 1.0 is the default feel.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Scales the low-speed steering response in angle mode. 1.0 is the default feel.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Schedule timezone",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Scroll down to “Available downloads”. Under “Variant”, click the 17.x.xxxx‑release or 18.x.xxxx‑release entry.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Search here",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Search models…",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
       "source": "Searching for your adapter…",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
@@ -33972,9 +36701,93 @@
       ]
     },
     {
+      "source": "Secure the connection",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "Seeks move to the nearest recorded position.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/replay.js"
+      ]
+    },
+    {
+      "source": "Select previous version",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
       "source": "Select the software branch to download on the next update check.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/software.py"
+      ]
+    },
+    {
+      "source": "Selected updater target changed",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Selected version changed; refresh before installing",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Selected version or installed revision changed; refresh and try again",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Selected version was not prepared; refresh and try again",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Selections apply next onroad cycle. Park before downloading models or changing Jetlink.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Send audio to",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "Send music from the comma to your car speakers through StarPort (Android Auto), or to a Bluetooth car stereo or speaker. Alerts keep playing from the comma itself.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "Sends every H.265 frame as a keyframe and logs the car's acknowledgments, to diagnose H.265-only cars.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Sends video without waiting for the car's acknowledgments, on H.264 or H.265, for cars that show video but never acknowledge it.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Session expired",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Session or parked state changed",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
       ]
     },
     {
@@ -33990,6 +36803,18 @@
       ]
     },
     {
+      "source": "Set Auto",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js"
+      ]
+    },
+    {
+      "source": "Set Both",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js"
+      ]
+    },
+    {
       "source": "Set Close lane-change gap to Off? Changes refresh during this drive.",
       "refs": [
         "openpilot/starpilot/ui/lane_change_feature.py"
@@ -34002,6 +36827,24 @@
       ]
     },
     {
+      "source": "Set Off",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js"
+      ]
+    },
+    {
+      "source": "Set On",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js"
+      ]
+    },
+    {
+      "source": "Set Recommended",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js"
+      ]
+    },
+    {
       "source": "Set Speed To needs Comma can set speed on Tesla dashboard turned on in Vehicle Settings",
       "refs": [
         "openpilot/starpilot/ui/tesla_controls_feature.py"
@@ -34011,6 +36854,18 @@
       "source": "Set Speed To needs Comma can set speed on Tesla dashboard turned on in Vehicle Settings.",
       "refs": [
         "openpilot/starpilot/ui/tesla_controls_feature.py"
+      ]
+    },
+    {
+      "source": "Set Standard",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js"
+      ]
+    },
+    {
+      "source": "Set Stock",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js"
       ]
     },
     {
@@ -34029,6 +36884,12 @@
       "source": "Set automatic turn initiation to On? Changes apply after the current signal and maneuver end.",
       "refs": [
         "openpilot/starpilot/ui/lane_change_feature.py"
+      ]
+    },
+    {
+      "source": "Set by Mapbox; counted for this comma",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js"
       ]
     },
     {
@@ -34140,6 +37001,12 @@
       ]
     },
     {
+      "source": "Set up your car",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
       "source": "Set {label} to Off?",
       "refs": [
         "openpilot/starpilot/ui/conditional_feature.py"
@@ -34156,6 +37023,132 @@
       "refs": [
         "openpilot/starpilot/galaxy/settings.py",
         "openpilot/starpilot/ui/conditional_feature.py"
+      ]
+    },
+    {
+      "source": "Sets how far above set speed downhill coasting can go.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Sets how quickly the shared stopping ramp adds braking.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Sets the braking target for the shared stopping ramp.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Sets the extra planned steering effort in left curves, before tracking-error corrections. Higher adds more effort; lower adds less. Negative values reduce the baseline effort. This is the FF gain used by the entry-boost and unwind settings.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Sets the extra planned steering effort in right curves, before tracking-error corrections. Higher adds more effort; lower adds less. Negative values reduce the baseline effort. This is the FF gain used by the entry-boost and unwind settings.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Sets the low-speed threshold for the planner's ordinary stop detection.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Sets the lower end of the curve-entry softening speed range. Higher starts the effect at faster speeds; lower extends it to slower speeds. This changes where Turn-in trim applies, not cruise speed.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Sets the lower end of the curve-exit smoothing speed range. Higher starts the effect at faster speeds; lower extends it to slower speeds. This changes where steering smoothing applies, not cruise speed.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Sets the speed below which the Start Acceleration cap applies.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Sets the upper end of the curve-entry softening speed range. Higher extends the effect to faster speeds; lower ends it at slower speeds. This changes where Turn-in trim applies, not cruise speed.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Sets the upper end of the curve-exit smoothing speed range. Higher extends the effect to faster speeds; lower ends it at slower speeds. This changes where steering smoothing applies, not cruise speed.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Setup progress",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "Setup your google key",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Setup your mapbox key",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Shapes small steering corrections at crawling speeds. Higher makes compensation build more gradually; lower makes it respond sooner. Auto Learn can refine an accepted finding.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Shapes small steering corrections at higher speeds. Higher makes compensation build more gradually; lower makes it respond sooner. Auto Learn can refine an accepted finding.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Shapes small steering corrections at highway speeds. Higher makes compensation build more gradually; lower makes it respond sooner. Auto Learn can refine an accepted finding.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Shapes small steering corrections at low speeds. Higher makes compensation build more gradually; lower makes it respond sooner. Auto Learn can refine an accepted finding.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Shapes small steering corrections at medium speeds. Higher makes compensation build more gradually; lower makes it respond sooner. Auto Learn can refine an accepted finding.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Share from Android",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Share from iPhone",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
       ]
     },
     {
@@ -34219,9 +37212,45 @@
       ]
     },
     {
+      "source": "Shows a movable amber telltale while the Ford rear fog light is on, using read-only vehicle status.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Shows experimental fixes for specific cars and dongles, each with its own switch. Off is the standard connection.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Shows experimental fixes for specific cars and dongles, each with its own switch. Turn off to use the standard connection for every car. Applies from the next StarPort connection.",
+      "refs": [
+        "openpilot/starpilot/galaxy/device_settings.py"
+      ]
+    },
+    {
       "source": "Shows fresh Ford rear-fog status only. Move or hide the widget per display in Galaxy.",
       "refs": [
         "openpilot/starpilot/ui/ford_rear_fog_feature.py"
+      ]
+    },
+    {
+      "source": "Shows the next maneuver on the comma screen without changing the StarPort layout.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Sign in and create a project in",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Sign up free, or sign in if you already have an account, at",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
       ]
     },
     {
@@ -34243,15 +37272,75 @@
       ]
     },
     {
+      "source": "Single model",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Single-model only",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
       "source": "Skip smoothing · {label}",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/spotify.js"
       ]
     },
     {
+      "source": "Small model: runs on the comma itself",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Small/Big selections are saved as fallback choices. Turn off Laboratory to use them normally at the next start.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
       "source": "Soft Warning",
       "refs": [
         "openpilot/starpilot/audio/alert_volume.py"
+      ]
+    },
+    {
+      "source": "Softens friction compensation while straightening out of a left curve, mainly at higher speeds. Higher builds compensation more gradually; lower responds more sharply. Changes the response ramp, not maximum friction compensation. Torque controllers only; no PID friction effect.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Softens friction compensation while straightening out of a right curve, mainly at higher speeds. Higher builds compensation more gradually; lower responds more sharply. Changes the response ramp, not maximum friction compensation. Torque controllers only; no PID friction effect.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Softens planned steering near straight ahead. Higher reduces small steering corrections more; lower keeps a firmer response. This can calm weaving, but too much can make centering less precise.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Softens planned steering while entering a left curve within the Turn-in trim speed range. Higher softens the entry more; lower keeps more steering effort. Too much can make turn-in feel weak.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Softens planned steering while entering a right curve within the Turn-in trim speed range. Higher softens the entry more; lower keeps more steering effort. Too much can make turn-in feel weak.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Soloist upload ended early",
+      "refs": [
+        "openpilot/starpilot/galaxy/spotify_setup.py"
       ]
     },
     {
@@ -34273,6 +37362,48 @@
       ]
     },
     {
+      "source": "Spotify did not respond",
+      "refs": [
+        "openpilot/starpilot/galaxy/spotify_setup.py"
+      ]
+    },
+    {
+      "source": "Spotify is still stopping; try again in a moment",
+      "refs": [
+        "openpilot/starpilot/galaxy/spotify_setup.py"
+      ]
+    },
+    {
+      "source": "Spotify isn’t responding",
+      "refs": [
+        "openpilot/starpilot/galaxy/spotify_setup.py"
+      ]
+    },
+    {
+      "source": "Spotify isn’t running",
+      "refs": [
+        "openpilot/starpilot/galaxy/spotify_setup.py"
+      ]
+    },
+    {
+      "source": "Spotify streams on the comma. Your phone controls playback in Spotify; the comma sends the music to the audio output you choose below.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "Stable",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Stable — StarPilot (legacy name)",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
       "source": "Standard Personality",
       "refs": [
         "openpilot/starpilot/ui/feature_settings_owner.py"
@@ -34291,6 +37422,36 @@
       ]
     },
     {
+      "source": "StarPilot’s FLM tuning will attempt to automatically correct torque profiles as you drive. On allows automatic learning; Off disables it. Manual FLM overrides lock only the settings you change.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "StarPort controls are unavailable in this build",
+      "refs": [
+        "openpilot/starpilot/galaxy/starport_setup.py"
+      ]
+    },
+    {
+      "source": "StarPort package exceeds declared size",
+      "refs": [
+        "openpilot/starpilot/galaxy/starport_setup.py"
+      ]
+    },
+    {
+      "source": "StarPort package upload ended early",
+      "refs": [
+        "openpilot/starpilot/galaxy/starport_setup.py"
+      ]
+    },
+    {
+      "source": "StarPort requires Bluetooth. Enable Bluetooth and turn on StarPort, or cancel.",
+      "refs": [
+        "openpilot/starpilot/galaxy/starport_setup.py"
+      ]
+    },
+    {
       "source": "Start Acceleration",
       "refs": [
         "openpilot/starpilot/longitudinal/developer_tuning.py"
@@ -34303,9 +37464,45 @@
       ]
     },
     {
+      "source": "Start a trip from Galaxy or share a place straight from your phone.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Start navigation to {name}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Start over with the standard handshake",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "Start wireless projection after the car is selected, or turn on Wired USB Connection and plug the car data USB port into the comma.",
+      "refs": [
+        "openpilot/starpilot/galaxy/starport_setup.py"
+      ]
+    },
+    {
+      "source": "Starts software cruise SET at the SLC limit plus offset. A limit accepted this session remains available during data gaps. Previous-drive history does not initialize SET. RES restores the previous SET. Redneck Cruise lowers the new SET only when a current limit is available.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
       "source": "State: {label}",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/diagnostic-tools.js"
+      ]
+    },
+    {
+      "source": "Stay on Wi-Fi",
+      "refs": [
+        "openpilot/starpilot/galaxy/device_settings.py"
       ]
     },
     {
@@ -34324,6 +37521,12 @@
       "source": "Steering: {label}",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/diagnostic-tools.js"
+      ]
+    },
+    {
+      "source": "Step: {}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js"
       ]
     },
     {
@@ -34363,15 +37566,111 @@
       ]
     },
     {
+      "source": "Street map with traffic colors",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js"
+      ]
+    },
+    {
+      "source": "Strengthens the FF-gain adjustment while entering a left curve, mainly at lower speeds. Higher strengthens that adjustment; lower weakens it. A positive FF gain adds effort; a negative gain reduces it. No effect with FF gain at zero.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Strengthens the FF-gain adjustment while entering a right curve, mainly at lower speeds. Higher strengthens that adjustment; lower weakens it. A positive FF gain adds effort; a negative gain reduces it. No effect with FF gain at zero.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Suggestions from Google",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Suggestions from Mapbox, Google unavailable",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Switch & restart",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Switch software branch",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Switch the device Offroad and confirm the vehicle is parked before updating",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Switch to Stable",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Switch to Stable — StarPilot (legacy name)",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Switch to Testing",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Switch to Testing — Dom (legacy name)",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
       "source": "Switch to the release-chestnut branch to use chestnut-class models.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
       ]
     },
     {
+      "source": "Switch to {}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Switching phones:",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
       "source": "System cooling down before starting. Current internal component temperature: {}",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "TEMP Gauge Units",
+      "refs": [
+        "openpilot/starpilot/galaxy/localization_settings.py"
+      ]
+    },
+    {
+      "source": "Tablet app",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
       ]
     },
     {
@@ -34390,6 +37689,12 @@
       "source": "Tap to review",
       "refs": [
         "openpilot/starpilot/ui/speed_limit_widget.py"
+      ]
+    },
+    {
+      "source": "Terms",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-map.js"
       ]
     },
     {
@@ -34424,9 +37729,117 @@
       ]
     },
     {
+      "source": "Test key",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Test {label} on your comma",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js"
+      ]
+    },
+    {
+      "source": "Testing",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Testing — Dom (legacy name)",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "That isn’t the Soloist download. Choose soloist_release_arm64.tar.gz.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "That’s the download for a different computer. Choose ARMv8/AArch64 Linux (soloist_release_arm64.tar.gz).",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "The Default public token is the one you need. It starts with pk. Find it under",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "The adapter has hung up {} times before answering. If this keeps happening, unplug the adapter for 10 seconds.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "The car has hung up {} times before answering. If this keeps happening, turn the car off and on again.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "The comma acts as the Android Auto phone; the car is the receiver.",
+      "refs": [
+        "openpilot/starpilot/galaxy/starport_setup.py"
+      ]
+    },
+    {
+      "source": "The comma stops at 99% and uses Mapbox until it resets",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js"
+      ]
+    },
+    {
+      "source": "The comma stops at 99% of Google's free allowance: 100,000 map tiles a month (15,000 a day), 10,000 routes, 5,000 traffic routes, 5,000 place searches (shared places included) and 10,000 typing suggestions. Every route and reroute uses live traffic, and one more request every 7½ minutes corrects the arrival time.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "The download stopped.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "The first connection can take a few minutes, and sometimes more than one drive, while we find what your car accepts. Keep the car on and its screen awake. Later connections are much faster because we remember what worked.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "The map package is unavailable.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/map-operations.js"
+      ]
+    },
+    {
+      "source": "The most seamless way to connect to your StarPilot via Bluetooth, Wi-Fi, or over the network.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/app-reminder.js"
+      ]
+    },
+    {
+      "source": "The pair takes effect the next time the driving model starts.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
       "source": "The pairing window ended without choosing an adapter. Try again when your adapter is in pairing mode.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "The saved selection changed.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/map-operations.js"
       ]
     },
     {
@@ -34436,9 +37849,33 @@
       ]
     },
     {
+      "source": "This Android Auto version expired on {}. Download a newer stable release.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "This Android Auto version expired. Download a newer stable release.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "This can transfer up to {} and use up to {} of new disk space. Existing regions are kept; overlapping areas are refreshed. The combined map is selected for the next map service start.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/map-operations.js"
+      ]
+    },
+    {
       "source": "This requests openpilot longitudinal control after a verified vehicle takeover at startup.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "Timezone",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
       ]
     },
     {
@@ -34484,9 +37921,46 @@
       ]
     },
     {
+      "source": "Traffic in route times",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js"
+      ]
+    },
+    {
       "source": "Traffic mode",
       "refs": [
         "openpilot/starpilot/controllers/wheel_actions.py"
+      ]
+    },
+    {
+      "source": "Traffic routes this month",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Try experimental fixes",
+      "refs": [
+        "openpilot/starpilot/galaxy/device_settings.py"
+      ]
+    },
+    {
+      "source": "Trying again",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "Tunes the straight-road response at highway speed in angle mode: lower it if the car oversteers, raise it if it understeers.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Tuning & Analysis",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/data/catalog.json",
+        "openpilot/starpilot/galaxy/web/js/driving.js"
       ]
     },
     {
@@ -34502,6 +37976,18 @@
       ]
     },
     {
+      "source": "Turn off StarPort to stop connecting to your car. Your setup and paired car stay saved.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Turn off to stop playing and free up the comma. Your setup stays saved.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
       "source": "Turn on Custom Tuning Profile first",
       "refs": [
         "openpilot/starpilot/ui/ford_bluepilot_feature.py"
@@ -34514,15 +38000,93 @@
       ]
     },
     {
+      "source": "Turn on StarPort to manage connection options.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/settings.js"
+      ]
+    },
+    {
+      "source": "Turn on billing",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Turn on billing.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Turn slowdown distance",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
       "source": "Turn this on to use your car's factory adaptive cruise instead of StarPilot's",
       "refs": [
         "openpilot/starpilot/ui/feature_settings_owner.py"
       ]
     },
     {
+      "source": "Turn-by-turn guidance on your comma. It works with every driving model and never steers for you.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
       "source": "Turn-by-turn navigation with a route map. Set a destination from comma connect.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "Turn-by-turn with lane arrows.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Two Big models cannot run together at the required speed. Choose a Small model for one role.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Type ERASE STARPILOT DATA to run Save Me",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Type an address or place on the Destination page.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Typing suggestions this month",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Typing suggestions, address lookups and offline downloads pause until the 1st",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js"
+      ]
+    },
+    {
+      "source": "Typing suggestions, address lookups and offline road maps stop just short of their free monthly allowances and resume on the 1st. Routes, full searches and map views are counted but not limited. Saved places and recents skip search entirely.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "USB cable",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
       ]
     },
     {
@@ -34535,6 +38099,12 @@
       "source": "Unable to download updates",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Unacknowledged video",
+      "refs": [
+        "openpilot/starpilot/galaxy/device_settings.py"
       ]
     },
     {
@@ -34552,6 +38122,7 @@
     {
       "source": "Unavailable: {label}",
       "refs": [
+        "openpilot/starpilot/galaxy/web/js/map-operations.js",
         "openpilot/starpilot/ui/runtime_app.py"
       ]
     },
@@ -34568,9 +38139,129 @@
       ]
     },
     {
+      "source": "Unofficial dongle",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Unplug it for 10 seconds, plug it back in and keep the car on. We carry on by ourselves when it comes back, or tap Continue.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
       "source": "Update available",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Update checks require the device updater service, which is unavailable when Galaxy runs alone on a development computer.",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Update is no longer ready",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Update preference changed; refresh before saving",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Update preference could not be verified",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Update process restarted before completion; check the installed version and retry.",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Update was interrupted when the updater stopped. Retry while parked.",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Updater control is unavailable",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Updater did not report completion",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Updater is busy",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Updater is not running",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Updater manager status is unavailable",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Updater process changed",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Updater process identity is unavailable",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Updater reported a failure",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Updater state changed",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Updater target changed",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Updates are disabled",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Updating weather…",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/weather.js"
       ]
     },
     {
@@ -34628,9 +38319,63 @@
       ]
     },
     {
+      "source": "Use the full http:// address and bookmark it. Allow local-network access if prompted. Your Firestar Link uses Internet instead.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/local-access.js"
+      ]
+    },
+    {
+      "source": "Use the public token only. A secret token (starts with sk.) isn't needed, and URL-restricted tokens may be rejected.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Use the public token that starts with pk. A secret token isn't needed, and URL-restricted tokens may be rejected. Galaxy keeps the token on your comma and never shows it again.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
       "source": "Use your SET speed",
       "refs": [
         "openpilot/starpilot/speed_limits/runtime_settings.py"
+      ]
+    },
+    {
+      "source": "Uses a stronger fan curve on supported devices to reduce temperature at the cost of fan noise.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Uses the car's 1080x1920 H.265 screen mode instead of 720x1280, to diagnose H.265-only cars. Needs Allow H.265 video on.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Uses the comma's or car's GPS. The phone fills in only when neither has a fix.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Uses the phone whenever it has a recent fix, otherwise the comma or car.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Uses the two predicted-curvature blend settings below instead of the built-in profile.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
+      ]
+    },
+    {
+      "source": "Uses the vehicle’s minimum engagement speed as the floor when pressing SET with StarPilot cruise. SET uses your current speed when you are above that floor.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
       ]
     },
     {
@@ -34640,15 +38385,99 @@
       ]
     },
     {
+      "source": "Vehicle is not safely parked",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
       "source": "Vehicle: {label}",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/diagnostic-tools.js"
       ]
     },
     {
+      "source": "Verified downloads: {} of {} published for pairing.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Verifying download",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "Version branch",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "Versions",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
       "source": "WARNING: alpha longitudinal control may disable Automatic Emergency Braking (AEB)",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "Wait for on-device certificate/key verification; replace it before expiry.",
+      "refs": [
+        "openpilot/starpilot/galaxy/starport_setup.py"
+      ]
+    },
+    {
+      "source": "Wait for the Soloist install to finish",
+      "refs": [
+        "openpilot/starpilot/galaxy/spotify_setup.py"
+      ]
+    },
+    {
+      "source": "Wait for the USB cable",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "Wait for the software operation to finish before restarting",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Wait for the software operation to finish before running Save Me",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Wait for your app",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "Wait longer for the adapter",
+      "refs": [
+        "openpilot/starpilot/galaxy/device_settings.py"
+      ]
+    },
+    {
+      "source": "Waiting for a usable fix",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Waiting for model status",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
       ]
     },
     {
@@ -34664,6 +38493,18 @@
       ]
     },
     {
+      "source": "Waiting for the device updater service…",
+      "refs": [
+        "openpilot/starpilot/galaxy/software_operations.py"
+      ]
+    },
+    {
+      "source": "Waiting in the queue",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
       "source": "Warn when you drift across a detected lane line.\nOnly above 31 mph (50 km/h), with no turn signal.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/toggles.py"
@@ -34676,9 +38517,111 @@
       ]
     },
     {
+      "source": "Ways to send a destination",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Ways to set a destination",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "We tried every option we have this drive. We keep what works best and will try again the next time the car starts.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "Weather by Open-Meteo",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/weather.js"
+      ]
+    },
+    {
+      "source": "Weekday (0–7)",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "What this changes",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js"
+      ]
+    },
+    {
+      "source": "What we are trying",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "What you get",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js"
+      ]
+    },
+    {
       "source": "What's a good USB-C adapter?",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/firehose.py"
+      ]
+    },
+    {
+      "source": "When the allowance runs out",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js"
+      ]
+    },
+    {
+      "source": "Which adapter?",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "Which app?",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "While driving, takes Spotify over from your phone or another speaker whenever it is playing somewhere else.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "Wide camera",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/route-workspace.js"
+      ]
+    },
+    {
+      "source": "Wired hands-free",
+      "refs": [
+        "openpilot/starpilot/galaxy/device_settings.py"
+      ]
+    },
+    {
+      "source": "Works offline once roads are saved.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Wrong app selected ({}). Choose Android Auto by Google LLC.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Wrong app selected. Choose Android Auto by Google LLC.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
       ]
     },
     {
@@ -34688,15 +38631,99 @@
       ]
     },
     {
+      "source": "Yes, when Google gives directions; Mapbox is the fallback",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js"
+      ]
+    },
+    {
+      "source": "Yes, with a correction every 7½ minutes",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js"
+      ]
+    },
+    {
+      "source": "Yes. Under “Send audio to”, choose “Car speakers via StarPort (Android Auto)”, and music plays through the car as Android Auto audio alongside the StarPilot screen. It needs Android Auto to be connected, so if it isn’t, music has nowhere to play.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
       "source": "You must accept the Terms & Conditions to use openpilot.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/onboarding.py"
       ]
     },
     {
+      "source": "Your Bluetooth pairing is kept.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "Your browser could not save this preference. Check its storage settings and try again.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/app-reminder.js"
+      ]
+    },
+    {
+      "source": "Your car has wireless Android Auto.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
       "source": "Your car is either unsupported or its ECUs are not recognized. Please submit a pull request to add the firmware versions to the proper vehicle. Need help? Join discord.comma.ai.",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
+      ]
+    },
+    {
+      "source": "Your car needs to be connected in Bluetooth first",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "Your car only talks to devices that present Google’s Android Auto certificate. Follow the support step above, then come back here.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "Your comma turns on navigation and starts the route. Places without coordinates are looked up on your comma with your chosen route provider. A name alone opens the StarPilot app as a search.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "Your dongle keeps hanging up",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "Your paired car and settings stay as they are.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "Your settings and Spotify sign-in stay as they are.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "Your {label} options",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation-setup.js"
+      ]
+    },
+    {
+      "source": "Zero keeps this stage’s original baseline. The % is an adjustment to this stage, not a percentage of overall steering strength.",
+      "refs": [
+        "openpilot/starpilot/galaxy/setting_descriptions.py"
       ]
     },
     {
@@ -34784,10 +38811,34 @@
       ]
     },
     {
+      "source": "connected.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
       "source": "connecting...",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/network/__init__.py",
         "openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py"
+      ]
+    },
+    {
+      "source": "covers 1 group in an approximate rectangle:",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/map-operations.js"
+      ]
+    },
+    {
+      "source": "covers {} groups in an approximate rectangle:",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/map-operations.js"
+      ]
+    },
+    {
+      "source": "date line bounds",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/map-operations.js"
       ]
     },
     {
@@ -34842,6 +38893,18 @@
       "source": "driver monitoring\ncheck",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/onboarding.py"
+      ]
+    },
+    {
+      "source": "eGPU variant",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "eGPU variant downloaded",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
       ]
     },
     {
@@ -34960,6 +39023,12 @@
       ]
     },
     {
+      "source": "iPhone:",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
       "source": "initial max speed",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/initial_cruise_speed.py"
@@ -34978,6 +39047,18 @@
       ]
     },
     {
+      "source": "invalid bounds",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/map-operations.js"
+      ]
+    },
+    {
+      "source": "is ready for install. Click Update when ready.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
       "source": "joystick debug\nmode",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
@@ -34987,6 +39068,12 @@
       "source": "lane departure warnings",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/toggles.py"
+      ]
+    },
+    {
+      "source": "last: {label}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
       ]
     },
     {
@@ -35005,6 +39092,12 @@
       "source": "make sure comma\nfour can see your face",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/onboarding.py"
+      ]
+    },
+    {
+      "source": "make sure the app is Android Auto by Google LLC, and that the variant name ends in “‑release” (not beta or alpha).",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
       ]
     },
     {
@@ -35086,6 +39179,24 @@
       ]
     },
     {
+      "source": "of distance",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
+      "source": "open a place in Google Maps or Apple Maps, tap Share, then choose StarPilot. The first time, scroll the app row to More and turn on StarPilot.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "open a place in Google Maps, tap Share, then choose StarPilot.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
       "source": "openpilot detected a change in the device's mounting position",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py"
@@ -35125,6 +39236,12 @@
       "source": "pair to connect",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/device/device_layout.py"
+      ]
+    },
+    {
+      "source": "paired.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
       ]
     },
     {
@@ -35224,6 +39341,12 @@
       ]
     },
     {
+      "source": "saved changes pending next start",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
       "source": "scan QR code",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/network/esim_ui.py"
@@ -35270,6 +39393,12 @@
       "source": "searching for networks",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py"
+      ]
+    },
+    {
+      "source": "selected model: {model}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
       ]
     },
     {
@@ -35348,9 +39477,27 @@
       ]
     },
     {
+      "source": "speed & lead pacing",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
       "source": "starting...",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/network/wifi_ui.py"
+      ]
+    },
+    {
+      "source": "steering & path",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "stop sharing in the old app before turning it on in the new one.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
       ]
     },
     {
@@ -35390,6 +39537,18 @@
       ]
     },
     {
+      "source": "too large",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/map-operations.js"
+      ]
+    },
+    {
+      "source": "tries a different model each drive",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
       "source": "try prime for\n30 days",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/device/prime.py"
@@ -35399,6 +39558,12 @@
       "source": "ui debug mode",
       "refs": [
         "openpilot/selfdrive/ui/mici/layouts/settings/developer.py"
+      ]
+    },
+    {
+      "source": "under 1 min",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
       ]
     },
     {
@@ -35469,6 +39634,12 @@
       ]
     },
     {
+      "source": "you downloaded the helper app. Go back to the Android Auto release page and use “Download APK Bundle” there.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
       "source": "{label} / OVERRIDE",
       "refs": [
         "openpilot/starpilot/ui/speed_limit_widget.py"
@@ -35481,9 +39652,45 @@
       ]
     },
     {
+      "source": "{label} available storage.",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/map-operations.js"
+      ]
+    },
+    {
+      "source": "{label} controls speed",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "{label} controls steering",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "{label} free",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/home.js"
+      ]
+    },
+    {
       "source": "{label} — Reset to Default",
       "refs": [
         "openpilot/starpilot/ui/torque_feature.py"
+      ]
+    },
+    {
+      "source": "{} (Not Connected)",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/spotify.js"
+      ]
+    },
+    {
+      "source": "{} groups",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/map-operations.js"
       ]
     },
     {
@@ -35499,6 +39706,12 @@
       ]
     },
     {
+      "source": "{} min",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
       "source": "{} mph and above",
       "refs": [
         "openpilot/starpilot/ui/slc_offset_feature.py"
@@ -35511,9 +39724,87 @@
       ]
     },
     {
+      "source": "{} of {} APIs working",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "{} of {} free",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/navigation.js"
+      ]
+    },
+    {
+      "source": "{} radius",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/offline-road-maps.js"
+      ]
+    },
+    {
+      "source": "{} saved segment",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/route-workspace.js"
+      ]
+    },
+    {
+      "source": "{} to {}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js"
+      ]
+    },
+    {
+      "source": "{} tries",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport-guided.js"
+      ]
+    },
+    {
+      "source": "{} used for road maps",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/offline-road-maps.js"
+      ]
+    },
+    {
+      "source": "~{} hr {} min",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
+      "source": "~{} min",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/models.js"
+      ]
+    },
+    {
       "source": "· Downloaded {label}",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/software-status.js"
+      ]
+    },
+    {
+      "source": "· You have {}",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "“Not Android Auto” or an unverified file:",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "“This is the APKMirror Installer app”:",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/starport.js"
+      ]
+    },
+    {
+      "source": "≈ {} tiles · {} to download · {} on the comma",
+      "refs": [
+        "openpilot/starpilot/galaxy/web/js/offline-road-maps.js"
       ]
     }
   ]

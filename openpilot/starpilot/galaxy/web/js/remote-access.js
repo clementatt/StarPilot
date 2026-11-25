@@ -1,6 +1,7 @@
 import { GxState } from './state.js'
 import { GxNotice } from './notice.js'
 import { requestJson } from './startup.js'
+import { localize } from './localization.js'
 import { BluetoothNotice, bluetoothConnection } from './bluetooth-notice.js'
 
 export const RemoteAccess = {
@@ -76,7 +77,7 @@ export const RemoteAccess = {
     },
     async unpair() {
       if (this.mode !== 'local' || this.busy) return
-      if (!window.confirm("Unpair from Galaxy? Remote access will stop until you pair again.")) return
+      if (!window.confirm(localize("Unpair from Galaxy? Remote access will stop until you pair again."))) return
       this.busy = true
       this.error = ""
       try {

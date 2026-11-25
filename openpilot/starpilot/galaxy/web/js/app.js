@@ -34,7 +34,7 @@ const CamerasPage = page(() => import("./cameras.js").then((module) => module.Ca
 const SentryEventsPage = page(() => import("./sentry.js").then((module) => module.SentryEventsPage))
 const VasmPage = page(() => import("./vasm.js").then((module) => module.VasmPage))
 const PipPage = page(() => import("./pip.js").then((module) => module.PipPage))
-import { DrivingPage, drivingPage } from "./driving.js"
+import { DrivingPage, drivingPage, drivingTitle } from "./driving.js"
 const LongitudinalCurvesPage = page(() => import("./longitudinal-curves.js").then((module) => module.LongitudinalCurvesPage))
 import { DevicePreferencesPage, devicePage } from "./device-preferences.js"
 const BluetoothPage = page(() => import("./bluetooth.js").then((module) => module.BluetoothPage))
@@ -99,6 +99,7 @@ createApp({
         Number(a.path === "/galaxy") - Number(b.path === "/galaxy")) },
     currentTool() { return state.tools.find((tool) => this.isActive(tool.path)) },
     drivingSettingsPage() { return drivingPage(route.path) },
+    drivingSettingsTitle() { return drivingTitle(this.drivingSettingsPage) },
     deviceSettingsPage() { return devicePage(route.path) },
     pageName() {
       if (this.currentTool) return this.currentTool.name
@@ -268,7 +269,7 @@ createApp({
         <SettingsPage @nested="ensureBackEntry" ref="activeSettings" v-else-if="deviceSettingsPage" :key="deviceSettingsPage" :mode="state.monitorMode" :unauthorized="sessionExpired" :initial-page="deviceSettingsPage" :title="deviceSettingsPage === 'sounds' ? 'Sounds & Alerts' : 'Display'" :return-to="returnToDevice" />
         <DrivingPage v-else-if="route.path === '/driving'" :mode="state.monitorMode" :go="go" />
         <LongitudinalCurvesPage v-else-if="route.path === '/driving/longitudinal-curves'" :mode="state.monitorMode" :unauthorized="sessionExpired" :go="go" />
-        <SettingsPage @nested="ensureBackEntry" ref="activeSettings" v-else-if="drivingSettingsPage" :key="drivingSettingsPage" :mode="state.monitorMode" :unauthorized="sessionExpired" :initial-page="drivingSettingsPage" :title="'Driving settings · ' + drivingSettingsPage.replaceAll('_', ' ')" :return-to="returnToDriving" />
+        <SettingsPage @nested="ensureBackEntry" ref="activeSettings" v-else-if="drivingSettingsPage" :key="drivingSettingsPage" :mode="state.monitorMode" :unauthorized="sessionExpired" :initial-page="drivingSettingsPage" :title="drivingSettingsTitle" :return-to="returnToDriving" />
         <SettingsPage @nested="ensureBackEntry" ref="activeSettings" v-else-if="route.path === '/settings'" :key="state.searchPage || 'hub'" :mode="state.monitorMode" :unauthorized="sessionExpired"
           :initial-page="state.searchPage || 'hub'" :return-to="state.searchPage ? returnFromSearch : null" />
         <FlmPage v-else-if="['/tuning', '/tuning/flm', '/tuning/plots'].includes(route.path)" :initial-view="route.path === '/tuning/plots' ? 'plots' : 'overview'" :mode="state.monitorMode" :unauthorized="sessionExpired" :go="go" />

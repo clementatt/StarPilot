@@ -1,4 +1,5 @@
 import { requestJson } from "./startup.js"
+import { localize } from "./localization.js"
 import { GxNotice } from "./notice.js"
 
 export const ReverseProxySettings = {
@@ -22,8 +23,8 @@ export const ReverseProxySettings = {
     },
     async save() {
       if (this.busy || !this.status?.canEdit) return
-      if (!window.confirm(this.enabled ? "Allow this proxy and HTTPS origin? Proxy access requires your Galaxy password." :
-        "Disable reverse proxy access? Direct IP access will remain available.")) return
+      if (!window.confirm(localize(this.enabled ? "Allow this proxy and HTTPS origin? Proxy access requires your Galaxy password." :
+        "Disable reverse proxy access? Direct IP access will remain available."))) return
       this.busy = true
       this.error = ""
       this.saved = false
