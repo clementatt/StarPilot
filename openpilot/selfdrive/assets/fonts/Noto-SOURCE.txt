@@ -18,4 +18,4 @@ Subset SHA-256: 846e22c2bf1afffc11718ee95e4acc258538cc528b20aab3aa122476e64533b8
 NotoSansCJKsc-Regular.otf
 Source: https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Regular.otf
 Source SHA-256: 2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b
-Subset SHA-256: 9263e01fe32436446ac3c79a5269e3515c6b3585e49143ead967630bf49b7803
+Subset SHA-256: 807b3694c6617fa955327a9d743bb5a4ce843e997d4df06903eb44bd61775b07
