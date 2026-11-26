@@ -22633,7 +22633,7 @@ msgstr "已暂停"
 
 #: openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js
 msgid "switch"
-msgstr "开关"
+msgstr "切换"
 
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "switchback"
