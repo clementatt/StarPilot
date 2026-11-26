@@ -37289,7 +37289,7 @@
       ]
     },
     {
-      "source": "Pair your phone in the companion app, or tap “Pair phone” on the Bluetooth page. Then choose it below and turn on phone audio. On your phone, select the comma as the media audio output. No Spotify install or API key is needed.",
+      "source": "Pair your phone in the companion app, or choose “Add a device → Pair phone” on the Bluetooth page. Then choose it below and turn on phone audio. On your phone, select the comma as the media audio output. No Spotify install or API key is needed.",
       "refs": [
         "openpilot/starpilot/galaxy/web/js/spotify.js"
       ]

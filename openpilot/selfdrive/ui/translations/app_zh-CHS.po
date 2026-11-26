@@ -13519,8 +13519,8 @@ msgid "Pair your device with comma connect to view recent drives and bookmarked 
 msgstr "将设备与 comma connect 配对，即可查看最近的行程和已加书签的路线。"
 
 #: openpilot/starpilot/galaxy/web/js/spotify.js
-msgid "Pair your phone in the companion app, or tap “Pair phone” on the Bluetooth page. Then choose it below and turn on phone audio. On your phone, select the comma as the media audio output. No Spotify install or API key is needed."
-msgstr "请在配套 App 中配对手机，或在蓝牙页面点按“配对手机”。然后在下方选择该手机并开启手机音频。在手机上将 comma 选为媒体音频输出。无需安装 Spotify，也无需 API 密钥。"
+msgid "Pair your phone in the companion app, or choose “Add a device → Pair phone” on the Bluetooth page. Then choose it below and turn on phone audio. On your phone, select the comma as the media audio output. No Spotify install or API key is needed."
+msgstr "请在配套 App 中配对手机，或在蓝牙页面选择“添加设备 → 配对手机”。然后在下方选择该手机并开启手机音频。在手机上将 comma 选为媒体音频输出。无需安装 Spotify，也无需 API 密钥。"
 
 #: openpilot/starpilot/galaxy/spotify_setup.py
 msgid "Pair your phone on the Bluetooth page first"

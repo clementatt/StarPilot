@@ -48,7 +48,7 @@ assert.match(StarPortPage.template, /\{\{ adapterSetup \? '2\. Adapter paired' :
 // Spotify: the release label and the reassurance are separate; help answers are one sentence each.
 assert.doesNotMatch(SpotifyPage.template, /release\.label \+ '\./)
 assert.match(SpotifyPage.template, /<p v-if="setup\.release\.installed" class="gx-note">Your settings and Spotify sign-in stay as they are\.<\/p>/)
-for (const sentence of ["or tap “Pair phone” on the Bluetooth page. Then choose it below", "Yes. Under “Send audio to”, choose “Car speakers via StarPort (Android Auto)”, and music",
+for (const sentence of ["or choose “Add a device → Pair phone” on the Bluetooth page. Then choose it below", "Yes. Under “Send audio to”, choose “Car speakers via StarPort (Android Auto)”, and music",
   "this step shows “Update”; download again the same way.", "on the Bluetooth page, or use StarPort. <a", "on the Bluetooth page first. <a"]) assert(SpotifyPage.template.includes(sentence), sentence)
 
 // Software: whole sentences per count and per dialog; dates and branch names.
