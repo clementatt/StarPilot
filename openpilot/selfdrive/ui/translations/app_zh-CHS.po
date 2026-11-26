@@ -52,9 +52,45 @@ msgstr "（当前 UI）"
 msgid "(not beta or alpha)."
 msgstr "（不要选 beta 或 alpha）。"
 
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "+{} more"
+msgstr "另有 {} 条"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "+{} more being learned"
+msgstr "另有 {} 个正在学习"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid ", pick a new or existing thread, then tap"
+msgstr "下，选择新帖子或已有帖子，然后点按"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid ", then return here."
+msgstr "，然后返回此处。"
+
 #: openpilot/selfdrive/ui/layouts/sidebar.py
 msgid "--"
 msgstr "--"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid ". It may already be open in a new tab."
+msgstr "。它可能已在新标签页中打开。"
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid ". Then choose it below and turn on phone audio. On your phone, select the comma as the media audio output. No Spotify install or API key is needed."
+msgstr "。然后在下方选择该手机并开启手机音频。在手机上将 comma 选为媒体音频输出。无需安装 Spotify，也无需 API 密钥。"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "0% hides the warning while the detector is muted."
+msgstr "设为 0% 时，测速仪静音期间将隐藏警告。"
+
+#: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
+msgid "0% is solid; 100% removes the background. Text and arrows stay visible."
+msgstr "0% 为不透明；100% 将移除背景。文字和箭头仍然可见。"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "1 pass"
+msgstr "经过 1 次"
 
 #: openpilot/selfdrive/ui/widgets/prime.py
 msgid "1 year of drive storage"
@@ -63,6 +99,10 @@ msgstr "1 年行驶数据存储"
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "1. Android Auto support"
 msgstr "1. Android Auto 支持"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "1. Turn on and wake your USB or Bluetooth controller right now so the comma detects it. 2. Enter the controller model below (hardware names are masked in the log)."
+msgstr "1. 现在就打开并唤醒您的 USB 或蓝牙控制器，让 comma 检测到它。2. 在下方输入控制器型号（日志中的硬件名称会被遮盖）。"
 
 #: openpilot/starpilot/ui/galaxy_access.py
 msgid "1. set a password"
@@ -133,6 +173,10 @@ msgstr "无法提供合并的日志压缩包，请在上方逐个下载日志文
 msgid "A compatible connected interceptor must be detected before StarPilot can control it."
 msgstr "必须先检测到兼容的已连接拦截器，StarPilot 才能控制它。"
 
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "A device restart, shutdown or reset is already pending"
+msgstr "设备已有待执行的重启、关机或重置"
+
 #: openpilot/starpilot/galaxy/web/js/models.js
 msgid "A different verified model is chosen each start."
 msgstr "每次启动时随机选择一个已验证的模型。"
@@ -141,13 +185,29 @@ msgstr "每次启动时随机选择一个已验证的模型。"
 msgid "A different verified model is chosen each start. {} models are used. {} excluded. Favorites only mark your preferred models."
 msgstr "每次启动时随机选择一个已验证的模型。{} 个模型将被使用。{} 个已排除。收藏仅用于标记您偏好的模型。"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "A fixed source becomes a lockout after you pass it on separate trips: three for X and K, five for Ka and Laser."
+msgstr "固定信号源在不同行程中被多次经过后会成为屏蔽点：X 和 K 为三次，Ka 和激光为五次。"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "A glow fading in from the edge. Deeper and brighter as the signal grows."
+msgstr "从边缘渐入的光晕。信号越强，光晕越深越亮。"
+
 #: openpilot/starpilot/galaxy/web/js/toyota-tools.js
 msgid "A key is saved for the next start."
 msgstr "已保存密钥，将在下次启动时生效。"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "A line just inside the openpilot border."
+msgstr "紧贴 openpilot 边框内侧的一条线。"
+
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 msgid "A route could not be found"
 msgstr "找不到路线"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "A sample scene. Choosing a scenario never changes your settings."
+msgstr "示例场景。选择场景不会更改您的设置。"
 
 #: openpilot/starpilot/galaxy/web/js/vasm.js
 msgid "A saved choice alone does not activate monitoring."
@@ -192,6 +252,10 @@ msgstr "加速"
 #: openpilot/selfdrive/ui/widgets/ssh_key.py
 msgid "ADD"
 msgstr "添加"
+
+#: openpilot/starpilot/ui/runtime_app.py
+msgid "ADJ SPOT CAMERA UNAVAILABLE"
+msgstr "侧方摄像头不可用"
 
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "AEB: Risk of Collision"
@@ -382,9 +446,33 @@ msgstr "自适应巡航已关闭"
 msgid "Add"
 msgstr "添加"
 
+#: openpilot/starpilot/galaxy/web/js/bluetooth.js
+msgid "Add a device"
+msgstr "添加设备"
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "Add a device → Pair phone"
+msgstr "添加设备 → 配对手机"
+
+#: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
+msgid "Add a left or right Adj Spot Camera widget to enable this option."
+msgstr "请添加左侧或右侧的侧方摄像头组件以启用此选项。"
+
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Add a left or right blind-spot camera widget to enable this option."
 msgstr "请添加左侧或右侧盲区摄像头组件以启用此选项。"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Add a short note about what happened above to send."
+msgstr "请先在上方简要说明发生了什么，再发送。"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Add a short note about what happened."
+msgstr "请简要说明发生了什么。"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Add frequency"
+msgstr "添加频率"
 
 #: openpilot/starpilot/galaxy/web/js/galaxy.js
 msgid "Add remote access to Galaxy"
@@ -441,6 +529,34 @@ msgstr "地址或地点名称"
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Adds or subtracts this offset from the accepted speed limit within the displayed speed range."
 msgstr "在显示的速度范围内，为已采用的限速加上或减去此偏移量。"
+
+#: openpilot/starpilot/ui/tesla_set_speed_feature.py
+msgid "Adds the right scroll wheel, right stalk and three-finger screen tap as controls, and lets the comma set the speed on the Tesla's dashboard. Model 3 and Model Y, HW3 or HW4. Checked when the car starts."
+msgstr "增加右滚轮、右拨杆和三指轻点屏幕作为控制按键，并允许 comma 设置 Tesla 仪表盘上的速度。适用于 Model 3 和 Model Y（HW3 或 HW4）。车辆启动时检测。"
+
+#: openpilot/starpilot/ui/onroad_customization.py
+msgid "Adj Spot Camera"
+msgstr "侧方摄像头"
+
+#: openpilot/starpilot/ui/pip_owner.py
+msgid "Adj Spot Camera & Preview"
+msgstr "侧方摄像头与预览"
+
+#: openpilot/starpilot/galaxy/web/js/pip.js
+msgid "Adj Spot Camera & Preview saved settings"
+msgstr "侧方摄像头与预览已保存的设置"
+
+#: openpilot/starpilot/ui/onroad_customization.py
+msgid "Adj Spot Camera Left"
+msgstr "侧方摄像头（左）"
+
+#: openpilot/starpilot/ui/onroad_customization.py
+msgid "Adj Spot Camera Right"
+msgstr "侧方摄像头（右）"
+
+#: openpilot/starpilot/galaxy/web/js/pip.js
+msgid "Adj Spot Camera crop editor"
+msgstr "侧方摄像头裁剪编辑器"
 
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Adjust Aggressive, Standard, Relaxed and Traffic profiles"
@@ -558,6 +674,10 @@ msgstr "高级选项"
 msgid "After signaling off, only when speed went below half the pause threshold. Applies within one second."
 msgstr "关闭转向灯后，仅当车速降到暂停阈值的一半以下才生效。一秒内生效。"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "After the same fixed source is passed on separate trips (three for X and K, five for Ka and Laser), lock it out at that place. A source that repeats at one spot but is missing on many drive-bys, like a patrol spot, is not learned. A signal stronger than ever seen there still alerts."
+msgstr "在不同行程中多次经过同一固定信号源后（X 和 K 为三次，Ka 和激光为五次），在该位置将其屏蔽。若信号源在某处反复出现、但在多次经过时都未出现（如巡逻点），则不会被学习。比该处见过的任何信号都强的信号仍会报警。"
+
 #: openpilot/selfdrive/ui/layouts/arabesque/tools/rebecca.py
 msgid "Again"
 msgstr "再来"
@@ -574,13 +694,37 @@ msgstr "同意"
 msgid "Alarm"
 msgstr "警报"
 
+#: openpilot/starpilot/uniden/service.py
+msgid "Alert changed; hold the current alert"
+msgstr "警报已变化；请长按当前警报"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Alert preferences"
+msgstr "警报偏好"
+
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Alerts"
 msgstr "警报"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Alerts Quiet Ride is muting while you are at or under the posted limit."
+msgstr "车速不超过道路限速时，被安静行驶静音的警报。"
+
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Alerts and borders"
 msgstr "警报与边框"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Alerts that match a saved lockout or an enabled frequency rule."
+msgstr "匹配已保存屏蔽点或已启用频率规则的警报。"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Alerts the detector silences from a saved or learned mute location."
+msgstr "测速仪因已保存或已学习的静音位置而静音的警报。"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Alerts the detector's own Q-Ride mode is silencing."
+msgstr "被测速仪自身 Q-Ride 模式静音的警报。"
 
 #: openpilot/starpilot/galaxy/web/js/record-history.js
 msgid "All"
@@ -672,6 +816,10 @@ msgstr "允许一次辅助变道，直到松开转向灯。"
 msgid "Allows queued full logs and videos to upload over metered networks. This uses mobile data."
 msgstr "允许排队的完整日志和视频在按流量计费的网络上上传。会使用移动数据。"
 
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Almost done: your report is not posted yet"
+msgstr "即将完成：您的报告尚未发布"
+
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Alpha Longitudinal"
 msgstr "Alpha 纵向控制"
@@ -679,6 +827,10 @@ msgstr "Alpha 纵向控制"
 #: openpilot/starpilot/ui/vehicle_bool.py
 msgid "Alpha Longitudinal after the next startup? StarPilot will request speed control instead of factory ACC."
 msgstr "下次启动后开启 Alpha 纵向控制？StarPilot 将请求速度控制，取代原厂 ACC。"
+
+#: openpilot/starpilot/uniden/service.py
+msgid "Already locked out here"
+msgstr "此处已屏蔽"
 
 #: openpilot/starpilot/galaxy/web/js/bluetooth.js
 msgid "Also remove the comma from the device's Bluetooth list, or it may keep trying to reconnect or fail to pair again later."
@@ -703,6 +855,18 @@ msgstr "全时"
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Always On Lateral"
 msgstr "全时横向控制"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Always On Lateral on/off"
+msgstr "全时横向控制开/关"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Always On Lateral on/off applies after the next startup"
+msgstr "全时横向控制开/关在下次启动后生效"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Always On Lateral on/off stays on this tap until the next startup"
+msgstr "下次启动前，此轻点仍为全时横向控制开/关"
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Always above other widgets"
@@ -744,9 +908,17 @@ msgstr "Android Auto APK、XAPK、APKM 或 ZIP"
 msgid "Android Auto package installation"
 msgstr "Android Auto 安装包安装"
 
+#: openpilot/starpilot/galaxy/web/js/bluetooth.js
+msgid "Android Auto pairing is found on the"
+msgstr "Android Auto 配对请前往"
+
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Android Auto requires Bluetooth for setup and connecting to your car. Bluetooth is currently off. Enable Bluetooth and turn on Android Auto?"
 msgstr "Android Auto 需要蓝牙来完成设置并连接您的车辆。蓝牙当前已关闭。是否启用蓝牙并开启 Android Auto？"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Android Auto, wireless adapter, or black screen"
+msgstr "Android Auto、无线适配器或黑屏"
 
 #: openpilot/starpilot/galaxy/web/js/galaxy.js
 msgid "Android app update available"
@@ -791,6 +963,10 @@ msgstr "另一个回放正在运行。请先在其播放器中关闭它，再开
 #: openpilot/starpilot/galaxy/web/js/route-workspace.js
 msgid "Another route is being exported. Open it from Routes to check progress."
 msgstr "正在导出另一条路线，请在“路线”中打开它查看进度。"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Another source at the same frequency will also match. These rules are saved in StarPilot, not the detector’s lockout memory."
+msgstr "同一频率的其他信号源也会被匹配。这些规则保存在 StarPilot 中，而不是测速仪的屏蔽记忆中。"
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "App"
@@ -1003,6 +1179,10 @@ msgstr "指定收藏 {}"
 msgid "Assign USB or Bluetooth controller buttons to Quick Select and driving screen actions. This does not control steering, gas, or brakes. Turn off the vehicle to edit."
 msgstr "将 USB 或蓝牙控制器的按键分配给快捷选择和行驶界面的操作。这不会控制转向、油门或刹车。请关闭车辆后再编辑。"
 
+#: openpilot/starpilot/galaxy/web/js/controllers.js
+msgid "Assign buttons and test your connected controllers."
+msgstr "分配按键并测试已连接的控制器。"
+
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Assign steering-wheel buttons and cruise behavior"
 msgstr "设置方向盘按键和巡航行为"
@@ -1052,6 +1232,10 @@ msgstr "注意力数据不可用"
 msgid "Audio Device ·"
 msgstr "音频设备 ·"
 
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Authorize"
+msgstr "授权"
+
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Auto"
 msgstr "自动"
@@ -1091,6 +1275,10 @@ msgstr "离开 P 挡时自动上锁"
 #: openpilot/starpilot/galaxy/web/js/toyota-tools.js
 msgid "Auto unlock entering Park"
 msgstr "进入 P 挡时自动解锁"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Auto-mute saved frequencies"
+msgstr "自动静音已保存的频率"
 
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Automatic"
@@ -1144,9 +1332,17 @@ msgstr "自动下载更新"
 msgid "Automatically Install Updates"
 msgstr "自动安装更新"
 
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Automatically attaches:"
+msgstr "自动附带："
+
 #: openpilot/selfdrive/ui/layouts/settings/software.py
 msgid "Automatically download updates while offroad. Manual checks and downloads remain available."
 msgstr "停车时自动下载更新，仍可手动检查和下载。"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Automatically mute matching frequencies"
+msgstr "自动静音匹配的频率"
 
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Available"
@@ -1155,6 +1351,10 @@ msgstr "可用"
 #: openpilot/starpilot/ui/runtime_snapshot.py
 msgid "Available With the Vehicle Off"
 msgstr "车辆关闭时可用"
+
+#: openpilot/starpilot/ui/tesla_set_speed_feature.py
+msgid "Available after the next startup."
+msgstr "下次启动后可用。"
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Available downloads"
@@ -1233,6 +1433,10 @@ msgstr "后台下载"
 msgid "Background opacity"
 msgstr "背景不透明度"
 
+#: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
+msgid "Background transparency · {}%"
+msgstr "背景透明度 · {}%"
+
 #: openpilot/starpilot/galaxy/web/js/onroad-layout.js
 msgid "Backspace"
 msgstr "退格"
@@ -1249,6 +1453,10 @@ msgstr "备份"
 msgid "Band"
 msgstr "区段"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Band not learned"
+msgstr "该频段未学习"
+
 #: openpilot/starpilot/ui/slc_offset_feature.py
 msgid "Band {} offset"
 msgstr "区段 {} 偏移"
@@ -1256,6 +1464,14 @@ msgstr "区段 {} 偏移"
 #: openpilot/starpilot/ui/slc_offset_feature.py
 msgid "Band {} offset (invalid saved units)"
 msgstr "区段 {} 偏移（已存单位无效）"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Bands Quiet Ride may mute"
+msgstr "安静行驶可静音的频段"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Bands to learn"
+msgstr "要学习的频段"
 
 #: openpilot/starpilot/galaxy/web/js/flm.js
 msgid "Baseline"
@@ -1281,6 +1497,10 @@ msgstr "前往 connect.comma.ai 成为 comma prime 会员"
 msgid "Before and after use separate completed, comparable driving episodes. Unmeasured values remain “Not measured”. Passing future checks does not itself confirm controller application or saving; currently applied values require fresh controller evidence."
 msgstr "前后对比使用各自独立、已完成且可比的驾驶过程。未测量的值仍显示为“未测量”。通过后续检查本身并不能确认控制器已应用或保存；当前已应用的值需要最新的控制器证据。"
 
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Before collecting fresh logs, park and update your comma to the latest testing build from StarPilotHQ/StarPilot. Try the connection again."
+msgstr "收集新日志前，请驻车并将您的 comma 更新到 StarPilotHQ/StarPilot 的最新测试版，然后再次尝试连接。"
+
 #: openpilot/starpilot/galaxy/web/js/flm.js
 msgid "Before trial"
 msgstr "试验前"
@@ -1288,6 +1508,10 @@ msgstr "试验前"
 #: openpilot/starpilot/ui/preap_radar_feature.py
 msgid "Behind nosecone"
 msgstr "位于车鼻罩后"
+
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "Below limit"
+msgstr "低于限速"
 
 #: openpilot/selfdrive/ui/layouts/arabesque/tools/rebecca.py
 msgid "Best"
@@ -1443,6 +1667,14 @@ msgstr "蓝牙正被其他操作占用。请先完成配对或停止搜索，然
 msgid "Bluetooth is off. Turn on StarPort to enable it when prompted, or use Bluetooth under Tools."
 msgstr "蓝牙已关闭。请开启 StarPort 并在提示时启用蓝牙，或使用“工具”中的蓝牙。"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Bluetooth off"
+msgstr "蓝牙已关闭"
+
+#: openpilot/starpilot/galaxy/web/js/bluetooth.js
+msgid "Bluetooth on"
+msgstr "蓝牙已开启"
+
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Bluetooth page"
 msgstr "蓝牙页面"
@@ -1455,6 +1687,10 @@ msgstr "蓝牙密钥"
 msgid "Bluetooth power"
 msgstr "蓝牙电源"
 
+#: openpilot/starpilot/galaxy/web/js/bluetooth.js
+msgid "Bluetooth radio"
+msgstr "蓝牙无线模块"
+
 #: openpilot/starpilot/ui/bluetooth_large.py
 msgid "Bluetooth radio support is not installed on this device."
 msgstr "本设备未安装蓝牙无线模块支持。"
@@ -1466,6 +1702,10 @@ msgstr "此设备不支持蓝牙无线模块。"
 #: openpilot/starpilot/galaxy/web/js/bluetooth.js
 msgid "Bluetooth requires the device. No radio was checked in preview."
 msgstr "蓝牙需要连接设备，预览中未检查无线模块。"
+
+#: openpilot/starpilot/galaxy/web/js/bluetooth-tabs.js
+msgid "Bluetooth sections"
+msgstr "蓝牙分类"
 
 #: openpilot/starpilot/ui/bluetooth_large.py
 msgid "Bluetooth service is not responding. Try turning Bluetooth on again."
@@ -1499,6 +1739,10 @@ msgstr "将 connect.comma.ai 添加到主屏幕，像应用一样使用"
 #: openpilot/starpilot/ui/wheel_feature.py
 msgid "Bookmark on release. Available while Left Paddle Longitudinal Pause is Off."
 msgstr "松开时添加书签。左拨片纵向暂停关闭时可用。"
+
+#: openpilot/starpilot/galaxy/web/js/install-app.js
+msgid "Bookmark this local address for hotspot or Wi-Fi access without Internet. To install Galaxy as a web app (PWA), open your device-specific https://galaxy.firestar.link link from Galaxy Access & Connections; this remote link needs Internet."
+msgstr "请收藏此本地地址，以便在无网络时通过热点或 Wi-Fi 访问。如需将 Galaxy 安装为网页应用（PWA），请通过“Galaxy 访问与连接”打开您设备专属的 https://galaxy.firestar.link 链接；该远程链接需要联网。"
 
 #: openpilot/starpilot/galaxy/web/js/install-app.js
 msgid "Bookmark this local address for hotspot or Wi-Fi access without Internet. To install Galaxy as a web app (PWA), open your device-specific https://galaxy.firestar.link link from Galaxy Access & Install; this remote link needs Internet."
@@ -1543,6 +1787,10 @@ msgstr "品牌：{}"
 #: openpilot/starpilot/galaxy/web/js/diagnostic-tools.js
 msgid "Brand: {} · Longitudinal: {} · Steering: {}"
 msgstr "品牌：{} · 纵向：{} · 转向：{}"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Break the line into dashes so it never reads as the openpilot border."
+msgstr "将线条断开为虚线，避免被误认为 openpilot 边框。"
 
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Briefly mutes incoming audio after pause or skip. Increase if the old song lingers; decrease if the next song starts clipped. Changes apply immediately."
@@ -1611,6 +1859,18 @@ msgstr "按键测试仅显示输入，不会执行其操作。"
 #: openpilot/starpilot/galaxy/web/js/controllers.js
 msgid "Button {} · {}"
 msgstr "按键 {} · {}"
+
+#: openpilot/starpilot/ui/tesla_set_speed_feature.py
+msgid "Buy the cable"
+msgstr "购买线束"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "By 1 km/h"
+msgstr "每次 1 km/h"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "By 1 mph"
+msgstr "每次 1 mph"
 
 #: openpilot/starpilot/ui/appearance_owner.py
 msgid "C4 amber signal border"
@@ -1893,6 +2153,10 @@ msgstr "可以配合 Android Auto 使用吗？"
 msgid "Can I use the comma hotspot or wireless Android Auto?"
 msgstr "可以使用 comma 热点或无线 Android Auto 吗？"
 
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Can't reach Galaxy on your comma at all? You can also send logs from the phone app's Logs & support screen."
+msgstr "完全无法访问 comma 上的 Galaxy？您也可以在手机 App 的“Logs & support”页面发送日志。"
+
 #: openpilot/system/ui/widgets/confirm_dialog.py
 #: openpilot/system/ui/widgets/keyboard.py
 #: openpilot/system/ui/widgets/network.py
@@ -2034,6 +2298,10 @@ msgstr "内置无线 Android Auto 的车辆："
 msgid "Cellular Metered"
 msgstr "蜂窝计量"
 
+#: openpilot/starpilot/ui/temperature.py
+msgid "Celsius"
+msgstr "摄氏度"
+
 #: openpilot/starpilot/galaxy/web/js/onroad-layout.js
 msgid "Centered on the screen"
 msgstr "屏幕居中"
@@ -2046,6 +2314,10 @@ msgstr "证书已过期："
 msgid "Certificate is valid"
 msgstr "证书有效"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Change"
+msgstr "更改"
+
 #: openpilot/selfdrive/ui/layouts/settings/device.py
 msgid "Change Language"
 msgstr "更改语言"
@@ -2053,6 +2325,10 @@ msgstr "更改语言"
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 msgid "Change destination"
 msgstr "更改目的地"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Change detector"
+msgstr "更换测速仪"
 
 #: openpilot/starpilot/ui/models_state.py
 msgid "Change for next start"
@@ -2101,6 +2377,10 @@ msgstr "更改在下次行驶生效。panda 固件的更改需要重启设备。
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Changes apply when the current signal and maneuver end; turning assistance off cancels it after the preference refresh."
 msgstr "更改将在当前转向灯和操作结束后生效；关闭转向辅助会在偏好刷新后取消该操作。"
+
+#: openpilot/starpilot/galaxy/localization_settings.py
+msgid "Changes only the device TEMP gauge."
+msgstr "仅更改设备上的温度仪表。"
 
 #: openpilot/starpilot/ui/lane_change_feature.py
 msgid "Changes refresh during this drive."
@@ -2154,6 +2434,14 @@ msgstr "检查更新"
 #: openpilot/starpilot/galaxy/web/js/models.js
 msgid "Check model catalog"
 msgstr "检查模型目录"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Check pairing"
+msgstr "检查配对"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Check that the detector is on and another app is not connected. Retrying automatically."
+msgstr "请确认测速仪已开机且未被其他 App 连接。正在自动重试。"
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Check that this code matches your car, then confirm."
@@ -2283,6 +2571,10 @@ msgstr "Chestnut 就绪"
 msgid "Chestnut required"
 msgstr "需要 Chestnut"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Chevrons"
+msgstr "箭头"
+
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Chill"
 msgstr "安稳"
@@ -2294,6 +2586,10 @@ msgstr "安稳条件"
 #: openpilot/starpilot/ui/conditional_feature.py
 msgid "Chill conditions"
 msgstr "安稳条件"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Choose Add frequency, then enter the reading shown by your detector."
+msgstr "请选择“添加频率”，然后输入测速仪显示的读数。"
 
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 #: openpilot/starpilot/galaxy/web/js/starport.js
@@ -2362,6 +2658,18 @@ msgstr "选择品牌"
 msgid "Choose a model"
 msgstr "选择模型"
 
+#: openpilot/starpilot/uniden/protocol.py
+msgid "Choose a paired detector"
+msgstr "请选择已配对的测速仪"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Choose a paired detector to finish setup."
+msgstr "请选择一台已配对的测速仪以完成设置。"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Choose a paired detector to get started."
+msgstr "请选择一台已配对的测速仪以开始使用。"
+
 #: openpilot/starpilot/galaxy/web/js/galaxy.js
 msgid "Choose a password to pair your comma."
 msgstr "请设置密码以配对您的 comma。"
@@ -2369,6 +2677,10 @@ msgstr "请设置密码以配对您的 comma。"
 #: openpilot/starpilot/ui/galaxy_access.py
 msgid "Choose a password, then pair your comma with Galaxy."
 msgstr "设置密码，然后将 comma 与 Galaxy 配对。"
+
+#: openpilot/starpilot/galaxy/server.py
+msgid "Choose a phone and camera"
+msgstr "请选择手机和摄像头"
 
 #: openpilot/starpilot/galaxy/web/js/map-operations.js
 msgid "Choose a region to download its maps."
@@ -2414,6 +2726,10 @@ msgstr "选择 StarPilot 如何转向和控制速度。"
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Choose how the path is colored. Acceleration colors change with acceleration and braking. Custom color stays one color. Rainbow Road shows a moving rainbow."
 msgstr "选择路径的着色方式。加速颜色会随加速和刹车变化。自定义颜色保持单一颜色。Rainbow Road 显示流动的彩虹。"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Choose iPhone or Android."
+msgstr "请选择 iPhone 或 Android。"
 
 #: openpilot/starpilot/galaxy/web/js/settings.js
 msgid "Choose lane-centering behavior and alerts."
@@ -2475,6 +2791,14 @@ msgstr "请选择两个已下载的 eGPU 变体"
 #: openpilot/starpilot/galaxy/web/js/settings.js
 msgid "Choose what uploads when the vehicle uses mobile data."
 msgstr "选择车辆使用移动数据时上传的内容。"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Choose what you are sending logs for."
+msgstr "请选择要发送哪类日志。"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Choose what you're sending logs for. Your comma prepares the logs and hands off once to Discord."
+msgstr "请选择要发送哪类日志。您的 comma 会准备好日志，并一次性转交到 Discord。"
 
 #: openpilot/starpilot/ui/pip_owner.py
 msgid "Choose when to show the camera and adjust its crop from the live preview."
@@ -2658,6 +2982,10 @@ msgstr "点击"
 msgid "Click \"add new device\" and scan the QR code on the right"
 msgstr "点击“添加新设备”，扫描右侧二维码"
 
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Click to update"
+msgstr "点按以更新"
+
 #: openpilot/starpilot/ui/onroad_customization.py
 msgid "Clock"
 msgstr "时钟"
@@ -2690,9 +3018,17 @@ msgstr "云服务提供方"
 msgid "Cloud provider status is unavailable"
 msgstr "云服务提供方状态不可用"
 
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Coast Downhills"
+msgstr "下坡滑行"
+
 #: openpilot/starpilot/galaxy/web/js/flm-training-results.js
 msgid "Collecting comparable driving examples"
 msgstr "正在收集可比的驾驶样本"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Collecting logs…"
+msgstr "正在收集日志…"
 
 #: openpilot/starpilot/galaxy/web/js/flm.js
 msgid "Collection"
@@ -2713,6 +3049,10 @@ msgstr "采集环境或目标已更改，正在等待下一次快照选择"
 #: openpilot/starpilot/galaxy/web/js/flm.js
 msgid "Collection counts describe retained data. The fitter separately checks physical calibration, complete event support and validation."
 msgstr "采集计数描述已保留的数据。拟合器会另外检查物理校准、完整事件支持和验证。"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Colors"
+msgstr "颜色"
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Colors & Layout"
@@ -2769,6 +3109,14 @@ msgstr "Comma GPS"
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 msgid "Comma and car GPS only"
 msgstr "仅 comma 和车辆 GPS"
+
+#: openpilot/starpilot/ui/tesla_set_speed_feature.py
+msgid "Comma can set speed on Tesla dashboard"
+msgstr "comma 可设置 Tesla 仪表盘速度"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Comma offline? Save the ZIP on your phone and send it when you have internet. Include the branch and version you captured."
+msgstr "comma 离线？请把 ZIP 保存到手机上，有网络时再发送，并注明采集日志时的分支和版本。"
 
 #: openpilot/starpilot/galaxy/web/js/system-monitor.js
 msgid "Comma processes"
@@ -2960,6 +3308,10 @@ msgstr "确认限速"
 msgid "Confirm the code on both screens"
 msgstr "请在两块屏幕上确认代码"
 
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Confirm the device restart first"
+msgstr "请先确认设备重启"
+
 #: openpilot/starpilot/galaxy/web/js/bluetooth.js
 msgid "Confirm this code matches the device:"
 msgstr "请确认此验证码与设备上显示的一致："
@@ -3012,6 +3364,14 @@ msgstr "连接固件就绪的 Chestnut 以启用模型对"
 msgid "Connect a supported vehicle to configure Always On Lateral"
 msgstr "连接受支持的车辆以配置 AOL"
 
+#: openpilot/starpilot/galaxy/web/js/driving-help.js
+msgid "Connect directly to your comma to browse saved Galaxy routes."
+msgstr "请直接连接到您的 comma 以浏览已保存的 Galaxy 路线。"
+
+#: openpilot/starpilot/galaxy/web/js/bluetooth.js
+msgid "Connect the StarPilot app and phone audio."
+msgstr "连接 StarPilot App 和手机音频。"
+
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Connect the car’s Android Auto USB data port to the comma’s USB-C port with a data-capable cable."
 msgstr "请用支持数据传输的数据线，将车辆的 Android Auto USB 数据口连接到 comma 的 USB-C 口。"
@@ -3052,6 +3412,10 @@ msgstr "请连接到本地 Galaxy 以管理控制器按键。"
 msgid "Connect to local Galaxy to review saved settings."
 msgstr "请连接本地 Galaxy 以查看已保存的设置。"
 
+#: openpilot/starpilot/galaxy/web/js/galaxy.js
+msgid "Connect to your comma"
+msgstr "请连接到您的 comma"
+
 #: openpilot/starpilot/galaxy/web/js/hotspot.js
 msgid "Connect to your comma to configure the hotspot."
 msgstr "请连接到您的 comma 以配置热点。"
@@ -3059,6 +3423,10 @@ msgstr "请连接到您的 comma 以配置热点。"
 #: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
 msgid "Connect to your comma to manage offline road maps."
 msgstr "请连接您的 comma 以管理离线道路地图。"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Connect to your comma to send or download diagnostic logs."
+msgstr "请连接到您的 comma 以发送或下载诊断日志。"
 
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 msgid "Connect to your comma to set up navigation and choose a destination."
@@ -3087,6 +3455,10 @@ msgstr "请将手机连接到 Galaxy 热点，或让手机与 comma 处于同一
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Connected"
 msgstr "已连接"
+
+#: openpilot/starpilot/galaxy/web/js/bluetooth.js
+msgid "Connected devices"
+msgstr "已连接设备"
 
 #: openpilot/starpilot/galaxy/web/js/galaxy.js
 msgid "Connected phone"
@@ -3144,6 +3516,14 @@ msgstr "正在连接…"
 msgid "Connection Logs"
 msgstr "连接日志"
 
+#: openpilot/starpilot/galaxy/web/js/local-access.js
+msgid "Connection logs"
+msgstr "连接日志"
+
+#: openpilot/starpilot/galaxy/web/js/save-me.js
+msgid "Connection lost. Check whether the comma is restarting before trying again."
+msgstr "连接已断开。请先确认 comma 是否正在重启，再重试。"
+
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Connection needs attention"
 msgstr "连接需要处理"
@@ -3151,6 +3531,10 @@ msgstr "连接需要处理"
 #: openpilot/starpilot/galaxy/web/js/bluetooth-notice.js
 msgid "Connection options"
 msgstr "连接选项"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Connection unavailable"
+msgstr "连接不可用"
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Connects automatically when you start driving."
@@ -3168,6 +3552,10 @@ msgstr "大陆雷达"
 msgid "Continue"
 msgstr "继续"
 
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Continue on Discord support"
+msgstr "在 Discord 支持中继续"
+
 #: openpilot/starpilot/galaxy/web/js/favorites.js
 msgid "Control"
 msgstr "控制项"
@@ -3175,6 +3563,10 @@ msgstr "控制项"
 #: openpilot/starpilot/galaxy/web/js/settings.js
 msgid "Control how speed limits change your set speed."
 msgstr "控制限速如何改变您的设定速度。"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Controller"
+msgstr "控制器"
 
 #: openpilot/starpilot/galaxy/web/js/controllers.js
 msgid "Controller Buttons"
@@ -3191,6 +3583,10 @@ msgstr "控制器按键返回了不支持的状态，请重试。"
 #: openpilot/starpilot/galaxy/web/js/controllers.js
 msgid "Controller is busy. Try again shortly."
 msgstr "控制器正忙，请稍后重试。"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Controller make & model"
+msgstr "控制器品牌与型号"
 
 #: openpilot/starpilot/ui/gain_feature.py
 msgid "Controller or vehicle tune changed. Confirm this response for the selected controller."
@@ -3212,6 +3608,10 @@ msgstr "控制器设置已更改，请先重新加载再保存。"
 msgid "Controller settings changed. Reload them before saving."
 msgstr "控制器设置已更改，请先重新加载再保存。"
 
+#: openpilot/starpilot/galaxy/web/js/bluetooth-tabs.js
+msgid "Controllers"
+msgstr "控制器"
+
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Controls"
 msgstr "控制"
@@ -3228,6 +3628,10 @@ msgstr "控制触发警告所需的动作幅度"
 msgid "Cookie"
 msgstr "Cookie"
 
+#: openpilot/starpilot/galaxy/web/js/driving-help.js
+msgid "Copied"
+msgstr "已复制"
+
 #: openpilot/starpilot/galaxy/web/js/galaxy.js
 msgid "Copy"
 msgstr "复制"
@@ -3239,6 +3643,10 @@ msgstr "此浏览器不支持复制。"
 #: openpilot/starpilot/galaxy/web/js/diagnostic-tools.js
 msgid "Copy is unavailable in this browser. Select the visible text to copy it."
 msgstr "此浏览器不支持复制。请选中可见文本进行复制。"
+
+#: openpilot/starpilot/galaxy/web/js/driving-help.js
+msgid "Copy route details"
+msgstr "复制路线详情"
 
 #: openpilot/starpilot/galaxy/web/js/logs.js
 msgid "Copy visible text"
@@ -3280,6 +3688,14 @@ msgstr "无法创建功能开关备份。"
 msgid "Could not invalidate automatic steering learning"
 msgstr "无法使自动转向学习失效"
 
+#: openpilot/starpilot/uniden/feed.py
+msgid "Could not lock out"
+msgstr "无法屏蔽"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Could not prepare diagnostic ZIP."
+msgstr "无法准备诊断 ZIP。"
+
 #: openpilot/starpilot/galaxy/web/js/toggle-backup.js
 msgid "Could not read toggle backup."
 msgstr "无法读取功能开关备份。"
@@ -3299,6 +3715,14 @@ msgstr "无法保存"
 #: openpilot/selfdrive/ui/layouts/arabesque/desktop.py
 msgid "Could not set the time. Please try again."
 msgstr "无法设置时间，请重试。"
+
+#: openpilot/starpilot/galaxy/log_relay_stage.py
+msgid "Could not stage logs for Discord. Use Download ZIP instead."
+msgstr "无法为 Discord 暂存日志，请改为下载 ZIP。"
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Could not start Save Me"
+msgstr "无法启动 Save Me"
 
 #: openpilot/starpilot/galaxy/web/js/map-operations.js
 msgid "Country or US state"
@@ -3458,6 +3882,10 @@ msgstr "自定义跟车与急动度"
 msgid "Custom color"
 msgstr "自定义颜色"
 
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Custom forks may have changed StarPort or be out of date. Make sure your branch is up to date with StarPilotHQ before sending, or share the logs with your branch's maintainer or in the StarPilot Discord."
+msgstr "自定义复刻版可能修改过 StarPort，或者版本已过时。发送前请确认您的分支已与 StarPilotHQ 同步，或者将日志分享给您所用分支的维护者，或发到 StarPilot Discord。"
+
 #: openpilot/starpilot/ui/torque_feature.py
 msgid "Custom value; estimator remains unchanged"
 msgstr "自定义值；估算器保持不变"
@@ -3499,6 +3927,14 @@ msgstr "删除"
 msgid "DETAILS"
 msgstr "详情"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "DETECTOR"
+msgstr "测速仪"
+
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "DETECTOR OFFLINE"
+msgstr "测速仪离线"
+
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "DISENGAGE IMMEDIATELY"
 msgstr "请立即脱离"
@@ -3519,6 +3955,18 @@ msgstr "行驶中"
 #: openpilot/starpilot/ui/traffic_feature.py
 msgid "Danger jerk"
 msgstr "危险急动度"
+
+#: openpilot/starpilot/galaxy/web/js/save-me.js
+msgid "Danger zone"
+msgstr "危险操作"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Dark veil under the line"
+msgstr "线条下的暗色衬底"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Darken the edge of the picture so the line stands out in daylight."
+msgstr "压暗画面边缘，让线条在白天也清晰醒目。"
 
 #: openpilot/starpilot/ui/onroad_large_widgets.py
 msgid "Dash"
@@ -3583,13 +4031,29 @@ msgstr "拒绝"
 msgid "Decline, uninstall openpilot"
 msgstr "拒绝并卸载 openpilot"
 
+#: openpilot/starpilot/ui/tesla_speed_actions.py
+msgid "Decrease Comma Set Speed"
+msgstr "降低 comma 设定速度"
+
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "Decrease Speed"
 msgstr "降低速度"
 
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Decrease set speed"
+msgstr "降低设定速度"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Decrease set speed - {label}"
+msgstr "降低设定速度 - {label}"
+
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Default"
 msgstr "默认"
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Default 0%"
+msgstr "默认 0%"
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Default StarPort positions are shown. Save to keep your separate layout."
@@ -3797,6 +4261,10 @@ msgstr "详情"
 msgid "Details need a saved full log (rlog)."
 msgstr "详情需要已保存的完整日志（rlog）。"
 
+#: openpilot/starpilot/ui/tesla_set_speed_feature.py
+msgid "Detected"
+msgstr "已检测到"
+
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Detected, inactive"
 msgstr "已检测到，未启用"
@@ -3804,6 +4272,38 @@ msgstr "已检测到，未启用"
 #: openpilot/starpilot/ui/vasm_owner.py
 msgid "Detection confidence"
 msgstr "检测置信度"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Detector"
+msgstr "测速仪"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Detector connection"
+msgstr "测速仪连接"
+
+#: openpilot/starpilot/galaxy/server.py
+msgid "Detector connection unavailable"
+msgstr "测速仪连接不可用"
+
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "Detector disconnected"
+msgstr "测速仪已断开"
+
+#: openpilot/starpilot/galaxy/web/js/bluetooth.js
+msgid "Detector preferences and custom frequency rules."
+msgstr "测速仪偏好与自定义频率规则。"
+
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "Detector ready"
+msgstr "测速仪已就绪"
+
+#: openpilot/starpilot/uniden/feed.py
+msgid "Detector unavailable"
+msgstr "测速仪不可用"
+
+#: openpilot/starpilot/galaxy/web/js/bluetooth.js
+msgid "Detector, controller or audio device"
+msgstr "测速仪、控制器或音频设备"
 
 #: openpilot/selfdrive/ui/layouts/settings/settings.py
 msgid "Developer"
@@ -3854,6 +4354,10 @@ msgstr "检测到设备重新安装：正在重新校准"
 msgid "Device Snapshot"
 msgstr "设备快照"
 
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Device actions"
+msgstr "设备操作"
+
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Device display language. Untranslated text uses English. Park before changing language."
 msgstr "设备显示语言。未翻译的文本显示英文。更改语言前请先驻车。"
@@ -3883,6 +4387,14 @@ msgstr "设备："
 msgid "Device: {}"
 msgstr "设备：{}"
 
+#: openpilot/starpilot/galaxy/web/js/bluetooth-tabs.js
+msgid "Devices"
+msgstr "设备"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Direct log sending from the comma remains available."
+msgstr "仍可直接从 comma 发送日志。"
+
 #: openpilot/starpilot/galaxy/web/js/logs.js
 msgid "Directory scan is incomplete; newer reports may be omitted."
 msgstr "目录扫描未完成，较新的报告可能未列出。"
@@ -3894,6 +4406,10 @@ msgstr "停用"
 #: openpilot/selfdrive/ui/layouts/settings/developer.py
 msgid "Disable Cellular"
 msgstr "禁用蜂窝网络"
+
+#: openpilot/starpilot/ui/vehicle_bool.py
+msgid "Disable Comma can set speed on Tesla dashboard? While it is on, StarPilot keeps its own set speed and scrolls the Tesla's set speed to match it."
+msgstr "停用“comma 可设置 Tesla 仪表盘速度”？开启时，StarPilot 会保持自己的设定速度，并滚动调整 Tesla 的设定速度与之一致。"
 
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Disable StarPilot Speed Control"
@@ -3918,6 +4434,10 @@ msgstr "已停用"
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Disarms screen-tap Always On Lateral when you press the brake."
 msgstr "踩刹车时解除点屏全时横向控制的待命。"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Discard"
+msgstr "放弃"
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Discard and leave"
@@ -3955,6 +4475,10 @@ msgstr "已断开"
 msgid "Disconnecting"
 msgstr "正在断开"
 
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Discord community support"
+msgstr "Discord 社区支持"
+
 #: openpilot/starpilot/ui/tesla_screen_feature.py
 msgid "Disengage AOL on Brake"
 msgstr "刹车时脱离 AOL"
@@ -3962,6 +4486,10 @@ msgstr "刹车时脱离 AOL"
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "Disengage Openpilot"
 msgstr "脱离 openpilot"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Disengage StarPilot"
+msgstr "脱离 StarPilot"
 
 #: openpilot/selfdrive/ui/layouts/settings/toggles.py
 msgid "Disengage on Accelerator Pedal"
@@ -4139,6 +4667,10 @@ msgstr "下载 Soloist"
 msgid "Download StarPilot BT on the App Store"
 msgstr "在 App Store 下载 StarPilot BT"
 
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Download ZIP instead"
+msgstr "改为下载 ZIP"
+
 #: openpilot/starpilot/galaxy/web/js/logs.js
 msgid "Download all logs"
 msgstr "下载全部日志"
@@ -4166,6 +4698,10 @@ msgstr "下载已取消。"
 #: openpilot/starpilot/galaxy/web/js/map-operations.js
 msgid "Download complete and saved on this comma. The map database is selected for the next Maps service start."
 msgstr "下载完成，已保存到这台 comma。该地图数据库已选定用于下次地图服务启动。"
+
+#: openpilot/starpilot/galaxy/web/js/local-access.js
+msgid "Download connection ZIP"
+msgstr "下载连接 ZIP"
 
 #: openpilot/starpilot/galaxy/web/js/model-laboratory.js
 msgid "Download eGPU variant"
@@ -4282,6 +4818,10 @@ msgstr "拖动组件即可放置。其后是所选场景下 comma 自身的屏�
 msgid "Drag ⠿ to reorder. The top row is in front, and alerts stay above all widgets."
 msgstr "拖动 ⠿ 可重新排序。最上面一行位于最前，警报始终在所有组件之上。"
 
+#: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
+msgid "Drag ⠿ to reorder. The top row is in front, and alerts stay above all widgets. Each Adj Spot Camera can be locked to the front; unlock it to move widgets above."
+msgstr "拖动 ⠿ 可重新排序。最上面一行位于最前，警报始终在所有组件之上。每个侧方摄像头都可以锁定在最前；解锁后才能将组件移到其上方。"
+
 #: openpilot/starpilot/galaxy/web/js/vasm.js
 msgid "Draw 3–32 vertices around at least one window. Regions cannot cross or leave the frame."
 msgstr "围绕至少一个车窗绘制 3–32 个顶点。区域不能交叉或超出画面。"
@@ -4289,6 +4829,10 @@ msgstr "围绕至少一个车窗绘制 3–32 个顶点。区域不能交叉或�
 #: openpilot/starpilot/ui/vasm_owner.py
 msgid "Draw on a local still or an empty camera-sized canvas; image stays on this device browser"
 msgstr "在本地静态图或空白的摄像头尺寸画布上绘制；图像仅保留在本设备的浏览器中"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Drawn around the driving screen during a live alert, above any openpilot alert. Each band uses the same warning in its own color."
+msgstr "实时警报期间绘制在驾驶界面四周，位于所有 openpilot 警报之上。各频段使用相同的警告样式，颜色各自独立。"
 
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Drive Above"
@@ -4439,6 +4983,10 @@ msgstr "驾驶界面组件、颜色与布局"
 msgid "Driving Settings"
 msgstr "驾驶设置"
 
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Driving behavior or general questions?"
+msgstr "驾驶行为或其他一般问题？"
+
 #: openpilot/starpilot/galaxy/web/js/driving.js
 msgid "Driving features"
 msgstr "驾驶功能"
@@ -4468,6 +5016,10 @@ msgstr "驾驶画面预览"
 #: openpilot/starpilot/galaxy/web/js/app.js
 msgid "Driving settings ·"
 msgstr "驾驶设置 ·"
+
+#: openpilot/starpilot/galaxy/web/js/driving-help.js
+msgid "Driving support on Discord"
+msgstr "Discord 驾驶支持"
 
 #: openpilot/starpilot/galaxy/web/js/system-monitor-data.js
 msgid "Duplicate CPU core in sample"
@@ -4554,6 +5106,10 @@ msgstr "经济"
 msgid "Edit"
 msgstr "编辑"
 
+#: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
+msgid "Edit Lead Indicator"
+msgstr "编辑前车指示"
+
 #: openpilot/starpilot/ui/pip_owner.py
 msgid "Edit in Galaxy"
 msgstr "在 Galaxy 中编辑"
@@ -4619,9 +5175,17 @@ msgstr "启用 AOL"
 msgid "Enable Bluetooth and Turn On"
 msgstr "启用蓝牙并开启"
 
+#: openpilot/starpilot/galaxy/web/js/bluetooth.js
+msgid "Enable Bluetooth and open BT Pairing on the detector. Close other apps connected to it. After pairing, open the Uniden tab to select it."
+msgstr "请在测速仪上启用蓝牙并打开 BT Pairing，关闭连接它的其他 App。配对后，打开“Uniden”标签页选择它。"
+
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Enable Bluetooth?"
 msgstr "启用蓝牙？"
+
+#: openpilot/starpilot/ui/vehicle_bool.py
+msgid "Enable Comma can set speed on Tesla dashboard? While it is on, StarPilot keeps its own set speed and scrolls the Tesla's set speed to match it."
+msgstr "启用“comma 可设置 Tesla 仪表盘速度”？开启时，StarPilot 会保持自己的设定速度，并滚动调整 Tesla 的设定速度与之一致。"
 
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Enable Lane Centering"
@@ -4646,6 +5210,10 @@ msgstr "启用 SSH"
 #: openpilot/system/ui/widgets/network.py
 msgid "Enable Tethering"
 msgstr "启用网络共享"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Enable Uniden integration"
+msgstr "启用 Uniden 集成"
 
 #: openpilot/starpilot/galaxy/web/js/controllers.js
 msgid "Enable assigned controller buttons"
@@ -4690,6 +5258,10 @@ msgstr "启用反向代理"
 #: openpilot/starpilot/galaxy/web/js/longitudinal-curves.js
 msgid "Enable saved profiles and this personality in All profile settings to use its curve."
 msgstr "请在“全部配置设置”中启用已保存的配置和此驾驶风格，以使用其曲线。"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Enable the integration below to receive alerts."
+msgstr "请在下方启用集成以接收警报。"
 
 #: openpilot/selfdrive/ui/layouts/settings/toggles.py
 msgid "Enable the openpilot longitudinal control (alpha) toggle to allow Experimental mode."
@@ -4736,6 +5308,10 @@ msgstr "结束导航"
 msgid "End route"
 msgstr "结束路线"
 
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Engage StarPilot"
+msgstr "启用 StarPilot"
+
 #: openpilot/starpilot/galaxy/web/js/layout-preview.js
 msgid "Engaged"
 msgstr "已启用"
@@ -4765,6 +5341,10 @@ msgstr "输入 APN"
 #: openpilot/system/ui/widgets/network.py
 msgid "Enter SSID"
 msgstr "输入 SSID"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Enter a frequency and tolerance."
+msgstr "请输入频率和容差。"
 
 #: openpilot/system/ui/widgets/network.py
 msgid "Enter new tethering password"
@@ -4798,6 +5378,14 @@ msgstr "输入您的 GitHub 用户名"
 msgid "Enter your car’s passkey."
 msgstr "请输入您车辆的配对密钥。"
 
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Enter your controller make and model."
+msgstr "请输入控制器的品牌和型号。"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Enter your controller model and a short note above to send."
+msgstr "请先在上方输入控制器型号并简要说明，再发送。"
+
 #: openpilot/starpilot/galaxy/web/js/galaxy.js
 msgid "Enter your existing password to keep your Galaxy link."
 msgstr "请输入现有密码以保留您的 Galaxy 链接。"
@@ -4813,6 +5401,18 @@ msgstr "过程来源时间戳"
 #: openpilot/starpilot/galaxy/web/js/layout-preview.js
 msgid "Equal speed limits"
 msgstr "限速相同"
+
+#: openpilot/starpilot/galaxy/web/js/save-me.js
+msgid "Erase StarPilot data and restart. Wi-Fi and installed software are kept."
+msgstr "清除 StarPilot 数据并重启。Wi‑Fi 和已安装的软件会保留。"
+
+#: openpilot/starpilot/galaxy/web/js/save-me.js
+msgid "Erase StarPilot data?"
+msgstr "清除 StarPilot 数据？"
+
+#: openpilot/starpilot/galaxy/web/js/save-me.js
+msgid "Erase data and restart"
+msgstr "清除数据并重启"
 
 #: openpilot/starpilot/galaxy/settings.py
 #: openpilot/starpilot/ui/feature_settings_compact.py
@@ -5029,6 +5629,10 @@ msgstr "原厂巡航"
 msgid "Factory cruise / AOL"
 msgstr "原厂巡航 / AOL"
 
+#: openpilot/starpilot/ui/temperature.py
+msgid "Fahrenheit"
+msgstr "华氏度"
+
 #: openpilot/starpilot/galaxy/web/js/plots.js
 msgid "Fair"
 msgstr "一般"
@@ -5094,6 +5698,10 @@ msgstr "文件仅在驻车时可用。"
 msgid "Filter routes"
 msgstr "筛选路线"
 
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "Filtered"
+msgstr "已过滤"
+
 #: openpilot/starpilot/galaxy/web/js/home.js
 msgid "Finalized update ready"
 msgstr "更新已准备就绪"
@@ -5113,6 +5721,10 @@ msgstr "查找车辆"
 #: openpilot/starpilot/galaxy/web/js/logs.js
 msgid "Find setup guides, feature explanations, and troubleshooting steps for StarPilot and Android Auto."
 msgstr "查找 StarPilot 和 Android Auto 的设置指南、功能说明与故障排查步骤。"
+
+#: openpilot/starpilot/galaxy/web/js/driving-help.js
+msgid "Find the drive, then share the route link and approximate timestamp or segment. Describe what the car did and what you expected."
+msgstr "找到这次行程，然后分享路线链接以及大致时间点或片段。请描述车辆的实际表现以及您的预期。"
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Finding Android Auto"
@@ -5146,6 +5758,10 @@ msgstr "完成蓝牙配对"
 #: openpilot/selfdrive/ui/widgets/setup.py
 msgid "Finish Setup"
 msgstr "完成设置"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Finish any device search or pairing. Connection will resume automatically."
+msgstr "请先完成设备搜索或配对，连接将自动恢复。"
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Finish connecting to your device"
@@ -5242,6 +5858,10 @@ msgstr "文件夹"
 msgid "Follow"
 msgstr "跟车"
 
+#: openpilot/starpilot/ui/temperature.py
+msgid "Follow Use Metric"
+msgstr "跟随“使用公制”"
+
 #: openpilot/starpilot/ui/sounds_owner.py
 msgid "Follow ambient sound"
 msgstr "跟随环境噪音"
@@ -5302,6 +5922,10 @@ msgstr "配对后若使用蜂窝网络或其他网络，请关闭"
 #: openpilot/starpilot/galaxy/web/js/local-access.js
 msgid "For local access, type or paste the full http:// address into a new browser tab and bookmark it. The public Galaxy link uses the Internet tunnel, independently of hotspot access. If your browser or phone asks for local-network permission, allow access to this comma."
 msgstr "如需本地访问，请在新的浏览器标签页中输入或粘贴完整的 http:// 地址，并将其收藏。公共 Galaxy 链接通过互联网隧道访问，与热点访问相互独立。如果浏览器或手机请求本地网络权限，请允许其访问这台 comma。"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "For the widget and the full-screen warning. Each works without the other."
+msgstr "适用于组件和全屏警告，两者可各自独立使用。"
 
 #: openpilot/starpilot/galaxy/web/js/route-workspace.js
 msgid "For this saved segment only. Distance is estimated from recorded speed."
@@ -5404,6 +6028,22 @@ msgstr "正在忽略…"
 msgid "Forward ten seconds"
 msgstr "前进 10 秒"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Frequency (GHz)"
+msgstr "频率（GHz）"
+
+#: openpilot/starpilot/uniden/protocol.py
+msgid "Frequency must be in the selected band, in GHz"
+msgstr "频率必须位于所选频段内，单位为 GHz"
+
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "Frequency rule"
+msgstr "频率规则"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Frequency rules"
+msgstr "频率规则"
+
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "Fresh onroad control required"
 msgstr "需要最新的行驶控制"
@@ -5457,6 +6097,10 @@ msgstr "完整转向延迟"
 msgid "Full surface coordinates"
 msgstr "完整曲面坐标"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Full-screen warning"
+msgstr "全屏警告"
+
 #: openpilot/starpilot/galaxy/web/js/flm-training-results.js
 msgid "Future checks passed"
 msgstr "后续检查已通过"
@@ -5488,6 +6132,10 @@ msgstr "GPS：{}"
 #: openpilot/starpilot/galaxy/web/js/models.js
 msgid "GPU · External"
 msgstr "GPU · 外接"
+
+#: openpilot/starpilot/galaxy/web/data/catalog.json
+msgid "Galaxy Access & Connections"
+msgstr "Galaxy 访问与连接"
 
 #: openpilot/starpilot/galaxy/web/js/app.js
 #: openpilot/starpilot/galaxy/web/js/galaxy.js
@@ -5553,6 +6201,10 @@ msgstr "Galaxy 已安装。"
 msgid "Galaxy local access"
 msgstr "Galaxy 本地访问"
 
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Galaxy lost the connection. Check whether the device is restarting before trying again."
+msgstr "Galaxy 与设备的连接已中断。请先确认设备是否正在重启，然后再重试。"
+
 #: openpilot/starpilot/galaxy/web/js/app.js
 msgid "Galaxy navigation"
 msgstr "Galaxy 导航"
@@ -5609,6 +6261,10 @@ msgstr "登录 Galaxy"
 msgid "Galaxy took too long to respond"
 msgstr "Galaxy 响应超时"
 
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Galaxy will disconnect briefly. If an update is ready, it may install during the restart."
+msgstr "Galaxy 将短暂断开连接。如有已就绪的更新，可能会在重启期间安装。"
+
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Gas: {}%, Steer: {}%"
 msgstr "油门：{}%，转向：{}%"
@@ -5650,6 +6306,14 @@ msgstr "实验模式在道路畅通时犹豫不前，将平缓恢复至设定速
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 msgid "Get a Mapbox access token"
 msgstr "获取 Mapbox 访问令牌"
+
+#: openpilot/starpilot/galaxy/web/data/catalog.json
+msgid "Get help"
+msgstr "获取帮助"
+
+#: openpilot/starpilot/galaxy/web/js/route-workspace.js
+msgid "Get help with this drive"
+msgstr "获取此行程的帮助"
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Get the newest release from APKMirror"
@@ -5755,6 +6419,10 @@ msgstr "高度 ·"
 msgid "Height · {}"
 msgstr "高度 · {}"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Held on screen"
+msgstr "屏幕长按"
+
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Help"
 msgstr "帮助"
@@ -5785,10 +6453,34 @@ msgstr "隐藏"
 msgid "Hide Personality Alerts"
 msgstr "隐藏风格提示"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Hide Q-Ride alerts"
+msgstr "隐藏 Q-Ride 警报"
+
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Hide Setup"
 msgstr "隐藏设置"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Hide alerts muted below the limit"
+msgstr "隐藏限速内被静音的警报"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Hide lockouts and frequency rules"
+msgstr "隐藏屏蔽点和频率规则"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Hide mute memory alerts"
+msgstr "隐藏静音记忆警报"
+
+#: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
+msgid "Hide quiet and disconnected cards. Turn off to show detector readiness and connection status."
+msgstr "隐藏无警报及未连接时的卡片。关闭后会显示测速仪就绪状态和连接状态。"
+
+#: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
+msgid "Hide when no alert"
+msgstr "无警报时隐藏"
 
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Hides the alert shown when the driving personality changes."
@@ -5841,6 +6533,10 @@ msgstr "历史不可用"
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Hold"
 msgstr "保持"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Hold an alert on the driving screen to lock it out where you are. Lockouts only apply near that place."
+msgstr "在驾驶界面上长按警报，即可在当前位置屏蔽它。屏蔽点仅在该位置附近生效。"
 
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Hold the brake for over one second at a complete stop with cruise main on and cruise disengaged."
@@ -5955,6 +6651,10 @@ msgstr "身份未验证"
 msgid "Idle"
 msgstr "空闲"
 
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "If Discord asks, sign in and tap"
+msgstr "如果 Discord 提示，请登录并点按"
+
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "If it still does not appear, turn Spotify off and back on here. This reconnects using your saved account; you do not need to clear the account or cache."
 msgstr "如果仍未出现，请在此关闭 Spotify 再重新开启。这会使用已保存的账号重新连接，无需清除账号或缓存。"
@@ -6055,13 +6755,29 @@ msgstr "已计入合计"
 msgid "Incomplete recording"
 msgstr "录制不完整"
 
+#: openpilot/starpilot/ui/tesla_speed_actions.py
+msgid "Increase Comma Set Speed"
+msgstr "提高 comma 设定速度"
+
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "Increase Speed"
 msgstr "提高速度"
 
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Increase set speed"
+msgstr "提高设定速度"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Increase set speed - {label}"
+msgstr "提高设定速度 - {label}"
+
 #: openpilot/starpilot/ui/gm_tune_feature.py
 msgid "Individual personality and custom curves remain as selected."
 msgstr "个别驾驶风格和自定义曲线保持所选设置。"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Individual session files"
+msgstr "单个会话文件"
 
 #: openpilot/starpilot/ui/traffic_feature.py
 msgid "Inherited from Relaxed follow and jerk settings"
@@ -6114,6 +6830,10 @@ msgstr "请在此版本到期前安装较新的版本，以保持 Spotify 正常
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Install a newer build to resume Spotify playback."
 msgstr "请安装较新的版本以恢复 Spotify 播放。"
+
+#: openpilot/starpilot/ui/tesla_set_speed_feature.py
+msgid "Install guide"
+msgstr "安装指南"
 
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 #: openpilot/starpilot/galaxy/web/js/starport.js
@@ -6179,6 +6899,10 @@ msgstr "安装 Spotify 需要使用您的本地网络或 Galaxy 隧道。手机�
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Installing…"
 msgstr "安装中…"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Integration off"
+msgstr "集成已关闭"
 
 #: openpilot/starpilot/galaxy/web/js/navigation-map.js
 msgid "Interactive navigation map"
@@ -6255,6 +6979,10 @@ msgstr "设置图像无效：{}"
 msgid "Invalid System Monitor sample"
 msgstr "系统监视器采样无效"
 
+#: openpilot/starpilot/ui/onroad_customization.py
+msgid "Invalid Uniden display settings"
+msgstr "Uniden 显示设置无效"
+
 #: openpilot/starpilot/galaxy/settings.py
 msgid "Invalid action"
 msgstr "无效操作"
@@ -6315,6 +7043,10 @@ msgstr "默认值重置无效"
 msgid "Invalid deletion response"
 msgstr "删除响应无效"
 
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Invalid diagnostic capture"
+msgstr "诊断采集数据无效"
+
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Invalid document"
 msgstr "无效文档"
@@ -6350,6 +7082,14 @@ msgstr "布局预览请求无效"
 #: openpilot/starpilot/ui/onroad_customization.py
 msgid "Invalid legacy camera placement"
 msgstr "旧版摄像头位置无效"
+
+#: openpilot/starpilot/ui/onroad_customization.py
+msgid "Invalid legacy camera position"
+msgstr "旧版摄像头坐标无效"
+
+#: openpilot/starpilot/galaxy/log_relay_stage.py
+msgid "Invalid log report request."
+msgstr "日志报告请求无效。"
 
 #: openpilot/starpilot/galaxy/web/js/plots.js
 msgid "Invalid longitudinal source"
@@ -6435,9 +7175,17 @@ msgstr "无效的配置文档"
 msgid "Invalid projection preview"
 msgstr "投影预览无效"
 
+#: openpilot/starpilot/galaxy/log_relay_stage.py
+msgid "Invalid relay claim link. Use Download ZIP instead."
+msgstr "中继认领链接无效，请改为下载 ZIP。"
+
 #: openpilot/starpilot/ui/replay_settings.py
 msgid "Invalid replay status"
 msgstr "回放状态无效"
+
+#: openpilot/starpilot/galaxy/log_relay_stage.py
+msgid "Invalid response from log relay. Use Download ZIP instead."
+msgstr "日志中继返回了无效响应，请改为下载 ZIP。"
 
 #: openpilot/starpilot/ui/onroad_customization.py
 msgid "Invalid road color fields"
@@ -6458,6 +7206,10 @@ msgstr "已存操作无效"
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Invalid saved advance time; restore Off"
 msgstr "已保存的提前时间无效；恢复为关闭"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Invalid saved assignments"
+msgstr "已存的按键分配无效"
 
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Invalid saved brake threshold"
@@ -6638,6 +7390,10 @@ msgid "Invalid widget placement"
 msgstr "组件位置无效"
 
 #: openpilot/starpilot/ui/onroad_customization.py
+msgid "Invalid widget position"
+msgstr "组件坐标无效"
+
+#: openpilot/starpilot/ui/onroad_customization.py
 msgid "Invalid widget size"
 msgstr "组件尺寸无效"
 
@@ -6702,6 +7458,86 @@ msgstr "摇杆调试模式"
 msgid "Joystick Mode"
 msgstr "摇杆模式"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Just started"
+msgstr "刚开始"
+
+#: openpilot/starpilot/galaxy/web/js/uniden-preview.js
+msgid "K ahead"
+msgstr "K 在前方"
+
+#: openpilot/starpilot/galaxy/web/js/uniden-preview.js
+msgid "K ahead, weak"
+msgstr "K 在前方，弱"
+
+#: openpilot/starpilot/galaxy/web/js/uniden-preview.js
+msgid "K behind"
+msgstr "K 在后方"
+
+#: openpilot/starpilot/galaxy/web/js/uniden-preview.js
+msgid "K drive-by: builds, gets muted, passes"
+msgstr "K 信号经过：渐强、被静音、驶离"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "K full-screen warning"
+msgstr "K 全屏警告"
+
+#: openpilot/starpilot/galaxy/web/js/uniden-preview.js
+msgid "K in Chill mode"
+msgstr "安稳模式下的 K"
+
+#: openpilot/starpilot/galaxy/web/js/uniden-preview.js
+msgid "K in Experimental mode"
+msgstr "实验模式下的 K"
+
+#: openpilot/starpilot/galaxy/web/js/uniden-preview.js
+msgid "K muted on the detector"
+msgstr "K 已在测速仪上静音"
+
+#: openpilot/starpilot/galaxy/web/js/uniden-preview.js
+msgid "K on an R4, no direction"
+msgstr "R4 上的 K，无方向"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "K warning color"
+msgstr "K 警告颜色"
+
+#: openpilot/starpilot/galaxy/web/js/uniden-preview.js
+msgid "K while curves are learning"
+msgstr "弯道学习中的 K"
+
+#: openpilot/starpilot/galaxy/web/js/uniden-preview.js
+msgid "K while disengaged"
+msgstr "脱离状态下的 K"
+
+#: openpilot/starpilot/galaxy/web/js/uniden-preview.js
+msgid "Ka ahead, strong"
+msgstr "Ka 在前方，强"
+
+#: openpilot/starpilot/galaxy/web/js/uniden-preview.js
+msgid "Ka beside"
+msgstr "Ka 在侧方"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Ka full-screen warning"
+msgstr "Ka 全屏警告"
+
+#: openpilot/starpilot/galaxy/web/js/uniden-preview.js
+msgid "Ka in a tight curve"
+msgstr "急弯中的 Ka"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Ka is the band most police radar uses. A learned Ka lockout keeps that signal quiet at that place on later drives, so a real radar set up there could go unannounced. StarPilot learns a Ka source only after five separate passes, and a signal stronger than any seen there still alerts."
+msgstr "Ka 是大多数警用雷达使用的频段。学习到的 Ka 屏蔽点会让该位置的这一信号在之后的行程中保持安静，因此若真有雷达架设在那里，可能不会提醒您。StarPilot 只有在五次不同的经过后才会学习一个 Ka 信号源，且比该处见过的任何信号都强的信号仍会报警。"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Ka warning color"
+msgstr "Ka 警告颜色"
+
+#: openpilot/starpilot/galaxy/web/js/uniden-preview.js
+msgid "Ka with Switchback"
+msgstr "Switchback 模式下的 Ka"
+
 #: openpilot/starpilot/ui/display_owner.py
 msgid "Keep Screen On While eGPU Loads"
 msgstr "eGPU 加载时保持屏幕常亮"
@@ -6717,6 +7553,10 @@ msgstr "请至少让一个完整的裁剪保持在图像内。"
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Keep editing"
 msgstr "继续编辑"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Keep it off"
+msgstr "保持关闭"
 
 #: openpilot/starpilot/ui/slc_offset_feature.py
 msgid "Keep saved speed ranges"
@@ -6738,9 +7578,17 @@ msgstr "让转向辅助独立于巡航保持可用"
 msgid "Keep the app open and both devices on the same Wi-Fi."
 msgstr "请保持应用打开，并让两台设备连接同一 Wi-Fi。"
 
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Keep the controller model to {} characters."
+msgstr "控制器型号请勿超过 {} 个字符。"
+
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Keep the data cable connected and the car’s screen on."
 msgstr "请保持数据线连接，并让车机屏幕保持亮起。"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Keep the detector on and close other apps connected to it. Retrying automatically."
+msgstr "请保持测速仪开机，并关闭连接它的其他 App。正在自动重试。"
 
 #: openpilot/starpilot/galaxy/web/js/models.js
 msgid "Keep the device connected until the download finishes."
@@ -6749,6 +7597,10 @@ msgstr "请保持设备连接，直到下载完成。"
 #: openpilot/starpilot/ui/display_owner.py
 msgid "Keep the driving screen awake while an eGPU model loads. Manual Screen Off still takes priority."
 msgstr "eGPU 模型加载期间保持驾驶屏幕常亮。手动关闭屏幕仍优先。"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Keep the note to {} characters."
+msgstr "说明请勿超过 {} 个字符。"
 
 #: openpilot/starpilot/galaxy/web/js/toggle-backup.js
 msgid "Keep the vehicle parked."
@@ -6773,6 +7625,10 @@ msgstr "请妥善保管此密钥，它可用于远程访问这台 comma。"
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Keep this page open while pairing"
 msgstr "配对期间请保持此页面打开"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Keep tolerance at 0 unless the reading drifts."
+msgstr "除非读数有漂移，否则请将容差保持为 0。"
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout.js
 msgid "Keep widgets within the screen and clear of Speed limit actions. The last valid position is kept."
@@ -6817,6 +7673,10 @@ msgstr "密钥已保存在此 comma 上"
 #: openpilot/starpilot/galaxy/web/js/toyota-tools.js
 msgid "Key values are never displayed."
 msgstr "密钥值不会显示。"
+
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "LASER"
+msgstr "激光"
 
 #: openpilot/starpilot/ui/layout_preview_sidebar.py
 msgid "LAT ACCEL"
@@ -6950,6 +7810,38 @@ msgstr "大屏 UI"
 #: openpilot/starpilot/ui/feature_settings.py
 msgid "Large profile only"
 msgstr "仅大尺寸配置"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Laser"
+msgstr "激光"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Laser full-screen warning"
+msgstr "激光全屏警告"
+
+#: openpilot/starpilot/galaxy/web/js/uniden-preview.js
+msgid "Laser in a tight curve"
+msgstr "急弯中的激光"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Laser is almost always police lidar aimed at you, and by the time it alerts the reading is usually taken. A learned laser lockout keeps laser quiet at that place on later drives. StarPilot learns a laser source only after five separate passes."
+msgstr "激光几乎都是对准您的警用激光测速枪，等到报警时通常已被测速。学习到的激光屏蔽点会让该位置的激光在之后的行程中保持安静。StarPilot 只有在五次不同的经过后才会学习一个激光信号源。"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Laser is muted too. The detector mutes everything at once, so a new signal that arrives after a mute may stay quiet until the detector re-alerts."
+msgstr "激光也会被静音。测速仪会一次性静音所有信号，因此静音后出现的新信号可能保持静音，直到测速仪再次报警。"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Laser learning progress"
+msgstr "激光学习进度"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Laser warning color"
+msgstr "激光警告颜色"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Last 20 StarPort sessions, StarPort settings, renderer logs, and masked device snapshot."
+msgstr "最近 20 次 StarPort 会话、StarPort 设置、渲染器日志，以及已遮盖敏感信息的设备快照。"
 
 #: openpilot/starpilot/galaxy/web/js/vehicle-controls.js
 msgid "Last auto-detected vehicle"
@@ -7165,6 +8057,10 @@ msgstr "前车信息"
 msgid "Lead car"
 msgstr "前车"
 
+#: openpilot/starpilot/galaxy/web/js/onroad-layout.js
+msgid "Lead readout"
+msgstr "前车读数"
+
 #: openpilot/starpilot/ui/conditional_feature.py
 msgid "Lead vehicle"
 msgstr "前车"
@@ -7174,9 +8070,33 @@ msgstr "前车"
 msgid "Leads, stops, curve limits and driver overrides retain priority."
 msgstr "前车、停车、弯道限速和驾驶员干预仍优先。"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Learn"
+msgstr "学习"
+
 #: openpilot/starpilot/galaxy/web/js/controllers.js
 msgid "Learn Button"
 msgstr "学习按键"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Learn Ka lockouts"
+msgstr "学习 Ka 屏蔽点"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Learn Ka lockouts automatically?"
+msgstr "自动学习 Ka 屏蔽点？"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Learn Laser lockouts"
+msgstr "学习激光屏蔽点"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Learn laser lockouts automatically?"
+msgstr "自动学习激光屏蔽点？"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Learn lockouts automatically"
+msgstr "自动学习屏蔽点"
 
 #: openpilot/starpilot/ui/torque_feature.py
 msgid "Learned"
@@ -7202,6 +8122,18 @@ msgstr "学习方案损失"
 msgid "Learned steering corrections, collection progress and current application."
 msgstr "已学习的转向修正、采集进度与当前应用情况。"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Learning"
+msgstr "学习中"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Learning 1 source"
+msgstr "正在学习 1 个信号源"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Learning is off"
+msgstr "学习已关闭"
+
 #: openpilot/starpilot/galaxy/web/js/flm-training-results.js
 msgid "Learning paused"
 msgstr "学习已暂停"
@@ -7221,6 +8153,14 @@ msgstr "学习进度"
 #: openpilot/starpilot/galaxy/web/js/flm-training-results.js
 msgid "Learning state reported; trial application unknown"
 msgstr "已报告学习状态，试验应用情况未知"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Learning {} sources"
+msgstr "正在学习 {} 个信号源"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Learning: watching for repeat sources"
+msgstr "学习中：正在留意重复出现的信号源"
 
 #: openpilot/starpilot/galaxy/web/js/sentry-notifications.js
 msgid "Leave blank to keep saved URL"
@@ -7274,6 +8214,10 @@ msgstr "旧版已存值；采用后才能编辑"
 msgid "Legacy value; adopt to edit"
 msgstr "旧版数值；采用后才能编辑"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Let each new signal beep for a moment, then mute it. The alert stays on screen. If it reaches the chosen strength, the detector is unmuted, the card says Strong signal and the warning flashes. Choose Never to keep it quiet. Laser is never muted this way."
+msgstr "每个新信号先响一会儿再静音，警报仍留在屏幕上。若信号达到所选强度，测速仪会取消静音，卡片显示“强信号”，警告闪烁。选择“从不”则保持静音。激光不会以此方式静音。"
+
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Lets a confident driving-model path reduce lane-centering correction when the model path differs from the lane center."
 msgstr "当模型路径与车道中心不一致时，让有把握的驾驶模型路径减小车道居中的修正量。"
@@ -7282,9 +8226,17 @@ msgstr "当模型路径与车道中心不一致时，让有把握的驾驶模型
 msgid "Lets a three-finger tap on a supported Tesla screen toggle Always On Lateral."
 msgstr "在受支持的 Tesla 屏幕上，三指点击可切换全时横向控制。"
 
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Lets gravity carry the car above set speed without targeting a higher speed. Changes apply while driving."
+msgstr "下坡时借重力让车速超过设定速度，但不以更高速度为目标。更改在行驶中生效。"
+
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Lets the Ioniq 5 or Ioniq 6 left paddle pause acceleration and braking while Always On Lateral keeps steering."
 msgstr "让 Ioniq 5 或 Ioniq 6 的左拨片暂停加速和刹车，同时全时横向控制继续转向。"
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Lets the car coast above set speed on descents within the configured allowance."
+msgstr "允许车辆在下坡时于设定的容许范围内以高于设定速度滑行。"
 
 #: openpilot/starpilot/ui/slc_action_dispatch.py
 msgid "Limit accepted"
@@ -7309,6 +8261,10 @@ msgstr "按速度限制加速度。舒适较柔和；运动和运动+允许更�
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Limits the low-speed steering pause to times when a turn signal is on."
 msgstr "仅在转向灯开启时才启用低速转向暂停。"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Line along the border"
+msgstr "沿边框的线条"
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout.js
 #: openpilot/starpilot/ui/onroad_jetlink.py
@@ -7424,6 +8380,10 @@ msgstr "正在加载控制台…"
 #: openpilot/starpilot/galaxy/web/js/logs.js
 msgid "Loading crash reports…"
 msgstr "正在加载崩溃报告…"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Loading detector setup…"
+msgstr "正在加载测速仪设置…"
 
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Loading history"
@@ -7558,6 +8518,10 @@ msgstr "本地动作记录不可用。"
 msgid "Local network"
 msgstr "本地网络"
 
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Local network interfaces, Bonjour discovery, and Bluetooth bridge events (passwords & MACs masked)."
+msgstr "本地网络接口、Bonjour 发现和蓝牙桥接事件（密码和 MAC 地址已遮盖）。"
+
 #: openpilot/starpilot/galaxy/web/js/record-history.js
 msgid "Local recording inventory is unavailable."
 msgstr "本地录像清单不可用。"
@@ -7607,6 +8571,26 @@ msgstr "预览中无法使用本地车辆选择。"
 msgid "Localization"
 msgstr "本地化"
 
+#: openpilot/starpilot/uniden/feed.py
+msgid "Locked out here ({})"
+msgstr "已在此处屏蔽（{}）"
+
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "Lockout"
+msgstr "屏蔽点"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Lockouts"
+msgstr "屏蔽点"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Locks out next pass"
+msgstr "下次经过即屏蔽"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Log report type"
+msgstr "日志报告类型"
+
 #: openpilot/starpilot/galaxy/web/js/logs.js
 msgid "Log summaries remain available."
 msgstr "日志摘要仍可查看。"
@@ -7614,6 +8598,10 @@ msgstr "日志摘要仍可查看。"
 #: openpilot/starpilot/galaxy/web/js/system-monitor-data.js
 msgid "Log uploads"
 msgstr "日志上传"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Log uploads here are only for StarPort, the phone app, and controllers. For driving behavior, alerts, or anything else, ask in the StarPilot Discord (if it's about a drive, share your car model and route link)."
+msgstr "此处的日志上传仅适用于 StarPort、手机 App 和控制器。驾驶行为、警报或其他问题，请在 StarPilot Discord 中提问（如果与某次行程有关，请提供您的车型和路线链接）。"
 
 #: openpilot/starpilot/galaxy/web/js/auth-client.js
 msgid "Logout failed"
@@ -7630,6 +8618,14 @@ msgstr "日志与诊断"
 #: openpilot/starpilot/galaxy/web/js/route-workspace.js
 msgid "Logs & files"
 msgstr "日志与文件"
+
+#: openpilot/starpilot/galaxy/log_relay_stage.py
+msgid "Logs are already being prepared."
+msgstr "日志已在准备中。"
+
+#: openpilot/starpilot/galaxy/log_relay_stage.py
+msgid "Logs uploaded. Your report is not posted until you finish on Discord."
+msgstr "日志已上传。在 Discord 上完成操作前，您的报告不会发布。"
 
 #: openpilot/starpilot/galaxy/web/data/catalog.json
 msgid "Logs, diagnostics, drive state, and help"
@@ -7749,6 +8745,10 @@ msgstr "低电压切断"
 msgid "Low-speed follow"
 msgstr "低速跟车"
 
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Lower starts later; higher starts earlier. Save while parked. Applies next drive."
+msgstr "数值越低越晚开始减速，越高越早开始。请在驻车时保存，下次行程生效。"
+
 #: openpilot/starpilot/ui/sentry_owner.py
 msgid "Lower values detect smaller acceleration changes"
 msgstr "数值越低，越能检测到较小的加速度变化"
@@ -7788,6 +8788,10 @@ msgstr "MODE 键短按"
 #: openpilot/starpilot/ui/wheel_feature.py
 msgid "MODE very long press"
 msgstr "MODE 键超长按"
+
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "MUTED"
+msgstr "已静音"
 
 #: openpilot/starpilot/galaxy/web/js/app.js
 msgid "Main"
@@ -7829,6 +8833,10 @@ msgstr "手动实验模式"
 #: openpilot/starpilot/ui/torque_feature.py
 msgid "Manual friction"
 msgstr "手动摩擦"
+
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "Manual mute"
+msgstr "手动静音"
 
 #: openpilot/starpilot/ui/gain_feature.py
 msgid "Manual steering response"
@@ -7966,6 +8974,14 @@ msgstr "地图"
 msgid "Maps needs a verified provider and an installed offline map package"
 msgstr "地图需要经验证的提供方和已安装的离线地图包"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Margin over the limit ({})"
+msgstr "超出限速的余量（{}）"
+
+#: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
+msgid "Marker color"
+msgstr "标记颜色"
+
 #: openpilot/starpilot/ui/bluetooth_compact.py
 msgid "Match Bluetooth code"
 msgstr "核对蓝牙码"
@@ -7978,6 +8994,14 @@ msgstr "核对蓝牙码 {}？"
 msgid "Matches Spotify’s official download"
 msgstr "与 Spotify 官方下载一致"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Matches {} GHz exactly"
+msgstr "精确匹配 {} GHz"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Matches {}–{} GHz"
+msgstr "匹配 {}–{} GHz"
+
 #: openpilot/selfdrive/ui/layouts/settings/toggles.py
 msgid "Max speed when engaging openpilot. If you are already driving faster, your current speed is used. Resume restores the previous max speed. Changes apply the next time you engage."
 msgstr "启用 openpilot 时的最高速度。若您已在更高车速行驶，则使用当前速度。“恢复”会还原之前的最高速度。更改在下次启用时生效。"
@@ -7989,6 +9013,10 @@ msgstr "最大化上传训练数据，以改进 openpilot 的驾驶模型。"
 #: openpilot/starpilot/ui/power_owner.py
 msgid "Maximum Parked Time"
 msgstr "最长驻车时间"
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Maximum Speed Above Set Speed"
+msgstr "超出设定速度上限"
 
 #: openpilot/starpilot/galaxy/web/js/flm-training-results.js
 msgid "Measuring steering response"
@@ -8046,6 +9074,10 @@ msgstr "镜像摄像头裁剪"
 #: openpilot/starpilot/galaxy/web/js/vasm.js
 msgid "Mirrored camera window canvas, editing"
 msgstr "镜像摄像头车窗画布，编辑中"
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Mirrors the Adj Spot Camera crop horizontally."
+msgstr "水平镜像侧方摄像头的裁剪画面。"
 
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Mirrors the blind-spot camera crop horizontally."
@@ -8255,6 +9287,30 @@ msgstr "音乐通过您的车辆或音箱播放；警报仍由 comma 自身的�
 msgid "Mute"
 msgstr "静音"
 
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "Mute Memory"
+msgstr "静音记忆"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Mute after a few seconds"
+msgstr "数秒后静音"
+
+#: openpilot/starpilot/uniden/protocol.py
+msgid "Mute delay must be 1–60 seconds"
+msgstr "静音延迟必须为 1–60 秒"
+
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "Mute sent"
+msgstr "已发送静音"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Mute the beep, keep the alert on screen, while you are at or under the posted limit plus the margin. Sudden strong signals are never quieted. Needs a known limit and a GPS fix."
+msgstr "车速不超过道路限速加余量时，静音提示音，警报仍留在屏幕上。突然出现的强信号始终不会被静音。需要已知限速和 GPS 定位。"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Mute when every active signal matches an enabled rule. A brief initial beep may occur."
+msgstr "当所有当前信号都匹配已启用的规则时静音。开始时可能会短暂响一声。"
+
 #: openpilot/starpilot/ui/feature_settings_state.py
 msgid "Muted"
 msgstr "已静音"
@@ -8351,6 +9407,10 @@ msgstr "附近设备"
 msgid "Nearby devices"
 msgstr "附近设备"
 
+#: openpilot/starpilot/ui/tesla_set_speed_feature.py
+msgid "Needs Alpha Longitudinal turned on."
+msgstr "需要开启 Alpha 纵向控制。"
+
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Needs reinstalling"
 msgstr "需要重新安装"
@@ -8358,6 +9418,14 @@ msgstr "需要重新安装"
 #: openpilot/starpilot/ui/vehicle_large.py
 msgid "Needs review"
 msgstr "需要检查"
+
+#: openpilot/starpilot/ui/tesla_set_speed_feature.py
+msgid "Needs the Tesla CAN add-on cable"
+msgstr "需要 Tesla CAN 附加线束"
+
+#: openpilot/starpilot/ui/tesla_set_speed_feature.py
+msgid "Needs the Tesla CAN add-on cable."
+msgstr "需要 Tesla CAN 附加线束。"
 
 #: openpilot/starpilot/ui/wheel_feature.py
 msgid "Neither LKAS nor MAIN is assigned Toggle AOL, so both retain the default AOL toggle."
@@ -8380,6 +9448,10 @@ msgstr "更改网络或信道可能会中断访问。更改密码或关闭热点
 #: openpilot/starpilot/ui/replay_settings.py
 msgid "Neutral"
 msgstr "空挡"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Never"
+msgstr "从不"
 
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Never at standstill. Applies next drive."
@@ -8453,6 +9525,14 @@ msgstr "无可用更新"
 msgid "No action"
 msgstr "无操作"
 
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "No active alerts"
+msgstr "暂无警报"
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "No automatic save is shown here."
+msgstr "此处未显示自动保存。"
+
 #: openpilot/starpilot/galaxy/web/js/software-status.js
 msgid "No branch list is available yet. Check for updates to refresh it."
 msgstr "暂无分支列表，请检查更新以刷新。"
@@ -8469,6 +9549,10 @@ msgstr "没有可用的车内画面，请尝试重新拍摄快照。"
 msgid "No controller is attached."
 msgstr "未连接控制器。"
 
+#: openpilot/starpilot/galaxy/web/js/controllers.js
+msgid "No controller is attached. Plug in a USB controller or"
+msgstr "未连接控制器。请插入 USB 控制器，或"
+
 #: openpilot/starpilot/galaxy/web/js/flm.js
 msgid "No correction reported applied"
 msgstr "未报告任何修正已应用"
@@ -8476,6 +9560,10 @@ msgstr "未报告任何修正已应用"
 #: openpilot/starpilot/galaxy/web/js/logs.js
 msgid "No crash reports."
 msgstr "没有崩溃报告。"
+
+#: openpilot/starpilot/common/car_control_config.py
+msgid "No current speed limit"
+msgstr "当前没有限速"
 
 #: openpilot/starpilot/galaxy/web/js/flm.js
 msgid "No delay-paired steering episode plot has been reported yet."
@@ -8504,6 +9592,10 @@ msgstr "此处没有文件夹。"
 #: openpilot/starpilot/ui/pip_owner.py
 msgid "No fresh cabin frame"
 msgstr "无最新车内画面"
+
+#: openpilot/starpilot/galaxy/server.py
+msgid "No fresh camera frame. Try again shortly."
+msgstr "没有最新的摄像头画面，请稍后重试。"
 
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "No learned samples"
@@ -8565,6 +9657,10 @@ msgstr "暂无离线区域。{}"
 msgid "No other branches available"
 msgstr "没有其他可用分支"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "No paired detector found."
+msgstr "未找到已配对的测速仪。"
+
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "No paired devices yet. Pair your car or speaker on the"
 msgstr "尚无已配对的设备。请在"
@@ -8601,6 +9697,10 @@ msgstr "没有运行中的模型"
 msgid "No saved devices found."
 msgstr "未找到已保存的设备。"
 
+#: openpilot/starpilot/galaxy/web/js/bluetooth.js
+msgid "No saved devices yet. Choose Add a device to pair one."
+msgstr "还没有已保存的设备。请选择“添加设备”进行配对。"
+
 #: openpilot/starpilot/galaxy/web/js/record-history.js
 msgid "No saved drives found on this device."
 msgstr "此设备上未找到已保存的行程。"
@@ -8608,6 +9708,10 @@ msgstr "此设备上未找到已保存的行程。"
 #: openpilot/starpilot/galaxy/web/js/home.js
 msgid "No saved drives yet."
 msgstr "还没有已保存的行程。"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "No saved frequencies"
+msgstr "没有已保存的频率"
 
 #: openpilot/starpilot/ui/torque_feature.py
 msgid "No saved geometry"
@@ -8620,6 +9724,10 @@ msgstr "未加载已保存的布局"
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "No saved learning"
 msgstr "无已保存的学习数据"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "No saved lockouts"
+msgstr "没有已保存的屏蔽点"
 
 #: openpilot/starpilot/ui/torque_feature.py
 msgid "No saved override"
@@ -8698,6 +9806,10 @@ msgstr "未分配"
 #: openpilot/starpilot/galaxy/web/js/vehicle-controls.js
 msgid "Not available"
 msgstr "不可用"
+
+#: openpilot/starpilot/ui/tesla_set_speed_feature.py
+msgid "Not available on release builds."
+msgstr "发布版中不可用。"
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Not available on this build — the StarPort display and encoder are missing."
@@ -8999,6 +10111,14 @@ msgstr "在 iPhone 上，请允许 Spotify 的"
 msgid "On the app’s main Settings page, turn on"
 msgstr "在 App 的主设置页面，开启"
 
+#: openpilot/starpilot/galaxy/web/js/uniden-preview.js
+msgid "On the road"
+msgstr "道路场景"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "On the screen"
+msgstr "屏幕显示"
+
 #: openpilot/starpilot/galaxy/localization_settings.py
 msgid "On uses kilometers; Off uses miles. Saved speed-limit offsets keep their physical values."
 msgstr "开启使用公里，关闭使用英里。已保存的限速偏移保持其实际数值。"
@@ -9031,6 +10151,14 @@ msgstr "一次性设置，让车辆接受您的 comma。"
 msgid "Online"
 msgstr "在线"
 
+#: openpilot/starpilot/galaxy/log_relay_stage.py
+msgid "Online log relay is unavailable. Use Download ZIP instead."
+msgstr "在线日志中继不可用，请改为下载 ZIP。"
+
+#: openpilot/starpilot/galaxy/log_relay_stage.py
+msgid "Online log relay is updating. Use Download ZIP instead."
+msgstr "在线日志中继正在更新，请改为下载 ZIP。"
+
 #: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
 msgid "Only"
 msgstr "此 comma 本月仅剩"
@@ -9038,6 +10166,10 @@ msgstr "此 comma 本月仅剩"
 #: openpilot/starpilot/ui/onroad_state.py
 msgid "Only a valid observation can carry a speed limit"
 msgstr "只有有效观测才能携带限速"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Only staff receive the diagnostic ZIP."
+msgstr "只有工作人员会收到诊断 ZIP。"
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Only the StarPort screen uses these. The comma screen has its own options on the Comma tab. Save to apply."
@@ -9132,6 +10264,10 @@ msgstr "打开驾驶模型"
 msgid "Open Galaxy"
 msgstr "打开 Galaxy"
 
+#: openpilot/starpilot/galaxy/web/js/driving-help.js
+msgid "Open Galaxy Routes"
+msgstr "打开 Galaxy 路线"
+
 #: openpilot/starpilot/galaxy/web/js/install-app.js
 msgid "Open Galaxy in Safari, tap Share, then Add to Home Screen. Turn on Open as Web App if shown."
 msgstr "在 Safari 中打开 Galaxy，点按“分享”，再选择“添加到主屏幕”。如有提示，请开启“作为网页 App 打开”。"
@@ -9171,6 +10307,10 @@ msgstr "打开 Spotify 下载页面"
 #: openpilot/starpilot/galaxy/web/js/home.js
 msgid "Open System Monitor"
 msgstr "打开系统监视器"
+
+#: openpilot/starpilot/galaxy/web/js/driving-help.js
+msgid "Open comma connect"
+msgstr "打开 comma connect"
 
 #: openpilot/starpilot/galaxy/web/js/route-workspace.js
 msgid "Open in connect"
@@ -9219,6 +10359,10 @@ msgstr "打开"
 #: openpilot/starpilot/galaxy/web/js/cloud-provider.js
 msgid "Open this Developer page on your device to choose a cloud provider."
 msgstr "请在设备上打开此开发者页面以选择云服务提供方。"
+
+#: openpilot/starpilot/galaxy/web/js/driving-help.js
+msgid "Open this route online"
+msgstr "在线打开此路线"
 
 #: openpilot/starpilot/galaxy/web/js/galaxy.js
 msgid "Open your Galaxy link"
@@ -9314,6 +10458,14 @@ msgstr "存储空间不足"
 #: openpilot/starpilot/ui/onroad_customization.py
 msgid "Outer lane lines"
 msgstr "外侧车道线"
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Over USB, connects hands-free to the car and sends the Bluetooth pairing request before asking for the screen, as a phone does."
+msgstr "通过 USB 时，先以免提方式连接车辆并发送蓝牙配对请求，再请求屏幕，与手机的做法一致。"
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Over USB, connects hands-free to the car and sends the Bluetooth pairing request before asking for the screen, as a phone does. Applies from the next StarPort connection."
+msgstr "通过 USB 时，先以免提方式连接车辆并发送蓝牙配对请求，再请求屏幕，与手机的做法一致。下次 StarPort 连接时生效。"
 
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "Overridden Chill"
@@ -9419,6 +10571,10 @@ msgstr "模型对已启用"
 msgid "Pair again here."
 msgstr "请在此重新配对。"
 
+#: openpilot/starpilot/galaxy/web/js/bluetooth.js
+msgid "Pair and manage devices here. Use the tabs for integration settings."
+msgstr "在此配对和管理设备。集成设置请使用各标签页。"
+
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Pair another"
 msgstr "配对其他"
@@ -9438,6 +10594,10 @@ msgstr "直接与车辆的无线 Android Auto 配对。"
 #: openpilot/starpilot/galaxy/web/data/catalog.json
 msgid "Pair for remote access, install Galaxy, or set up a Wi-Fi hotspot"
 msgstr "配对远程访问、安装 Galaxy 或设置 Wi-Fi 热点"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Pair in Bluetooth"
+msgstr "在蓝牙中配对"
 
 #: openpilot/starpilot/galaxy/web/js/install-app.js
 msgid "Pair in step 1 to get your install link."
@@ -9471,6 +10631,14 @@ msgstr "模型对运行环境不可用。"
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Pair the USB adapter, such as AAWireless or Motorola MA1."
 msgstr "配对 USB 适配器，如 AAWireless 或 Motorola MA1。"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Pair the detector in Bluetooth, then select it here."
+msgstr "请先在蓝牙中配对测速仪，然后在此选择它。"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Pair the selected detector again on the Devices tab."
+msgstr "请在“设备”标签页中重新配对所选测速仪。"
 
 #: openpilot/starpilot/ui/settings_state.py
 msgid "Pair to Connect"
@@ -9518,6 +10686,10 @@ msgid "Pair your device with comma connect (connect.comma.ai) and claim your com
 msgstr "将设备与 comma connect（connect.comma.ai）配对，领取您的 comma prime 优惠。"
 
 #: openpilot/starpilot/galaxy/web/js/spotify.js
+msgid "Pair your phone in the companion app, or choose"
+msgstr "请在配套 App 中配对手机，或选择"
+
+#: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Pair your phone in the companion app, or tap"
 msgstr "请在配套 App 中配对手机，或点按"
 
@@ -9550,6 +10722,10 @@ msgid "Pairing"
 msgstr "配对中"
 
 #: openpilot/starpilot/galaxy/web/js/bluetooth.js
+msgid "Pairing a Uniden detector?"
+msgstr "要配对 Uniden 测速仪？"
+
+#: openpilot/starpilot/galaxy/web/js/bluetooth.js
 msgid "Pairing canceled."
 msgstr "配对已取消。"
 
@@ -9560,6 +10736,10 @@ msgstr "配对已取消。请在车辆准备好后重新开始。"
 #: openpilot/starpilot/galaxy/web/js/bluetooth.js
 msgid "Pairing did not complete."
 msgstr "配对未完成。"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Pairing or connecting the StarPilot phone app"
+msgstr "配对或连接 StarPilot 手机 App"
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Pairing progress"
@@ -9609,6 +10789,14 @@ msgstr "更改蓝牙连接前请先驻车。"
 msgid "Park before changing hotspot settings."
 msgstr "请先驻车再更改热点设置。"
 
+#: openpilot/starpilot/galaxy/web/js/save-me.js
+msgid "Park before continuing. Wi-Fi, AGNOS, and installed StarPilot stay in place. You will need to pair Galaxy again."
+msgstr "请先驻车再继续。Wi‑Fi、AGNOS 和已安装的 StarPilot 会保留。您需要重新配对 Galaxy。"
+
+#: openpilot/starpilot/uniden/service.py
+msgid "Park before selecting a detector"
+msgstr "请先驻车，再选择测速仪"
+
 #: openpilot/starpilot/galaxy/localization_settings.py
 msgid "Park once to preserve your saved speed-limit offsets before switching units."
 msgstr "切换单位前，请先驻车一次以保留已保存的限速偏移。"
@@ -9616,6 +10804,10 @@ msgstr "切换单位前，请先驻车一次以保留已保存的限速偏移。
 #: openpilot/starpilot/galaxy/web/js/toyota-tools.js
 msgid "Park the car and refresh before changing these settings."
 msgstr "请先停好车并刷新，再更改这些设置。"
+
+#: openpilot/starpilot/galaxy/server.py
+msgid "Park the car before sending a photo test"
+msgstr "请先驻车，再发送照片测试"
 
 #: openpilot/starpilot/galaxy/localization_settings.py
 msgid "Park the vehicle and close driver camera preview before changing the steering-wheel side."
@@ -9637,9 +10829,17 @@ msgstr "请将车辆驻车并重新加载后再编辑。如仍不可用，请重
 msgid "Park the vehicle before changing or downloading models."
 msgstr "请先驻车，再更改或下载模型。"
 
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Park the vehicle before restarting"
+msgstr "请先驻车再重启"
+
 #: openpilot/starpilot/galaxy/web/js/toggle-backup.js
 msgid "Park the vehicle before restoring the layout."
 msgstr "恢复布局前请先将车辆驻车。"
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Park the vehicle before running Save Me"
+msgstr "请先驻车再运行 Save Me"
 
 #: openpilot/starpilot/galaxy/developer_settings.py
 msgid "Park the vehicle to change this setting."
@@ -9649,6 +10849,14 @@ msgstr "请驻车后再更改此设置。"
 msgid "Park the vehicle to download sound packs."
 msgstr "请驻车后再下载音效包。"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Park to change detector settings."
+msgstr "请驻车后更改测速仪设置。"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Park to change settings"
+msgstr "请驻车后更改设置"
+
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Park to configure Speed Limit Controller"
 msgstr "请驻车后配置限速控制器"
@@ -9657,6 +10865,10 @@ msgstr "请驻车后配置限速控制器"
 msgid "Park to download maps."
 msgstr "请驻车后下载地图。"
 
+#: openpilot/starpilot/galaxy/web/js/bluetooth.js
+msgid "Park to pair devices or change Bluetooth connections."
+msgstr "请驻车后再配对设备或更改蓝牙连接。"
+
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Park to reset saved learning"
 msgstr "请驻车后重置已保存的学习数据"
@@ -9664,6 +10876,10 @@ msgstr "请驻车后重置已保存的学习数据"
 #: openpilot/starpilot/galaxy/web/js/bluetooth.js
 msgid "Park to restart the Bluetooth radio."
 msgstr "请驻车后再重启蓝牙无线模块。"
+
+#: openpilot/starpilot/galaxy/server.py
+msgid "Park your car before changing turn slowdown distance"
+msgstr "请先驻车，再更改转弯减速距离"
 
 #: openpilot/starpilot/galaxy/web/js/device-state.js
 #: openpilot/starpilot/galaxy/web/js/model-laboratory.js
@@ -9904,6 +11120,10 @@ msgstr "驾驶风格配置"
 msgid "Phone"
 msgstr "手机"
 
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Phone App"
+msgstr "手机 App"
+
 #: openpilot/starpilot/ui/onroad_map.py
 msgid "Phone GPS"
 msgstr "手机 GPS"
@@ -9920,6 +11140,14 @@ msgstr "手机上网需要 Galaxy 热点。设置和小型请求仍可使用。"
 msgid "Phone over Bluetooth"
 msgstr "通过蓝牙连接手机"
 
+#: openpilot/starpilot/galaxy/server.py
+msgid "Phone subscription not found"
+msgstr "未找到手机订阅"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Phone type"
+msgstr "手机类型"
+
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 msgid "Phone updates:"
 msgstr "手机更新："
@@ -9927,6 +11155,10 @@ msgstr "手机更新："
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 msgid "Phone updates: {}. Last update {} seconds ago."
 msgstr "手机更新：{}。上次更新于 {} 秒前。"
+
+#: openpilot/starpilot/galaxy/web/js/bluetooth-tabs.js
+msgid "Phones & Audio"
+msgstr "手机与音频"
 
 #: openpilot/starpilot/galaxy/web/js/bluetooth.js
 #: openpilot/starpilot/ui/bluetooth_large.py
@@ -9948,6 +11180,10 @@ msgstr "PiP 着色器不可用"
 #: openpilot/starpilot/ui/onroad_customization.py
 msgid "PiP {} side camera"
 msgstr "PiP {} 侧方摄像头"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Pick whether you're on iPhone or Android and tell us what happened in the StarPilot app."
+msgstr "请选择您使用的是 iPhone 还是 Android，并告诉我们 StarPilot App 中出现了什么情况。"
 
 #: openpilot/starpilot/galaxy/web/js/app.js
 msgid "Pin navigation"
@@ -10031,6 +11267,10 @@ msgstr "绘图样本延迟"
 msgid "Plots & Analysis"
 msgstr "绘图与分析"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Point toward the signal: beside the speed for ahead, at the bottom for behind, on both sides for beside. One to four chevrons show strength. An R4 shows them beside the speed."
+msgstr "指向信号方向：前方信号显示在车速旁，后方信号显示在底部，侧方信号显示在两侧。一到四个箭头表示信号强度。R4 将箭头显示在车速旁。"
+
 #: openpilot/starpilot/galaxy/web/js/models.js
 msgid "Polaris models aren't made or endorsed by comma. They're community fine-tunes of comma's driving models."
 msgstr "Polaris 模型并非由 comma 制作或认可，而是社区对 comma 驾驶模型的微调版本。"
@@ -10046,6 +11286,10 @@ msgstr "Posenet 速度无效"
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Position"
 msgstr "位置"
+
+#: openpilot/starpilot/galaxy/web/js/pip.js
+msgid "Position Adj Spot Cameras"
+msgstr "摆放侧方摄像头"
 
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 msgid "Position accuracy is too low."
@@ -10079,6 +11323,10 @@ msgstr "已开启"
 msgid "Prefer phone GPS"
 msgstr "优先使用手机 GPS"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Preferences"
+msgstr "偏好"
+
 #: openpilot/starpilot/ui/controller_feature.py
 msgid "Prep My Vehicle for Tuning"
 msgstr "为我的车辆准备调校"
@@ -10106,6 +11354,10 @@ msgstr "准备…"
 #: openpilot/starpilot/galaxy/web/js/route-workspace.js
 msgid "Preparing MP4"
 msgstr "正在准备 MP4"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Preparing ZIP…"
+msgstr "正在准备 ZIP…"
 
 #: openpilot/starpilot/galaxy/web/js/software-status.js
 msgid "Preparing dependencies"
@@ -10208,6 +11460,10 @@ msgstr "预览正忙，正在自动重试…"
 msgid "Preview is unavailable. Reconnecting automatically…"
 msgstr "预览不可用，正在自动重新连接…"
 
+#: openpilot/starpilot/galaxy/web/js/uniden-preview.js
+msgid "Preview of the full-screen warning on the driving screen"
+msgstr "驾驶界面全屏警告预览"
+
 #: openpilot/starpilot/ui/layout_preview_transport.py
 msgid "Preview rendering expired"
 msgstr "预览渲染已过期"
@@ -10243,6 +11499,10 @@ msgstr "预览请求：{}。{}"
 #: openpilot/starpilot/ui/layout_preview_transport.py
 msgid "Preview response exceeds limit"
 msgstr "预览响应超出限制"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Preview scenario"
+msgstr "预览场景"
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Preview scene"
@@ -10385,6 +11645,10 @@ msgstr "请将车辆挂入 P 挡或使用停车状态后再安装。"
 msgid "Put the car in Park or use offroad mode, then install again."
 msgstr "请将车辆挂入 P 挡或使用停车状态，然后重新安装。"
 
+#: openpilot/starpilot/galaxy/web/js/bluetooth.js
+msgid "Put the device in pairing mode, then search."
+msgstr "请让设备进入配对模式，然后搜索。"
+
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Put your phone on the same Wi‑Fi or hotspot as your comma. Some hotspots and guest networks block devices from seeing each other."
 msgstr "请让手机与 comma 连接同一 Wi‑Fi 或热点。部分热点和访客网络会阻止设备互相发现。"
@@ -10460,9 +11724,25 @@ msgstr "快速日志"
 msgid "Quick video"
 msgstr "快速视频"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Quiet Ride at the posted limit"
+msgstr "限速内安静行驶"
+
+#: openpilot/starpilot/uniden/protocol.py
+msgid "Quiet Ride margin must be 0–15"
+msgstr "安静行驶余量必须为 0–15"
+
+#: openpilot/starpilot/ui/onroad_customization.py
+msgid "R4/R8 detector alerts. Pair and select the detector in Galaxy Bluetooth. Tap an alert to mute."
+msgstr "R4/R8 测速仪警报。请在 Galaxy 蓝牙中配对并选择测速仪。点按警报即可静音。"
+
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "RECONNECTING"
 msgstr "重新连接中"
+
+#: openpilot/starpilot/replay/render.py
+msgid "RECORDED ADJ SPOT CAMERA UNAVAILABLE"
+msgstr "录制的侧方摄像头画面不可用"
 
 #: openpilot/selfdrive/ui/widgets/ssh_key.py
 msgid "REMOVE"
@@ -10548,6 +11828,10 @@ msgstr "只读位置"
 msgid "Read-only system activity. Updates every few seconds."
 msgstr "只读的系统活动，每隔几秒更新。"
 
+#: openpilot/starpilot/galaxy/web/js/pip.js
+msgid "Reading Adj Spot Camera preferences and crop positions…"
+msgstr "正在读取侧方摄像头偏好和裁剪位置…"
+
 #: openpilot/starpilot/galaxy/web/js/favorites.js
 msgid "Reading Quick Select timed out. Reload to try again."
 msgstr "读取快捷选择超时，请重新加载后重试。"
@@ -10626,6 +11910,10 @@ msgstr "可以连接。"
 msgid "Ready to evaluate a small correction"
 msgstr "可评估微小修正"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Ready to receive detector alerts."
+msgstr "已就绪，可接收测速仪警报。"
+
 #: openpilot/starpilot/ui/onroad_jetlink.py
 msgid "Ready to switch"
 msgstr "可切换"
@@ -10676,6 +11964,10 @@ msgstr "请重启设备"
 msgid "Recalibrating"
 msgstr "重新校准中"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Receive alerts while the driving screen is active, even with the widget hidden."
+msgstr "驾驶界面处于活动状态时接收警报，即使组件已隐藏。"
+
 #: openpilot/starpilot/galaxy/web/js/sentry-notifications.js
 msgid "Receive new locally recorded motion events. Notification channels work independently."
 msgstr "接收本地新记录的动作事件，各通知渠道相互独立。"
@@ -10709,9 +12001,21 @@ msgstr "近期版本已加载。"
 msgid "Recenter and follow"
 msgstr "回到当前位置并跟随"
 
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Rechecking with evidence from other drives. {label}"
+msgstr "正在结合其他行程的证据重新检查。{label}"
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Rechecking with evidence from other drives. {} of {} sections read in this recording"
+msgstr "正在结合其他行程的证据重新检查。此录像已读取 {} / {} 个片段"
+
 #: openpilot/starpilot/galaxy/web/js/app.js
 msgid "Reconnect to Galaxy"
 msgstr "重新连接 Galaxy"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Reconnecting"
+msgstr "正在重新连接"
 
 #: openpilot/starpilot/galaxy/web/js/snapshot-feed.js
 msgid "Reconnecting automatically…"
@@ -10785,6 +12089,14 @@ msgstr "录像操作失败。请刷新录像库后重试。"
 msgid "Recording eligible steering measurements"
 msgstr "正在记录符合条件的转向测量值"
 
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Recording {} of {}. {label}"
+msgstr "正在分析第 {} 个录像（共 {} 个）。{label}"
+
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "Recording {} of {}. {} of {} sections read in this recording"
+msgstr "正在分析第 {} 个录像（共 {} 个）。此录像已读取 {} / {} 个片段"
+
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Recordings"
 msgstr "录像"
@@ -10840,6 +12152,10 @@ msgstr "拒绝"
 #: openpilot/starpilot/ui/bluetooth_large.py
 msgid "Reject pairing"
 msgstr "拒绝配对"
+
+#: openpilot/starpilot/ui/appearance_preferences.py
+msgid "Relative speed"
+msgstr "相对速度"
 
 #: openpilot/selfdrive/ui/layouts/settings/toggles.py
 msgid "Relaxed"
@@ -10906,6 +12222,10 @@ msgstr "远程启动唤醒 comma"
 msgid "Remote access"
 msgstr "远程访问"
 
+#: openpilot/starpilot/galaxy/web/data/catalog.json
+msgid "Remote access, app setup, networks, Bluetooth, and support"
+msgstr "远程访问、App 设置、网络、蓝牙与支持"
+
 #: openpilot/starpilot/ui/galaxy_access.py
 msgid "Remote client unavailable"
 msgstr "远程客户端不可用"
@@ -10958,6 +12278,10 @@ msgstr "移除 Spotify？"
 msgid "Remove StarPort support?"
 msgstr "移除 StarPort 支持？"
 
+#: openpilot/starpilot/uniden/locks.py
+msgid "Remove a lockout before adding another"
+msgstr "请先移除一个屏蔽点再添加"
+
 #: openpilot/starpilot/galaxy/web/js/route-cleanup.js
 msgid "Remove all saved driving routes and their logs. This does not reset settings or software."
 msgstr "删除所有已保存的行驶路线及其日志，不会重置设置或软件。"
@@ -10978,9 +12302,21 @@ msgstr "从我的收藏中移除"
 msgid "Remove from your favorites:"
 msgstr "从我的收藏中移除："
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Remove lockout Laser"
+msgstr "移除激光屏蔽点"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Remove lockout {}"
+msgstr "移除屏蔽点 {}"
+
 #: openpilot/starpilot/ui/bluetooth_compact.py
 msgid "Remove phones paired for the StarPilot app only?"
 msgstr "移除仅用于 StarPilot App 的已配对手机？"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Remove rule {}"
+msgstr "移除规则 {}"
 
 #: openpilot/starpilot/ui/onroad_favorites.py
 msgid "Remove shortcut"
@@ -11198,6 +12534,10 @@ msgstr "回放已停止："
 #: openpilot/starpilot/galaxy/web/js/replay.js
 msgid "Replay stopped: {}"
 msgstr "回放已停止：{}"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Replay the scenario"
+msgstr "回放场景"
 
 #: openpilot/starpilot/ui/replay_settings.py
 msgid "Replay timeline: green Chill; cyan AOL; orange Experimental; red alerts; yellow bookmarks."
@@ -11449,6 +12789,10 @@ msgstr "重置设置"
 msgid "Reset both remembered manual choices to Automatic?"
 msgstr "将两项已记住的手动选择重置为自动？"
 
+#: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
+msgid "Reset color"
+msgstr "重置颜色"
+
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "Reset invalid saved Long Planner profiles to defaults?"
 msgstr "将无效的已保存纵向规划器配置重置为默认？"
@@ -11602,6 +12946,22 @@ msgid "Restart and install update"
 msgstr "重启并安装更新"
 
 #: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Restart device"
+msgstr "重启设备"
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Restart device?"
+msgstr "重启设备？"
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Restart is unavailable on this device"
+msgstr "此设备上无法重启"
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Restart requested. Galaxy will reconnect when the device is back online."
+msgstr "已请求重启。设备重新上线后，Galaxy 将重新连接。"
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
 msgid "Restart requested. Waiting to reconnect and verify the installed build."
 msgstr "已请求重启，正在等待重新连接并验证已安装的版本。"
 
@@ -11743,6 +13103,11 @@ msgstr "恢复…"
 msgid "Resume Driving Manually"
 msgstr "请恢复手动驾驶"
 
+#: openpilot/starpilot/ui/slc_resume_action.py
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Resume Speed Limit + Offset"
+msgstr "恢复限速 + 偏移"
+
 #: openpilot/starpilot/ui/unified_speed_presentation.py
 msgid "Resume at"
 msgstr "恢复至"
@@ -11754,6 +13119,10 @@ msgstr "保持巡航停车状态，直到您踩踏板或取消巡航。下次启
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Retry"
 msgstr "重试"
+
+#: openpilot/starpilot/galaxy/web/js/remote-access.js
+msgid "Retry QR code"
+msgstr "重新加载二维码"
 
 #: openpilot/starpilot/galaxy/web/js/replay.js
 msgid "Retry replay"
@@ -11895,6 +13264,58 @@ msgstr "右舵驾驶"
 msgid "Right camera"
 msgstr "右侧摄像头"
 
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right scroll wheel / Fast scroll down"
+msgstr "右滚轮 / 快速向下滚动"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right scroll wheel / Fast scroll up"
+msgstr "右滚轮 / 快速向上滚动"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right scroll wheel / Nudge left"
+msgstr "右滚轮 / 向左拨"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right scroll wheel / Nudge left — hold"
+msgstr "右滚轮 / 向左拨 — 按住"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right scroll wheel / Nudge right"
+msgstr "右滚轮 / 向右拨"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right scroll wheel / Nudge right — hold"
+msgstr "右滚轮 / 向右拨 — 按住"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right scroll wheel / Scroll down"
+msgstr "右滚轮 / 向下滚动"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right scroll wheel / Scroll up"
+msgstr "右滚轮 / 向上滚动"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right stalk / Down"
+msgstr "右拨杆 / 向下"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right stalk / Down — full press while engaged"
+msgstr "右拨杆 / 向下 — 启用时全按"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right stalk / Down — half press while engaged"
+msgstr "右拨杆 / 向下 — 启用时半按"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right stalk / Down — hold"
+msgstr "右拨杆 / 向下 — 按住"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Right stalk / Up"
+msgstr "右拨杆 / 向上"
+
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Right-Hand Drive"
 msgstr "右舵"
@@ -11940,6 +13361,10 @@ msgstr "路线 ID"
 #: openpilot/starpilot/galaxy/web/js/route-workspace.js
 msgid "Route MP4"
 msgstr "路线 MP4"
+
+#: openpilot/starpilot/galaxy/web/js/driving-help.js
+msgid "Route and segment for support"
+msgstr "供支持使用的路线和片段"
 
 #: openpilot/starpilot/ui/replay_settings.py
 msgid "Route details"
@@ -11988,6 +13413,14 @@ msgstr "路线"
 msgid "Routes are unavailable through the Galaxy tunnel. Open Galaxy locally to access Routes."
 msgstr "通过 Galaxy 隧道无法使用路线。请在本地打开 Galaxy 以访问路线。"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Rule {} enabled"
+msgstr "规则 {} 已启用"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Rules"
+msgstr "规则"
+
 #: openpilot/starpilot/galaxy/web/js/system-monitor-data.js
 msgid "Running"
 msgstr "运行中"
@@ -11995,6 +13428,10 @@ msgstr "运行中"
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Runs on this comma"
 msgstr "在此 comma 上运行"
+
+#: openpilot/starpilot/ui/feature_defaults.py
+msgid "Runs the fan sooner and harder to keep the comma 10-16 °C (18-29 °F) cooler on hot days, at the cost of more fan noise. Applies next drive."
+msgstr "让风扇更早、更强劲地运转，在炎热天气下使 comma 温度降低 10-16 °C（18-29 °F），代价是风扇噪音更大。下次行驶生效。"
 
 #: openpilot/starpilot/galaxy/web/js/model-laboratory.js
 #: openpilot/starpilot/ui/models_state.py
@@ -12099,6 +13536,18 @@ msgstr "保存裁剪"
 msgid "Save Key"
 msgstr "保存密钥"
 
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Save Me is already pending"
+msgstr "Save Me 已在等待执行"
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Save Me is unavailable on this device"
+msgstr "此设备上无法使用 Save Me"
+
+#: openpilot/starpilot/galaxy/web/js/save-me.js
+msgid "Save Me requested. Galaxy will disconnect during cleanup and restart."
+msgstr "已请求 Save Me。清理和重启期间 Galaxy 将断开连接。"
+
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Save Name"
 msgstr "保存名称"
@@ -12167,6 +13616,10 @@ msgstr "保存热点"
 msgid "Save key"
 msgstr "保存密钥"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Save known false alerts such as your head unit. Rules apply wherever you drive."
+msgstr "保存已知的误报来源，例如您的车机。规则在任何地点都适用。"
+
 #: openpilot/starpilot/galaxy/web/js/recording-actions.js
 msgid "Save name"
 msgstr "保存名称"
@@ -12214,6 +13667,10 @@ msgstr "保存后才会在 StarPort 上应用屏幕选项。"
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Save your"
 msgstr "离开前请保存您的"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Save your Uniden settings before leaving, keep editing, or discard the changes."
+msgstr "离开前请保存您的 Uniden 设置，或继续编辑，或放弃更改。"
 
 #: openpilot/starpilot/galaxy/web/js/toggle-backup.js
 msgid "Save your editable toggles, onroad layout and colors. Restore compatible settings while parked."
@@ -12375,6 +13832,10 @@ msgstr "{} 中已保存的自定义点位。请使用下方控件，一次调整
 msgid "Saved data remains untouched; runtime control is disabled"
 msgstr "已保存的数据保持不变；运行时控制已禁用"
 
+#: openpilot/starpilot/galaxy/web/js/bluetooth.js
+msgid "Saved devices"
+msgstr "已保存的设备"
+
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Saved document unreadable or too large"
 msgstr "已保存的文档无法读取或过大"
@@ -12430,6 +13891,10 @@ msgstr "无法读取已存音量"
 #: openpilot/starpilot/ui/power_owner.py
 msgid "Saved limits for automatic offroad shutdown."
 msgstr "已保存的停车状态自动关机限制。"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Saved lockouts"
+msgstr "已保存的屏蔽点"
 
 #: openpilot/starpilot/ui/conditional_feature.py
 msgid "Saved manual choices need repair"
@@ -12754,6 +14219,10 @@ msgstr "在其中搜索…"
 msgid "Searches"
 msgstr "搜索"
 
+#: openpilot/starpilot/galaxy/web/js/bluetooth.js
+msgid "Searching for devices…"
+msgstr "正在搜索设备…"
+
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Searching for nearby cars and adapters…"
 msgstr "正在搜索附近的车辆和适配器…"
@@ -12834,6 +14303,10 @@ msgstr "片段 {} 详情"
 msgid "Segment {} · {} of {}"
 msgstr "片段 {} · {} / {}"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Segmented line"
+msgstr "分段线条"
+
 #: openpilot/starpilot/ui/replay_settings.py
 msgid "Segments"
 msgstr "片段"
@@ -12866,6 +14339,10 @@ msgstr "选择分支"
 msgid "Select a language"
 msgstr "选择语言"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Select a paired detector"
+msgstr "选择已配对的测速仪"
+
 #: openpilot/starpilot/galaxy/web/data/catalog.json
 msgid "Select a temporary drive state for this device"
 msgstr "为此设备选择临时行驶状态"
@@ -12885,6 +14362,10 @@ msgstr "选择或连接车辆以配置速度控制"
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "Select the steering controller and tune its response"
 msgstr "选择转向控制器并调校其响应"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Select your detector"
+msgstr "选择您的测速仪"
 
 #: openpilot/starpilot/galaxy/settings.py
 msgid "Select {} for {}? The selected planner starts with the next driving process."
@@ -12944,6 +14425,10 @@ msgstr "所选控制器"
 #: openpilot/starpilot/ui/torque_feature.py
 msgid "Selected controller uses a fixed torque conversion; factor does not change its output"
 msgstr "所选控制器使用固定扭矩换算；系数不影响其输出"
+
+#: openpilot/starpilot/uniden/service.py
+msgid "Selected detector changed"
+msgstr "所选测速仪已更改"
 
 #: openpilot/starpilot/galaxy/web/js/map-operations.js
 #: openpilot/starpilot/ui/maps_state.py
@@ -13027,6 +14512,22 @@ msgstr "发送 PIN"
 msgid "Send Passkey"
 msgstr "发送配对密钥"
 
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Send StarPort logs"
+msgstr "发送 StarPort 日志"
+
+#: openpilot/starpilot/galaxy/web/data/catalog.json
+msgid "Send StarPort, phone app, or controller logs, or ask on Discord"
+msgstr "发送 StarPort、手机 App 或控制器日志，或在 Discord 上提问"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Send another report"
+msgstr "再发送一份报告"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Send controller logs"
+msgstr "发送控制器日志"
+
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Send it to your comma and check it with Spotify"
 msgstr "发送到您的 comma 并通过 Spotify 校验"
@@ -13035,6 +14536,18 @@ msgstr "发送到您的 comma 并通过 Spotify 校验"
 msgid "Send it to your comma and check the certificate"
 msgstr "发送到您的 comma 并检查证书"
 
+#: openpilot/starpilot/galaxy/web/js/local-access.js
+msgid "Send logs"
+msgstr "发送日志"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Send logs & get help"
+msgstr "发送日志并获取帮助"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Send phone app logs"
+msgstr "发送手机 App 日志"
+
 #: openpilot/starpilot/galaxy/web/js/sentry-notifications.js
 msgid "Send test"
 msgstr "发送测试"
@@ -13042,6 +14555,10 @@ msgstr "发送测试"
 #: openpilot/starpilot/galaxy/web/js/sentry-notifications.js
 msgid "Send test to this phone"
 msgstr "向此手机发送测试"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Sending logs is unavailable"
+msgstr "无法发送日志"
 
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 #: openpilot/starpilot/galaxy/web/js/starport.js
@@ -13086,6 +14603,10 @@ msgstr "哨兵通知"
 msgid "Sentry notifications are unavailable."
 msgstr "哨兵通知不可用。"
 
+#: openpilot/starpilot/galaxy/server.py
+msgid "Sentry phone push is unavailable. Check Galaxy Sentry settings."
+msgstr "哨兵手机推送不可用。请检查 Galaxy 哨兵设置。"
+
 #: openpilot/selfdrive/ui/layouts/settings/device.py
 msgid "Serial"
 msgstr "序列号"
@@ -13127,6 +14648,14 @@ msgstr "将分辨率设为 480p、720p 或 1080p，视频编码设为 H.264 或�
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "Set Speed To"
 msgstr "将速度设为"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Set Speed To needs Comma can set speed on Tesla dashboard turned on in Vehicle Settings"
+msgstr "“将速度设为”需要在车辆设置中开启“comma 可设置 Tesla 仪表盘速度”"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Set Speed To needs Comma can set speed on Tesla dashboard turned on in Vehicle Settings."
+msgstr "“将速度设为”需要在车辆设置中开启“comma 可设置 Tesla 仪表盘速度”。"
 
 #: openpilot/selfdrive/ui/layouts/arabesque/tools/clock.py
 msgid "Set Time"
@@ -13270,6 +14799,10 @@ msgstr "按速度设置跟车时距，并覆盖低速/高速值。默认使用�
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Sets following time while Close lane-change gap is active. Higher values leave more space."
 msgstr "设置“缩小变道间距”生效时的跟车时距。数值越高，间距越大。"
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Sets how far above set speed downhill coasting can go."
+msgstr "设置下坡滑行可高于设定速度多少。"
 
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Sets how far ahead in time to look for a stop predicted by the driving model."
@@ -13623,6 +15156,10 @@ msgstr "正在车机屏幕上显示 StarPilot。"
 msgid "Showing on your car’s screen."
 msgstr "正在车机屏幕上显示。"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Showing saved settings"
+msgstr "正在显示已保存的设置"
+
 #: openpilot/starpilot/galaxy/web/js/logs.js
 msgid "Showing the 200 newest reports; older reports are omitted."
 msgstr "显示最新的 200 份报告，较早的报告已省略。"
@@ -13634,6 +15171,14 @@ msgstr "正在显示上次收到的路线。重新连接后才会接受更改。
 #: openpilot/starpilot/galaxy/web/js/plots.js
 msgid "Showing the last received sample"
 msgstr "显示的是上次收到的样本"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Showing unsaved changes"
+msgstr "正在显示未保存的更改"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Shown alerts that are muted stay on screen: the widget names the reason, and the warning dims to the muted brightness on the Colors page."
+msgstr "未隐藏的已静音警报仍会留在屏幕上：组件会注明原因，警告会降至“颜色”页面中设置的静音亮度。"
 
 #: openpilot/starpilot/ui/onroad_customization.py
 msgid "Shown while Jetlink is on: connection, device and host processing time. Opacity sets the card background."
@@ -13660,12 +15205,24 @@ msgid "Shows recognized speed-limit signs on the driving screen."
 msgstr "在驾驶界面显示识别到的限速标志。"
 
 #: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Shows the Adj Spot Camera preview during a blind-spot warning."
+msgstr "盲区警告时显示侧方摄像头预览。"
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Shows the Adj Spot Camera preview while a turn signal is on."
+msgstr "转向灯开启时显示侧方摄像头预览。"
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Shows the blind-spot camera preview during a blind-spot warning."
 msgstr "盲区警告时显示盲区摄像头预览。"
 
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Shows the blind-spot camera preview while a turn signal is on."
 msgstr "转向灯开启时显示盲区摄像头预览。"
+
+#: openpilot/starpilot/galaxy/setting_descriptions.py
+msgid "Shows the configured Adj Spot Camera preview when fresh camera frames are available."
+msgstr "有最新摄像头画面时，显示已配置的侧方摄像头预览。"
 
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Shows the configured blind-spot camera preview when fresh camera frames are available."
@@ -13702,6 +15259,14 @@ msgstr "无法完成登录。"
 #: openpilot/starpilot/galaxy/web/js/auth-client.js
 msgid "Sign in failed."
 msgstr "登录失败。"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Sign in required"
+msgstr "需要登录"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Sign in to Galaxy again to reconnect."
+msgstr "请重新登录 Galaxy 以恢复连接。"
 
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Sign out"
@@ -13847,6 +15412,10 @@ msgstr "延后更新"
 #: openpilot/starpilot/ui/models_state.py
 msgid "So"
 msgstr "So"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Soft glow band"
+msgstr "柔和光带"
 
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Softens small acceleration requests, reduces grade correction and smooths light braking on supported GM trucks."
@@ -14001,6 +15570,10 @@ msgstr "速度误差：{} m/s"
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Speed Limit Controller"
 msgstr "限速控制器"
+
+#: openpilot/starpilot/ui/slc_resume_action.py
+msgid "Speed Limit Controller is not running"
+msgstr "限速控制器未运行"
 
 #: openpilot/starpilot/galaxy/web/js/map-operations.js
 msgid "Speed Limit Maps"
@@ -14243,6 +15816,10 @@ msgstr "StarPilot 更新后正在重启。Galaxy 正在等待您的设备上线�
 msgid "StarPilot is showing on your screen. You’re ready to drive."
 msgstr "StarPilot 已显示在您的屏幕上，可以出发了。"
 
+#: openpilot/starpilot/ui/tesla_set_speed_feature.py
+msgid "StarPilot keeps its own set speed and scrolls the Tesla's set speed to match, so the dashboard shows the same speed. The Tesla's can lag a second or two behind. The comma and the Tesla must use the same units. Experimental."
+msgstr "StarPilot 保持自己的设定速度，并滚动调整 Tesla 的设定速度与之一致，使仪表盘显示相同速度。Tesla 的显示可能滞后一两秒。comma 与 Tesla 必须使用相同单位。实验性功能。"
+
 #: openpilot/starpilot/ui/vehicle_bool.py
 msgid "StarPilot speed control after the next startup? Steering stays unchanged."
 msgstr "下次启动后开启 StarPilot 速度控制？转向保持不变。"
@@ -14275,6 +15852,10 @@ msgstr "StarPilot 的 FLM 调校会在行驶中尝试自动修正扭矩配置。
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "StarPort (car audio)"
 msgstr "StarPort（车载音频）"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "StarPort / Car Screen"
+msgstr "StarPort / 车机屏幕"
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "StarPort Layout"
@@ -14667,6 +16248,10 @@ msgstr "红绿灯"
 msgid "Stop scan"
 msgstr "停止扫描"
 
+#: openpilot/starpilot/galaxy/web/js/bluetooth.js
+msgid "Stop search"
+msgstr "停止搜索"
+
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 msgid "Stop sharing phone GPS"
 msgstr "停止共享手机 GPS"
@@ -14736,6 +16321,10 @@ msgstr "仍有已存储的文件；请刷新后重试"
 msgid "Stored records could not be deleted"
 msgstr "无法删除已存储的记录"
 
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "Strong signal"
+msgstr "强信号"
+
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Stuck connecting? Wi-Fi and screen troubleshooting"
 msgstr "一直连不上？Wi-Fi 与屏幕故障排除"
@@ -14800,6 +16389,14 @@ msgstr "对调 Toyota 短按与长按时的巡航速度增量。"
 msgid "Swipe each wheel to select the local date and time."
 msgstr "滑动各滚轮选择本地日期和时间。"
 
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Switch & restart"
+msgstr "切换并重启"
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Switch software branch"
+msgstr "切换软件分支"
+
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "Switch to Offroad and stop driving services?"
 msgstr "切换到停车状态并停止驾驶服务？"
@@ -14807,6 +16404,22 @@ msgstr "切换到停车状态并停止驾驶服务？"
 #: openpilot/starpilot/ui/bluetooth_large.py
 msgid "Switch to Offroad to change Bluetooth power."
 msgstr "请切换到停车状态以更改蓝牙电源。"
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Switch to Stable"
+msgstr "切换到稳定版"
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Switch to Stable — StarPilot (legacy name)"
+msgstr "切换到稳定版 — StarPilot（旧名称）"
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Switch to Testing"
+msgstr "切换到测试版"
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Switch to Testing — Dom (legacy name)"
+msgstr "切换到测试版 — Dom（旧名称）"
 
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Switch to Traffic-Aware Cruise Control to engage"
@@ -14819,6 +16432,10 @@ msgstr "切换到深色模式"
 #: openpilot/starpilot/galaxy/web/js/app.js
 msgid "Switch to light mode"
 msgstr "切换到浅色模式"
+
+#: openpilot/starpilot/galaxy/web/js/software-status.js
+msgid "Switch to {}"
+msgstr "切换到 {}"
 
 #: openpilot/starpilot/ui/conditional_feature.py
 #: openpilot/starpilot/ui/onroad.py
@@ -14899,6 +16516,10 @@ msgstr "请立即接管控制"
 msgid "TEMP"
 msgstr "温度"
 
+#: openpilot/starpilot/galaxy/localization_settings.py
+msgid "TEMP Gauge Units"
+msgstr "温度仪表单位"
+
 #: openpilot/selfdrive/ui/layouts/arabesque/tools/clock.py
 msgid "TIME"
 msgstr "时间"
@@ -14914,6 +16535,10 @@ msgstr "扭矩 %"
 #: openpilot/starpilot/galaxy/web/js/galaxy-select.js
 msgid "Tab"
 msgstr "Tab"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Take Comma Selfie"
+msgstr "拍摄 comma 自拍"
 
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Take Control"
@@ -14948,6 +16573,10 @@ msgstr "接管当前正在播放 Spotify 的手机或音箱。音乐将通过"
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Takes over from the phone or speaker Spotify is playing on now. Music plays through {}. You might need to confirm the switch in the Spotify app."
 msgstr "接管当前正在播放 Spotify 的手机或音箱。音乐将通过 {} 播放。您可能需要在 Spotify App 中确认切换。"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Tap"
+msgstr "点按"
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Tap Connect below."
@@ -15032,6 +16661,14 @@ msgstr "车道和前车间距空旷时，变道期间暂时缩短跟车时距；
 #: openpilot/starpilot/galaxy/setting_descriptions.py
 msgid "Temporarily selects Chill when a tracked lead moves away from a stop and the launch conditions are met."
 msgstr "跟踪的前车从停止状态驶离且满足起步条件时，暂时选用安稳模式。"
+
+#: openpilot/starpilot/ui/tesla_set_speed_feature.py
+msgid "Tesla CAN add-on cable"
+msgstr "Tesla CAN 附加线束"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Tesla screen / Three-finger tap"
+msgstr "Tesla 屏幕 / 三指轻点"
 
 #: openpilot/starpilot/galaxy/web/js/sentry-notifications.js
 msgid "Test"
@@ -15150,6 +16787,10 @@ msgid "The device could not complete the settings request. Check your connection
 msgstr "设备无法完成设置请求，请检查网络连接后重试。"
 
 #: openpilot/starpilot/galaxy/web/js/pip.js
+msgid "The device could not read Adj Spot Camera preferences or crop positions. Reconnecting automatically…"
+msgstr "设备无法读取侧方摄像头偏好或裁剪位置。正在自动重新连接…"
+
+#: openpilot/starpilot/galaxy/web/js/pip.js
 msgid "The device could not read blind-spot camera preferences or crop positions. Reconnecting automatically…"
 msgstr "设备无法读取盲区摄像头偏好或裁剪位置。正在自动重新连接…"
 
@@ -15160,6 +16801,10 @@ msgstr "设备无法读取摄像头区域或盲区监测偏好，正在自动重
 #: openpilot/starpilot/galaxy/web/js/settings.js
 msgid "The device could not read these preferences. Reconnecting automatically…"
 msgstr "设备无法读取这些偏好设置，正在自动重新连接…"
+
+#: openpilot/starpilot/galaxy/web/js/bluetooth.js
+msgid "The device didn't respond. Make sure it's on, nearby and not connected to another phone or app (like the Uniden app), then try again."
+msgstr "设备无响应。请确认它已开机、就在附近，且未连接到其他手机或 App（如 Uniden App），然后重试。"
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout.js
 msgid "The device returned an unsupported colors and layout document. Reload to try again."
@@ -15225,6 +16870,10 @@ msgstr "上次更新无效。"
 #: openpilot/starpilot/galaxy/web/js/flm.js
 msgid "The live desired/observed plots show sampled controller telemetry; they are not actuator-delay aligned."
 msgstr "实时的期望/观测曲线显示的是采样得到的控制器遥测数据，未按执行器延迟对齐。"
+
+#: openpilot/starpilot/galaxy/log_relay_stage.py
+msgid "The log archive exceeds the upload limit. Use Download ZIP instead."
+msgstr "日志压缩包超出上传限制，请改为下载 ZIP。"
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "The map overlay has adjustable size and opacity."
@@ -15338,6 +16987,10 @@ msgstr "无法准备快照"
 #: openpilot/starpilot/galaxy/web/js/sound-packs.js
 msgid "The sound catalog timed out. Reconnecting automatically…"
 msgstr "音效目录加载超时，正在自动重新连接…"
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "The steering request kept swinging back and forth, and the car followed it."
+msgstr "转向请求不断来回摆动，车辆也随之跟随。"
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "The steering wheel and driver monitoring icon can be resized in each layout."
@@ -15455,6 +17108,10 @@ msgstr "这将删除此 comma 上的 Android Auto 证书和密钥。若 StarPort
 msgid "This destination is not implemented in the development preview."
 msgstr "开发预览中尚未实现该目标页面。"
 
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "This device is running a StarPilot fork"
+msgstr "此设备运行的是 StarPilot 复刻版"
+
 #: openpilot/starpilot/galaxy/web/js/bluetooth-notice.js
 msgid "This feature"
 msgstr "此功能"
@@ -15534,6 +17191,10 @@ msgstr "此页面未能加载完成。"
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "This page could not open."
 msgstr "无法打开此页面。"
+
+#: openpilot/starpilot/galaxy/web/js/save-me.js
+msgid "This permanently erases settings, calibration, driving routes, downloaded maps and models, themes, backups, and Galaxy pairing. Back up anything you need first."
+msgstr "此操作将永久清除设置、校准数据、行驶路线、已下载的地图和模型、主题、备份以及 Galaxy 配对。请先备份您需要的内容。"
 
 #: openpilot/starpilot/galaxy/web/js/route-cleanup.js
 msgid "This permanently removes every saved route, including preserved routes and their logs. Settings and software are not changed."
@@ -15647,6 +17308,10 @@ msgstr "打灯后到自动变道前的等待时间；仍会检查车道和盲区
 msgid "Time updated."
 msgstr "时间已更新。"
 
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "Timed mute"
+msgstr "定时静音"
+
 #: openpilot/starpilot/galaxy/web/js/replay.js
 msgid "Timeline colors"
 msgstr "时间线颜色"
@@ -15658,6 +17323,14 @@ msgstr "如需更换手机，请先在旧 App 中停止 GPS 共享，再在另�
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 msgid "To stop, open Connections and select"
 msgstr "如需停止，请打开“连接”并选择"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "To the next 5 km/h"
+msgstr "调至下一个 5 km/h 整倍数"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "To the next 5 mph"
+msgstr "调至下一个 5 mph 整倍数"
 
 #: openpilot/starpilot/galaxy/web/js/toggle-search.js
 msgid "Toggle"
@@ -15699,6 +17372,14 @@ msgstr "切换拥堵模式"
 #: openpilot/selfdrive/ui/layouts/settings/settings.py
 msgid "Toggles"
 msgstr "功能开关"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Tolerance (± MHz)"
+msgstr "容差（± MHz）"
+
+#: openpilot/starpilot/uniden/protocol.py
+msgid "Tolerance must be 0–10 MHz"
+msgstr "容差必须为 0–10 MHz"
 
 #: openpilot/selfdrive/selfdrived/events.py
 msgid "Too Distracted"
@@ -15848,6 +17529,10 @@ msgstr "重试"
 msgid "Try again shortly."
 msgstr "请稍后重试。"
 
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Try connecting to your car once first so the attempt is recorded, then describe what happened on your car screen."
+msgstr "请先尝试连接一次车辆，以便记录这次尝试，然后描述车机屏幕上出现的情况。"
+
 #: openpilot/starpilot/galaxy/web/js/route-workspace.js
 msgid "Try exporting an individual segment."
 msgstr "请尝试导出单个片段。"
@@ -15985,10 +17670,18 @@ msgstr "开启"
 msgid "Turn on Bluetooth on the Bluetooth page."
 msgstr "请在蓝牙页面开启蓝牙。"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Turn on Bluetooth on the Devices tab."
+msgstr "请在“设备”标签页中开启蓝牙。"
+
 #: openpilot/starpilot/galaxy/web/js/onroad-layout.js
 #: openpilot/starpilot/ui/appearance_owner.py
 msgid "Turn on Lead Indicator first"
 msgstr "请先开启前车指示"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Turn on Learn lockouts automatically in Preferences to lock out sources you pass again and again."
+msgstr "在“偏好”中开启“自动学习屏蔽点”，即可屏蔽您反复经过的信号源。"
 
 #: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
 msgid "Turn on Save roads as you drive to retain road lines along your drives."
@@ -16018,6 +17711,10 @@ msgstr "请先打开车辆电源并等待车辆识别完成，再配置转向"
 msgid "Turn right onto"
 msgstr "右转驶入"
 
+#: openpilot/starpilot/galaxy/web/js/navigation.js
+msgid "Turn slowdown distance"
+msgstr "转弯减速距离"
+
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Turn the car off and on (or unplug the adapter for 5 seconds)."
 msgstr "请将车辆熄火后重新启动（或拔下适配器 5 秒）。"
@@ -16034,6 +17731,10 @@ msgstr "关闭车辆后才能更换模型"
 #: openpilot/starpilot/galaxy/web/js/vasm.js
 msgid "Turn the vehicle off to change these settings."
 msgstr "请关闭点火开关后再更改这些设置。"
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Turn this on to use your car's factory adaptive cruise instead of StarPilot's"
+msgstr "开启后使用车辆的原厂自适应巡航，而非 StarPilot 的巡航"
 
 #: openpilot/starpilot/ui/onroad_customization.py
 msgid "Turn-by-turn"
@@ -16062,6 +17763,14 @@ msgstr "关闭视觉盲区监测，并清除其已配置的摄像头区域。"
 #: openpilot/starpilot/galaxy/web/js/models.js
 msgid "Turns, everyday steering, gas and brake are each taught by whichever comma model handles them best, with real human drives where none do."
 msgstr "转弯、日常转向、油门和刹车，分别由 comma 模型中处理得最好的那个来训练；若没有合适的模型，则使用真实的人类驾驶数据。"
+
+#: openpilot/starpilot/galaxy/web/js/save-me.js
+msgid "Type ERASE STARPILOT DATA to continue"
+msgstr "输入 ERASE STARPILOT DATA 以继续"
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Type ERASE STARPILOT DATA to run Save Me"
+msgstr "输入 ERASE STARPILOT DATA 以运行 Save Me"
 
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 msgid "Typing suggestions, address lookups and offline road maps stop just short of their free monthly allowances and resume on the 1st. Routes, full place searches and map views are counted but not limited. These counts cover this comma only; Mapbox bills total account usage, including other apps and devices."
@@ -16095,9 +17804,17 @@ msgstr "未验证"
 msgid "UPDATE"
 msgstr "更新"
 
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "USB & Bluetooth input interface report (bluetooth-log.json, device names masked)."
+msgstr "USB 与蓝牙输入接口报告（bluetooth-log.json，设备名称已遮盖）。"
+
 #: openpilot/starpilot/galaxy/web/js/models.js
 msgid "USB computer"
 msgstr "USB 电脑"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "USB or Bluetooth gamepad / button inputs"
+msgstr "USB 或蓝牙手柄 / 按键输入"
 
 #: openpilot/starpilot/ui/settings_assets.py
 msgid "Unable to create Settings vector cache"
@@ -16151,6 +17868,10 @@ msgstr "无法加载位图字体 {}"
 msgid "Unable to load compact wheel art"
 msgstr "无法加载紧凑方向盘图"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Unable to load detector settings. Retrying automatically."
+msgstr "无法加载测速仪设置。正在自动重试。"
+
 #: openpilot/starpilot/ui/layout_preview_renderer.py
 msgid "Unable to load driver monitoring artwork:"
 msgstr "无法加载驾驶员监控图像："
@@ -16191,6 +17912,10 @@ msgstr "无法加载方向盘图"
 msgid "Unable to upload speed-limit shapes"
 msgstr "无法上传限速图形"
 
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "Unassigned"
+msgstr "未分配"
+
 #: openpilot/starpilot/ui/translation_strings.py
 msgid "Unavailable"
 msgstr "不可用"
@@ -16211,6 +17936,10 @@ msgstr "不可用的间隔"
 #: openpilot/starpilot/ui/replay_settings.py
 msgid "Unavailable gap; seeking to available footage"
 msgstr "此处无画面；正在跳转到可用画面"
+
+#: openpilot/starpilot/ui/slc_resume_action.py
+msgid "Unavailable in this context"
+msgstr "当前情况下不可用"
 
 #: openpilot/starpilot/ui/conditional_feature.py
 msgid "Unavailable saved action"
@@ -16240,6 +17969,10 @@ msgstr "当前车辆或功能设置下不可用"
 msgid "Unavailable: {}"
 msgstr "不可用：{}"
 
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Under"
+msgstr "在"
+
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Undo"
 msgstr "撤销"
@@ -16255,6 +17988,22 @@ msgstr "撤销上一个区域点"
 #: openpilot/starpilot/galaxy/settings.py
 msgid "Unexpected camera region draft"
 msgstr "摄像头区域草稿异常"
+
+#: openpilot/starpilot/ui/onroad_customization.py
+msgid "Uniden alerts"
+msgstr "Uniden 警报"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Uniden detector"
+msgstr "Uniden 测速仪"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Uniden settings"
+msgstr "Uniden 设置"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Uniden settings pages"
+msgstr "Uniden 设置页面"
 
 #: openpilot/selfdrive/ui/layouts/settings/software.py
 msgid "Uninstall"
@@ -16288,6 +18037,10 @@ msgstr "未知的几何编辑"
 msgid "Unknown layout preview scene"
 msgstr "未知的布局预览场景"
 
+#: openpilot/starpilot/uniden/locks.py
+msgid "Unknown lockout"
+msgstr "未知的屏蔽点"
+
 #: openpilot/starpilot/ui/developer_preview.py
 msgid "Unknown or duplicate private onroad visual preview"
 msgstr "未知或重复的私有行驶视觉预览"
@@ -16307,6 +18060,10 @@ msgstr "未知系列"
 #: openpilot/starpilot/galaxy/web/js/flm.js
 msgid "Unknown — waiting for a current report"
 msgstr "未知 — 正在等待最新报告"
+
+#: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
+msgid "Unlock {label}?"
+msgstr "解锁{label}？"
 
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Unpacked safely"
@@ -16457,6 +18214,10 @@ msgstr "更新 Soloist"
 msgid "Update app"
 msgstr "更新 App"
 
+#: openpilot/selfdrive/ui/mici/layouts/offroad_alerts.py
+msgid "Update available"
+msgstr "有可用更新"
+
 #: openpilot/starpilot/galaxy/web/js/software-status.js
 msgid "Update available — operating system update required. This is a large download and may take a while. Keep the device powered and connected to Wi-Fi."
 msgstr "有可用更新 — 需要更新操作系统。下载量较大，可能耗时较长，请保持设备通电并连接 Wi‑Fi。"
@@ -16602,6 +18363,14 @@ msgstr "上传缓慢或中断："
 msgid "Upload timed out. Check your connection and retry."
 msgstr "上传超时。请检查网络连接后重试。"
 
+#: openpilot/starpilot/galaxy/log_relay_stage.py
+msgid "Uploading bundle…"
+msgstr "正在上传日志包…"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Uploading logs…"
+msgstr "正在上传日志…"
+
 #: openpilot/starpilot/ui/slc_offset_feature.py
 msgid "Upper boundary excluded; displayed ranges rounded to whole speeds. Unsafe reductions use the unadjusted limit"
 msgstr "不含上限；显示的区间已取整为整数速度。不安全的降幅将使用未调整的限速"
@@ -16627,6 +18396,10 @@ msgstr "使用"
 msgid "Use 24-hour time"
 msgstr "使用 24 小时制"
 
+#: openpilot/starpilot/ui/pip_owner.py
+msgid "Use Adj Spot Camera"
+msgstr "使用侧方摄像头"
+
 #: openpilot/starpilot/ui/display_owner.py
 #: openpilot/starpilot/ui/sounds_owner.py
 msgid "Use Auto"
@@ -16647,6 +18420,10 @@ msgstr "将取消键用作辅助键"
 #: openpilot/selfdrive/ui/layouts/settings/software.py
 msgid "Use Download for full update"
 msgstr "请使用“下载”进行完整更新"
+
+#: openpilot/starpilot/ui/feature_settings_owner.py
+msgid "Use Factory ACC"
+msgstr "使用原厂 ACC"
 
 #: openpilot/starpilot/ui/panda_wake_feature.py
 msgid "Use GM CAN ignition instead of the harness ignition signal."
@@ -16768,6 +18545,10 @@ msgstr "使用 {} 摄像头格式并按比例设置初始裁剪？"
 msgid "Use this code on the device:"
 msgstr "请在设备上使用此验证码："
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Use this detector"
+msgstr "使用此测速仪"
+
 #: openpilot/starpilot/ui/torque_feature.py
 msgid "Use vehicle values for this model"
 msgstr "使用此车型的车辆值"
@@ -16787,6 +18568,10 @@ msgstr "使用视觉盲区监测"
 #: openpilot/starpilot/ui/galaxy_access.py
 msgid "Use your existing Galaxy password, or set a new one"
 msgstr "使用现有 Galaxy 密码，或设置新密码"
+
+#: openpilot/starpilot/galaxy/web/js/remote-access.js
+msgid "Use your old password or choose a new one with at least 8 characters."
+msgstr "请使用旧密码，或设置一个至少 8 个字符的新密码。"
 
 #: openpilot/starpilot/ui/lane_change_feature.py
 msgid "Use your turn signal to help the model choose a turning path at intersections."
@@ -17215,10 +19000,22 @@ msgstr "请等待当前安装完成。"
 msgid "Wait for the current package check to finish."
 msgstr "请等待当前安装包检查完成。"
 
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Wait for the software operation to finish before restarting"
+msgstr "请等待软件操作完成后再重启"
+
+#: openpilot/starpilot/galaxy/software_operations.py
+msgid "Wait for the software operation to finish before running Save Me"
+msgstr "请等待软件操作完成后再运行 Save Me"
+
 #: openpilot/starpilot/galaxy/web/js/starport.js
 #: openpilot/starpilot/galaxy/web/js/system-monitor-data.js
 msgid "Waiting"
 msgstr "等待中"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Waiting for Bluetooth"
+msgstr "正在等待蓝牙"
 
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 #: openpilot/starpilot/ui/onroad_map.py
@@ -17232,6 +19029,10 @@ msgstr "等待 Wi-Fi"
 #: openpilot/starpilot/galaxy/web/js/offline-road-maps.js
 msgid "Waiting for Wi-Fi · {}%"
 msgstr "等待 Wi-Fi · {}%"
+
+#: openpilot/starpilot/uniden/service.py
+msgid "Waiting for a GPS fix"
+msgstr "正在等待 GPS 定位"
 
 #: openpilot/starpilot/galaxy/web/js/flm-training-results.js
 msgid "Waiting for a current collection context"
@@ -17264,6 +19065,10 @@ msgstr "正在等待设备状态"
 #: openpilot/starpilot/galaxy/web/js/flm-training-results.js
 msgid "Waiting for enough retained storage packets"
 msgstr "正在等待足够的已保留存储数据包"
+
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "Waiting for fresh alerts"
+msgstr "正在等待新警报"
 
 #: openpilot/starpilot/galaxy/web/js/plots.js
 msgid "Waiting for fresh control data"
@@ -17378,13 +19183,29 @@ msgstr "摄像头预热中 · 约 10 秒…"
 msgid "Warning"
 msgstr "警告"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Warning off"
+msgstr "警告关闭"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Warning on"
+msgstr "警告开启"
+
 #: openpilot/starpilot/ui/sentry_owner.py
 msgid "Warning persistence"
 msgstr "警告持续时间"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Warning preview"
+msgstr "警告预览"
+
 #: openpilot/starpilot/ui/vasm_owner.py
 msgid "Warning smoothing"
 msgstr "警告平滑"
+
+#: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
+msgid "Warning: moving other widgets on top of this Adj Spot Camera may block your view of the Adj Spot Camera. Are you sure?"
+msgstr "警告：将其他组件移到此侧方摄像头上方，可能会挡住侧方摄像头画面。确定吗？"
 
 #: openpilot/starpilot/ui/sounds_owner.py
 msgid "Warns when signaling toward a detected blind-spot vehicle with steering assistance off or paused. Independent of Loud Blindspot Alert. Hazards do not trigger it."
@@ -17397,6 +19218,30 @@ msgstr "为规划器进入前车缓冲区的惩罚加权。数值越大越不倾
 #: openpilot/selfdrive/ui/layouts/onboarding.py
 msgid "Welcome to openpilot"
 msgstr "欢迎使用 openpilot"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "What happened in the phone app?"
+msgstr "手机 App 中出现了什么情况？"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "What happened on the car screen?"
+msgstr "车机屏幕上出现了什么情况？"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "What happened?"
+msgstr "发生了什么？"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "What the warning shows"
+msgstr "警告显示的内容"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "What we need"
+msgstr "需要您提供的信息"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "What went wrong with the controller?"
+msgstr "控制器出了什么问题？"
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "What’s your device?"
@@ -17414,6 +19259,14 @@ msgstr "方向盘制动与加速颜色"
 msgid "When enabled, pressing the accelerator pedal will disengage openpilot."
 msgstr "启用后，踩下加速踏板将会脱离 openpilot。"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "When the detector is muted, show the warning at off"
+msgstr "测速仪静音时，不显示警告"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "When the detector is muted, show the warning at {}"
+msgstr "测速仪静音时，警告以 {} 亮度显示"
+
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Where Music Plays"
 msgstr "音乐播放位置"
@@ -17425,6 +19278,10 @@ msgstr "SLC 获取限速的来源。SLC 始终采用任一来源的最新限速�
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 msgid "Where would you like to go?"
 msgstr "您想去哪里？"
+
+#: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
+msgid "Which alerts appear is set in Uniden Preferences, under On the screen. It applies to this widget and the full-screen warning."
+msgstr "显示哪些警报，在 Uniden 的“偏好”页“屏幕显示”中设置，同时适用于此组件和全屏警告。"
 
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Why do I download Soloist myself?"
@@ -17486,6 +19343,10 @@ msgstr "组件预览无法刷新。显示的是上一次的预览。"
 msgid "Widget preview unavailable. Placement controls remain available."
 msgstr "组件预览不可用。位置控件仍可使用。"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "Widget size, position and appearance are in the theme maker."
+msgstr "组件的大小、位置和外观请在主题编辑器中设置。"
+
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "Widgets"
 msgstr "组件"
@@ -17546,6 +19407,10 @@ msgstr "有线 StarPort 已启用"
 msgid "Wired StarPort not enabled"
 msgstr "有线 StarPort 未启用"
 
+#: openpilot/starpilot/galaxy/device_settings.py
+msgid "Wired hands-free"
+msgstr "有线免提"
+
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Wireless adapter"
 msgstr "无线适配器"
@@ -17561,6 +19426,10 @@ msgstr "巡航主开关开启且巡航未启用时，在低挡或单踏板模式
 #: openpilot/starpilot/ui/feature_settings_owner.py
 msgid "With cruise main on and cruise disengaged, slows and holds when you lift off the accelerator in Low or single-pedal mode. Requires StarPilot speed control; applies after the next startup"
 msgstr "巡航主开关开启且巡航未启用时，在低挡或单踏板模式下松开加速踏板会减速并保持。需要 StarPilot 速度控制；下次启动后生效"
+
+#: openpilot/starpilot/galaxy/web/js/uniden-preview.js
+msgid "With openpilot"
+msgstr "搭配 openpilot"
 
 #: openpilot/starpilot/ui/tesla_screen_feature.py
 msgid "With screen-tap steering enabled, pressing the brake disarms Always On Lateral."
@@ -17636,6 +19505,14 @@ msgstr "您的 Galaxy 会话已过期，请重新登录。"
 msgid "Your browser unpacked the download. Download it again and keep the .tar.gz file as it is."
 msgstr "您的浏览器已自动解压了下载文件。请重新下载，并保持 .tar.gz 文件原样不变。"
 
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "Your changes"
+msgstr "您的更改"
+
+#: openpilot/starpilot/galaxy/log_relay_stage.py
+msgid "Your comma could not reach the internet. Use Download ZIP instead."
+msgstr "您的 comma 无法连接互联网，请改为下载 ZIP。"
+
 #: openpilot/starpilot/galaxy/web/js/navigation.js
 msgid "Your comma has no network connection. Download maps when you're back online to see them offline. New routes need internet."
 msgstr "您的 comma 没有网络连接。恢复联网后请下载地图，以便离线查看。新路线需要联网。"
@@ -17647,6 +19524,10 @@ msgstr "您的 comma 需要联网，才能通过 Spotify 校验此下载文件�
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 msgid "Your comma took too long to respond. Retrying…"
 msgstr "您的 comma 响应超时，正在重试…"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "Your comma uploaded the logs. Finish on Discord to post them:"
+msgstr "您的 comma 已上传日志。请在 Discord 上完成操作以发布日志："
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "Your dashboard is live"
@@ -17679,6 +19560,10 @@ msgstr "您已保存的行程和当前设备"
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "You’re all set"
 msgstr "一切就绪"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "ZIP downloads"
+msgstr "ZIP 下载"
 
 #: openpilot/starpilot/ui/slc_offset_feature.py
 msgid "Zero offset"
@@ -17891,6 +19776,10 @@ msgstr "始终"
 #: openpilot/starpilot/ui/models_compact.py
 msgid "always use active small"
 msgstr "始终使用当前小模型"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "amber"
+msgstr "琥珀色"
 
 #: openpilot/starpilot/galaxy/web/js/onroad-layout.js
 #: openpilot/starpilot/galaxy/web/js/toggle-search.js
@@ -18799,6 +20688,10 @@ msgstr "控制"
 msgid "controller terms"
 msgstr "控制器项"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "coral"
+msgstr "珊瑚色"
+
 #: openpilot/starpilot/galaxy/web/js/system-monitor.js
 msgid "cores · overall usage"
 msgstr "个核心 · 总体使用率"
@@ -18948,6 +20841,10 @@ msgstr "解密中"
 #: openpilot/system/ui/widgets/network.py
 msgid "default"
 msgstr "默认"
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "degrees · original source times. Drive {} · segment {} · original samples without interpolation or delay alignment. Baseline statistics use {} windows."
+msgstr "度 · 原始来源时间。行程 {} · 片段 {} · 原始样本，未做插值或延迟对齐。基线统计使用 {} 个窗口。"
 
 #: openpilot/starpilot/ui/models_state.py
 msgid "deletable"
@@ -19250,6 +21147,14 @@ msgstr "遮罩字段重复"
 #: openpilot/starpilot/galaxy/web/js/home.js
 msgid "duration"
 msgstr "时长"
+
+#: openpilot/starpilot/galaxy/web/js/log-help.js
+msgid "e.g. 8BitDo Micro, Xbox Wireless, PS5 DualSense"
+msgstr "例如 8BitDo Micro、Xbox Wireless、PS5 DualSense"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "e.g. Head unit"
+msgstr "例如：车机"
 
 #: openpilot/starpilot/galaxy/web/js/system-monitor.js
 msgid "eGPU VRAM"
@@ -19863,6 +21768,10 @@ msgstr "小时"
 msgid "hub"
 msgstr "中心"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "ice"
+msgstr "冰蓝色"
+
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-document.js
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 #: openpilot/starpilot/galaxy/web/js/onroad-layout.js
@@ -20277,6 +22186,10 @@ msgstr "剩余。仅接受一部手机。"
 msgid "light"
 msgstr "浅色"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "lime"
+msgstr "青柠色"
+
 #: openpilot/starpilot/galaxy/web/js/onroad-layout.js
 msgid "lined up with"
 msgstr "与以下对齐："
@@ -20424,6 +22337,14 @@ msgstr "初始化时创建其低速反馈控制器和滤波器状态。"
 #: openpilot/starpilot/ui/long_profile_feature.py
 msgid "low-speed follow"
 msgstr "低速跟车"
+
+#: openpilot/starpilot/galaxy/web/js/flm.js
+msgid "m/s² · original source times. Drive {} · segment {} · original samples without interpolation or delay alignment. Baseline statistics use {} windows."
+msgstr "m/s² · 原始来源时间。行程 {} · 片段 {} · 原始样本，未做插值或延迟对齐。基线统计使用 {} 个窗口。"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "magenta"
+msgstr "品红色"
 
 #: openpilot/starpilot/galaxy/web/js/starport.js
 msgid "make sure the app is"
@@ -21114,6 +23035,10 @@ msgstr "配对"
 #: openpilot/starpilot/ui/bluetooth_compact.py
 msgid "pair a device"
 msgstr "配对设备"
+
+#: openpilot/starpilot/galaxy/web/js/controllers.js
+msgid "pair in Bluetooth"
+msgstr "在蓝牙中配对"
 
 #: openpilot/starpilot/ui/bluetooth_compact.py
 msgid "pair phone"
@@ -22633,7 +24558,7 @@ msgstr "已暂停"
 
 #: openpilot/starpilot/galaxy/web/js/galaxy-setting-row.js
 msgid "switch"
-msgstr "开关"
+msgstr "切换"
 
 #: openpilot/starpilot/ui/runtime_app.py
 msgid "switchback"
@@ -22924,6 +24849,10 @@ msgstr "请在第 2 步开启“有线 AA”，用数据线将车辆的数据 US
 #: openpilot/starpilot/ui/lane_change_feature.py
 msgid "turn signal guidance"
 msgstr "转向灯引导"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "ultraviolet"
+msgstr "紫外光色"
 
 #: openpilot/starpilot/ui/onroad_favorites.py
 #: openpilot/starpilot/ui/runtime_app.py
@@ -23277,6 +25206,10 @@ msgstr "前提是相邻车道和盲区无障碍。"
 msgid "while following a lead"
 msgstr "跟随前车时"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "white"
+msgstr "白色"
+
 #: openpilot/starpilot/galaxy/web/js/flm.js
 msgid "whole bundles retained."
 msgstr "个完整数据包已保留。"
@@ -23387,6 +25320,38 @@ msgstr "区域"
 msgid "zoom"
 msgstr "缩放"
 
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "{label}  •  +{} more"
+msgstr "{label}  •  另有 {} 条"
+
+#: openpilot/starpilot/ui/tesla_set_speed_feature.py
+msgid "{label} - Adds the right scroll wheel, right stalk and three-finger screen tap as controls, and lets the comma set the speed on the Tesla's dashboard. Model 3 and Model Y, HW3 or HW4. Checked when the car starts."
+msgstr "{label} - 增加右滚轮、右拨杆和三指轻点屏幕作为控制按键，并允许 comma 设置 Tesla 仪表盘上的速度。适用于 Model 3 和 Model Y（HW3 或 HW4）。车辆启动时检测。"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "{label} - Always On Lateral on/off applies after the next startup"
+msgstr "{label} - 全时横向控制开/关在下次启动后生效"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "{label} - Always On Lateral on/off stays on this tap until the next startup"
+msgstr "{label} - 下次启动前，此轻点仍为全时横向控制开/关"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "{label} - Needs the Tesla CAN add-on cable"
+msgstr "{label} - 需要 Tesla CAN 附加线束"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "{label} - Needs the Tesla CAN add-on cable."
+msgstr "{label} - 需要 Tesla CAN 附加线束。"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "{label} - Set Speed To needs Comma can set speed on Tesla dashboard turned on in Vehicle Settings"
+msgstr "{label} - “将速度设为”需要在车辆设置中开启“comma 可设置 Tesla 仪表盘速度”"
+
+#: openpilot/starpilot/ui/tesla_controls_feature.py
+msgid "{label}: set speed"
+msgstr "{label}：设定速度"
+
 #: openpilot/starpilot/ui/maps_state.py
 msgid "{} / {} groups"
 msgstr "{} / {} 组"
@@ -23425,9 +25390,21 @@ msgstr "{} 音频正在等待 {}。"
 msgid "{} Automatic Brake Hold after the next startup? Press the {} to release a hold."
 msgstr "{}自动刹车保持？下次启动后生效。按下{}以解除保持。"
 
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "{} Below limit"
+msgstr "{} 条低于限速"
+
 #: openpilot/starpilot/galaxy/web/js/onroad-layout-template.js
 msgid "{} Blue lane-centering and orange steering-effort indicators stay blue and orange."
 msgstr "{} 蓝色的车道居中指示和橙色的转向力度指示保持蓝色和橙色。"
+
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "{} Filtered"
+msgstr "{} 条已过滤"
+
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "{} Frequency rule"
+msgstr "{} 条频率规则"
 
 #: openpilot/starpilot/galaxy/web/js/system-monitor.js
 msgid "{} GiB total"
@@ -23445,9 +25422,33 @@ msgstr "{} 请保持车辆驻车。"
 msgid "{} Key values are never displayed."
 msgstr "{} 密钥值不会显示。"
 
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "{} Lockout"
+msgstr "{} 条屏蔽点"
+
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "{} MUTED"
+msgstr "{} 条已静音"
+
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "{} Manual mute"
+msgstr "{} 条手动静音"
+
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "{} Mute Memory"
+msgstr "{} 条静音记忆"
+
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "{} Muted"
+msgstr "{} 条已静音"
+
 #: openpilot/starpilot/ui/vehicle_bool.py
 msgid "{} Pedal Speed Control after the next startup?"
 msgstr "{}踏板速度控制？下次启动后生效。"
+
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "{} Q-Ride"
+msgstr "{} 条 Q-Ride"
 
 #: openpilot/starpilot/galaxy/web/js/route-workspace.js
 msgid "{} Route downloads require a complete inventory."
@@ -23464,6 +25465,10 @@ msgstr "{}自动启停关闭？下次启动时，将在 P 挡或空挡静止时�
 #: openpilot/starpilot/ui/vehicle_bool.py
 msgid "{} Subaru stop-and-go assistance after the next startup? Factory ACC retains speed control."
 msgstr "{} Subaru 跟停辅助？下次启动后生效。速度控制仍由原厂 ACC 负责。"
+
+#: openpilot/starpilot/ui/onroad_uniden.py
+msgid "{} Timed mute"
+msgstr "{} 条定时静音"
 
 #: openpilot/starpilot/ui/vehicle_bool.py
 msgid "{} Volt one-pedal driving after the next startup? Lifting off the accelerator can apply the brakes with cruise disengaged and cruise main on."
@@ -23531,6 +25536,10 @@ msgstr[1] "{} 天前"
 msgid "{} days"
 msgstr "{} 天"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "{} detected. Saving enables the integration."
+msgstr "已识别 {}。保存后将启用集成。"
+
 #: openpilot/starpilot/ui/presentation.py
 msgid "{} differs from the reviewed font manifest"
 msgstr "{} 与已审核的字体清单不符"
@@ -23593,6 +25602,10 @@ msgstr "{} 已安装 / 共 {}"
 msgid "{} installed · {} missing"
 msgstr "{} 已安装 · {} 缺失"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "{} learning progress"
+msgstr "{} 学习进度"
+
 #: openpilot/starpilot/galaxy/web/js/spotify.js
 #: openpilot/starpilot/galaxy/web/js/starport.js
 #: openpilot/starpilot/ui/onroad_map.py
@@ -23644,6 +25657,14 @@ msgstr "{} 车型"
 msgid "{} mph point"
 msgstr "{} mph 点"
 
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "{} mute after (seconds)"
+msgstr "{} 静音延迟（秒）"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "{} of 8"
+msgstr "{} / 8"
+
 #: openpilot/starpilot/galaxy/web/js/plots.js
 msgid "{} of 8 valid driving samples"
 msgstr "{} / 8 个有效行驶样本"
@@ -23664,9 +25685,17 @@ msgstr "{} / {} 上限"
 msgid "{} of {} free this month"
 msgstr "{} / {}，本月免费"
 
+#: openpilot/starpilot/galaxy/web/js/flm-training-results.js
+msgid "{} of {} sections read in this recording"
+msgstr "此录像已读取 {} / {} 个片段"
+
 #: openpilot/starpilot/galaxy/web/js/flm.js
 msgid "{} original endpoints"
 msgstr "{} 个原始端点"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "{} passes"
+msgstr "经过 {} 次"
 
 #: openpilot/starpilot/galaxy/web/js/system-monitor.js
 msgid "{} processes shown. {}"
@@ -23783,6 +25812,10 @@ msgstr "已备份 {} 个功能开关。"
 #: openpilot/starpilot/galaxy/web/js/home.js
 msgid "{} unresponsive {}"
 msgstr "{} 次无响应 {}"
+
+#: openpilot/starpilot/galaxy/web/js/uniden.js
+msgid "{} warn again at strength"
+msgstr "{} 再次警告的强度"
 
 #: openpilot/starpilot/ui/slc_offset_feature.py
 msgid "{} {} and above"
